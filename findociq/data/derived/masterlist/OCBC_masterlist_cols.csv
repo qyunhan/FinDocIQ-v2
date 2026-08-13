@@ -1,0 +1,64 @@
+bank,table_type_id,col_ordinal,canonical_col_id,label,full_path,source_family,notes
+OCBC,FS_BALANCE_BY_GEOGRAPHY,1,singapore,Singapore,Singapore,Financial_statements,
+OCBC,FS_BALANCE_BY_GEOGRAPHY,2,malaysia,Malaysia,Malaysia,Financial_statements,
+OCBC,FS_BALANCE_BY_GEOGRAPHY,3,indonesia,Indonesia,Indonesia,Financial_statements,
+OCBC,FS_BALANCE_BY_GEOGRAPHY,4,greater_china,Greater China,Greater China,Financial_statements,
+OCBC,FS_BALANCE_BY_GEOGRAPHY,5,other_asia_pacific,Other Asia Pacific,Other Asia Pacific,Financial_statements,
+OCBC,FS_BALANCE_BY_GEOGRAPHY,6,rest_of_the_world,Rest of the World,Rest of the World,Financial_statements,
+OCBC,FS_BALANCE_BY_GEOGRAPHY,7,group,Group,Group,Financial_statements,unlabeled total row — mapped to GLOBAL
+OCBC,FS_BALANCE_BY_SEGMENT,1,global_consumer_private_banking,Global Consumer/ Private Banking,Global Consumer/ Private Banking,Financial_statements,
+OCBC,FS_BALANCE_BY_SEGMENT,2,global_wholesale_banking,Global Wholesale Banking,Global Wholesale Banking,Financial_statements,
+OCBC,FS_BALANCE_BY_SEGMENT,3,global_markets,Global Markets,Global Markets,Financial_statements,
+OCBC,FS_BALANCE_BY_SEGMENT,4,insurance,Insurance,Insurance,Financial_statements,
+OCBC,FS_BALANCE_BY_SEGMENT,5,others,Others,Others,Financial_statements,
+OCBC,FS_BALANCE_BY_SEGMENT,6,group,Group,Group,Financial_statements,
+OCBC,FS_BALANCE_CONSOLIDATED,1,group,Group,Group,Financial_statements,
+OCBC,FS_BALANCE_CONSOLIDATED,2,bank,Bank,Bank,Financial_statements,parent-company view; OCBC uses 'Bank' label (DBS uses 'Company')
+OCBC,FS_EQUITY_CHANGES_COMPANY,1,share_capital_and_other_equity,Share capital and other equity,Share capital and other equity,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_COMPANY,2,capital_reserves,Capital reserves,Capital reserves,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_COMPANY,3,fair_value_reserves,Fair value reserves,Fair value reserves,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_COMPANY,4,revenue_reserves,Revenue reserves,Revenue reserves,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_COMPANY,5,total_equity,Total equity,Total equity,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,1,share_capital_and_other_equity,Share capital and other equity,Share capital and other equity,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,2,capital_reserves,Capital reserves,Capital reserves,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,3,fair_value_reserves,Fair value reserves,Fair value reserves,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,4,revenue_reserves,Revenue reserves,Revenue reserves,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,5,total,Total,Total,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,6,other_equity_instruments_issued_by_subsidiary,Other equity instruments issued by subsidiary,Other equity instruments issued by subsidiary,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,7,non_controlling_interests,Non-controlling interests,Non-controlling interests,Financial_statements,
+OCBC,FS_EQUITY_CHANGES_GROUP,8,total_equity,Total equity,Total equity,Financial_statements,
+OCBC,FS_FAIR_VALUE_HIERARCHY,1,level_1,Level 1,Level 1,Financial_statements,quoted prices in active markets
+OCBC,FS_FAIR_VALUE_HIERARCHY,2,level_2,Level 2,Level 2,Financial_statements,observable inputs other than quoted prices
+OCBC,FS_FAIR_VALUE_HIERARCHY,3,level_3,Level 3,Level 3,Financial_statements,unobservable inputs
+OCBC,FS_FAIR_VALUE_HIERARCHY,4,total,Total,Total,Financial_statements,total fair value across levels
+OCBC,FS_NPA_BY_GEOGRAPHY,1,total_npas,Total NPAs (¹),Total NPAs (¹),Media_release_and_financial_highlights,total non-performing assets amount
+OCBC,FS_NPA_BY_GEOGRAPHY,2,substandard,Substandard,Substandard,Media_release_and_financial_highlights,NPA grading category
+OCBC,FS_NPA_BY_GEOGRAPHY,3,doubtful,Doubtful,Doubtful,Media_release_and_financial_highlights,NPA grading category
+OCBC,FS_NPA_BY_GEOGRAPHY,4,loss,Loss,Loss,Media_release_and_financial_highlights,NPA grading category
+OCBC,FS_NPA_BY_GEOGRAPHY,5,npls,NPLs (²),NPLs (²),Media_release_and_financial_highlights,non-performing loans (excludes debt securities and contingent liabilities)
+OCBC,FS_NPA_BY_GEOGRAPHY,6,npl_ratio,NPL Ratio (²),NPL Ratio (²),Media_release_and_financial_highlights,NPL as % of loans
+OCBC,FS_NPA_BY_INDUSTRY,1,s_million,S$ million,S$ million,Media_release_and_financial_highlights,NPL amount per industry
+OCBC,FS_NPA_BY_INDUSTRY,2,percent_of_gross_loans,% of gross loans,% of gross loans,Media_release_and_financial_highlights,NPL as % of gross loans per industry
+OCBC,FS_NPA_BY_PERIOD_OVERDUE,1,s_million,S$ million,S$ million,Media_release_and_financial_highlights,NPA amount per aging bucket
+OCBC,FS_NPA_BY_PERIOD_OVERDUE,2,percent,%,%,Media_release_and_financial_highlights,aging bucket share as % of total NPA
+OCBC,FS_NPA_RESTRUCTURED,1,loan,Loan,Loan,Media_release_and_financial_highlights,restructured loan amount
+OCBC,FS_NPA_RESTRUCTURED,2,allowance,Allowance,Allowance,Media_release_and_financial_highlights,allowance against restructured loan
+OCBC,FS_PBT_BY_SEGMENT_SELECTED,1,global_consumer_private_banking,Global Consumer/Private Banking,Global Consumer/Private Banking,Media_release_and_financial_highlights,
+OCBC,FS_PBT_BY_SEGMENT_SELECTED,2,global_wholesale_banking,Global Wholesale Banking,Global Wholesale Banking,Media_release_and_financial_highlights,
+OCBC,FS_PBT_BY_SEGMENT_SELECTED,3,global_markets,Global Markets,Global Markets,Media_release_and_financial_highlights,
+OCBC,FS_PBT_BY_SEGMENT_SELECTED,4,insurance,Insurance,Insurance,Media_release_and_financial_highlights,
+OCBC,FS_PBT_BY_SEGMENT_SELECTED,5,others,Others,Others,Media_release_and_financial_highlights,
+OCBC,FS_PBT_BY_SEGMENT_SELECTED,6,group,Group,Group,Media_release_and_financial_highlights,grand total column
+OCBC,FS_PERF_BY_GEOGRAPHY,1,singapore,Singapore,Singapore,Financial_statements,
+OCBC,FS_PERF_BY_GEOGRAPHY,2,malaysia,Malaysia,Malaysia,Financial_statements,
+OCBC,FS_PERF_BY_GEOGRAPHY,3,indonesia,Indonesia,Indonesia,Financial_statements,
+OCBC,FS_PERF_BY_GEOGRAPHY,4,greater_china,Greater China,Greater China,Financial_statements,
+OCBC,FS_PERF_BY_GEOGRAPHY,5,other_asia_pacific,Other Asia Pacific,Other Asia Pacific,Financial_statements,
+OCBC,FS_PERF_BY_GEOGRAPHY,6,rest_of_the_world,Rest of the World,Rest of the World,Financial_statements,
+OCBC,FS_PERF_BY_GEOGRAPHY,7,group,Group,Group,Financial_statements,unlabeled total row in source — mapped to GLOBAL
+OCBC,FS_PERF_BY_SEGMENT,1,global_consumer_private_banking,Global Consumer/ Private Banking,Global Consumer/ Private Banking,Financial_statements,
+OCBC,FS_PERF_BY_SEGMENT,2,global_wholesale_banking,Global Wholesale Banking,Global Wholesale Banking,Financial_statements,
+OCBC,FS_PERF_BY_SEGMENT,3,global_markets,Global Markets,Global Markets,Financial_statements,
+OCBC,FS_PERF_BY_SEGMENT,4,insurance,Insurance,Insurance,Financial_statements,
+OCBC,FS_PERF_BY_SEGMENT,5,others,Others,Others,Financial_statements,
+OCBC,FS_PERF_BY_SEGMENT,6,group,Group,Group,Financial_statements,

@@ -1,0 +1,194 @@
+{
+  "tables": [
+    {
+      "title": "1Q25 key financial indicators",
+      "label_header": "Indicator",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Value"
+        },
+        {
+          "group": null,
+          "leaf": "QoQ Change"
+        },
+        {
+          "group": null,
+          "leaf": "YoY Change"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operating profit",
+          "values": [
+            {
+              "value": "S$2.1b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+ 11%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+ 7%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit after tax",
+          "values": [
+            {
+              "value": "S$1.5b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "- 2%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "unchanged",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on equity",
+          "values": [
+            {
+              "value": "12.3%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "- 0.7%pt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "- 1.0%pt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cost/Income ratio",
+          "values": [
+            {
+              "value": "42.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "- 3.0%pt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "- 2.0%pt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPL ratio",
+          "values": [
+            {
+              "value": "1.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+0.1% pt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+ 0.1% pt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit costs",
+          "values": [
+            {
+              "value": "35bps",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+ 10 bps",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+ 12 bps",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NSFR ratio",
+          "values": [
+            {
+              "value": "116%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Unchanged",
+              "cell_state": "reported"
+            },
+            {
+              "value": "- 5% pt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "CET 1 ratio",
+          "values": [
+            {
+              "value": "15.5%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Unchanged",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+ 1.6%pt",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

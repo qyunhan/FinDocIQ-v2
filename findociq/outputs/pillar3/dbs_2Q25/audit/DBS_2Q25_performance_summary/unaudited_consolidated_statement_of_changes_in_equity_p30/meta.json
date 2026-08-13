@@ -1,0 +1,48 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_statement_of_changes_in_equity_p30",
+  "section_ids": [
+    "unaudited_consolidated_statement_of_changes_in_equity"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY"
+  ],
+  "pages": [
+    30
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-13T17:11:09",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_statement_of_changes_in_equity_p30",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2973,
+    "output_tokens": 5281,
+    "thinking_tokens": 0,
+    "total_tokens": 8254,
+    "est_cost_usd": 0.01409
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Purchase of treasury shares' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Draw-down of share plan reserves upon ve' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Cost of share-based payments' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Dividends to shareholders\u00b9' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Other movements' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Net profit' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Other comprehensive income' [UNAUDITED CONSOLIDATED STATEME]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

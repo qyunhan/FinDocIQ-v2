@@ -1,0 +1,56 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "income_statement_unaudited_for_the_financial_period_ended_p24",
+  "section_ids": [
+    "income_statement_unaudited_for_the_financial_period_ended"
+  ],
+  "section_titles": [
+    "Income Statement (Unaudited) for the financial period ended 30 June 2026"
+  ],
+  "pages": [
+    24
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 31,
+  "usage": {
+    "ts": "2026-08-07T09:24:44",
+    "script": "extract_to_excel",
+    "label": "income_statement_unaudited_for_the_financial_period_ended_p24",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3961,
+    "output_tokens": 3418,
+    "thinking_tokens": 0,
+    "total_tokens": 7379,
+    "est_cost_usd": 0.0367,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '833' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '927' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '745' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '330' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '377' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '121' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '825' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '270' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '095' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '027' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '442' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '460' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '828' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

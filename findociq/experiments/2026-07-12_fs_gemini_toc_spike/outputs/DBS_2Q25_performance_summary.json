@@ -1,0 +1,316 @@
+{
+  "doc_id": "DBS_2Q25_performance_summary",
+  "source_pdf": "findociq/data/sources/financial_statements/DBS/2025/2Q25/DBS_2Q25_performance_summary.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "Dividends",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "OVERVIEW",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "First Half",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "Second Quarter",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "Balance Sheet",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "NET INTEREST INCOME",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "title": "NET FEE AND COMMISSION INCOME",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "OTHER NON-INTEREST INCOME",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "EXPENSES1",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "ALLOWANCES FOR CREDIT AND OTHER LOSSES",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "title": "Consumer Banking/ Wealth Management",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "Institutional Banking",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "Markets Trading",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "Others",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "PERFORMANCE BY GEOGRAPHY",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "title": "Singapore",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "Hong Kong",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "Rest of Greater China",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "South and Southeast Asia",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "Rest of the World",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "CUSTOMER LOANS",
+      "page": 20,
+      "level": 1
+    },
+    {
+      "title": "By business unit",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "By geography1",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "By industry",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "By currency",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "title": "By business unit",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "By geography1",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "Loss Allowance Coverage",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "By industry",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "title": "By loan grading",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "title": "Non-performing assets",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "Of which: restructured assets",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "By collateral type",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "title": "By period overdue",
+      "page": 23,
+      "level": 2
+    },
+    {
+      "title": "CUSTOMER DEPOSITS",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "title": "By currency and product",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "DEBTS ISSUED",
+      "page": 25,
+      "level": 1
+    },
+    {
+      "title": "CAPITAL ADEQUACY",
+      "page": 26,
+      "level": 1
+    },
+    {
+      "title": "Risk-Weighted Assets (\u201cRWA\u201d)",
+      "page": 26,
+      "level": 2
+    },
+    {
+      "title": "Capital Adequacy Ratio (\u201cCAR\u201d) (%)",
+      "page": 26,
+      "level": 2
+    },
+    {
+      "title": "Minimum CAR including Buffer Requirements (%)3",
+      "page": 26,
+      "level": 2
+    },
+    {
+      "title": "Of which: Buffer Requirements (%)",
+      "page": 26,
+      "level": 3
+    },
+    {
+      "title": "PILLAR 3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDING RATIO DISCLOSURES",
+      "page": 26,
+      "level": 1
+    },
+    {
+      "title": "UNREALISED PROPERTY VALUATION SURPLUS",
+      "page": 26,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED INCOME STATEMENT",
+      "page": 27,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED BALANCE SHEETS",
+      "page": 29,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "page": 30,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY",
+      "page": 31,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "page": 32,
+      "level": 1
+    },
+    {
+      "title": "OTHER FINANCIAL INFORMATION",
+      "page": 33,
+      "level": 1
+    },
+    {
+      "title": "1. Fair Value of Financial Instruments",
+      "page": 33,
+      "level": 2
+    },
+    {
+      "title": "Fair Value Hierarchy",
+      "page": 33,
+      "level": 3
+    },
+    {
+      "title": "2. Off-balance Sheet Items",
+      "page": 33,
+      "level": 2
+    },
+    {
+      "title": "ADDITIONAL INFORMATION",
+      "page": 34,
+      "level": 1
+    },
+    {
+      "title": "SHARE CAPITAL",
+      "page": 34,
+      "level": 2
+    },
+    {
+      "title": "INTERESTED PARTY TRANSACTIONS PURSUANT TO LISTING RULE 920(1)",
+      "page": 34,
+      "level": 2
+    },
+    {
+      "title": "CONFIRMATION OF DIRECTORS AND EXECUTIVE OFFICERS\u2019 UNDERTAKINGS PURSUANT TO LISTING RULE 720(1)",
+      "page": 34,
+      "level": 2
+    },
+    {
+      "title": "CONFIRMATION BY THE BOARD",
+      "page": 35,
+      "level": 1
+    }
+  ],
+  "contents_page_number": 3,
+  "contents_page_text": "DBS GROUP HOLDINGS LTD AND ITS SUBSIDIARIES\nContents Page\nOverview 2\nFinancial Review\nNet Interest Income 8\nNet Fee and Commission Income 10\nOther Non-Interest Income 10\nExpenses 11\nAllowances for Credit and Other Losses 11\nPerformance by Business Segments 12\nPerformance by Geography 15\nCustomer Loans 18\nNon-Performing Assets and Loss Allowance Coverage 19\nCustomer Deposits 22\nDebts Issued 23\nCapital Adequacy 24\nUnrealised Property Valuation Surplus 24\nFinancial Statements\nUnaudited Consolidated Income Statement 25\nUnaudited Consolidated Statement of Comprehensive Income 26\nUnaudited Balance Sheets 27\nUnaudited Consolidated Statement of Changes in Equity 28\nUnaudited Statement of Changes in Equity 29\nUnaudited Consolidated Cash Flow Statement 30\nOther Financial Information 31\nAdditional Information\nShare Capital 32\nInterested Party Transactions Pursuant to Listing Rule 920(1) 32\nConfirmation of Directors and Executive Officers\u2019 Undertakings Pursuant to Listing Rule 720(1) 32\nConfirmation by the Board 33\n1",
+  "n_pages": 35
+}

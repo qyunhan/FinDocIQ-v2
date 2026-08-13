@@ -1,0 +1,680 @@
+{
+  "tables": [
+    {
+      "title": "Non-Performing Assets",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "Jun-26",
+          "leaf": "$m"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "$m"
+        },
+        {
+          "group": "Jun-25",
+          "leaf": "$m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans (\"NPL\")",
+          "values": [
+            {
+              "value": "5,700",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,379",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,341",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt securities and others",
+          "values": [
+            {
+              "value": "50",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Non-performing assets (\"NPA\")",
+          "values": [
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By grading",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Substandard",
+          "values": [
+            {
+              "value": "4,585",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,102",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,692",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Doubtful",
+          "values": [
+            {
+              "value": "478",
+              "cell_state": "reported"
+            },
+            {
+              "value": "624",
+              "cell_state": "reported"
+            },
+            {
+              "value": "913",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loss",
+          "values": [
+            {
+              "value": "687",
+              "cell_state": "reported"
+            },
+            {
+              "value": "714",
+              "cell_state": "reported"
+            },
+            {
+              "value": "781",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By security",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Secured by collateral type:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Properties",
+          "values": [
+            {
+              "value": "4,050",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,302",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,065",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Shares and debentures",
+          "values": [
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Others",
+          "values": [
+            {
+              "value": "24",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Secured Total",
+          "values": [
+            {
+              "value": "4,096",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,363",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,104",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Unsecured",
+          "values": [
+            {
+              "value": "1,654",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,077",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,282",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By ageing",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current",
+          "values": [
+            {
+              "value": "824",
+              "cell_state": "reported"
+            },
+            {
+              "value": "845",
+              "cell_state": "reported"
+            },
+            {
+              "value": "579",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Within 90 days",
+          "values": [
+            {
+              "value": "941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "592",
+              "cell_state": "reported"
+            },
+            {
+              "value": "614",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 90 to 180 days",
+          "values": [
+            {
+              "value": "730",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "846",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 180 days",
+          "values": [
+            {
+              "value": "3,255",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,865",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,347",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Total allowance",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "General",
+          "values": [
+            {
+              "value": "3,357",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,557",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,776",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Specific",
+          "values": [
+            {
+              "value": "1,320",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,332",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,610",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "4,677",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,889",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,386",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Loans (\"NPL\")"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Debt securities and others"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Non-performing assets (\"NPA\")"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "By grading"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Substandard"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Doubtful"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Loss"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "By security"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Secured by collateral type:"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Properties"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Shares and debentures"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Fixed deposits"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Unsecured"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "By ageing"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Current"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Within 90 days"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Over 90 to 180 days"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Over 180 days"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Total allowance"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "General"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Specific"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": "Non-Performing Assets",
+        "col_labels_clean": [
+          "$m",
+          "$m",
+          "$m"
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

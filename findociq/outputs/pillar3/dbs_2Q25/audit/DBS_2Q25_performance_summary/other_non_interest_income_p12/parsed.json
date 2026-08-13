@@ -1,0 +1,237 @@
+{
+  "tables": [
+    {
+      "title": "OTHER NON-INTEREST INCOME",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Half 2025"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Half 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net trading income",
+          "values": [
+            {
+              "value": "1,723",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,733",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net income from investment securities",
+          "values": [
+            {
+              "value": "123",
+              "cell_state": "reported"
+            },
+            {
+              "value": "91",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "72",
+              "cell_state": "reported"
+            },
+            {
+              "value": "71",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others (include rental income and gain on disposal of properties and fixed assets)",
+          "values": [
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(20)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "136",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(85)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "1,866",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,856",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Commercial book",
+          "values": [
+            {
+              "value": "1,070",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,099",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,065",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0",
+              "cell_state": "zero"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Markets Trading",
+          "values": [
+            {
+              "value": "796",
+              "cell_state": "reported"
+            },
+            {
+              "value": "750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "791",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "1,866",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,856",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

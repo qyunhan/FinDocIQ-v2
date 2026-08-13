@@ -1,0 +1,75 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "customer_deposits_p21",
+  "section_ids": [
+    "customer_deposits"
+  ],
+  "section_titles": [
+    "CUSTOMER DEPOSITS"
+  ],
+  "pages": [
+    21
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 31,
+  "usage": {
+    "ts": "2026-07-26T09:06:02",
+    "script": "extract_to_excel",
+    "label": "customer_deposits_p21",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3888,
+    "output_tokens": 4586,
+    "thinking_tokens": 0,
+    "total_tokens": 8474,
+    "est_cost_usd": 0.04711,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '52014' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '57206' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '50007' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '18598' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '24865' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '21738' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '10611' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '10648' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '33218' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '38056' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '34259' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '18796' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '19150' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '15748' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4572' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4636' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4700' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6726' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6540' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4875' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6333' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4865' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3550' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8581' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7204' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5689' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4496' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '528' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x6: 'Fixed deposits' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x6: 'Savings accounts' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x6: 'Current accounts' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x7: 'Others' [CUSTOMER DEPOSITS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

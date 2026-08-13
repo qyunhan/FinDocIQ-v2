@@ -1,0 +1,28 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+4,0,5,0,1,NEW_TABLE,cols differ
+5,0,6,0,1,NEW_TABLE,cols differ
+6,0,7,0,1,NEW_TABLE,cols differ
+7,0,8,0,1,PERIOD_INSTANCE,"repeats ['Total comprehensive income', 'for the financial period', 'Profit for the financial period']"
+8,0,9,0,1,NEW_TABLE,cols differ
+9,0,10,0,1,NEW_TABLE,cols differ
+10,0,12,0,1,NEW_TABLE,non-adjacent pages
+12,0,13,0,1,NEW_TABLE,break:own-title:GROUP
+13,0,13,1,0,NEW_TABLE,break:heading:4. Fees andcommissions(net)
+13,1,14,0,1,NEW_TABLE,break:heading:5. Otherincome
+14,0,14,1,0,NEW_TABLE,break:heading:6. Otheroperatingexpenses
+14,1,14,2,0,NEW_TABLE,break:heading:7. Allowancesforloansandother assets
+14,2,14,3,0,NEW_TABLE,cols differ
+14,3,15,0,1,NEW_TABLE,cols differ
+15,0,15,1,0,NEW_TABLE,break:own-title:GROUP
+15,1,16,0,1,NEW_TABLE,break:heading:11. Debtissued
+16,0,16,1,0,NEW_TABLE,break:heading:12. Loanstocustomers
+16,1,17,0,1,NEW_TABLE,cols differ
+17,0,18,0,1,NEW_TABLE,break:heading:13. Segmentinformation(continued)
+18,0,20,0,1,NEW_TABLE,non-adjacent pages
+20,0,20,1,0,PERIOD_INSTANCE,"repeats ['Singapore', 'Malaysia', 'Indonesia']"
+20,1,23,0,1,NEW_TABLE,non-adjacent pages
+23,0,24,0,1,NEW_TABLE,cols differ
+24,0,25,0,1,NEW_TABLE,cols differ
+25,0,25,1,0,PERIOD_INSTANCE,"repeats ['GROUP', 'Financial assets measured at fair value', 'Additions']"
+25,1,25,2,0,NEW_TABLE,cols differ
+25,2,26,0,1,NEW_TABLE,cols differ

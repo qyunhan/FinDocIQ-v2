@@ -1,0 +1,46 @@
+{
+  "document": "DBS_1Q26_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "selected_income_statement_items_m_p6",
+  "section_ids": [
+    "selected_income_statement_items_m"
+  ],
+  "section_titles": [
+    "Selected income statement items ($m)"
+  ],
+  "pages": [
+    6
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 22,
+  "usage": {
+    "ts": "2026-07-30T02:40:50",
+    "script": "extract_to_excel",
+    "label": "selected_income_statement_items_m_p6",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3907,
+    "output_tokens": 4125,
+    "thinking_tokens": 0,
+    "total_tokens": 8032,
+    "est_cost_usd": 0.04299,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=4x json=1x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Net interest income' [Selected income statement item]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

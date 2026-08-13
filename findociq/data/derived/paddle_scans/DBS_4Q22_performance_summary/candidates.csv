@@ -1,0 +1,57 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,95.57,69.49,To:Shareholders,9.96,False,left,False
+1,141.41,69.41,Financial Results forthe YearEnded31 December 2022,9.96,True,left,False
+1,182.29,69.96,Dividends,9.96,True,left,False
+1,360.48,71.92,In $millions,9.96,True,left,False
+1,388.34,71.97,DBSH Ordinary shares,9.96,True,left,False
+1,594.48,69.69,By order oftheBoard,9.96,False,left,False
+2,328.6,337.87,PerformanceSummary,16.0,True,center,False
+2,365.44,391.27,FinancialResults,16.0,False,center,False
+2,383.8,373.51,FortheYearEnded,16.0,False,center,False
+2,402.28,376.99,31December2022,16.0,False,center,True
+3,82.22,54.0,ContentsPage,12.0,True,left,False
+4,74.57,52.85,OVERVIEW,9.0,True,left,False
+7,71.61,52.35,Second Half,9.0,True,left,False
+7,71.76,322.15,Fourth Quarter,9.0,True,center,False
+7,589.3,322.34,Full Year,9.0,True,center,False
+14,216.91,52.25,ConsumerBanking/ WealthManagement,9.0,True,left,False
+14,620.72,52.79,Institutional Banking,9.0,True,left,False
+15,71.79,52.36,TreasuryMarkets,9.0,True,left,False
+15,258.71,314.3,Others,9.0,True,center,False
+18,206.35,317.46,Rest of Greater China,9.0,True,center,False
+18,247.05,56.82,Singapore,9.0,True,left,False
+18,431.25,317.61,South andSoutheast Asia,9.0,True,center,False
+18,542.88,57.01,Hong Kong,9.0,True,left,False
+19,71.94,57.27,RestoftheWorld,9.0,True,left,False
+25,91.3,52.02,CAPITAL ADEQUACY,9.96,True,left,False
+25,535.92,48.46,"PILLAR3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDINGRATIO DISCLOSURES",9.0,True,left,False
+25,639.93,51.83,UNREALISED PROPERTY VALUATION SURPLUS,9.0,True,left,False
+34,72.67,64.98,OTHER FINANCIAL INFORMATION,11.04,True,left,False
+34,94.05,65.32,1. Fair Value of Financial Instruments,11.04,True,left,False
+34,147.56,69.49,FairValueHierarchy,9.0,True,left,False
+34,539.6,64.95,2. Off-balance Sheet Items,11.04,True,left,False
+35,72.83,62.57,ADDITIONAL INFORMATION,11.04,True,left,False
+35,95.35,62.7,SHARECAPITAL,9.0,True,left,False
+35,392.5,62.17,INTERESTEDPARTY TRANSACTIONS PURSUANTTOLISTINGRULE 920(1),9.0,True,left,False
+35,446.3,62.0,CONFIRMATION OF DIRECTORS AND EXECUTIVE OFFICERS’ UNDERTAKINGS PURSUANT TO LISTING RULE 720(1),9.0,True,left,False
+35,520.16,61.79,"REPORT OF PERSONSOCCUPYINGMANAGERIALPOSITIONS WHOARE RELATED TO A DIRECTOR, CEOOR SUBSTANTIAL SHAREHOLDER",9.0,True,left,False
+36,118.16,97.28,,0.0,False,left,False
+36,166.97,97.58,,0.0,False,left,False
+36,190.91,97.11,,0.0,False,left,False
+36,322.7,97.87,,0.0,False,left,False
+36,460.22,97.61,,0.0,False,left,False
+36,566.75,96.82,,0.0,False,left,False
+37,166.88,97.42,,0.0,False,center,False
+38,130.01,96.99,,0.0,False,center,False
+38,167.48,97.48,,0.0,False,center,False
+38,525.76,97.34,,0.0,False,right,False
+39,129.97,96.89,,0.0,False,center,False
+39,167.61,97.61,,0.0,False,center,False
+41,568.28,107.55,,0.0,False,left,False
+42,538.89,97.17,,0.0,False,center,False
+43,130.28,96.94,,0.0,False,left,False
+43,323.61,97.47,,0.0,False,left,False
+43,515.23,97.22,,0.0,False,left,False
+44,129.95,96.9,,0.0,False,left,False
+45,128.43,94.17,,0.0,False,center,False
+45,166.54,94.42,,0.0,False,center,False

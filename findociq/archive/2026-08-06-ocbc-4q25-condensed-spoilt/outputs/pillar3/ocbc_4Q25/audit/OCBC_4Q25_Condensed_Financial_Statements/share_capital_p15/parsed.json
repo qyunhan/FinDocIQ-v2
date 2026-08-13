@@ -1,0 +1,743 @@
+{
+  "tables": [
+    {
+      "title": "8. Dividends/distributions",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "8",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary dividends:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Final tax-exempt dividend of 41 cents paid for the previous financial year (2024: tax-exempt dividend of 42 cents)",
+          "values": [
+            {
+              "value": "1,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,891",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Interim tax-exempt dividend of 41 cents paid for the current financial year (2024: tax-exempt dividend of 44 cents)",
+          "values": [
+            {
+              "value": "1,843",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,978",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Special tax-exempt dividend of 16 cents paid for the previous financial year (2024: nil)",
+          "values": [
+            {
+              "value": "720",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Distributions for other equity instruments:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "3.0% perpetual capital securities",
+          "values": [
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "3.9% perpetual capital securities",
+          "values": [
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "4.5% perpetual capital securities",
+          "values": [
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "4.05% perpetual capital securities",
+          "values": [
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "5.398% perpetual capital securities issued by subsidiary",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total dividends and distributions",
+          "values": [
+            {
+              "value": "4,492",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,933",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Share capital",
+      "label_header": "Shares (million)",
+      "continued_from_previous": false,
+      "section_id": "9",
+      "columns": [
+        {
+          "group": "Half year ended 31 Dec (1)",
+          "leaf": "2025"
+        },
+        {
+          "group": "Half year ended 31 Dec (1)",
+          "leaf": "2024"
+        },
+        {
+          "group": "Financial year ended 31 Dec",
+          "leaf": "2025"
+        },
+        {
+          "group": "Financial year ended 31 Dec",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Issued ordinary shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "At beginning of period/year",
+          "values": [
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Cancellation of shares",
+          "values": [
+            {
+              "value": "(14)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(14)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Shares issued to non-executive directors",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h3",
+          "label": "At end of period/year",
+          "values": [
+            {
+              "value": "4,501",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,501",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Treasury shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "At beginning of period/year",
+          "values": [
+            {
+              "value": "(19)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(21)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(15)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(21)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Share buyback",
+          "values": [
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Cancellation of shares",
+          "values": [
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Share Option Scheme",
+          "values": [
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Share Purchase Plan",
+          "values": [
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Treasury shares transferred to DSP Trust",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h4",
+          "label": "At end of period/year",
+          "values": [
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(15)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(15)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total issued ordinary shares excluding treasury shares",
+          "values": [
+            {
+              "value": "4,490",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,500",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,490",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,500",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Issued share capital (S$ million)",
+          "values": [
+            {
+              "value": "17,887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,096",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,096",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Unaudited and unreviewed.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) # represents less than 500,000 shares.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "3.0% perpetual capital securities 6 6"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "3.9% perpetual capital securities 20 20"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "4.5% perpetual capital securities 25 25"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "4.05% perpetual capital securities 18 13"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "5.398% perpetual capital securities issued by subsidiary 16 \u2013"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

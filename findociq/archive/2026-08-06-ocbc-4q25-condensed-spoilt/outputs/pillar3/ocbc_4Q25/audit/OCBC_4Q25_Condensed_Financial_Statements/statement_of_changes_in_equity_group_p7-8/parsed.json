@@ -1,0 +1,3147 @@
+{
+  "tables": [
+    {
+      "title": "STATEMENT OF CHANGES IN EQUITY - GROUP\nFor the financial year ended 31 December 2025",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Share capital and other equity"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Capital reserves (1)"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Fair value reserves"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Revenue reserves"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Total"
+        },
+        {
+          "group": null,
+          "leaf": "Other equity instruments issued by subsidiary"
+        },
+        {
+          "group": null,
+          "leaf": "Non-controlling interests"
+        },
+        {
+          "group": null,
+          "leaf": "Total equity"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 1 January 2025",
+          "values": [
+            {
+              "value": "19,794",
+              "cell_state": "reported"
+            },
+            {
+              "value": "830",
+              "cell_state": "reported"
+            },
+            {
+              "value": "313",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,379",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,316",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,064",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60,380",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Total comprehensive income for the year",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit for the year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "7,422",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,422",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,560",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Other comprehensive income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h1",
+          "label": "Items that may be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Financial assets, at FVOCI\n Fair value gains for the year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "756",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "756",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "788",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 3,
+          "parent": "h2",
+          "label": " Reclassification of gains to income statement",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 4,
+          "parent": "h3",
+          "label": " - on disposal",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(67)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(67)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(71)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 4,
+          "parent": "h3",
+          "label": " - on impairment",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": " Tax on net movements",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(89)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(89)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(95)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Cash flow and other hedges",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(91)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(91)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(91)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Net insurance financial result",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(181)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(181)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(193)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Currency translation on foreign subsidiaries and overseas branches",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(424)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(424)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(424)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Other comprehensive losses of associates",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(230)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(105)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(335)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(335)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h1",
+          "label": "Items that will not be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Currency translation on foreign operations attributable to non-controlling interests",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(44)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(44)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Equity instruments, at FVOCI, net change in fair value",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "69",
+              "cell_state": "reported"
+            },
+            {
+              "value": "91",
+              "cell_state": "reported"
+            },
+            {
+              "value": "160",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "171",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Defined benefit plans remeasurements",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Own credit",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h1",
+          "label": "Total other comprehensive income, net of tax",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "436",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(708)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(272)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(23)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(295)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income for the year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "436",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,714",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,265",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Transactions with owners, recorded directly in equity",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Contributions by and distributions to owners",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Transfers",
+          "values": [
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(82)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Buy-back of shares for holding as treasury shares",
+          "values": [
+            {
+              "value": "(220)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(220)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(220)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Cancellation of shares",
+          "values": [
+            {
+              "value": "(225)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(225)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(225)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Dividends and distributions",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(4,492)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,492)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(53)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,545)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "DSP reserve from dividends on unvested shares",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Perpetual capital securities issued",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "676",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "676",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Share-based payments for staff costs",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Shares issued to non-executive directors",
+          "values": [
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Shares transferred to DSP Trust",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(18)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(18)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(18)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Shares vested under DSP Scheme",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "132",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Treasury shares transferred/sold",
+          "values": [
+            {
+              "value": "223",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(103)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "120",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "120",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total contributions by and distributions to owners",
+          "values": [
+            {
+              "value": "(209)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(65)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(4,424)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,698)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "676",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(53)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,075)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "At 31 December 2025",
+          "values": [
+            {
+              "value": "19,585",
+              "cell_state": "reported"
+            },
+            {
+              "value": "765",
+              "cell_state": "reported"
+            },
+            {
+              "value": "749",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,669",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61,768",
+              "cell_state": "reported"
+            },
+            {
+              "value": "676",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,126",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63,570",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Included in the balances:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h6",
+          "label": "Share of reserves of associates",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "369",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,455",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,824",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,824",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Included regulatory loss allowance reserve of S$455 million at 1 January 2025 and S$445 million at 31 December 2025.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) # represents amounts less than S$0.5 million.",
+          "values": []
+        }
+      ]
+    },
+    {
+      "title": "STATEMENT OF CHANGES IN EQUITY - GROUP\nFor the financial year ended 31 December 2024",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Share capital and other equity"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Capital reserves (1)"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Fair value reserves"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Revenue reserves"
+        },
+        {
+          "group": "Attributable to equity holders of the Bank",
+          "leaf": "Total"
+        },
+        {
+          "group": null,
+          "leaf": "Other equity instruments issued by subsidiary"
+        },
+        {
+          "group": null,
+          "leaf": "Non-controlling interests"
+        },
+        {
+          "group": null,
+          "leaf": "Total equity"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 1 January 2024",
+          "values": [
+            {
+              "value": "19,293",
+              "cell_state": "reported"
+            },
+            {
+              "value": "815",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(439)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,501",
+              "cell_state": "reported"
+            },
+            {
+              "value": "54,170",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,384",
+              "cell_state": "reported"
+            },
+            {
+              "value": "55,554",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Total comprehensive income for the year",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit for the year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "7,587",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,587",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "161",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,748",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Other comprehensive income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h11",
+          "label": "Items that may be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h12",
+          "label": "Financial assets, at FVOCI\n Fair value gains/(losses) for the year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "351",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "351",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(7)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "344",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 3,
+          "parent": "h12",
+          "label": " Reclassification of (gains)/losses to income statement",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 4,
+          "parent": "h13",
+          "label": " - on disposal",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(17)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(17)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 4,
+          "parent": "h13",
+          "label": " - on impairment",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h12",
+          "label": " Tax on net movements",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(22)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(22)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(21)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h11",
+          "label": "Cash flow and other hedges",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h11",
+          "label": "Net insurance financial result",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(74)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(74)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(77)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h11",
+          "label": "Currency translation on foreign subsidiaries and overseas branches",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "334",
+              "cell_state": "reported"
+            },
+            {
+              "value": "334",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "334",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h11",
+          "label": "Other comprehensive income of associates",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "365",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "388",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h11",
+          "label": "Items that will not be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h14",
+          "label": "Currency translation on foreign operations attributable to non-controlling interests",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h14",
+          "label": "Equity instruments, at FVOCI, net change in fair value",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "78",
+              "cell_state": "reported"
+            },
+            {
+              "value": "72",
+              "cell_state": "reported"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            },
+            {
+              "value": "172",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h14",
+          "label": "Defined benefit plans remeasurements",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h14",
+          "label": "Own credit",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h11",
+          "label": "Total other comprehensive income, net of tax",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "752",
+              "cell_state": "reported"
+            },
+            {
+              "value": "424",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,176",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,191",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income for the year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "752",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,011",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,763",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "176",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,939",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Transactions with owners, recorded directly in equity",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Contributions by and distributions to owners",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Transfers",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Buy-back of shares for holding as treasury shares",
+          "values": [
+            {
+              "value": "(194)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(194)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(194)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Dividends and distributions",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3,933)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,933)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(54)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,987)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "DSP reserve from dividends on unvested shares",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Perpetual capital securities issued",
+          "values": [
+            {
+              "value": "450",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "450",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "450",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Share-based payments for staff costs",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Shares issued to non-executive directors",
+          "values": [
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Shares transferred to DSP Trust",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(16)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(16)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(16)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Shares vested under DSP Scheme",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "107",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h15",
+          "label": "Treasury shares transferred/sold",
+          "values": [
+            {
+              "value": "228",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(76)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "152",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "152",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total contributions by and distributions to owners",
+          "values": [
+            {
+              "value": "501",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(3,932)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,416)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(54)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,470)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Changes in non-controlling interest",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(201)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(201)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(442)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(643)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "At 31 December 2024",
+          "values": [
+            {
+              "value": "19,794",
+              "cell_state": "reported"
+            },
+            {
+              "value": "830",
+              "cell_state": "reported"
+            },
+            {
+              "value": "313",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,379",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,316",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,064",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60,380",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Included in the balances:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h16",
+          "label": "Share of reserves of associates",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "600",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,789",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,389",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,389",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Included regulatory loss allowance reserve of S$455 million at 1 January 2024 and 31 December 2024.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) # represents amounts less than S$0.5 million.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the year"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Profit for the year \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Other comprehensive income"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Items that may be reclassified subsequently to income statement:"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Financial assets, at FVOCI Fair value gains for the year \u2013 \u2013"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Reclassification of gains to income statement"
+          },
+          {
+            "line_id": 20,
+            "indent": 1,
+            "label_clean": "- on disposal \u2013 \u2013"
+          },
+          {
+            "line_id": 21,
+            "indent": 1,
+            "label_clean": "- on impairment \u2013 \u2013"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Tax on net movements \u2013 \u2013"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Cash flow and other hedges \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Net insurance financial result \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Currency translation on foreign subsidiaries and overseas branches \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Other comprehensive losses of associates \u2013 \u2013"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Items that will not be reclassified subsequently to income statement:"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Currency translation on foreign operations attributable to non-controlling interests \u2013 \u2013 \u2013 \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Equity instruments, at FVOCI, net change in fair value \u2013 \u2013"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Defined benefit plans remeasurements \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 35,
+            "indent": 0,
+            "label_clean": "Own credit \u2013 \u2013 \u2013 (#) (#) \u2013 \u2013 (#)"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Total other comprehensive income, net of tax \u2013 \u2013"
+          },
+          {
+            "line_id": 78,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the year"
+          },
+          {
+            "line_id": 106,
+            "indent": 0,
+            "label_clean": "Transactions with owners, recorded directly in equity"
+          },
+          {
+            "line_id": 108,
+            "indent": 0,
+            "label_clean": "Contributions by and distributions to owners"
+          },
+          {
+            "line_id": 110,
+            "indent": 0,
+            "label_clean": "Transfers"
+          },
+          {
+            "line_id": 111,
+            "indent": 0,
+            "label_clean": "Buy-back of shares for holding as treasury shares"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 113,
+            "indent": 0,
+            "label_clean": "Dividends and distributions \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 114,
+            "indent": 0,
+            "label_clean": "DSP reserve from dividends on unvested shares \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 116,
+            "indent": 0,
+            "label_clean": "Perpetual capital securities issued"
+          },
+          {
+            "line_id": 117,
+            "indent": 0,
+            "label_clean": "Share-based payments for staff costs \u2013"
+          },
+          {
+            "line_id": 118,
+            "indent": 0,
+            "label_clean": "Shares issued to non-executive directors"
+          },
+          {
+            "line_id": 119,
+            "indent": 0,
+            "label_clean": "Shares transferred to DSP Trust \u2013"
+          },
+          {
+            "line_id": 120,
+            "indent": 0,
+            "label_clean": "Shares vested under DSP Scheme \u2013"
+          },
+          {
+            "line_id": 121,
+            "indent": 0,
+            "label_clean": "Treasury shares transferred/sold"
+          },
+          {
+            "line_id": 122,
+            "indent": 0,
+            "label_clean": "Total contributions by and distributions to owners"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 126,
+            "indent": 0,
+            "label_clean": "Included in the balances:"
+          },
+          {
+            "line_id": 127,
+            "indent": 0,
+            "label_clean": "Share of reserves of associates \u2013 \u2013"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 129,
+            "indent": 2,
+            "label_clean": "# represents amounts less than S$0.5 million."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the year"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Profit for the year \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Other comprehensive income"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Items that may be reclassified subsequently to income statement:"
+          },
+          {
+            "line_id": 83,
+            "indent": 0,
+            "label_clean": "Financial assets, at FVOCI Fair value gains/(losses) for the year \u2013 \u2013"
+          },
+          {
+            "line_id": 85,
+            "indent": 1,
+            "label_clean": "Reclassification of (gains)/losses to income statement"
+          },
+          {
+            "line_id": 87,
+            "indent": 1,
+            "label_clean": "- on disposal \u2013 \u2013"
+          },
+          {
+            "line_id": 88,
+            "indent": 1,
+            "label_clean": "- on impairment \u2013 \u2013"
+          },
+          {
+            "line_id": 89,
+            "indent": 1,
+            "label_clean": "Tax on net movements \u2013 \u2013"
+          },
+          {
+            "line_id": 90,
+            "indent": 0,
+            "label_clean": "Cash flow and other hedges \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 91,
+            "indent": 0,
+            "label_clean": "Net insurance financial result \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 92,
+            "indent": 0,
+            "label_clean": "Currency translation on foreign subsidiaries and overseas branches \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 94,
+            "indent": 0,
+            "label_clean": "Other comprehensive income of associates \u2013 \u2013"
+          },
+          {
+            "line_id": 95,
+            "indent": 0,
+            "label_clean": "Items that will not be reclassified subsequently to income statement:"
+          },
+          {
+            "line_id": 97,
+            "indent": 0,
+            "label_clean": "Currency translation on foreign operations attributable to non-controlling interests \u2013 \u2013 \u2013 \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 99,
+            "indent": 0,
+            "label_clean": "Equity instruments, at FVOCI, net change in fair value \u2013 \u2013"
+          },
+          {
+            "line_id": 101,
+            "indent": 0,
+            "label_clean": "Defined benefit plans remeasurements \u2013 \u2013 \u2013 # # \u2013 # #"
+          },
+          {
+            "line_id": 102,
+            "indent": 0,
+            "label_clean": "Own credit \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 103,
+            "indent": 0,
+            "label_clean": "Total other comprehensive income, net of tax \u2013 \u2013"
+          },
+          {
+            "line_id": 105,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the year \u2013 \u2013"
+          },
+          {
+            "line_id": 106,
+            "indent": 0,
+            "label_clean": "Transactions with owners, recorded directly in equity"
+          },
+          {
+            "line_id": 108,
+            "indent": 0,
+            "label_clean": "Contributions by and distributions to owners"
+          },
+          {
+            "line_id": 110,
+            "indent": 0,
+            "label_clean": "Transfers"
+          },
+          {
+            "line_id": 111,
+            "indent": 0,
+            "label_clean": "Buy-back of shares for holding as treasury shares"
+          },
+          {
+            "line_id": 113,
+            "indent": 0,
+            "label_clean": "Dividends and distributions \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 114,
+            "indent": 0,
+            "label_clean": "DSP reserve from dividends on unvested shares \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 116,
+            "indent": 0,
+            "label_clean": "Perpetual capital securities issued"
+          },
+          {
+            "line_id": 117,
+            "indent": 0,
+            "label_clean": "Share-based payments for staff costs \u2013"
+          },
+          {
+            "line_id": 118,
+            "indent": 0,
+            "label_clean": "Shares issued to non-executive directors"
+          },
+          {
+            "line_id": 119,
+            "indent": 0,
+            "label_clean": "Shares transferred to DSP Trust \u2013"
+          },
+          {
+            "line_id": 120,
+            "indent": 0,
+            "label_clean": "Shares vested under DSP Scheme \u2013"
+          },
+          {
+            "line_id": 121,
+            "indent": 0,
+            "label_clean": "Treasury shares transferred/sold"
+          },
+          {
+            "line_id": 122,
+            "indent": 0,
+            "label_clean": "Total contributions by and distributions to owners"
+          },
+          {
+            "line_id": 124,
+            "indent": 0,
+            "label_clean": "Changes in non-controlling interest \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 126,
+            "indent": 0,
+            "label_clean": "Included in the balances:"
+          },
+          {
+            "line_id": 127,
+            "indent": 0,
+            "label_clean": "Share of reserves of associates \u2013 \u2013"
+          },
+          {
+            "line_id": 128,
+            "indent": 2,
+            "label_clean": "Included regulatory loss allowance reserve of S$455 million at 1 January 2024 and 31 December 2024."
+          },
+          {
+            "line_id": 129,
+            "indent": 2,
+            "label_clean": "# represents amounts less than S$0.5 million."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

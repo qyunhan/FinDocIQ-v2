@@ -1,0 +1,284 @@
+{
+  "tables": [
+    {
+      "title": "8. Dividends/distributions",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "8",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "1H 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "1H 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary dividends:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "2024 final tax-exempt dividend of 41 cents",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,844",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "2024 special tax-exempt dividend of 16 cents",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "720",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "2025 final tax-exempt dividend of 42 cents",
+          "values": [
+            {
+              "value": "1,886",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "2025 special tax-exempt dividend of 16 cents",
+          "values": [
+            {
+              "value": "718",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Distributions for other equity instruments:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "3.0% perpetual capital securities",
+          "values": [
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "3.9% perpetual capital securities",
+          "values": [
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "4.5% perpetual capital securities",
+          "values": [
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "4.05% perpetual capital securities",
+          "values": [
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "5.398% perpetual capital securities issued by subsidiary",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total dividends and distributions",
+          "values": [
+            {
+              "value": "2,655",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,599",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 46,
+            "indent": 0,
+            "label_clean": "Ordinary dividends:"
+          },
+          {
+            "line_id": 47,
+            "indent": 0,
+            "label_clean": "2024 final tax-exempt dividend of 41 cents \u2013 1,844"
+          },
+          {
+            "line_id": 48,
+            "indent": 0,
+            "label_clean": "2024 special tax-exempt dividend of 16 cents \u2013 720"
+          },
+          {
+            "line_id": 49,
+            "indent": 0,
+            "label_clean": "2025 final tax-exempt dividend of 42 cents 1,886 \u2013"
+          },
+          {
+            "line_id": 50,
+            "indent": 0,
+            "label_clean": "2025 special tax-exempt dividend of 16 cents 718 \u2013"
+          },
+          {
+            "line_id": 52,
+            "indent": 0,
+            "label_clean": "Distributions for other equity instruments:"
+          },
+          {
+            "line_id": 53,
+            "indent": 0,
+            "label_clean": "3.0% perpetual capital securities 3 3"
+          },
+          {
+            "line_id": 54,
+            "indent": 0,
+            "label_clean": "3.9% perpetual capital securities 10 10"
+          },
+          {
+            "line_id": 55,
+            "indent": 0,
+            "label_clean": "4.5% perpetual capital securities 12 12"
+          },
+          {
+            "line_id": 56,
+            "indent": 0,
+            "label_clean": "4.05% perpetual capital securities 10 10"
+          },
+          {
+            "line_id": 57,
+            "indent": 0,
+            "label_clean": "5.398% perpetual capital securities issued by subsidiary 16 \u2013"
+          },
+          {
+            "line_id": 58,
+            "indent": 0,
+            "label_clean": "Total dividends and distributions 2,655 2,599"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

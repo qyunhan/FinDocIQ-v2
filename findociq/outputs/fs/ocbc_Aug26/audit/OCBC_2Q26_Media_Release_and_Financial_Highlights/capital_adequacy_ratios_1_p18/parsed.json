@@ -1,0 +1,420 @@
+{
+  "tables": [
+    {
+      "title": "CAPITAL ADEQUACY RATIOS 1/",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2026"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary shares",
+          "values": [
+            {
+              "value": "17,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,007",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disclosed reserves/others",
+          "values": [
+            {
+              "value": "35,998",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,948",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,284",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Regulatory adjustments",
+          "values": [
+            {
+              "value": "(11,516)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10,897)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10,551)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Common Equity Tier 1 Capital",
+          "values": [
+            {
+              "value": "42,326",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,938",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,740",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Additional Tier 1 capital",
+          "values": [
+            {
+              "value": "1,738",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,738",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,737",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Regulatory adjustments",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Tier 1 Capital",
+          "values": [
+            {
+              "value": "44,064",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43,676",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42,477",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Tier 2 capital",
+          "values": [
+            {
+              "value": "5,257",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,508",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,399",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Regulatory adjustments",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Eligible Capital",
+          "values": [
+            {
+              "value": "49,321",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48,184",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46,876",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Risk Weighted Assets",
+          "values": [
+            {
+              "value": "270,267",
+              "cell_state": "reported"
+            },
+            {
+              "value": "248,845",
+              "cell_state": "reported"
+            },
+            {
+              "value": "238,964",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Capital Adequacy Ratios",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Common Equity Tier 1",
+          "values": [
+            {
+              "value": "15.7%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.0%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Tier 1",
+          "values": [
+            {
+              "value": "16.3%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.8%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "18.2%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.4%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.6%",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Ordinary shares"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Tier 1 Capital"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Tier 2 capital"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Tier 1"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

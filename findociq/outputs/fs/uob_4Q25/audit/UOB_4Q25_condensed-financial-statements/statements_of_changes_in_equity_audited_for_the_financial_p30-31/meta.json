@@ -1,0 +1,68 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statements_of_changes_in_equity_audited_for_the_financial_p30-31",
+  "section_ids": [
+    "statements_of_changes_in_equity_audited_for_the_financial"
+  ],
+  "section_titles": [
+    "Statements of Changes in Equity (Audited) for the financial year ended 31 December 2025"
+  ],
+  "pages": [
+    30,
+    31
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 4,
+  "n_rows": 45,
+  "usage": {
+    "ts": "2026-08-07T10:14:45",
+    "script": "extract_to_excel",
+    "label": "statements_of_changes_in_equity_audited_for_the_financial_p30-31",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4557,
+    "output_tokens": 8095,
+    "thinking_tokens": 0,
+    "total_tokens": 12652,
+    "est_cost_usd": 0.07969,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1800' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6226' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4834' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9733' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9957' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.70' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6487' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3852' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3363' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6561' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2798' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '752' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '045' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '709' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '674' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '033' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '515' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '534' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '190' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '600' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '765' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '429' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '193' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '528' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

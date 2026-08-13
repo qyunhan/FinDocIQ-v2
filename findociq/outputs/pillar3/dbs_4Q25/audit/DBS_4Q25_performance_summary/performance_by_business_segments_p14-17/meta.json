@@ -1,0 +1,90 @@
+{
+  "unit_id": "performance_by_business_segments_p14-17",
+  "pages": [
+    14,
+    15,
+    16,
+    17
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 7050,
+    "output_tokens": 11381,
+    "thinking_tokens": 0,
+    "total_tokens": 18431,
+    "est_cost_usd": 0.11301,
+    "batch": 0
+  },
+  "chunks": 2,
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "performance_by_business_segments"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY BUSINESS SEGMENTS"
+  ],
+  "n_tables": 2,
+  "n_rows": 75,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2.84' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '2.15' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.26' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.01' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.54' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '10.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.11' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.44' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.50' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.64' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.40' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.11' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.29' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.53' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.73' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8.91' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.95' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.37' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.50' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '239' pdf=4x json=2x (missing from extraction)",
+      "  deficit: '593' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '422' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '270' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '175' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '499' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '810' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '241' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '568' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '232' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x5: 'Net interest income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Net fee and commission income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Other non-interest income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Total income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Expenses' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Amortisation of intangible assets' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Allowances for credit and other losses' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Share of profits/losses of associates an' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Profit before tax' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Total assets before goodwill and intangi' [Selected balance sheet and oth]",
+      "  duplicate row label x3: 'Goodwill and intangible assets' [Selected balance sheet and oth]",
+      "  duplicate row label x3: 'Total assets' [Selected balance sheet and oth]",
+      "  duplicate row label x3: 'Total liabilities' [Selected balance sheet and oth]"
+    ],
+    "letter_leaf_issues": []
+  }
+}

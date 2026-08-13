@@ -1,0 +1,55 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,91.17,70.38,To:Shareholders,9.96,False,left,False
+1,167.53,69.91,Dividends,9.96,True,left,False
+1,353.08,71.6,In $millions,9.96,True,left,False
+1,375.53,71.82,DBSH Ordinary shares,9.96,True,left,False
+1,594.31,69.73,By order of theBoard,9.96,False,left,False
+2,318.16,337.87,PerformanceSummary,16.0,True,center,False
+2,355.0,391.27,FinancialResults,16.0,False,center,False
+2,373.36,373.51,FortheYearEnded,16.0,False,center,False
+2,391.72,376.99,31December2025,16.0,False,center,True
+3,75.26,54.0,ContentsPage,12.0,True,left,False
+4,73.44,49.42,OVERVIEW,9.0,True,left,False
+6,785.07,517.9,4,10.0,False,center,False
+8,785.07,517.9,6,10.0,False,right,False
+9,73.09,49.3,Second Half,9.0,True,left,False
+9,143.79,302.46,Fourth Quarter,9.0,True,center,False
+9,563.71,302.59,Full Year,9.0,True,center,False
+16,219.16,49.14,ConsumerBanking/ WealthManagement,9.0,True,left,False
+16,612.15,49.23,Institutional Banking,9.0,True,left,False
+17,73.58,49.5,MarketsTrading,9.0,True,left,False
+17,228.91,311.77,Others,9.0,True,center,False
+20,248.59,48.85,Singapore,9.0,True,left,False
+20,436.33,311.24,Rest of Greater China,9.0,True,center,False
+20,678.61,48.9,Hong Kong,9.0,True,left,False
+21,73.53,311.53,Rest of theWorld,9.0,True,center,False
+21,73.77,49.11,South andSoutheast Asia,9.0,True,left,False
+28,541.22,44.97,"PILLAR3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDINGRATIO DISCLOSURES",9.0,True,left,False
+28,645.01,45.31,UNREALISEDPROPERTY VALUATION SURPLUS,9.0,True,left,False
+37,73.79,45.91,OTHER FINANCIAL INFORMATION,11.04,True,left,False
+37,97.1,45.96,1. Fair Value Measurement,11.04,True,left,False
+37,150.67,48.52,FairValueHierarchy,9.0,True,left,False
+37,582.35,45.18,2. Off-balance Sheet Items,11.04,True,left,False
+38,74.16,46.43,ADDITIONAL INFORMATION,11.04,True,left,False
+38,96.43,46.75,SHARE CAPITAL,9.0,True,left,False
+38,484.71,46.37,INTERESTEDPARTY TRANSACTIONSPURSUANT TOLISTINGRULE 920(1),9.0,True,left,False
+38,535.97,46.35,CONFIRMATION OF DIRECTORS AND EXECUTIVE OFFICERS’ UNDERTAKINGS PURSUANT TO LISTING RULE 720(1),9.0,True,left,False
+38,597.96,46.25,"REPORT OF PERSONSOCCUPYINGMANAGERIAL POSITIONS WHOARE RELATED TO A DIRECTOR, CEOOR SUBSTANTIAL SHAREHOLDER",9.0,True,left,False
+39,74.92,96.88,INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF DBS GROUP HOLDINGS LTD,9.96,False,center,False
+39,126.09,97.43,Report on the Audit of the Financial Statements,9.96,False,center,False
+39,149.65,97.07,Our Opinion,9.96,False,center,False
+39,269.31,98.09,What we have audited,9.96,False,center,False
+39,292.85,96.67,The financialstatements of theCompanyand the Groupcomprise:,9.96,False,center,False
+39,418.09,97.62,Basis for Opinion,9.96,False,center,False
+39,524.83,96.74,Independence,9.96,False,center,False
+40,429.64,270.52,Key audit matters,9.96,False,center,False
+41,109.39,54.6,Materiality,9.96,False,left,False
+41,455.96,54.04,Howwe developed theauditscope,9.96,False,left,False
+42,109.18,55.27,Keyauditmatters,9.96,False,left,False
+42,193.28,265.6,How our audit addressed the key audit matter,9.96,False,center,False
+42,193.4,65.3,Key audit matter,9.96,False,center,False
+42,217.59,64.93,Specific allowances for loans and advances to customers,9.96,False,center,False
+44,632.51,54.64,Other Information,9.96,False,left,False
+45,265.37,54.27,Responsibilities of Management and Directors for the Financial Statements,9.96,False,left,False
+45,457.17,54.78,Auditor’s Responsibilities for the Audit of the Financial Statements,9.96,False,left,False
+46,457.69,56.15,Report on Other Legaland RegulatoryRequirements,10.0,True,left,False

@@ -1,0 +1,351 @@
+{
+  "doc_id": "OCBC_4Q25_Media_Release_and_Financial_Highlights",
+  "source_pdf": "findociq/data/sources/financial_statements/OCBC/2025/4Q25/OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "FY25 Performance Highlights",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Full Year 2025 Performance",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "FY25 Year-on-Year Performance",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "Fourth Quarter 2025 Performance",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "4Q25 Year-on-Year Performance",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "4Q25 Quarter-on-Quarter Performance",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "title": "Asset Quality and Allowances",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "Non-performing assets (\u201cNPAs\u201d)",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "title": "Allowances",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "Dividend",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "title": "Message from Group CEO, Tan Teck Long",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "title": "Selected Income Statement Items",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "title": "Selected Balance Sheet Items",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "title": "Selected Income Statement Items",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "title": "Selected Balance Sheet Items",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "Key Financial Ratios (%)",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "title": "Performance ratios",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Revenue mix/efficiency ratios",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Capital adequacy ratios 8/ 9/",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Leverage ratio 5/ 8/ 9/",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Liquidity coverage ratios 6/ 8/",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Net stable funding ratio 7/ 8/",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Earnings per share (S$) 2/",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "Net asset value per share (S$)",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "NET INTEREST INCOME",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "Average Balance Sheet",
+      "page": 13,
+      "level": 3
+    },
+    {
+      "title": "Volume and Rate Analysis",
+      "page": 13,
+      "level": 3
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "title": "NON-INTEREST INCOME",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 15,
+      "level": 1
+    },
+    {
+      "title": "OPERATING EXPENSES",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "title": "LOANS TO CUSTOMERS",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "By Maturity",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "By Industry",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "By Currency",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "By Geography 1/",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "title": "NON-PERFORMING ASSETS",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 18,
+      "level": 1
+    },
+    {
+      "title": "NON-PERFORMING ASSETS (continued)",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "NPLs by Industry",
+      "page": 18,
+      "level": 3
+    },
+    {
+      "title": "NPAs by Period Overdue",
+      "page": 18,
+      "level": 3
+    },
+    {
+      "title": "Restructured Loans",
+      "page": 18,
+      "level": 3
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 19,
+      "level": 1
+    },
+    {
+      "title": "DEPOSITS",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "Total Deposits by Maturity",
+      "page": 19,
+      "level": 3
+    },
+    {
+      "title": "Non-Bank Deposits by Product",
+      "page": 19,
+      "level": 3
+    },
+    {
+      "title": "Non-Bank Deposits by Currency",
+      "page": 19,
+      "level": 3
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 20,
+      "level": 1
+    },
+    {
+      "title": "CAPITAL ADEQUACY RATIOS 1/",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Capital Adequacy Ratios",
+      "page": 20,
+      "level": 3
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENT",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "Profit Before Income Tax by Business Segment",
+      "page": 21,
+      "level": 3
+    },
+    {
+      "title": "Global Consumer/Private Banking",
+      "page": 21,
+      "level": 3
+    },
+    {
+      "title": "Global Wholesale Banking",
+      "page": 21,
+      "level": 3
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENT (continued)",
+      "page": 22,
+      "level": 2
+    },
+    {
+      "title": "Global Markets",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "Insurance",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "Others",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "About OCBC",
+      "page": 23,
+      "level": 1
+    }
+  ],
+  "contents_page_number": null,
+  "contents_page_text": "",
+  "n_pages": 23
+}

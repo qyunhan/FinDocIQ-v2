@@ -1,0 +1,57 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "off_balance_sheet_items_p33",
+  "section_ids": [
+    "off_balance_sheet_items"
+  ],
+  "section_titles": [
+    "2. Off-balance Sheet Items"
+  ],
+  "pages": [
+    33
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 5,
+  "usage": {
+    "ts": "2026-08-06T09:22:40",
+    "script": "extract_to_excel",
+    "label": "off_balance_sheet_items_p33",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3897,
+    "output_tokens": 796,
+    "thinking_tokens": 0,
+    "total_tokens": 4693,
+    "est_cost_usd": 0.01301,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '389724' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '373188' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '363808' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "2. Off-balance Sheet Items",
+      "anchor_label": "2. Off-balance Sheet Items",
+      "anchor_y": 131.15,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

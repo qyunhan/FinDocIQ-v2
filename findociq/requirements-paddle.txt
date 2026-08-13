@@ -1,0 +1,10 @@
+# Deps for the isolated .venv-paddle used by pipeline/discover/section/candidates.py
+# (STEP 0 PaddleOCR layout scan). Pinned versions are load-bearing — see
+# findociq/docs/2026-07-24-ingest-handoff.md and the paddle-mkldnn-workaround memory:
+# paddlepaddle 3.3.1 crashes on CPU via the oneDNN/PIR path unless patched
+# (tools/setup_paddle_venv.sh writes the sitecustomize.py fix).
+paddlepaddle==3.3.1
+paddleocr==3.7.0
+paddlex==3.7.2
+pdfplumber>=0.11.9
+pandas>=2.0.0

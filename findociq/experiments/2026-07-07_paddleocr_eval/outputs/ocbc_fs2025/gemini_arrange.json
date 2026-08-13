@@ -1,0 +1,1375 @@
+{
+  "sections": [
+    {
+      "id": "income_statements",
+      "title": "Income Statements",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 1,
+      "last_page": 1
+    },
+    {
+      "id": "comprehensive_income",
+      "title": "Statements of Comprehensive Income",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 2,
+      "last_page": 2
+    },
+    {
+      "id": "balance_sheets",
+      "title": "Balance Sheets",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 3,
+      "last_page": 3
+    },
+    {
+      "id": "equity_group",
+      "title": "Statement of Changes in Equity \u2013 Group",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 4,
+      "last_page": 5
+    },
+    {
+      "id": "equity_bank",
+      "title": "Statement of Changes in Equity \u2013 Bank",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 6,
+      "last_page": 6
+    },
+    {
+      "id": "cash_flow",
+      "title": "Consolidated Cash Flow Statement",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 7,
+      "last_page": 7
+    },
+    {
+      "id": "1",
+      "title": "1. General",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 8,
+      "last_page": 8
+    },
+    {
+      "id": "2",
+      "title": "2. Material Accounting Policy Information",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 13,
+      "last_page": 30
+    },
+    {
+      "id": "2.8",
+      "title": "2.8 Property, Plant and Equipment",
+      "level": 2,
+      "parent_id": "2",
+      "first_page": 13,
+      "last_page": 13
+    },
+    {
+      "id": "2.13",
+      "title": "2.13 Insurance and Reinsurance Contracts",
+      "level": 2,
+      "parent_id": "2",
+      "first_page": 21,
+      "last_page": 21
+    },
+    {
+      "id": "2.13.6",
+      "title": "2.13.6 Measurement",
+      "level": 3,
+      "parent_id": "2.13",
+      "first_page": 21,
+      "last_page": 21
+    },
+    {
+      "id": "2.21",
+      "title": "2.21 Critical Accounting Estimates and Judgements",
+      "level": 2,
+      "parent_id": "2",
+      "first_page": 30,
+      "last_page": 30
+    },
+    {
+      "id": "2.21.3",
+      "title": "2.21.3 Insurance Business",
+      "level": 3,
+      "parent_id": "2.21",
+      "first_page": 30,
+      "last_page": 30
+    },
+    {
+      "id": "3",
+      "title": "3. Net Interest Income",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 32,
+      "last_page": 32
+    },
+    {
+      "id": "4",
+      "title": "4. Insurance Service Results and Net Investment and Finance Income/(Expenses) from Life Insurance",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 32,
+      "last_page": 33
+    },
+    {
+      "id": "5",
+      "title": "5. Fees and Commissions (Net)",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 34,
+      "last_page": 34
+    },
+    {
+      "id": "6",
+      "title": "6. Dividends from Subsidiaries and Associates",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 34,
+      "last_page": 34
+    },
+    {
+      "id": "7",
+      "title": "7. Net Trading Income",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 35,
+      "last_page": 35
+    },
+    {
+      "id": "8",
+      "title": "8. Other Income",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 35,
+      "last_page": 35
+    },
+    {
+      "id": "9",
+      "title": "9. Staff Costs and Other Operating Expenses",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 36,
+      "last_page": 36
+    },
+    {
+      "id": "10",
+      "title": "10. Allowances for Loans and Other Assets",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 37,
+      "last_page": 37
+    },
+    {
+      "id": "11",
+      "title": "11. Income Tax Expense",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 37,
+      "last_page": 37
+    },
+    {
+      "id": "12",
+      "title": "12. Earnings Per Share",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 38,
+      "last_page": 38
+    },
+    {
+      "id": "13",
+      "title": "13. Share Capital",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 39,
+      "last_page": 41
+    },
+    {
+      "id": "13.2",
+      "title": "13.2 Share Option Scheme",
+      "level": 2,
+      "parent_id": "13",
+      "first_page": 40,
+      "last_page": 40
+    },
+    {
+      "id": "13.3",
+      "title": "13.3 Employee Share Purchase Plan",
+      "level": 2,
+      "parent_id": "13",
+      "first_page": 40,
+      "last_page": 40
+    },
+    {
+      "id": "13.4",
+      "title": "13.4 Deferred Share Plan",
+      "level": 2,
+      "parent_id": "13",
+      "first_page": 41,
+      "last_page": 41
+    },
+    {
+      "id": "14",
+      "title": "14. Other Equity Instruments",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 42,
+      "last_page": 42
+    },
+    {
+      "id": "15",
+      "title": "15. Capital Reserves",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 44,
+      "last_page": 44
+    },
+    {
+      "id": "16",
+      "title": "16. Revenue Reserves",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 44,
+      "last_page": 46
+    },
+    {
+      "id": "16.1",
+      "title": "16.1 Unappropriated Profit",
+      "level": 2,
+      "parent_id": "16",
+      "first_page": 45,
+      "last_page": 45
+    },
+    {
+      "id": "16.2",
+      "title": "16.2 General Reserves",
+      "level": 2,
+      "parent_id": "16",
+      "first_page": 46,
+      "last_page": 46
+    },
+    {
+      "id": "16.3",
+      "title": "16.3 Cash Flow and Other Hedge Reserves",
+      "level": 2,
+      "parent_id": "16",
+      "first_page": 46,
+      "last_page": 46
+    },
+    {
+      "id": "17",
+      "title": "17. Deposits and Balances of Non-Bank Customers and Banks",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 47,
+      "last_page": 47
+    },
+    {
+      "id": "18",
+      "title": "18. Derivative Financial Instruments",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 48,
+      "last_page": 49
+    },
+    {
+      "id": "19",
+      "title": "19. Other Liabilities",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 50,
+      "last_page": 50
+    },
+    {
+      "id": "20",
+      "title": "20. Deferred Tax",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 50,
+      "last_page": 51
+    },
+    {
+      "id": "21",
+      "title": "21. Debt Issued",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 52,
+      "last_page": 56
+    },
+    {
+      "id": "21.1",
+      "title": "21.1 Subordinated Debt",
+      "level": 2,
+      "parent_id": "21",
+      "first_page": 52,
+      "last_page": 52
+    },
+    {
+      "id": "21.2",
+      "title": "21.2 Fixed and Floating Rate Notes",
+      "level": 2,
+      "parent_id": "21",
+      "first_page": 54,
+      "last_page": 54
+    },
+    {
+      "id": "21.3",
+      "title": "21.3 Commercial Paper",
+      "level": 2,
+      "parent_id": "21",
+      "first_page": 55,
+      "last_page": 55
+    },
+    {
+      "id": "21.4",
+      "title": "21.4 Structured Notes",
+      "level": 2,
+      "parent_id": "21",
+      "first_page": 55,
+      "last_page": 55
+    },
+    {
+      "id": "21.5",
+      "title": "21.5 Covered Bonds",
+      "level": 2,
+      "parent_id": "21",
+      "first_page": 56,
+      "last_page": 56
+    },
+    {
+      "id": "22",
+      "title": "22. Assets and Liabilities for Life Insurance Funds",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 57,
+      "last_page": 62
+    },
+    {
+      "id": "22.4",
+      "title": "22.4 Amounts Determined on Transition to SFRS(I)17",
+      "level": 2,
+      "parent_id": "22",
+      "first_page": 61,
+      "last_page": 61
+    },
+    {
+      "id": "23",
+      "title": "23. Cash and Placements with Central Banks",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 62,
+      "last_page": 62
+    },
+    {
+      "id": "24",
+      "title": "24. Government Treasury Bills and Securities",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 63,
+      "last_page": 63
+    },
+    {
+      "id": "25",
+      "title": "25. Placements with and Loans to Banks",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 63,
+      "last_page": 63
+    },
+    {
+      "id": "26",
+      "title": "26. Loans to Customers",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 64,
+      "last_page": 64
+    },
+    {
+      "id": "27",
+      "title": "27. Non-Performing Assets",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 65,
+      "last_page": 66
+    },
+    {
+      "id": "27.4",
+      "title": "27.4 Restructured/Renegotiated Loans",
+      "level": 2,
+      "parent_id": "27",
+      "first_page": 66,
+      "last_page": 66
+    },
+    {
+      "id": "28",
+      "title": "28. Allowances for Impaired Loans to Customers",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 67,
+      "last_page": 67
+    },
+    {
+      "id": "29",
+      "title": "29. Debt and Equity Securities",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 68,
+      "last_page": 68
+    },
+    {
+      "id": "30",
+      "title": "30. Allowances for Financial Assets",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 69,
+      "last_page": 72
+    },
+    {
+      "id": "31",
+      "title": "31. Other Assets",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 73,
+      "last_page": 73
+    },
+    {
+      "id": "32",
+      "title": "32. Associates",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 73,
+      "last_page": 75
+    },
+    {
+      "id": "32.1",
+      "title": "32.1 Material Associate",
+      "level": 2,
+      "parent_id": "32",
+      "first_page": 73,
+      "last_page": 74
+    },
+    {
+      "id": "32.3",
+      "title": "32.3 Financial Information of Other Associates",
+      "level": 2,
+      "parent_id": "32",
+      "first_page": 75,
+      "last_page": 75
+    },
+    {
+      "id": "33",
+      "title": "33. Subsidiaries",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 75,
+      "last_page": 77
+    },
+    {
+      "id": "33.2",
+      "title": "33.2 Non-Controlling Interests in Subsidiaries",
+      "level": 2,
+      "parent_id": "33",
+      "first_page": 77,
+      "last_page": 77
+    },
+    {
+      "id": "34",
+      "title": "34. Property, Plant and Equipment",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 78,
+      "last_page": 79
+    },
+    {
+      "id": "35",
+      "title": "35. Investment Property",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 80,
+      "last_page": 80
+    },
+    {
+      "id": "36",
+      "title": "36. Goodwill and Other Intangible Assets",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 81,
+      "last_page": 82
+    },
+    {
+      "id": "37",
+      "title": "37. Segment Information",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 83,
+      "last_page": 85
+    },
+    {
+      "id": "37.1",
+      "title": "37.1 Business Segments",
+      "level": 2,
+      "parent_id": "37",
+      "first_page": 83,
+      "last_page": 85
+    },
+    {
+      "id": "38",
+      "title": "38. Risk Management",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 86,
+      "last_page": 110
+    },
+    {
+      "id": "38.1",
+      "title": "38.1 Overview",
+      "level": 2,
+      "parent_id": "38",
+      "first_page": 86,
+      "last_page": 86
+    },
+    {
+      "id": "38.2",
+      "title": "38.2 Credit Risk",
+      "level": 2,
+      "parent_id": "38",
+      "first_page": 87,
+      "last_page": 90
+    },
+    {
+      "id": "38.3",
+      "title": "38.3 Market Risk and Liquidity Risk Management",
+      "level": 2,
+      "parent_id": "38",
+      "first_page": 91,
+      "last_page": 95
+    },
+    {
+      "id": "38.4",
+      "title": "38.4 Insurance-Related Risk Management",
+      "level": 2,
+      "parent_id": "38",
+      "first_page": 99,
+      "last_page": 110
+    },
+    {
+      "id": "39",
+      "title": "39. Financial Assets and Financial Liabilities Classification",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 111,
+      "last_page": 114
+    },
+    {
+      "id": "40",
+      "title": "40. Fair Values of Financial Instruments",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 117,
+      "last_page": 122
+    },
+    {
+      "id": "40.3",
+      "title": "40.3 Fair Value Hierarchy",
+      "level": 2,
+      "parent_id": "40",
+      "first_page": 117,
+      "last_page": 122
+    },
+    {
+      "id": "41",
+      "title": "41. Offsetting Financial Assets and Financial Liabilities",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 123,
+      "last_page": 124
+    },
+    {
+      "id": "42",
+      "title": "42. Contingent Liabilities",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 125,
+      "last_page": 125
+    },
+    {
+      "id": "43",
+      "title": "43. Commitments",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 126,
+      "last_page": 126
+    },
+    {
+      "id": "44",
+      "title": "44. Unconsolidated Structured Entities",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 127,
+      "last_page": 127
+    },
+    {
+      "id": "45",
+      "title": "45. Financial Assets Transferred",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 128,
+      "last_page": 128
+    },
+    {
+      "id": "45.1",
+      "title": "45.1 Assets Pledged",
+      "level": 2,
+      "parent_id": "45",
+      "first_page": 128,
+      "last_page": 128
+    },
+    {
+      "id": "46",
+      "title": "46. Related Party Transactions",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 129,
+      "last_page": 130
+    },
+    {
+      "id": "46.1",
+      "title": "46.1 Material Related Party Transactions",
+      "level": 2,
+      "parent_id": "46",
+      "first_page": 129,
+      "last_page": 129
+    },
+    {
+      "id": "46.2",
+      "title": "46.2 Key Management Personnel Compensation",
+      "level": 2,
+      "parent_id": "46",
+      "first_page": 130,
+      "last_page": 130
+    },
+    {
+      "id": "48",
+      "title": "48. New Accounting Standards and Interpretations",
+      "level": 1,
+      "parent_id": null,
+      "first_page": 131,
+      "last_page": 131
+    }
+  ],
+  "table_assignments": [
+    {
+      "page": 1,
+      "table_idx": 0,
+      "section_id": "income_statements"
+    },
+    {
+      "page": 2,
+      "table_idx": 0,
+      "section_id": "comprehensive_income"
+    },
+    {
+      "page": 3,
+      "table_idx": 0,
+      "section_id": "balance_sheets"
+    },
+    {
+      "page": 4,
+      "table_idx": 0,
+      "section_id": "equity_group"
+    },
+    {
+      "page": 5,
+      "table_idx": 0,
+      "section_id": "equity_group"
+    },
+    {
+      "page": 6,
+      "table_idx": 0,
+      "section_id": "equity_bank"
+    },
+    {
+      "page": 7,
+      "table_idx": 0,
+      "section_id": "cash_flow"
+    },
+    {
+      "page": 8,
+      "table_idx": 0,
+      "section_id": "1"
+    },
+    {
+      "page": 13,
+      "table_idx": 0,
+      "section_id": "2.8"
+    },
+    {
+      "page": 21,
+      "table_idx": 0,
+      "section_id": "2.13.6"
+    },
+    {
+      "page": 30,
+      "table_idx": 0,
+      "section_id": "2.21.3"
+    },
+    {
+      "page": 30,
+      "table_idx": 1,
+      "section_id": "2.21.3"
+    },
+    {
+      "page": 32,
+      "table_idx": 0,
+      "section_id": "3"
+    },
+    {
+      "page": 32,
+      "table_idx": 1,
+      "section_id": "4"
+    },
+    {
+      "page": 33,
+      "table_idx": 0,
+      "section_id": "4"
+    },
+    {
+      "page": 33,
+      "table_idx": 1,
+      "section_id": "4"
+    },
+    {
+      "page": 34,
+      "table_idx": 0,
+      "section_id": "5"
+    },
+    {
+      "page": 34,
+      "table_idx": 1,
+      "section_id": "6"
+    },
+    {
+      "page": 35,
+      "table_idx": 0,
+      "section_id": "7"
+    },
+    {
+      "page": 35,
+      "table_idx": 1,
+      "section_id": "8"
+    },
+    {
+      "page": 36,
+      "table_idx": 0,
+      "section_id": "9"
+    },
+    {
+      "page": 37,
+      "table_idx": 0,
+      "section_id": "10"
+    },
+    {
+      "page": 37,
+      "table_idx": 1,
+      "section_id": "11"
+    },
+    {
+      "page": 37,
+      "table_idx": 2,
+      "section_id": "11"
+    },
+    {
+      "page": 38,
+      "table_idx": 0,
+      "section_id": "12"
+    },
+    {
+      "page": 39,
+      "table_idx": 0,
+      "section_id": "13"
+    },
+    {
+      "page": 40,
+      "table_idx": 0,
+      "section_id": "13.2"
+    },
+    {
+      "page": 40,
+      "table_idx": 1,
+      "section_id": "13.3"
+    },
+    {
+      "page": 41,
+      "table_idx": 0,
+      "section_id": "13.4"
+    },
+    {
+      "page": 42,
+      "table_idx": 0,
+      "section_id": "14"
+    },
+    {
+      "page": 44,
+      "table_idx": 0,
+      "section_id": "15"
+    },
+    {
+      "page": 44,
+      "table_idx": 1,
+      "section_id": "16"
+    },
+    {
+      "page": 45,
+      "table_idx": 0,
+      "section_id": "16.1"
+    },
+    {
+      "page": 46,
+      "table_idx": 0,
+      "section_id": "16.2"
+    },
+    {
+      "page": 46,
+      "table_idx": 1,
+      "section_id": "16.3"
+    },
+    {
+      "page": 47,
+      "table_idx": 0,
+      "section_id": "17"
+    },
+    {
+      "page": 48,
+      "table_idx": 0,
+      "section_id": "18"
+    },
+    {
+      "page": 49,
+      "table_idx": 0,
+      "section_id": "18"
+    },
+    {
+      "page": 50,
+      "table_idx": 0,
+      "section_id": "19"
+    },
+    {
+      "page": 50,
+      "table_idx": 1,
+      "section_id": "20"
+    },
+    {
+      "page": 51,
+      "table_idx": 0,
+      "section_id": "20"
+    },
+    {
+      "page": 52,
+      "table_idx": 0,
+      "section_id": "21"
+    },
+    {
+      "page": 52,
+      "table_idx": 1,
+      "section_id": "21.1"
+    },
+    {
+      "page": 54,
+      "table_idx": 0,
+      "section_id": "21.2"
+    },
+    {
+      "page": 55,
+      "table_idx": 0,
+      "section_id": "21.3"
+    },
+    {
+      "page": 55,
+      "table_idx": 1,
+      "section_id": "21.4"
+    },
+    {
+      "page": 56,
+      "table_idx": 0,
+      "section_id": "21.5"
+    },
+    {
+      "page": 56,
+      "table_idx": 1,
+      "section_id": "21.5"
+    },
+    {
+      "page": 57,
+      "table_idx": 0,
+      "section_id": "22"
+    },
+    {
+      "page": 58,
+      "table_idx": 0,
+      "section_id": "22"
+    },
+    {
+      "page": 59,
+      "table_idx": 0,
+      "section_id": "22"
+    },
+    {
+      "page": 60,
+      "table_idx": 0,
+      "section_id": "22"
+    },
+    {
+      "page": 61,
+      "table_idx": 0,
+      "section_id": "22"
+    },
+    {
+      "page": 61,
+      "table_idx": 1,
+      "section_id": "22.4"
+    },
+    {
+      "page": 62,
+      "table_idx": 0,
+      "section_id": "22"
+    },
+    {
+      "page": 62,
+      "table_idx": 1,
+      "section_id": "23"
+    },
+    {
+      "page": 63,
+      "table_idx": 0,
+      "section_id": "24"
+    },
+    {
+      "page": 63,
+      "table_idx": 1,
+      "section_id": "25"
+    },
+    {
+      "page": 64,
+      "table_idx": 0,
+      "section_id": "26"
+    },
+    {
+      "page": 65,
+      "table_idx": 0,
+      "section_id": "27"
+    },
+    {
+      "page": 66,
+      "table_idx": 0,
+      "section_id": "27"
+    },
+    {
+      "page": 66,
+      "table_idx": 1,
+      "section_id": "27.4"
+    },
+    {
+      "page": 67,
+      "table_idx": 0,
+      "section_id": "28"
+    },
+    {
+      "page": 67,
+      "table_idx": 1,
+      "section_id": "28"
+    },
+    {
+      "page": 68,
+      "table_idx": 0,
+      "section_id": "29"
+    },
+    {
+      "page": 68,
+      "table_idx": 1,
+      "section_id": "29"
+    },
+    {
+      "page": 69,
+      "table_idx": 0,
+      "section_id": "30"
+    },
+    {
+      "page": 70,
+      "table_idx": 0,
+      "section_id": "30"
+    },
+    {
+      "page": 71,
+      "table_idx": 0,
+      "section_id": "30"
+    },
+    {
+      "page": 71,
+      "table_idx": 1,
+      "section_id": "30"
+    },
+    {
+      "page": 72,
+      "table_idx": 0,
+      "section_id": "30"
+    },
+    {
+      "page": 72,
+      "table_idx": 1,
+      "section_id": "30"
+    },
+    {
+      "page": 73,
+      "table_idx": 0,
+      "section_id": "31"
+    },
+    {
+      "page": 73,
+      "table_idx": 1,
+      "section_id": "32"
+    },
+    {
+      "page": 73,
+      "table_idx": 2,
+      "section_id": "32.1"
+    },
+    {
+      "page": 74,
+      "table_idx": 0,
+      "section_id": "32.1"
+    },
+    {
+      "page": 75,
+      "table_idx": 0,
+      "section_id": "32.3"
+    },
+    {
+      "page": 75,
+      "table_idx": 1,
+      "section_id": "33"
+    },
+    {
+      "page": 75,
+      "table_idx": 2,
+      "section_id": "33"
+    },
+    {
+      "page": 76,
+      "table_idx": 0,
+      "section_id": "33"
+    },
+    {
+      "page": 77,
+      "table_idx": 0,
+      "section_id": "33.2"
+    },
+    {
+      "page": 78,
+      "table_idx": 0,
+      "section_id": "34"
+    },
+    {
+      "page": 79,
+      "table_idx": 0,
+      "section_id": "34"
+    },
+    {
+      "page": 80,
+      "table_idx": 0,
+      "section_id": "35"
+    },
+    {
+      "page": 81,
+      "table_idx": 0,
+      "section_id": "36"
+    },
+    {
+      "page": 82,
+      "table_idx": 0,
+      "section_id": "36"
+    },
+    {
+      "page": 82,
+      "table_idx": 1,
+      "section_id": "36"
+    },
+    {
+      "page": 83,
+      "table_idx": 0,
+      "section_id": "37.1"
+    },
+    {
+      "page": 84,
+      "table_idx": 0,
+      "section_id": "37.1"
+    },
+    {
+      "page": 85,
+      "table_idx": 0,
+      "section_id": "37.1"
+    },
+    {
+      "page": 86,
+      "table_idx": 0,
+      "section_id": "38.1"
+    },
+    {
+      "page": 87,
+      "table_idx": 0,
+      "section_id": "38.2"
+    },
+    {
+      "page": 88,
+      "table_idx": 0,
+      "section_id": "38.2"
+    },
+    {
+      "page": 89,
+      "table_idx": 0,
+      "section_id": "38.2"
+    },
+    {
+      "page": 89,
+      "table_idx": 1,
+      "section_id": "38.2"
+    },
+    {
+      "page": 90,
+      "table_idx": 0,
+      "section_id": "38.2"
+    },
+    {
+      "page": 91,
+      "table_idx": 0,
+      "section_id": "38.3"
+    },
+    {
+      "page": 91,
+      "table_idx": 1,
+      "section_id": "38.3"
+    },
+    {
+      "page": 92,
+      "table_idx": 0,
+      "section_id": "38.3"
+    },
+    {
+      "page": 93,
+      "table_idx": 0,
+      "section_id": "38.3"
+    },
+    {
+      "page": 94,
+      "table_idx": 0,
+      "section_id": "38.3"
+    },
+    {
+      "page": 95,
+      "table_idx": 0,
+      "section_id": "38.3"
+    },
+    {
+      "page": 95,
+      "table_idx": 1,
+      "section_id": "38.3"
+    },
+    {
+      "page": 99,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 99,
+      "table_idx": 1,
+      "section_id": "38.4"
+    },
+    {
+      "page": 100,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 100,
+      "table_idx": 1,
+      "section_id": "38.4"
+    },
+    {
+      "page": 102,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 104,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 105,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 105,
+      "table_idx": 1,
+      "section_id": "38.4"
+    },
+    {
+      "page": 106,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 107,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 108,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 108,
+      "table_idx": 1,
+      "section_id": "38.4"
+    },
+    {
+      "page": 109,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 110,
+      "table_idx": 0,
+      "section_id": "38.4"
+    },
+    {
+      "page": 111,
+      "table_idx": 0,
+      "section_id": "39"
+    },
+    {
+      "page": 112,
+      "table_idx": 0,
+      "section_id": "39"
+    },
+    {
+      "page": 113,
+      "table_idx": 0,
+      "section_id": "39"
+    },
+    {
+      "page": 114,
+      "table_idx": 0,
+      "section_id": "39"
+    },
+    {
+      "page": 117,
+      "table_idx": 0,
+      "section_id": "40.3"
+    },
+    {
+      "page": 118,
+      "table_idx": 0,
+      "section_id": "40.3"
+    },
+    {
+      "page": 119,
+      "table_idx": 0,
+      "section_id": "40.3"
+    },
+    {
+      "page": 119,
+      "table_idx": 1,
+      "section_id": "40.3"
+    },
+    {
+      "page": 120,
+      "table_idx": 0,
+      "section_id": "40.3"
+    },
+    {
+      "page": 120,
+      "table_idx": 1,
+      "section_id": "40.3"
+    },
+    {
+      "page": 121,
+      "table_idx": 0,
+      "section_id": "40.3"
+    },
+    {
+      "page": 121,
+      "table_idx": 1,
+      "section_id": "40.3"
+    },
+    {
+      "page": 122,
+      "table_idx": 0,
+      "section_id": "40.3"
+    },
+    {
+      "page": 122,
+      "table_idx": 1,
+      "section_id": "40.3"
+    },
+    {
+      "page": 122,
+      "table_idx": 2,
+      "section_id": "40.3"
+    },
+    {
+      "page": 123,
+      "table_idx": 0,
+      "section_id": "41"
+    },
+    {
+      "page": 124,
+      "table_idx": 0,
+      "section_id": "41"
+    },
+    {
+      "page": 125,
+      "table_idx": 0,
+      "section_id": "42"
+    },
+    {
+      "page": 126,
+      "table_idx": 0,
+      "section_id": "43"
+    },
+    {
+      "page": 127,
+      "table_idx": 0,
+      "section_id": "44"
+    },
+    {
+      "page": 128,
+      "table_idx": 0,
+      "section_id": "45.1"
+    },
+    {
+      "page": 129,
+      "table_idx": 0,
+      "section_id": "46.1"
+    },
+    {
+      "page": 130,
+      "table_idx": 0,
+      "section_id": "46.2"
+    },
+    {
+      "page": 131,
+      "table_idx": 0,
+      "section_id": "48"
+    }
+  ]
+}

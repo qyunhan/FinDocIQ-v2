@@ -1,0 +1,31 @@
+# secrets
+.env
+# built artifacts
+db/*.db
+# compiled_fs.db is NO LONGER un-ignored here. This file is nested deeper than
+# the repo root's, so its `!db/compiled_fs.db` WON — the root added
+# `findociq/db/compiled_fs.db` (see the comment there: 215 commits of that 31 MB
+# binary are why the clone reached 217 MB) and this stale negation quietly
+# cancelled it, leaving the file one `git add -A` from going back into history.
+# The durable copy is the GCS bucket:
+#   gcloud storage cp findociq/db/compiled_fs.db \
+#     gs://findociq-sources-igc2026-team08-6311/db/compiled_fs.db
+# ...the v2 clean-schema build (tools/build_compiled_v2.py) IS tracked. 10.5 MB.
+# compiled_reload.db, the pass2 replay intermediate it is built FROM, stays
+# ignored in the repo-root .gitignore — regenerable and 31 MB.
+!db/compiled_v2.db
+# durable local before/after snapshots (pre-flight, migrations) -- large binaries,
+# referenced by path + sha256 in docs/DECISIONS.md and PROGRESS.md, not git-tracked
+db/snapshots/
+**/__pycache__/
+*.pyc
+.DS_Store
+
+# parked legacy (kept on disk, not versioned)
+_legacy/
+
+# generated discovery outputs (regenerable via pipeline/discover)
+data/discovery/
+
+data/review/
+out/

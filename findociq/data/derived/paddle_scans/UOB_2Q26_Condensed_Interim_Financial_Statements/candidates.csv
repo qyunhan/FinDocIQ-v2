@@ -1,0 +1,39 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,144.7,41.92,Announcement,12.96,False,left,False
+1,199.21,70.21,To:All Shareholders,11.04,True,center,False
+1,287.11,69.47,Unaudited FinancialResultsfortheFirstHalfended 30 June2026,11.04,True,center,True
+1,363.39,69.67,DividendfortheFirstHalf ended 30June 2026 Ordinary share dividend,11.04,True,center,True
+1,616.7,69.58,Interested PersonTransactions,11.04,True,center,False
+2,90.08,70.12,Confirmation byDirectors,11.04,True,left,False
+2,178.14,69.59,UndertakingsfromDirectors andExecutiveOfficers,11.04,True,left,False
+2,405.69,69.58,BY ORDEROFTHE BOARD UNITEDOVERSEAS BANK LIMITED,11.04,True,left,False
+7,95.72,70.01,Performance Review,9.96,True,left,False
+7,129.43,70.09,1H26 versus 1H25,9.48,True,left,False
+7,380.72,70.1,1H26 versus 2H25,9.48,True,left,False
+7,544.88,69.77,AssetQuality,9.48,True,left,False
+7,621.62,69.89,"Capital, Funding and Liquidity Positions",9.48,True,left,False
+18,96.93,69.96,Performance by Business Segment (cont’d),9.96,True,left,False
+18,206.37,70.14,"Group Retail (""GR"")",9.48,True,left,False
+18,381.46,69.84,"GroupWholesale Banking (""GWB"")",9.48,True,left,False
+18,567.43,70.02,"Global Markets (""GM"")",9.48,True,left,False
+19,94.53,70.09,Performance by Business Segment (cont’d),9.96,True,left,False
+19,117.11,70.48,Others,9.48,True,left,False
+21,95.42,69.73,Performance by Geographical Segment (Cont’d),9.96,True,left,False
+21,150.59,70.08,Singapore,9.48,True,left,False
+21,304.51,69.9,Malaysia,9.48,True,left,False
+21,445.87,70.98,Thailand,9.48,True,left,False
+21,544.12,69.98,Indonesia,9.48,True,left,False
+21,664.92,70.28,Greater China,9.48,True,left,False
+22,94.4,70.02,Performance by Geographical Segment (Cont’d),9.96,True,left,False
+22,117.08,70.48,Others,9.48,True,left,False
+30,75.21,50.09,1 SummaryofMaterialAccountingPolicies,8.76,True,left,False
+30,99.43,65.18,(a) Basis of Preparation,8.83,True,center,False
+30,186.56,65.27,(b) Changes in Accounting Policies,8.83,True,center,False
+30,349.65,65.16,(c) CriticalAccounting Estimatesand Judgements,8.83,True,center,False
+31,78.02,50.52,2 Income Tax,8.04,True,left,False
+31,208.56,50.48,3 Share Capital and Other Capital,8.04,True,left,False
+32,78.18,50.17,4 Dividends,8.04,True,left,False
+32,265.01,50.61,5 Classification of Financial Assets and Financial Liabilities,8.04,True,left,False
+34,75.59,54.03,6 Fair Value of Financial Instruments,8.04,True,left,False
+35,73.08,53.89,6 Fair Valueof Financial Instruments (continued),8.04,True,left,False
+36,294.08,50.4,8 Subsequent Events,8.04,True,left,False

@@ -1,0 +1,1242 @@
+{
+  "tables": [
+    {
+      "title": "CONSOLIDATED CASH FLOW STATEMENT\nFor the financial year ended 31 December 2025",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "2025"
+        },
+        {
+          "group": null,
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Cash flows from operating activities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before income tax",
+          "values": [
+            {
+              "value": "9,123",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,976",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Adjustments for non-cash items:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Allowances for loans and other assets",
+          "values": [
+            {
+              "value": "665",
+              "cell_state": "reported"
+            },
+            {
+              "value": "690",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Amortisation of intangible assets",
+          "values": [
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Change in hedging transactions, FVTPL(1) securities and debt issued",
+          "values": [
+            {
+              "value": "377",
+              "cell_state": "reported"
+            },
+            {
+              "value": "356",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Depreciation of property, plant and equipment and interest expense on lease liabilities",
+          "values": [
+            {
+              "value": "551",
+              "cell_state": "reported"
+            },
+            {
+              "value": "463",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Net (gain)/loss on disposal of interests in associates/subsidiaries",
+          "values": [
+            {
+              "value": "(63)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Net gain on disposal of government, debt and equity securities",
+          "values": [
+            {
+              "value": "(58)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(24)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Net gain on disposal of property, plant and equipment",
+          "values": [
+            {
+              "value": "(18)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(36)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Share-based costs",
+          "values": [
+            {
+              "value": "62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Share of results of associates, net of tax",
+          "values": [
+            {
+              "value": "(1,077)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(994)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Others",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(72)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Operating profit before change in operating assets and liabilities",
+          "values": [
+            {
+              "value": "9,583",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,480",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Change in operating assets and liabilities:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Deposits of non-bank customers",
+          "values": [
+            {
+              "value": "37,565",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,052",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "3,716",
+              "cell_state": "reported"
+            },
+            {
+              "value": "679",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Derivative payables and other liabilities",
+          "values": [
+            {
+              "value": "(571)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,482",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Trading portfolio liabilities",
+          "values": [
+            {
+              "value": "(84)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "87",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Restricted balances with central banks",
+          "values": [
+            {
+              "value": "(439)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(354)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Government securities and treasury bills",
+          "values": [
+            {
+              "value": "(21,411)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,188",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "FVTPL securities",
+          "values": [
+            {
+              "value": "(4,840)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,195)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Placements with and loans to banks",
+          "values": [
+            {
+              "value": "4,465",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,246)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Loans to customers",
+          "values": [
+            {
+              "value": "(22,082)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(22,330)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Derivative receivables and other assets",
+          "values": [
+            {
+              "value": "2,616",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,969)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Net change in other assets and liabilities for life insurance funds",
+          "values": [
+            {
+              "value": "2,087",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,321)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Cash provided by operating activities",
+          "values": [
+            {
+              "value": "10,605",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,553",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income tax paid (2)",
+          "values": [
+            {
+              "value": "(1,480)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,589)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net cash provided by operating activities",
+          "values": [
+            {
+              "value": "9,125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,964",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Cash flows from investing activities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net cash outflow from acquisition of subsidiary",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(31)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends from associates",
+          "values": [
+            {
+              "value": "294",
+              "cell_state": "reported"
+            },
+            {
+              "value": "158",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Purchases of debt and equity securities",
+          "values": [
+            {
+              "value": "(41,960)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34,021)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Purchases of investment securities for life insurance funds",
+          "values": [
+            {
+              "value": "(60,728)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(45,566)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Purchases of property, plant and equipment",
+          "values": [
+            {
+              "value": "(983)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(614)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from disposal of debt and equity securities",
+          "values": [
+            {
+              "value": "36,193",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,750",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from disposal of interests in associates",
+          "values": [
+            {
+              "value": "115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from disposal of investment securities for life insurance funds",
+          "values": [
+            {
+              "value": "58,728",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44,948",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from disposal of property, plant and equipment",
+          "values": [
+            {
+              "value": "45",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net cash used in investing activities",
+          "values": [
+            {
+              "value": "(8,296)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,332)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Cash flows from financing activities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Changes in non-controlling interests",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(643)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Buy-back of shares for holding as treasury shares/cancellation",
+          "values": [
+            {
+              "value": "(445)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(194)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends and distributions paid",
+          "values": [
+            {
+              "value": "(4,545)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,987)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net (redemption)/issue of other debt issued",
+          "values": [
+            {
+              "value": "(558)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,557",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net proceeds from perpetual capital securities issued",
+          "values": [
+            {
+              "value": "676",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Repayments of lease liabilities",
+          "values": [
+            {
+              "value": "(43)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(78)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from subordinated debt issued",
+          "values": [
+            {
+              "value": "1,438",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,165",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Redemption of subordinated debt issued",
+          "values": [
+            {
+              "value": "(1,284)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,352)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from treasury shares transferred/sold under the Bank\u2019s employee share schemes",
+          "values": [
+            {
+              "value": "120",
+              "cell_state": "reported"
+            },
+            {
+              "value": "152",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net cash (used in)/provided by financing activities",
+          "values": [
+            {
+              "value": "(4,641)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net change in cash and cash equivalents",
+          "values": [
+            {
+              "value": "(3,812)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(298)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net currency translation adjustments",
+          "values": [
+            {
+              "value": "(469)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "257",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cash and cash equivalents at 1 January",
+          "values": [
+            {
+              "value": "28,829",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,870",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Cash and cash equivalents at 31 December",
+          "values": [
+            {
+              "value": "24,548",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,829",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Fair value through profit or loss.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) In 2025, the Group paid income tax of S$1,480 million (2024: S$1,589 million), of which S$709 million (2024: S$786 million) was paid in Singapore and S$771 million (2024: S$803 million) in other jurisdictions.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(3) # represents amounts less than S$0.5 million.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Cash flows from operating activities"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Profit before income tax 9,123 8,976"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Adjustments for non-cash items:"
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Allowances for loans and other assets 665 690"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Amortisation of intangible assets 21 59"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Change in hedging transactions, FVTPL securities and debt issued 377 356"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Depreciation of property, plant and equipment and interest expense on lease liabilities 551 463"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Net (gain)/loss on disposal of interests in associates/subsidiaries (63) #"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Net gain on disposal of government, debt and equity securities (58) (24)"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Net gain on disposal of property, plant and equipment (18) (36)"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Share-based costs 62 62"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Share of results of associates, net of tax (1,077) (994)"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Others \u2013 (72)"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Operating profit before change in operating assets and liabilities 9,583 9,480"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Change in operating assets and liabilities:"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Deposits of non-bank customers 37,565 26,052"
+          },
+          {
+            "line_id": 23,
+            "indent": 1,
+            "label_clean": "Deposits and balances of banks 3,716 679"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "Derivative payables and other liabilities (571) 3,482"
+          },
+          {
+            "line_id": 25,
+            "indent": 1,
+            "label_clean": "Trading portfolio liabilities (84) 87"
+          },
+          {
+            "line_id": 26,
+            "indent": 1,
+            "label_clean": "Restricted balances with central banks (439) (354)"
+          },
+          {
+            "line_id": 27,
+            "indent": 1,
+            "label_clean": "Government securities and treasury bills (21,411) 1,188"
+          },
+          {
+            "line_id": 28,
+            "indent": 1,
+            "label_clean": "FVTPL securities (4,840) (3,195)"
+          },
+          {
+            "line_id": 29,
+            "indent": 1,
+            "label_clean": "Placements with and loans to banks 4,465 (4,246)"
+          },
+          {
+            "line_id": 30,
+            "indent": 1,
+            "label_clean": "Loans to customers (22,082) (22,330)"
+          },
+          {
+            "line_id": 31,
+            "indent": 1,
+            "label_clean": "Derivative receivables and other assets 2,616 (3,969)"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Net change in other assets and liabilities for life insurance funds 2,087 (1,321)"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Cash provided by operating activities 10,605 5,553"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Income tax paid (1,480) (1,589)"
+          },
+          {
+            "line_id": 35,
+            "indent": 0,
+            "label_clean": "Net cash provided by operating activities 9,125 3,964"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Cash flows from investing activities"
+          },
+          {
+            "line_id": 38,
+            "indent": 1,
+            "label_clean": "Net cash outflow from acquisition of subsidiary \u2013 (31)"
+          },
+          {
+            "line_id": 39,
+            "indent": 1,
+            "label_clean": "Dividends from associates 294 158"
+          },
+          {
+            "line_id": 40,
+            "indent": 1,
+            "label_clean": "Purchases of debt and equity securities (41,960) (34,021)"
+          },
+          {
+            "line_id": 41,
+            "indent": 1,
+            "label_clean": "Purchases of investment securities for life insurance funds (60,728) (45,566)"
+          },
+          {
+            "line_id": 42,
+            "indent": 1,
+            "label_clean": "Purchases of property, plant and equipment (983) (614)"
+          },
+          {
+            "line_id": 43,
+            "indent": 1,
+            "label_clean": "Proceeds from disposal of debt and equity securities 36,193 30,750"
+          },
+          {
+            "line_id": 44,
+            "indent": 1,
+            "label_clean": "Proceeds from disposal of interests in associates 115 #"
+          },
+          {
+            "line_id": 45,
+            "indent": 1,
+            "label_clean": "Proceeds from disposal of investment securities for life insurance funds 58,728 44,948"
+          },
+          {
+            "line_id": 46,
+            "indent": 1,
+            "label_clean": "Proceeds from disposal of property, plant and equipment 45 44"
+          },
+          {
+            "line_id": 47,
+            "indent": 0,
+            "label_clean": "Net cash used in investing activities (8,296) (4,332)"
+          },
+          {
+            "line_id": 49,
+            "indent": 0,
+            "label_clean": "Cash flows from financing activities"
+          },
+          {
+            "line_id": 50,
+            "indent": 1,
+            "label_clean": "Changes in non-controlling interests \u2013 (643)"
+          },
+          {
+            "line_id": 51,
+            "indent": 1,
+            "label_clean": "Buy-back of shares for holding as treasury shares/cancellation (445) (194)"
+          },
+          {
+            "line_id": 52,
+            "indent": 1,
+            "label_clean": "Dividends and distributions paid (4,545) (3,987)"
+          },
+          {
+            "line_id": 53,
+            "indent": 1,
+            "label_clean": "Net (redemption)/issue of other debt issued (558) 4,557"
+          },
+          {
+            "line_id": 54,
+            "indent": 1,
+            "label_clean": "Net proceeds from perpetual capital securities issued 676 450"
+          },
+          {
+            "line_id": 55,
+            "indent": 1,
+            "label_clean": "Repayments of lease liabilities (43) (78)"
+          },
+          {
+            "line_id": 56,
+            "indent": 1,
+            "label_clean": "Proceeds from subordinated debt issued 1,438 1,165"
+          },
+          {
+            "line_id": 57,
+            "indent": 1,
+            "label_clean": "Redemption of subordinated debt issued (1,284) (1,352)"
+          },
+          {
+            "line_id": 58,
+            "indent": 1,
+            "label_clean": "Proceeds from treasury shares transferred/sold under the Bank\u2019s employee share schemes 120 152"
+          },
+          {
+            "line_id": 59,
+            "indent": 0,
+            "label_clean": "Net cash (used in)/provided by financing activities (4,641) 70"
+          },
+          {
+            "line_id": 61,
+            "indent": 0,
+            "label_clean": "Net change in cash and cash equivalents (3,812) (298)"
+          },
+          {
+            "line_id": 62,
+            "indent": 0,
+            "label_clean": "Net currency translation adjustments (469) 257"
+          },
+          {
+            "line_id": 63,
+            "indent": 0,
+            "label_clean": "Cash and cash equivalents at 1 January 28,829 28,870"
+          },
+          {
+            "line_id": 64,
+            "indent": 0,
+            "label_clean": "Cash and cash equivalents at 31 December 24,548 28,829"
+          },
+          {
+            "line_id": 65,
+            "indent": 2,
+            "label_clean": "Fair value through profit or loss."
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 68,
+            "indent": 2,
+            "label_clean": "# represents amounts less than S$0.5 million."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

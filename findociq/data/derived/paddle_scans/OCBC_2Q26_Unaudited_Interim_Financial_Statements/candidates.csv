@@ -1,0 +1,81 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,102.15,69.26,ToOurShareholders,10.07,True,left,False
+1,168.83,68.66,UnauditedFinancialResultsforthe Half Year Ended 30June2026,10.07,True,left,True
+1,251.74,69.21,OrdinaryDividend,10.07,True,left,False
+1,350.67,68.97,Closureof Books,10.07,True,left,False
+1,434.99,68.95,Scrip DividendScheme,10.07,True,left,False
+1,567.0,68.95,Peter Yeoh Secretary,10.07,False,left,False
+1,604.41,69.0,"Singapore, 7August 2026",10.07,False,left,True
+7,35.75,70.77,OVERSEA-CHINESEBANKINGCORPORATIONLIMITEDANDITSSUBSIDIARIES,10.1,True,left,False
+7,58.53,70.77,UNAUDITEDSTATEMENTOFCHANGESINEQUITY-GROUP,10.1,True,left,False
+7,70.04,70.77,Forthehalfyearended30June2026,10.1,False,left,False
+8,35.75,70.77,OVERSEA-CHINESEBANKINGCORPORATIONLIMITEDANDITSSUBSIDIARIES,10.1,True,left,False
+8,58.53,70.77,UNAUDITEDSTATEMENTOFCHANGESINEQUITY-GROUP,10.1,True,left,False
+8,70.04,70.77,Forthehalfyearended30June2026,10.1,False,left,False
+11,138.12,54.86,1. General,9.11,True,left,False
+11,259.73,54.45,2. Basisofpreparation,9.11,True,left,False
+11,284.85,72.02,2.1 Statementofcompliance,9.11,True,center,False
+11,371.59,72.23,2.2 Basisofpresentation,9.11,True,center,False
+11,458.43,72.07,2.3 Useofestimatesandjudgements,9.11,True,center,False
+11,632.46,71.59,Impairmentoffinancialassets,9.11,True,center,False
+12,91.75,54.38,2. Basisofpreparation(continued),9.11,True,left,False
+12,116.65,71.91,2.3 Useofestimatesandjudgements(continued),9.11,True,center,False
+12,166.71,71.31,Allowancesfornon-credit-impairedloanstocustomers,9.11,False,center,False
+12,241.37,71.14,SensitivityofECL,9.11,False,center,False
+12,285.07,71.4,Allowancesforcredit-impairedloanstocustomers,9.11,False,center,False
+12,382.37,71.22,Impairmentofgoodwillandotherintangibleassets,9.11,True,center,False
+12,466.75,71.99,2.4 Changesinaccountingpolicies,9.11,True,center,False
+13,94.19,54.19,2. Basisofpreparation(continued),9.11,True,left,False
+13,119.11,71.68,2.4 Changesinaccountingpolicies(continued),9.11,True,center,False
+13,141.6,71.7,SFRS(I) 18Presentationand DisclosureinFinancialStatements,9.11,True,center,False
+13,321.92,54.82,3. Netinterestincome,9.11,True,left,False
+13,515.57,54.28,4. Fees andcommissions(net),9.11,True,left,False
+14,91.99,54.88,5. Otherincome,9.11,True,left,False
+14,220.68,54.43,6. Otheroperatingexpenses,9.11,True,left,False
+14,360.46,54.53,7. Allowancesforloansandother assets,9.11,True,left,False
+14,489.25,54.43,8. Dividends/distributions,9.11,True,left,False
+15,91.95,54.45,9. Sharecapital,9.11,True,left,False
+15,487.23,54.37,10. Deposits and balances ofnon-bank customers and banks,9.11,True,left,False
+16,92.15,55.05,11. Debtissued,9.11,True,left,False
+16,304.96,55.04,12. Loanstocustomers,9.11,True,left,False
+17,91.78,54.74,13. Segmentinformation,9.11,True,left,False
+17,152.33,72.48,13.1 Businesssegments,9.11,True,center,False
+18,91.9,54.88,13. Segmentinformation(continued),9.11,True,left,False
+18,114.0,73.65,13.1Businesssegments(continued),9.1,True,center,False
+19,91.77,54.71,13. Segmentinformation(continued),9.11,True,left,False
+19,112.79,71.94,13.1 Businesssegments(continued),9.11,True,center,False
+19,171.77,72.03,GlobalConsumer/PrivateBanking,9.11,True,center,False
+19,289.95,71.81,GlobalWholesaleBanking,9.11,True,center,False
+19,407.33,72.38,GlobalMarkets,9.11,True,center,False
+19,513.01,71.93,Insurance,9.11,True,center,False
+19,590.42,72.25,Others,9.11,True,center,False
+20,91.82,54.77,13. Segmentinformation(continued),9.11,True,left,False
+20,115.41,72.21,13.2 Geographical segments,9.11,True,center,False
+21,91.81,54.7,14. Fairvaluesoffinancialinstruments,9.11,True,left,False
+21,112.98,71.99,14.1 Valuationgovernanceframework,9.11,True,center,False
+21,373.48,71.6,Bid OfferAdjustments,9.11,False,center,False
+21,411.22,71.3,ModelRisk Adjustments,9.11,False,center,False
+21,448.43,71.44,Day 1ProfitorLoss Adjustments,9.11,False,center,False
+21,547.73,71.54,CreditValuationAdjustments,9.11,False,center,False
+21,597.28,71.51,CollateralValuation Adjustments,9.11,False,center,False
+21,646.89,71.7,ParameterUncertainty Adjustments,9.11,False,center,False
+22,94.08,54.61,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+22,115.18,69.34,14.2 Fairvalues,9.11,True,center,False
+22,223.32,71.83,Financialassets,9.11,True,center,False
+22,371.93,71.89,Financialliabilities,9.11,True,center,False
+22,506.21,69.63,14.3 Fairvaluehierarchy,9.11,True,center,False
+23,91.73,54.67,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+23,112.75,71.92,14.3 Fairvalue hierarchy(continued),9.11,True,center,False
+24,91.55,54.73,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+24,114.0,73.65,14.3Fairvaluehierarchy(continued),9.1,True,center,False
+25,91.63,54.78,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+25,112.77,71.94,14.3 Fairvaluehierarchy(continued),9.11,True,center,False
+26,91.68,54.85,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+26,112.79,71.99,14.3 Fairvaluehierarchy(continued),9.11,True,center,False
+28,98.19,68.92,OTHER INFORMATION,11.03,True,left,False
+28,123.36,69.31,1. Review,9.11,True,left,False
+28,223.05,68.66,2. Review oftheperformance oftheGroupforthesix-month periodended30June2026,9.11,True,left,False
+28,272.54,68.92,3. Dividendinformation,9.11,True,left,False
+28,322.11,68.25,4. Interested persontransactions,9.11,True,left,False
+28,383.82,69.06,5. Undertakingfrom directors and executiveofficers,9.11,True,left,False
+29,99.17,68.14,,0.0,False,center,False

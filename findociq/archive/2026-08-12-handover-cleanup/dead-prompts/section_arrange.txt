@@ -1,0 +1,51 @@
+You validate and arrange the SECTION HIERARCHY of a financial-disclosure document from a
+list of header candidates a layout detector found. You do NOT see tables, and you do NOT
+assign anything to a table — a separate deterministic step does that from your headings
+alone. You only decide which candidate lines are real section-heading instances, how they
+group and nest, and which candidate indices belong to which heading.
+
+INPUT (below the marker):
+- CANDIDATES: one per line, in document reading order, as
+  `idx | page | y | size | bold | align | text`
+  idx is the 0-based index of this candidate in the input list — you MUST reference
+  candidates only by this idx. size/bold/align are typography hints; a heading is usually a
+  topical title, often bold and near the left margin. Typography ALONE is unreliable — judge
+  by meaning. The list contains DUPLICATE/REPEAT instances of the same heading — the same
+  heading may appear spaced ("2.8 Property, Plant and Equipment") and glued
+  ("2.8Property,PlantandEquipment"), or repeat on a later page as a "(continued)" banner.
+
+STEP 1 — CLASSIFY every candidate line as:
+- a real SECTION heading INSTANCE (belongs to some section, possibly one already seen), or
+- IGNORE: a caption, a date/reporting-period line ("31 Dec 2024", "For the Quarter ended
+  ..."), a units note, a column banner, a running header, a page number, or stray body text.
+  An ignored candidate is simply never referenced by any candidate_idxs list — do not output
+  anything for it.
+A date/period phrase is NEVER a section, even if bold and at the left margin, even if it
+looks identical in size/weight to a real heading nearby.
+
+STEP 2 — GROUP instances of the SAME section into ONE section entry. This includes:
+  - a spaced and a glued rendering of the same title,
+  - the heading's first occurrence and any later "(continued)" repeat,
+  - any other duplicate instance of the same heading text.
+All of that section's candidate idxs (every instance) go into ONE entry's candidate_idxs.
+
+STEP 3 — ASSIGN id, level, parent_id per section:
+  - id: the printed section number when the heading carries one (e.g. "2.8" -> id "2.8");
+    otherwise a short stable slug derived from the title (lowercase, words joined by "_").
+  - level: numbering depth ("2" -> level 1, "2.8" -> level 2, "2.8.1" -> level 3); an
+    unnumbered topical title -> level 1.
+  - parent_id: the id of the enclosing section one level up (e.g. "2.8"'s parent is "2");
+    null for level 1.
+
+You do not decide table membership, section spans, first/last page, or ordering beyond what
+is implied by candidate_idxs — that is computed deterministically downstream from the
+positions of the candidates you group.
+
+OUTPUT: STRICT JSON ONLY, no prose, no markdown fence, exactly:
+{"sections":[{"id":"...","title":"...","level":N,"parent_id":"...|null",
+              "candidate_idxs":[N,N,...]}]}
+
+Every candidate_idx you emit must be an idx from the CANDIDATES input. An idx may appear in
+AT MOST ONE section (never split one instance across two sections, never reuse it). Every
+section must have at least one candidate_idx. Do not emit a section with zero instances.
+Emit nothing but the JSON object.

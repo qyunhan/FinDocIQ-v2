@@ -1,0 +1,41 @@
+You are reading the attached bank financial-statements PDF.
+
+Return EVERY section and sub-section heading in reading order, to the finest
+granularity you can identify. Include:
+- numbered notes and sub-notes exactly as printed (e.g. "13", "13.1"),
+- unnumbered sub-headings printed as their own line,
+- top-level statement titles (e.g. "Income Statement", "Balance Sheet").
+
+Output JSON ONLY, no prose, exactly this shape:
+{"sections": [{
+  "id": "sec_001",
+  "title": "<verbatim heading text, including any printed number prefix>",
+  "page_start": <int>,
+  "page_end": <int>,
+  "level": <int>,
+  "parent_id": "<id of the enclosing section one level up, or null>",
+  "kind": "table_section" | "prose_section" | "mixed",
+  "expected_table_count": <int>,
+  "notes": "<one short sentence of layout observations, or ''>"
+}]}
+
+Field rules:
+- id: sequential "sec_001", "sec_002", ... in reading order.
+- page_start: 1-based PDF page on which the heading is printed.
+- page_end: last page of this section's content, before the next heading of
+  the same or higher level starts. A parent's range covers its children.
+- level: nesting depth (1 = top-level; infer from numbering and typography).
+- parent_id: null for level-1 sections.
+- kind: "table_section" if the section's OWN body (not its children's) is one
+  or more data tables; "prose_section" if paragraphs only; "mixed" if both.
+- expected_table_count: number of DISTINCT data tables printed in this
+  section's OWN body, excluding children's bodies. A table continuing across
+  pages counts ONCE. Must be 0 for prose_section.
+- notes: optional, for human readers.
+
+Rules:
+- Headings ONLY as entries. Do NOT list footnotes (e.g. the numbered notes
+  under a "Notes:" caption), page headers/footers, the cover page, or the
+  printed 'Contents' page itself.
+- Do NOT invent sections that are not printed in the document.
+- Preserve heading text verbatim.

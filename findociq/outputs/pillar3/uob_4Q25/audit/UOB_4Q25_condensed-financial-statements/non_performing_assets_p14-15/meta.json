@@ -1,0 +1,53 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_performing_assets_p14-15",
+  "section_ids": [
+    "non_performing_assets"
+  ],
+  "section_titles": [
+    "Non-Performing Assets"
+  ],
+  "pages": [
+    14,
+    15
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 4,
+  "n_rows": 71,
+  "usage": {
+    "ts": "2026-07-14T14:54:36",
+    "script": "extract_to_excel",
+    "label": "non_performing_assets_p14-15",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3515,
+    "output_tokens": 10718,
+    "thinking_tokens": 0,
+    "total_tokens": 14233,
+    "est_cost_usd": 0.02785
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.5' pdf=8x json=7x (missing from extraction)",
+      "  deficit: '1.0' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '254' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '306' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '593' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x4: 'Total' [Non-Performing Assets]",
+      "  duplicate row label x8: 'Dec-25' [Non-Performing Assets (cont'd)]",
+      "  duplicate row label x8: 'Jun-25' [Non-Performing Assets (cont'd)]",
+      "  duplicate row label x8: 'Dec-24' [Non-Performing Assets (cont'd)]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

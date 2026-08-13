@@ -1,0 +1,66 @@
+{
+  "doc_id": "DBS_1Q25_trading_update",
+  "source_pdf": "findociq/data/sources/financial_statements/DBS/2025/1Q25/DBS_1Q25_trading_update.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "Trading Update for the First Quarter Ended 31 March 2025",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Dividends",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "First-quarter profit before tax at record SGD 3.44 billion as total income grows 6% to new high of SGD 5.91 billion; net profit at SGD 2.90 billion with ROE at 17.3%",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Quarter-on-quarter performance",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "Year-on-year performance",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Balance sheet",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Selected income statement items ($m)",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "Selected balance sheet items ($m)",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "Key financial ratios (%)2, 3",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "Per share data ($)3, 8",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "Notes:",
+      "page": 7,
+      "level": 1
+    }
+  ],
+  "contents_page_number": null,
+  "contents_page_text": "",
+  "n_pages": 7
+}

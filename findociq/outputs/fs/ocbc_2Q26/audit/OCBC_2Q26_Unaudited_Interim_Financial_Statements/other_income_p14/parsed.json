@@ -1,0 +1,170 @@
+{
+  "tables": [
+    {
+      "title": "5. Other income",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "5",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "1H 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "1H 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal of investment securities",
+          "values": [
+            {
+              "value": "66",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal of property, plant and equipment",
+          "values": [
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rental and property-related income",
+          "values": [
+            {
+              "value": "47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends from FVOCI securities",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Other income",
+          "values": [
+            {
+              "value": "178",
+              "cell_state": "reported"
+            },
+            {
+              "value": "145",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Disposal of investment securities 66 51"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Disposal of property, plant and equipment 36 17"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Rental and property-related income 47 46"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Dividends from FVOCI securities 16 18"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Others 13 13"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Other income 178 145"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fy25_performance_highlights_p1",
+  "section_ids": [
+    "fy25_performance_highlights"
+  ],
+  "section_titles": [
+    "FY25 Performance Highlights"
+  ],
+  "pages": [
+    1
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 17,
+  "usage": {
+    "ts": "2026-07-30T15:53:19",
+    "script": "extract_to_excel",
+    "label": "fy25_performance_highlights_p1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3886,
+    "output_tokens": 1982,
+    "thinking_tokens": 0,
+    "total_tokens": 5868,
+    "est_cost_usd": 0.02367,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9.12' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '14.6' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9.15' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.42' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.46' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.88' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.63' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '341' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '428' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Transitional final Basel III reforms' printed bands [] -> extracted slots [1]",
+      "  col-repair: declined for 'Transitional final Basel III reforms' \u2014 extracted values ['16.9%'] != printed tokens []"
+    ]
+  },
+  "crop": null
+}

@@ -1,0 +1,40 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "balance_sheets_audited_as_at_31_december_2025_p29",
+  "section_ids": [
+    "balance_sheets_audited_as_at_31_december_2025"
+  ],
+  "section_titles": [
+    "Balance Sheets (Audited) as at 31 December 2025"
+  ],
+  "pages": [
+    29
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 42,
+  "usage": {
+    "ts": "2026-07-14T14:55:34",
+    "script": "extract_to_excel",
+    "label": "balance_sheets_audited_as_at_31_december_2025_p29",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3000,
+    "output_tokens": 6988,
+    "thinking_tokens": 0,
+    "total_tokens": 9988,
+    "est_cost_usd": 0.01837
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

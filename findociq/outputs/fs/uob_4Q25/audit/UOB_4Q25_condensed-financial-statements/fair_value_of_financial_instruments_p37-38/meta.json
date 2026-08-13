@@ -1,0 +1,96 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fair_value_of_financial_instruments_p37-38",
+  "section_ids": [
+    "fair_value_of_financial_instruments"
+  ],
+  "section_titles": [
+    "6 Fair Value of Financial Instruments"
+  ],
+  "pages": [
+    37,
+    38
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 38,
+  "usage": {
+    "ts": "2026-08-07T10:16:29",
+    "script": "extract_to_excel",
+    "label": "fair_value_of_financial_instruments_p37-38",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4517,
+    "output_tokens": 7327,
+    "thinking_tokens": 0,
+    "total_tokens": 11844,
+    "est_cost_usd": 0.07272,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '124839' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '109028' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '22315' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '20617' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0888' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2222' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0706' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9534' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7006' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '828' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '520' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '041' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '910' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '517' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '999' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '192' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '305' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '033' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Trading securities' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: 'Derivative financial assets' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: '- debt' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: '- equity' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: 'Derivative financial liabilities' [6 Fair Value of Financial Inst]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (1 dense lines) [6 Fair Value of Financial Instruments\n(b]",
+      "  col-shift: 'Trading securities' printed bands [1,2,3,4,5,6,7,8] -> extracted slots [1,4,5,7]",
+      "  col-shift: 'Derivative financial assets' printed bands [1,2,3,4,5,6,7,8] -> extracted slots [1,2,7,8]",
+      "  col-shift: 'Derivative financial liabilities' printed bands [1,2,4,5,6,7,8] -> extracted slots [1,2,7,8]",
+      "  col-repair: declined for table '6 Fair Value of Financial Instruments\n(b' \u2014 uncalibrated (1 dense lines), shifts in this table cannot be checked",
+      "  col-repair: declined for 'Trading securities' \u2014 printed token '4' maps to 4 bands (need exactly 1)",
+      "  col-repair: declined for 'Derivative financial assets' \u2014 printed token '1' maps to 4 bands (need exactly 1)",
+      "  col-repair: declined for 'Derivative financial liabilities' \u2014 printed token '3' maps to 4 bands (need exactly 1)"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "6 Fair Value of Financial Instruments\n(b) The Group classifies financial instruments carried at fair value by level following the fair value measurement hierarchy:",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "6 Fair Value of Financial Instruments (continued)\n(c) The following table presents the changes in Level 3 instruments for the financial year ended:",
+      "anchor_label": "6 Fair Value of Financial Instruments (continued)\n(c) The following table presents the changes in Level 3 instruments for the financial year ended:",
+      "anchor_y": 74.54,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

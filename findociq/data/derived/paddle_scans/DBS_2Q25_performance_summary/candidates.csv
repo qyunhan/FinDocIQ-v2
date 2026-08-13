@@ -1,0 +1,35 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,103.09,70.81,To:Shareholders,9.96,False,left,False
+1,189.2,69.87,Dividends,9.96,True,left,False
+1,494.42,69.8,By order of theBoard,9.96,False,left,False
+2,302.08,337.87,PerformanceSummary,16.0,True,center,False
+2,338.92,391.27,FinancialResults,16.0,False,center,False
+2,357.28,221.33,FortheFirstHalf/SecondQuarterEnded,16.0,False,left,False
+2,375.64,416.11,30June2025,16.0,False,center,True
+2,394.12,429.43,(Unaudited),16.0,False,center,False
+3,75.26,54.0,ContentsPage,12.0,True,left,False
+4,73.32,49.38,OVERVIEW,9.0,True,left,False
+6,773.55,517.9,4,10.0,False,center,False
+8,773.55,517.9,6,10.0,False,right,False
+9,72.94,46.29,First Half,9.0,True,left,False
+9,508.51,307.47,Balance Sheet,9.0,True,center,False
+9,602.09,46.28,Second Quarter,9.0,True,left,False
+15,678.37,45.63,Consumer Banking/ WealthManagement,9.0,True,left,False
+16,73.58,46.0,Institutional Banking,9.0,True,left,False
+16,343.14,306.79,Others,9.0,True,center,False
+16,385.44,45.67,MarketsTrading,9.0,True,left,False
+18,627.68,306.49,Hong Kong,9.0,True,center,False
+18,658.51,45.64,Singapore,9.0,True,left,False
+19,73.6,306.57,South andSoutheastAsia,9.0,True,center,False
+19,208.63,45.7,Rest of GreaterChina,9.0,True,left,False
+19,218.97,306.32,Rest of theWorld,9.0,True,center,False
+26,576.63,45.02,"PILLAR3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDING RATIODISCLOSURES",9.0,True,left,False
+26,680.49,45.27,UNREALISEDPROPERTY VALUATION SURPLUS,9.0,True,left,False
+33,73.79,45.92,OTHER FINANCIAL INFORMATION,11.04,True,left,False
+33,96.98,45.85,1. Fair Value of Financial Instruments,11.04,True,left,False
+33,150.72,48.5,FairValueHierarchy,9.0,True,left,False
+33,549.73,45.15,2. Off-balance Sheet Items,11.04,True,left,False
+34,74.19,46.5,ADDITIONAL INFORMATION,11.04,True,left,False
+34,468.99,46.13,INTERESTEDPARTY TRANSACTIONSPURSUANT TOLISTINGRULE 920(1),9.0,True,left,False
+35,63.16,78.69,,0.0,False,center,False
+35,96.63,53.16,,0.0,False,center,False

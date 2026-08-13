@@ -1,0 +1,68 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "classification_of_financial_assets_and_financial_liabilities_p35-36",
+  "section_ids": [
+    "classification_of_financial_assets_and_financial_liabilities"
+  ],
+  "section_titles": [
+    "5 Classification of Financial Assets and Financial Liabilities"
+  ],
+  "pages": [
+    35,
+    36
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 49,
+  "usage": {
+    "ts": "2026-07-14T14:57:18",
+    "script": "extract_to_excel",
+    "label": "classification_of_financial_assets_and_financial_liabilities_p35-36",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3556,
+    "output_tokens": 9091,
+    "thinking_tokens": 0,
+    "total_tokens": 12647,
+    "est_cost_usd": 0.02379
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "4 Dividends",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities \u2014 Dec 25",
+      "anchor_label": "Singapore Government treasury bills and securities",
+      "anchor_y": 166.4,
+      "owning_section": "24",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities (continued) \u2014 Dec 24",
+      "anchor_label": "Singapore Government treasury bills and securities",
+      "anchor_y": 166.4,
+      "owning_section": "24",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": false
+}

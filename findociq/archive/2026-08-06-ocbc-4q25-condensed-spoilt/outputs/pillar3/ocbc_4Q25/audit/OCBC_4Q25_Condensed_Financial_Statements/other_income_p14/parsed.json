@@ -1,0 +1,258 @@
+{
+  "tables": [
+    {
+      "title": "5. Other income",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "2H 2025 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2H 2024 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal of investment securities",
+          "values": [
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal/liquidation of subsidiaries and associates",
+          "values": [
+            {
+              "value": "63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal of property, plant and equipment",
+          "values": [
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rental and property-related income",
+          "values": [
+            {
+              "value": "48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "94",
+              "cell_state": "reported"
+            },
+            {
+              "value": "91",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends from FVOCI securities",
+          "values": [
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "108",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Other income",
+          "values": [
+            {
+              "value": "155",
+              "cell_state": "reported"
+            },
+            {
+              "value": "160",
+              "cell_state": "reported"
+            },
+            {
+              "value": "300",
+              "cell_state": "reported"
+            },
+            {
+              "value": "294",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Disposal of investment securities"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Disposal/liquidation of subsidiaries and associates"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Disposal of property, plant and equipment"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Rental and property-related income"
+          },
+          {
+            "line_id": 35,
+            "indent": 0,
+            "label_clean": "Dividends from FVOCI securities"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "5. Other income",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

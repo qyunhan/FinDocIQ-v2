@@ -1,0 +1,95 @@
+{
+  "tables": [
+    {
+      "title": "Key Audit Matters",
+      "label_header": "Areas of focus",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the risk factors"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "b) Impaired credit exposures",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "As at 31 December 2025, the Stage 3 ECL for impaired credit exposures of the Group was $1,319 million, out of which 72% pertained to the Group Wholesale Banking (GWB) portfolio. We focused on the Stage 3 ECL for the GWB portfolio as the identification and estimation of impairment within this portfolio can be inherently subjective and requires significant judgements.",
+          "values": [
+            {
+              "value": "We assessed the design and evaluated the operating effectiveness of the key controls over the Stage 3 ECL estimation process for the GWB portfolio. These included key controls relating to:\n\u2022 collateral valuation and monitoring;\n\u2022 identification of impairment indicators; and\n\u2022 MAS Notice 612 credit grading.\nWe considered the magnitude of the credit exposures, macroeconomic factors and industry trends in our audit sampling to focus on customers that were assessed to be of higher risk and for our selected sample of impaired loans, we performed the following procedures:\n\u2022 assessed management\u2019s forecast of recoverable cash flows, including the basis for the amounts and timing of recoveries. Where possible, we compared key assumptions to external evidence, e.g. independent valuation reports of the collaterals; considered and corroborated the borrowers\u2019 latest developments through adverse news search and/or publicly available information;\n\u2022 checked that underlying data was accurate by agreeing to source documents such as loan agreements; and\n\u2022 assessed the reasonableness and tested the calculation of the Stage 3 ECL.\nOverall, the results of our evaluation of the Group\u2019s ECL were within a reasonable range of expectations.",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Valuation of illiquid or complex financial instruments Refer to Notes 2(d)(ii), 3(ii) and 19(b) to the consolidated financial statements.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 31 December 2025, 2% ($4 billion) of the Group\u2019s total financial instruments that were carried at fair value were classified as Level 3.\n\nThe Level 3 instruments mainly comprised unquoted equity investments and funds, callable interest rate swaps and debt securities.\n\nWe focused on the financial instruments that are measured at fair value using valuation techniques based on inputs which involve a higher degree of complexity and estimates made by management. The determination of certain Level 3 prices is considerably more subjective as it may require the exercise of judgement by management or the use of complex models and assumptions given the lack of availability of market-based data.",
+          "values": [
+            {
+              "value": "We assessed the design and evaluated the operating effectiveness of the key controls over the Group\u2019s Level 3 financial instruments valuation processes. These included key controls relating to:\n\u2022 model validation and approval;\n\u2022 observability, completeness and accuracy of pricing inputs;\n\u2022 independent price verification, including stale price checks; and\n\u2022 monitoring of collateral disputes.\n\nIn addition, with the assistance of our internal valuation specialists, we assessed the reasonableness of the valuation methodologies, assumptions and inputs used by management for a sample of financial instruments with significant unobservable inputs.\n\nThe results of our assessment of the Group\u2019s valuation of illiquid or complex financial instruments were within the range of expected outcomes.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

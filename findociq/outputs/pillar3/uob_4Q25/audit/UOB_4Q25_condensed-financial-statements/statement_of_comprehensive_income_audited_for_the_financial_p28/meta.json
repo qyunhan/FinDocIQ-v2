@@ -1,0 +1,40 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statement_of_comprehensive_income_audited_for_the_financial_p28",
+  "section_ids": [
+    "statement_of_comprehensive_income_audited_for_the_financial"
+  ],
+  "section_titles": [
+    "Statement of Comprehensive Income (Audited) for the financial year ended 31 December 2025"
+  ],
+  "pages": [
+    28
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-14T14:55:03",
+    "script": "extract_to_excel",
+    "label": "statement_of_comprehensive_income_audited_for_the_financial_p28",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2998,
+    "output_tokens": 3579,
+    "thinking_tokens": 0,
+    "total_tokens": 6577,
+    "est_cost_usd": 0.00985
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

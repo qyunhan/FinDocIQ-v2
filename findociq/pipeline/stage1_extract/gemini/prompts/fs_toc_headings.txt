@@ -1,0 +1,32 @@
+You are reading the attached bank financial-statements PDF.
+
+Return EVERY section and sub-section heading in reading order, to the finest
+granularity you can identify. Include:
+- numbered notes and sub-notes exactly as printed (e.g. "13", "13.1"),
+- unnumbered sub-headings printed as their own line,
+- top-level statement titles (e.g. "Income Statement", "Balance Sheet").
+
+Output JSON ONLY, no prose, exactly this shape:
+{"sections": [{
+  "id": "sec_001",
+  "title": "<verbatim heading text, including any printed number prefix>",
+  "page": <int>,
+  "level": <int>,
+  "parent_id": "<id of the enclosing section one level up, or null>"
+}]}
+
+Field rules:
+- id: sequential "sec_001", "sec_002", ... in reading order (used only so
+  parent_id can reference an earlier entry).
+- page: the 1-based PDF page on which the heading is printed.
+- level: nesting depth (1 = top-level; infer from numbering and typography).
+- parent_id: null for level-1 sections.
+
+Rules:
+- Headings ONLY. Do NOT list footnotes (e.g. numbered notes under a "Notes:"
+  caption), page headers/footers, the cover page, or the printed 'Contents'
+  page itself.
+- Do NOT count tables, do NOT classify section content, do NOT report end
+  pages — downstream code determines all of that.
+- Preserve heading text verbatim.
+- If the document has no discernible section structure, return {"sections": []}.

@@ -1,0 +1,136 @@
+{
+  "doc_id": "UOB_1Q25_performance-highlights",
+  "source_pdf": "findociq/data/sources/financial_statements/UOB/2025/1Q25/UOB_1Q25_performance-highlights.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "UOB\u2019s 1Q25 net profit stable YoY at S$1.5 billion",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "1Q25 key financial indicators",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Navigating uncertainties from position of strength",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Financial performance",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "1Q25 versus 4Q24",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "1Q25 versus 1Q24",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "Asset quality",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "Allowance coverage",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "title": "Capital, funding and liquidity positions",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "Liquidity and capital ratios",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "title": "Financial Highlights 1Q25",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "Selected income statement items (S$m)",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Selected balance sheet items (S$m)",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Key financial ratios (%)",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Notes:",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "1 Relate to amount attributable to equity holders of the Bank.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "2 Computed on an annualised basis.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "3 Refers to non-performing loans (\"NPL\") as a percentage of gross customer loans",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "4 Calculated based on profit attributable to equity holders of the Bank net of perpetual capital securities distributions.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "5 Refer to net customer loans and customer deposits.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "6 Figures reported are based on average LCR for the respective periods, calculated based on MAS Notice 651. A minimum requirement of Singapore Dollar LCR of 100% and all-currency LCR of 100% shall be maintained at all times.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "7 NSFR is calculated based on MAS Notice 652 which requires a minimum of 100% to be maintained.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "8 Leverage ratio is calculated based on MAS Notice 637 which requires a minimum ratio of 3%.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "9 Perpetual capital securities are excluded from the computation.",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "10 Public disclosure required under MAS Notice 651 and 653 are available in the UOB website at www.UOBgroup.com/investor-relations/financial/index.html.",
+      "page": 4,
+      "level": 3
+    }
+  ],
+  "contents_page_number": 4,
+  "contents_page_text": "First Quarter 2025 Performance Highlights\n7 May 2025\nFinancial Highlights 1Q25\n1Q25 4Q24 +/(-) % 1Q24 +/(-) %\nSelected income statement items (S$m)\nNet interest income 2,409 2,451 (2) 2,362 2\nNet fee income 694 567 22 580 20\nOther non-interest income 554 443 25 581 (5)\nTotal income 3,657 3,461 6 3,523 4\nLess: Total expenses 1,559 1,579 (1) 1,570 (1)\nOperating profit 2,097 1,882 11 1,952 7\nLess: Amortisation of intangible assets 7 8 (9) 7 5\nAllowance for credit and other losses 290 227 28 163 78\nAdd: Share of profit of associates and joint ventures 22 40 (46) 26 (15)\nNet profit before tax 1,822 1,687 8 1,809 1\nLess: Tax and non-controlling interests 332 164 >100 322 3\nNet profit 1 1,490 1,523 (2) 1,487 0\nSelected balance sheet items (S$m)\nGross customer loans 341,154 337,831 1 323,188 6\nCustomer deposits 401,250 403,978 (1) 388,472 3\nTotal assets 538,009 537,664 0 515,340 4\nShareholders' equity 1 51,406 49,733 3 47,482 8\nRisk-weighted assets 268,998 259,835 4 276,367 (3)\nKey financial ratios (%)\nNet interest margin 2 2.00 2.00 2.02\nCost/Income ratio 42.6 45.6 44.6\nCredit costs on loans (bp) 2\nGeneral 16 ( 27) 3\nSpecific 19 52 20\nTotal 35 25 23\nNPA coverage ratio 90 91 99\nNPL ratio 3 1.6 1.5 1.5\nReturn on average ordinary shareholders' equity 2,4 12.3 13.0 13.3\nReturn on average total assets 2 1.11 1.14 1.16\nLoan/Deposit ratio 5 8 4.0 82.7 8 2.1\nLiquidity coverage ratios (\"LCR\") 6,10\nAll-currency 143 143 160\nSingapore Dollar 403 450 471\nNet stable funding ratio (\"NSFR\") 7,10 116 116 121\nCapital adequacy ratios\nCommon Equity Tier 1 15.5 15.5 13.9\nTier 1 16.6 16.6 14.9\nTotal 18.2 18.2 16.7\nLeverage ratio 8 7.3 6.9 7.0\nEarnings per ordinary share ($) 2,4\nBasic 3.51 3.59 3.50\nDiluted 3.49 3.57 3.48\nNet asset value (\"NAV\") per ordinary share ($) 9 29.07 28.11 26.71\nNotes:\n1 Relate to amount attributable to equity holders of the Bank.\n2 Computed on an annualised basis.\n3 Refers to non-performing loans (\"NPL\") as a percentage of gross customer loans\n4 Calculated based on profit attributable to equity holders of the Bank net of perpetual capital securities distributions.\n5 Refer to net customer loans and customer deposits.\n6 Figures reported are based on average LCR for the respective periods, calculated based on MAS Notice 651. A minimum requirement of Singapore Dollar LCR of 100%\nand all-currency LCR of 100% shall be maintained at all times.\n7 NSFR is calculated based on MAS Notice 652 which requires a minimum of 100% to be maintained.\n8 Leverage ratio is calculated based on MAS Notice 637 which requires a minimum ratio of 3%.\n9 Perpetual capital securities are excluded from the computation.\n10 Public disclosure required under MAS Notice 651 and 653 are available in the UOB website at www.UOBgroup.com/investor-relations/financial/index.html.",
+  "n_pages": 4
+}

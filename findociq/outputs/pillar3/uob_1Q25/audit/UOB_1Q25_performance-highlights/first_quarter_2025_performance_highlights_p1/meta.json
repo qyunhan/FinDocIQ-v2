@@ -1,0 +1,53 @@
+{
+  "document": "UOB_1Q25_performance-highlights.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "7 May 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "first_quarter_2025_performance_highlights_p1",
+  "section_ids": [
+    "first_quarter_2025_performance_highlights"
+  ],
+  "section_titles": [
+    "First Quarter 2025 Performance Highlights"
+  ],
+  "pages": [
+    1
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 8,
+  "usage": {
+    "ts": "2026-07-15T11:45:08",
+    "script": "extract_to_excel",
+    "label": "first_quarter_2025_performance_highlights_p1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2956,
+    "output_tokens": 1271,
+    "thinking_tokens": 0,
+    "total_tokens": 4227,
+    "est_cost_usd": 0.00794,
+    "batch": true,
+    "batch_discount": 0.5
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '15.5' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '1.5' pdf=3x json=0x (missing from extraction)",
+      "  deficit: '1.6' pdf=3x json=1x (missing from extraction)",
+      "  deficit: '0.1' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '3.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.7' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '694' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

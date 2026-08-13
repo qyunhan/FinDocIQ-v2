@@ -1,0 +1,82 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,187.5,52.0,First Quarter 2022 Results Highlights 29 April 2022,31.94,True,left,True
+1,188.22,54.91,FirstQuarter2022,31.9,True,left,False
+1,226.64,54.91,ResultsHighlights,31.9,True,left,False
+1,280.22,54.91,29April2022,24.0,True,left,True
+2,22.98,36.72,Agenda,43.9,True,left,False
+2,167.47,40.25,FinancialHighlights,16.1,False,left,False
+2,277.2,40.25,GroupNetProfit,16.1,False,left,False
+2,386.86,40.25,GroupPerformanceTrends,16.1,False,left,False
+2,519.27,942.55,2,14.6,False,right,False
+3,239.68,406.46,Financial Highlights,28.08,False,left,False
+4,28.85,34.28,Robust 1Q22 Performance,28.08,True,left,False
+4,147.06,48.43,GroupNetProfit,25.0,False,center,False
+4,190.12,48.43,S$1.36b,22.1,True,center,False
+5,28.38,35.1,1Q22 Financial Highlights,28.08,True,left,False
+5,81.34,39.44,Banking,13.92,True,left,False
+5,81.67,40.34,BankingWealthManagement,13.9,True,left,False
+5,83.65,727.42,■Bankingoperationsnet,15.1,False,center,False
+5,101.63,749.76,"profitrose50%QoQ,",15.1,False,center,False
+5,119.68,749.76,supportedbyhigher,15.1,False,center,False
+5,137.68,86.9,+4%operatingprofitandsharp,15.1,True,center,False
+5,155.66,631.87,-2%dropinallowances,15.1,True,center,False
+5,185.7,727.42,■WMincomehigherQoQ,15.1,False,center,False
+5,203.68,749.76,amidsoftoperating,15.1,False,center,False
+5,221.6,452.45,553572environment,15.1,True,center,False
+5,251.72,727.42,■Healthyinsurancesales,15.1,False,center,False
+5,269.75,749.76,growth,15.1,False,center,False
+5,289.41,382.9,Insurance,13.9,True,center,False
+5,519.27,943.3,5,14.6,False,right,False
+6,27.84,34.91,Diversified Franchise Across Business and Geography,28.08,True,left,False
+6,519.27,943.3,6,14.6,False,right,False
+7,28.67,34.93,Strong Balance Sheet Fundamentals,28.1,True,left,False
+7,186.95,123.46,84.7S$431b,11.0,True,center,False
+7,287.56,48.81,Liquidity,13.92,True,center,False
+8,240.15,406.45,GroupNetProfit,28.08,False,left,False
+9,28.59,33.99,1Q22 Group Net Profit,28.08,True,left,False
+9,149.0,727.75,YoY,12.98,True,center,False
+9,325.47,726.16,QoQ,12.98,True,center,False
+10,29.73,31.82,Group Performance,28.08,True,left,False
+11,28.42,32.01,Banking Operations Performance,28.1,True,left,False
+13,29.3,32.42,Net Interest Income,28.1,True,left,False
+14,29.25,32.48,Non-interest Income,28.1,True,left,False
+15,28.39,32.25,Net Fees & Commissions,28.1,True,left,False
+15,79.02,879.5,-11%,13.9,True,center,False
+15,79.84,837.43,YoY,13.9,True,center,False
+15,104.95,879.5,-1%,13.9,True,center,False
+15,105.83,837.43,QoQ,13.9,True,center,False
+15,162.71,430.72,569■1Q22feeincomedown,15.1,True,center,False
+15,180.58,263.14,68522fromlastyear’shigh,15.1,True,center,False
+15,217.19,737.28,■Feesdeclinedmarginally,15.1,False,center,False
+15,235.19,759.6,QoQduetolowercredit,15.1,False,center,False
+15,253.17,759.6,"card,loanandtrade-",15.1,False,center,False
+15,271.21,347.15,55relatedfeeswhichoffset,15.1,True,center,False
+15,289.21,759.6,higherWMandbrokerage,15.1,False,center,False
+15,307.19,759.6,fees,15.1,False,center,False
+15,519.27,935.14,15,14.6,False,right,False
+16,29.71,32.98,TradingIncome,28.1,True,left,False
+17,28.43,32.23,Operating Expenses,28.1,True,left,False
+18,29.71,32.98,Allowances,28.1,True,left,False
+18,79.02,879.5,-73%,13.9,True,center,False
+18,79.84,837.43,YoY,13.9,True,center,False
+18,104.95,879.5,-86%,13.9,True,center,False
+18,105.83,837.43,QoQ,13.9,True,center,False
+18,163.16,412.06,24■Creditcostseasedto6bps,15.1,True,center,False
+18,181.16,759.6,fromimprovingcredit,15.1,False,center,False
+18,198.66,759.6,environment,15.1,False,center,False
+18,519.27,935.14,18,14.6,False,right,False
+19,29.81,34.58,Total Cumulative Allowances,28.1,True,left,False
+19,93.93,742.58,Mar22,16.1,True,center,False
+20,30.04,34.63,Asset Quality,28.1,True,left,False
+21,29.46,34.9,Asset Quality,28.08,True,left,False
+22,28.71,33.81,Customer Loans,28.1,True,left,False
+22,87.93,742.58,Mar22,16.1,True,center,False
+22,163.69,432.3,737474■QoQloangrowthdrivenby,15.1,True,center,False
+22,182.18,759.6,"Singapore,UK,Australia",15.1,False,center,False
+22,200.22,759.6,andUSA,15.1,False,center,False
+22,230.2,257.68,110111■Europe(ex-UK)lending,15.1,True,center,False
+22,248.24,759.6,madeup<1%oftotal,15.1,False,center,False
+22,296.22,737.28,■Loanswell-diversified,15.1,False,center,False
+22,519.27,935.14,22,14.6,False,right,False
+23,28.05,33.37,Customer Deposits,28.1,True,left,False
+24,29.14,34.2,Capital,28.1,True,left,False

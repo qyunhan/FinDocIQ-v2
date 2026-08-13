@@ -1,0 +1,55 @@
+{
+  "document": "OCBC_2Q26_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 August 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "npas_by_period_overdue_p16",
+  "section_ids": [
+    "npas_by_period_overdue"
+  ],
+  "section_titles": [
+    "NPAs by Period Overdue"
+  ],
+  "pages": [
+    16
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 7,
+  "usage": {
+    "ts": "2026-08-07T05:03:32",
+    "script": "extract_to_excel",
+    "label": "npas_by_period_overdue_p16",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3895,
+    "output_tokens": 1613,
+    "thinking_tokens": 0,
+    "total_tokens": 5508,
+    "est_cost_usd": 0.02036,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "NPAs by Period Overdue",
+      "anchor_label": "NPAs by Period Overdue",
+      "anchor_y": 350.98,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

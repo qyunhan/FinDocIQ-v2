@@ -1,0 +1,56 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,144.78,41.44,Announcement,12.96,False,left,False
+1,186.19,69.73,To:All Shareholders,11.04,True,center,False
+1,274.97,69.1,Audited FinancialResultsfortheFinancial Year Ended 31December2025,11.04,True,center,True
+1,350.32,69.7,DividendfortheSecond HalfEnded 31December 2025 Ordinary share dividend,11.04,True,center,True
+2,90.29,69.6,Interested PersonTransactions,11.04,True,left,False
+2,165.49,69.83,Confirmation byDirectors,11.04,True,left,False
+2,254.3,69.67,UndertakingsfromDirectors andExecutiveOfficers,11.04,True,left,False
+2,557.02,69.66,BY ORDER OFTHE BOARD UNITEDOVERSEAS BANK LIMITED,11.04,True,left,False
+7,95.84,70.12,Performance Review,9.96,True,left,False
+7,129.65,70.2,2025versus2024,9.0,True,left,False
+7,346.77,69.83,2H25 versus 2H24,9.0,True,left,False
+7,501.97,69.93,2H25 versus 1H25,9.0,True,left,False
+7,637.03,70.11,Asset Quality,9.0,True,left,False
+7,698.99,69.86,"Capital, Funding andLiquidity Positions",9.0,True,left,False
+20,98.34,69.86,Performance by Business Segment (cont’d),9.96,True,left,False
+20,213.7,69.85,"Group Retail (""GR"")",9.0,True,left,False
+20,390.04,69.64,"Group Wholesale Banking(""GWB"")",9.0,True,left,False
+20,596.56,69.75,"Global Markets (""GM"")",9.0,True,left,False
+21,93.38,70.09,Performance by Business Segment (cont’d),9.96,True,left,False
+21,125.75,70.53,Others,9.0,True,left,False
+24,95.58,69.89,Performance by Geographical Segment (cont’d),9.96,True,left,False
+24,149.5,70.32,Singapore,9.0,True,left,False
+24,304.92,70.16,Malaysia,9.0,True,left,False
+24,429.55,70.56,Thailand,9.0,True,left,False
+24,543.5,70.26,Indonesia,9.0,True,left,False
+24,646.71,70.39,Greater China,9.0,True,left,False
+25,94.32,69.95,Performance by Geographical Segment (cont’d),9.96,True,left,False
+25,126.23,70.39,Others,9.0,True,left,False
+33,73.09,31.18,1 SummaryofMaterialAccountingPolicies,8.76,True,left,False
+33,100.82,45.51,(a) Basis of Preparation,8.83,True,center,False
+33,187.77,45.38,(b) Changes in Accounting Policies,8.83,True,center,False
+33,347.31,45.52,(c) CriticalAccounting Estimatesand Judgements,8.83,True,center,False
+34,75.51,30.94,2 Income Tax,8.04,True,left,False
+34,206.83,31.17,3 Share Capital and Other Capital,8.04,True,left,False
+35,87.65,43.41,4 Dividends,8.04,True,left,False
+35,303.11,43.26,5 Classification of Financial Assets and Financial Liabilities,8.04,True,left,False
+36,73.94,31.19,5 Classification of Financial Assets and Financial Liabilities (continued),8.04,True,left,False
+37,85.95,43.05,6 Fair Value of Financial Instruments,8.04,True,left,False
+37,262.81,58.47,(b) The Group classifies financial instruments carried at fair value by level following the fair value measurementhierarchy:,7.97,False,center,False
+38,71.5,30.83,6 Fair Value of Financial Instruments (continued),8.04,True,left,False
+39,71.84,31.91,7 Debts Issued,8.04,True,left,False
+40,138.99,69.76,To the Shareholders of United Overseas Bank Limited,9.96,True,left,False
+40,162.62,69.8,Report on the Audit of the Financial Statements,9.96,True,left,False
+40,185.62,70.16,Opinion,9.96,True,left,False
+40,364.21,69.73,Basis for Opinion,9.96,True,left,False
+40,484.89,69.76,Key Audit Matters,9.96,True,left,False
+41,103.31,238.31,How our audit addressed the risk factors,9.96,True,center,False
+41,103.66,76.53,Areas of focus,9.96,True,left,False
+41,125.82,75.91,Expected credit losses,9.96,True,left,False
+41,125.94,237.79,a) Non-impaired credit exposures,9.96,False,center,False
+41,275.81,74.59,a) Non-impaired credit exposures,9.96,False,left,False
+43,491.46,70.22,Other Information,9.96,True,left,False
+44,103.27,69.56,Responsibilities of Management and Directors for the Financial Statements,9.96,True,left,False
+44,270.29,69.81,Auditor’s Responsibilities for the Audit of the Financial Statements,9.96,True,left,False
+45,218.22,69.71,Report on Other Legal and Regulatory Requirements,9.96,True,left,False

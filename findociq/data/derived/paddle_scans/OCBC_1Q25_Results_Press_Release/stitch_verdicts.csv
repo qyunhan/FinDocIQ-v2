@@ -1,0 +1,5 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+1,0,2,0,1,NEW_TABLE,break:text-between:First Quarter 2025 Performance
+2,0,4,0,1,NEW_TABLE,non-adjacent pages
+4,0,5,0,1,NEW_TABLE,cols differ
+5,0,7,0,1,NEW_TABLE,non-adjacent pages

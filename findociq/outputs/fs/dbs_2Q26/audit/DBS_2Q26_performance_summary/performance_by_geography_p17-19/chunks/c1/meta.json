@@ -1,0 +1,75 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_geography_p17-19/chunks/c1",
+  "section_ids": [
+    "performance_by_geography"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY GEOGRAPHY"
+  ],
+  "pages": [
+    17,
+    18
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 55,
+  "usage": {
+    "ts": "2026-08-06T09:22:24",
+    "script": "extract_to_excel",
+    "label": "performance_by_geography_p17-19/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4485,
+    "output_tokens": 9781,
+    "thinking_tokens": 0,
+    "total_tokens": 14266,
+    "est_cost_usd": 0.09476,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.03' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.95' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.13' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.93' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.57' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.41' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.74' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.42' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.83' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '641' pdf=4x json=2x (missing from extraction)",
+      "  deficit: '183' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Net interest income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Net fee and commission income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Other non-interest income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Total income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Expenses' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Amortisation of intangible assets' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Allowances for credit and other losses' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Share of profits/losses of associates an' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Profit before tax' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Income tax expense and non-controlling i' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Net profit' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x2: 'Total assets before goodwill and intangi' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Goodwill and intangible assets' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Total assets' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Non-current assets\u00b2' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Gross customer loans' [PERFORMANCE BY GEOGRAPHY\nSelec]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Non-current assets\u00b2' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,6]",
+      "  col-repair: declined for 'Non-current assets\u00b2' \u2014 extracted values ['-', '1,207', '1,432', '190', '4,625', '7,454'] != printed tokens ['1,344', '2', '217', '4,667', '6,976', '746']"
+    ]
+  },
+  "crop": null
+}

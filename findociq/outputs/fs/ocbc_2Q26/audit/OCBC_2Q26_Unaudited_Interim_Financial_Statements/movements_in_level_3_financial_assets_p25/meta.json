@@ -1,0 +1,80 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "movements_in_level_3_financial_assets_p25",
+  "section_ids": [
+    "movements_in_level_3_financial_assets"
+  ],
+  "section_titles": [
+    "Movements in Level 3 financial assets"
+  ],
+  "pages": [
+    25
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 31,
+  "usage": {
+    "ts": "2026-08-07T04:58:26",
+    "script": "extract_to_excel",
+    "label": "movements_in_level_3_financial_assets_p25",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3935,
+    "output_tokens": 5388,
+    "thinking_tokens": 0,
+    "total_tokens": 9323,
+    "est_cost_usd": 0.05439,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: '- other comprehensive income' printed bands [1,2,3,4] -> extracted slots [1,2,4]",
+      "  col-shift: 'Additions' printed bands [2,4,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Settlements/disposals' printed bands [2,4,5,6] -> extracted slots [1,2,3,5,6]",
+      "  col-shift: '- profit or loss' printed bands [2,4,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: '- other comprehensive income' printed bands [2,4,5,6] -> extracted slots [2,3,5,6]",
+      "  col-repair: declined for '- other comprehensive income' \u2014 printed token '(19)' maps to 2 bands (need exactly 1)",
+      "  col-repair: declined for 'Additions' \u2014 printed token '238' maps to 2 bands (need exactly 1)",
+      "  col-repair: declined for 'Settlements/disposals' \u2014 printed token '(138)' maps to 2 bands (need exactly 1)",
+      "  col-repair: declined for '- profit or loss' \u2014 printed token '(121)' maps to 2 bands (need exactly 1)",
+      "  col-repair: declined for '- other comprehensive income' \u2014 printed token '(19)' maps to 2 bands (need exactly 1)"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Movements in Level 3 financial assets \u2014 At 30 June 2026",
+      "anchor_label": "Movements in Level 3 financial assets",
+      "anchor_y": 134.63,
+      "owning_section": "14.3",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "Movements in Level 3 financial assets \u2014 At 31 December 2025",
+      "anchor_label": "Movements in Level 3 financial assets",
+      "anchor_y": 134.63,
+      "owning_section": "14.3",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "Movements in Level 3 financial liabilities",
+      "anchor_label": "Movements in Level 3 financial liabilities",
+      "anchor_y": 134.63,
+      "owning_section": "14.3",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": true
+}

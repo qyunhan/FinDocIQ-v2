@@ -1,0 +1,63 @@
+{
+  "document": "UOB_3Q25_Performance Highlights.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "6 November 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "financial_highlights_3q25_p4",
+  "section_ids": [
+    "financial_highlights_3q25"
+  ],
+  "section_titles": [
+    "Financial Highlights 3Q25"
+  ],
+  "pages": [
+    4
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 44,
+  "usage": {
+    "ts": "2026-07-15T11:53:55",
+    "script": "extract_to_excel",
+    "label": "financial_highlights_3q25_p4",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2952,
+    "output_tokens": 10526,
+    "thinking_tokens": 0,
+    "total_tokens": 13478,
+    "est_cost_usd": 0.04958,
+    "batch": true,
+    "batch_discount": 0.5
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=9x json=2x (missing from extraction)",
+      "  deficit: '651' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '610' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '710' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '653' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '652' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '637' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Financial Highlights 3Q25]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Financial Highlights 3Q25",
+      "anchor_label": "Financial Highlights 3Q25",
+      "anchor_y": 75.07,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

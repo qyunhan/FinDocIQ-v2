@@ -1,0 +1,47 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "financial_highlights_continued_p10-22/chunks/c5",
+  "section_ids": [
+    "financial_highlights_continued"
+  ],
+  "section_titles": [
+    "FINANCIAL HIGHLIGHTS (continued)"
+  ],
+  "pages": [
+    18,
+    19
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 4,
+  "n_rows": 50,
+  "usage": {
+    "ts": "2026-07-16T14:00:20",
+    "script": "extract_to_excel",
+    "label": "financial_highlights_continued_p10-22/chunks/c5",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3522,
+    "output_tokens": 7252,
+    "thinking_tokens": 0,
+    "total_tokens": 10774,
+    "est_cost_usd": 0.07055,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Others' [DEPOSITS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

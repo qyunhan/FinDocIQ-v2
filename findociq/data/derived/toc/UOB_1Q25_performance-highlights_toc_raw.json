@@ -1,0 +1,108 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "First Quarter 2025 Performance Highlights",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "1Q25 key financial indicators",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Navigating uncertainties from position of strength",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_004",
+      "title": "Financial performance",
+      "page": 2,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_005",
+      "title": "1Q25 versus 4Q24",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_004"
+    },
+    {
+      "id": "sec_006",
+      "title": "1Q25 versus 1Q24",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_004"
+    },
+    {
+      "id": "sec_007",
+      "title": "Asset quality",
+      "page": 3,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_008",
+      "title": "Allowance coverage",
+      "page": 3,
+      "level": 2,
+      "parent_id": "sec_007"
+    },
+    {
+      "id": "sec_009",
+      "title": "Capital, funding and liquidity positions",
+      "page": 3,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_010",
+      "title": "Liquidity and capital ratios",
+      "page": 3,
+      "level": 2,
+      "parent_id": "sec_009"
+    },
+    {
+      "id": "sec_011",
+      "title": "Financial Highlights 1Q25",
+      "page": 4,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_012",
+      "title": "Selected income statement items (S$m)",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_011"
+    },
+    {
+      "id": "sec_013",
+      "title": "Selected balance sheet items (S$m)",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_011"
+    },
+    {
+      "id": "sec_014",
+      "title": "Key financial ratios (%)",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_011"
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 2503,
+    "output_tokens": 840,
+    "thinking_tokens": null
+  }
+}

@@ -1,0 +1,2 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+6,0,7,0,1,NEW_TABLE,cols differ

@@ -1,0 +1,44 @@
+{
+  "document": "DBS_1Q25_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "per_share_data_3_8_p7",
+  "section_ids": [
+    "per_share_data_3_8"
+  ],
+  "section_titles": [
+    "Per share data ($)3, 8"
+  ],
+  "pages": [
+    7
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 4,
+  "usage": {
+    "ts": "2026-07-27T06:12:52",
+    "script": "extract_to_excel",
+    "label": "per_share_data_3_8_p7",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3912,
+    "output_tokens": 828,
+    "thinking_tokens": 0,
+    "total_tokens": 4740,
+    "est_cost_usd": 0.01332,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '72.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '258' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

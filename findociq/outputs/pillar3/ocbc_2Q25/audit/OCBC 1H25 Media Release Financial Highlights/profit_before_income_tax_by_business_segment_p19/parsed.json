@@ -1,0 +1,152 @@
+{
+  "tables": [
+    {
+      "title": "Profit Before Income Tax by Business Segment",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H25"
+        },
+        {
+          "group": null,
+          "leaf": "1H24"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Global Consumer/Private Banking",
+          "values": [
+            {
+              "value": "1,107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,165",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Global Wholesale Banking",
+          "values": [
+            {
+              "value": "1,801",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,728",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Global Markets",
+          "values": [
+            {
+              "value": "449",
+              "cell_state": "reported"
+            },
+            {
+              "value": "197",
+              "cell_state": "reported"
+            },
+            {
+              "value": "128",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Insurance",
+          "values": [
+            {
+              "value": "734",
+              "cell_state": "reported"
+            },
+            {
+              "value": "700",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "507",
+              "cell_state": "reported"
+            },
+            {
+              "value": "884",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(43)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Profit before income tax",
+          "values": [
+            {
+              "value": "4,598",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,674",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_interest_income_p8",
+  "section_ids": [
+    "net_interest_income"
+  ],
+  "section_titles": [
+    "NET INTEREST INCOME"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 27,
+  "usage": {
+    "ts": "2026-07-26T09:05:46",
+    "script": "extract_to_excel",
+    "label": "net_interest_income_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3888,
+    "output_tokens": 6150,
+    "thinking_tokens": 0,
+    "total_tokens": 10038,
+    "est_cost_usd": 0.06118,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.52' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '4.64' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [NET INTEREST INCOME]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis ($m)\n]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

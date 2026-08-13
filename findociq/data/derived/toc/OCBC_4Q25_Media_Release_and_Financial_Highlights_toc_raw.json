@@ -1,0 +1,402 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Media Release",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "FY25 Performance Highlights",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Full Year 2025 Performance",
+      "page": 2,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_004",
+      "title": "FY25 Year-on-Year Performance",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_003"
+    },
+    {
+      "id": "sec_005",
+      "title": "Fourth Quarter 2025 Performance",
+      "page": 4,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_006",
+      "title": "4Q25 Year-on-Year Performance",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_005"
+    },
+    {
+      "id": "sec_007",
+      "title": "4Q25 Quarter-on-Quarter Performance",
+      "page": 5,
+      "level": 2,
+      "parent_id": "sec_005"
+    },
+    {
+      "id": "sec_008",
+      "title": "Asset Quality and Allowances",
+      "page": 6,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_009",
+      "title": "Non-performing assets (\u201cNPAs\u201d)",
+      "page": 6,
+      "level": 2,
+      "parent_id": "sec_008"
+    },
+    {
+      "id": "sec_010",
+      "title": "Allowances",
+      "page": 6,
+      "level": 2,
+      "parent_id": "sec_008"
+    },
+    {
+      "id": "sec_011",
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "page": 7,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_012",
+      "title": "Dividend",
+      "page": 8,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_013",
+      "title": "Message from Group CEO, Tan Teck Long",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_014",
+      "title": "FINANCIAL HIGHLIGHTS",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_015",
+      "title": "Selected Income Statement Items",
+      "page": 10,
+      "level": 2,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_016",
+      "title": "Selected Balance Sheet Items",
+      "page": 10,
+      "level": 2,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_017",
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 11,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_018",
+      "title": "Selected Income Statement Items",
+      "page": 11,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_019",
+      "title": "Selected Balance Sheet Items",
+      "page": 11,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_020",
+      "title": "Key Financial Ratios (%)",
+      "page": 12,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_021",
+      "title": "Performance ratios",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_022",
+      "title": "Revenue mix/efficiency ratios",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_023",
+      "title": "Capital adequacy ratios 8/ 9/",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_024",
+      "title": "Leverage ratio 5/ 8/ 9/",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_025",
+      "title": "Liquidity coverage ratios 6/ 8/",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_026",
+      "title": "Net stable funding ratio 7/ 8/",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_027",
+      "title": "Earnings per share (S$) 2/",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_028",
+      "title": "Net asset value per share (S$)",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_029",
+      "title": "NET INTEREST INCOME",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_030",
+      "title": "Average Balance Sheet",
+      "page": 13,
+      "level": 3,
+      "parent_id": "sec_029"
+    },
+    {
+      "id": "sec_031",
+      "title": "Volume and Rate Analysis",
+      "page": 13,
+      "level": 3,
+      "parent_id": "sec_029"
+    },
+    {
+      "id": "sec_032",
+      "title": "NON-INTEREST INCOME",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_033",
+      "title": "OPERATING EXPENSES",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_034",
+      "title": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_035",
+      "title": "LOANS TO CUSTOMERS",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_036",
+      "title": "By Maturity",
+      "page": 16,
+      "level": 3,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_037",
+      "title": "By Industry",
+      "page": 16,
+      "level": 3,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_038",
+      "title": "By Currency",
+      "page": 16,
+      "level": 3,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_039",
+      "title": "By Geography 1/",
+      "page": 16,
+      "level": 3,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_040",
+      "title": "NON-PERFORMING ASSETS",
+      "page": 17,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_041",
+      "title": "NPLs by Industry",
+      "page": 18,
+      "level": 3,
+      "parent_id": "sec_040"
+    },
+    {
+      "id": "sec_042",
+      "title": "NPAs by Period Overdue",
+      "page": 18,
+      "level": 3,
+      "parent_id": "sec_040"
+    },
+    {
+      "id": "sec_043",
+      "title": "Restructured Loans",
+      "page": 18,
+      "level": 3,
+      "parent_id": "sec_040"
+    },
+    {
+      "id": "sec_044",
+      "title": "DEPOSITS",
+      "page": 19,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_045",
+      "title": "Total Deposits by Maturity",
+      "page": 19,
+      "level": 3,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_046",
+      "title": "Non-Bank Deposits by Product",
+      "page": 19,
+      "level": 3,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_047",
+      "title": "Non-Bank Deposits by Currency",
+      "page": 19,
+      "level": 3,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_048",
+      "title": "CAPITAL ADEQUACY RATIOS 1/",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_049",
+      "title": "PERFORMANCE BY BUSINESS SEGMENT",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_050",
+      "title": "Profit Before Income Tax by Business Segment",
+      "page": 21,
+      "level": 3,
+      "parent_id": "sec_049"
+    },
+    {
+      "id": "sec_051",
+      "title": "Global Consumer/Private Banking",
+      "page": 21,
+      "level": 3,
+      "parent_id": "sec_049"
+    },
+    {
+      "id": "sec_052",
+      "title": "Global Wholesale Banking",
+      "page": 21,
+      "level": 3,
+      "parent_id": "sec_049"
+    },
+    {
+      "id": "sec_053",
+      "title": "Global Markets",
+      "page": 22,
+      "level": 3,
+      "parent_id": "sec_049"
+    },
+    {
+      "id": "sec_054",
+      "title": "Insurance",
+      "page": 22,
+      "level": 3,
+      "parent_id": "sec_049"
+    },
+    {
+      "id": "sec_055",
+      "title": "Others",
+      "page": 22,
+      "level": 3,
+      "parent_id": "sec_049"
+    },
+    {
+      "id": "sec_056",
+      "title": "About OCBC",
+      "page": 23,
+      "level": 1,
+      "parent_id": null
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 12611,
+    "output_tokens": 3373,
+    "thinking_tokens": null
+  }
+}

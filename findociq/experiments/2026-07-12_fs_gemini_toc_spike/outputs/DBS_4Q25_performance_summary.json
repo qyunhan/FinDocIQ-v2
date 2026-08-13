@@ -1,0 +1,321 @@
+{
+  "doc_id": "DBS_4Q25_performance_summary",
+  "source_pdf": "findociq/data/sources/financial_statements/DBS/2025/4Q25/DBS_4Q25_performance_summary.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "Financial Results for the Year Ended 31 December 2025",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Dividends",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "OVERVIEW",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "Per share data ($)3,8",
+      "page": 6,
+      "level": 2
+    },
+    {
+      "title": "Second Half",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "title": "Fourth Quarter",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "title": "Full Year",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "title": "NET INTEREST INCOME",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "title": "NET FEE AND COMMISSION INCOME",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "OTHER NON-INTEREST INCOME",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "EXPENSES1",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "ALLOWANCES FOR CREDIT AND OTHER LOSSES",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "title": "Consumer Banking/ Wealth Management",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "Institutional Banking",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "Markets Trading",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "Others",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "PERFORMANCE BY GEOGRAPHY",
+      "page": 18,
+      "level": 1
+    },
+    {
+      "title": "Singapore",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Hong Kong",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Rest of Greater China",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "South and Southeast Asia",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "Rest of the World",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "CUSTOMER LOANS",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "title": "CUSTOMER DEPOSITS",
+      "page": 26,
+      "level": 1
+    },
+    {
+      "title": "DEBTS ISSUED",
+      "page": 27,
+      "level": 1
+    },
+    {
+      "title": "CAPITAL ADEQUACY",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "PILLAR 3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDING RATIO DISCLOSURES",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "UNREALISED PROPERTY VALUATION SURPLUS",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "AUDITED CONSOLIDATED INCOME STATEMENT",
+      "page": 29,
+      "level": 1
+    },
+    {
+      "title": "AUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "page": 30,
+      "level": 1
+    },
+    {
+      "title": "AUDITED BALANCE SHEETS",
+      "page": 31,
+      "level": 1
+    },
+    {
+      "title": "AUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "page": 32,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "page": 33,
+      "level": 1
+    },
+    {
+      "title": "AUDITED STATEMENT OF CHANGES IN EQUITY",
+      "page": 34,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY",
+      "page": 35,
+      "level": 1
+    },
+    {
+      "title": "AUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "page": 36,
+      "level": 1
+    },
+    {
+      "title": "OTHER FINANCIAL INFORMATION",
+      "page": 37,
+      "level": 1
+    },
+    {
+      "title": "1. Fair Value Measurement",
+      "page": 37,
+      "level": 2
+    },
+    {
+      "title": "Fair Value Hierarchy",
+      "page": 37,
+      "level": 3
+    },
+    {
+      "title": "2. Off-balance Sheet Items",
+      "page": 37,
+      "level": 2
+    },
+    {
+      "title": "ADDITIONAL INFORMATION",
+      "page": 38,
+      "level": 1
+    },
+    {
+      "title": "SHARE CAPITAL",
+      "page": 38,
+      "level": 2
+    },
+    {
+      "title": "INTERESTED PARTY TRANSACTIONS PURSUANT TO LISTING RULE 920(1)",
+      "page": 38,
+      "level": 2
+    },
+    {
+      "title": "CONFIRMATION OF DIRECTORS AND EXECUTIVE OFFICERS\u2019 UNDERTAKINGS PURSUANT TO LISTING RULE 720(1)",
+      "page": 38,
+      "level": 2
+    },
+    {
+      "title": "REPORT OF PERSONS OCCUPYING MANAGERIAL POSITIONS WHO ARE RELATED TO A DIRECTOR, CEO OR SUBSTANTIAL SHAREHOLDER",
+      "page": 38,
+      "level": 2
+    },
+    {
+      "title": "INDEPENDENT AUDITOR\u2019S REPORT TO THE MEMBERS OF DBS GROUP HOLDINGS LTD",
+      "page": 39,
+      "level": 1
+    },
+    {
+      "title": "Report on the Audit of the Financial Statements",
+      "page": 39,
+      "level": 2
+    },
+    {
+      "title": "Our Opinion",
+      "page": 39,
+      "level": 3
+    },
+    {
+      "title": "What we have audited",
+      "page": 39,
+      "level": 3
+    },
+    {
+      "title": "Basis for Opinion",
+      "page": 39,
+      "level": 3
+    },
+    {
+      "title": "Independence",
+      "page": 39,
+      "level": 3
+    },
+    {
+      "title": "Our Audit Approach",
+      "page": 40,
+      "level": 2
+    },
+    {
+      "title": "Overview",
+      "page": 40,
+      "level": 3
+    },
+    {
+      "title": "Materiality",
+      "page": 41,
+      "level": 3
+    },
+    {
+      "title": "How we developed the audit scope",
+      "page": 41,
+      "level": 3
+    },
+    {
+      "title": "Key audit matters",
+      "page": 42,
+      "level": 2
+    },
+    {
+      "title": "Other Information",
+      "page": 44,
+      "level": 2
+    },
+    {
+      "title": "Responsibilities of Management and Directors for the Financial Statements",
+      "page": 45,
+      "level": 2
+    },
+    {
+      "title": "Auditor\u2019s Responsibilities for the Audit of the Financial Statements",
+      "page": 45,
+      "level": 2
+    },
+    {
+      "title": "Report on Other Legal and Regulatory Requirements",
+      "page": 46,
+      "level": 2
+    }
+  ],
+  "contents_page_number": 3,
+  "contents_page_text": "DBS GROUP HOLDINGS LTD AND ITS SUBSIDIARIES\nContents Page\nOverview 2\nFinancial Review\nNet Interest Income 8\nNet Fee and Commission Income 10\nOther Non-Interest Income 10\nExpenses 11\nAllowances for Credit and Other Losses 11\nPerformance by Business Segments 12\nPerformance by Geography 16\nCustomer Loans 20\nNon-Performing Assets and Loss Allowance Coverage 21\nCustomer Deposits 24\nDebts Issued 25\nCapital Adequacy 26\nUnrealised Property Valuation Surplus 26\nFinancial Statements\nAudited Consolidated Income Statement 27\nAudited Consolidated Statement of Comprehensive Income 28\nAudited Balance Sheets 29\nAudited Consolidated Statement of Changes in Equity 30\nAudited Statement of Changes in Equity 32\nAudited Consolidated Cash Flow Statement 34\nOther Financial Information 35\nAdditional Information\nShare Capital 36\nInterested Party Transactions Pursuant to Listing Rule 920(1) 36\nConfirmation of Directors and Executive Officers\u2019 Undertakings Pursuant to Listing Rule 720(1) 36\nReport of Persons Occupying Managerial Positions who are Related to a Director, CEO or Substantial Shareholder 36\nAttachment: Independent Auditor\u2019s Report\n1",
+  "n_pages": 46
+}

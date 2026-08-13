@@ -1,0 +1,619 @@
+{
+  "tables": [
+    {
+      "title": "2 Income Tax",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "2",
+      "columns": [
+        {
+          "group": "Group",
+          "leaf": "2025 $m"
+        },
+        {
+          "group": "Group",
+          "leaf": "2024 $m"
+        },
+        {
+          "group": "Group",
+          "leaf": "2H25 $m"
+        },
+        {
+          "group": "Group",
+          "leaf": "2H24 $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "The Group calculates the period income tax expense using the tax rate that would be applicable to the expected total annual earnings.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "The major components of income tax expense in the income statement are:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current income tax expense",
+          "values": [
+            {
+              "value": "1,070",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,195",
+              "cell_state": "reported"
+            },
+            {
+              "value": "345",
+              "cell_state": "reported"
+            },
+            {
+              "value": "570",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deferred income tax expense",
+          "values": [
+            {
+              "value": "(119)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(119)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(20)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(110)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3 Share Capital and Other Capital",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "3",
+      "columns": [
+        {
+          "group": "Dec-25",
+          "leaf": "Number of shares '000"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "Amount $m"
+        },
+        {
+          "group": "Dec-24",
+          "leaf": "Number of shares '000"
+        },
+        {
+          "group": "Dec-24",
+          "leaf": "Amount $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Ordinary shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at beginning of period",
+          "values": [
+            {
+              "value": "1,685,923",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,351",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,685,923",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,351",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares re-purchased - cancelled",
+          "values": [
+            {
+              "value": "(18,510)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(59)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at end of period",
+          "values": [
+            {
+              "value": "1,667,413",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,292",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,685,923",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,351",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Treasury shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at beginning of period",
+          "values": [
+            {
+              "value": "(14,397)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(390)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13,485)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(347)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares re-purchased - held in treasury",
+          "values": [
+            {
+              "value": "(3,445)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(120)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,200)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(102)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares issued under share-based compensation plan",
+          "values": [
+            {
+              "value": "2,599",
+              "cell_state": "reported"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,288",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at end of period",
+          "values": [
+            {
+              "value": "(15,243)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(440)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(14,397)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(390)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary share capital",
+          "values": [
+            {
+              "value": "1,652,170",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,671,526",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,961",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "3.58% non-cumulative non-convertible perpetual capital securities issued on 17 July 2019",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "749",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "749",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "2.25% non-cumulative non-convertible perpetual capital securities issued on 15 January 2021",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "2.55% non-cumulative non-convertible perpetual capital securities issued on 22 June 2021",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "599",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "599",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "4.25% non-cumulative non-convertible perpetual capital securities issued on 4 July 2022",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "400",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "400",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "5.25% non-cumulative non-convertible perpetual capital securities issued on 19 January 2023",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "850",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "850",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Share capital and other capital of the Bank and the Group",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "7,600",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "7,709",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Current income tax expense"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Deferred income tax expense"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Ordinary shares"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Balance at beginning of period"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Shares re-purchased - cancelled"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Balance at end of period"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Treasury shares"
+          },
+          {
+            "line_id": 20,
+            "indent": 1,
+            "label_clean": "Balance at beginning of period"
+          },
+          {
+            "line_id": 21,
+            "indent": 1,
+            "label_clean": "Shares re-purchased - held in treasury"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Shares issued under share-based compensation plan"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "Balance at end of period"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Ordinary share capital"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "3.58% non-cumulative non-convertible perpetual capital securities issued on 17 July 2019"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "2.25% non-cumulative non-convertible perpetual capital securities issued on 15 January 2021"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "2.55% non-cumulative non-convertible perpetual capital securities issued on 22 June 2021"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "4.25% non-cumulative non-convertible perpetual capital securities issued on 4 July 2022"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "5.25% non-cumulative non-convertible perpetual capital securities issued on 19 January 2023"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Share capital and other capital of the Bank and the Group"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "tables": [
+    {
+      "title": "INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF OVERSEA-CHINESE BANKING CORPORATION LIMITED (continued)\nKey Audit Matter",
+      "label_header": "Key Audit Matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the Key Audit Matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Valuation of insurance contract liabilities for life insurance funds\n(Refer to Notes 2.21, 22 and 38.4 to the financial statements)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "The Group's insurance operations are conducted through Great Eastern Holdings Limited and its subsidiaries (\"GEH Group\").\n\nInsurance contract liabilities under SFRS(I) 17 are measured as the total of fulfilment cash flows and contractual service margin (\"CSM\"), the determination of which requires judgement and interpretation. This includes the selection of accounting policies and the use of complex methodologies which are applied in actuarial models. The selection and application of appropriate methodologies requires significant professional judgement. It also requires the determination of assumptions which involve estimation uncertainty.\n\nThe CSM represents the unearned profit that the Group will recognise as it provides insurance contract services in the future. The release of CSM of a group of contracts is recognised as insurance revenue in the income statement of the Group based on the number of coverage units provided in the period. Coverage units in turn are determined by the quantity of the benefits provided under a contract and its expected coverage duration. Management applied judgement in the identification of the service provided and the determination of the coverage units.",
+          "values": [
+            {
+              "value": "We performed the following procedures to address this matter:\n\n\u2022 we assessed the adherence of the accounting policies adopted by management with the requirements in SFRS(I) 17;\n\u2022 we understood the process over the selection of accounting policies, determination of methodologies and assumptions, and reconciliation of data used in determining the insurance contract liabilities;\n\u2022 we tested the design and operating effectiveness of controls over the accuracy and completeness of the data used;\n\u2022 we assessed the appropriateness of the methodologies used in the determination of the insurance contract liabilities comprising of fulfilment cash flows and CSM, and their application in actuarial models;\n\u2022 we assessed the reasonableness of the key assumptions used by management by comparing against GEH Group's historical experiences and market observable data, where applicable;\n\u2022 we assessed the appropriateness of management's identification of the services provided by reviewing the terms and features of the insurance contracts issued on a sample basis;\n\u2022 we assessed the appropriateness of management's determination of the coverage units against the type of service identified; and\n\u2022 we reviewed the reasonableness of the movement analysis of the insurance contract liabilities prepared by management. The movement analysis provides a reconciliation of the balance as at 31 December 2024 to 31 December 2025, showing the key drivers of the changes during the year.\n\nBased on the work performed and the evidence obtained, we have found the methodologies, assumptions and judgements used by management to be appropriate.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

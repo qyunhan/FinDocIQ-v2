@@ -1,0 +1,108 @@
+{
+  "tables": [
+    {
+      "title": "2 Income Tax",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "2",
+      "columns": [
+        {
+          "group": "Group",
+          "leaf": "2025 $m"
+        },
+        {
+          "group": "Group",
+          "leaf": "2024 $m"
+        },
+        {
+          "group": "Group",
+          "leaf": "2H25 $m"
+        },
+        {
+          "group": "Group",
+          "leaf": "2H24 $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current income tax expense",
+          "values": [
+            {
+              "value": "1,070",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,195",
+              "cell_state": "reported"
+            },
+            {
+              "value": "345",
+              "cell_state": "reported"
+            },
+            {
+              "value": "570",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deferred income tax expense",
+          "values": [
+            {
+              "value": "(119)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(119)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(20)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(110)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Current income tax expense"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Deferred income tax expense"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statements_of_changes_in_equity_unaudited_for_the_financial_2_p28",
+  "section_ids": [
+    "statements_of_changes_in_equity_unaudited_for_the_financial_2"
+  ],
+  "section_titles": [
+    "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2026"
+  ],
+  "pages": [
+    28
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-08-07T09:25:09",
+    "script": "extract_to_excel",
+    "label": "statements_of_changes_in_equity_unaudited_for_the_financial_2_p28",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3979,
+    "output_tokens": 4047,
+    "thinking_tokens": 0,
+    "total_tokens": 8026,
+    "est_cost_usd": 0.04239,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '7937' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5747' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6561' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6685' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3603' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '335' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '475' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '709' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '528' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '773' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '635' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '283' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Profit for the financial period' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Other comprehensive income for the finan' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Total comprehensive income for the finan' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Dividends' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares re-purchased - cancelled' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares re-purchased - held in treasury' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Share-based compensation' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares issued under share-based compensa' [Statements of Changes in Equit]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

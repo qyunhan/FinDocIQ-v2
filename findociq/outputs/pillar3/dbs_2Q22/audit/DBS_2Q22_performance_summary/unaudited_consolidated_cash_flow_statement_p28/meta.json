@@ -1,0 +1,41 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_cash_flow_statement_p28",
+  "section_ids": [
+    "unaudited_consolidated_cash_flow_statement"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT"
+  ],
+  "pages": [
+    28
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 47,
+  "usage": {
+    "ts": "2026-07-26T09:06:46",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_cash_flow_statement_p28",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3922,
+    "output_tokens": 5120,
+    "thinking_tokens": 0,
+    "total_tokens": 9042,
+    "est_cost_usd": 0.05196,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

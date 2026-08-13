@@ -1,0 +1,50 @@
+{
+  "document": "DBS_4Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_interest_income_p8-9",
+  "section_ids": [
+    "net_interest_income"
+  ],
+  "section_titles": [
+    "NET INTEREST INCOME"
+  ],
+  "pages": [
+    8,
+    9
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 5,
+  "n_rows": 52,
+  "usage": {
+    "ts": "2026-07-26T09:12:33",
+    "script": "extract_to_excel",
+    "label": "net_interest_income_p8-9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4476,
+    "output_tokens": 11889,
+    "thinking_tokens": 0,
+    "total_tokens": 16365,
+    "est_cost_usd": 0.11371,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2.45' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '6.30' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '10.9' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Less: Treasury Markets' [NET INTEREST INCOME]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis ($m) ]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis ($m) ]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

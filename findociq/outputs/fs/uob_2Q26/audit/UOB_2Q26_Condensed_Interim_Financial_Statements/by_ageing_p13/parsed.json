@@ -1,0 +1,186 @@
+{
+  "tables": [
+    {
+      "title": "Non-Performing Assets",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "Jun-26",
+          "leaf": "$m"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "$m"
+        },
+        {
+          "group": "Jun-25",
+          "leaf": "$m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By ageing",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current",
+          "values": [
+            {
+              "value": "824",
+              "cell_state": "reported"
+            },
+            {
+              "value": "845",
+              "cell_state": "reported"
+            },
+            {
+              "value": "579",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Within 90 days",
+          "values": [
+            {
+              "value": "941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "592",
+              "cell_state": "reported"
+            },
+            {
+              "value": "614",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 90 to 180 days",
+          "values": [
+            {
+              "value": "730",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "846",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 180 days",
+          "values": [
+            {
+              "value": "3,255",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,865",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,347",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "By ageing"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Current"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Within 90 days"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Over 90 to 180 days"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Over 180 days"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": "Non-Performing Assets",
+        "col_labels_clean": [
+          "$m",
+          "$m",
+          "$m"
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

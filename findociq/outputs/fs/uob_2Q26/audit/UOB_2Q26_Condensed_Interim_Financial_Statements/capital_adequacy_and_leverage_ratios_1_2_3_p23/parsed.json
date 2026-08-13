@@ -1,0 +1,498 @@
+{
+  "tables": [
+    {
+      "title": "Capital Adequacy and Leverage Ratios 1,2,3",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "Jun-26",
+          "leaf": "$m"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "$m"
+        },
+        {
+          "group": "Jun-25",
+          "leaf": "$m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share capital",
+          "values": [
+            {
+              "value": "4,888",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,887",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disclosed reserves/others",
+          "values": [
+            {
+              "value": "43,951",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42,991",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42,079",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Regulatory adjustments",
+          "values": [
+            {
+              "value": "(5,882)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6,127)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6,325)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Common Equity Tier 1 Capital (\"CET1\")",
+          "values": [
+            {
+              "value": "42,957",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,716",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,641",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Perpetual capital securities/others",
+          "values": [
+            {
+              "value": "3,449",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,751",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,751",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Additional Tier 1 Capital (\"AT1\")",
+          "values": [
+            {
+              "value": "3,449",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,751",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,751",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Tier 1 Capital",
+          "values": [
+            {
+              "value": "46,406",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44,467",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43,392",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Subordinated notes",
+          "values": [
+            {
+              "value": "2,463",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,090",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,016",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Provisions/others",
+          "values": [
+            {
+              "value": "740",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,290",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,213",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Tier 2 Capital",
+          "values": [
+            {
+              "value": "3,203",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,380",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,229",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Eligible Total Capital",
+          "values": [
+            {
+              "value": "49,609",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48,847",
+              "cell_state": "reported"
+            },
+            {
+              "value": "47,621",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Risk-Weighted Assets (\"RWA\")",
+          "values": [
+            {
+              "value": "278,902",
+              "cell_state": "reported"
+            },
+            {
+              "value": "275,990",
+              "cell_state": "reported"
+            },
+            {
+              "value": "265,875",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Capital Adequacy Ratios (\"CAR\")",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "CET1",
+          "values": [
+            {
+              "value": "15.4%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.3%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Tier 1",
+          "values": [
+            {
+              "value": "16.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.3%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "17.8%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.7%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.9%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Leverage Exposure",
+          "values": [
+            {
+              "value": "681,260",
+              "cell_state": "reported"
+            },
+            {
+              "value": "660,661",
+              "cell_state": "reported"
+            },
+            {
+              "value": "611,022",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Leverage Ratio",
+          "values": [
+            {
+              "value": "6.8%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6.7%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.1%",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Share capital 4 ,888 4 ,852 4 ,887"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Disclosed reserves/others 4 3,951 4 2,991 4 2,079"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Regulatory adjustments ( 5,882) ( 6,127) ( 6,325)"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Common Equity Tier 1 Capital (\"CET1\") 4 2,957 4 1,716 4 0,641"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Perpetual capital securities/others 3 ,449 2 ,751 2 ,751"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Additional Tier 1 Capital (\"AT1\") 3 ,449 2 ,751 2 ,751"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Tier 1 Capital 4 6,406 4 4,467 4 3,392"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Subordinated notes 2 ,463 3 ,090 3 ,016"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Provisions/others 7 40 1 ,290 1 ,213"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Tier 2 Capital 3 ,203 4 ,380 4 ,229"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Eligible Total Capital 4 9,609 4 8,847 4 7,621"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Risk-Weighted Assets (\"RWA\") 2 78,902 2 75,990 2 65,875"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Capital Adequacy Ratios (\"CAR\")"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "CET115.4%15.1%15.3%"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Tier 116.6%16.1%16.3%"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Total 17.8%17.7%17.9%"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Leverage Exposure 6 81,260 6 60,661 6 11,022"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Leverage Ratio6.8%6.7%7.1%"
+          }
+        ],
+        "title_clean": "Capital Adequacy and Leverage Ratios",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

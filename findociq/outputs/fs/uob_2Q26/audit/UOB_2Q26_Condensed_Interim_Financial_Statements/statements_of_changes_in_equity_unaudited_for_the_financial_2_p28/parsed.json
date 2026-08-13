@@ -1,0 +1,751 @@
+{
+  "tables": [
+    {
+      "title": "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2026",
+      "label_header": "In $m",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "The Bank",
+          "leaf": "Share capital and other capital"
+        },
+        {
+          "group": "The Bank",
+          "leaf": "Retained earnings"
+        },
+        {
+          "group": "The Bank",
+          "leaf": "Other reserves"
+        },
+        {
+          "group": "The Bank",
+          "leaf": "Total equity"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 1 January 2026",
+          "values": [
+            {
+              "value": "7,600",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,487",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,765",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43,852",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit for the financial period",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,790",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,790",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other comprehensive income for the financial period",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(239)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(244)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income for the financial period",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,785",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(239)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,546",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1,221)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1,221)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares re-purchased - cancelled",
+          "values": [
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(114)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(125)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares re-purchased - held in treasury",
+          "values": [
+            {
+              "value": "(51)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(51)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share-based compensation",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares issued under share-based compensation plan",
+          "values": [
+            {
+              "value": "98",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(97)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Perpetual capital securities issued",
+          "values": [
+            {
+              "value": "849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "849",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Redemption of perpetual capital securities",
+          "values": [
+            {
+              "value": "(150)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(150)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 30 June 2026",
+          "values": [
+            {
+              "value": "8,335",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,937",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,475",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45,747",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Balance at 1 January 2025",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 1 January 2025",
+          "values": [
+            {
+              "value": "7,709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,561",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,528",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42,798",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit for the financial period",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,773",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,773",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other comprehensive income for the financial period",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "789",
+              "cell_state": "reported"
+            },
+            {
+              "value": "788",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income for the financial period",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,772",
+              "cell_state": "reported"
+            },
+            {
+              "value": "789",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,561",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transfers",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(2,420)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(2,420)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares re-purchased - cancelled",
+          "values": [
+            {
+              "value": "(23)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(232)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(255)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares re-purchased - held in treasury",
+          "values": [
+            {
+              "value": "(121)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(121)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share-based compensation",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares issued under share-based compensation plan",
+          "values": [
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(78)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(8)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 30 June 2025",
+          "values": [
+            {
+              "value": "7,635",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,685",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,283",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43,603",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 6,
+            "indent": 0,
+            "label_clean": "Balance at 1 January 2026 7,"
+          },
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Profit for the financial period"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Other comprehensive income for the financial period"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the financial period"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Dividends"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Shares re-purchased - cancelled"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Shares re-purchased - held in treasury"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Share-based compensation"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Shares issued under share-based compensation plan"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Perpetual capital securities issued"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Redemption of perpetual capital securities("
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Balance at 30 June 2026 8 ,"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Balance at 1 January 2025 7 ,"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Balance at 1 January 2025 7 ,"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Profit for the financial period"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Other comprehensive income for the financial period"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the financial period"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Transfers"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Dividends"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Shares re-purchased - cancelled"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Shares re-purchased - held in treasury("
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Share-based compensation"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Shares issued under share-based compensation plan"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Balance at 30 June 2025 7 ,"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "audited_statement_of_changes_in_equity_p34",
+  "section_ids": [
+    "audited_statement_of_changes_in_equity"
+  ],
+  "section_titles": [
+    "AUDITED STATEMENT OF CHANGES IN EQUITY"
+  ],
+  "pages": [
+    34
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 20,
+  "usage": {
+    "ts": "2026-07-16T11:29:33",
+    "script": "extract_to_excel",
+    "label": "audited_statement_of_changes_in_equity_p34",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2951,
+    "output_tokens": 4092,
+    "thinking_tokens": 0,
+    "total_tokens": 7043,
+    "est_cost_usd": 0.04125,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1277' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

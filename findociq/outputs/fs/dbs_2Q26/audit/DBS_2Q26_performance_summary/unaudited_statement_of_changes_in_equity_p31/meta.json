@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_statement_of_changes_in_equity_p31",
+  "section_ids": [
+    "unaudited_statement_of_changes_in_equity"
+  ],
+  "section_titles": [
+    "UNAUDITED STATEMENT OF CHANGES IN EQUITY"
+  ],
+  "pages": [
+    31
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 19,
+  "usage": {
+    "ts": "2026-08-06T09:22:31",
+    "script": "extract_to_excel",
+    "label": "unaudited_statement_of_changes_in_equity_p31",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3923,
+    "output_tokens": 3881,
+    "thinking_tokens": 0,
+    "total_tokens": 7804,
+    "est_cost_usd": 0.04081,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [UNAUDITED STATEMENT OF CHANGES IN EQUITY]",
+      "  col-bands: uncalibrated (0 dense lines) [UNAUDITED STATEMENT OF CHANGES IN EQUITY]",
+      "  col-repair: declined for table 'UNAUDITED STATEMENT OF CHANGES IN EQUITY' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked",
+      "  col-repair: declined for table 'UNAUDITED STATEMENT OF CHANGES IN EQUITY' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

@@ -1,0 +1,67 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fair_value_hierarchy_p33",
+  "section_ids": [
+    "fair_value_hierarchy"
+  ],
+  "section_titles": [
+    "Fair Value Hierarchy"
+  ],
+  "pages": [
+    33
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-13T17:11:33",
+    "script": "extract_to_excel",
+    "label": "fair_value_hierarchy_p33",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2924,
+    "output_tokens": 4354,
+    "thinking_tokens": 0,
+    "total_tokens": 7278,
+    "est_cost_usd": 0.01176
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '363808' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '362303' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '356781' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: '- Government securities and treasury bil' [Fair Value Hierarchy]",
+      "  duplicate row label x2: '- Bank and corporate securities' [Fair Value Hierarchy]",
+      "  duplicate row label x2: '- Other financial assets' [Fair Value Hierarchy]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Fair Value Hierarchy",
+      "anchor_label": "Fair Value Hierarchy",
+      "anchor_y": 98.1,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "Off-balance Sheet Items",
+      "anchor_label": "Off-balance Sheet Items",
+      "anchor_y": 550.67,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

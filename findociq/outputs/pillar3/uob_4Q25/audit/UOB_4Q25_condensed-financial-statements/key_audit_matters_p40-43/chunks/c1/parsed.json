@@ -1,0 +1,77 @@
+{
+  "tables": [
+    {
+      "title": "Key Audit Matters",
+      "label_header": "Areas of focus",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the risk factors"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Expected credit losses\nRefer to Notes 2(d)(vi), 3(i), 12, 21(b), 24, 25, 27(b), 28(d), 30(b) and 31 to the consolidated financial statements.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "a) Non-impaired credit exposures",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "The Group applies SFRS(I) 9: Financial Instruments requirements to calculate the expected credit loss (ECL) for its credit exposures. The credit exposures are categorised into non-impaired credit exposures and impaired credit exposures.\n\nThe ECL calculation for non-impaired credit exposures involves significant judgements and estimates. Areas we have identified which have greater levels of management judgement are:\n\u2022 the economic scenarios used, and the probability weightages applied to them to measure ECLs on a forward-looking basis, reflecting management\u2019s view of potential future economic scenarios;\n\u2022 the significant increase in credit risk (SICR) criteria;\n\u2022 the model assumptions; and\n\u2022 the adjustments to the model-driven ECL results to address model limitations or emerging trends.",
+          "values": [
+            {
+              "value": "We assessed the design and evaluated the operating effectiveness of the key controls over the Group\u2019s ECL on non-impaired credit exposures computation processes with a focus on:\n\u2022 the completeness and accuracy of the data inputs into the ECL calculation system;\n\u2022 the validation of models;\n\u2022 the selection and implementation of economic scenarios and probability weightages;\n\u2022 the staging of credit exposures based on the Group\u2019s SICR criteria and early warning indicators; and\n\u2022 the governance over post-model adjustments.\n\nWe involved our internal modelling specialists to assist us in performing the following procedures on a sampling basis:\n\u2022 independently reviewed the appropriateness of ECL model methodologies;\n\u2022 assessed the reasonableness of the probabilities of default (PD), loss given default (LGD) and exposure at default (EAD) models by performing sensitivity analyses, benchmarking or back-testing; and\n\u2022 reviewed the Group\u2019s assessment of its SICR criteria.\n\nWe also reviewed the Group\u2019s approach for the selection of economic scenarios to assess the reasonableness of the economic scenarios and corresponding probability weightages applied by the Group, as well as inspected the Group\u2019s ECL Committee\u2019s decisions to assess the appropriateness of management\u2019s rationale over the post-model adjustments and performed a recalculation, where applicable.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 79,
+            "indent": 0,
+            "label_clean": "a) Non-impaired credit exposures \u2022 the governance over post-model adjustments."
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "Key Audit Matters",
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

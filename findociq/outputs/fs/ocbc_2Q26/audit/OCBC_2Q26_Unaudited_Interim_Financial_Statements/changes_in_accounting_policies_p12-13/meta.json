@@ -1,0 +1,58 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "changes_in_accounting_policies_p12-13",
+  "section_ids": [
+    "changes_in_accounting_policies"
+  ],
+  "section_titles": [
+    "2.4 Changes in accounting policies"
+  ],
+  "pages": [
+    12,
+    13
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 3,
+  "usage": {
+    "ts": "2026-08-07T04:55:39",
+    "script": "extract_to_excel",
+    "label": "changes_in_accounting_policies_p12-13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4522,
+    "output_tokens": 432,
+    "thinking_tokens": 0,
+    "total_tokens": 4954,
+    "est_cost_usd": 0.01067,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2.4' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'SFRS(I) 9 (Amendments), SFRS(I) 7 (Amend' [2.4 Changes in accounting poli]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "2.4 Changes in accounting policies",
+      "anchor_label": "2.4 Changes in accounting policies",
+      "anchor_y": 120.24,
+      "owning_section": "2.4",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": true
+}

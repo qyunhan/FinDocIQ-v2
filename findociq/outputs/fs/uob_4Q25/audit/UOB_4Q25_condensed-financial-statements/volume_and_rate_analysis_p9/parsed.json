@@ -1,0 +1,720 @@
+{
+  "tables": [
+    {
+      "title": "Volume and rate analysis \u2014 2025 vs 2024",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2025 vs 2024",
+          "leaf": "Volume change $m"
+        },
+        {
+          "group": "2025 vs 2024",
+          "leaf": "Rate change $m"
+        },
+        {
+          "group": "2025 vs 2024",
+          "leaf": "Net change $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer loans",
+          "values": [
+            {
+              "value": "852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,799)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,947)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances",
+          "values": [
+            {
+              "value": "(528)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(425)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(953)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Securities",
+          "values": [
+            {
+              "value": "473",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(97)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "376",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "797",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3,321)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,524)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest expense",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "499",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,323)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,824)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances/others",
+          "values": [
+            {
+              "value": "79",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(485)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(407)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "578",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,809)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,231)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Change in number of days",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(26)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "219",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(512)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(319)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Volume and rate analysis \u2014 2H25 vs 2H24 & 2H25 vs 1H25",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2H25 vs 2H24",
+          "leaf": "Volume change $m"
+        },
+        {
+          "group": "2H25 vs 2H24",
+          "leaf": "Rate change $m"
+        },
+        {
+          "group": "2H25 vs 2H24",
+          "leaf": "Net change $m"
+        },
+        {
+          "group": "2H25 vs 1H25",
+          "leaf": "Volume change $m"
+        },
+        {
+          "group": "2H25 vs 1H25",
+          "leaf": "Rate change $m"
+        },
+        {
+          "group": "2H25 vs 1H25",
+          "leaf": "Net change $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer loans",
+          "values": [
+            {
+              "value": "411",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,764)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,353)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(920)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(710)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances",
+          "values": [
+            {
+              "value": "(343)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(205)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(547)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(229)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(81)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(309)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Securities",
+          "values": [
+            {
+              "value": "302",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(96)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "206",
+              "cell_state": "reported"
+            },
+            {
+              "value": "252",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(64)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "188",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "371",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,065)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,694)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "233",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,064)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(831)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest expense",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "287",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,375)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,088)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "139",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(731)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(592)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances/others",
+          "values": [
+            {
+              "value": "(19)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(286)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(305)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "50",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(80)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(30)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "268",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,661)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,393)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "189",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(811)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(622)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Change in number of days",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "75",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "103",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(404)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(301)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(253)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(134)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Interest income"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Customer loans"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Interbank balances"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Securities"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Interest expense"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Customer deposits"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Interbank balances/others"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Change in number of days"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Net interest income"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Interest income"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Customer loans"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Interbank balances"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Securities"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Interest expense"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Customer deposits"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Interbank balances/others"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Change in number of days"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Net interest income"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

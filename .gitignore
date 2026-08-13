@@ -1,0 +1,100 @@
+# PDFs — source documents, never commit
+*.pdf
+
+# Outputs — Excel and large binaries excluded, audit trail tracked
+DELIVERABLE/outputs/*.xlsx
+DELIVERABLE/outputs/pillar3/
+DELIVERABLE/outputs/CFO_Presentation/*.xlsx
+DELIVERABLE/outputs/CFO_Presentation/*.json
+# Slide PNGs are large — exclude to keep repo size manageable
+DELIVERABLE/outputs/CFO_Presentation/audit/**/*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.env
+
+# Google Cloud SDK — too large
+google-cloud-sdk/
+
+# Excel lock files
+~$*.xlsx
+
+# macOS
+.DS_Store
+
+# Claude Code session/worktree data — large, local only.
+# Shared team config (agents/, settings.json) IS committed; everything else stays local.
+.claude/*
+!.claude/agents/
+!.claude/settings.json
+
+# findb — generated SQLite databases (regenerable from build_db.py)
+findb/*.sqlite
+
+# Run logs and scratch artifacts
+run_*.log
+repo_review.zip
+out/
+
+# Stray files from mistyped shell commands (do not commit)
+/-E
+/grep
+/ls
+/python3
+/migrat|resumed|legacy|re-extract
+
+# Isolated MinerU venv (heavy, local only)
+.venv-mineru/
+
+# Paddle scan page renders (regenerable, heavy) — CSV/JSON evidence is kept
+findociq/experiments/*/contract_v2/paddle_out/*/pages/
+findociq/data/derived/paddle_scans/*/pages/
+
+# pass2 run outputs (generated per run). EXCEPTION: the audit replay artifacts
+# (parsed.json / meta.json under {family}/**/audit/) ARE tracked — they are the
+# extraction evidence trail the loader tests replay against. The `/**` + `!**/`
+# idiom re-includes directories so git can descend to the negated files.
+# fs mirrors the pillar3 whitelist on the same terms (family-aware output
+# paths — docs/specs/2026-07-29-family-aware-output-paths.md).
+findociq/outputs/**
+!findociq/outputs/**/
+!findociq/outputs/pillar3/**/audit/**/parsed.json
+!findociq/outputs/pillar3/**/audit/**/meta.json
+!findociq/outputs/fs/**/audit/**/parsed.json
+!findociq/outputs/fs/**/audit/**/meta.json
+
+# Local heavy venvs
+.venv/
+.venv-paddle/
+.venv-reports/
+
+# Paddle eval render artifacts (regenerable, heavy) — keep CSV/JSON evidence
+findociq/experiments/2026-07-07_paddleocr_eval/outputs/**/imgs/
+findociq/experiments/2026-07-07_paddleocr_eval/outputs/**/pages/
+findociq/experiments/2026-07-07_paddleocr_eval/outputs/**/*.png
+
+# experiment scratch DBs (regenerable; THE db is findociq/db/compiled_fs.db)
+findociq/experiments/2026-07-12_fs_gemini_toc_spike/contract_v2/outputs/*.db
+findociq/db/*.bak
+
+# pass2 replay intermediate — regenerable from the tracked audit artifacts via
+# findociq/tools/replay_load.py; compiled_v2.db is the deliverable built from it
+findociq/db/compiled_reload.db
+
+# static audit report — regenerable via `python3 findociq/audit_pipeline.py`
+findociq/repo_audit.json
+findociq/repo_audit.md
+
+# pre-destructive-op DB snapshots (the `*.bak` rule above misses suffixed ones)
+findociq/db/*.bak-*
+
+# The INGEST db. The app only ever reads compiled_v2.db (~10MB); this one is
+# ~30MB of binary that changes on every ingest, and 215 commits of it are why
+# the clone is 217MB. Durable copy lives in GCS, per CLAUDE.md:
+#   gcloud storage cp findociq/db/compiled_fs.db \
+#     gs://findociq-sources-igc2026-team08-6311/db/compiled_fs.db
+# compiled_v2.db STAYS tracked — Streamlit Cloud serves the dashboard from git.
+findociq/db/compiled_fs.db

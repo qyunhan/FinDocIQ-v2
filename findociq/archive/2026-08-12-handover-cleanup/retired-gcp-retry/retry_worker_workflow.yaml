@@ -1,0 +1,45 @@
+# tools/retry_worker_workflow.yaml — Phase C orchestration
+# layer (`~/.claude/plans/lively-beaming-twilight.md`). Triggers the
+# findociq-retry-worker Cloud Run Job execution and applies Workflows' native
+# retry-with-backoff at the job-invocation level: a coarse safety net for
+# infra-level failures (job failed to start, transient API error), separate
+# from Phase A's per-document transient/structural classification inside the
+# job itself (ingest_status.py). Deploy:
+#
+#   gcloud workflows deploy findociq-retry-worker-workflow \
+#     --source=tools/retry_worker_workflow.yaml \
+#     --location=asia-southeast1 \
+#     --service-account=663571970232-compute@developer.gserviceaccount.com
+#
+# MOVED here from findociq/pipeline/workflows/ on 2026-08-12: this is a GCP
+# Cloud Workflows DEPLOY MANIFEST, not pipeline code — nothing in the repo
+# reads it, gcloud does. It now sits with the other infra scripts
+# (vm_up/vm_down/setup_paddle_venv). GCP is used mainly to hold the DB
+# checkpoint, so this is optional infra, not part of `run_doc.py`.
+main:
+  params: [args]
+  steps:
+    - init:
+        assign:
+          - project_id: "igc2026-team08-6311"
+          - location: "asia-southeast1"
+          - job_name: "findociq-retry-worker"
+    - run_job_with_retry:
+        try:
+            call: googleapis.run.v2.projects.locations.jobs.run
+            args:
+                name: ${"projects/" + project_id + "/locations/" + location + "/jobs/" + job_name}
+                body:
+                    overrides:
+                        containerOverrides:
+                            - args: ${default(map.get(args, "job_args"), [])}
+            result: job_execution
+        retry:
+            predicate: ${http.default_retry_predicate}
+            max_retries: 3
+            backoff:
+                initial_delay: 30
+                max_delay: 300
+                multiplier: 2
+    - finish:
+        return: ${job_execution}

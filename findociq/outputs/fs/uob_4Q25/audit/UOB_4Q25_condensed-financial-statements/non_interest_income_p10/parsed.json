@@ -1,0 +1,784 @@
+{
+  "tables": [
+    {
+      "title": "Non-Interest Income",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2025",
+          "leaf": "$m"
+        },
+        {
+          "group": "2024",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        },
+        {
+          "group": "2H25",
+          "leaf": "$m"
+        },
+        {
+          "group": "2H24",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        },
+        {
+          "group": "1H25",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit card 1",
+          "values": [
+            {
+              "value": "1,183",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "618",
+              "cell_state": "reported"
+            },
+            {
+              "value": "580",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "565",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fund management",
+          "values": [
+            {
+              "value": "224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "123",
+              "cell_state": "reported"
+            },
+            {
+              "value": "106",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "102",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Wealth management",
+          "values": [
+            {
+              "value": "822",
+              "cell_state": "reported"
+            },
+            {
+              "value": "698",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "421",
+              "cell_state": "reported"
+            },
+            {
+              "value": "361",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loan-related 2",
+          "values": [
+            {
+              "value": "774",
+              "cell_state": "reported"
+            },
+            {
+              "value": "684",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "343",
+              "cell_state": "reported"
+            },
+            {
+              "value": "317",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(20)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Trade-related 3",
+          "values": [
+            {
+              "value": "317",
+              "cell_state": "reported"
+            },
+            {
+              "value": "305",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "161",
+              "cell_state": "reported"
+            },
+            {
+              "value": "159",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "156",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Service charges and others",
+          "values": [
+            {
+              "value": "144",
+              "cell_state": "reported"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(0)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "71",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Net fee and commission income",
+          "values": [
+            {
+              "value": "3,464",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,156",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,739",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,724",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Less: Fee and commission expenses",
+          "values": [
+            {
+              "value": "895",
+              "cell_state": "reported"
+            },
+            {
+              "value": "761",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "500",
+              "cell_state": "reported"
+            },
+            {
+              "value": "399",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "395",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income (after expenses)",
+          "values": [
+            {
+              "value": "2,569",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,395",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,239",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,197",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,330",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(7)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net trading income",
+          "values": [
+            {
+              "value": "1,367",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,689",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(19)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "636",
+              "cell_state": "reported"
+            },
+            {
+              "value": "887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(28)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "731",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net gain/(loss) from investment securities",
+          "values": [
+            {
+              "value": "207",
+              "cell_state": "reported"
+            },
+            {
+              "value": "314",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "189",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(69)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "149",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(61)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rental income",
+          "values": [
+            {
+              "value": "98",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other income",
+          "values": [
+            {
+              "value": "212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "121",
+              "cell_state": "reported"
+            },
+            {
+              "value": "76",
+              "cell_state": "reported"
+            },
+            {
+              "value": "94",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61",
+              "cell_state": "reported"
+            },
+            {
+              "value": "53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(21)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Other non-interest income",
+          "values": [
+            {
+              "value": "1,884",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,225",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(15)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "837",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,187",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(29)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,047",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(20)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "4,453",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,620",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,076",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,384",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,377",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Net fee and commission income"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Credit card"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Fund management"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Wealth management"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Loan-related"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Trade-related"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Service charges and others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Less: Fee and commission expenses"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Other non-interest income"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Net trading income"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Net gain/(loss) from investment securities"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Rental income"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Other income"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": "Non-Interest Income",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

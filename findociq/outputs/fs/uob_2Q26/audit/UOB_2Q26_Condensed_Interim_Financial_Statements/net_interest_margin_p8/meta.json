@@ -1,0 +1,64 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_interest_margin_p8",
+  "section_ids": [
+    "net_interest_margin"
+  ],
+  "section_titles": [
+    "Net interest margin"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 21,
+  "usage": {
+    "ts": "2026-08-07T09:23:42",
+    "script": "extract_to_excel",
+    "label": "net_interest_margin_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3888,
+    "output_tokens": 4064,
+    "thinking_tokens": 0,
+    "total_tokens": 7952,
+    "est_cost_usd": 0.04241,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Net interest margin]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Net interest margin \u00b9' printed bands [] -> extracted slots [3,6,9]",
+      "  col-shift: 'Customer loans' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Interbank balances' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Securities' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Total' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Customer deposits' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Interbank balances/others' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Total' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Net interest income' printed bands [] -> extracted slots [1,2,3,4,5,6]",
+      "  col-repair: declined for 'Net interest margin \u00b9' \u2014 extracted values ['1.78', '1.83', '1.96'] != printed tokens []",
+      "  col-repair: declined for 'Customer loans' \u2014 printed token '332,452' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Interbank balances' \u2014 printed token '60,786' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Securities' \u2014 printed token '95,579' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total' \u2014 printed token '488,817' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Customer deposits' \u2014 printed token '401,205' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Interbank balances/others' \u2014 printed token '58,248' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total' \u2014 printed token '459,453' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Net interest income' \u2014 extracted values ['(123)', '(290)', '(34)', '11', '122', '167'] != printed tokens []"
+    ]
+  },
+  "crop": null
+}

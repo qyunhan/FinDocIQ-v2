@@ -1,0 +1,1027 @@
+{
+  "tables": [
+    {
+      "title": "Movements in Level 3 financial assets and liabilities \u2014 Financial assets measured at fair value 2025",
+      "label_header": "GROUP\nS$ million",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Debt and equity securities"
+        },
+        {
+          "group": null,
+          "leaf": "Loans to customers"
+        },
+        {
+          "group": null,
+          "leaf": "Derivative receivables"
+        },
+        {
+          "group": null,
+          "leaf": "Assets for life insurance funds"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial assets measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 1 January 2025",
+          "values": [
+            {
+              "value": "2,059",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "584",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,291",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Additions",
+          "values": [
+            {
+              "value": "661",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,457",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,147",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Settlements/disposals",
+          "values": [
+            {
+              "value": "(455)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(35)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(378)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(868)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "(Losses)/gains recognised in",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- profit or loss",
+          "values": [
+            {
+              "value": "(295)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "96",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(115)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(314)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- other comprehensive income",
+          "values": [
+            {
+              "value": "(19)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(17)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "At 31 December 2025",
+          "values": [
+            {
+              "value": "1,951",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "657",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,222",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Unrealised (losses)/gains included in profit or loss for assets held at the end of the year",
+          "values": [
+            {
+              "value": "(138)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "721",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(115)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "468",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Movements in Level 3 financial assets and liabilities \u2014 Financial assets measured at fair value 2024",
+      "label_header": "GROUP\nS$ million",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Debt and equity securities"
+        },
+        {
+          "group": null,
+          "leaf": "Loans to customers"
+        },
+        {
+          "group": null,
+          "leaf": "Derivative receivables"
+        },
+        {
+          "group": null,
+          "leaf": "Assets for life insurance funds"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial assets measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 1 January 2024",
+          "values": [
+            {
+              "value": "2,930",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "497",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,793",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,230",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Additions",
+          "values": [
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "31",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,032",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,205",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Settlements/disposals",
+          "values": [
+            {
+              "value": "(223)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(15)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(198)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(463)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transfer out (1)",
+          "values": [
+            {
+              "value": "(461)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(108)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(569)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "(Losses)/gains recognised in",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- profit or loss",
+          "values": [
+            {
+              "value": "(275)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "179",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(70)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- other comprehensive income",
+          "values": [
+            {
+              "value": "(54)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(42)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "At 31 December 2024",
+          "values": [
+            {
+              "value": "2,059",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "584",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,291",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Unrealised (losses)/gains included in profit or loss for assets held at the end of the year",
+          "values": [
+            {
+              "value": "(291)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "622",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "352",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Relates to transfers from Level 3 to Level 2 due to use of inputs based on market observable data.",
+          "values": []
+        }
+      ]
+    },
+    {
+      "title": "Movements in Level 3 financial assets and liabilities \u2014 Financial liabilities measured at fair value",
+      "label_header": "GROUP\nS$ million",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": "2025",
+          "leaf": "Debt issued"
+        },
+        {
+          "group": "2025",
+          "leaf": "Derivative payables"
+        },
+        {
+          "group": "2025",
+          "leaf": "Total"
+        },
+        {
+          "group": "2024",
+          "leaf": "Derivative payables"
+        },
+        {
+          "group": "2024",
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial liabilities measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 1 January",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "616",
+              "cell_state": "reported"
+            },
+            {
+              "value": "616",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Additions",
+          "values": [
+            {
+              "value": "1,318",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,347",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Settlements/disposals",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(36)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(36)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transfer out (1)",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(117)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(117)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "(Gains)/losses recognised in",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- profit or loss",
+          "values": [
+            {
+              "value": "(106)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(119)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "82",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- other comprehensive income",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(17)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(17)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "At 31 December",
+          "values": [
+            {
+              "value": "1,212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,771",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Unrealised gains/(losses) included in profit or loss for liabilities held at the end of the year",
+          "values": [
+            {
+              "value": "106",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(609)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(503)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(524)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(524)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Relates to transfers from Level 3 to Level 2 due to use of inputs based on market observable data.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

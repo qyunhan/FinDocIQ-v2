@@ -1,0 +1,355 @@
+{
+  "tables": [
+    {
+      "title": "DEBTS ISSUED",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2026"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Subordinated term debts\u00b9",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,276",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,260",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Negotiable certificates of deposit\u00b9",
+          "values": [
+            {
+              "value": "6,631",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,669",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,246",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Senior medium term notes\u00b9",
+          "values": [
+            {
+              "value": "16,623",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,557",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,341",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Commercial papers\u00b9",
+          "values": [
+            {
+              "value": "12,660",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,463",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,475",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Covered bonds and other secured notes\u00b2",
+          "values": [
+            {
+              "value": "19,734",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,953",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other debt securities\u00b9",
+          "values": [
+            {
+              "value": "30,754",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25,471",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,022",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "86,402",
+              "cell_state": "reported"
+            },
+            {
+              "value": "79,551",
+              "cell_state": "reported"
+            },
+            {
+              "value": "76,297",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due within 1 year",
+          "values": [
+            {
+              "value": "57,740",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52,235",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49,244",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due after 1 year\u00b3",
+          "values": [
+            {
+              "value": "28,662",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,316",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,053",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "86,402",
+              "cell_state": "reported"
+            },
+            {
+              "value": "79,551",
+              "cell_state": "reported"
+            },
+            {
+              "value": "76,297",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "1 Unsecured",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "2 Collaterals are in the form of residential mortgages and corporate loans",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "3 Includes instruments in perpetuity",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 6,
+            "indent": 1,
+            "label_clean": "Subordinated term debts"
+          },
+          {
+            "line_id": 7,
+            "indent": 1,
+            "label_clean": "Negotiable certificates of deposit"
+          },
+          {
+            "line_id": 8,
+            "indent": 1,
+            "label_clean": "Senior medium term notes"
+          },
+          {
+            "line_id": 9,
+            "indent": 1,
+            "label_clean": "Commercial papers"
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Covered bonds and other secured notes"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Other debt securities"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Due within 1 year"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Due after 1 year"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Notes:"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "1 Unsecured"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "2 Collaterals are in the form of residential mortgages and corporate loans"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "3 Includes instruments in perpetuity"
+          }
+        ],
+        "title_clean": "DEBTS ISSUED",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

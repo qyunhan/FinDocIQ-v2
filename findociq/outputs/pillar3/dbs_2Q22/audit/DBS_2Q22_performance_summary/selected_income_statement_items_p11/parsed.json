@@ -1,0 +1,727 @@
+{
+  "tables": [
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS1\nSelected income statement items2 — 1st Half 2022",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Consumer Banking/ Wealth Management"
+        },
+        {
+          "group": null,
+          "leaf": "Institutional Banking"
+        },
+        {
+          "group": null,
+          "leaf": "Treasury Markets"
+        },
+        {
+          "group": null,
+          "leaf": "Others"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "1st Half 2022",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "1,628",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,300",
+              "cell_state": "reported"
+            },
+            {
+              "value": "316",
+              "cell_state": "reported"
+            },
+            {
+              "value": "397",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,641",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "961",
+              "cell_state": "reported"
+            },
+            {
+              "value": "684",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,659",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "295",
+              "cell_state": "reported"
+            },
+            {
+              "value": "408",
+              "cell_state": "reported"
+            },
+            {
+              "value": "386",
+              "cell_state": "reported"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,239",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "2,884",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "702",
+              "cell_state": "reported"
+            },
+            {
+              "value": "561",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,539",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "1,788",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,067",
+              "cell_state": "reported"
+            },
+            {
+              "value": "303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,302",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "1,043",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,269",
+              "cell_state": "reported"
+            },
+            {
+              "value": "404",
+              "cell_state": "reported"
+            },
+            {
+              "value": "420",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,136",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS1\nSelected income statement items2 — 2nd Half 2021",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Consumer Banking/ Wealth Management"
+        },
+        {
+          "group": null,
+          "leaf": "Institutional Banking"
+        },
+        {
+          "group": null,
+          "leaf": "Treasury Markets"
+        },
+        {
+          "group": null,
+          "leaf": "Others"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "2nd Half 2021",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "1,276",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,045",
+              "cell_state": "reported"
+            },
+            {
+              "value": "360",
+              "cell_state": "reported"
+            },
+            {
+              "value": "563",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,244",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "1,048",
+              "cell_state": "reported"
+            },
+            {
+              "value": "626",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,703",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "285",
+              "cell_state": "reported"
+            },
+            {
+              "value": "313",
+              "cell_state": "reported"
+            },
+            {
+              "value": "215",
+              "cell_state": "reported"
+            },
+            {
+              "value": "94",
+              "cell_state": "reported"
+            },
+            {
+              "value": "907",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "2,609",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,984",
+              "cell_state": "reported"
+            },
+            {
+              "value": "575",
+              "cell_state": "reported"
+            },
+            {
+              "value": "686",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,854",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "1,768",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,082",
+              "cell_state": "reported"
+            },
+            {
+              "value": "325",
+              "cell_state": "reported"
+            },
+            {
+              "value": "164",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,339",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "50",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(36)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(41)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(37)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "791",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,938",
+              "cell_state": "reported"
+            },
+            {
+              "value": "260",
+              "cell_state": "reported"
+            },
+            {
+              "value": "563",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,552",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS1\nSelected income statement items2 — 1st Half 2021",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Consumer Banking/ Wealth Management"
+        },
+        {
+          "group": null,
+          "leaf": "Institutional Banking"
+        },
+        {
+          "group": null,
+          "leaf": "Treasury Markets"
+        },
+        {
+          "group": null,
+          "leaf": "Others"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "1st Half 2021",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "1,272",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,954",
+              "cell_state": "reported"
+            },
+            {
+              "value": "423",
+              "cell_state": "reported"
+            },
+            {
+              "value": "547",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,196",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "1,138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "656",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,821",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "390",
+              "cell_state": "reported"
+            },
+            {
+              "value": "511",
+              "cell_state": "reported"
+            },
+            {
+              "value": "222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,426",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "2,713",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,000",
+              "cell_state": "reported"
+            },
+            {
+              "value": "934",
+              "cell_state": "reported"
+            },
+            {
+              "value": "796",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,443",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "1,585",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,004",
+              "cell_state": "reported"
+            },
+            {
+              "value": "322",
+              "cell_state": "reported"
+            },
+            {
+              "value": "219",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,130",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "177",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(89)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "89",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "1,132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,819",
+              "cell_state": "reported"
+            },
+            {
+              "value": "607",
+              "cell_state": "reported"
+            },
+            {
+              "value": "666",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,224",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

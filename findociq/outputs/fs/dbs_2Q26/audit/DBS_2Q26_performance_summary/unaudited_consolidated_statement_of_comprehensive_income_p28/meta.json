@@ -1,0 +1,44 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_statement_of_comprehensive_income_p28",
+  "section_ids": [
+    "unaudited_consolidated_statement_of_comprehensive_income"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME"
+  ],
+  "pages": [
+    28
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-08-06T09:22:10",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_statement_of_comprehensive_income_p28",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3939,
+    "output_tokens": 3872,
+    "thinking_tokens": 0,
+    "total_tokens": 7811,
+    "est_cost_usd": 0.04076,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Taxation relating to components of other' [UNAUDITED CONSOLIDATED STATEME]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,299 @@
+{
+  "tables": [
+    {
+      "title": "NPAs by Period Overdue",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2026",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "30 Jun 2026",
+          "leaf": "%"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "%"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "NPAs by Period Overdue",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 180 days",
+          "values": [
+            {
+              "value": "1,361",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,494",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,315",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 90 to 180 days",
+          "values": [
+            {
+              "value": "277",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "199",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "315",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 to 90 days",
+          "values": [
+            {
+              "value": "136",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "232",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "312",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Less than 30 days",
+          "values": [
+            {
+              "value": "234",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "253",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "387",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Not overdue",
+          "values": [
+            {
+              "value": "1,124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,065",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33",
+              "cell_state": "reported"
+            },
+            {
+              "value": "680",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "3,132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,243",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,009",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "NPAs by Period Overdue"
+          },
+          {
+            "line_id": 34,
+            "indent": 1,
+            "label_clean": "Over 180 days"
+          },
+          {
+            "line_id": 35,
+            "indent": 1,
+            "label_clean": "Over 90 to 180 days"
+          },
+          {
+            "line_id": 36,
+            "indent": 1,
+            "label_clean": "30 to 90 days"
+          },
+          {
+            "line_id": 37,
+            "indent": 1,
+            "label_clean": "Less than 30 days"
+          },
+          {
+            "line_id": 38,
+            "indent": 1,
+            "label_clean": "Not overdue"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "NPAs by Period Overdue",
+        "col_labels_clean": [
+          "S$ million",
+          null,
+          "S$ million",
+          null,
+          "S$ million",
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

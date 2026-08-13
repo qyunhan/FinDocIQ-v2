@@ -1,0 +1,161 @@
+{
+  "tables": [
+    {
+      "title": "7. Allowances for loans and other assets",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "7",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "1H 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "1H 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Impaired loans",
+          "values": [
+            {
+              "value": "145",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Impaired other assets",
+          "values": [
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-impaired loans",
+          "values": [
+            {
+              "value": "210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "155",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-impaired other assets",
+          "values": [
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for loans and other assets",
+          "values": [
+            {
+              "value": "372",
+              "cell_state": "reported"
+            },
+            {
+              "value": "326",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Allowances:"
+          },
+          {
+            "line_id": 35,
+            "indent": 0,
+            "label_clean": "Impaired loans 145 144"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Impaired other assets 2 15"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Non-impaired loans 210 155"
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "Non-impaired other assets 15 12"
+          },
+          {
+            "line_id": 39,
+            "indent": 0,
+            "label_clean": "Allowances for loans and other assets 372 326"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

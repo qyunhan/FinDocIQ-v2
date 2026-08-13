@@ -1,0 +1,51 @@
+bank,table_type_id,col_ordinal,canonical_col_id,label,full_path,source_family,notes
+DBS,FS_BALANCE_BY_GEOGRAPHY,1,singapore,Singapore,Singapore,Performance_summary,
+DBS,FS_BALANCE_BY_GEOGRAPHY,2,hong_kong,Hong Kong,Hong Kong,Performance_summary,
+DBS,FS_BALANCE_BY_GEOGRAPHY,3,rest_of_greater_china,Rest of Greater China,Rest of Greater China,Performance_summary,
+DBS,FS_BALANCE_BY_GEOGRAPHY,4,south_and_southeast_asia,South and Southeast Asia,South and Southeast Asia,Performance_summary,label fix: DBS prints 'Southeast' (no hyphen) per source
+DBS,FS_BALANCE_BY_GEOGRAPHY,5,rest_of_the_world,Rest of the World,Rest of the World,Performance_summary,
+DBS,FS_BALANCE_BY_GEOGRAPHY,6,total,Total,Total,Performance_summary,
+DBS,FS_BALANCE_BY_SEGMENT,1,consumer_banking_wealth_management,Consumer Banking/ Wealth Management,Consumer Banking/ Wealth Management,Performance_summary,
+DBS,FS_BALANCE_BY_SEGMENT,2,institutional_banking,Institutional Banking,Institutional Banking,Performance_summary,
+DBS,FS_BALANCE_BY_SEGMENT,3,others,Others,Others,Performance_summary,
+DBS,FS_BALANCE_BY_SEGMENT,4,markets_trading,Markets Trading,Markets Trading,Performance_summary,label fix: printed header is 'Markets Trading' not just 'Trading'
+DBS,FS_BALANCE_BY_SEGMENT,5,total,Total,Total,Performance_summary,
+DBS,FS_BALANCE_CONSOLIDATED,1,the_group,The Group,The Group,Performance_summary,
+DBS,FS_BALANCE_CONSOLIDATED,2,the_company,The Company,The Company,Performance_summary,
+DBS,FS_EQUITY_CHANGES_COMPANY,1,share_capital,Share capital,Share capital,Performance_summary,
+DBS,FS_EQUITY_CHANGES_COMPANY,2,other_equity_instruments,Other equity instruments,Other equity instruments,Performance_summary,
+DBS,FS_EQUITY_CHANGES_COMPANY,3,other_reserves,Other reserves,Other reserves,Performance_summary,
+DBS,FS_EQUITY_CHANGES_COMPANY,4,revenue_reserves,Revenue reserves,Revenue reserves,Performance_summary,
+DBS,FS_EQUITY_CHANGES_COMPANY,5,total_equity,Total equity,Total equity,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,1,share_capital,Share Capital,Share Capital,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,2,other_equity_instruments,Other equity instruments,Other equity instruments,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,3,other_reserves,Other reserves,Other reserves,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,4,revenue_reserves,Revenue reserves,Revenue reserves,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,5,total_shareholders_funds,Total Shareholders’ funds,Total Shareholders’ funds,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,6,non_controlling_interests,Non-controlling interests,Non-controlling interests,Performance_summary,
+DBS,FS_EQUITY_CHANGES_GROUP,7,total_equity,Total equity,Total equity,Performance_summary,
+DBS,FS_FAIR_VALUE_HIERARCHY,1,level_1,Level 1,Level 1,Performance_summary,quoted prices in active markets
+DBS,FS_FAIR_VALUE_HIERARCHY,2,level_2,Level 2,Level 2,Performance_summary,observable inputs other than quoted prices
+DBS,FS_FAIR_VALUE_HIERARCHY,3,level_3,Level 3,Level 3,Performance_summary,unobservable inputs
+DBS,FS_FAIR_VALUE_HIERARCHY,4,total,Total,Total,Performance_summary,total fair value across levels
+DBS,FS_NPA_BY_COLLATERAL,1,npa_m,NPA ($m),NPA ($m),Performance_summary,PATTERN-MATCHED from FS_NPA_BY_INDUSTRY; verify against source
+DBS,FS_NPA_BY_COLLATERAL,2,sp_m,SP ($m),SP ($m),Performance_summary,PATTERN-MATCHED; verify against source
+DBS,FS_NPA_BY_INDUSTRY,1,npa_m,NPA ($m),NPA ($m),Performance_summary,measure column: NPA amount ($m) per industry
+DBS,FS_NPA_BY_INDUSTRY,2,sp_m,SP ($m),SP ($m),Performance_summary,measure column: specific provisions ($m) per industry
+DBS,FS_NPA_BY_LOAN_GRADING,1,npa_m,NPA ($m),NPA ($m),Performance_summary,PATTERN-MATCHED from FS_NPA_BY_INDUSTRY; verify against source
+DBS,FS_NPA_BY_LOAN_GRADING,2,sp_m,SP ($m),SP ($m),Performance_summary,PATTERN-MATCHED; verify against source
+DBS,FS_NPA_BY_PERIOD_OVERDUE,1,npa_m,NPA ($m),NPA ($m),Performance_summary,single measure column: NPA amount ($m) per overdue aging bucket
+DBS,FS_NPA_COVERAGE,1,npa_m,NPA ($m),NPA ($m),Performance_summary,measure column: amount ($m); row context (NPL vs NPA) determines interpretation
+DBS,FS_NPA_COVERAGE,2,npl_percent_of_loans,NPL (% of loans),NPL (% of loans),Performance_summary,"measure column: NPL ratio, only meaningful for NPL rows"
+DBS,FS_NPA_COVERAGE,3,sp_m,SP ($m),SP ($m),Performance_summary,measure column: specific provisions ($m)
+DBS,FS_PERF_BY_GEOGRAPHY,1,singapore,Singapore,Singapore,Performance_summary,
+DBS,FS_PERF_BY_GEOGRAPHY,2,hong_kong,Hong Kong,Hong Kong,Performance_summary,
+DBS,FS_PERF_BY_GEOGRAPHY,3,rest_of_greater_china,Rest of Greater China,Rest of Greater China,Performance_summary,
+DBS,FS_PERF_BY_GEOGRAPHY,4,south_and_southeast_asia,South and Southeast Asia,South and Southeast Asia,Performance_summary,label fix: DBS prints 'Southeast' (no hyphen)
+DBS,FS_PERF_BY_GEOGRAPHY,5,rest_of_the_world,Rest of the World,Rest of the World,Performance_summary,
+DBS,FS_PERF_BY_GEOGRAPHY,6,total,Total,Total,Performance_summary,
+DBS,FS_PERF_BY_SEGMENT,1,consumer_banking_wealth_management,Consumer Banking/ Wealth Management,Consumer Banking/ Wealth Management,Performance_summary,
+DBS,FS_PERF_BY_SEGMENT,2,institutional_banking,Institutional Banking,Institutional Banking,Performance_summary,
+DBS,FS_PERF_BY_SEGMENT,3,others,Others,Others,Performance_summary,
+DBS,FS_PERF_BY_SEGMENT,4,markets_trading,Markets Trading,Markets Trading,Performance_summary,label fix: printed header is 'Markets Trading'
+DBS,FS_PERF_BY_SEGMENT,5,total,Total,Total,Performance_summary,

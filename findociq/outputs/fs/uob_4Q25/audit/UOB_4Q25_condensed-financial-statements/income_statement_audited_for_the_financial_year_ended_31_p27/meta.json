@@ -1,0 +1,59 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "income_statement_audited_for_the_financial_year_ended_31_p27",
+  "section_ids": [
+    "income_statement_audited_for_the_financial_year_ended_31"
+  ],
+  "section_titles": [
+    "Income Statement (Audited) for the financial year ended 31 December 2025"
+  ],
+  "pages": [
+    27
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 29,
+  "usage": {
+    "ts": "2026-08-07T10:14:16",
+    "script": "extract_to_excel",
+    "label": "income_statement_audited_for_the_financial_year_ended_31_p27",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3965,
+    "output_tokens": 4806,
+    "thinking_tokens": 0,
+    "total_tokens": 8771,
+    "est_cost_usd": 0.0492,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '059' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '674' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '395' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '689' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '620' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '699' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '611' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '310' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '984' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '030' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '151' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '092' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '045' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: '' printed bands [] -> extracted slots [1,2,3,4]",
+      "  col-repair: declined for '' \u2014 printed token '1' maps to 0 bands (need exactly 1)"
+    ]
+  },
+  "crop": null
+}

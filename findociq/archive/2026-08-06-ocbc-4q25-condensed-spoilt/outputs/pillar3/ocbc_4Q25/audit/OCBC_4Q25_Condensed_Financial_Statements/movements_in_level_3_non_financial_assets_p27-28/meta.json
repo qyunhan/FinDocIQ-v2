@@ -1,0 +1,44 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "movements_in_level_3_non_financial_assets_p27-28",
+  "section_ids": [
+    "movements_in_level_3_non_financial_assets"
+  ],
+  "section_titles": [
+    "Movements in Level 3 non-financial assets"
+  ],
+  "pages": [
+    27,
+    28
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 10,
+  "usage": {
+    "ts": "2026-07-14T15:04:51",
+    "script": "extract_to_excel",
+    "label": "movements_in_level_3_non_financial_assets_p27-28",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3548,
+    "output_tokens": 1820,
+    "thinking_tokens": 0,
+    "total_tokens": 5368,
+    "est_cost_usd": 0.00561
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '14.3' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.2' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

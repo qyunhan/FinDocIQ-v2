@@ -1,0 +1,43 @@
+{
+  "document": "1Q25_P3_other_regulatory_disclosures.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "A_2_p3",
+  "section_ids": [
+    "A.2"
+  ],
+  "section_titles": [
+    "SCOPE OF CONSOLIDATION"
+  ],
+  "pages": [
+    3
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-26T09:28:29",
+    "script": "extract_to_excel",
+    "label": "A_2_p3",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3886,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3895,
+    "est_cost_usd": 0.00591,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '637' pdf=5x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

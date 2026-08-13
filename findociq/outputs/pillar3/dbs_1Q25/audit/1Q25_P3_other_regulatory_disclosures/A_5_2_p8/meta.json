@@ -1,0 +1,52 @@
+{
+  "document": "1Q25_P3_other_regulatory_disclosures.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "A_5_2_p8",
+  "section_ids": [
+    "A.5.2"
+  ],
+  "section_titles": [
+    "Comparison of Modelled and Standardised RWA at Risk Level"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 8,
+  "usage": {
+    "ts": "2026-07-26T09:29:34",
+    "script": "extract_to_excel",
+    "label": "A_5_2_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3906,
+    "output_tokens": 1612,
+    "thinking_tokens": 0,
+    "total_tokens": 5518,
+    "est_cost_usd": 0.02037,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "5.2 Comparison of Modelled and Standardised RWA at Risk Level\n31 Mar 2025",
+      "anchor_label": "Credit risk (excluding counterparty credit risk)",
+      "anchor_y": 260.6,
+      "owning_section": "5.2",
+      "dropped": false,
+      "reason": "legitimate_owner"
+    }
+  ],
+  "all_dropped": false
+}

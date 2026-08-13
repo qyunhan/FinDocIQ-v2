@@ -1,0 +1,374 @@
+{
+  "tables": [
+    {
+      "title": "Selected balance sheet items ($m)",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "3rd Qtr 2025"
+        },
+        {
+          "group": null,
+          "leaf": "3rd Qtr 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Qtr 2025"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "9 Mths 2025"
+        },
+        {
+          "group": null,
+          "leaf": "9 Mths 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer loans",
+          "values": [
+            {
+              "value": "437,027",
+              "cell_state": "reported"
+            },
+            {
+              "value": "418,068",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "433,046",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "437,027",
+              "cell_state": "reported"
+            },
+            {
+              "value": "418,068",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Constant-currency change",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "0",
+              "cell_state": "zero"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "881,622",
+              "cell_state": "reported"
+            },
+            {
+              "value": "789,609",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "841,896",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "881,622",
+              "cell_state": "reported"
+            },
+            {
+              "value": "789,609",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "of which: Non-performing assets",
+          "values": [
+            {
+              "value": "4,627",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,680",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,686",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,627",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,680",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "596,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "544,961",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "573,965",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "544,961",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Constant-currency change",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total liabilities",
+          "values": [
+            {
+              "value": "812,729",
+              "cell_state": "reported"
+            },
+            {
+              "value": "722,154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "773,286",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "812,729",
+              "cell_state": "reported"
+            },
+            {
+              "value": "722,154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shareholders’ funds",
+          "values": [
+            {
+              "value": "68,845",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67,266",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68,564",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0",
+              "cell_state": "zero"
+            },
+            {
+              "value": "68,845",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67,266",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

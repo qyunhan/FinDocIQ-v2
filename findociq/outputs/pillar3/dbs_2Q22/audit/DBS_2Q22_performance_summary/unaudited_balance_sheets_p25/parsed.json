@@ -1,0 +1,1043 @@
+{
+  "tables": [
+    {
+      "title": "UNAUDITED BALANCE SHEETS",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "The Group",
+          "leaf": "30 Jun 2022"
+        },
+        {
+          "group": "The Group",
+          "leaf": "31 Dec 2021¹"
+        },
+        {
+          "group": "The Group",
+          "leaf": "30 Jun 2021"
+        },
+        {
+          "group": "The Company",
+          "leaf": "30 Jun 2022"
+        },
+        {
+          "group": "The Company",
+          "leaf": "31 Dec 2021¹"
+        },
+        {
+          "group": "The Company",
+          "leaf": "30 Jun 2021"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cash and balances with central banks",
+          "values": [
+            {
+              "value": "57,928",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56,377",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52,853",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Government securities and treasury bills",
+          "values": [
+            {
+              "value": "64,737",
+              "cell_state": "reported"
+            },
+            {
+              "value": "53,262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52,206",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due from banks",
+          "values": [
+            {
+              "value": "52,031",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51,377",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51,355",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103",
+              "cell_state": "reported"
+            },
+            {
+              "value": "85",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivatives",
+          "values": [
+            {
+              "value": "39,479",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,681",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,016",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "98",
+              "cell_state": "reported"
+            },
+            {
+              "value": "135",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Bank and corporate securities",
+          "values": [
+            {
+              "value": "71,251",
+              "cell_state": "reported"
+            },
+            {
+              "value": "69,692",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67,579",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans and advances to customers",
+          "values": [
+            {
+              "value": "424,533",
+              "cell_state": "reported"
+            },
+            {
+              "value": "408,993",
+              "cell_state": "reported"
+            },
+            {
+              "value": "396,963",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other assets",
+          "values": [
+            {
+              "value": "24,914",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,895",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,339",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Associates and joint ventures",
+          "values": [
+            {
+              "value": "2,235",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,172",
+              "cell_state": "reported"
+            },
+            {
+              "value": "899",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Subsidiaries",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "29,992",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,344",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,892",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Properties and other fixed assets",
+          "values": [
+            {
+              "value": "3,173",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,308",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Goodwill and intangibles",
+          "values": [
+            {
+              "value": "5,356",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,362",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,323",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "745,637",
+              "cell_state": "reported"
+            },
+            {
+              "value": "686,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "671,841",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,130",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,528",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,091",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due to banks",
+          "values": [
+            {
+              "value": "40,367",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,808",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances from customers",
+          "values": [
+            {
+              "value": "527,828",
+              "cell_state": "reported"
+            },
+            {
+              "value": "501,959",
+              "cell_state": "reported"
+            },
+            {
+              "value": "482,837",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivatives",
+          "values": [
+            {
+              "value": "38,759",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,318",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,173",
+              "cell_state": "reported"
+            },
+            {
+              "value": "88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other liabilities",
+          "values": [
+            {
+              "value": "30,603",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,667",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,245",
+              "cell_state": "reported"
+            },
+            {
+              "value": "53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "75",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due to subsidiaries",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "726",
+              "cell_state": "reported"
+            },
+            {
+              "value": "719",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,054",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other debt securities",
+          "values": [
+            {
+              "value": "47,442",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52,570",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45,307",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,670",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,574",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Subordinated term debts",
+          "values": [
+            {
+              "value": "4,572",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,636",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,700",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,572",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,636",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,700",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total liabilities",
+          "values": [
+            {
+              "value": "689,571",
+              "cell_state": "reported"
+            },
+            {
+              "value": "628,359",
+              "cell_state": "reported"
+            },
+            {
+              "value": "614,070",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,742",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,129",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,402",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net assets",
+          "values": [
+            {
+              "value": "56,066",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,714",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,771",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,399",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,689",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Equity",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share capital",
+          "values": [
+            {
+              "value": "11,500",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,383",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,387",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,532",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,425",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,421",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other equity instruments",
+          "values": [
+            {
+              "value": "2,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,401",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other reserves",
+          "values": [
+            {
+              "value": "284",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,810",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,190",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "131",
+              "cell_state": "reported"
+            },
+            {
+              "value": "99",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Revenue reserves",
+          "values": [
+            {
+              "value": "41,699",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,616",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,468",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,451",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,768",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Shareholders’ funds",
+          "values": [
+            {
+              "value": "55,875",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,526",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,594",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,399",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,689",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-controlling interests",
+          "values": [
+            {
+              "value": "191",
+              "cell_state": "reported"
+            },
+            {
+              "value": "188",
+              "cell_state": "reported"
+            },
+            {
+              "value": "177",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total equity",
+          "values": [
+            {
+              "value": "56,066",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,714",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,771",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,399",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,689",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other Information",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Net book value per share ($)",
+          "values": []
+        },
+        {
+          "row_id": "(i)",
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Basic and diluted",
+          "values": [
+            {
+              "value": "20.78",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21.47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21.10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6.99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.01",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:\n1 Audited",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

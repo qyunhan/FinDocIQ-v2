@@ -1,0 +1,231 @@
+{
+  "doc_id": "OCBC_2Q25_Media_Release_and_Financial_Highlights",
+  "source_pdf": "findociq/data/sources/financial_statements/OCBC/2025/2Q25/OCBC_2Q25_Media_Release_and_Financial_Highlights.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "1H25 Performance Highlights",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "First Half 2025 Performance",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "1H25 Year-on-Year Performance",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "Second Quarter 2025 Performance",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "2Q25 Quarter-on-Quarter Performance",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "2Q25 Year-on-Year Performance",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Asset Quality and Allowances",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "title": "Non-performing assets (\u201cNPAs\u201d)",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "title": "Allowances",
+      "page": 5,
+      "level": 2
+    },
+    {
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "Interim Dividend",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "Message from Group CEO, Helen Wong",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "Selected Income Statement Items",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "title": "Selected Balance Sheet Items",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "title": "Key Financial Ratios (%)",
+      "page": 10,
+      "level": 2
+    },
+    {
+      "title": "NET INTEREST INCOME",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "title": "Average Balance Sheet",
+      "page": 11,
+      "level": 3
+    },
+    {
+      "title": "Volume and Rate Analysis",
+      "page": 11,
+      "level": 3
+    },
+    {
+      "title": "NON-INTEREST INCOME",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "title": "OPERATING EXPENSES",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "LOANS TO CUSTOMERS",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "By Maturity",
+      "page": 14,
+      "level": 3
+    },
+    {
+      "title": "By Industry",
+      "page": 14,
+      "level": 3
+    },
+    {
+      "title": "By Currency",
+      "page": 14,
+      "level": 3
+    },
+    {
+      "title": "By Geography 1/",
+      "page": 14,
+      "level": 3
+    },
+    {
+      "title": "NON-PERFORMING ASSETS",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "NPLs by Industry",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "NPAs by Period Overdue",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "Restructured Loans",
+      "page": 16,
+      "level": 3
+    },
+    {
+      "title": "DEPOSITS",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "Total Deposits by Maturity",
+      "page": 17,
+      "level": 3
+    },
+    {
+      "title": "Non-Bank Deposits by Product",
+      "page": 17,
+      "level": 3
+    },
+    {
+      "title": "Non-Bank Deposits by Currency",
+      "page": 17,
+      "level": 3
+    },
+    {
+      "title": "CAPITAL ADEQUACY RATIOS 1/",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "PERFORMANCE BY BUSINESS SEGMENT",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "Profit Before Income Tax by Business Segment",
+      "page": 19,
+      "level": 3
+    },
+    {
+      "title": "Global Consumer/Private Banking",
+      "page": 19,
+      "level": 3
+    },
+    {
+      "title": "Global Wholesale Banking",
+      "page": 19,
+      "level": 3
+    },
+    {
+      "title": "Global Markets",
+      "page": 20,
+      "level": 3
+    },
+    {
+      "title": "Insurance",
+      "page": 20,
+      "level": 3
+    },
+    {
+      "title": "Others",
+      "page": 20,
+      "level": 3
+    },
+    {
+      "title": "About OCBC",
+      "page": 21,
+      "level": 1
+    }
+  ],
+  "contents_page_number": null,
+  "contents_page_text": "",
+  "n_pages": 21
+}

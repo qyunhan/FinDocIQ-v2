@@ -1,0 +1,55 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "operating_expenses_p11",
+  "section_ids": [
+    "operating_expenses"
+  ],
+  "section_titles": [
+    "Operating Expenses"
+  ],
+  "pages": [
+    11
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 11,
+  "usage": {
+    "ts": "2026-08-07T10:13:30",
+    "script": "extract_to_excel",
+    "label": "operating_expenses_p11",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3881,
+    "output_tokens": 2778,
+    "thinking_tokens": 0,
+    "total_tokens": 6659,
+    "est_cost_usd": 0.03082,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '44.6' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Operating Expenses",
+      "anchor_label": "Operating Expenses",
+      "anchor_y": 98.06,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

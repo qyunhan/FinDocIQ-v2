@@ -1,0 +1,777 @@
+{
+  "tables": [
+    {
+      "title": "CUSTOMER DEPOSITS",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2025"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By currency and product",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore dollar",
+          "values": [
+            {
+              "value": "230,646",
+              "cell_state": "reported"
+            },
+            {
+              "value": "215,550",
+              "cell_state": "reported"
+            },
+            {
+              "value": "204,704",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "32,837",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35,316",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35,249",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "153,918",
+              "cell_state": "reported"
+            },
+            {
+              "value": "140,565",
+              "cell_state": "reported"
+            },
+            {
+              "value": "132,949",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "43,573",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,556",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36,359",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Others",
+          "values": [
+            {
+              "value": "318",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113",
+              "cell_state": "reported"
+            },
+            {
+              "value": "147",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "US dollar",
+          "values": [
+            {
+              "value": "241,063",
+              "cell_state": "reported"
+            },
+            {
+              "value": "220,143",
+              "cell_state": "reported"
+            },
+            {
+              "value": "223,732",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "157,800",
+              "cell_state": "reported"
+            },
+            {
+              "value": "148,331",
+              "cell_state": "reported"
+            },
+            {
+              "value": "147,045",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "27,713",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,791",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25,817",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "53,731",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45,294",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48,937",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Others",
+          "values": [
+            {
+              "value": "1,819",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,727",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,933",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Hong Kong dollar",
+          "values": [
+            {
+              "value": "32,181",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,850",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,464",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "14,601",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,885",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,746",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "9,646",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,914",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "7,594",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,652",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Others",
+          "values": [
+            {
+              "value": "340",
+              "cell_state": "reported"
+            },
+            {
+              "value": "172",
+              "cell_state": "reported"
+            },
+            {
+              "value": "152",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Taiwan dollar",
+          "values": [
+            {
+              "value": "22,413",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,790",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,245",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "16,395",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,635",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,595",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "5,986",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,123",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,616",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "31",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Others",
+          "values": [
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Chinese yuan",
+          "values": [
+            {
+              "value": "27,632",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,548",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,840",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "13,339",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,244",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,973",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "3,719",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,393",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,754",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "7,478",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,649",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,313",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Others",
+          "values": [
+            {
+              "value": "3,096",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,800",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "56,088",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,084",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,745",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h6",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "36,603",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,695",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h6",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "8,006",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,679",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,115",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h6",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "11,091",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,925",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,606",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h6",
+          "label": "Others",
+          "values": [
+            {
+              "value": "388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "355",
+              "cell_state": "reported"
+            },
+            {
+              "value": "329",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "610,023",
+              "cell_state": "reported"
+            },
+            {
+              "value": "573,965",
+              "cell_state": "reported"
+            },
+            {
+              "value": "561,730",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "total_row",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "271,575",
+              "cell_state": "reported"
+            },
+            {
+              "value": "268,536",
+              "cell_state": "reported"
+            },
+            {
+              "value": "266,303",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "total_row",
+          "label": "Savings accounts",
+          "values": [
+            {
+              "value": "208,988",
+              "cell_state": "reported"
+            },
+            {
+              "value": "191,492",
+              "cell_state": "reported"
+            },
+            {
+              "value": "183,165",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "total_row",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "123,498",
+              "cell_state": "reported"
+            },
+            {
+              "value": "109,308",
+              "cell_state": "reported"
+            },
+            {
+              "value": "107,901",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "total_row",
+          "label": "Others",
+          "values": [
+            {
+              "value": "5,962",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,629",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,361",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "# Amount is less than $500,000",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

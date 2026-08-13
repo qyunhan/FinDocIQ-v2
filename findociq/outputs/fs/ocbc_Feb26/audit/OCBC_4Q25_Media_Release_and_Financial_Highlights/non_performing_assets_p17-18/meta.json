@@ -1,0 +1,83 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_performing_assets_p17-18",
+  "section_ids": [
+    "non_performing_assets"
+  ],
+  "section_titles": [
+    "NON-PERFORMING ASSETS"
+  ],
+  "pages": [
+    17,
+    18
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 4,
+  "n_rows": 48,
+  "usage": {
+    "ts": "2026-07-30T15:50:56",
+    "script": "extract_to_excel",
+    "label": "non_performing_assets_p17-18",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4486,
+    "output_tokens": 8301,
+    "thinking_tokens": 0,
+    "total_tokens": 12787,
+    "est_cost_usd": 0.08144,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x7: '31 Dec 2025' [NON-PERFORMING ASSETS]",
+      "  duplicate row label x7: '31 Dec 2024' [NON-PERFORMING ASSETS]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "NON-PERFORMING ASSETS",
+      "anchor_label": "NON-PERFORMING ASSETS",
+      "anchor_y": 111.57,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "NON-PERFORMING ASSETS (continued) \u2014 NPLs by Industry",
+      "anchor_label": "Financial institutions, investment and holding companies",
+      "anchor_y": 87.74,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "NON-PERFORMING ASSETS (continued) \u2014 NPAs by Period Overdue",
+      "anchor_label": "Over 90 to 180 days",
+      "anchor_y": 400.2,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "NON-PERFORMING ASSETS (continued) \u2014 Restructured Loans",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    }
+  ],
+  "all_dropped": false
+}

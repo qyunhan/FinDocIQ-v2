@@ -1,0 +1,39 @@
+{
+  "tables": [
+    {
+      "title": "INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF DBS GROUP HOLDINGS LTD (continued) - Key audit matter",
+      "label_header": "Key audit matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the key audit matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Valuation of financial instruments held at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Financial instruments held by the Group at fair value include derivative assets and liabilities, trading securities, certain debt instruments and other assets and liabilities designated at fair value.\n\nWe considered the valuation of Level 2 and Level 3 financial instruments to be a key audit matter given the financial significance to the Group, the nature of the underlying products and the estimation involved to determine fair value.\n\nAs at 31 December 2025, the Group held financial assets and financial liabilities classified as Level 2 in the fair value hierarchy amounting to $105,823 million and $102,018 million respectively.\n\nAdditionally, the Group held financial assets classified as Level 3 in the fair value hierarchy amounting to $1,329 million.\n\nIn determining fair value, management also make adjustments to recognise credit risk, funding costs, bid-offer spreads and, in some cases, parameter and model risk limitations. This is broadly consistent with the banking industry, albeit the methodology to calculate some of these adjustments is continuing to evolve.\n\n(Refer also to Notes 3 and 40 to the financial statements.)",
+          "values": [
+            {
+              "value": "We assessed the design and tested the operating effectiveness of the controls over the Group’s financial instruments valuation processes. These included the controls over:\n\n• management’s testing and approval of new models and revalidation of existing models;\n• the completeness and accuracy of pricing data inputs into valuation models;\n• monitoring of collateral disputes; and\n• governance mechanisms and monitoring over the valuation processes (including derivative valuation adjustments) by the Group Market and Liquidity Risk Committee and the Group Valuation Committee.\n\nWe determined that we could rely on the controls for the purposes of our audit.\n\nIn addition, we:\n\n• engaged our own specialists to use their models and input sources to determine an independent estimate of fair value for a sample of the Group's Level 2 financial instruments. We compared these to the Group’s calculations of fair value to assess individual material valuation differences or systemic bias;\n• assessed the reasonableness of methodologies used and assumptions made for a sample of financial instrument valuations with significant unobservable valuation inputs (Level 3 instruments);\n• performed procedures on collateral disputes to identify possible indicators of inappropriate valuations; and\n• performed tests of inputs and assessed the methodology over fair value adjustments, in light of available market data and industry trends.\n\nOverall, we considered that the valuation of Level 2 and Level 3 financial instruments was within a reasonable range of outcomes.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

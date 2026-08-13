@@ -1,0 +1,705 @@
+{
+  "tables": [
+    {
+      "title": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME\nFor the financial year ended 31 December 2025",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "2H 2025 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2H 2024 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit for the period/year",
+          "values": [
+            {
+              "value": "3,791",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,728",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,560",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,748",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other comprehensive income:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Items that may be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h1",
+          "label": "Financial assets, at FVOCI (2)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Fair value gains for the period/year",
+          "values": [
+            {
+              "value": "161",
+              "cell_state": "reported"
+            },
+            {
+              "value": "379",
+              "cell_state": "reported"
+            },
+            {
+              "value": "788",
+              "cell_state": "reported"
+            },
+            {
+              "value": "344",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 3,
+          "parent": "h2",
+          "label": "Reclassification of gains to income statement",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 4,
+          "parent": "h3",
+          "label": "\u2013 on disposal",
+          "values": [
+            {
+              "value": "(33)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(8)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(71)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 4,
+          "parent": "h3",
+          "label": "\u2013 on impairment",
+          "values": [
+            {
+              "value": "(7)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Tax on net movements",
+          "values": [
+            {
+              "value": "(16)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(95)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(21)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Cash flow and other hedges",
+          "values": [
+            {
+              "value": "(62)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "146",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(91)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Net insurance financial result",
+          "values": [
+            {
+              "value": "(66)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(123)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(193)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(77)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Currency translation on foreign subsidiaries and overseas branches",
+          "values": [
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "275",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(424)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "334",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Other comprehensive income/(losses) of associates",
+          "values": [
+            {
+              "value": "153",
+              "cell_state": "reported"
+            },
+            {
+              "value": "209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(335)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "388",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Items that will not be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Currency translation on foreign operations attributable to non-controlling interests",
+          "values": [
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(44)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Equity instruments, at FVOCI,(2) net change in fair value",
+          "values": [
+            {
+              "value": "119",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "171",
+              "cell_state": "reported"
+            },
+            {
+              "value": "172",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Defined benefit plans remeasurements",
+          "values": [
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Own credit",
+          "values": [
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(#)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total other comprehensive income, net of tax",
+          "values": [
+            {
+              "value": "297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(295)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,191",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income for the period/year, net of tax",
+          "values": [
+            {
+              "value": "4,088",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,580",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,265",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,939",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income attributable to:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Equity holders of the Bank",
+          "values": [
+            {
+              "value": "4,025",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,496",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,763",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Non-controlling interests",
+          "values": [
+            {
+              "value": "63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "84",
+              "cell_state": "reported"
+            },
+            {
+              "value": "115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "176",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "4,088",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,580",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,265",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,939",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Unaudited and unreviewed.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) Fair value through other comprehensive income.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(3) # represents amounts less than S$0.5 million.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Profit for the period/year"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Other comprehensive income:"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Items that may be reclassified subsequently to income statement:"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Financial assets, at FVOCI"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Fair value gains for the period/year"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Reclassification of gains to income statement"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "\u2013 on disposal"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "\u2013 on impairment"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Tax on net movements"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Cash flow and other hedges"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Net insurance financial result"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Currency translation on foreign subsidiaries and overseas branches"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Other comprehensive income/(losses) of associates"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Items that will not be reclassified subsequently to income statement:"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Currency translation on foreign operations attributable to non-controlling interests"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Equity instruments, at FVOCI, net change in fair value"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Defined benefit plans remeasurements"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Own credit"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Total other comprehensive income, net of tax"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the period/year, net of tax"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Total comprehensive income attributable to:"
+          },
+          {
+            "line_id": 38,
+            "indent": 1,
+            "label_clean": "Equity holders of the Bank"
+          },
+          {
+            "line_id": 39,
+            "indent": 1,
+            "label_clean": "Non-controlling interests"
+          },
+          {
+            "line_id": 40,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 41,
+            "indent": 2,
+            "label_clean": "Unaudited and unreviewed."
+          },
+          {
+            "line_id": 42,
+            "indent": 2,
+            "label_clean": "Fair value through other comprehensive income."
+          },
+          {
+            "line_id": 43,
+            "indent": 2,
+            "label_clean": "# represents amounts less than S$0.5 million."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

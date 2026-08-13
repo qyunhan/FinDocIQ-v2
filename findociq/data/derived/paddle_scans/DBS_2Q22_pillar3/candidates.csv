@@ -1,0 +1,85 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,350.53,269.24,Pillar3andLiquidityDisclosures,16.0,True,left,False
+1,390.09,423.64,30June2022,16.0,False,right,True
+4,93.66,54.03,PART A: PILLAR3DISCLOSURES,8.97,True,left,False
+4,118.02,54.29,1 INTRODUCTION,8.97,True,left,False
+4,345.86,53.05,2 SCOPEOFCONSOLIDATION,8.97,True,left,False
+5,93.96,52.97,3 OVERVIEW OFKEY PRUDENTIALREGULATORY METRICS,8.97,True,left,False
+6,93.17,53.69,4 COMPOSITION OF CAPITAL,8.97,True,left,False
+6,119.75,55.73,4.1FinancialStatementsandRegulatoryScopeofConsolidation,9.0,True,left,False
+7,95.75,55.73,4.1FinancialStatementsandRegulatoryScopeofConsolidation(continued),9.0,True,left,False
+8,93.58,53.34,4.2 Capital AdequacyandReconciliationof RegulatoryCapital totheBalanceSheet,8.97,True,left,False
+12,94.22,53.16,4.3 Main Features of Capital Instruments,8.97,True,left,False
+12,860.31,578.25,A-9,9.5,False,right,False
+13,93.91,53.5,4.3 Main Features of Capital Instruments (continued),8.97,True,left,False
+13,860.31,572.95,A-10,9.5,False,right,False
+14,93.91,53.58,4.3 Main Features of Capital Instruments (continued),8.97,True,left,False
+14,860.31,572.95,A-11,9.5,False,right,False
+15,93.9,53.52,4.3 Main Features of Capital Instruments (continued),8.97,True,left,False
+15,860.31,572.95,A-12,9.5,False,right,False
+16,93.95,53.5,4.3 Main Features of Capital Instruments (continued),8.97,True,left,False
+16,860.31,572.95,A-13,9.5,False,right,False
+17,94.0,53.52,4.3 Main Features of Capital Instruments (continued),8.97,True,left,False
+17,860.31,572.95,A-14,9.5,False,right,False
+18,93.99,53.67,4.3 Main Features of Capital Instruments (continued),8.97,True,left,False
+18,860.31,572.95,A-15,9.5,False,right,False
+19,93.33,52.93,5 GEOGRAPHICALDISTRIBUTIONOFCREDIT EXPOSURESUSEDINTHECOUNTERCYCLICALCAPITALBUFFER,8.97,True,left,False
+20,93.43,53.63,6 LEVERAGERATIO,8.97,True,left,False
+22,93.04,53.49,7 OVERVIEW OFRISK-WEIGHTEDASSETS,8.97,True,left,False
+23,94.46,53.58,8 CREDIT RISK,8.97,True,left,False
+23,113.26,53.25,8.1 Credit Qualityof Assets,8.97,True,left,False
+23,535.97,53.17,8.2 Changes in Stock of Defaulted Loans(1) and Debt Securities,8.97,True,left,False
+24,94.74,53.34,8.3 Overview of CRMTechniques,8.97,True,left,False
+25,94.66,53.39,8.4 SA(CR) and SA(EQ) – Credit Risk Exposure and CRM Effects,8.97,True,left,False
+26,94.57,53.86,8.5 SA(CR) and SA(EQ) – Exposures by Asset Classes and Risk Weights,8.97,True,left,False
+27,95.0,55.73,8.6IRBA–CreditRiskExposuresbyPortfolioandPDRange,9.0,True,left,False
+27,133.9,55.73,8.6.1AdvancedIRBA,9.0,True,left,False
+28,94.91,53.32,8.6.1 Advanced IRBA (continued),8.97,True,left,False
+29,93.76,53.36,8.6.2 Foundation IRBA,8.97,True,left,False
+30,93.65,53.47,8.6.2 Foundation IRBA (continued),8.97,True,left,False
+31,93.74,53.11,8.6.2 FoundationIRBA(continued),8.97,True,left,False
+31,156.12,52.94,8.7 IRBA–Effect onRWAof Credit DerivativesusedasCRM,8.97,True,left,False
+31,204.44,53.05,8.8 IRBA–RWAFlow Statement for Credit RiskExposures,8.97,True,left,False
+32,94.44,53.39,8.9 IRBA – Specialised Lending and Equities under the Simple Risk Weight Method,8.97,True,left,False
+32,119.0,53.27,8.9.1 IRBA – Specialised Lending (Other than HVCRE)(1),8.97,True,left,False
+32,684.53,53.08,8.9.2 IRBA – Equities under the Simple Risk Weight Method,8.97,True,left,False
+33,94.39,53.17,"9 COUNTERPARTY CREDIT RISK (""CCR"")",8.97,True,left,False
+33,117.25,53.33,9.1 Analysis of CCR Exposure by Approach,8.97,True,left,False
+34,94.39,53.39,9.2 CVARiskCapital Requirements,8.97,True,left,False
+34,393.0,53.75,9.3 Credit DerivativeExposures,8.97,True,left,False
+35,93.58,53.32,9.3 Credit Derivative Exposures (continued),8.97,True,left,False
+35,158.38,52.96,9.4 Standardised Approach – CCR Exposures by Portfolio and Risk Weights,8.97,True,left,False
+36,93.5,53.0,9.5 IRBA – CCR Exposures by Portfolio and PD Range,8.97,True,left,False
+36,149.69,55.73,9.5.1AdvancedIRBA,9.0,True,left,False
+37,93.42,53.58,9.5.2 Foundation IRBA,8.97,True,left,False
+38,93.48,53.64,9.5.2 Foundation IRBA (continued),8.97,True,left,False
+39,94.66,52.88,9.5.2 Foundation IRBA (continued),8.97,True,left,False
+39,142.28,53.32,9.6 RWA Flow Statements under the CCR Internal Models Method,8.97,True,left,False
+39,189.44,53.28,9.7 Composition of Collateral for CCR Exposure,8.97,True,left,False
+40,96.33,53.5,9.8 Exposures to Central Counterparties,8.97,True,left,False
+40,96.62,85.99,Exposures to Central Counterparties,8.97,True,center,False
+41,94.43,54.47,10 SECURITISATION,8.97,True,left,False
+41,120.06,53.93,10.1 SecuritisationExposuresintheBankingBook,8.97,True,left,False
+41,384.65,53.82,10.2 SecuritisationExposuresintheTradingBook,8.97,True,left,False
+41,677.96,53.98,10.3 SecuritisationExposuresintheBankingBookandassociatedRegulatoryCapital Requirements –AReportingBankactingasOriginator or asSponsor,8.97,True,left,False
+42,93.26,53.83,10.4 Securitisation Exposures in the Banking Book and associated Regulatory Capital Requirements – A Reporting Bank acting as an Investor,8.97,True,left,False
+42,95.0,55.73,10.4SecuritisationExposuresintheBankingBookandassociatedRegulatoryCapitalRequirements,9.0,True,left,False
+43,94.44,54.25,11 MARKET RISK,8.97,True,left,False
+43,117.18,53.96,11.1 Market Riskunder StandardisedApproach,8.97,True,left,False
+43,400.15,53.48,"11.2 RWA Flow Statements of Market Risk Exposures under IMA, IMA Values for Trading Portfolios and Comparison of VaREstimateswithGainsor Losses",8.97,True,left,False
+43,471.52,54.15,12 INTEREST RATERISKINTHEBANKING BOOK,8.97,True,left,False
+44,93.43,53.67,PART B: LIQUIDITY COVERAGERATIO (“LCR”) DISCLOSURES,8.97,True,left,False
+45,94.74,55.73,1.1AverageAll-CurrencyLCRfortheQuarterended30June2022,9.0,True,left,False
+46,93.24,53.98,1.2 AverageSGDLCRfor theQuarter ended30June2022 (Number of datapoints: 91),8.97,True,left,False
+47,94.65,54.29,1.3 LiquidityCoverageRatio,8.97,True,left,False
+47,276.42,63.49,a) Compositionof HighQualityLiquidAssets(“HQLA”),8.97,True,left,False
+47,415.28,63.42,b) Concentrationof FundingSources,8.97,True,left,False
+47,509.36,63.53,c) DerivativeExposuresandPotential Collateral Calls,8.97,True,left,False
+48,94.8,54.42,1.3 LiquidityCoverageRatio(continued),8.97,True,left,False
+48,118.96,64.22,d) CurrencyMismatch,8.97,True,center,False
+48,212.98,63.59,e) Centralizationof LiquidityManagement,8.97,True,left,False
+49,93.6,53.64,PART C: NET STABLEFUNDING RATIO (“NSFR”) DISCLOSURES,8.97,True,left,False
+50,94.74,55.73,1.1NSFRDisclosureTemplate,9.0,True,left,False
+51,93.44,54.7,1.1 NSFRDisclosureTemplate(continued),8.97,True,left,False
+52,93.27,54.47,1.1 NSFRDisclosureTemplate(continued),8.97,True,left,False
+53,93.5,54.64,1.1 NSFRDisclosureTemplate(continued),8.97,True,left,False

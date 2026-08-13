@@ -1,0 +1,529 @@
+{
+  "tables": [
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments - 31 Dec 2025",
+      "label_header": "GROUP",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Fair value at 31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "Classification"
+        },
+        {
+          "group": null,
+          "leaf": "Valuation techniques"
+        },
+        {
+          "group": null,
+          "leaf": "Unobservable inputs"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity securities",
+          "values": [
+            {
+              "value": "1,951",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL/FVOCI",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Net asset value/ Multiples/Discounted cash flows",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Value of net asset/ Earnings and multiples/Cash flows and discount rate",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative receivables",
+          "values": [
+            {
+              "value": "657",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Option pricing model Derivatives pricing",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Volatility/Correlation Yield curve",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Assets for life insurance funds",
+          "values": [
+            {
+              "value": "4,614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL/FVOCI",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Net asset value",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Value of net asset",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "7,222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative payables",
+          "values": [
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Option pricing model Derivatives pricing",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Volatility/Correlation Yield curve",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt issued",
+          "values": [
+            {
+              "value": "1,212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Net asset value",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Value of net asset",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "1,771",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments - 31 Dec 2024",
+      "label_header": "GROUP",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Fair value at 31 Dec 2024"
+        },
+        {
+          "group": null,
+          "leaf": "Classification"
+        },
+        {
+          "group": null,
+          "leaf": "Valuation techniques"
+        },
+        {
+          "group": null,
+          "leaf": "Unobservable inputs"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity securities",
+          "values": [
+            {
+              "value": "2,059",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL/FVOCI",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Net asset value/ Multiples/Discounted cash flows",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Value of net asset/ Earnings and multiples/Cash flows and discount rate",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative receivables",
+          "values": [
+            {
+              "value": "584",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Option pricing model Derivatives pricing",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Volatility/Correlation Yield curve",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Assets for life insurance funds",
+          "values": [
+            {
+              "value": "3,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL/FVOCI",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Net asset value",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Value of net asset",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "6,291",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative payables",
+          "values": [
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "FVTPL",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Option pricing model Derivatives pricing",
+              "cell_state": "reported"
+            },
+            {
+              "value": "Volatility/Correlation Yield curve",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Financial assets"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Equity securities"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Derivative receivables"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Financial liabilities"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Derivative payables"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Debt issued"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      },
+      {
+        "rows": [
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Financial assets"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Equity securities"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Derivative receivables"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Financial liabilities"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Derivative payables"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

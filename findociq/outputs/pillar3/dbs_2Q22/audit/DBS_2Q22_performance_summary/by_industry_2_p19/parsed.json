@@ -1,0 +1,417 @@
+{
+  "tables": [
+    {
+      "title": "By industry",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2022",
+          "leaf": "NPA"
+        },
+        {
+          "group": "30 Jun 2022",
+          "leaf": "SP¹"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "NPA"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "SP¹"
+        },
+        {
+          "group": "30 Jun 2021",
+          "leaf": "NPA"
+        },
+        {
+          "group": "30 Jun 2021",
+          "leaf": "SP¹"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By industry",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Manufacturing",
+          "values": [
+            {
+              "value": "1,050",
+              "cell_state": "reported"
+            },
+            {
+              "value": "510",
+              "cell_state": "reported"
+            },
+            {
+              "value": "805",
+              "cell_state": "reported"
+            },
+            {
+              "value": "372",
+              "cell_state": "reported"
+            },
+            {
+              "value": "785",
+              "cell_state": "reported"
+            },
+            {
+              "value": "333",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Building and construction",
+          "values": [
+            {
+              "value": "578",
+              "cell_state": "reported"
+            },
+            {
+              "value": "198",
+              "cell_state": "reported"
+            },
+            {
+              "value": "445",
+              "cell_state": "reported"
+            },
+            {
+              "value": "149",
+              "cell_state": "reported"
+            },
+            {
+              "value": "415",
+              "cell_state": "reported"
+            },
+            {
+              "value": "133",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Housing loans",
+          "values": [
+            {
+              "value": "186",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "240",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "General commerce",
+          "values": [
+            {
+              "value": "902",
+              "cell_state": "reported"
+            },
+            {
+              "value": "666",
+              "cell_state": "reported"
+            },
+            {
+              "value": "911",
+              "cell_state": "reported"
+            },
+            {
+              "value": "662",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,049",
+              "cell_state": "reported"
+            },
+            {
+              "value": "655",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transportation, storage & communications",
+          "values": [
+            {
+              "value": "1,779",
+              "cell_state": "reported"
+            },
+            {
+              "value": "988",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,792",
+              "cell_state": "reported"
+            },
+            {
+              "value": "971",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,550",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,344",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Financial institutions, investment & holding companies",
+          "values": [
+            {
+              "value": "94",
+              "cell_state": "reported"
+            },
+            {
+              "value": "66",
+              "cell_state": "reported"
+            },
+            {
+              "value": "93",
+              "cell_state": "reported"
+            },
+            {
+              "value": "50",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Professionals & private individuals (excluding housing loans)",
+          "values": [
+            {
+              "value": "392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "419",
+              "cell_state": "reported"
+            },
+            {
+              "value": "121",
+              "cell_state": "reported"
+            },
+            {
+              "value": "431",
+              "cell_state": "reported"
+            },
+            {
+              "value": "137",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "510",
+              "cell_state": "reported"
+            },
+            {
+              "value": "178",
+              "cell_state": "reported"
+            },
+            {
+              "value": "617",
+              "cell_state": "reported"
+            },
+            {
+              "value": "205",
+              "cell_state": "reported"
+            },
+            {
+              "value": "558",
+              "cell_state": "reported"
+            },
+            {
+              "value": "182",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total non-performing loans",
+          "values": [
+            {
+              "value": "5,491",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,746",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,290",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,545",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,091",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,835",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt securities, contingent liabilities & others",
+          "values": [
+            {
+              "value": "417",
+              "cell_state": "reported"
+            },
+            {
+              "value": "209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "381",
+              "cell_state": "reported"
+            },
+            {
+              "value": "530",
+              "cell_state": "reported"
+            },
+            {
+              "value": "321",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total Non-performing assets (NPA)",
+          "values": [
+            {
+              "value": "5,908",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,955",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,926",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,621",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,156",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:\n1 Refers to Expected Credit Loss Stage 3",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

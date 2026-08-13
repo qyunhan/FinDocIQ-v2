@@ -1,0 +1,56 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_interest_income_p10",
+  "section_ids": [
+    "non_interest_income"
+  ],
+  "section_titles": [
+    "Non-Interest Income"
+  ],
+  "pages": [
+    10
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 18,
+  "usage": {
+    "ts": "2026-07-14T14:53:56",
+    "script": "extract_to_excel",
+    "label": "non_interest_income_p10",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2926,
+    "output_tokens": 4468,
+    "thinking_tokens": 0,
+    "total_tokens": 7394,
+    "est_cost_usd": 0.01205
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2.6' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.9' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '837' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Non-Interest Income",
+      "anchor_label": "Non-Interest Income",
+      "anchor_y": 100.46,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

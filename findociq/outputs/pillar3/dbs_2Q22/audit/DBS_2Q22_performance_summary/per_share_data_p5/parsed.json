@@ -1,0 +1,97 @@
+{
+  "tables": [
+    {
+      "title": "Per share data ($)",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Half 2022"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2021"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Half 2021"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Per basic and diluted share",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "– earnings excluding one-time items",
+          "values": [
+            {
+              "value": "2.80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.35",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "– earnings",
+          "values": [
+            {
+              "value": "2.80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.35",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "– net book value8",
+          "values": [
+            {
+              "value": "20.78",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21.10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21.47",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

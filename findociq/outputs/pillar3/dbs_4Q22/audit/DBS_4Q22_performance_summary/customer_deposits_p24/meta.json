@@ -1,0 +1,90 @@
+{
+  "document": "DBS_4Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "customer_deposits_p24",
+  "section_ids": [
+    "customer_deposits"
+  ],
+  "section_titles": [
+    "CUSTOMER DEPOSITS"
+  ],
+  "pages": [
+    24
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 31,
+  "usage": {
+    "ts": "2026-07-26T09:12:53",
+    "script": "extract_to_excel",
+    "label": "customer_deposits_p24",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3888,
+    "output_tokens": 4132,
+    "thinking_tokens": 0,
+    "total_tokens": 8020,
+    "est_cost_usd": 0.04302,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '213259' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '224248' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '219838' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '198124' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '188511' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '174338' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '51600' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '52014' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '57206' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '36211' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '38000' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '31067' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '21795' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '19684' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '20995' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '57611' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '57385' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '55721' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '19053' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '18598' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '24865' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '10611' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '30996' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '33218' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '38056' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '20604' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '18796' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '19150' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4412' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4572' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4636' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6592' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6726' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6540' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5910' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6333' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4865' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8058' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8581' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7575' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7204' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5689' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '527' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x6: 'Fixed deposits' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x6: 'Savings accounts' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x5: 'Current accounts' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x6: 'Others' [CUSTOMER DEPOSITS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

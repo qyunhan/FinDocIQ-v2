@@ -1,0 +1,54 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_geography_p17-19/chunks/c1",
+  "section_ids": [
+    "performance_by_geography"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY GEOGRAPHY"
+  ],
+  "pages": [
+    17,
+    18
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 6,
+  "n_rows": 59,
+  "usage": {
+    "ts": "2026-07-13T17:10:31",
+    "script": "extract_to_excel",
+    "label": "performance_by_geography_p17-19/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3520,
+    "output_tokens": 12577,
+    "thinking_tokens": 0,
+    "total_tokens": 16097,
+    "est_cost_usd": 0.0325
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '4.02' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.43' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.88' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.45' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.11' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.64' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.72' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.78' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.01' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.75' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '505' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '871' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

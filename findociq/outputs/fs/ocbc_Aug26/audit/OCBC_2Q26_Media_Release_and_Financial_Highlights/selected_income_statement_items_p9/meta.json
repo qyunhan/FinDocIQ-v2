@@ -1,0 +1,42 @@
+{
+  "document": "OCBC_2Q26_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 August 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "selected_income_statement_items_p9",
+  "section_ids": [
+    "selected_income_statement_items"
+  ],
+  "section_titles": [
+    "Selected Income Statement Items"
+  ],
+  "pages": [
+    9
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 20,
+  "usage": {
+    "ts": "2026-08-07T04:59:53",
+    "script": "extract_to_excel",
+    "label": "selected_income_statement_items_p9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3884,
+    "output_tokens": 5334,
+    "thinking_tokens": 0,
+    "total_tokens": 9218,
+    "est_cost_usd": 0.05383,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,28 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,88.36,70.82,MediaRelease,16.1,False,left,False
+1,124.17,178.63,OCBCGroupFirstHalf2026NetProfit,13.9,True,center,False
+1,146.25,184.87,Grew13%toaRecordS$4.19billion,13.9,True,center,False
+2,86.22,69.22,First Half 2026 Performance,12.0,True,left,False
+2,412.57,69.01,1H26 Year-on-YearPerformance,10.08,True,left,False
+4,86.33,68.78,2Q26 Quarter-on-QuarterPerformance,10.08,True,left,False
+4,402.18,68.54,2Q26 Year-on-YearPerformance,10.08,True,left,False
+5,378.68,68.55,Non-performingassets(“NPAs”),10.08,True,left,False
+5,499.02,72.25,Allowances,10.08,True,left,False
+7,86.04,69.54,Interim Dividend,12.0,True,left,False
+8,86.39,69.24,"Message from Group CEO, Tan Teck Long",12.0,True,left,False
+9,86.13,72.95,FINANCIAL HIGHLIGHTS,12.0,True,left,False
+11,85.81,68.89,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+12,85.97,69.0,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+14,85.76,68.84,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+17,85.92,69.17,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+18,85.91,68.86,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+18,111.87,68.69,CAPITAL ADEQUACY RATIOS 1/,11.04,True,left,False
+19,85.96,68.95,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+19,109.54,68.61,PERFORMANCE BY BUSINESS SEGMENT,11.04,True,left,False
+19,317.8,68.94,GlobalConsumer/PrivateBanking,9.12,True,left,False
+19,486.19,69.14,GlobalWholesaleBanking,9.12,True,left,False
+20,86.17,69.12,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+20,109.9,68.7,PERFORMANCE BY BUSINESS SEGMENT (continued),11.04,True,left,False
+20,133.51,69.38,GlobalMarkets,9.12,True,left,False
+20,273.8,69.46,Insurance,9.12,True,left,False
+20,413.08,69.35,Others,9.12,True,left,False

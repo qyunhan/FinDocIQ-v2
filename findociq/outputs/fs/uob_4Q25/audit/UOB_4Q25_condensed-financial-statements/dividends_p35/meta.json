@@ -1,0 +1,58 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "dividends_p35",
+  "section_ids": [
+    "dividends"
+  ],
+  "section_titles": [
+    "4 Dividends"
+  ],
+  "pages": [
+    35
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 3,
+  "usage": {
+    "ts": "2026-08-07T10:15:19",
+    "script": "extract_to_excel",
+    "label": "dividends_p35",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3922,
+    "output_tokens": 490,
+    "thinking_tokens": 0,
+    "total_tokens": 4412,
+    "est_cost_usd": 0.01029,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '370' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '424' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '411' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '472' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "4 Dividends",
+      "anchor_label": "4 Dividends",
+      "anchor_y": 89.31,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

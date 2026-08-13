@@ -1,0 +1,63 @@
+{
+  "document": "DBS_1Q26_P3_other_regulatory_disclosures.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "A_4_p5-6",
+  "section_ids": [
+    "A.4"
+  ],
+  "section_titles": [
+    "LEVERAGE RATIO"
+  ],
+  "pages": [
+    5,
+    6
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 50,
+  "usage": {
+    "ts": "2026-07-24T14:09:01",
+    "script": "extract_to_excel",
+    "label": "A_4_p5-6",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4474,
+    "output_tokens": 5656,
+    "thinking_tokens": 0,
+    "total_tokens": 10130,
+    "est_cost_usd": 0.05761,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '5.9' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Leverage Ratio Common Disclosure Template",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "Leverage Ratio Summary Comparison Table",
+      "anchor_label": "Leverage Ratio Summary Comparison Table",
+      "anchor_y": 85.73,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

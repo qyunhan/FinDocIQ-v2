@@ -1,0 +1,48 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "allowance_for_credit_and_other_losses_p11",
+  "section_ids": [
+    "allowance_for_credit_and_other_losses"
+  ],
+  "section_titles": [
+    "Allowance for Credit and Other Losses"
+  ],
+  "pages": [
+    11
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 11,
+  "usage": {
+    "ts": "2026-08-07T09:23:44",
+    "script": "extract_to_excel",
+    "label": "allowance_for_credit_and_other_losses_p11",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3914,
+    "output_tokens": 2129,
+    "thinking_tokens": 0,
+    "total_tokens": 6043,
+    "est_cost_usd": 0.02503,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=4x json=0x (missing from extraction)",
+      "  deficit: '474' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [Allowance for Credit and Other Losses]",
+      "  col-repair: declined for table 'Allowance for Credit and Other Losses' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

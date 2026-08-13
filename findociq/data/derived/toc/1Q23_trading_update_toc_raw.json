@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Trading Update for the First Quarter Ended 31 March 2023",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "Dividends",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_003",
+      "title": "Selected income statement items ($m)",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_004",
+      "title": "Selected balance sheet items ($m)",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_005",
+      "title": "Key financial ratios (%)4",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_006",
+      "title": "Per share data ($)",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 3034,
+    "output_tokens": 346,
+    "thinking_tokens": null
+  }
+}

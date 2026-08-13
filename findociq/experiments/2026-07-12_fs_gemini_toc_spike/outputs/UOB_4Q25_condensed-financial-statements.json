@@ -1,0 +1,416 @@
+{
+  "doc_id": "UOB_4Q25_condensed-financial-statements",
+  "source_pdf": "findociq/data/sources/financial_statements/UOB/2025/4Q25/UOB_4Q25_condensed-financial-statements.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "Audited Financial Results for the Financial Year Ended 31 December 2025",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Dividend for the Second Half Ended 31 December 2025",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Ordinary share dividend",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Interested Person Transactions",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Confirmation by Directors",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Undertakings from Directors and Executive Officers",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Information relating to persons occupying managerial position in the issuer or any of its principal subsidiaries who are relatives of a director or chief executive officer or substantial shareholder of the issuer pursuant to Rule 704(13)",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Condensed Financial Statements For the Second Half and Financial Year ended 31 December 2025",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "Contents",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "Financial Highlights",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "title": "Performance Review",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "2025 versus 2024",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "2H25 versus 2H24",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "2H25 versus 1H25",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Asset Quality",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Capital, Funding and Liquidity Positions",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Net Interest Income",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "title": "Net interest margin",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "title": "Volume and rate analysis",
+      "page": 9,
+      "level": 2
+    },
+    {
+      "title": "Non-Interest Income",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "title": "Operating Expenses",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "title": "Allowance for Credit and Other Losses",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "Customer Loans",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "By industry",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "By currency",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "By maturity",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "By geography 1",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "Non-Performing Assets",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "title": "By grading",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "By security",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "By ageing",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "Total allowance",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "NPL by industry",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "NPL by geography 1",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "Customer Deposits",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "title": "By product",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "By maturity",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "By currency",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "Performance by Business Segment 1",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "title": "Group Retail (\"GR\")",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Group Wholesale Banking (\"GWB\")",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Global Markets (\"GM\")",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Others",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "Performance by Geographical Segment 1",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "title": "Singapore",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Malaysia",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Thailand",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Indonesia",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Greater China",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Others",
+      "page": 25,
+      "level": 2
+    },
+    {
+      "title": "Capital Adequacy and Leverage Ratios 1,2,3",
+      "page": 26,
+      "level": 1
+    },
+    {
+      "title": "Income Statement (Audited) for the financial year ended 31 December 2025",
+      "page": 27,
+      "level": 1
+    },
+    {
+      "title": "Statement of Comprehensive Income (Audited) for the financial year ended 31 December 2025",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "Balance Sheets (Audited) as at 31 December 2025",
+      "page": 29,
+      "level": 1
+    },
+    {
+      "title": "Statements of Changes in Equity (Audited) for the financial year ended 31 December 2025",
+      "page": 30,
+      "level": 1
+    },
+    {
+      "title": "Cash Flow Statement (Audited) for the financial year ended 31 December 2025",
+      "page": 32,
+      "level": 1
+    },
+    {
+      "title": "Notes to the Condensed Financial Statements for the financial year ended 31 December 2025",
+      "page": 33,
+      "level": 1
+    },
+    {
+      "title": "1 Summary of Material Accounting Policies",
+      "page": 33,
+      "level": 2
+    },
+    {
+      "title": "(a) Basis of Preparation",
+      "page": 33,
+      "level": 3
+    },
+    {
+      "title": "(b) Changes in Accounting Policies",
+      "page": 33,
+      "level": 3
+    },
+    {
+      "title": "(c) Critical Accounting Estimates and Judgements",
+      "page": 33,
+      "level": 3
+    },
+    {
+      "title": "2 Income Tax",
+      "page": 34,
+      "level": 2
+    },
+    {
+      "title": "3 Share Capital and Other Capital",
+      "page": 34,
+      "level": 2
+    },
+    {
+      "title": "4 Dividends",
+      "page": 35,
+      "level": 2
+    },
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities",
+      "page": 35,
+      "level": 2
+    },
+    {
+      "title": "6 Fair Value of Financial Instruments",
+      "page": 37,
+      "level": 2
+    },
+    {
+      "title": "7 Debts Issued",
+      "page": 39,
+      "level": 2
+    },
+    {
+      "title": "Independent Auditor\u2019s Report for the financial year ended 31 December 2025",
+      "page": 40,
+      "level": 1
+    },
+    {
+      "title": "To the Shareholders of United Overseas Bank Limited",
+      "page": 40,
+      "level": 2
+    },
+    {
+      "title": "Report on the Audit of the Financial Statements",
+      "page": 40,
+      "level": 3
+    },
+    {
+      "title": "Opinion",
+      "page": 40,
+      "level": 4
+    },
+    {
+      "title": "Basis for Opinion",
+      "page": 40,
+      "level": 4
+    },
+    {
+      "title": "Key Audit Matters",
+      "page": 40,
+      "level": 4
+    },
+    {
+      "title": "Expected credit losses",
+      "page": 41,
+      "level": 5
+    },
+    {
+      "title": "a) Non-impaired credit exposures",
+      "page": 41,
+      "level": 6
+    },
+    {
+      "title": "b) Impaired credit exposures",
+      "page": 42,
+      "level": 6
+    },
+    {
+      "title": "Valuation of illiquid or complex financial instruments",
+      "page": 43,
+      "level": 5
+    },
+    {
+      "title": "Other Information",
+      "page": 43,
+      "level": 4
+    },
+    {
+      "title": "Responsibilities of Management and Directors for the Financial Statements",
+      "page": 44,
+      "level": 4
+    },
+    {
+      "title": "Auditor\u2019s Responsibilities for the Audit of the Financial Statements",
+      "page": 44,
+      "level": 4
+    },
+    {
+      "title": "Report on Other Legal and Regulatory Requirements",
+      "page": 45,
+      "level": 3
+    }
+  ],
+  "contents_page_number": 4,
+  "contents_page_text": "United Overseas Bank Limited and Its Subsidiaries\nContents\nPage\n2 Financial Highlights\n4 Performance Review\n5 Net Interest Income\n7 Non-Interest Income\n8 Operating Expenses\n9 Allowance for Credit and Other Losses\n10 Customer Loans\n11 Non-Performing Assets\n13 Customer Deposits\n14 Performance by Business Segment\n19 Performance by Geographical Segment\n23 Capital Adequacy and Leverage Ratios\nCondensed Financial Statements\n24 Income Statement (Audited)\n25 Statement of Comprehensive Income (Audited)\n26 Balance Sheets (Audited)\n27 Statements of Changes in Equity (Audited)\n29 Cash Flow Statement (Audited)\nNotes to the Condensed Financial Statements\n30 Summary of Material Accounting Policies\n31 Income Tax\n31 Share Capital and Other Capital\n32 Dividends\n32 Classification of Financial Assets and Financial Liabilities\n34 Fair Value of Financial Instruments\n36 Debts Issued\nAttachment: Independent Auditor\u2019s Report\nNotes:\n1 The condensed financial statements are presented in Singapore Dollars.\n2 Certain comparative figures have been restated to conform with the current period's presentation.\n3 Certain figures in this report may not add up to the respective totals due to rounding.\n4 Amounts less than $500,000 in absolute term are shown as \"0\".\n5 The Group refers to United Overseas Bank Limited and its subsidiaries.\n6 The Bank refers to United Overseas Bank Limited.\nAbbreviation\n\"2025\" and \"2024\" denote the financial year of 2025 and 2024 respectively.\n\"2H25\" and \u201c2H24\u201d denote the second half of 2025 and 2024 respectively.\n\"1H25\" denotes first half of 2025.\n\"NM\" denotes not meaningful.\n\"NA\" denotes not applicable.\n1",
+  "n_pages": 45
+}

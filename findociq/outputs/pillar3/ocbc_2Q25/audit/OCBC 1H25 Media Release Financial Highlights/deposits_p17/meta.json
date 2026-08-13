@@ -1,0 +1,45 @@
+{
+  "document": "OCBC 1H25 Media Release Financial Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "1 August 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "deposits_p17",
+  "section_ids": [
+    "deposits"
+  ],
+  "section_titles": [
+    "DEPOSITS"
+  ],
+  "pages": [
+    17
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-25T08:09:05",
+    "script": "extract_to_excel",
+    "label": "deposits_p17",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3889,
+    "output_tokens": 3295,
+    "thinking_tokens": 0,
+    "total_tokens": 7184,
+    "est_cost_usd": 0.03549,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Others' [DEPOSITS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

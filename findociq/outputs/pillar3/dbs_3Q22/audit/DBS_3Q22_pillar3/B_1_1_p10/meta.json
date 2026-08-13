@@ -1,0 +1,52 @@
+{
+  "document": "DBS_3Q22_pillar3.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 September 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "B_1_1_p10",
+  "section_ids": [
+    "B.1.1"
+  ],
+  "section_titles": [
+    "Average All-Currency LCR for the Quarter ended 30 September 2022"
+  ],
+  "pages": [
+    10
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 30,
+  "usage": {
+    "ts": "2026-07-26T10:08:44",
+    "script": "extract_to_excel",
+    "label": "B_1_1_p10",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3921,
+    "output_tokens": 3461,
+    "thinking_tokens": 0,
+    "total_tokens": 7382,
+    "est_cost_usd": 0.03703,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "1.1 Average All-Currency LCR for the Quarter ended 30 Sep 2022\n(Number of data points: 92)",
+      "anchor_label": "1.1 Average All-Currency LCR for the Quarter ended 30 Sep 2022\n(Number of data points: 92)",
+      "anchor_y": 90.84,
+      "owning_section": "1.1",
+      "dropped": false,
+      "reason": "legitimate_owner"
+    }
+  ],
+  "all_dropped": false
+}

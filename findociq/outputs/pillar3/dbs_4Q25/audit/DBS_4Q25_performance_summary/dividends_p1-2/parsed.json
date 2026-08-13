@@ -1,0 +1,115 @@
+{
+  "tables": [
+    {
+      "title": "Dividends",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "2025"
+        },
+        {
+          "group": null,
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "DBSH Ordinary shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interim one-tier tax-exempt ordinary dividends of $1.80 (2024: $1.62)",
+          "values": [
+            {
+              "value": "5,107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,604",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Final one-tier tax-exempt ordinary dividend of $0.66 (2024: $0.60)",
+          "values": [
+            {
+              "value": "1,872",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,705",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "One-tier tax-exempt Capital Return dividends paid for the first three quarters 2025 of $0.45 (2024: Nil)",
+          "values": [
+            {
+              "value": "1,277",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "One-tier tax-exempt Capital Return dividend for fourth quarter 2025 of $0.15 (2024: Nil)",
+          "values": [
+            {
+              "value": "425",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "8,681",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,309",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

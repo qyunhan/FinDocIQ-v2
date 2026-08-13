@@ -1,0 +1,45 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_balance_sheets_p25",
+  "section_ids": [
+    "unaudited_balance_sheets"
+  ],
+  "section_titles": [
+    "UNAUDITED BALANCE SHEETS"
+  ],
+  "pages": [
+    25
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 35,
+  "usage": {
+    "ts": "2026-07-26T09:06:36",
+    "script": "extract_to_excel",
+    "label": "unaudited_balance_sheets_p25",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3901,
+    "output_tokens": 7038,
+    "thinking_tokens": 0,
+    "total_tokens": 10939,
+    "est_cost_usd": 0.06919,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '20211' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Derivatives' [UNAUDITED BALANCE SHEETS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

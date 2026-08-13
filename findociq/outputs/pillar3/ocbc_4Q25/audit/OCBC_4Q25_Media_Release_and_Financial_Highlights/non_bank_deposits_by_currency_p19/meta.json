@@ -1,0 +1,45 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_bank_deposits_by_currency_p19",
+  "section_ids": [
+    "non_bank_deposits_by_currency"
+  ],
+  "section_titles": [
+    "Non-Bank Deposits by Currency"
+  ],
+  "pages": [
+    19
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-16T14:07:00",
+    "script": "extract_to_excel",
+    "label": "non_bank_deposits_by_currency_p19",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2930,
+    "output_tokens": 2683,
+    "thinking_tokens": 0,
+    "total_tokens": 5613,
+    "est_cost_usd": 0.02854,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Others' [DEPOSITS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

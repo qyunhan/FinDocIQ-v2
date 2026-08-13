@@ -1,0 +1,32 @@
+# findociq/.gcloudignore — build context for pipeline/Dockerfile (retry_worker
+# image). Source PDFs + the DB are pulled from GCS at container start
+# (retry_worker.py), so they must NOT be baked into the image.
+
+.git/
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv-paddle/
+.venv-reports/
+
+# pulled from GCS at runtime, not baked in
+data/sources/
+db/*.db
+
+# archival / not used by the pipeline (same exclusions as the repo-root
+# .gcloudignore used for the dashboard's Cloud Run deploy)
+_legacy/
+experiments/
+app/
+tools/
+reports/
+
+outputs/checks/
+outputs/pillar3/**/*.xlsx
+outputs/pillar3/**/pages/
+outputs/pillar3/_ledgers/
+outputs/pillar3/**/logs/
+
+data/discovery/
+data/review/
+out/

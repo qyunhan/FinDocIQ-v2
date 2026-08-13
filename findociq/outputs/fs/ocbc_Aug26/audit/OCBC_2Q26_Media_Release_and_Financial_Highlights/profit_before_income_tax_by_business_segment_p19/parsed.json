@@ -1,0 +1,199 @@
+{
+  "tables": [
+    {
+      "title": "Profit Before Income Tax by Business Segment",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H26"
+        },
+        {
+          "group": null,
+          "leaf": "1H25"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Global Consumer/Private Banking",
+          "values": [
+            {
+              "value": "1,154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Global Wholesale Banking",
+          "values": [
+            {
+              "value": "1,825",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,733",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Global Markets",
+          "values": [
+            {
+              "value": "523",
+              "cell_state": "reported"
+            },
+            {
+              "value": "453",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Insurance",
+          "values": [
+            {
+              "value": "1,048",
+              "cell_state": "reported"
+            },
+            {
+              "value": "734",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "624",
+              "cell_state": "reported"
+            },
+            {
+              "value": "762",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(18)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Profit before income tax",
+          "values": [
+            {
+              "value": "5,174",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,598",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Global Consumer/Private Banking"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Global Wholesale Banking"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Global Markets"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Insurance"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Profit before income tax"
+          }
+        ],
+        "title_clean": "Profit Before Income Tax by Business Segment",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

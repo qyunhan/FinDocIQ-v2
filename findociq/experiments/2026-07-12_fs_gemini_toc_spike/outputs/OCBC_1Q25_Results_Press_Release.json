@@ -1,0 +1,81 @@
+{
+  "doc_id": "OCBC_1Q25_Results_Press_Release",
+  "source_pdf": "findociq/data/sources/financial_statements/OCBC/2025/1Q25/OCBC_1Q25_Results_Press_Release.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "1Q25 Performance Highlights",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "First Quarter 2025 Performance",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "1Q25 Quarter-on-Quarter Performance",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "1Q25 Year-on-Year Performance",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "title": "Asset Quality and Allowances",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "title": "Message from Group CEO, Helen Wong",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "FINANCIAL HIGHLIGHTS (unaudited)",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "Selected Income Statement Items",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Selected Balance Sheet Items",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Selected Changes in Equity Items",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Key Financial Ratios (%)",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Earnings per share (S$) 2/",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Further Information",
+      "page": 8,
+      "level": 1
+    }
+  ],
+  "contents_page_number": null,
+  "contents_page_text": "",
+  "n_pages": 8
+}

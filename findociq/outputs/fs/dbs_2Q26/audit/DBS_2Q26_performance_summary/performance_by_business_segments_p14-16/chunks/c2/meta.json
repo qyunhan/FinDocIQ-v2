@@ -1,0 +1,54 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_business_segments_p14-16/chunks/c2",
+  "section_ids": [
+    "performance_by_business_segments"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY BUSINESS SEGMENTS"
+  ],
+  "pages": [
+    16
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-08-06T09:21:07",
+    "script": "extract_to_excel",
+    "label": "performance_by_business_segments_p14-16/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3954,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3963,
+    "est_cost_usd": 0.00601,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p16) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '2.98' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.54' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.05' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.49' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.44' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.70' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '124' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '448' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '858' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '413' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

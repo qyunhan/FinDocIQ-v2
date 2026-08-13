@@ -1,0 +1,53 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "selected_income_statement_items_2_p14",
+  "section_ids": [
+    "selected_income_statement_items_2"
+  ],
+  "section_titles": [
+    "Selected income statement items"
+  ],
+  "pages": [
+    14
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 30,
+  "usage": {
+    "ts": "2026-07-26T09:06:29",
+    "script": "extract_to_excel",
+    "label": "selected_income_statement_items_2_p14",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3894,
+    "output_tokens": 6267,
+    "thinking_tokens": 0,
+    "total_tokens": 10161,
+    "est_cost_usd": 0.06224,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '20211' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Net interest income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Net fee and commission income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Other non-interest income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Total income' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Expenses' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Allowances for credit and other losses' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Profit before tax' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Income tax expense' [PERFORMANCE BY GEOGRAPHY\nSelec]",
+      "  duplicate row label x3: 'Net profit' [PERFORMANCE BY GEOGRAPHY\nSelec]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,338 @@
+{
+  "tables": [
+    {
+      "title": "Movements in Level 3 non-financial assets",
+      "label_header": "GROUP\nS$ million",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": "2026",
+          "leaf": "Investment properties for life insurance funds (1)"
+        },
+        {
+          "group": "2026",
+          "leaf": "Associates (2)"
+        },
+        {
+          "group": "2026",
+          "leaf": "Total"
+        },
+        {
+          "group": "2025",
+          "leaf": "Investment properties for life insurance funds (1)"
+        },
+        {
+          "group": "2025",
+          "leaf": "Associates (2)"
+        },
+        {
+          "group": "2025",
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Non-financial assets measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "At 1 January",
+          "values": [
+            {
+              "value": "2,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "86",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,181",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,939",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,007",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Additions",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Reclassification from property, plant and equipment",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Gains recognised in",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- profit or loss",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "131",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "146",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "- other comprehensive income",
+          "values": [
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "At 30 June/31 December",
+          "values": [
+            {
+              "value": "2,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "93",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,188",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "86",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,181",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) The fair value of investment properties is determined based on a combination of income approach, comparison approach and capitalisation approach under Level 3 fair value measurements.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) The fair value of investment in associate is determined based on income approach under Level 3 fair value measurements.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Non-financial assets measured at fair value"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Additions \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Reclassification from property, plant and equipment \u2013 \u2013 \u2013"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Gains recognised in"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "- profit or loss \u2013"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "- other comprehensive income # \u2013 #"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 29,
+            "indent": 1,
+            "label_clean": "The fair value of investment in associate is determined based on income approach under Level 3 fair value measurements."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

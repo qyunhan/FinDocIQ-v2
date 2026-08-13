@@ -1,0 +1,46 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "financial_highlights_continued_p10-22/chunks/c1",
+  "section_ids": [
+    "financial_highlights_continued"
+  ],
+  "section_titles": [
+    "FINANCIAL HIGHLIGHTS (continued)"
+  ],
+  "pages": [
+    10,
+    11
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 44,
+  "usage": {
+    "ts": "2026-07-16T13:57:36",
+    "script": "extract_to_excel",
+    "label": "financial_highlights_continued_p10-22/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3522,
+    "output_tokens": 9749,
+    "thinking_tokens": 0,
+    "total_tokens": 13271,
+    "est_cost_usd": 0.09302,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [
+      "  column count mismatch [FINANCIAL HIGHLIGHTS (continued)] row 'Total income': got 6 values != ncols=5"
+    ],
+    "number_issues": [
+      "  deficit: '193200032' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,466 @@
+{
+  "tables": [
+    {
+      "title": "ALLOWANCES FOR CREDIT AND OTHER LOSSES",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Half 2026"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2025"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Half 2025"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL Stage 1 and 2 (GP)",
+          "values": [
+            {
+              "value": "(42)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "188",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(251)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL Stage 3 (SP) for loans1",
+          "values": [
+            {
+              "value": "336",
+              "cell_state": "reported"
+            },
+            {
+              "value": "267",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            },
+            {
+              "value": "575",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(42)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "112",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(39)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "197",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(43)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "Hong Kong",
+          "values": [
+            {
+              "value": "85",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42",
+              "cell_state": "reported"
+            },
+            {
+              "value": "267",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(68)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "Rest of Greater China",
+          "values": [
+            {
+              "value": "69",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "50",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "South and Southeast Asia",
+          "values": [
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(92)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL Stage 3 (SP) for other credit exposures",
+          "values": [
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(7)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total ECL Stage 3 (SP)",
+          "values": [
+            {
+              "value": "345",
+              "cell_state": "reported"
+            },
+            {
+              "value": "260",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33",
+              "cell_state": "reported"
+            },
+            {
+              "value": "585",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(41)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for other assets",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(100)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "458",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "333",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(9)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": "1",
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "SP for loans by geography are determined according to the location where the borrower is incorporated",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "NM Not Meaningful",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 39,
+            "indent": 1,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 50,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 51,
+            "indent": 0,
+            "label_clean": "Notes:"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

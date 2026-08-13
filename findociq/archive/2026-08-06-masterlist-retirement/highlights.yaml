@@ -1,0 +1,240 @@
+# highlights.yaml — Key Financial Highlights item list for the Dashboard's
+# "Key Financial Highlights" view (findociq_app.py).
+#
+# Ordered list of {label, concept, unit_hint, section}. Order is significant
+# and MUST NOT be alphabetized/reordered — it drives both the row order and
+# the section-header placement in the per-bank grid. `section` groups items
+# under a bold, value-less header row in each bank's table, in the exact
+# order given below.
+#
+# `concept` must be a real fact_metric.concept_key (verified against
+# `SELECT DISTINCT concept_key FROM fact_metric` and
+# pipeline/concept/concept_dictionary.yaml — the LOADED registry, not the
+# unmerged pipeline/concept/concept_dictionary_additions_2026-07-27.yaml
+# draft). `concept: null` marks a label with NO existing matching concept
+# key today — the row still renders (empty cells across all periods), which
+# is deliberate: it surfaces the coverage gap to the tagging team instead of
+# hiding it. See the per-label notes below for why each null was chosen.
+#
+# `unit_hint` drives number formatting: '%' -> 2dp ratio formatting,
+# 'per_share' -> the value's OWN decimals (no padding, no truncation),
+# 'S$m'/other -> thousands-separated metric formatting (no decimals).
+# 'per_share' got its own branch on 2026-08-04: it had been falling through to
+# the 0dp branch, rendering EPS 3.71 as `4` and NAV 24.29 as `24`.
+#
+# ---------------------------------------------------------------------------
+# Judgment-call notes (2026-07-30, revised):
+#
+# Six concepts previously flagged as gaps below were MERGED into
+# concept_dictionary.yaml in this pass (pnl.profit.operating,
+# pnl.opex.amortisation_intangibles, pnl.associates, bs.equity.total,
+# ratio.roa, pnl.noninterest.other), plus bs.nav_per_share. All 26 items in
+# this file now carry a real concept EXCEPT the two EPS rows below, which
+# remain null on purpose.
+#
+# - "Other non-interest income" -> pnl.noninterest.other (derived,
+#   fill-only: total non-II minus fee/commission). Checked actual corpus
+#   values rather than guessing from the name: UOB 4453-2569=1884,
+#   OCBC 5464-2411=3053, DBS 8400-4898=3502 — all three match the
+#   printed/derivable figure, so one formula serves all banks with no
+#   per-bank branch. UOB also prints this row directly ("Other non-interest
+#   income"), aliased straight to the same concept_key.
+#
+# - "Operating profit" -> pnl.profit.operating. Definition is explicit that
+#   this is BEFORE allowances and amortisation for all three banks (DBS:
+#   "Profit before allowances and amortisation"; UOB: "Operating profit";
+#   OCBC: "Operating profit before allowances and amortisation" — same
+#   concept, three labels).
+#
+# - "Amortisation of intangible assets" -> pnl.opex.amortisation_intangibles.
+#   Now merged into concept_dictionary.yaml (was draft-only).
+#
+# - "Share of profits/losses of associates and JVs" -> pnl.associates. Now
+#   merged into concept_dictionary.yaml (was draft-only).
+#
+# - "Net Customer Loans" -> bs.assets.customer_loans_net. Both a gross
+#   (bs.assets.customer_loans_gross) and a net (bs.assets.customer_loans_net)
+#   concept exist in fact_metric — since the label explicitly says "Net",
+#   the net concept is used. A confirmed mis-stamp (three banks' balance-
+#   sheet "loans"/"loans to customers" rows carrying gross on NET values)
+#   was corrected by pipeline/fix_identity_misstamps.py, so net coverage for
+#   DBS/UOB/OCBC now includes each bank's headline balance-sheet loan figure.
+#
+# - "Total equity" -> bs.equity.total (new). Distinct from "Shareholders'
+#   equity" -> bs.equity.shareholders: total equity INCLUDES non-controlling
+#   interests and other equity instruments. UOB/OCBC balance-sheet "Total
+#   equity" rows were previously mis-stamped onto bs.equity.shareholders;
+#   corrected by pipeline/fix_identity_misstamps.py.
+#
+# - "Return on assets" -> ratio.roa (new, reported not computed). CAUTION:
+#   UOB also prints "Return on average risk-weighted assets" — a DIFFERENT
+#   ratio, deliberately NOT aliased to ratio.roa.
+#
+# - "Basic earnings per share" -> pnl.eps.basic / "Diluted earnings per
+#   share" -> pnl.eps.diluted (2026-08-04, no longer null). The bare-label/
+#   multi-parent ambiguity above is real but is no longer the deterministic
+#   resolver's problem to solve: the PARENT-QUALIFIED anchor mechanism
+#   (bank_line_map, keyed on (table_type_id, row_label_norm,
+#   parent_label_norm), projected via stamp_human_anchors) disambiguates
+#   "Basic" by which parent block it sits under, where the leaf-label-only
+#   resolver couldn't. Unblocked by the same-day fix to DBS's per-share
+#   table classification (its title/label_header fields were swapped by
+#   the extractor, so table_type_id was NULL and no anchor could project at
+#   all -- see docs/DECISIONS.md 2026-08-04).
+#   One nuance carried forward, not resolved: DBS still prints TWO blocks
+#   ("Earnings" 3.88/3.86 = underlying, "Reported earnings" 3.84/3.82 =
+#   reported) and the anchor currently stamps BOTH as pnl.eps.basic/
+#   .diluted -- build_fact_metric's twin-collapse then serves ONE value
+#   (3.88/3.86, the underlying basis), the same number bank_line_map's own
+#   note already names. This is the identical underlying-vs-reported split
+#   pnl.profit.net_attributable already carries a `basis` column for; EPS
+#   doesn't have that treatment yet. Named here, not fixed -- a concept-
+#   level decision (add a `basis` axis to EPS), not a highlights-config one.
+#
+# - "Net asset value per share" -> bs.nav_per_share (new). DBS: "Net book
+#   value"; UOB: 'Net asset value ("NAV") per ordinary share ($)'; OCBC:
+#   "Net asset value per ordinary share - S$" / "Net asset value per
+#   ordinary share".
+# ---------------------------------------------------------------------------
+
+# ================================================== Selected income statement items ($m)
+- label: "Net interest income"
+  concept: pnl.nii.net
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Net fee and commission income"
+  concept: pnl.noninterest.fee_commission
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Other non-interest income"
+  concept: pnl.noninterest.other
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Total income"
+  concept: pnl.income.total
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Operating expenses"
+  concept: pnl.opex.total
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Operating profit"
+  concept: pnl.profit.operating
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Amortisation of intangible assets"
+  concept: pnl.opex.amortisation_intangibles
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Allowances for credit and other losses"
+  concept: pnl.provisions.total
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Share of profits/losses of associates and JVs"
+  concept: pnl.associates
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Profit before tax"
+  concept: pnl.profit.pretax
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+- label: "Net profit"
+  concept: pnl.profit.net_attributable
+  unit_hint: "S$m"
+  section: "Selected income statement items ($m)"
+
+# ================================================== Selected balance sheet items ($m)
+# GROSS, not net (2026-08-04). `bs.assets.customer_loans_gross` is the correct
+# anchor -- it is what lineage_identity_map.csv authors for UOB, whose own
+# review_flag records the policy: "for customer loans, we use Gross customer
+# loans". The dashboard had been asking for `_net` while the authored anchor
+# said `_gross`, so UOB's 352,180 never surfaced (docs/six-bug-diagnosis.md
+# bug 3). Label follows the concept: a row labelled "Net" serving a gross
+# figure would be worse than the original bug.
+- label: "Gross customer loans"
+  concept: bs.assets.customer_loans_gross
+  unit_hint: "S$m"
+  section: "Selected balance sheet items ($m)"
+
+- label: "Customer deposits"
+  concept: bs.liabilities.customer_deposits
+  unit_hint: "S$m"
+  section: "Selected balance sheet items ($m)"
+
+- label: "Total assets"
+  concept: bs.assets.total
+  unit_hint: "S$m"
+  section: "Selected balance sheet items ($m)"
+
+- label: "Total liabilities"
+  concept: bs.liabilities.total
+  unit_hint: "S$m"
+  section: "Selected balance sheet items ($m)"
+
+- label: "Total equity"
+  concept: bs.equity.total
+  unit_hint: "S$m"
+  section: "Selected balance sheet items ($m)"
+
+- label: "Shareholders' equity"
+  concept: bs.equity.shareholders
+  unit_hint: "S$m"
+  section: "Selected balance sheet items ($m)"
+
+# ================================================== Key financial ratios (%)
+- label: "Net interest margin"
+  concept: ratio.nim
+  unit_hint: "%"
+  section: "Key financial ratios (%)"
+
+- label: "Cost/income ratio"
+  concept: ratio.cir
+  unit_hint: "%"
+  section: "Key financial ratios (%)"
+
+- label: "Return on assets"
+  concept: ratio.roa
+  unit_hint: "%"
+  section: "Key financial ratios (%)"
+
+- label: "Return on equity"
+  concept: ratio.roe
+  unit_hint: "%"
+  section: "Key financial ratios (%)"
+
+- label: "NPL ratio"
+  concept: ratio.npl
+  unit_hint: "%"
+  section: "Key financial ratios (%)"
+
+- label: "Common Equity Tier 1"
+  concept: reg.capital.cet1_ratio
+  unit_hint: "%"
+  section: "Key financial ratios (%)"
+
+# ================================================== Per share (S$)
+- label: "Basic earnings per share"
+  concept: pnl.eps.basic   # underlying basis (twin-collapsed with "Reported
+                            # earnings" -- see judgment-call notes above)
+  unit_hint: "per_share"
+  section: "Per share (S$)"
+
+- label: "Diluted earnings per share"
+  concept: pnl.eps.diluted   # same basis note as "Basic" above.
+  unit_hint: "per_share"
+  section: "Per share (S$)"
+
+- label: "Net asset value per share"
+  concept: bs.nav_per_share
+  unit_hint: "per_share"
+  section: "Per share (S$)"

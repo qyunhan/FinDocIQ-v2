@@ -1,0 +1,922 @@
+{
+  "tables": [
+    {
+      "title": "FINANCIAL HIGHLIGHTS",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H26"
+        },
+        {
+          "group": null,
+          "leaf": "1H25"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        },
+        {
+          "group": null,
+          "leaf": "2Q26"
+        },
+        {
+          "group": null,
+          "leaf": "2Q25"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        },
+        {
+          "group": null,
+          "leaf": "1Q26"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Selected Income Statement Items",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "4,486",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,628",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,264",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,283",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-interest income",
+          "values": [
+            {
+              "value": "3,512",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,574",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,906",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,264",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,606",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "7,998",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,170",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,547",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,828",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operating expenses",
+          "values": [
+            {
+              "value": "(3,080)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,804)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,575)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,389)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,505)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Operating profit before allowances and amortisation",
+          "values": [
+            {
+              "value": "4,918",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,398",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,595",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,158",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,323",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Amortisation of intangible assets",
+          "values": [
+            {
+              "value": "(9)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for impaired assets",
+          "values": [
+            {
+              "value": "(147)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(159)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(7)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(122)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(65)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "87",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(25)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "379",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for non-impaired assets",
+          "values": [
+            {
+              "value": "(225)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(167)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(49)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(32)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(191)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(82)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Operating profit after allowances and amortisation",
+          "values": [
+            {
+              "value": "4,537",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,061",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,435",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,038",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,102",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share of results of associates, net of tax",
+          "values": [
+            {
+              "value": "637",
+              "cell_state": "reported"
+            },
+            {
+              "value": "537",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "325",
+              "cell_state": "reported"
+            },
+            {
+              "value": "263",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24",
+              "cell_state": "reported"
+            },
+            {
+              "value": "312",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before income tax",
+          "values": [
+            {
+              "value": "5,174",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,598",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,760",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,301",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net profit attributable to equity holders",
+          "values": [
+            {
+              "value": "4,195",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,699",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,221",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,816",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,974",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Selected Balance Sheet Items",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary equity",
+          "values": [
+            {
+              "value": "61,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62,006",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity attributable to equity holders of the Bank",
+          "values": [
+            {
+              "value": "63,346",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,773",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63,346",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,773",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63,704",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "729,887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "644,794",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "729,887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "644,794",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "703,124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Assets excluding investment securities and other assets for life insurance funds",
+          "values": [
+            {
+              "value": "620,165",
+              "cell_state": "reported"
+            },
+            {
+              "value": "540,659",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "620,165",
+              "cell_state": "reported"
+            },
+            {
+              "value": "540,659",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596,371",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net loans to customers",
+          "values": [
+            {
+              "value": "359,888",
+              "cell_state": "reported"
+            },
+            {
+              "value": "320,413",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "359,888",
+              "cell_state": "reported"
+            },
+            {
+              "value": "320,413",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "342,756",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": [
+            {
+              "value": "458,922",
+              "cell_state": "reported"
+            },
+            {
+              "value": "406,943",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "458,922",
+              "cell_state": "reported"
+            },
+            {
+              "value": "406,943",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "443,808",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Selected Income Statement Items"
+          },
+          {
+            "line_id": 9,
+            "indent": 1,
+            "label_clean": "Net interest income"
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Non-interest income"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Total income"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Operating expenses"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Operating profit before allowances and amortisation"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Amortisation of intangible assets"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Allowances for impaired assets"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Allowances for non-impaired assets"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Operating profit after allowances and amortisation"
+          },
+          {
+            "line_id": 21,
+            "indent": 1,
+            "label_clean": "Share of results of associates, net of tax"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Profit before income tax"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "Net profit attributable to equity holders"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Selected Balance Sheet Items"
+          },
+          {
+            "line_id": 28,
+            "indent": 1,
+            "label_clean": "Ordinary equity"
+          },
+          {
+            "line_id": 29,
+            "indent": 1,
+            "label_clean": "Equity attributable to equity holders of the Bank"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Total assets"
+          },
+          {
+            "line_id": 34,
+            "indent": 1,
+            "label_clean": "Assets excluding investment securities and other assets for life insurance funds"
+          },
+          {
+            "line_id": 38,
+            "indent": 1,
+            "label_clean": "Net loans to customers"
+          },
+          {
+            "line_id": 39,
+            "indent": 1,
+            "label_clean": "Deposits of non-bank customers"
+          }
+        ],
+        "title_clean": "FINANCIAL HIGHLIGHTS",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

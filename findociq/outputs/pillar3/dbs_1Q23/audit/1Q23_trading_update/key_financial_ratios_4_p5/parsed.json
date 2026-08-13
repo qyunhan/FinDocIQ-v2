@@ -1,0 +1,236 @@
+{
+  "tables": [
+    {
+      "title": "Key financial ratios (%)4",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Qtr 2023"
+        },
+        {
+          "group": null,
+          "leaf": "1st Qtr 2022"
+        },
+        {
+          "group": null,
+          "leaf": "4th Qtr 2022"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest margin – Group",
+          "values": [
+            {
+              "value": "2.12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.05",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest margin - Commercial Book1",
+          "values": [
+            {
+              "value": "2.69",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.65",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.61",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cost/income ratio",
+          "values": [
+            {
+              "value": "38.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on assets",
+          "values": [
+            {
+              "value": "1.41",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.04",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on equity5",
+          "values": [
+            {
+              "value": "18.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPL ratio",
+          "values": [
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances/ NPA",
+          "values": [
+            {
+              "value": "127",
+              "cell_state": "reported"
+            },
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "122",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances/ unsecured NPA",
+          "values": [
+            {
+              "value": "229",
+              "cell_state": "reported"
+            },
+            {
+              "value": "193",
+              "cell_state": "reported"
+            },
+            {
+              "value": "215",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "SP for loans/ average loans (bp)",
+          "values": [
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Common Equity Tier 1 capital adequacy ratio",
+          "values": [
+            {
+              "value": "14.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14.6",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

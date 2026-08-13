@@ -1,0 +1,69 @@
+{
+  "unit_id": "performance_by_geographical_segment_1_p22-25",
+  "pages": [
+    22,
+    23,
+    24,
+    25
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 8998,
+    "output_tokens": 11656,
+    "thinking_tokens": 0,
+    "total_tokens": 20654,
+    "est_cost_usd": 0.1184,
+    "batch": 0
+  },
+  "chunks": 2,
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "performance_by_geographical_segment_1"
+  ],
+  "section_titles": [
+    "Performance by Geographical Segment 1"
+  ],
+  "n_tables": 5,
+  "n_rows": 60,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p24) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '639' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '811' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '277' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '857' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '139' pdf=4x json=3x (missing from extraction)",
+      "  deficit: '173' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '419' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '100' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '531' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '406' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '307' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '213' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.8' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.7' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.3' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "document": "DBS_4Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_geography_p16-19/chunks/c1",
+  "section_ids": [
+    "performance_by_geography"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY GEOGRAPHY1"
+  ],
+  "pages": [
+    16,
+    17
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 73,
+  "usage": {
+    "ts": "2026-07-26T09:12:56",
+    "script": "extract_to_excel",
+    "label": "performance_by_geography_p16-19/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4487,
+    "output_tokens": 15428,
+    "thinking_tokens": 0,
+    "total_tokens": 19915,
+    "est_cost_usd": 0.14558,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x3: 'Net interest income' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Net fee and commission income' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Other non-interest income' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Total income' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Expenses' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Allowances for credit and other losses' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Share of profits/losses of associates an' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Profit before tax' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Income tax expense' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x3: 'Net profit' [PERFORMANCE BY GEOGRAPHY\u00b9\nSele]",
+      "  duplicate row label x2: 'Net interest income' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Net fee and commission income' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Other non-interest income' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Total income' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Expenses' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Allowances for credit and other losses' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Share of profits/losses of associates an' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Profit before tax' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Income tax expense' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x2: 'Net profit' [PERFORMANCE BY GEOGRAPHY\u00b9\nYear]",
+      "  duplicate row label x3: 'Total assets before goodwill and intangi' [Selected balance sheet items]",
+      "  duplicate row label x3: 'Goodwill and intangibles' [Selected balance sheet items]",
+      "  duplicate row label x3: 'Total assets' [Selected balance sheet items]",
+      "  duplicate row label x3: 'Non-current assets\u00b3' [Selected balance sheet items]",
+      "  duplicate row label x3: 'Gross customer loans' [Selected balance sheet items]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,60 @@
+{
+  "tables": [
+    {
+      "title": "Key audit matters",
+      "label_header": "Key audit matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the key audit matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Specific allowances for loans and advances to customers",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "As at 31 December 2025, the specific allowances for loans and advances to customers of the Group was $2,324 million, the majority of which related to Institutional Banking Group (“IBG”) customers. Specific allowances refer to loss allowances for credit-impaired exposures (i.e. Stage 3, per SFRS (I) 9). Expected Credit Losses (“ECL”) on non-impaired exposures (i.e. Stage 1 and Stage 2) are set out under the ‘General allowances for credit losses’ key audit matter.\n\nWe focused on this area because management assessment of impairment can be inherently subjective and involves significant judgement over both the timing and estimation of the size of such impairment. This includes:\n• principal assumptions underlying the calculation of specific allowances for loans and advances to IBG customers where there is evidence of impairment losses (including future profitability of borrowers and expected realisable value of collateral held); and\n• classification of loans and advances in line with MAS Notice 612 (“MAS 612”).\n\n(Refer also to Notes 3 and 18 to the financial statements.)",
+          "values": [
+            {
+              "value": "We assessed the design and evaluated the operating effectiveness of key controls over the specific allowances for loans and advances. These controls included:\n• oversight of credit risk by the Group Credit Risk Committee;\n• timely management review of credit risk;\n• watchlist identification and monitoring;\n• timely identification of impairment events;\n• classification of loans and advances in line with MAS 612; and\n• collateral monitoring and valuation.\n\nWe determined that we could rely on these controls for the purposes of our audit.\n\nWe selected samples of loans and advances to IBG customers to assess whether the classification of the loans and advances was in line with MAS 612. Where there was evidence of an impairment loss, we evaluated whether it had been identified in a timely manner.\n\nFor selected samples of loans and advances where impairment had been identified, our work included:\n• considering the latest developments in relation to the borrower;\n• examining the forecasts of future cash flows prepared by management, including key assumptions in relation to the amount and timing of recoveries;\n• comparing the collateral valuation and other sources of repayment to check the calculation of the impairment against external evidence, where available, including independent valuation reports;\n• challenging management’s assumptions; and\n• testing the calculations.\n\nFor selected samples of performing loans and advances to IBG customers which had not been identified by management as potentially impaired, we evaluated management’s assumptions on their classification, using external evidence where available in respect of the relevant borrower.\n\nBased on procedures performed, we assessed that the aggregate specific allowance for loans and advances is appropriate.",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "General allowances for credit losses (Stage 1 and 2 Expected Credit Loss)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "SFRS(I) 9 Financial Instruments (“SFRS(I) 9”) requires an ECL impairment model which takes into account forward-looking information to reflect potential future economic events. In estimating ECL over future time periods, significant judgement is required.\n\nWe focused on the Group’s measurement of general allowances on non-impaired exposures ($3,859 million). This covers both ‘Stage 1’ exposures (where there has not been a significant increase in credit risk), and ‘Stage 2’ exposures (where a significant increase in credit risk has been observed). The ECL framework implemented by the Group involves significant judgement and assumptions that relate to, amongst others:\n• adjustments to the Group’s Basel credit models and parameters;\n• use of forward-looking and macro-economic information;\n• estimates for the expected lifetime of revolving credit facilities;\n• assessment of significant increase in credit risk; and\n• post-model adjustments to account for limitations in the ECL models.\n\n(Refer also to Notes 3 and 11 to the financial statements.)",
+          "values": [
+            {
+              "value": "We critically assessed management’s assumptions and estimates relating to Stage 1 and Stage 2 ECL for retail and non-retail portfolios as at 31 December 2025. This included assessing refinements in methodologies made during the year, as well as to account for changes in risk outlook.\n\nWe assessed the design and evaluated the operating effectiveness of key controls, focusing on:\n• involvement of governance committees, in reviewing and approving certain forward-looking macroeconomic assumptions, including post-model adjustments;\n• completeness and accuracy of external and internal data inputs into the ECL calculations; and\n• accuracy and timeliness of allocation of exposures into Stage 1 and Stage 2 based on quantitative and qualitative triggers.\n\nWe determined that we could rely on these controls for the purposes of our audit.\n\nThe Group’s internal experts continue to perform independent model validation of selected aspects of the Group’s ECL methodologies and assumptions each year. We checked their results as part of our work.\n\nWe also reviewed the ECL of selected credit portfolios to assess if the methodologies and estimates are appropriate.\n\nThrough the course of our work, we assessed the rationale and calculation basis of post-model adjustments. We also assessed the reasonableness of certain forward-looking economic inputs, as well as the overall ECL output.\n\nOverall, we concluded that the Group’s ECL on non-impaired exposures is appropriate.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

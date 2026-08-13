@@ -1,0 +1,56 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "expenses_p13",
+  "section_ids": [
+    "expenses"
+  ],
+  "section_titles": [
+    "EXPENSES1"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 10,
+  "usage": {
+    "ts": "2026-07-13T17:09:50",
+    "script": "extract_to_excel",
+    "label": "expenses_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2912,
+    "output_tokens": 1848,
+    "thinking_tokens": 0,
+    "total_tokens": 4760,
+    "est_cost_usd": 0.00549
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '4.48' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '100' pdf=3x json=0x (missing from extraction)",
+      "  deficit: '188' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '267' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '458' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '283' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '190' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '372' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '162' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '138' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '260' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '212' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '348' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '339' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '205' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

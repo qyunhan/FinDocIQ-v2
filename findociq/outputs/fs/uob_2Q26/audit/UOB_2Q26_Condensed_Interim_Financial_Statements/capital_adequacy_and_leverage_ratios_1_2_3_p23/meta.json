@@ -1,0 +1,78 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "capital_adequacy_and_leverage_ratios_1_2_3_p23",
+  "section_ids": [
+    "capital_adequacy_and_leverage_ratios_1_2_3"
+  ],
+  "section_titles": [
+    "Capital Adequacy and Leverage Ratios 1,2,3"
+  ],
+  "pages": [
+    23
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 18,
+  "usage": {
+    "ts": "2026-08-07T09:24:42",
+    "script": "extract_to_excel",
+    "label": "capital_adequacy_and_leverage_ratios_1_2_3_p23",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3950,
+    "output_tokens": 2684,
+    "thinking_tokens": 0,
+    "total_tokens": 6634,
+    "est_cost_usd": 0.03008,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '78902' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '75990' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '65875' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '81260' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '60661' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '11022' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3951' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2991' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2957' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1716' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0641' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6406' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4467' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3392' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9609' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8847' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7621' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '751' pdf=4x json=0x (missing from extraction)",
+      "  deficit: '449' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '2.5' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '637' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '123' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '888' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '852' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '887' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '463' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '090' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '016' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '290' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '213' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '203' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '380' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '229' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.8' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '6.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

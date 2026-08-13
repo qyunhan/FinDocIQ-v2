@@ -1,0 +1,46 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "customer_loans_p22",
+  "section_ids": [
+    "customer_loans"
+  ],
+  "section_titles": [
+    "CUSTOMER LOANS"
+  ],
+  "pages": [
+    22
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 36,
+  "usage": {
+    "ts": "2026-07-16T11:27:52",
+    "script": "extract_to_excel",
+    "label": "customer_loans_p22",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2918,
+    "output_tokens": 4946,
+    "thinking_tokens": 0,
+    "total_tokens": 7864,
+    "est_cost_usd": 0.04889,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '451' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Others' [CUSTOMER LOANS]",
+      "  duplicate row label x4: 'Total (Gross)' [CUSTOMER LOANS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

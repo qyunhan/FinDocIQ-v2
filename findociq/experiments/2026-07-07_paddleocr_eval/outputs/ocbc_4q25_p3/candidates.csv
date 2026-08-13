@@ -1,0 +1,188 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,315.6,72.02,Pillar3Disclosures,28.1,True,left,False
+1,363.48,72.02,31December2025,24.0,True,left,True
+2,115.69,72.02,1.AttestationStatement.......................................................................................................................5,10.1,True,left,False
+2,136.09,72.02,2.Introduction.......................................................................................................................................6,10.1,True,left,False
+2,156.25,72.02,3.AccountingandRegulatoryConsolidation......................................................................................6,10.1,True,left,False
+2,176.41,72.02,4.KeyMetrics........................................................................................................................................7,10.1,True,left,False
+2,196.83,72.26,5.MacroprudentialSupervisoryMeasures..........................................................................................8,10.1,True,left,False
+2,257.55,72.26,6.CompositionofCapital...................................................................................................................11,10.1,True,left,False
+2,338.46,72.26,7.LinkagesbetweenFinancialStatementsandRegulatoryExposures..........................................20,10.1,True,left,False
+2,453.94,72.02,8.LeverageRatio................................................................................................................................24,10.1,True,left,False
+2,514.93,72.26,9.CreditQuality...................................................................................................................................27,10.1,True,left,False
+2,636.39,72.26,10.AssetEncumbrance........................................................................................................................41,10.1,True,left,False
+2,656.55,72.02,11.KeyApproachesusedforComputationofRWA...........................................................................42,10.1,True,left,False
+2,676.74,72.02,12.OverviewofRWA............................................................................................................................43,10.1,True,left,False
+2,697.14,72.02,13.ComparisonofModelledandStandardisedRWA..........................................................................44,10.1,True,left,False
+3,85.18,72.02,14.IRBA-RWAFlowStatementforCreditRiskExposures...............................................................46,10.1,True,left,False
+3,105.34,72.26,15.CreditExposuresUnderStandardisedandIRBApproaches.......................................................47,10.1,True,left,False
+3,247.23,72.26,16.IRBA–BacktestingofPDperportfolio..........................................................................................62,10.1,True,left,False
+3,307.98,72.26,17.IRBA-SpecialisedLendingundertheSlottingApproach............................................................70,10.1,True,left,False
+3,328.14,72.26,18.CounterpartyCreditRisk................................................................................................................71,10.1,True,left,False
+3,490.18,72.26,19.SecuritisationExposures................................................................................................................83,10.1,True,left,False
+3,626.07,72.26,20.MarketRisk......................................................................................................................................86,10.1,True,left,False
+3,686.82,72.26,21.OperationalRisk..............................................................................................................................88,10.1,True,left,False
+4,85.18,72.26,22.InterestRateRiskintheBankingBook.........................................................................................92,10.1,True,left,False
+4,105.34,72.26,23.LiquidityCoverageRatio................................................................................................................93,10.1,True,left,False
+4,166.09,72.26,24.NetStableFundingRatio...............................................................................................................96,10.1,True,left,False
+4,186.49,72.02,25.Abbreviations.................................................................................................................................99,10.1,True,left,False
+5,84.91,70.07,1. ATTESTATION STATEMENT,12.0,True,left,False
+6,84.64,69.71,2. INTRODUCTION,12.0,True,left,False
+6,418.19,69.42,3. ACCOUNTING AND REGULATORY CONSOLIDATION,12.0,True,left,False
+7,84.74,69.66,4. KEY METRICS,12.0,True,left,False
+8,84.72,70.0,5. MACROPRUDENTIAL SUPERVISORY MEASURES,12.0,True,left,False
+8,110.72,69.98,5.1 Disclosure of G-SIB Indicators,10.08,True,left,False
+9,83.63,70.18,5.1 Disclosure of G-SIB Indicators (continued),10.08,True,left,False
+10,83.64,69.59,5.2 Geographical Distribution of Credit Exposures Used in the Countercyclical Capital Buffer,10.08,True,left,False
+11,84.63,70.02,6. COMPOSITION OF CAPITAL,12.0,True,left,False
+11,110.02,69.99,6.1 Reconciliation of Regulatory Capital to Balance Sheet,10.08,True,left,False
+12,83.65,70.1,6.1 Reconciliation of Regulatory Capital to Balance Sheet (continued),10.08,True,left,False
+13,83.58,70.27,6.2 Composition of Regulatory Capital,10.08,True,left,False
+14,83.52,70.21,6.2 Composition of Regulatory Capital (continued),10.08,True,left,False
+15,83.59,70.12,6.2 Composition of Regulatory Capital (continued),10.08,True,left,False
+16,83.67,69.78,6.3 Main Features of Regulatory Capital Instruments,10.08,True,left,False
+16,108.46,72.02,ThefollowingdisclosuresaremadepursuanttotherequirementsofMASNotice637Annex11C.Theyare,10.1,False,left,False
+16,121.69,72.02,"notasummaryoftheterms,donotpurporttobecomplete,andshouldbereadinconjunctionwith,andare",10.1,False,left,False
+16,148.09,72.02,website,10.1,False,left,False
+16,149.79,108.77,(http://www.ocbc.com/group/investors/Cap_and_Reg_Disclosures.html).,7.9,False,center,False
+16,784.08,72.02,Pillar3DisclosuresDecember202516,9.1,False,left,False
+17,83.66,69.89,6.3 Main Features of Regulatory Capital Instruments (continued),10.08,True,left,False
+17,784.08,72.02,Pillar3DisclosuresDecember202517,9.1,False,left,False
+18,784.08,72.02,Pillar3DisclosuresDecember202518,9.1,False,left,False
+19,784.08,72.02,Pillar3DisclosuresDecember202519,9.1,False,left,False
+20,84.34,69.74,7. LINKAGES BETWEEN FINANCIAL STATEMENTS AND REGULATORY EXPOSURES,12.0,True,left,False
+20,101.42,93.41,EXPOSURES,12.0,True,center,False
+20,125.32,69.84,7.1 Differences between Accounting and Regulatory Scopes of Consolidation and Mapping of Financial Statement Categories with Regulatory Risk Categories,10.08,True,left,False
+20,126.97,72.02,7.1DifferencesbetweenAccountingandRegulatoryScopesofConsolidationandMappingof,10.1,True,left,False
+20,140.17,93.41,FinancialStatementCategorieswithRegulatoryRiskCategories,10.1,True,center,False
+20,163.45,72.02,Thepurposeofthistableistoidentifythedifferencesbetweentheaccountingandregulatoryscopesof,10.1,False,left,False
+20,189.85,72.02,accountingandregulatoryscopeofconsolidationcanbefoundinSection3ofthisdocument.,10.1,False,left,False
+20,216.27,72.02,Thesumofthecarryingamountsreportedundercolumns(c)to(g)belowcanbemorethanthecarrying,10.1,False,left,False
+20,242.67,72.02,"tocustomers,debtandequitysecuritiesorderivativereceivables&payablesetc.canbesubjecttomore",10.1,False,left,False
+20,255.87,72.02,"thanonesetofrequirementssuchascreditrisk,CCRormarketrisk.",10.1,False,left,False
+20,784.08,72.02,Pillar3DisclosuresDecember202520,9.1,False,left,False
+21,83.37,70.06,7.1 Differences between Accounting and Regulatory Scopes of Consolidation and Mapping of Financial Statement Categories with Regulatory Risk Categories (continued),10.08,True,left,False
+21,85.18,72.02,7.1DifferencesbetweenAccountingandRegulatoryScopesofConsolidationandMappingof,10.1,True,left,False
+21,98.38,93.41,FinancialStatementCategorieswithRegulatoryRiskCategories(continued),10.1,True,center,False
+21,784.08,72.02,Pillar3DisclosuresDecember202521,9.1,False,left,False
+22,83.46,69.69,7.2 Main Sources of Differences between Financial Statements and Regulatory Exposure Amounts and Carrying Amounts in Financial Statements,10.08,True,left,False
+22,85.18,72.02,7.2MainSourcesofDifferencesbetweenFinancialStatementsandRegulatoryExposure,10.1,True,left,False
+23,83.63,70.07,7.3 Prudent Valuation Adjustments,10.08,True,left,False
+24,84.85,70.07,8. LEVERAGE RATIO,12.0,True,left,False
+24,110.08,69.9,8.1 LeverageRatioSummary ComparisonTable,10.08,True,left,False
+25,83.76,70.03,8.2 LeverageRatioCommonDisclosureTable,10.08,True,left,False
+26,83.61,70.12,8.2 LeverageRatioCommonDisclosureTable(continued),10.08,True,left,False
+27,84.56,70.03,9. CREDIT QUALITY,12.0,True,left,False
+27,109.78,69.9,9.1 Credit Quality of Assets,10.08,True,left,False
+28,83.77,69.72,9.2 Changes in Stock of Defaulted Loans to Customers and Debt Securities,10.08,True,left,False
+29,83.83,69.87,9.3 Additional Disclosures related to the Credit Quality of Assets,10.08,True,left,False
+29,147.74,70.36,GrossLoans to Customers,10.08,True,left,False
+30,83.7,69.91,9.3 Additional Disclosures related to the Credit Quality of Assets (continued),10.08,True,left,False
+30,333.67,70.55,Government Treasury Bills and Securities,10.08,True,left,False
+30,527.68,70.35,Gross Debt Securities,10.08,True,left,False
+31,83.6,69.9,9.3 Additional Disclosuresrelatedtothe CreditQualityofAssets(continued),10.08,True,left,False
+32,83.69,69.97,9.3 Additional Disclosures related to the Credit Quality of Assets (continued),10.08,True,left,False
+33,83.72,70.0,9.3 Additional Disclosuresrelatedtothe CreditQualityofAssets(continued),10.08,True,left,False
+33,106.63,70.49,Contingent Liabilities,10.08,True,left,False
+34,83.71,69.8,9.4 OverviewofPastDueExposure andImpairment Allowances,10.08,True,left,False
+35,82.49,69.77,9.4 OverviewofPastDueExposure andImpairment Allowances (continued),10.08,True,left,False
+35,136.82,69.82,Analysed by Geography,10.08,True,left,False
+36,82.65,69.96,9.4 OverviewofPastDueExposure andImpairment Allowances (continued),10.08,True,left,False
+36,109.74,70.17,NPL (continued),10.08,True,left,False
+36,296.19,70.24,Past DueLoans,10.08,True,left,False
+37,83.51,69.84,9.4 OverviewofPastDueExposure andImpairment Allowances (continued),10.08,True,left,False
+38,83.59,69.86,9.4 OverviewofPastDueExposure andImpairment Allowances (continued),10.08,True,left,False
+39,83.49,69.86,9.4 OverviewofPastDueExposure andImpairment Allowances (continued),10.08,True,left,False
+40,83.55,69.87,9.4 OverviewofPastDueExposure andImpairment Allowances (continued),10.08,True,left,False
+40,108.5,69.96,Past DueLoansbutNotImpaired,10.08,True,left,False
+40,334.19,71.29,9.5 Restructured Exposures,10.08,True,left,False
+41,84.71,70.31,10. ASSET ENCUMBRANCE,12.0,True,left,False
+42,84.38,69.9,11. KEY APPROACHES USED FOR COMPUTATION OF RWA,12.0,True,left,False
+43,84.65,70.29,12. OVERVIEW OF RWA,12.0,True,left,False
+44,84.73,69.93,13. COMPARISON OF MODELLED AND STANDARDISED RWA,12.0,True,left,False
+44,109.94,69.93,13.1 ComparisonofModelledand Standardised RWAat RiskLevel,10.08,True,left,False
+45,83.69,70.23,13.2 Comparison of Modelled and Standardised RWA for Credit Risk at Asset Class Level,10.08,True,left,False
+46,84.74,69.98,14. IRBA - RWA FLOW STATEMENT FOR CREDIT RISK EXPOSURES,12.0,True,left,False
+47,84.67,69.76,15. CREDIT EXPOSURES UNDER STANDARDISED AND IRB APPROACHES,12.0,True,left,False
+47,112.06,70.02,15.1 SA(CR) - Credit Risk Exposure and CRM effects,10.08,True,left,False
+48,83.53,70.19,15.1 SA(CR) – Credit Risk Exposure and CRM effects (continued),10.08,True,left,False
+49,83.84,61.08,15.2 SA(CR) - Exposures by Asset Classes and Risk Weights,10.08,True,left,False
+50,83.79,61.3,15.2 SA(CR) - Exposures by Asset Classes and Risk Weights (continued),10.08,True,left,False
+51,83.72,61.11,15.2 SA(CR) - Exposures by Asset Classes and Risk Weights (continued),10.08,True,left,False
+52,83.61,69.07,15.2 SA(CR) - Exposures by Asset Classes and Risk Weights (continued),10.08,True,left,False
+53,87.42,68.96,15.3 F-IRBA - Credit Exposures by Portfolio and PD Range,10.08,True,left,False
+53,115.21,70.82,Thefollowingtableprovidesthemainparametersusedinthetreatmentofexposuresforthecalculationof,10.1,False,left,False
+53,128.41,70.82,capitalrequirementsundertheF-IRBA.,10.1,False,left,False
+53,154.81,70.82,"Comparedto30June2025,theincreaseinEADwasmainlyduetohigherexposuresinthesovereignand",10.1,False,left,False
+53,168.25,70.82,corporateassetclasses.,10.1,False,left,False
+53,784.08,70.82,Pillar3DisclosuresDecember202553,9.1,False,left,False
+54,784.08,70.82,Pillar3DisclosuresDecember202554,9.1,False,left,False
+55,87.49,69.12,15.3 F-IRBA - Credit Exposures by Portfolio and PD Range (continued),10.08,True,left,False
+55,784.08,70.82,Pillar3DisclosuresDecember202555,9.1,False,left,False
+56,784.08,70.82,Pillar3DisclosuresDecember202556,9.1,False,center,False
+57,87.61,68.99,15.4 A-IRBA - Credit Exposures by Portfolio and PD Range,10.08,True,center,False
+57,115.21,70.82,Thefollowingtableprovidesthemainparametersusedinthetreatmentofexposuresforthecalculationof,10.1,False,center,False
+57,128.41,70.82,capitalrequirementsundertheA-IRBA.,10.1,False,center,False
+57,154.81,70.82,"Comparedto30June2025,theincreaseinEADwasprimarilyattributedtohigherexposuresinresidental",10.1,False,center,False
+57,168.25,70.82,mortgage.,10.1,False,center,False
+57,784.08,70.82,Pillar3DisclosuresDecember202557,9.1,False,center,False
+58,784.08,70.82,Pillar3DisclosuresDecember202558,9.1,False,center,False
+59,784.08,70.82,Pillar3DisclosuresDecember202559,9.1,False,center,False
+61,87.54,69.07,15.5 Overview of CRM Techniques,10.08,True,left,False
+61,633.35,68.75,15.6 IRBA - Effect on RWA of Credit Derivatives used as CRM,10.08,True,left,False
+62,88.33,68.79,16. IRBA – BACKTESTING OF PD PER PORTFOLIO,12.0,True,center,False
+62,115.29,68.74,16.1 F-IRBA - Backtesting of PD per portfolio,10.08,True,center,False
+62,153.37,70.82,capitalrequirements.ItcomparesthePDunderF-IRBAwiththeaverageoftheannualobserveddefault,10.1,False,center,False
+62,166.57,70.82,rateoftheGroup’sobligors.Theobservationperiodisbasedonthe2025calendaryear.,10.1,False,center,False
+62,784.08,70.82,Pillar3DisclosuresDecember202562,9.1,False,center,False
+63,87.52,69.4,16.1 F-IRBA - Backtesting of PD per portfolio (continued),10.08,True,center,False
+63,784.08,70.82,Pillar3DisclosuresDecember202563,9.1,False,center,False
+64,87.36,69.19,16.1 F-IRBA - Backtesting of PD per portfolio (continued),10.08,True,center,False
+64,784.08,70.82,Pillar3DisclosuresDecember202564,9.1,False,center,False
+65,87.38,69.15,16.1 F-IRBA - Backtesting of PD per portfolio (continued),10.08,True,center,False
+65,784.08,70.82,Pillar3DisclosuresDecember202565,9.1,False,center,False
+66,87.56,69.16,16.2 A-IRBA - Backtesting of PD per portfolio,10.08,True,left,False
+66,125.53,70.82,capitalrequirements.ItcomparesthePDunderA-IRBAwiththeaverageoftheannualobserveddefault,10.1,False,left,False
+66,138.73,70.82,rateoftheGroup’sobligors.Theobservationperiodisbasedonthe2025calendaryear.,10.1,False,left,False
+66,784.08,70.82,Pillar3DisclosuresDecember202566,9.1,False,left,False
+67,87.46,69.63,16.2 A-IRBA - Backtesting of PD per portfolio (continued),10.08,True,left,False
+67,784.08,70.82,Pillar3DisclosuresDecember202567,9.1,False,left,False
+68,87.42,69.54,16.2 A-IRBA - Backtesting of PD per portfolio (continued),10.08,True,left,False
+68,784.08,70.82,Pillar3DisclosuresDecember202568,9.1,False,left,False
+69,87.49,69.42,16.2 A-IRBA - Backtesting of PD per portfolio (continued),10.08,True,left,False
+70,88.48,68.68,17. IRBA - SPECIALISED LENDING UNDER THE SLOTTING APPROACH,12.0,True,left,False
+71,88.47,69.26,18. COUNTERPARTY CREDIT RISK,12.0,True,left,False
+71,115.16,69.08,18.1 Analysis of CCR Exposures by Approach,10.08,True,left,False
+72,87.7,69.29,18.2 Exposures to Central Counterparties,10.08,True,left,False
+73,87.56,69.44,18.2 Exposures to Central Counterparties (continued),10.08,True,left,False
+74,87.43,69.07,18.3 SA - CCR Exposures by Portfolio and Risk Weights,10.08,True,left,False
+75,87.46,69.01,18.4 F-IRBA - CCR Exposures by Portfolio and PD Range,10.08,True,left,False
+76,87.39,69.24,18.4 F-IRBA - CCR Exposures by Portfolio and PD Range (continued),10.08,True,left,False
+78,87.31,69.21,18.4 F-IRBA - CCR Exposures by Portfolio and PD Range (continued),10.08,True,center,False
+79,87.49,69.06,18.5 A-IRBA - CCR Exposures by Portfolio and PD Range,10.08,True,left,False
+80,87.25,69.25,18.5 A-IRBA - CCR Exposures by Portfolio and PD Range (continued),10.08,True,center,False
+81,87.44,69.14,18.6 Composition of Collateral for CCR Exposure,10.08,True,left,False
+82,87.54,69.4,18.7 Credit Derivative Exposures,10.08,True,left,False
+83,88.43,69.06,19. SECURITISATION EXPOSURES,12.0,True,left,False
+83,203.67,69.1,19.1 Securitisation Exposures in the Banking Book,10.08,True,left,False
+84,87.63,69.09,19.2 Securitisation Exposures in the Trading Book,10.08,True,left,False
+84,437.38,68.57,19.3 SecuritisationExposuresintheBankingBookandassociatedRegulatoryCapitalRequirements – A Reporting Bank acting as Originator or as Sponsor,10.08,True,left,False
+85,86.41,63.86,19.4SecuritisationExposuresintheBankingBookandassociatedRegulatoryCapitalRequirements–AReportingBankactingasInvestor,10.1,True,left,False
+86,84.77,68.58,20. MARKET RISK,12.0,True,left,False
+86,111.3,68.55,20.1 Market Risk under SA,10.08,True,left,False
+87,87.62,68.28,20.2 CVA Risk Capital Requirements,10.08,True,left,False
+88,84.48,61.07,21. OPERATIONAL RISK,12.0,True,left,False
+88,111.6,60.99,21.1 HistoricalLosses,10.08,True,left,False
+89,87.54,61.32,21.1 HistoricalLosses (continued),10.08,True,left,False
+90,83.78,70.12,21.2 Business Indicator and Subcomponents,10.08,True,left,False
+91,87.58,69.87,21.3 MinimumRequiredOperationalRiskCapital,10.08,True,left,False
+92,88.4,69.82,22. INTEREST RATE RISK IN THE BANKING BOOK,12.0,True,left,False
+93,88.51,70.08,23. LIQUIDITY COVERAGE RATIO,12.0,True,left,False
+94,87.47,70.02,23.1 Average Group All Currency LCR,10.08,True,left,False
+94,111.3,69.95,For the Quarter ended 31 December 2025,10.08,True,left,True
+95,87.49,70.01,23.2 Average Group SGD LCR,10.08,True,left,False
+95,111.29,69.88,For the Quarter ended 31 December 2025,10.08,True,left,True
+96,88.47,70.05,24. NET STABLE FUNDING RATIO,12.0,True,left,False
+97,787.2,72.02,Pillar3DisclosuresDecember202597,9.1,False,left,False
+98,787.2,72.02,Pillar3DisclosuresDecember202598,9.1,False,left,False
+99,88.36,70.38,25. ABBREVIATIONS,12.0,True,left,False

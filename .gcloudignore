@@ -1,0 +1,34 @@
+# .gcloudignore — what does NOT ship to GCP (Cloud Build / Cloud Run).
+# Only the LIVE extraction+query pipeline uploads; archival/research stays in git.
+
+.git/
+google-cloud-sdk/
+.venv-paddle/
+.venv-reports/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# ── archival: not used by the extraction pipeline (verified: pipeline imports none) ──
+findociq/_legacy/
+findociq/experiments/
+findociq/app/
+findociq/tools/
+findociq/reports/
+
+# ── generated / regenerable outputs (audit JSON replay is kept, see below) ──
+findociq/outputs/checks/
+findociq/outputs/pillar3/**/*.xlsx
+findociq/outputs/pillar3/**/pages/
+findociq/outputs/pillar3/_ledgers/
+findociq/outputs/pillar3/**/logs/
+
+# ── stray files at repo root ──
+GT_*.csv
+*.pdf
+test*.pdf
+SAMPLE_*.pdf
+
+# ── local dev DB copies (rebuilt from schema + audit JSON) ──
+findociq/db/*.bak
+findociq/experiments/**/*.db

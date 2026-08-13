@@ -1,0 +1,51 @@
+{
+  "unit_id": "key_audit_matters_p42-44",
+  "pages": [
+    42,
+    43,
+    44
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 6586,
+    "output_tokens": 2283,
+    "thinking_tokens": 0,
+    "total_tokens": 8869,
+    "est_cost_usd": 0.03043,
+    "batch": 0
+  },
+  "chunks": 2,
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "key_audit_matters"
+  ],
+  "section_titles": [
+    "Key audit matters"
+  ],
+  "n_tables": 2,
+  "n_rows": 6,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '105823' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '102018' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2324' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3859' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1329' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '612' pdf=4x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "document": "OCBC_2Q26_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 August 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "average_balance_sheet_p11",
+  "section_ids": [
+    "average_balance_sheet"
+  ],
+  "section_titles": [
+    "Average Balance Sheet"
+  ],
+  "pages": [
+    11
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 27,
+  "usage": {
+    "ts": "2026-08-07T05:00:05",
+    "script": "extract_to_excel",
+    "label": "average_balance_sheet_p11",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3889,
+    "output_tokens": 4399,
+    "thinking_tokens": 0,
+    "total_tokens": 8288,
+    "est_cost_usd": 0.04542,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Loans to customers' printed bands [1] -> extracted slots [1,2,3]",
+      "  col-shift: 'Placements with and loans to banks' printed bands [1] -> extracted slots [1,2,3]",
+      "  col-shift: 'Other interest-earning assets' printed bands [1] -> extracted slots [1,2,3]",
+      "  col-shift: 'Deposits of non-bank customers' printed bands [1] -> extracted slots [1,2,3]",
+      "  col-shift: 'Deposits and balances of banks' printed bands [] -> extracted slots [1,2,3]",
+      "  col-shift: 'Other borrowings' printed bands [] -> extracted slots [1,2,3]",
+      "  col-shift: 'Net interest income' printed bands [] -> extracted slots [3]",
+      "  col-repair: declined for 'Loans to customers' \u2014 printed token '342,776' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Placements with and loans to banks' \u2014 printed token '60,318' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Other interest-earning assets' \u2014 printed token '120,652' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Deposits of non-bank customers' \u2014 printed token '441,914' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Deposits and balances of banks' \u2014 printed token '23,065' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Other borrowings' \u2014 printed token '32,283' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Net interest income' \u2014 extracted values ['(142)'] != printed tokens []"
+    ]
+  },
+  "crop": null
+}

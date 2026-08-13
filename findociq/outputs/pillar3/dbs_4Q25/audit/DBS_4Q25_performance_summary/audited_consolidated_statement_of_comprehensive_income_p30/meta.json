@@ -1,0 +1,47 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "audited_consolidated_statement_of_comprehensive_income_p30",
+  "section_ids": [
+    "audited_consolidated_statement_of_comprehensive_income"
+  ],
+  "section_titles": [
+    "AUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME"
+  ],
+  "pages": [
+    30
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-07-16T11:29:03",
+    "script": "extract_to_excel",
+    "label": "audited_consolidated_statement_of_comprehensive_income_p30",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2967,
+    "output_tokens": 5313,
+    "thinking_tokens": 0,
+    "total_tokens": 8280,
+    "est_cost_usd": 0.05227,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=6x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Net valuation gains taken to equity' [AUDITED CONSOLIDATED STATEMENT]",
+      "  duplicate row label x2: 'Taxation relating to components of other' [AUDITED CONSOLIDATED STATEMENT]",
+      "  duplicate row label x2: 'Total comprehensive income' [AUDITED CONSOLIDATED STATEMENT]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

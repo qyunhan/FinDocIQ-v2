@@ -1,0 +1,153 @@
+{
+  "document": {
+    "doc_id": "3Q25_P3_other_regulatory_disclosures",
+    "source_pdf": "findociq/data/sources/financial_statements/DBS/2025/Q3/3Q25_P3_other_regulatory_disclosures.pdf",
+    "doc_family": "pillar3"
+  },
+  "sections": [
+    {
+      "id": "A.2",
+      "title": "SCOPE OF CONSOLIDATION",
+      "page_start": 3,
+      "page_end": 3,
+      "level": 1,
+      "parent_id": null,
+      "path": "A.2",
+      "seq": 1,
+      "section_no": "2",
+      "has_tables": true
+    },
+    {
+      "id": "A.3",
+      "title": "OVERVIEW OF KEY PRUDENTIAL REGULATORY METRICS",
+      "page_start": 4,
+      "page_end": 4,
+      "level": 1,
+      "parent_id": null,
+      "path": "A.3",
+      "seq": 2,
+      "section_no": "3",
+      "has_tables": true
+    },
+    {
+      "id": "A.4",
+      "title": "LEVERAGE RATIO",
+      "page_start": 5,
+      "page_end": 6,
+      "level": 1,
+      "parent_id": null,
+      "path": "A.4",
+      "seq": 3,
+      "section_no": "4",
+      "has_tables": true
+    },
+    {
+      "id": "A.5.1",
+      "title": "Overview of RWA",
+      "page_start": 7,
+      "page_end": 7,
+      "level": 2,
+      "parent_id": null,
+      "path": "A.5.1",
+      "seq": 4,
+      "section_no": "5.1",
+      "has_tables": true
+    },
+    {
+      "id": "A.5.2",
+      "title": "Comparison of Modelled and Standardised RWA at Risk Level",
+      "page_start": 8,
+      "page_end": 8,
+      "level": 2,
+      "parent_id": null,
+      "path": "A.5.2",
+      "seq": 5,
+      "section_no": "5.2",
+      "has_tables": true
+    },
+    {
+      "id": "A.6.1",
+      "title": "IRBA - RWA Flow Statement for Credit Risk Exposures",
+      "page_start": 9,
+      "page_end": 9,
+      "level": 2,
+      "parent_id": null,
+      "path": "A.6.1",
+      "seq": 6,
+      "section_no": "6.1",
+      "has_tables": true
+    },
+    {
+      "id": "A.7.1",
+      "title": "RWA Flow Statements under the CCR Internal Models Method",
+      "page_start": 9,
+      "page_end": 9,
+      "level": 2,
+      "parent_id": null,
+      "path": "A.7.1",
+      "seq": 7,
+      "section_no": "7.1",
+      "has_tables": true
+    },
+    {
+      "id": "A.8.1",
+      "title": "RWA Flow Statements of Market Risk Exposures under IMA",
+      "page_start": 9,
+      "page_end": 9,
+      "level": 2,
+      "parent_id": null,
+      "path": "A.8.1",
+      "seq": 8,
+      "section_no": "8.1",
+      "has_tables": true
+    },
+    {
+      "id": "A.9.1",
+      "title": "RWA Flow Statements of CVA Risk Exposures under SA-CVA",
+      "page_start": 9,
+      "page_end": 10,
+      "level": 2,
+      "parent_id": null,
+      "path": "A.9.1",
+      "seq": 9,
+      "section_no": "9.1",
+      "has_tables": true
+    },
+    {
+      "id": "B.1.1",
+      "title": "Average All-Currency LCR for the Quarter ended 30 September 2025",
+      "page_start": 11,
+      "page_end": 11,
+      "level": 2,
+      "parent_id": null,
+      "path": "B.1.1",
+      "seq": 10,
+      "section_no": "1.1",
+      "has_tables": true
+    },
+    {
+      "id": "B.1.2",
+      "title": "Average SGD LCR for the Quarter ended 30 September 2025",
+      "page_start": 12,
+      "page_end": 12,
+      "level": 2,
+      "parent_id": null,
+      "path": "B.1.2",
+      "seq": 11,
+      "section_no": "1.2",
+      "has_tables": true
+    },
+    {
+      "id": "B.1.3",
+      "title": "Liquidity Coverage Ratio",
+      "page_start": 13,
+      "page_end": 14,
+      "level": 2,
+      "parent_id": null,
+      "path": "B.1.3",
+      "seq": 12,
+      "section_no": "1.3",
+      "has_tables": true
+    }
+  ]
+}

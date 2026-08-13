@@ -1,0 +1,50 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "share_capital_and_other_capital_p34",
+  "section_ids": [
+    "share_capital_and_other_capital"
+  ],
+  "section_titles": [
+    "3 Share Capital and Other Capital"
+  ],
+  "pages": [
+    34
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 18,
+  "usage": {
+    "ts": "2026-07-14T14:56:10",
+    "script": "extract_to_excel",
+    "label": "share_capital_and_other_capital_p34",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2963,
+    "output_tokens": 3256,
+    "thinking_tokens": 0,
+    "total_tokens": 6219,
+    "est_cost_usd": 0.00903
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '3.58' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.55' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '000' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Balance at beginning of period' [3 Share Capital and Other Capi]",
+      "  duplicate row label x2: 'Balance at end of period' [3 Share Capital and Other Capi]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

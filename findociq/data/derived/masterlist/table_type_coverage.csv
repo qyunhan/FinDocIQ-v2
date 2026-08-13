@@ -1,0 +1,112 @@
+bank,source_family,table_type_id,display_name,ordinal
+DBS,performance_summary,FS_DIVIDENDS,Dividends and distributions,1
+DBS,performance_summary,FS_BALANCE_SELECTED,Selected balance sheet items,2
+DBS,performance_summary,FS_INCOME_SELECTED,Selected income statement items,3
+DBS,performance_summary,FS_PER_SHARE,Per share data,4
+DBS,performance_summary,FS_RATIOS_KEY,Key financial ratios,5
+DBS,performance_summary,FS_AVG_BALANCE_SHEET,Average balance sheet,6
+DBS,performance_summary,FS_NII_DETAIL,Net interest income,7
+DBS,performance_summary,FS_VOLUME_RATE,Volume and rate analysis,8
+DBS,performance_summary,FS_FEE_INCOME,Fee and commission income,9
+DBS,performance_summary,FS_OTHER_INCOME,Other non-interest income,10
+DBS,performance_summary,FS_ALLOWANCES,Allowances for credit and other losses,11
+DBS,performance_summary,FS_EXPENSES_DETAIL,Operating expenses,12
+DBS,performance_summary,FS_BALANCE_BY_SEGMENT,Balance sheet items by business segment,13
+DBS,performance_summary,FS_PERF_BY_SEGMENT,Performance by business segment,14
+DBS,performance_summary,FS_BALANCE_BY_GEOGRAPHY,Balance sheet items by geography,15
+DBS,performance_summary,FS_PERF_BY_GEOGRAPHY,Performance by geography,16
+DBS,performance_summary,FS_CUSTOMER_LOANS,Customer loans,17
+DBS,performance_summary,FS_NPA_BY_COLLATERAL,Non-performing assets by collateral type,18
+DBS,performance_summary,FS_NPA_BY_INDUSTRY,Non-performing loans by industry,19
+DBS,performance_summary,FS_NPA_BY_LOAN_GRADING,Non-performing assets by loan grading,20
+DBS,performance_summary,FS_NPA_BY_PERIOD_OVERDUE,Non-performing assets by period overdue,21
+DBS,performance_summary,FS_NPA_COVERAGE,Non-performing assets — headline and by country,22
+DBS,performance_summary,FS_CUSTOMER_DEPOSITS,Customer deposits,23
+DBS,performance_summary,FS_DEBTS_ISSUED,Debts issued,24
+DBS,performance_summary,FS_CAPITAL_ADEQUACY,Capital adequacy,25
+DBS,performance_summary,FS_CAPITAL_MINIMUM_REQUIREMENTS,Minimum CAR including buffer requirements,26
+DBS,performance_summary,FS_INCOME_CONSOLIDATED,Income statement (consolidated/statutory),27
+DBS,performance_summary,FS_COMPREHENSIVE_INCOME,Statement of comprehensive income,28
+DBS,performance_summary,FS_BALANCE_CONSOLIDATED,Balance sheets (consolidated/statutory),29
+DBS,performance_summary,FS_EQUITY_CHANGES_GROUP,Statement of changes in equity — Group,30
+DBS,performance_summary,FS_EQUITY_CHANGES_COMPANY,Statement of changes in equity — Company/Bank,31
+DBS,performance_summary,FS_CASHFLOW,Cash flow statement,32
+DBS,performance_summary,FS_FAIR_VALUE_HIERARCHY,Fair value hierarchy,33
+DBS,performance_summary,FS_OFF_BALANCE_SHEET,Off-balance sheet items,34
+DBS,performance_summary,FS_SHARE_CAPITAL,Share capital and other capital,35
+DBS,performance_summary,FS_KEY_AUDIT_MATTERS,Key audit matters (auditor's report),36
+OCBC,media_release_financial_highlights,FS_RATIOS_KEY,Key financial ratios,1
+OCBC,media_release_financial_highlights,FS_PERIOD_PERFORMANCE_SUMMARY,Period performance summary (narrative commentary table),2
+OCBC,media_release_financial_highlights,FS_ALLOWANCES,Allowances for credit and other losses,3
+OCBC,media_release_financial_highlights,FS_HIGHLIGHTS_COMBINED,Financial highlights (combined income + balance + ratios),4
+OCBC,media_release_financial_highlights,FS_DIVIDENDS,Dividends and distributions,5
+OCBC,media_release_financial_highlights,FS_BALANCE_SELECTED,Selected balance sheet items,6
+OCBC,media_release_financial_highlights,FS_INCOME_SELECTED,Selected income statement items,7
+OCBC,media_release_financial_highlights,FS_CAPITAL_ADEQUACY,Capital adequacy,8
+OCBC,media_release_financial_highlights,FS_AVG_BALANCE_SHEET,Average balance sheet,9
+OCBC,media_release_financial_highlights,FS_VOLUME_RATE,Volume and rate analysis,10
+OCBC,media_release_financial_highlights,FS_NON_INTEREST_INCOME,Non-interest income,11
+OCBC,media_release_financial_highlights,FS_EXPENSES_DETAIL,Operating expenses,12
+OCBC,media_release_financial_highlights,FS_CUSTOMER_LOANS,Customer loans,13
+OCBC,media_release_financial_highlights,FS_NPA_BY_INDUSTRY,Non-performing loans by industry,14
+OCBC,media_release_financial_highlights,FS_NPA_BY_PERIOD_OVERDUE,Non-performing assets by period overdue,15
+OCBC,media_release_financial_highlights,FS_NPA_COVERAGE,Non-performing assets — headline and by country,16
+OCBC,media_release_financial_highlights,FS_NPA_RESTRUCTURED,Restructured loans,17
+OCBC,media_release_financial_highlights,FS_CUSTOMER_DEPOSITS,Customer deposits,18
+OCBC,media_release_financial_highlights,FS_PERF_BY_SEGMENT,Performance by business segment,19
+OCBC,financial_statements,FS_INCOME_CONSOLIDATED,Income statement (consolidated/statutory),1
+OCBC,financial_statements,FS_COMPREHENSIVE_INCOME,Statement of comprehensive income,2
+OCBC,financial_statements,FS_BALANCE_CONSOLIDATED,Balance sheets (consolidated/statutory),3
+OCBC,financial_statements,FS_EQUITY_CHANGES_GROUP,Statement of changes in equity — Group,4
+OCBC,financial_statements,FS_EQUITY_CHANGES_COMPANY,Statement of changes in equity — Company/Bank,5
+OCBC,financial_statements,FS_CASHFLOW,Cash flow statement,6
+OCBC,financial_statements,FS_NII_DETAIL,Net interest income,7
+OCBC,financial_statements,FS_ALLOWANCES,Allowances for credit and other losses,8
+OCBC,financial_statements,FS_FEE_INCOME,Fee and commission income,9
+OCBC,financial_statements,FS_OTHER_INCOME,Other non-interest income,10
+OCBC,financial_statements,FS_OTHER_OPERATING_EXPENSES,Other operating expenses,11
+OCBC,financial_statements,FS_DIVIDENDS,Dividends and distributions,12
+OCBC,financial_statements,FS_SHARE_CAPITAL,Share capital and other capital,13
+OCBC,financial_statements,FS_CUSTOMER_DEPOSITS,Customer deposits,14
+OCBC,financial_statements,FS_CUSTOMER_LOANS,Customer loans,15
+OCBC,financial_statements,FS_DEBTS_ISSUED,Debts issued,16
+OCBC,financial_statements,FS_BALANCE_BY_SEGMENT,Balance sheet items by business segment,17
+OCBC,financial_statements,FS_PERF_BY_SEGMENT,Performance by business segment,18
+OCBC,financial_statements,FS_BALANCE_BY_GEOGRAPHY,Balance sheet items by geography,19
+OCBC,financial_statements,FS_PERF_BY_GEOGRAPHY,Performance by geography,20
+OCBC,financial_statements,FS_FAIR_VALUE_HIERARCHY,Fair value hierarchy,21
+OCBC,financial_statements,FS_L3_MOVEMENTS,Movements in Level 3 instruments,22
+OCBC,financial_statements,FS_L3_VALUATION,Valuation techniques and unobservable inputs for Level 3,23
+OCBC,financial_statements,FS_KEY_AUDIT_MATTERS,Key audit matters (auditor's report),24
+UOB,financial_statements,FS_BALANCE_SELECTED,Selected balance sheet items,1
+UOB,financial_statements,FS_INCOME_SELECTED,Selected income statement items,2
+UOB,financial_statements,FS_RATIOS_KEY,Key financial ratios,3
+UOB,financial_statements,FS_NII_DETAIL,Net interest income,4
+UOB,financial_statements,FS_VOLUME_RATE,Volume and rate analysis,5
+UOB,financial_statements,FS_NON_INTEREST_INCOME,Non-interest income,6
+UOB,financial_statements,FS_EXPENSES_DETAIL,Operating expenses,7
+UOB,financial_statements,FS_ALLOWANCES,Allowances for credit and other losses,8
+UOB,financial_statements,FS_CUSTOMER_LOANS,Customer loans,9
+UOB,financial_statements,FS_NPA_BY_GEOGRAPHY,Non-performing loans by geography,10
+UOB,financial_statements,FS_NPA_BY_INDUSTRY,Non-performing loans by industry,11
+UOB,financial_statements,FS_NPA_COVERAGE,Non-performing assets — headline and by country,12
+UOB,financial_statements,FS_NPA_TOTAL_ALLOWANCE,Total allowance coverage of NPAs,13
+UOB,financial_statements,FS_CUSTOMER_DEPOSITS,Customer deposits,14
+UOB,financial_statements,FS_BALANCE_BY_SEGMENT,Balance sheet items by business segment,15
+UOB,financial_statements,FS_PERF_BY_SEGMENT,Performance by business segment,16
+UOB,financial_statements,FS_PERF_BY_GEOGRAPHY,Performance by geography,17
+UOB,financial_statements,FS_CAPITAL_ADEQUACY,Capital adequacy,18
+UOB,financial_statements,FS_INCOME_CONSOLIDATED,Income statement (consolidated/statutory),19
+UOB,financial_statements,FS_COMPREHENSIVE_INCOME,Statement of comprehensive income,20
+UOB,financial_statements,FS_BALANCE_CONSOLIDATED,Balance sheets (consolidated/statutory),21
+UOB,financial_statements,FS_EQUITY_CHANGES_COMPANY,Statement of changes in equity — Company/Bank,22
+UOB,financial_statements,FS_EQUITY_CHANGES_GROUP,Statement of changes in equity — Group,23
+UOB,financial_statements,FS_CASHFLOW,Cash flow statement,24
+UOB,financial_statements,FS_INCOME_TAX,Income tax,25
+UOB,financial_statements,FS_SHARE_CAPITAL,Share capital and other capital,26
+UOB,financial_statements,FS_DIVIDENDS,Dividends and distributions,27
+UOB,financial_statements,FS_FINANCIAL_CLASSIFICATION,Classification of financial assets and liabilities,28
+UOB,financial_statements,FS_FAIR_VALUE_HIERARCHY,Fair value hierarchy,29
+UOB,financial_statements,FS_L3_MOVEMENTS,Movements in Level 3 instruments,30
+UOB,financial_statements,FS_DEBTS_ISSUED,Debts issued,31
+UOB,financial_statements,FS_KEY_AUDIT_MATTERS,Key audit matters (auditor's report),32

@@ -1,0 +1,2315 @@
+{
+  "tables": [
+    {
+      "title": "PERFORMANCE BY GEOGRAPHY¹\nSelected income statement items²",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Singapore"
+        },
+        {
+          "group": null,
+          "leaf": "Hong Kong"
+        },
+        {
+          "group": null,
+          "leaf": "Rest of Greater China"
+        },
+        {
+          "group": null,
+          "leaf": "South and South-east Asia"
+        },
+        {
+          "group": null,
+          "leaf": "Rest of the World"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "2nd Half 2022",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "4,074",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,106",
+              "cell_state": "reported"
+            },
+            {
+              "value": "387",
+              "cell_state": "reported"
+            },
+            {
+              "value": "496",
+              "cell_state": "reported"
+            },
+            {
+              "value": "237",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,300",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "900",
+              "cell_state": "reported"
+            },
+            {
+              "value": "318",
+              "cell_state": "reported"
+            },
+            {
+              "value": "79",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,432",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "961",
+              "cell_state": "reported"
+            },
+            {
+              "value": "207",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,349",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "5,935",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,631",
+              "cell_state": "reported"
+            },
+            {
+              "value": "567",
+              "cell_state": "reported"
+            },
+            {
+              "value": "612",
+              "cell_state": "reported"
+            },
+            {
+              "value": "336",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,081",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "2,206",
+              "cell_state": "reported"
+            },
+            {
+              "value": "598",
+              "cell_state": "reported"
+            },
+            {
+              "value": "456",
+              "cell_state": "reported"
+            },
+            {
+              "value": "464",
+              "cell_state": "reported"
+            },
+            {
+              "value": "64",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,788",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "54",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(22)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "136",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share of profits/losses of associates and JVs",
+          "values": [
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "89",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "3,687",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,020",
+              "cell_state": "reported"
+            },
+            {
+              "value": "139",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103",
+              "cell_state": "reported"
+            },
+            {
+              "value": "297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,246",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income tax expense",
+          "values": [
+            {
+              "value": "406",
+              "cell_state": "reported"
+            },
+            {
+              "value": "168",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57",
+              "cell_state": "reported"
+            },
+            {
+              "value": "669",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit",
+          "values": [
+            {
+              "value": "3,281",
+              "cell_state": "reported"
+            },
+            {
+              "value": "852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "240",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,577",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "1st Half 2022",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "2,911",
+              "cell_state": "reported"
+            },
+            {
+              "value": "738",
+              "cell_state": "reported"
+            },
+            {
+              "value": "381",
+              "cell_state": "reported"
+            },
+            {
+              "value": "397",
+              "cell_state": "reported"
+            },
+            {
+              "value": "214",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,641",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "1,043",
+              "cell_state": "reported"
+            },
+            {
+              "value": "354",
+              "cell_state": "reported"
+            },
+            {
+              "value": "97",
+              "cell_state": "reported"
+            },
+            {
+              "value": "127",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,659",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "755",
+              "cell_state": "reported"
+            },
+            {
+              "value": "200",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,121",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "4,709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,292",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "566",
+              "cell_state": "reported"
+            },
+            {
+              "value": "258",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,421",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "1,883",
+              "cell_state": "reported"
+            },
+            {
+              "value": "539",
+              "cell_state": "reported"
+            },
+            {
+              "value": "395",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430",
+              "cell_state": "reported"
+            },
+            {
+              "value": "55",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,302",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "(79)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(42)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "127",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share of profits/losses of associates and JVs",
+          "values": [
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "97",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "2,926",
+              "cell_state": "reported"
+            },
+            {
+              "value": "710",
+              "cell_state": "reported"
+            },
+            {
+              "value": "246",
+              "cell_state": "reported"
+            },
+            {
+              "value": "178",
+              "cell_state": "reported"
+            },
+            {
+              "value": "76",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,136",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income tax expense",
+          "values": [
+            {
+              "value": "307",
+              "cell_state": "reported"
+            },
+            {
+              "value": "117",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "519",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit",
+          "values": [
+            {
+              "value": "2,619",
+              "cell_state": "reported"
+            },
+            {
+              "value": "593",
+              "cell_state": "reported"
+            },
+            {
+              "value": "216",
+              "cell_state": "reported"
+            },
+            {
+              "value": "129",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,616",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "2nd Half 2021",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "2,562",
+              "cell_state": "reported"
+            },
+            {
+              "value": "702",
+              "cell_state": "reported"
+            },
+            {
+              "value": "388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "368",
+              "cell_state": "reported"
+            },
+            {
+              "value": "224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,244",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "1,090",
+              "cell_state": "reported"
+            },
+            {
+              "value": "381",
+              "cell_state": "reported"
+            },
+            {
+              "value": "82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,703",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "553",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "93",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "844",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "4,205",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "563",
+              "cell_state": "reported"
+            },
+            {
+              "value": "550",
+              "cell_state": "reported"
+            },
+            {
+              "value": "249",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,791",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "1,867",
+              "cell_state": "reported"
+            },
+            {
+              "value": "566",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430",
+              "cell_state": "reported"
+            },
+            {
+              "value": "412",
+              "cell_state": "reported"
+            },
+            {
+              "value": "64",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,339",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "(70)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(20)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(37)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share of profits/losses of associates and JVs",
+          "values": [
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "44",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "63",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "2,427",
+              "cell_state": "reported"
+            },
+            {
+              "value": "678",
+              "cell_state": "reported"
+            },
+            {
+              "value": "157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "92",
+              "cell_state": "reported"
+            },
+            {
+              "value": "198",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,552",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income tax expense",
+          "values": [
+            {
+              "value": "262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "64",
+              "cell_state": "reported"
+            },
+            {
+              "value": "462",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit",
+          "values": [
+            {
+              "value": "2,165",
+              "cell_state": "reported"
+            },
+            {
+              "value": "573",
+              "cell_state": "reported"
+            },
+            {
+              "value": "145",
+              "cell_state": "reported"
+            },
+            {
+              "value": "72",
+              "cell_state": "reported"
+            },
+            {
+              "value": "134",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,089",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PERFORMANCE BY GEOGRAPHY¹\nYearly Selected income statement items",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Singapore"
+        },
+        {
+          "group": null,
+          "leaf": "Hong Kong"
+        },
+        {
+          "group": null,
+          "leaf": "Rest of Greater China"
+        },
+        {
+          "group": null,
+          "leaf": "South and South-east Asia"
+        },
+        {
+          "group": null,
+          "leaf": "Rest of the World"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Year 2022",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "6,985",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "768",
+              "cell_state": "reported"
+            },
+            {
+              "value": "893",
+              "cell_state": "reported"
+            },
+            {
+              "value": "451",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,941",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "1,943",
+              "cell_state": "reported"
+            },
+            {
+              "value": "672",
+              "cell_state": "reported"
+            },
+            {
+              "value": "176",
+              "cell_state": "reported"
+            },
+            {
+              "value": "230",
+              "cell_state": "reported"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,091",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "1,716",
+              "cell_state": "reported"
+            },
+            {
+              "value": "407",
+              "cell_state": "reported"
+            },
+            {
+              "value": "219",
+              "cell_state": "reported"
+            },
+            {
+              "value": "55",
+              "cell_state": "reported"
+            },
+            {
+              "value": "73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,470",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "10,644",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,923",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,163",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,178",
+              "cell_state": "reported"
+            },
+            {
+              "value": "594",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,502",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "4,089",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "851",
+              "cell_state": "reported"
+            },
+            {
+              "value": "894",
+              "cell_state": "reported"
+            },
+            {
+              "value": "119",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,090",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "(33)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56",
+              "cell_state": "reported"
+            },
+            {
+              "value": "106",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105",
+              "cell_state": "reported"
+            },
+            {
+              "value": "237",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share of profits/losses of associates and JVs",
+          "values": [
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "179",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "207",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "6,613",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,730",
+              "cell_state": "reported"
+            },
+            {
+              "value": "385",
+              "cell_state": "reported"
+            },
+            {
+              "value": "281",
+              "cell_state": "reported"
+            },
+            {
+              "value": "373",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,382",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income tax expense",
+          "values": [
+            {
+              "value": "713",
+              "cell_state": "reported"
+            },
+            {
+              "value": "285",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45",
+              "cell_state": "reported"
+            },
+            {
+              "value": "71",
+              "cell_state": "reported"
+            },
+            {
+              "value": "74",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,188",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit",
+          "values": [
+            {
+              "value": "5,900",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,445",
+              "cell_state": "reported"
+            },
+            {
+              "value": "340",
+              "cell_state": "reported"
+            },
+            {
+              "value": "209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,193",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Year 2021",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "5,156",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "755",
+              "cell_state": "reported"
+            },
+            {
+              "value": "707",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,440",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee and commission income",
+          "values": [
+            {
+              "value": "2,228",
+              "cell_state": "reported"
+            },
+            {
+              "value": "776",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "241",
+              "cell_state": "reported"
+            },
+            {
+              "value": "77",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,524",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "1,520",
+              "cell_state": "reported"
+            },
+            {
+              "value": "312",
+              "cell_state": "reported"
+            },
+            {
+              "value": "207",
+              "cell_state": "reported"
+            },
+            {
+              "value": "177",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,224",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "8,904",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,480",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,164",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,188",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Expenses",
+          "values": [
+            {
+              "value": "3,689",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,057",
+              "cell_state": "reported"
+            },
+            {
+              "value": "822",
+              "cell_state": "reported"
+            },
+            {
+              "value": "781",
+              "cell_state": "reported"
+            },
+            {
+              "value": "120",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,469",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "(14)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(80)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Share of profits/losses of associates and JVs",
+          "values": [
+            {
+              "value": "39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "109",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "5,268",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,416",
+              "cell_state": "reported"
+            },
+            {
+              "value": "353",
+              "cell_state": "reported"
+            },
+            {
+              "value": "264",
+              "cell_state": "reported"
+            },
+            {
+              "value": "475",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,776",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income tax expense",
+          "values": [
+            {
+              "value": "506",
+              "cell_state": "reported"
+            },
+            {
+              "value": "226",
+              "cell_state": "reported"
+            },
+            {
+              "value": "47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "135",
+              "cell_state": "reported"
+            },
+            {
+              "value": "973",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit",
+          "values": [
+            {
+              "value": "4,761",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,190",
+              "cell_state": "reported"
+            },
+            {
+              "value": "306",
+              "cell_state": "reported"
+            },
+            {
+              "value": "204",
+              "cell_state": "reported"
+            },
+            {
+              "value": "340",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,801",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Selected balance sheet items",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Singapore"
+        },
+        {
+          "group": null,
+          "leaf": "Hong Kong"
+        },
+        {
+          "group": null,
+          "leaf": "Rest of Greater China"
+        },
+        {
+          "group": null,
+          "leaf": "South and South-east Asia"
+        },
+        {
+          "group": null,
+          "leaf": "Rest of the World"
+        },
+        {
+          "group": null,
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "31 Dec 2022",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets before goodwill and intangibles",
+          "values": [
+            {
+              "value": "491,852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "107,879",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60,303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,900",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49,094",
+              "cell_state": "reported"
+            },
+            {
+              "value": "738,028",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Goodwill and intangibles",
+          "values": [
+            {
+              "value": "5,133",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "178",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,340",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "496,985",
+              "cell_state": "reported"
+            },
+            {
+              "value": "107,908",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60,303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29,078",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49,094",
+              "cell_state": "reported"
+            },
+            {
+              "value": "743,368",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-current assets³",
+          "values": [
+            {
+              "value": "3,957",
+              "cell_state": "reported"
+            },
+            {
+              "value": "648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "579",
+              "cell_state": "reported"
+            },
+            {
+              "value": "314",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,518",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "262,682",
+              "cell_state": "reported"
+            },
+            {
+              "value": "74,154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36,838",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,185",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,425",
+              "cell_state": "reported"
+            },
+            {
+              "value": "420,284",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "30 Jun 2022",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets before goodwill and intangibles",
+          "values": [
+            {
+              "value": "485,285",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118,806",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,766",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29,606",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46,818",
+              "cell_state": "reported"
+            },
+            {
+              "value": "740,281",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Goodwill and intangibles",
+          "values": [
+            {
+              "value": "5,133",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "193",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,356",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "490,418",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118,836",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,766",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29,799",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46,818",
+              "cell_state": "reported"
+            },
+            {
+              "value": "745,637",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-current assets³",
+          "values": [
+            {
+              "value": "3,871",
+              "cell_state": "reported"
+            },
+            {
+              "value": "675",
+              "cell_state": "reported"
+            },
+            {
+              "value": "507",
+              "cell_state": "reported"
+            },
+            {
+              "value": "332",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,408",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "262,132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "84,637",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,275",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,274",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29,359",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430,677",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "31 Dec 2021",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets before goodwill and intangibles",
+          "values": [
+            {
+              "value": "449,612",
+              "cell_state": "reported"
+            },
+            {
+              "value": "106,187",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,926",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,580",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,406",
+              "cell_state": "reported"
+            },
+            {
+              "value": "680,711",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Goodwill and intangibles",
+          "values": [
+            {
+              "value": "5,133",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "200",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,362",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "454,745",
+              "cell_state": "reported"
+            },
+            {
+              "value": "106,216",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,926",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,780",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,406",
+              "cell_state": "reported"
+            },
+            {
+              "value": "686,073",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-current assets³",
+          "values": [
+            {
+              "value": "3,856",
+              "cell_state": "reported"
+            },
+            {
+              "value": "688",
+              "cell_state": "reported"
+            },
+            {
+              "value": "498",
+              "cell_state": "reported"
+            },
+            {
+              "value": "365",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,434",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "253,958",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,135",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,608",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,298",
+              "cell_state": "reported"
+            },
+            {
+              "value": "415,072",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

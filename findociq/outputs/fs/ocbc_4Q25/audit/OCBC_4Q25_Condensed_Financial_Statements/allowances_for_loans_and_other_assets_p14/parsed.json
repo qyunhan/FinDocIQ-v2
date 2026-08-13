@@ -1,0 +1,211 @@
+{
+  "tables": [
+    {
+      "title": "7. Allowances for loans and other assets",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "2H 2025 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2H 2024 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances/(write-back):",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Impaired loans",
+          "values": [
+            {
+              "value": "342",
+              "cell_state": "reported"
+            },
+            {
+              "value": "152",
+              "cell_state": "reported"
+            },
+            {
+              "value": "486",
+              "cell_state": "reported"
+            },
+            {
+              "value": "403",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Impaired other assets",
+          "values": [
+            {
+              "value": "34",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49",
+              "cell_state": "reported"
+            },
+            {
+              "value": "123",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-impaired loans",
+          "values": [
+            {
+              "value": "(31)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "185",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "158",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-impaired other assets",
+          "values": [
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for loans and other assets",
+          "values": [
+            {
+              "value": "339",
+              "cell_state": "reported"
+            },
+            {
+              "value": "377",
+              "cell_state": "reported"
+            },
+            {
+              "value": "665",
+              "cell_state": "reported"
+            },
+            {
+              "value": "690",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 57,
+            "indent": 0,
+            "label_clean": "Allowances/(write-back):"
+          },
+          {
+            "line_id": 58,
+            "indent": 1,
+            "label_clean": "Impaired loans"
+          },
+          {
+            "line_id": 59,
+            "indent": 1,
+            "label_clean": "Impaired other assets"
+          },
+          {
+            "line_id": 60,
+            "indent": 1,
+            "label_clean": "Non-impaired loans"
+          },
+          {
+            "line_id": 61,
+            "indent": 1,
+            "label_clean": "Non-impaired other assets"
+          },
+          {
+            "line_id": 62,
+            "indent": 0,
+            "label_clean": "Allowances for loans and other assets"
+          }
+        ],
+        "title_clean": "7. Allowances for loans and other assets",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

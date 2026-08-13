@@ -1,0 +1,1619 @@
+{
+  "tables": [
+    {
+      "title": "Financial Highlights 3Q25",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "9M25"
+        },
+        {
+          "group": null,
+          "leaf": "9M24"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-) %"
+        },
+        {
+          "group": null,
+          "leaf": "3Q25"
+        },
+        {
+          "group": null,
+          "leaf": "2Q25"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-) %"
+        },
+        {
+          "group": null,
+          "leaf": "3Q24"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-) %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Selected income statement items (S$m)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "7,009",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,223",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,265",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,336",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,460",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(8)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net fee income",
+          "values": [
+            {
+              "value": "1,945",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,828",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "615",
+              "cell_state": "reported"
+            },
+            {
+              "value": "636",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "630",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other non-interest income",
+          "values": [
+            {
+              "value": "1,565",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,782",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "518",
+              "cell_state": "reported"
+            },
+            {
+              "value": "493",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "744",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(30)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "10,519",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,832",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,398",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,465",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,834",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Less: Total expenses",
+          "values": [
+            {
+              "value": "4,629",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,730",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,535",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,535",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(0)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,626",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Operating profit",
+          "values": [
+            {
+              "value": "5,890",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,102",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,863",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,929",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(16)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Less: Amortisation of intangible assets",
+          "values": [
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(23)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowance for credit and other losses",
+          "values": [
+            {
+              "value": "1,930",
+              "cell_state": "reported"
+            },
+            {
+              "value": "699",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,361",
+              "cell_state": "reported"
+            },
+            {
+              "value": "279",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "304",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Add: Share of profit of associates and joint ventures",
+          "values": [
+            {
+              "value": "44",
+              "cell_state": "reported"
+            },
+            {
+              "value": "81",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(46)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit before tax",
+          "values": [
+            {
+              "value": "3,980",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,464",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "520",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,638",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(68)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,923",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(73)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Less: Tax and non-controlling interests",
+          "values": [
+            {
+              "value": "709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "943",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(25)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "77",
+              "cell_state": "reported"
+            },
+            {
+              "value": "301",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(74)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "312",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(75)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit ¹",
+          "values": [
+            {
+              "value": "3,271",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,522",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(28)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "443",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,338",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(67)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,610",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(72)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Selected balance sheet items (S$m)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "351,084",
+              "cell_state": "reported"
+            },
+            {
+              "value": "333,998",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "351,084",
+              "cell_state": "reported"
+            },
+            {
+              "value": "342,900",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "333,998",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "419,660",
+              "cell_state": "reported"
+            },
+            {
+              "value": "400,784",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "419,660",
+              "cell_state": "reported"
+            },
+            {
+              "value": "405,076",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "400,784",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "555,419",
+              "cell_state": "reported"
+            },
+            {
+              "value": "541,885",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "555,419",
+              "cell_state": "reported"
+            },
+            {
+              "value": "537,838",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "541,885",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shareholders' equity ¹",
+          "values": [
+            {
+              "value": "49,707",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48,596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49,707",
+              "cell_state": "reported"
+            },
+            {
+              "value": "50,346",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48,596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Risk-weighted assets",
+          "values": [
+            {
+              "value": "273,150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "252,220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "273,150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "265,875",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "252,220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Key financial ratios (%)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest margin ²",
+          "values": [
+            {
+              "value": "1.91",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.04",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.91",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "2.05",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cost/Income ratio",
+          "values": [
+            {
+              "value": "44.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "45.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "42.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Credit costs on loans (bp) ²",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "General",
+          "values": [
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "79",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Specific",
+          "values": [
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "55",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h1",
+          "label": "Total",
+          "values": [
+            {
+              "value": "68",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "134",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "34",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPA coverage ratio",
+          "values": [
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPL ratio ³",
+          "values": [
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on average ordinary shareholders' equity 2,4",
+          "values": [
+            {
+              "value": "9.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "14.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on average total assets ²",
+          "values": [
+            {
+              "value": "0.81",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "0.33",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loan/Deposit ratio ⁵",
+          "values": [
+            {
+              "value": "82.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "82.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "82.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "82.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Liquidity coverage ratios (\"LCR\") 6,10",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "All-currency",
+          "values": [
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "143",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Singapore Dollar",
+          "values": [
+            {
+              "value": "417",
+              "cell_state": "reported"
+            },
+            {
+              "value": "488",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "404",
+              "cell_state": "reported"
+            },
+            {
+              "value": "444",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "458",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net stable funding ratio (\"NSFR\") 7,10",
+          "values": [
+            {
+              "value": "116",
+              "cell_state": "reported"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Capital adequacy ratios",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Common Equity Tier 1",
+          "values": [
+            {
+              "value": "14.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "14.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "15.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Tier 1",
+          "values": [
+            {
+              "value": "15.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "15.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "16.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h3",
+          "label": "Total",
+          "values": [
+            {
+              "value": "17.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "17.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "18.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Leverage ratio ⁸",
+          "values": [
+            {
+              "value": "6.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "6.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "6.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Earnings per ordinary share ($) 2,4",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Basic",
+          "values": [
+            {
+              "value": "2.56",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.55",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.01",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3.79",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Diluted",
+          "values": [
+            {
+              "value": "2.55",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.01",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3.78",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net asset value (\"NAV\") per ordinary share ($) ⁹",
+          "values": [
+            {
+              "value": "28.34",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27.42",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "28.34",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28.62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "27.42",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

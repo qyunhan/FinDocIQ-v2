@@ -1,0 +1,97 @@
+doc_id,section_id,section_title,start_page,end_page,n_tables,source
+ocbc_fs2025,income_statements,Income Statements,1,1,1,gemini
+ocbc_fs2025,statements_of_comprehensive_income,Statements of Comprehensive Income,2,2,1,gemini
+ocbc_fs2025,balance_sheets,Balance Sheets,3,3,1,gemini
+ocbc_fs2025,statement_of_changes_in_equity_group,Statement of Changes in Equity – Group,4,5,2,gemini
+ocbc_fs2025,statement_of_changes_in_equity_bank,Statement of Changes in Equity – Bank,6,6,1,gemini
+ocbc_fs2025,consolidated_cash_flow_statement,Consolidated Cash Flow Statement,7,7,1,gemini
+ocbc_fs2025,2.1,2.1 Basis of Preparation,8,8,1,gemini
+ocbc_fs2025,2.7,DerivativeFinancialInstruments,13,13,1,gemini
+ocbc_fs2025,2.13.6.4,Subsequent Measurement – Contracts Not Measured Under the PAA,21,21,1,gemini
+ocbc_fs2025,2.21.3,Insurance Business,30,30,1,gemini
+ocbc_fs2025,3,Net Interest Income,32,32,1,gemini
+ocbc_fs2025,4,Insurance Service Results and Net Investment and Finance Income/(Expenses) from Life Insurance,32,33,3,gemini
+ocbc_fs2025,5,5. Fees and Commissions (Net),34,34,1,gemini
+ocbc_fs2025,6,6. Dividends from Subsidiaries and Associates,34,34,1,gemini
+ocbc_fs2025,7,7. Net Trading Income,35,35,1,gemini
+ocbc_fs2025,8,8. Other Income,35,35,1,gemini
+ocbc_fs2025,9,9. Staff Costs and Other Operating Expenses,36,36,1,gemini
+ocbc_fs2025,10,10. Allowances for Loans and Other Assets,37,37,1,gemini
+ocbc_fs2025,11,11. Income Tax Expense,37,37,2,gemini
+ocbc_fs2025,12,12. Earnings Per Share,38,38,1,gemini
+ocbc_fs2025,13.1,13.1 Share Capital,39,39,1,gemini
+ocbc_fs2025,13.2,13.2 Share Option Scheme,40,40,1,gemini
+ocbc_fs2025,13.3,13.3 Employee Share Purchase Plan,40,41,2,gemini
+ocbc_fs2025,14,14. Other Equity Instruments,42,42,1,gemini
+ocbc_fs2025,15,15. Capital Reserves,44,44,1,gemini
+ocbc_fs2025,16,16. Revenue Reserves,44,44,1,gemini
+ocbc_fs2025,16.1,16.1 Unappropriated Profit,45,45,1,gemini
+ocbc_fs2025,16.2,16.2 General Reserves,46,46,1,gemini
+ocbc_fs2025,16.4,16.4 Currency Translation Reserves,46,46,1,gemini
+ocbc_fs2025,17,17. Deposits and Balances of Non-Bank Customers and Banks,47,47,1,gemini
+ocbc_fs2025,18,18. Derivative Financial Instruments,48,49,2,gemini
+ocbc_fs2025,19,19. Other Liabilities,50,50,1,gemini
+ocbc_fs2025,20,20. Deferred Tax,50,51,2,gemini
+ocbc_fs2025,21,21. Debt Issued,52,52,1,gemini
+ocbc_fs2025,21.1,21.1 Subordinated Debt,52,52,1,gemini
+ocbc_fs2025,21.2,21.2 Fixed and Floating Rate Notes,54,54,1,gemini
+ocbc_fs2025,21.3,21.3 Commercial Paper,55,55,1,gemini
+ocbc_fs2025,21.4,Structured Notes,55,55,1,gemini
+ocbc_fs2025,21.5,Covered Bonds,56,56,1,gemini
+ocbc_fs2025,21.6,Reconciliation of Movements of Liabilities to Cash Flows Arising from Financing Activities,56,56,1,gemini
+ocbc_fs2025,22,Assets and Liabilities for Life Insurance Funds,57,57,1,gemini
+ocbc_fs2025,22.1,Reconciliation of the Liability for Remaining Coverage and Liability for Incurred Claims for Life Insurance,58,59,2,gemini
+ocbc_fs2025,22.2,Reconciliation of the Measurement Components of Insurance Contract Balances for Life Insurance,60,60,1,gemini
+ocbc_fs2025,22.3,Impact of Life Insurance Contracts Recognised During the Year,61,61,1,gemini
+ocbc_fs2025,22.4,Amounts Determined on Transition to SFRS(I) 17,61,61,1,gemini
+ocbc_fs2025,22.5,Expected Recognition of the Contractual Service Margin for Life Insurance Contracts Issued,62,62,1,gemini
+ocbc_fs2025,23,Cash and Placements with Central Banks,62,62,1,gemini
+ocbc_fs2025,24,Government Treasury Bills and Securities,63,63,1,gemini
+ocbc_fs2025,25,Placements with and Loans to Banks,63,63,1,gemini
+ocbc_fs2025,26,Loans to Customers,64,64,1,gemini
+ocbc_fs2025,27,Non-Performing Assets,65,66,2,gemini
+ocbc_fs2025,27.4,Restructured/Renegotiated Loans,66,66,1,gemini
+ocbc_fs2025,28,Allowances for Impaired Loans to Customers,67,67,1,gemini
+ocbc_fs2025,analysed_by_industry,Analysed by Industry,67,67,1,gemini
+ocbc_fs2025,29,Debt and Equity Securities,68,68,1,gemini
+ocbc_fs2025,30,Allowances for Financial Assets,69,72,6,gemini
+ocbc_fs2025,31,Other Assets,73,73,1,gemini
+ocbc_fs2025,32,Associates,73,73,1,gemini
+ocbc_fs2025,32.1,Material Associate,73,73,1,gemini
+ocbc_fs2025,32.2,Financial Information of Material Associate,74,74,1,gemini
+ocbc_fs2025,32.3,Financial Information of Other Associates,75,75,2,gemini
+ocbc_fs2025,33,Subsidiaries,75,75,1,gemini
+ocbc_fs2025,33.1,List of Principal Subsidiaries,76,76,1,gemini
+ocbc_fs2025,33.2,Non-Controlling Interests in Subsidiaries,77,77,1,gemini
+ocbc_fs2025,34,"Property, Plant and Equipment",78,79,2,gemini
+ocbc_fs2025,35,Investment Property,80,80,1,gemini
+ocbc_fs2025,36,Goodwill and Other Intangible Assets,81,81,1,gemini
+ocbc_fs2025,impairment_tests_for_goodwill,Impairment Tests for Goodwill,82,82,2,gemini
+ocbc_fs2025,37.1,37.1 BusinessSegments,83,84,2,gemini
+ocbc_fs2025,37.2,37.2 GeographicalSegments,85,85,1,gemini
+ocbc_fs2025,38.1,38.1 Overview,86,86,1,gemini
+ocbc_fs2025,maximum_exposure_to_credit_risk,MaximumExposuretoCreditRisk,87,87,1,gemini
+ocbc_fs2025,collateral,Collateral,88,88,1,gemini
+ocbc_fs2025,total_loans_and_advances_credit_quality,TotalLoansandAdvances–CreditQuality,89,89,1,gemini
+ocbc_fs2025,past_due_loans,PastDueLoans,89,89,1,gemini
+ocbc_fs2025,loans_past_due_but_not_impaired,Loans Past Due But Not Impaired,90,90,1,gemini
+ocbc_fs2025,currency_risk,Currency Risk,91,91,1,gemini
+ocbc_fs2025,structural_foreign_exchange_risk,Structural Foreign Exchange Risk,91,91,1,gemini
+ocbc_fs2025,liquidity_risk,Liquidity Risk,92,92,1,gemini
+ocbc_fs2025,38,38. Risk Management,93,110,9,gemini
+ocbc_fs2025,contractual_maturity_for_financial_liabilities,Contractual Maturity for Financial Liabilities,94,94,1,gemini
+ocbc_fs2025,hedging,Hedging,95,95,1,gemini
+ocbc_fs2025,net_investment_hedges,Net Investment Hedges,95,95,1,gemini
+ocbc_fs2025,amounts_payable_on_demand,Amounts Payable on Demand,105,105,1,gemini
+ocbc_fs2025,credit_risk,(h) Credit Risk,106,108,4,gemini
+ocbc_fs2025,market_risk_sensitivity_analysis,Market Risk Sensitivity Analysis,109,109,1,gemini
+ocbc_fs2025,39,39. Financial Assets and Financial Liabilities Classification,111,114,4,gemini
+ocbc_fs2025,40.3,Fair Value Hierarchy,117,122,11,gemini
+ocbc_fs2025,41,Offsetting Financial Assets and Financial Liabilities,123,124,2,gemini
+ocbc_fs2025,42,Contingent Liabilities,125,125,1,gemini
+ocbc_fs2025,43,Commitments,126,126,1,gemini
+ocbc_fs2025,44,Unconsolidated Structured Entities,127,127,1,gemini
+ocbc_fs2025,45.1,Assets Pledged,128,128,1,gemini
+ocbc_fs2025,46.1,Material Related Party Transactions,129,129,1,gemini
+ocbc_fs2025,46.2,46.2 Key Management Personnel Compensation,130,130,1,gemini
+ocbc_fs2025,48,48. New Accounting Standards and Interpretations,131,131,1,gemini

@@ -1,0 +1,71 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "restructured_loans_p18",
+  "section_ids": [
+    "restructured_loans"
+  ],
+  "section_titles": [
+    "Restructured Loans"
+  ],
+  "pages": [
+    18
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-07-30T15:51:49",
+    "script": "extract_to_excel",
+    "label": "restructured_loans_p18",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3889,
+    "output_tokens": 4351,
+    "thinking_tokens": 0,
+    "total_tokens": 8240,
+    "est_cost_usd": 0.04499,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "NPLs by Industry",
+      "anchor_label": "NPLs by Industry",
+      "anchor_y": 183.89,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "NPAs by Period Overdue",
+      "anchor_label": "NPAs by Period Overdue",
+      "anchor_y": 343.78,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "Restructured Loans",
+      "anchor_label": "Restructured Loans",
+      "anchor_y": 524.09,
+      "owning_section": "30",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": false
+}

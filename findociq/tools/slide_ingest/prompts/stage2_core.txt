@@ -1,0 +1,54 @@
+Output ONLY valid HTML with inline styles. No prose.
+
+SEPARATE TABLES:
+- Emit ONE <table border="1"> per DISTINCT table. If the page holds several tables
+  with DIFFERENT columns (e.g. a wide risk-weight matrix AND a small summary), emit
+  each as its OWN <table>. NEVER condense different-column tables into one.
+
+GRID ANCHOR:
+- First map the table to a logical grid, using fully-populated rows as the
+  column anchors (they define where each column sits).
+
+CONTEXT ROWS (top of <thead>, each a full-width <th colspan="N">):
+- Emit any Page Title, Date, Currency, and Reporting Scope shown on the
+  page (e.g. 'Group - All Currencies (S$m)') as leading header rows, so
+  context is preserved with the table.
+
+COLUMN HEADERS (<thead>):
+- Group headers spanning several columns go in a row using colspan, with
+  empty <th></th> where there is no group. All leaf column names go in a
+  single row below. No rowspan anywhere.
+- A row of bare single letters (a, b, c) or bracketed letters ((a), (b)) is
+  a reference-index row, NOT a header — skip it. Use the descriptive / date
+  row as the column headers.
+- Apply background-color ONLY to cells genuinely shaded in the source.
+  Never add colour for emphasis (e.g. a coloured title bar that is plain
+  black text in the PDF).
+
+ROWS (<tbody>) — mark each <tr>:
+- EVERY row gets data-level="L" = its indentation depth (1 = flush-left,
+  2 = indented sub-item, 3 = deeper). A parent row with NO values of its
+  own (its children sum to it) still gets its level — e.g. a flush-left
+  group label is data-level="1" with empty value cells.
+- Total / subtotal rows: add data-kind="total" (keep their data-level too).
+- Do not classify rows as 'section' vs 'parent' — only judge indentation
+  depth. The parent of each row is derived later from these levels.
+
+MERGES (the common error):
+- One <td> per column. If a row has fewer values than columns, place the
+  outer values in their anchor columns first; any value sitting in a wide
+  open gap between them is one <td colspan="K"> spanning that gap.
+- A blank gap with no dash and no border is part of the adjacent merged
+  cell, NOT a separate empty column. Never copy a neighbour's value into it.
+
+SHADING:
+- Shaded cell -> style="background-color:#D3D3D3;" (renders grey in Excel).
+  Keep its content (value, dash, or blank) unchanged.
+- Measure a shaded block's width against one anchor-column width: a one-
+  column shaded block must NOT absorb an adjacent unshaded empty column.
+
+CELL STATE (content of each <td>, independent of shading):
+- Printed value -> the value verbatim (commas, brackets, %, signs).
+- Printed 0     -> 0.
+- Printed dash  -> -.
+- Truly blank   -> empty <td></td>.

@@ -1,0 +1,37 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+1,0,5,0,1,NEW_TABLE,non-adjacent pages
+5,0,6,0,1,NEW_TABLE,cols differ
+6,0,7,0,1,NEW_TABLE,cols differ
+7,0,8,0,1,NEW_TABLE,cols differ
+8,0,10,0,1,NEW_TABLE,non-adjacent pages
+10,0,11,0,1,NEW_TABLE,cols differ
+11,0,11,1,0,NEW_TABLE,cols differ
+11,1,12,0,1,NEW_TABLE,cols differ
+12,0,12,1,0,NEW_TABLE,"break:text-between:1 Includes trade & remittances, guarante"
+12,1,13,0,1,NEW_TABLE,cols differ
+13,0,13,1,0,NEW_TABLE,cols differ
+13,1,14,0,1,NEW_TABLE,cols differ
+14,0,15,0,1,NEW_TABLE,break:own-title:($m) Commercial Book Markets
+15,0,18,0,1,NEW_TABLE,non-adjacent pages
+18,0,19,0,1,PERIOD_INSTANCE,"repeats ['Net interest income', 'Net fee and commission income', 'Other non-interest income']"
+19,0,22,0,1,NEW_TABLE,non-adjacent pages
+22,0,23,0,1,NEW_TABLE,cols differ
+23,0,24,0,1,NEW_TABLE,cols differ
+24,0,25,0,1,NEW_TABLE,cols differ
+25,0,26,0,1,NEW_TABLE,cols differ
+26,0,27,0,1,NEW_TABLE,cols differ
+27,0,28,0,1,NEW_TABLE,cols differ
+28,0,29,0,1,NEW_TABLE,cols differ
+29,0,30,0,1,NEW_TABLE,break:text-between:AUDITED CONSOLIDATED STATEMENT OF COMPRE
+30,0,31,0,1,NEW_TABLE,cols differ
+31,0,32,0,1,NEW_TABLE,cols differ
+32,0,33,0,1,NEW_TABLE,break:text-between:UNAUDITED CONSOLIDATED STATEMENT OF CHAN
+33,0,34,0,1,NEW_TABLE,cols differ
+34,0,35,0,1,PERIOD_INSTANCE,"repeats ['Transfer of treasury shares', 'Draw-down of share plan reserves upon']"
+35,0,36,0,1,NEW_TABLE,cols differ
+36,0,37,0,1,NEW_TABLE,cols differ
+37,0,37,1,0,NEW_TABLE,cols differ
+37,1,38,0,1,NEW_TABLE,cols differ
+38,0,41,0,1,NEW_TABLE,non-adjacent pages
+41,0,43,0,1,NEW_TABLE,non-adjacent pages
+43,0,44,0,1,FLAG,col sig not evaluable

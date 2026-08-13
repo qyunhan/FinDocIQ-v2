@@ -1,0 +1,46 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fair_value_hierarchy_p23-28/chunks/c1",
+  "section_ids": [
+    "fair_value_hierarchy"
+  ],
+  "section_titles": [
+    "14.3 Fair value hierarchy"
+  ],
+  "pages": [
+    23,
+    24
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 17,
+  "usage": {
+    "ts": "2026-07-14T15:02:36",
+    "script": "extract_to_excel",
+    "label": "fair_value_hierarchy_p23-28/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3542,
+    "output_tokens": 3418,
+    "thinking_tokens": 0,
+    "total_tokens": 6960,
+    "est_cost_usd": 0.00961
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '14.3' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '14.2' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Total' [14.3 Fair value hierarchy (con]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

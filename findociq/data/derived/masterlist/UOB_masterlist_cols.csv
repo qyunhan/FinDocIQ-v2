@@ -1,0 +1,37 @@
+bank,table_type_id,col_ordinal,canonical_col_id,label,full_path,source_family,notes
+UOB,FS_BALANCE_BY_SEGMENT,1,gr,GR,GR,Financial_statements,
+UOB,FS_BALANCE_BY_SEGMENT,2,gwb,GWB,GWB,Financial_statements,
+UOB,FS_BALANCE_BY_SEGMENT,3,gm,GM,GM,Financial_statements,
+UOB,FS_BALANCE_BY_SEGMENT,4,others,Others,Others,Financial_statements,
+UOB,FS_BALANCE_BY_SEGMENT,5,total,Total,Total,Financial_statements,
+UOB,FS_BALANCE_CONSOLIDATED,1,group,Group,Group,Financial_statements,"printed as ""The Group"""
+UOB,FS_BALANCE_CONSOLIDATED,2,bank,Bank,Bank,Financial_statements,"printed as ""The Bank""; parent-company view — matches OCBC's Bank label"
+UOB,FS_EQUITY_CHANGES_COMPANY,1,share_capital_and_other_capital,Share capital and other capital,Share capital and other capital,Financial_statements,
+UOB,FS_EQUITY_CHANGES_COMPANY,2,retained_earnings,Retained earnings,Retained earnings,Financial_statements,
+UOB,FS_EQUITY_CHANGES_COMPANY,3,other_reserves,Other reserves,Other reserves,Financial_statements,
+UOB,FS_EQUITY_CHANGES_COMPANY,4,total_equity,Total equity,Total equity,Financial_statements,
+UOB,FS_EQUITY_CHANGES_GROUP,1,share_capital_and_other_capital,Share capital and other capital,Share capital and other capital,Financial_statements,
+UOB,FS_EQUITY_CHANGES_GROUP,2,retained_earnings,Retained earnings,Retained earnings,Financial_statements,
+UOB,FS_EQUITY_CHANGES_GROUP,3,other_reserves,Other reserves,Other reserves,Financial_statements,
+UOB,FS_EQUITY_CHANGES_GROUP,4,total,Total,Total,Financial_statements,total attributable to equity holders of the Bank (before NCI)
+UOB,FS_EQUITY_CHANGES_GROUP,5,non_controlling_interests,Non-controlling interests,Non-controlling interests,Financial_statements,
+UOB,FS_EQUITY_CHANGES_GROUP,6,total_equity,Total equity,Total equity,Financial_statements,
+UOB,FS_FAIR_VALUE_HIERARCHY,1,level_1,Level 1,Level 1,Financial_statements,quoted prices in active markets
+UOB,FS_FAIR_VALUE_HIERARCHY,2,level_2,Level 2,Level 2,Financial_statements,observable inputs other than quoted prices
+UOB,FS_FAIR_VALUE_HIERARCHY,3,level_3,Level 3,Level 3,Financial_statements,unobservable inputs. UOB does NOT print a separate Total col (unlike DBS/OCBC) — totals row-computed
+UOB,FS_NPA_BY_GEOGRAPHY,1,npl_npa_m,NPL/NPA ($m),NPL/NPA ($m),Financial_statements,amount column — NPL for geography-rows and Group NPL row; NPA for Group NPA row
+UOB,FS_NPA_BY_GEOGRAPHY,2,npl_ratio_percent,NPL ratio (%),NPL ratio (%),Financial_statements,NPL as % of loans; only populated for NPL rows
+UOB,FS_NPA_BY_GEOGRAPHY,3,specific_allowance_m,Specific allowance ($m),Specific allowance ($m),Financial_statements,specific allowance amount
+UOB,FS_NPA_BY_GEOGRAPHY,4,specific_allowance_as_a_percent_of_npl_npa_percent,Specific allowance as a % of NPL/NPA (%),Specific allowance as a % of NPL/NPA (%),Financial_statements,SP coverage ratio
+UOB,FS_PERF_BY_GEOGRAPHY,1,singapore,Singapore,Singapore,Condensed_financial_statements,
+UOB,FS_PERF_BY_GEOGRAPHY,2,malaysia,Malaysia,Malaysia,Condensed_financial_statements,
+UOB,FS_PERF_BY_GEOGRAPHY,3,thailand,Thailand,Thailand,Condensed_financial_statements,
+UOB,FS_PERF_BY_GEOGRAPHY,4,indonesia,Indonesia,Indonesia,Condensed_financial_statements,
+UOB,FS_PERF_BY_GEOGRAPHY,5,greater_china,Greater China,Greater China,Condensed_financial_statements,
+UOB,FS_PERF_BY_GEOGRAPHY,6,others,Others,Others,Condensed_financial_statements,
+UOB,FS_PERF_BY_GEOGRAPHY,7,total,Total,Total,Condensed_financial_statements,
+UOB,FS_PERF_BY_SEGMENT,1,gr,GR,GR,Financial_statements,
+UOB,FS_PERF_BY_SEGMENT,2,gwb,GWB,GWB,Financial_statements,
+UOB,FS_PERF_BY_SEGMENT,3,gm,GM,GM,Financial_statements,
+UOB,FS_PERF_BY_SEGMENT,4,others,Others,Others,Financial_statements,
+UOB,FS_PERF_BY_SEGMENT,5,total,Total,Total,Financial_statements,

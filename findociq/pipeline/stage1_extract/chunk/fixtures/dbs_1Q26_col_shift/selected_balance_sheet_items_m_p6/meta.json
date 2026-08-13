@@ -1,0 +1,49 @@
+{
+  "document": "DBS_1Q26_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "selected_balance_sheet_items_m_p6",
+  "section_ids": [
+    "selected_balance_sheet_items_m"
+  ],
+  "section_titles": [
+    "Selected balance sheet items ($m)"
+  ],
+  "pages": [
+    6
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 8,
+  "usage": {
+    "ts": "2026-07-30T02:40:42",
+    "script": "extract_to_excel",
+    "label": "selected_balance_sheet_items_m_p6",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3907,
+    "output_tokens": 1764,
+    "thinking_tokens": 0,
+    "total_tokens": 5671,
+    "est_cost_usd": 0.02174,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Constant-currency change' [Selected balance sheet items (]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Constant-currency change' printed bands [3,5] -> extracted slots [2,4]",
+      "  col-shift: 'Constant-currency change' printed bands [3,5] -> extracted slots [2,4]",
+      "  col-repair: 'Constant-currency change' slots [2,4] -> bands [3,5]",
+      "  col-repair: 'Constant-currency change' slots [2,4] -> bands [3,5]"
+    ]
+  },
+  "crop": null
+}

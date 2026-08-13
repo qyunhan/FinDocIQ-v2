@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_statement_of_comprehensive_income_p24",
+  "section_ids": [
+    "unaudited_consolidated_statement_of_comprehensive_income"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME"
+  ],
+  "pages": [
+    24
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 25,
+  "usage": {
+    "ts": "2026-07-26T09:06:23",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_statement_of_comprehensive_income_p24",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3939,
+    "output_tokens": 4120,
+    "thinking_tokens": 0,
+    "total_tokens": 8059,
+    "est_cost_usd": 0.04299,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=11x json=0x (missing from extraction)",
+      "  deficit: '2.1' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Transferred to income statement' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Taxation relating to components of other' [UNAUDITED CONSOLIDATED STATEME]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

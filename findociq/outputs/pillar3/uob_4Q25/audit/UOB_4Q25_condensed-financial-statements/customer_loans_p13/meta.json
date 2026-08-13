@@ -1,0 +1,43 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "customer_loans_p13",
+  "section_ids": [
+    "customer_loans"
+  ],
+  "section_titles": [
+    "Customer Loans"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 37,
+  "usage": {
+    "ts": "2026-07-14T14:54:18",
+    "script": "extract_to_excel",
+    "label": "customer_loans_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2916,
+    "output_tokens": 5160,
+    "thinking_tokens": 0,
+    "total_tokens": 8076,
+    "est_cost_usd": 0.01377
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x3: 'Others' [Customer Loans]",
+      "  duplicate row label x4: 'Total (gross)' [Customer Loans]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

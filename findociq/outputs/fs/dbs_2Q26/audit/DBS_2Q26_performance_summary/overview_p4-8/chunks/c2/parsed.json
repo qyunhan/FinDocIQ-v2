@@ -1,0 +1,212 @@
+{
+  "tables": [
+    {
+      "title": "DBS GROUP HOLDINGS LTD AND ITS SUBSIDIARIES",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Half 2026"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2025"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Half 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Per share data ($)3",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Earnings2",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Basic",
+          "values": [
+            {
+              "value": "4.27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.04",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.71",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Diluted8",
+          "values": [
+            {
+              "value": "4.25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.04",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.69",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Reported earnings",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Basic",
+          "values": [
+            {
+              "value": "4.27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.04",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.67",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Diluted8",
+          "values": [
+            {
+              "value": "4.25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.04",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.66",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net book value5",
+          "values": [
+            {
+              "value": "24.69",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23.82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24.29",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Per share data ($)"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Basic"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Diluted"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Reported earnings"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Basic"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Diluted"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Net book value"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

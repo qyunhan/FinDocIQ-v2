@@ -1,0 +1,50 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "overview_p4-8/chunks/c1",
+  "section_ids": [
+    "overview"
+  ],
+  "section_titles": [
+    "OVERVIEW"
+  ],
+  "pages": [
+    4,
+    5
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 45,
+  "usage": {
+    "ts": "2026-08-06T09:20:46",
+    "script": "extract_to_excel",
+    "label": "overview_p4-8/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4462,
+    "output_tokens": 8092,
+    "thinking_tokens": 0,
+    "total_tokens": 12554,
+    "est_cost_usd": 0.07952,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p5) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '100' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '456' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Net interest income' [OVERVIEW]",
+      "  duplicate row label x2: 'Constant-currency change' [OVERVIEW]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

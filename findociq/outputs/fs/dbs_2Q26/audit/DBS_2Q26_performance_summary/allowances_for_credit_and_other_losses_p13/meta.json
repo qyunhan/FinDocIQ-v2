@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "allowances_for_credit_and_other_losses_p13",
+  "section_ids": [
+    "allowances_for_credit_and_other_losses"
+  ],
+  "section_titles": [
+    "ALLOWANCES FOR CREDIT AND OTHER LOSSES"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 14,
+  "usage": {
+    "ts": "2026-08-06T09:20:28",
+    "script": "extract_to_excel",
+    "label": "allowances_for_credit_and_other_losses_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3918,
+    "output_tokens": 2450,
+    "thinking_tokens": 0,
+    "total_tokens": 6368,
+    "est_cost_usd": 0.02793,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '188' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '251' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '336' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '303' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

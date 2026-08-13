@@ -1,0 +1,466 @@
+{
+  "doc_id": "UOB_2Q25_Condensed_Interim_Financial_Statement",
+  "source_pdf": "findociq/data/sources/financial_statements/UOB/2025/2Q25/UOB_2Q25_Condensed Interim Financial Statement.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "Unaudited Financial Results for the First Half ended 30 June 2025",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Dividends for the First Half ended 30 June 2025",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Ordinary share dividends",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Interested Person Transactions",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Confirmation by Directors",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Undertakings from Directors and Executive Officers",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "Condensed Interim Financial Statements",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "Contents",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "Financial Highlights",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "title": "Financial Highlights (cont'd)",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "Performance Review",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "1H25 versus 1H24",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "1H25 versus 2H24",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Asset Quality",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Capital, Funding and Liquidity Positions",
+      "page": 7,
+      "level": 2
+    },
+    {
+      "title": "Net Interest Income",
+      "page": 8,
+      "level": 1
+    },
+    {
+      "title": "Net interest margin",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "title": "Volume and rate analysis",
+      "page": 8,
+      "level": 2
+    },
+    {
+      "title": "Non-Interest Income",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "Operating Expenses",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "title": "Allowance for Credit and Other Losses",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "title": "Customer Loans",
+      "page": 12,
+      "level": 1
+    },
+    {
+      "title": "By industry",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "title": "By currency",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "title": "By maturity",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "title": "By geography 1",
+      "page": 12,
+      "level": 2
+    },
+    {
+      "title": "Non-Performing Assets",
+      "page": 13,
+      "level": 1
+    },
+    {
+      "title": "By grading",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "By security",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "By ageing",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "Total allowance",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "NPL by industry",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "Non-Performing Assets (cont\u2019d)",
+      "page": 14,
+      "level": 1
+    },
+    {
+      "title": "NPL by geography 1",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "Customer Deposits",
+      "page": 15,
+      "level": 1
+    },
+    {
+      "title": "By product",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "By maturity",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "By currency",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "Performance by Business Segment 1",
+      "page": 16,
+      "level": 1
+    },
+    {
+      "title": "1H25",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "2H24",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "1H24",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "Performance by Business Segment 1 (cont\u2019d)",
+      "page": 17,
+      "level": 1
+    },
+    {
+      "title": "At 30 June 2025",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "At 31 December 2024",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "At 30 June 2024",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "Performance by Business Segment (cont\u2019d)",
+      "page": 18,
+      "level": 1
+    },
+    {
+      "title": "Group Retail (\"GR\")",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "Group Wholesale Banking (\"GWB\")",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "Global Markets (\"GM\")",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "Others",
+      "page": 18,
+      "level": 2
+    },
+    {
+      "title": "Performance by Geographical Segment 1",
+      "page": 19,
+      "level": 1
+    },
+    {
+      "title": "1H25",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "2H24",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "1H24",
+      "page": 19,
+      "level": 2
+    },
+    {
+      "title": "Performance by Geographical Segment (cont\u2019d)",
+      "page": 20,
+      "level": 1
+    },
+    {
+      "title": "Singapore",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Malaysia",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Thailand",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Indonesia",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Greater China",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Others",
+      "page": 20,
+      "level": 2
+    },
+    {
+      "title": "Capital Adequacy and Leverage Ratios 1,2,3",
+      "page": 21,
+      "level": 1
+    },
+    {
+      "title": "Income Statement (Unaudited) for the financial period ended 30 June 2025",
+      "page": 22,
+      "level": 1
+    },
+    {
+      "title": "Statement of Comprehensive Income (Unaudited) for the financial period ended 30 June 2025",
+      "page": 23,
+      "level": 1
+    },
+    {
+      "title": "Balance Sheets (Unaudited) as at 30 June 2025",
+      "page": 24,
+      "level": 1
+    },
+    {
+      "title": "Equity",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Liabilities",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Assets",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Off-balance sheet items",
+      "page": 24,
+      "level": 2
+    },
+    {
+      "title": "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2025",
+      "page": 25,
+      "level": 1
+    },
+    {
+      "title": "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2025",
+      "page": 26,
+      "level": 1
+    },
+    {
+      "title": "Cash Flow Statement (Unaudited) for the financial period ended 30 June 2025",
+      "page": 27,
+      "level": 1
+    },
+    {
+      "title": "Cash flows from operating activities",
+      "page": 27,
+      "level": 2
+    },
+    {
+      "title": "Cash flows from investing activities",
+      "page": 27,
+      "level": 2
+    },
+    {
+      "title": "Cash flows from financing activities",
+      "page": 27,
+      "level": 2
+    },
+    {
+      "title": "Notes to the Condensed Interim Financial Statements for the financial period ended 30 June 2025",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "1 Summary of Material Accounting Policies",
+      "page": 28,
+      "level": 2
+    },
+    {
+      "title": "(a) Basis of Preparation",
+      "page": 28,
+      "level": 3
+    },
+    {
+      "title": "(b) Changes in Accounting Policies",
+      "page": 28,
+      "level": 3
+    },
+    {
+      "title": "(c) Critical Accounting Estimates and Judgements",
+      "page": 28,
+      "level": 3
+    },
+    {
+      "title": "2 Income Tax",
+      "page": 29,
+      "level": 2
+    },
+    {
+      "title": "3 Share Capital and Other Capital",
+      "page": 29,
+      "level": 2
+    },
+    {
+      "title": "4 Dividends",
+      "page": 30,
+      "level": 2
+    },
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities",
+      "page": 30,
+      "level": 2
+    },
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities (continued)",
+      "page": 31,
+      "level": 2
+    },
+    {
+      "title": "6 Fair Value of Financial Instruments",
+      "page": 32,
+      "level": 2
+    },
+    {
+      "title": "6 Fair Value of Financial Instruments (continued)",
+      "page": 33,
+      "level": 2
+    },
+    {
+      "title": "7 Debts Issued",
+      "page": 34,
+      "level": 2
+    },
+    {
+      "title": "Unsecured",
+      "page": 34,
+      "level": 3
+    },
+    {
+      "title": "Secured",
+      "page": 34,
+      "level": 3
+    }
+  ],
+  "contents_page_number": 4,
+  "contents_page_text": "United Overseas Bank Limited and Its Subsidiaries\nContents\nPage\n2 Financial Highlights\n4 Performance Review\n5 Net Interest Income\n6 Non-Interest Income\n7 Operating Expenses\n8 Allowance for Credit and Other Losses\n9 Customer Loans\n10 Non-Performing Assets\n12 Customer Deposits\n13 Performance by Business Segment\n16 Performance by Geographical Segment\n18 Capital Adequacy and Leverage Ratios\n19 Income Statement\n20 Statement of Comprehensive Income\n21 Balance Sheets\n22 Statements of Changes in Equity\n24 Cash Flow Statement\nNotes to the Condensed Interim Financial Statements\n25 Summary of Material Accounting Policies\n26 Income Tax\n26 Share Capital and Other Capital\n27 Dividends\n27 Classification of Financial Assets and Financial Liabilities\n29 Fair Value of Financial Instruments\n31 Debts Issued\nNotes\n1 The condensed interim financial statements are unaudited and presented in Singapore Dollars.\n2 Certain comparative figures have been restated to conform with the current period's presentation.\n3 Certain figures in this report may not add up to the respective totals due to rounding.\n4 Amounts less than $500,000 in absolute term are shown as \"0\".\n5 The Group refers to United Overseas Bank Limited and its subsidiaries.\n6 The Bank refers to United Overseas Bank Limited.\nAbbreviation\n\"1H25\" and \"1H24\" denote the first half of 2025 and 2024 respectively.\n\"2H24\" denotes the second half of 2024.\n\"NM\" denotes not meaningful.\n\"NA\" denotes not applicable.\n1",
+  "n_pages": 34
+}

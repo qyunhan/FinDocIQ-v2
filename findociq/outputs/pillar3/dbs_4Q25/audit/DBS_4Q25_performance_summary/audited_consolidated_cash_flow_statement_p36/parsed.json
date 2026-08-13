@@ -1,0 +1,825 @@
+{
+  "tables": [
+    {
+      "title": "AUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Year 2025"
+        },
+        {
+          "group": null,
+          "leaf": "Year 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Cash flows from operating activities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "12,999",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,884",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Adjustments for non-cash and other items:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Allowances for credit and other losses",
+          "values": [
+            {
+              "value": "791",
+              "cell_state": "reported"
+            },
+            {
+              "value": "622",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Amortisation of intangible assets",
+          "values": [
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Depreciation of properties and other fixed assets",
+          "values": [
+            {
+              "value": "824",
+              "cell_state": "reported"
+            },
+            {
+              "value": "806",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Share of profits or losses of associates and joint ventures",
+          "values": [
+            {
+              "value": "(262)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(250)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Net gain on disposal of interest in associates",
+          "values": [
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Net loss/ (gain) on disposal, net of write-off of properties and other fixed assets",
+          "values": [
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(85)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Net income from investment securities",
+          "values": [
+            {
+              "value": "(100)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(163)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Cost of share-based payments",
+          "values": [
+            {
+              "value": "203",
+              "cell_state": "reported"
+            },
+            {
+              "value": "177",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Interest expense on subordinated term debts",
+          "values": [
+            {
+              "value": "39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Interest expense on lease liabilities",
+          "values": [
+            {
+              "value": "22",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before changes in operating assets and liabilities",
+          "values": [
+            {
+              "value": "14,553",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,080",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Increase/ (Decrease) in:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Due to banks",
+          "values": [
+            {
+              "value": "20,686",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,898",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Deposits and balances from customers",
+          "values": [
+            {
+              "value": "58,856",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23,075",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Derivative and other liabilities",
+          "values": [
+            {
+              "value": "(1,190)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,026",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Other debt securities and borrowings",
+          "values": [
+            {
+              "value": "11,773",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,485",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "(Increase) /Decrease in:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Restricted balances with central banks",
+          "values": [
+            {
+              "value": "1,671",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(997)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Government securities and treasury bills",
+          "values": [
+            {
+              "value": "(28,746)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10,000)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Due from banks",
+          "values": [
+            {
+              "value": "(16,645)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11,830)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Bank and corporate securities",
+          "values": [
+            {
+              "value": "(25,863)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(22,016)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Loans and advances to customers",
+          "values": [
+            {
+              "value": "(23,317)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13,582)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Derivative and other assets",
+          "values": [
+            {
+              "value": "879",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(16,360)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Income taxes paid",
+          "values": [
+            {
+              "value": "(1,633)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,438)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net cash generated from operating activities (1)",
+          "values": [
+            {
+              "value": "11,024",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,341",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Cash flows from investing activities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends from associates and joint ventures",
+          "values": [
+            {
+              "value": "117",
+              "cell_state": "reported"
+            },
+            {
+              "value": "122",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Acquisition of interests in associates and joint ventures",
+          "values": [
+            {
+              "value": "(426)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(517)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return of capital from associates and joint ventures",
+          "values": [
+            {
+              "value": "80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "86",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from disposal of properties and other fixed assets",
+          "values": [
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "134",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Proceeds from disposal of associates",
+          "values": [
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Purchase of properties and other fixed assets",
+          "values": [
+            {
+              "value": "(525)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(916)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Purchase of additional stake in a subsidiary from non-controlling interest",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(152)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net cash used in investing activities (2)",
+          "values": [
+            {
+              "value": "(708)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,243)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Cash flows from financing activities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interest paid on subordinated term debts",
+          "values": [
+            {
+              "value": "(40)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(43)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Purchase of treasury shares",
+          "values": [
+            {
+              "value": "(26)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(213)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends paid to shareholders of the Company¹",
+          "values": [
+            {
+              "value": "(8,151)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6,083)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Repayment of lease liabilities",
+          "values": [
+            {
+              "value": "(251)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(265)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Redemption of perpetual capital securities",
+          "values": [
+            {
+              "value": "(2,341)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares repurchased and cancelled",
+          "values": [
+            {
+              "value": "(371)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net cash used in financing activities (3)",
+          "values": [
+            {
+              "value": "(11,180)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6,604)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Exchange translation adjustments (4)",
+          "values": [
+            {
+              "value": "(106)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(17)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net change in cash and cash equivalents² (1)+(2)+(3)+(4)",
+          "values": [
+            {
+              "value": "(970)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,477",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cash and cash equivalents at beginning of year",
+          "values": [
+            {
+              "value": "47,352",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,875",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Cash and cash equivalents at end of year",
+          "values": [
+            {
+              "value": "46,382",
+              "cell_state": "reported"
+            },
+            {
+              "value": "47,352",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": "1",
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "Includes distributions paid on capital securities classified as equity and Capital Return dividends",
+          "values": []
+        },
+        {
+          "row_id": "2",
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "Cash and cash equivalents refer to cash and non-restricted balances with central banks",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

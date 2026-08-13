@@ -1,0 +1,105 @@
+{
+  "tables": [
+    {
+      "title": "2. Off-balance Sheet Items",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "2",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2025"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2024"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Contingent liabilities",
+          "values": [
+            {
+              "value": "37,606",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37,931",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,627",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Commitments¹",
+          "values": [
+            {
+              "value": "444,849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "439,788",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430,825",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Financial Derivatives",
+          "values": [
+            {
+              "value": "3,621,180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,436,974",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,190,933",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "1 Includes commitments that are unconditionally cancellable at any time of $363,808 million for 30 Jun 2025 (31 Dec 2024: $362,303 million; 30 Jun 2024: $356,781 million).",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

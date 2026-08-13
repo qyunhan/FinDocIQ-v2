@@ -1,0 +1,1512 @@
+bank,canonical_table_id,canonical_leaf_id,flag,detail
+DBS,FS_ALLOWANCES_DETAIL,ecl_stage_1_and_2_gp,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_ALLOWANCES_DETAIL,ecl_stage_3_sp_for_loans,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_ALLOWANCES_DETAIL,ecl_stage_3_sp_for_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_ALLOWANCES_DETAIL,ecl_stage_3_sp_for_loans::allowances_for_other_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_ALLOWANCES_DETAIL,ecl_stage_3_sp_for_loans::ecl_stage_3_sp_for_other_credit_exposures,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_ALLOWANCES_DETAIL,ecl_stage_3_sp_for_loans::total_ecl_stage_3_sp,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,customer_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,customer_non_trade_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,interbank_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,interest_bearing_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,interest_bearing_liabilities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,net_interest_income_margin,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,other_borrowings,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,securities_and_others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_AVG_BALANCE_SHEET,trade_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_BALANCE_SELECTED,,multi_panel_nonidentical,11 panels with non-identical row sets
+DBS,FS_BALANCE_SELECTED,30_jun::goodwill_and_intangibles,single_period,only in 4Q22
+DBS,FS_BALANCE_SELECTED,30_jun::total_assets,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_BALANCE_SELECTED,30_jun::total_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_BALANCE_SELECTED,30_jun::total_assets_before_goodwill_and_intangible_assets,near_duplicate,edit distance 1 from '30_jun::total_assets_before_goodwill_and_intangibles_assets'
+DBS,FS_BALANCE_SELECTED,30_jun::total_assets_before_goodwill_and_intangibles,single_period,only in 4Q22
+DBS,FS_BALANCE_SELECTED,30_jun::total_assets_before_goodwill_and_intangibles_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_BALANCE_SELECTED,30_jun::total_assets_before_goodwill_and_intangibles_assets,single_period,only in 2Q25
+DBS,FS_BALANCE_SELECTED,31_dec::goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_BALANCE_SELECTED,31_dec::goodwill_and_intangibles,single_period,only in 4Q22
+DBS,FS_BALANCE_SELECTED,31_dec::total_assets,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_BALANCE_SELECTED,31_dec::total_assets_before_goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_BALANCE_SELECTED,31_dec::total_assets_before_goodwill_and_intangibles,single_period,only in 4Q22
+DBS,FS_BALANCE_SELECTED,customer_deposits,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_BALANCE_SELECTED,customer_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_BALANCE_SELECTED,customer_loans,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_BALANCE_SELECTED,customer_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_BALANCE_SELECTED,shareholders_funds,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_BALANCE_SELECTED,total_liabilities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_BALANCE_STATUTORY,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_BALANCE_STATUTORY,assets::derivatives,single_period,only in 2Q22
+DBS,FS_BALANCE_STATUTORY,assets::goodwill_and_intangibles,single_period,only in 2Q22
+DBS,FS_BALANCE_STATUTORY,assets::subsidiaries,single_period,only in 2Q22
+DBS,FS_BALANCE_STATUTORY,equity::non_controlling_interests,single_period,only in 2Q22
+DBS,FS_BALANCE_STATUTORY,equity::revenue_reserves,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_BALANCE_STATUTORY,liabilities::derivatives,single_period,only in 2Q22
+DBS,FS_BALANCE_STATUTORY,other_information::net_book_value_per_share,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_BALANCE_STATUTORY,other_information::net_book_value_per_share::basic_and_diluted,single_period,only in 2Q22
+DBS,FS_BALANCE_STATUTORY,other_information::net_book_value_per_share::i_basic_and_diluted,near_duplicate,edit distance 2 from 'other_information::net_book_value_per_share::basic_and_diluted'
+DBS,FS_BALANCE_STATUTORY,other_information::net_book_value_per_share::i_basic_and_diluted,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_CAPITAL_ADEQUACY,common_equity_tier_1_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CAPITAL_ADEQUACY,minimum_car_including_buffer_requirements::cet,single_period,only in 4Q25
+DBS,FS_CAPITAL_ADEQUACY,minimum_car_including_buffer_requirements::common_equity_tier,single_period,only in 2Q22
+DBS,FS_CAPITAL_ADEQUACY,minimum_car_including_buffer_requirements::tier_1_capital::cet,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,minimum_car_including_buffer_requirements::tier_1_capital::effective_tier,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,minimum_car_including_buffer_requirements::tier_1_capital::effective_total,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,risk_weighted_assets_rwa::tier_1_capital::credit_rwa,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,risk_weighted_assets_rwa::tier_1_capital::market_rwa,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,risk_weighted_assets_rwa::tier_1_capital::operational_rwa,single_period,only in 2Q25
+DBS,FS_CAPITAL_ADEQUACY,tier_1_capital,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CAPITAL_ADEQUACY,tier_1_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CAPITAL_ADEQUACY,total_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CASHFLOW,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::capital_contribution_by_non_controlling_interests,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::cash_and_cash_equivalents_at_end_of_year,single_period,only in 4Q25
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::dividends_paid_to_shareholders_of_the_company_net_of_scrip_dividends,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::issue_of_subordinated_term_debts,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::net_cash_used_in_generated_from_financing_activities_3,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents_1_2_3_4,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents_1_2_3_4::cash_and_cash_equivalents_at_beginning_of_year,single_period,only in 4Q25
+DBS,FS_CASHFLOW,cash_flows_from_financing_activities::redemption_of_subordinated_term_debts,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_investing_activities::capital_contribution_to_an_associate,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_investing_activities::dividends_from_associates,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_investing_activities::purchase_of_additional_stake_in_a_subsidiary_from_non_controlling_interest,single_period,only in 4Q25
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_gain_on_disposal_net_of_write_off_of_properties_and_other_fixed_asset,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_gain_on_disposal_net_of_write_off_of_properties_and_other_fixed_assets,near_duplicate,edit distance 1 from 'cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_gain_on_disposal_net_of_write_off_of_properties_and_other_fixed_asset'
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_gain_on_disposal_net_of_write_off_of_properties_and_other_fixed_assets,single_period,only in 2Q25
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_gain_on_disposal_of_interest_in_associates,single_period,only in 4Q25
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_loss_gain_on_disposal_net_of_write_off_of_properties_and_other_fixed_assets,single_period,only in 4Q25
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::increase_decrease_in::other_assets_and_derivatives_assets,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::increase_decrease_in::other_debt_securities,single_period,only in 2Q22
+DBS,FS_CASHFLOW,cash_flows_from_operating_activities::increase_decrease_in::other_liabilities_and_derivatives_liabilities,single_period,only in 2Q22
+DBS,FS_CASHFLOW,increase_decrease_in::cash_flows_from_operating_activities::tax_paid,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_COMPREHENSIVE_INCOME,net_profit,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::attributable_to::total_comprehensive_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::attributable_to::total_comprehensive_income_attributable,single_period,only in 2Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedge_movements::net_valuation_taken_to_equity,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedge_movements::taxation_relating_to_components_of_other_comprehensive_income,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedge_movements::transferred_to_income_statement,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedges::net_valuation_gains_losses_taken_to_equity,single_period,only in 2Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedges::net_valuation_gains_taken_to_equity,single_period,only in 4Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::debt_instruments_at_fair_value_through_other_comprehensive_income::gains_transferred_to_income_statement,single_period,only in 2Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::debt_instruments_at_fair_value_through_other_comprehensive_income::losses_gains_transferred_to_income_statement,single_period,only in 4Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::gains_losses_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income::net_valuation_taken_to_equity,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::gains_losses_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income::taxation_relating_to_components_of_other_comprehensive_income,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::gains_losses_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income::transferred_to_income_statement,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::other_comprehensive_income_of_associates,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::share_of_other_comprehensive_income_of_associates,single_period,only in 2Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::share_of_other_comprehensive_income_of_associates_and_joint_ventures,single_period,only in 4Q25
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_will_not_be_reclassified_to_income_statement::gains_losses_on_equity_instruments_classified_at_fair_value_through_other_comprehensive_income_net_of_tax,single_period,only in 2Q22
+DBS,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_will_not_be_reclassified_to_income_statement::total_comprehensive_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,,multi_panel_nonidentical,4 panels with non-identical row sets
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::chinese_yuan,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::chinese_yuan::current_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::chinese_yuan::fixed_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::chinese_yuan::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::chinese_yuan::others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::chinese_yuan::savings_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::hong_kong_dollar,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::hong_kong_dollar::current_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::hong_kong_dollar::fixed_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::hong_kong_dollar::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::hong_kong_dollar::others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::hong_kong_dollar::savings_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::others::current_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::others::fixed_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::others::savings_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::others::total,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::singapore_dollar,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::singapore_dollar::current_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::singapore_dollar::fixed_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::singapore_dollar::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::singapore_dollar::others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::singapore_dollar::savings_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar,single_period,only in 4Q25
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar::current_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar::fixed_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar::others,single_period,only in 4Q25
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::taiwan_dollar::savings_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::total,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::total::current_accounts,single_period,only in 2Q22
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::total::fixed_deposits,single_period,only in 2Q22
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::total::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::total::savings_accounts,single_period,only in 2Q22
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::us_dollar,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::us_dollar::current_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::us_dollar::fixed_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::us_dollar::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::us_dollar::others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_DEPOSITS,by_currency_and_product::us_dollar::savings_accounts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_LOANS,,multi_panel_nonidentical,4 panels with non-identical row sets
+DBS,FS_CUSTOMER_LOANS,gross,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_CUSTOMER_LOANS,less::net_total,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_DEBTS_ISSUED,commercial_papers,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,covered_bonds,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,covered_bonds,single_period,only in 2Q22
+DBS,FS_DEBTS_ISSUED,covered_bonds_and_other_secured_notes,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,due_after_1_year,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,due_within_1_year,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,negotiable_certificates_of_deposit,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,other_debt_securities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,senior_medium_term_notes,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_DEBTS_ISSUED,subordinated_term_debts,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,,multi_panel_nonidentical,6 panels with non-identical row sets
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::cost_of_share_based_payments,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::dividends_to_shareholders,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::draw_down_of_share_plan_reserves_upon_vesting_of_performance_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::net_profit,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::other_comprehensive_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::purchase_of_treasury_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::purchase_of_treasury_shares,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::redemption_of_perpetual_capital_securities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::shares_repurchased_and_cancelled,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_january::transfer_of_treasury_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_july,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_1_july,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_30_june,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_31_december,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,balance_at_31_december,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_COMPANY,dividends_paid_to_shareholders,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,dividends_paid_to_shareholders,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_COMPANY,draw_down_of_reserves_upon_vesting_of_performance_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,draw_down_of_reserves_upon_vesting_of_performance_shares,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_COMPANY,issue_of_shares_pursuant_to_scrip_dividend_scheme,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,issue_of_shares_pursuant_to_scrip_dividend_scheme,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_COMPANY,total_comprehensive_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_COMPANY,total_comprehensive_income,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_GROUP,,multi_panel_nonidentical,7 panels with non-identical row sets
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january::balance_at_30_june,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january::change_in_non_controlling_interests,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january::cost_of_share_based_payments,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january::other_movements,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_january::purchase_of_treasury_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::change_in_non_controlling_interests,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::cost_of_share_based_payments,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::dividends_to_shareholders,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::draw_down_of_share_plan_reserves_upon_vesting_of_performance_shares,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::net_profit,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::other_comprehensive_income,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::other_movements,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::purchase_of_treasury_shares,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::redemption_of_perpetual_capital_securities,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_1_july::shares_repurchased_and_cancelled,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,balance_at_31_december,single_period,only in 4Q25
+DBS,FS_EQUITY_CHANGES_GROUP,capital_contribution_from_non_controlling_interests,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,capital_contribution_from_non_controlling_interests,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_GROUP,dividends_paid_to_shareholders,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,dividends_paid_to_shareholders,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_GROUP,draw_down_of_reserves_upon_vesting_of_performance_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,draw_down_of_reserves_upon_vesting_of_performance_shares,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_GROUP,issue_of_shares_pursuant_to_scrip_dividend_scheme,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,issue_of_shares_pursuant_to_scrip_dividend_scheme,single_period,only in 2Q22
+DBS,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income,single_period,only in 2Q22
+DBS,FS_EXPENSES_DETAIL,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_EXPENSES_DETAIL,computerisation,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,occupancy,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,revenue_related,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,staff,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,staff_count2_at_period_end,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,staff_count_at_period_end,near_duplicate,edit distance 1 from 'staff_count2_at_period_end'
+DBS,FS_EXPENSES_DETAIL,staff_count_at_period_end,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_EXPENSES_DETAIL,staff_count_at_period_end,single_period,only in 2Q22
+DBS,FS_FAIR_VALUE_HIERARCHY,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_FAIR_VALUE_HIERARCHY,financial_liabilities_at_fvpl::liabilities::derivatives,single_period,only in 2Q22
+DBS,FS_FAIR_VALUE_HIERARCHY,fvoci2_financial_assets::assets::derivatives,single_period,only in 2Q22
+DBS,FS_FAIR_VALUE_HIERARCHY,fvoci2_financial_assets::assets::non_financial_assets,single_period,only in 4Q25
+DBS,FS_FEE_DETAIL,cards,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_FEE_DETAIL,fee_and_commission_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_FEE_DETAIL,investment_banking,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_FEE_DETAIL,less_fee_and_commission_expense,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_FEE_DETAIL,loan_related,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_FEE_DETAIL,transaction_services,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_FEE_DETAIL,wealth_management,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,,multi_panel_nonidentical,6 panels with non-identical row sets
+DBS,FS_INCOME_SELECTED,citi_integration,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,commercial_book_total_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_INCOME_SELECTED,commercial_book_total_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_INCOME_SELECTED,markets_trading_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::allowances_for_credit_and_other_losses,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_INCOME_SELECTED,markets_trading_income::allowances_for_credit_and_other_losses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::amortisation_of_intangible_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::expenses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::net_interest_income,near_duplicate,edit distance 2 from 'markets_trading_income::non_interest_income'
+DBS,FS_INCOME_SELECTED,markets_trading_income::net_profit,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::profit_before_allowances_and_amortisation,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::profit_before_tax,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::reported_net_profit,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::share_of_profits_losses_of_associates_and_jvs,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_SELECTED,markets_trading_income::total_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_INCOME_SELECTED,markets_trading_income::total_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_INCOME_STATUTORY,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_INCOME_STATUTORY,income::attributable_to::5_213_5_550_6_5_721_9_10_934_11_290_3,single_period,only in 4Q25
+DBS,FS_INCOME_STATUTORY,income::interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_INCOME_STATUTORY,income::interest_income,single_period,only in 2Q22
+DBS,FS_INCOME_STATUTORY,income::net_interest_income,near_duplicate,edit distance 2 from 'income::non_interest_income'
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances,single_period,only in 2Q22
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances::allowances_for_credit_and_other_losses,single_period,only in 2Q22
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances::attributable_to::non_controlling_interests,single_period,only in 2Q22
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances::attributable_to::shareholders,single_period,only in 2Q22
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances::income_tax_expense,single_period,only in 2Q22
+DBS,FS_INCOME_STATUTORY,income::profit_before_allowances_and_amortisation,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_INCOME_STATUTORY,income::total_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_NII_DETAIL,,multi_panel_nonidentical,4 panels with non-identical row sets
+DBS,FS_NII_DETAIL,average_interest_bearing_assets_iba,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_NII_DETAIL,average_interest_bearing_assets_iba,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NII_DETAIL,average_interest_bearing_assets_iba::less_treasury_markets,single_period,only in 4Q22
+DBS,FS_NII_DETAIL,commercial_book_average_iba,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NII_DETAIL,commercial_book_nii,near_duplicate,edit distance 1 from 'commercial_book_nim'
+DBS,FS_NII_DETAIL,commercial_book_nii,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NII_DETAIL,commercial_book_nim,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NII_DETAIL,interest_bearing_assets::customer_non_trade_loans,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_assets::customer_non_trade_loans,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_assets::interbank_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_assets::interbank_assets,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_assets::securities_and_others,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_assets::securities_and_others,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_assets::total,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_assets::total,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_assets::trade_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_assets::trade_assets,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::customer_deposits,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::customer_deposits,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::net_interest_income_margin,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::net_interest_income_margin,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::other_borrowings,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::other_borrowings,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::total,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_NII_DETAIL,interest_bearing_liabilities::total,single_period,only in 2Q22
+DBS,FS_NII_DETAIL,net_interest_income_nii,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NII_DETAIL,net_interest_margin,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NPA_COVERAGE,,multi_panel_nonidentical,10 panels with non-identical row sets
+DBS,FS_NPA_COVERAGE,by_collateral_type::secured_non_performing_assets_by_collateral_type::cash_deposits,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_collateral_type::secured_non_performing_assets_by_collateral_type::others,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_collateral_type::secured_non_performing_assets_by_collateral_type::properties,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_collateral_type::secured_non_performing_assets_by_collateral_type::shares_and_debentures,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_collateral_type::unsecured_non_performing_assets,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::building_and_construction,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::debt_securities_contingent_liabilities_and_others,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::financial_institutions_investment_and_holding_companies,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::general_commerce,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::housing_loans,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::manufacturing,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::others,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::professionals_and_private_individuals_excluding_housing_loans,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::total_non_performing_assets_npa,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::total_non_performing_loans,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_industry::transportation_storage_and_communications,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_loan_grading::non_performing_assets::doubtful,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_loan_grading::non_performing_assets::loss,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_loan_grading::non_performing_assets::substandard,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_loan_grading::of_which_restructured_assets::doubtful,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_loan_grading::of_which_restructured_assets::loss,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,by_loan_grading::of_which_restructured_assets::substandard,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,loss_allowance_coverage::ecl_stage_1_and_2_gp,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NPA_COVERAGE,loss_allowance_coverage::ecl_stage_3_sp,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NPA_COVERAGE,loss_allowance_coverage::total_allowances,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NPA_COVERAGE,loss_allowance_coverage::total_allowances_npa,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NPA_COVERAGE,loss_allowance_coverage::total_allowances_unsecured_npa,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_NPA_COVERAGE,of_which_restructured_assets::by_loan_grading::total,single_period,only in 4Q25
+DBS,FS_NPA_COVERAGE,secured_non_performing_assets_by_collateral_type::by_collateral_type::total,single_period,only in 4Q25
+DBS,FS_OFF_BALANCE_SHEET,commitments,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OFF_BALANCE_SHEET,contingent_liabilities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OFF_BALANCE_SHEET,financial_derivatives,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_OTHER_NONII_DETAIL,commercial_book,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,markets_trading,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,net_income_from_investment_securities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,net_trading_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_OTHER_NONII_DETAIL,net_trading_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,net_trading_income::customer_sales,single_period,only in 4Q25
+DBS,FS_OTHER_NONII_DETAIL,net_trading_income::non_customer_sales,single_period,only in 4Q25
+DBS,FS_OTHER_NONII_DETAIL,others_include_rental_income_and_gain_on_disposal_of_fixed_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,others_include_rental_income_and_gain_on_disposal_of_fixed_assets,single_period,only in 4Q25
+DBS,FS_OTHER_NONII_DETAIL,others_include_rental_income_and_gain_on_disposal_of_properties_and_fixed_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,others_include_rental_income_and_gain_on_disposal_of_properties_and_fixed_assets,single_period,only in 2Q25
+DBS,FS_OTHER_NONII_DETAIL,others_include_rental_income_share_of_profits_or_losses_of_associates_and_joint_ventures_and_gain_on_disposal_of_fixed_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_OTHER_NONII_DETAIL,others_include_rental_income_share_of_profits_or_losses_of_associates_and_joint_ventures_and_gain_on_disposal_of_fixed_assets,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,,multi_panel_nonidentical,7 panels with non-identical row sets
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::allowances_for_credit_and_other_losses,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::amortisation_of_intangible_assets,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::expenses,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::income_tax_expense_and_non_controlling_interests,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::net_fee_and_commission_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::net_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::other_non_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::profit_before_tax,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::selected_income_statement_items::total_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,1st_half::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q22
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::allowances_for_credit_and_other_losses,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::amortisation_of_intangible_assets,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::expenses,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::income_tax_expense_and_non_controlling_interests,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::net_fee_and_commission_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::net_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::other_non_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::profit_before_tax,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::selected_income_statement_items::total_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,2nd_half::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q22
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::goodwill_and_intangibles,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::gross_customer_loans,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::gross_customer_loans,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::non_current_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::non_current_assets,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::total_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::total_assets,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::total_assets_before_goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,30_jun::total_assets_before_goodwill_and_intangibles,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::goodwill_and_intangibles,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::gross_customer_loans,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::non_current_assets,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::total_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::total_assets,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::total_assets_before_goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_GEOGRAPHY,31_dec::total_assets_before_goodwill_and_intangibles,single_period,only in 2Q22
+DBS,FS_PERF_BY_GEOGRAPHY,year::amortisation_of_intangible_assets,single_period,only in 4Q25
+DBS,FS_PERF_BY_GEOGRAPHY,year::income_tax_expense,single_period,only in 4Q22
+DBS,FS_PERF_BY_GEOGRAPHY,year::income_tax_expense_and_non_controlling_interests,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,,multi_panel_nonidentical,10 panels with non-identical row sets
+DBS,FS_PERF_BY_SEGMENT,1st_half::allowances_for_credit_and_other_losses,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::amortisation_of_intangible_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::amortisation_of_intangible_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::expenses,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::net_fee_and_commission_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::net_interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::other_non_interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::profit_before_tax,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::allowances_for_credit_and_other_losses,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::amortisation_of_intangible_assets,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::expenses,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::net_fee_and_commission_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::net_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::other_non_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::profit_before_tax,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::selected_income_statement_items::total_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,1st_half::share_of_profits_losses_of_associates_and_jvs,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,1st_half::total_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::allowances_for_credit_and_other_losses,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::amortisation_of_intangible_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::amortisation_of_intangible_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::expenses,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::net_fee_and_commission_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::net_interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::other_non_interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::profit_before_tax,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::allowances_for_credit_and_other_losses,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::amortisation_of_intangible_assets,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::expenses,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::net_fee_and_commission_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::net_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::other_non_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::profit_before_tax,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::selected_income_statement_items::total_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,2nd_half::share_of_profits_losses_of_associates_and_jvs,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,2nd_half::total_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::capital_expenditure_for_1st_half,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::depreciation_for_1st_half,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::goodwill_and_intangible_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::goodwill_and_intangible_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,30_jun::goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets_before_goodwill_and_intangible_assets,near_duplicate,edit distance 1 from '30_jun::total_assets_before_goodwill_and_intangibles_assets'
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets_before_goodwill_and_intangible_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets_before_goodwill_and_intangible_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets_before_goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets_before_goodwill_and_intangibles_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_assets_before_goodwill_and_intangibles_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,30_jun::total_liabilities,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::capital_expenditure_for_2nd_half,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::depreciation_for_2nd_half,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::goodwill_and_intangible_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::goodwill_and_intangible_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,31_dec::goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::total_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::total_assets_before_goodwill_and_intangible_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::total_assets_before_goodwill_and_intangible_assets,single_period,only in 2Q25
+DBS,FS_PERF_BY_SEGMENT,31_dec::total_assets_before_goodwill_and_intangibles,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,31_dec::total_liabilities,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::allowances_for_credit_and_other_losses,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::allowances_for_credit_and_other_losses,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::expenses,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::expenses,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::net_fee_and_commission_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::net_fee_and_commission_income,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::net_interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::net_interest_income,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::other_non_interest_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::other_non_interest_income,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::profit_before_tax,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::profit_before_tax,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::allowances_for_credit_and_other_losses,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::amortisation_of_intangible_assets,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::expenses,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::net_fee_and_commission_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::net_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::other_non_interest_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::profit_before_tax,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::selected_income_statement_items::total_income,single_period,only in 4Q25
+DBS,FS_PERF_BY_SEGMENT,year::share_of_profits_losses_of_associates_and_jvs,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::share_of_profits_losses_of_associates_and_jvs,single_period,only in 4Q22
+DBS,FS_PERF_BY_SEGMENT,year::total_income,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PERF_BY_SEGMENT,year::total_income,single_period,only in 4Q22
+DBS,FS_PER_SHARE,,multi_panel_nonidentical,5 panels with non-identical row sets
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::earnings,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::earnings,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::earnings_excluding_one_time_items,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::earnings_excluding_one_time_items,single_period,only in 2Q22
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::net_book_value,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::reported_earnings,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::reported_earnings,ordinal_ambiguity,no still-current neighbour; appended at end
+DBS,FS_PER_SHARE,per_basic_and_diluted_share::reported_earnings,single_period,only in 1Q25
+DBS,FS_RATIOS_KEY,,multi_panel_nonidentical,6 panels with non-identical row sets
+DBS,FS_RATIOS_KEY,common_equity_tier_1_capital_adequacy_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,common_equity_tier_1_capital_adequacy_ratio,single_period,only in 1Q23
+DBS,FS_RATIOS_KEY,common_equity_tier_1_cet_1_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,cost_income_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,fully_phased_in_cet_1_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,net_interest_margin_commercial_book,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,net_interest_margin_group,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,npl_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,return_on_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,return_on_equity,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,return_on_tangible_equity,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,sp_for_loans_average_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,total_allowances_npa,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_RATIOS_KEY,total_allowances_unsecured_npa,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+DBS,FS_SHARE_CAPITAL,,multi_panel_nonidentical,3 panels with non-identical row sets
+DBS,FS_SHARE_CAPITAL,issued_ordinary_shares::issue_of_bonus_shares,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_SHARE_CAPITAL,issued_ordinary_shares::shares_issued_pursuant_to_scrip_dividend_scheme,single_period,only in 2Q22
+DBS,FS_SHARE_CAPITAL,treasury_shares::issued_ordinary_shares_net_of_treasury_shares,single_period,only in 2Q22
+DBS,FS_SHARE_CAPITAL,treasury_shares::purchase_of_treasury_shares,single_period,only in 4Q25
+DBS,FS_SHARE_CAPITAL,treasury_shares::shares_transferred_pursuant_to_dbsh_share_plan_dbsh_employee_share_plan,single_period,only in 2Q22
+DBS,FS_VOLUME_RATE,,multi_panel_nonidentical,5 panels with non-identical row sets
+DBS,FS_VOLUME_RATE,interest_expense::due_to_change_in_number_of_days,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_VOLUME_RATE,interest_expense::net_impact_on_net_interest_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_VOLUME_RATE,interest_expense::net_impact_on_net_interest_income::due_to_change_in_number_of_days,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+DBS,FS_VOLUME_RATE,interest_expense::net_impact_on_net_interest_income::due_to_change_in_number_of_days,single_period,only in 2Q22
+OCBC,FS_ALLOWANCES_DETAIL,,multi_panel_nonidentical,6 panels with non-identical row sets
+OCBC,FS_ALLOWANCES_DETAIL,allowances_write_back::allowances_for_loans_and_other_assets,single_period,only in 4Q25
+OCBC,FS_ALLOWANCES_DETAIL,allowances_write_back::impaired_loans,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_ALLOWANCES_DETAIL,allowances_write_back::impaired_loans::impaired_other_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_ALLOWANCES_DETAIL,allowances_write_back::impaired_loans::non_impaired_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_ALLOWANCES_DETAIL,allowances_write_back::impaired_loans::non_impaired_other_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_ALLOWANCES_DETAIL,impaired_loans::allowances_write_back::impaired_loans_subtotal,single_period,only in 4Q25
+OCBC,FS_ASSET_QUALITY,non_performing_assets_npas,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_ASSET_QUALITY,non_performing_assets_npas,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_ASSET_QUALITY,non_performing_assets_npas::non_performing_loan_npl_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_ASSET_QUALITY,non_performing_assets_npas::total_npa_coverage,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_AVG_BALANCE_SHEET,,multi_panel_nonidentical,6 panels with non-identical row sets
+OCBC,FS_AVG_BALANCE_SHEET,interest_bearing_liabilities::deposits_and_balances_of_banks,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_bearing_liabilities::deposits_of_non_bank_customers,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_bearing_liabilities::net_interest_income_margin_1,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_bearing_liabilities::other_borrowings,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_bearing_liabilities::total_interest_bearing_liabilities,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_earning_assets::loans_to_customers,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_earning_assets::other_interest_earning_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_earning_assets::placements_with_and_loans_to_banks,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_earning_assets::total_interest_earning_assets,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_AVG_BALANCE_SHEET,interest_expense::deposits_and_balances_of_banks,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_expense::deposits_of_non_bank_customers,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_expense::net_interest_income,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_expense::other_borrowings,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_expense::total_interest_expense,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_income::loans_to_customers,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_income::other_interest_earning_assets,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_income::placements_with_and_loans_to_banks,single_period,only in 4Q25
+OCBC,FS_AVG_BALANCE_SHEET,interest_income::total_interest_income,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::associates,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::cash_and_placements_with_central_banks,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::debt_and_equity_securities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::deferred_tax_assets,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::derivative_receivables,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::goodwill_and_other_intangible_assets,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::investment_property,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::investment_securities_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::loans_to_customers,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::net_asset_value_per_ordinary_share_s_1,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::other_assets,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::other_assets_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::other_government_treasury_bills_and_securities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::placements_with_and_loans_to_banks,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::property_plant_and_equipment,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::singapore_government_treasury_bills_and_securities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::subsidiaries,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::subtotal_assets,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,assets::total_assets,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,attributable_to_equity_holders_of_the_bank::equity::attributable_to_equity_holders_of_the_bank_total,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,attributable_to_equity_holders_of_the_bank::equity::non_controlling_interests,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,attributable_to_equity_holders_of_the_bank::equity::other_equity_instruments_issued_by_subsidiary,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,equity::attributable_to_equity_holders_of_the_bank::capital_reserves,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,equity::attributable_to_equity_holders_of_the_bank::fair_value_reserves,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,equity::attributable_to_equity_holders_of_the_bank::other_equity_instruments,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,equity::attributable_to_equity_holders_of_the_bank::revenue_reserves,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,equity::attributable_to_equity_holders_of_the_bank::share_capital,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,equity::attributable_to_equity_holders_of_the_bank::total_equity,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::current_tax_payables,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::debt_issued,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::deferred_tax_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::deposits_and_balances_of_banks,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::deposits_of_non_bank_customers,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::derivative_payables,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::due_to_associates,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::due_to_subsidiaries,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::insurance_contract_liabilities_and_other_liabilities_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::other_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::subtotal_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::total_equity_and_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::total_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,liabilities::trading_portfolio_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,off_balance_sheet_items::commitments,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,off_balance_sheet_items::contingent_liabilities,single_period,only in 4Q25
+OCBC,FS_BALANCE_STATUTORY,off_balance_sheet_items::derivative_financial_instruments,single_period,only in 4Q25
+OCBC,FS_CAPITAL_ADEQUACY,additional_tier_1_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,common_equity_tier_1_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,disclosed_reserves_others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,ordinary_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments::risk_weighted_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments::tier_1_capital,near_duplicate,edit distance 1 from 'regulatory_adjustments::tier_2_capital'
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments::tier_1_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments::tier_2_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CAPITAL_ADEQUACY,regulatory_adjustments::total_eligible_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CASHFLOW,adjustments_for_non_cash_items::cash_flows_from_operating_activities::operating_profit_before_change_in_operating_assets_and_liabilities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::buy_back_of_shares_for_holding_as_treasury_shares_cancellation,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::cash_and_cash_equivalents_at_31_december,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::changes_in_non_controlling_interests,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::dividends_and_distributions_paid,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_cash_used_in_provided_by_financing_activities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents::cash_and_cash_equivalents_at_1_january,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents::net_currency_translation_adjustments,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_proceeds_from_perpetual_capital_securities_issued,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::net_redemption_issue_of_other_debt_issued,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::proceeds_from_subordinated_debt_issued,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::proceeds_from_treasury_shares_transferred_sold_under_the_bank_s_employee_share_schemes,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::redemption_of_subordinated_debt_issued,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_financing_activities::repayments_of_lease_liabilities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::dividends_from_associates,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::net_cash_outflow_from_acquisition_of_subsidiary,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::net_cash_used_in_investing_activities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::proceeds_from_disposal_of_debt_and_equity_securities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::proceeds_from_disposal_of_interests_in_associates,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::proceeds_from_disposal_of_investment_securities_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::proceeds_from_disposal_of_property_plant_and_equipment,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::purchases_of_debt_and_equity_securities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::purchases_of_investment_securities_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_investing_activities::purchases_of_property_plant_and_equipment,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::allowances_for_loans_and_other_assets,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::amortisation_of_intangible_assets,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::change_in_hedging_transactions_fvtpl_1_securities_and_debt_issued,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::depreciation_of_property_plant_and_equipment_and_interest_expense_on_lease_liabilities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::net_gain_loss_on_disposal_of_interests_in_associates_subsidiaries,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::net_gain_on_disposal_of_government_debt_and_equity_securities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::net_gain_on_disposal_of_property_plant_and_equipment,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::others,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::share_based_costs,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::adjustments_for_non_cash_items::share_of_results_of_associates_net_of_tax,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::deposits_and_balances_of_banks,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::deposits_of_non_bank_customers,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::derivative_payables_and_other_liabilities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::derivative_receivables_and_other_assets,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::fvtpl_securities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::government_securities_and_treasury_bills,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::loans_to_customers,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::net_cash_provided_by_operating_activities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::net_change_in_other_assets_and_liabilities_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::placements_with_and_loans_to_banks,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::restricted_balances_with_central_banks,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::change_in_operating_assets_and_liabilities::trading_portfolio_liabilities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,cash_flows_from_operating_activities::profit_before_income_tax,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,change_in_operating_assets_and_liabilities::cash_flows_from_operating_activities::cash_provided_by_operating_activities,single_period,only in 4Q25
+OCBC,FS_CASHFLOW,change_in_operating_assets_and_liabilities::cash_flows_from_operating_activities::income_tax_paid_2,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,financial_assets_at_fvoci_2::reclassification_of_gains_to_income_statement::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_and_other_hedges,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,financial_assets_at_fvoci_2::reclassification_of_gains_to_income_statement::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::currency_translation_on_foreign_subsidiaries_and_overseas_branches,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,financial_assets_at_fvoci_2::reclassification_of_gains_to_income_statement::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::net_insurance_financial_result,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,financial_assets_at_fvoci_2::reclassification_of_gains_to_income_statement::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::other_comprehensive_income_losses_of_associates,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,items_that_will_not_be_reclassified_subsequently_to_income_statement::other_comprehensive_income::total_comprehensive_income_for_the_period_year_net_of_tax,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,items_that_will_not_be_reclassified_subsequently_to_income_statement::other_comprehensive_income::total_other_comprehensive_income_net_of_tax,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::financial_assets_at_fvoci_2::fair_value_gains_for_the_period_year,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::financial_assets_at_fvoci_2::reclassification_of_gains_to_income_statement::on_disposal,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::financial_assets_at_fvoci_2::reclassification_of_gains_to_income_statement::on_impairment,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::currency_translation_on_foreign_operations_attributable_to_non_controlling_interests,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::defined_benefit_plans_remeasurements,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::equity_instruments_at_fvoci_2_net_change_in_fair_value,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::own_credit,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::total_comprehensive_income_attributable_to::equity_holders_of_the_bank,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,other_comprehensive_income::total_comprehensive_income_attributable_to::non_controlling_interests,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,profit_for_the_period_year,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_COMPREHENSIVE_INCOME,profit_for_the_period_year,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,reclassification_of_gains_to_income_statement::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::financial_assets_at_fvoci_2::tax_on_net_movements,single_period,only in 4Q25
+OCBC,FS_COMPREHENSIVE_INCOME,total_comprehensive_income_attributable_to::other_comprehensive_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_COMPREHENSIVE_INCOME,total_comprehensive_income_attributable_to::other_comprehensive_income,single_period,only in 4Q25
+OCBC,FS_CUSTOMER_DEPOSITS,,multi_panel_nonidentical,4 panels with non-identical row sets
+OCBC,FS_CUSTOMER_DEPOSITS,deposits_and_balances_of_banks,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CUSTOMER_DEPOSITS,deposits_of_non_bank_customers,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CUSTOMER_DEPOSITS,deposits_of_non_bank_customers_total,single_period,only in 4Q25
+OCBC,FS_CUSTOMER_LOANS,,multi_panel_nonidentical,4 panels with non-identical row sets
+OCBC,FS_CUSTOMER_LOANS,allowances::net_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_CUSTOMER_LOANS,gross_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DEBTS_ISSUED,over_one_year,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,secured::covered_bonds,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,secured::total_debt_issued,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DEBTS_ISSUED,secured::total_debt_issued,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,total_debt_issued_by_maturity,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DEBTS_ISSUED,total_debt_issued_by_maturity,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,unsecured::commercial_paper,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,unsecured::fixed_and_floating_rate_notes,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,unsecured::structured_notes,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,unsecured::subordinated_debt,single_period,only in 4Q25
+OCBC,FS_DEBTS_ISSUED,within_one_year,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,,multi_panel_nonidentical,2 panels with non-identical row sets
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::3_0_perpetual_capital_securities,near_duplicate,edit distance 1 from 'distributions_for_other_equity_instruments::3_9_perpetual_capital_securities'
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::3_0_perpetual_capital_securities,near_duplicate,edit distance 2 from 'distributions_for_other_equity_instruments::4_05_perpetual_capital_securities'
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::3_0_perpetual_capital_securities,near_duplicate,edit distance 2 from 'distributions_for_other_equity_instruments::4_5_perpetual_capital_securities'
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::3_0_perpetual_capital_securities,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::3_9_perpetual_capital_securities,near_duplicate,edit distance 2 from 'distributions_for_other_equity_instruments::4_5_perpetual_capital_securities'
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::3_9_perpetual_capital_securities,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::4_05_perpetual_capital_securities,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::4_5_perpetual_capital_securities,near_duplicate,edit distance 1 from 'distributions_for_other_equity_instruments::4_05_perpetual_capital_securities'
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::4_5_perpetual_capital_securities,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::5_398_perpetual_capital_securities_issued_by_subsidiary,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,distributions_for_other_equity_instruments::total_dividends_and_distributions,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,final_dividend,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,final_dividend,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,final_dividend,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,interim_dividend,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,interim_dividend,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,interim_dividend,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,ordinary_dividend_payout_ratio,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,ordinary_dividend_payout_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,ordinary_dividend_payout_ratio,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,ordinary_dividends::final_tax_exempt_dividend_of_41_cents_paid_for_the_previous_financial_year_2024_tax_exempt_dividend_of_42_cents,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,ordinary_dividends::interim_tax_exempt_dividend_of_41_cents_paid_for_the_current_financial_year_2024_tax_exempt_dividend_of_44_cents,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,ordinary_dividends::special_tax_exempt_dividend_of_16_cents_paid_for_the_previous_financial_year_2024_nil,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,special_dividend,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,special_dividend,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,special_dividend,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,total_dividend,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,total_dividend,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,total_dividend,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,total_dividend_payout_ratio,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,total_dividend_payout_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,total_dividend_payout_ratio,single_period,only in 4Q25
+OCBC,FS_DIVIDENDS,total_ordinary_dividend,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_DIVIDENDS,total_ordinary_dividend,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_DIVIDENDS,total_ordinary_dividend,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,,multi_panel_nonidentical,2 panels with non-identical row sets
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::buy_back_of_shares_for_holding_as_treasury_shares,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::cancellation_of_shares,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::dividends_and_distributions,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::dsp_reserve_from_dividends_on_unvested_shares,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::other_comprehensive_income,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::other_comprehensive_income_losses,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::perpetual_capital_securities_issued,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::profit_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::share_based_payments_for_staff_costs,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::shares_issued_to_non_executive_directors,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::total_comprehensive_income_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::transfers,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_1_january::treasury_shares_transferred_sold,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_COMPANY,at_31_december,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,,multi_panel_nonidentical,2 panels with non-identical row sets
+OCBC,FS_EQUITY_CHANGES_GROUP,at_1_january,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_EQUITY_CHANGES_GROUP,at_1_january,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,contributions_by_and_distributions_to_owners::transactions_with_owners_recorded_directly_in_equity::changes_in_non_controlling_interest,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,contributions_by_and_distributions_to_owners::transactions_with_owners_recorded_directly_in_equity::total_contributions_by_and_distributions_to_owners,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,defined_benefit_plans_remeasurements::total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::own_credit,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EQUITY_CHANGES_GROUP,defined_benefit_plans_remeasurements::total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::own_credit,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_losses_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::cash_flow_and_other_hedges,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_losses_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::currency_translation_on_foreign_subsidiaries_and_overseas_branches,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_losses_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::net_insurance_financial_result,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_losses_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::other_comprehensive_income_of_associates,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::cash_flow_and_other_hedges,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::currency_translation_on_foreign_subsidiaries_and_overseas_branches,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::net_insurance_financial_result,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::other_comprehensive_losses_of_associates,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_will_not_be_reclassified_subsequently_to_income_statement::defined_benefit_plans_remeasurements::total_comprehensive_income_for_the_year::other_comprehensive_income::total_other_comprehensive_income_net_of_tax,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,items_that_will_not_be_reclassified_subsequently_to_income_statement::own_credit::total_comprehensive_income_for_the_year::other_comprehensive_income::total_other_comprehensive_income_net_of_tax,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::defined_benefit_plans_remeasurements::total_comprehensive_income_for_the_year,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EQUITY_CHANGES_GROUP,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::defined_benefit_plans_remeasurements::total_comprehensive_income_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::own_credit::total_comprehensive_income_for_the_year,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EQUITY_CHANGES_GROUP,other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::own_credit::total_comprehensive_income_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,reclassification_of_gains_losses_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::tax_on_net_movements,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,reclassification_of_gains_to_income_statement::total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::tax_on_net_movements,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::financial_assets_at_fvoci_fair_value_gains_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::financial_assets_at_fvoci_fair_value_gains_losses_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_losses_to_income_statement::on_disposal,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_losses_to_income_statement::on_impairment,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_to_income_statement::on_disposal,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::reclassification_of_gains_to_income_statement::on_impairment,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::currency_translation_on_foreign_operations_attributable_to_non_controlling_interests,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::defined_benefit_plans_remeasurements,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::defined_benefit_plans_remeasurements,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::other_comprehensive_income::items_that_will_not_be_reclassified_subsequently_to_income_statement::equity_instruments_at_fvoci_net_change_in_fair_value,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_year::profit_for_the_year,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::at_31_december::included_in_the_balances::share_of_reserves_of_associates,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::at_31_december,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::at_31_december,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::buy_back_of_shares_for_holding_as_treasury_shares,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::cancellation_of_shares,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::dividends_and_distributions,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::dsp_reserve_from_dividends_on_unvested_shares,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::perpetual_capital_securities_issued,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::share_based_payments_for_staff_costs,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::shares_issued_to_non_executive_directors,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::shares_transferred_to_dsp_trust,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::shares_vested_under_dsp_scheme,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::transfers,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::contributions_by_and_distributions_to_owners::treasury_shares_transferred_sold,single_period,only in 4Q25
+OCBC,FS_EQUITY_CHANGES_GROUP,transactions_with_owners_recorded_directly_in_equity::included_in_the_balances::at_31_december::share_of_reserves_of_associates,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,,multi_panel_nonidentical,6 panels with non-identical row sets
+OCBC,FS_EXPENSES_DETAIL,group_staff_strength::average,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,group_staff_strength::period_end,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::depreciation,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::depreciation,single_period,only in 2Q25
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::maintenance_and_rental,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::maintenance_and_rental,single_period,only in 2Q25
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::other_operating_expenses,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::other_operating_expenses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::other_operating_expenses,single_period,only in 2Q25
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::others,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::others,single_period,only in 2Q25
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::property_and_equipment_total,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::property_and_equipment_total,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::property_and_equipment_total,single_period,only in 2Q25
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::total_operating_expenses,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::total_operating_expenses,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,property_and_equipment::total_operating_expenses,single_period,only in 2Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::depreciation,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::maintenance_and_rental,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::other_operating_expenses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::other_operating_expenses,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::others,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::property_plant_and_equipment_subtotal,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::property_plant_and_equipment_total,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::property_plant_and_equipment_total,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::total_operating_expenses,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::total_operating_expenses,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,property_plant_and_equipment::total_other_operating_expenses,single_period,only in 4Q25
+OCBC,FS_EXPENSES_DETAIL,staff_costs,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_EXPENSES_DETAIL,staff_costs,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_assets_measured_at_fair_value::assets_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_assets_measured_at_fair_value::debt_and_equity_securities,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_assets_measured_at_fair_value::derivative_receivables,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_assets_measured_at_fair_value::government_treasury_bills_and_securities,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_assets_measured_at_fair_value::placements_with_and_loans_to_banks,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_assets_measured_at_fair_value::total,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_liabilities_measured_at_fair_value::debt_issued_other_deposits,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_liabilities_measured_at_fair_value::derivative_payables,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_liabilities_measured_at_fair_value::other_liabilities_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_liabilities_measured_at_fair_value::total,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,financial_liabilities_measured_at_fair_value::trading_portfolio_liabilities,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,non_financial_assets_measured_at_fair_value::associates,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,non_financial_assets_measured_at_fair_value::investment_properties_for_life_insurance_funds,single_period,only in 4Q25
+OCBC,FS_FAIR_VALUE_HIERARCHY,non_financial_assets_measured_at_fair_value::total,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::brokerage,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::credit_card,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::fee_and_commission_expense,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::fees_and_commissions_net,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::fund_management,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::gross_fee_and_commission_income_total,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::guarantees,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::investment_banking,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::loan_related,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::others,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::service_charges,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::trade_related_and_remittances,single_period,only in 4Q25
+OCBC,FS_FEE_DETAIL,gross_fee_and_commission_income::wealth_management_2,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,,multi_panel_nonidentical,14 panels with non-identical row sets
+OCBC,FS_HIGHLIGHTS_COMBINED,capital_adequacy_ratios_8::key_financial_ratios::leverage_ratio_5_8,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,cet1_car::fully_phased_in_final_basel_iii_reforms,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,cet1_car::transitional_final_basel_iii_reforms,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,credit_costs::customer_deposits,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_HIGHLIGHTS_COMBINED,credit_costs::customer_deposits,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,credit_costs::customer_loans_change_based_on_constant_currency_terms,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_HIGHLIGHTS_COMBINED,credit_costs::customer_loans_change_based_on_constant_currency_terms,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,credit_costs::npl_ratio,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_HIGHLIGHTS_COMBINED,credit_costs::npl_ratio,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,earnings_per_share_s_2::key_financial_ratios::net_asset_value_per_share,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::capital_adequacy_ratios_8::common_equity_tier,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::capital_adequacy_ratios_8::tier,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::capital_adequacy_ratios_8::total,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::common_equity_tier_1_capital_adequacy_ratio,single_period,only in 1Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::common_equity_tier_1_capital_adequacy_ratio_3,near_duplicate,edit distance 2 from 'key_financial_ratios::common_equity_tier_1_capital_adequacy_ratio'
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::common_equity_tier_1_capital_adequacy_ratio_3,single_period,only in 3Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::leverage_ratio,single_period,only in 1Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::leverage_ratio_3,near_duplicate,edit distance 2 from 'key_financial_ratios::leverage_ratio'
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::leverage_ratio_3,single_period,only in 3Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::liquidity_coverage_ratios_6_8::all_currency,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::liquidity_coverage_ratios_6_8::singapore_dollar,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::performance_ratios::return_on_assets_3,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::performance_ratios::return_on_equity_1_2,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::revenue_mix_efficiency_ratios::cost_to_income,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::revenue_mix_efficiency_ratios::loans_to_deposits,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::revenue_mix_efficiency_ratios::net_interest_margin,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::revenue_mix_efficiency_ratios::non_interest_income_to_total_income,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,key_financial_ratios::revenue_mix_efficiency_ratios::npl_ratio,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,liquidity_coverage_ratios_6_8::key_financial_ratios::net_stable_funding_ratio_7_8,single_period,only in 2Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,selected_income_statement_items::net_interest_income,near_duplicate,edit distance 2 from 'selected_income_statement_items::non_interest_income'
+OCBC,FS_HIGHLIGHTS_COMBINED,selected_income_statement_items::total_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_HIGHLIGHTS_COMBINED,selected_income_statement_items::total_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_HIGHLIGHTS_COMBINED,total_income::net_interest_income,near_duplicate,edit distance 2 from 'total_income::non_interest_income'
+OCBC,FS_HIGHLIGHTS_COMBINED,total_income::net_interest_income,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,total_income::non_interest_income,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,total_income::selected_income_statement_items::allowances_write_back_charge_for_non_impaired_assets,single_period,only in 4Q25
+OCBC,FS_HIGHLIGHTS_COMBINED,total_income::selected_income_statement_items::operating_expenses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,,multi_panel_nonidentical,3 panels with non-identical row sets
+OCBC,FS_INCOME_STATUTORY,allowances,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,allowances,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,associates,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,associates,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,attributable_to::operating_profit_before_allowances_and_amortisation::attributable_to_total,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,fees_and_commissions_net,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,fees_and_commissions_net,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,group_eps,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,group_eps,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,group_eps_s_annualised,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,group_eps_s_annualised,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,group_net_profit,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,group_roe,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,group_roe,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,group_roe_annualised,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,group_roe_annualised,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,insurance_service_results_from_general_insurance,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,insurance_service_results_from_general_insurance,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,insurance_service_results_from_life_insurance_2,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,insurance_service_results_from_life_insurance_2,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,interest_expense,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,interest_expense,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,interest_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,net_insurance_financial_result_from_life_insurance,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,net_insurance_financial_result_from_life_insurance,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,net_interest_income,near_duplicate,edit distance 2 from 'non_interest_income'
+OCBC,FS_INCOME_STATUTORY,net_interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,net_interest_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,net_investment_income_from_life_insurance,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,net_investment_income_from_life_insurance,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,net_trading_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,net_trading_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,non_interest_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_INCOME_STATUTORY,non_interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,non_interest_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,non_interest_income::income_from_life_and_general_insurance,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,non_interest_income::of_which::fees_and_commissions,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,non_interest_income::trading_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_expenses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,operating_expenses,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_after_allowances_and_amortisation,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::allowances_for_loans_and_other_assets,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::amortisation_of_intangible_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::amortisation_of_intangible_assets,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::attributable_to::equity_holders_of_the_bank,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::attributable_to::non_controlling_interests,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::earnings_per_share::basic,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::earnings_per_share::diluted,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::income_tax_expense,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,operating_profit_before_allowances_and_amortisation::share_of_results_of_associates_net_of_tax,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,other_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,other_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,profit_before_income_tax,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,profit_before_income_tax,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,profit_before_tax,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,profit_before_tax,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,profit_for_the_period_year,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,tax_and_nci,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,tax_and_nci,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,total_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_INCOME_STATUTORY,total_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_INCOME_STATUTORY,total_income,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,total_income::other_operating_expenses,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,total_income::staff_costs,single_period,only in 4Q25
+OCBC,FS_INCOME_STATUTORY,total_income::total_operating_expenses,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,,multi_panel_nonidentical,11 panels with non-identical row sets
+OCBC,FS_NPA_COVERAGE,classified_debt_securities::classified_contingent_liabilities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,classified_debt_securities::classified_contingent_liabilities,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,classified_debt_securities::npls_by_industry::classified_contingent_liabilities,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,greater_china::30_jun,single_period,only in 2Q25
+OCBC,FS_NPA_COVERAGE,group::30_jun,single_period,only in 2Q25
+OCBC,FS_NPA_COVERAGE,indonesia::30_jun,single_period,only in 2Q25
+OCBC,FS_NPA_COVERAGE,loans_and_advances::npls_by_industry::total_npls,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,loans_and_advances::total_npls,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,loans_and_advances::total_npls,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,malaysia::30_jun,single_period,only in 2Q25
+OCBC,FS_NPA_COVERAGE,npas_by_period_overdue::30_to_90_days,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,npas_by_period_overdue::less_than_30_days,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,npas_by_period_overdue::not_overdue,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,npas_by_period_overdue::over_180_days,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,npas_by_period_overdue::over_90_to_180_days,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,npls_by_industry::classified_debt_securities::total_npas,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::agriculture_mining_and_quarrying,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::building_and_construction,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::financial_institutions_investment_and_holding_companies,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::general_commerce,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::housing_loans,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::manufacturing,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::others,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::professionals_and_individuals,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,npls_by_industry::loans_and_advances::transport_storage_and_communication,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,other_asia_pacific::30_jun,single_period,only in 2Q25
+OCBC,FS_NPA_COVERAGE,rest_of_the_world::30_jun,single_period,only in 2Q25
+OCBC,FS_NPA_COVERAGE,restructured_loans::doubtful,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,restructured_loans::loss,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,restructured_loans::substandard,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_NPA_COVERAGE,restructured_loans::total,single_period,only in 4Q25
+OCBC,FS_NPA_COVERAGE,singapore::30_jun,single_period,only in 2Q25
+OCBC,FS_OTHER_NONII_DETAIL,,multi_panel_nonidentical,4 panels with non-identical row sets
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::brokerage,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::credit_card,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::fund_management,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::gross_fee_and_commission_income_subtotal,single_period,only in 4Q25
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::gross_fee_and_commission_income_total,single_period,only in 2Q25
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::guarantees,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::investment_banking,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::loan_related,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::service_charges,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::trade_related_and_remittances,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,gross_fee_and_commission_income::wealth_management,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_OTHER_NONII_DETAIL,income_from_life_and_general_insurance::sub_total,single_period,only in 4Q25
+OCBC,FS_OTHER_NONII_DETAIL,income_from_life_and_general_insurance::sub_total_income_from_life_and_general_insurance,single_period,only in 2Q25
+OCBC,FS_OTHER_NONII_DETAIL,other_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+OCBC,FS_OTHER_NONII_DETAIL,other_income::disposal_liquidation_of_subsidiaries_and_associates,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_OTHER_NONII_DETAIL,other_income::disposal_liquidation_of_subsidiaries_and_associates,single_period,only in 4Q25
+OCBC,FS_OTHER_NONII_DETAIL,other_income::disposal_of_investment_securities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_OTHER_NONII_DETAIL,other_income::disposal_of_property_plant_and_equipment,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_OTHER_NONII_DETAIL,other_income::dividends_from_fvoci_securities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_OTHER_NONII_DETAIL,other_income::rental_and_property_related_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_OTHER_NONII_DETAIL,other_income::sub_total,single_period,only in 4Q25
+OCBC,FS_OTHER_NONII_DETAIL,other_income::sub_total_other_income,single_period,only in 2Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,,multi_panel_nonidentical,2 panels with non-identical row sets
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::greater_china,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::indonesia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::malaysia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::operating_profit_before_allowances_and_amortisation_total,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::other_asia_pacific,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::rest_of_the_world,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,operating_profit_before_allowances_and_amortisation::singapore,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::greater_china,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::indonesia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::malaysia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::other_asia_pacific,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::profit_before_income_tax_total,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::rest_of_the_world,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,profit_before_income_tax::singapore,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::greater_china,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::indonesia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::malaysia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::other_asia_pacific,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::rest_of_the_world,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::singapore,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_assets::total_assets_total,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::greater_china,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::indonesia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::malaysia,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::other_asia_pacific,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::rest_of_the_world,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::singapore,single_period,only in 4Q25
+OCBC,FS_PERF_BY_GEOGRAPHY,total_income::total_income_total,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,,multi_panel_nonidentical,5 panels with non-identical row sets
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::elimination,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::segment_assets,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::segment_liabilities,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::total_assets,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::total_liabilities,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::unallocated_assets,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,at_31_december::unallocated_liabilities,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,global_consumer_private_banking,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_PERF_BY_SEGMENT,global_consumer_private_banking,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_PERF_BY_SEGMENT,global_markets,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_PERF_BY_SEGMENT,global_markets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_PERF_BY_SEGMENT,global_wholesale_banking,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_PERF_BY_SEGMENT,global_wholesale_banking,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_PERF_BY_SEGMENT,insurance,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_PERF_BY_SEGMENT,insurance,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_PERF_BY_SEGMENT,other_information::gross_non_bank_loans,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,other_information::non_performing_assets,single_period,only in 4Q25
+OCBC,FS_PERF_BY_SEGMENT,others,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_PERF_BY_SEGMENT,others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_PERF_BY_SEGMENT,profit_before_income_tax,ordinal_ambiguity,no still-current neighbour; appended at end
+OCBC,FS_PERF_BY_SEGMENT,profit_before_income_tax,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_RATIOS_KEY,capital_adequacy_ratios_8_9::common_equity_tier,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,capital_adequacy_ratios_8_9::leverage_ratio_5_8_9,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,capital_adequacy_ratios_8_9::tier,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,capital_adequacy_ratios_8_9::total,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,earnings_per_share_s_2::basic_earnings,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,earnings_per_share_s_2::diluted_earnings,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,earnings_per_share_s_2::net_asset_value_per_share,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,liquidity_coverage_ratios_6_8::all_currency,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,liquidity_coverage_ratios_6_8::net_stable_funding_ratio_7_8,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,liquidity_coverage_ratios_6_8::singapore_dollar,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,performance_ratios::return_on_assets_3,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,performance_ratios::return_on_equity_1_2,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,revenue_mix_efficiency_ratios::cost_to_income,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,revenue_mix_efficiency_ratios::loans_to_deposits,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,revenue_mix_efficiency_ratios::net_interest_margin,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,revenue_mix_efficiency_ratios::non_interest_income_to_total_income,single_period,only in 4Q25
+OCBC,FS_RATIOS_KEY,revenue_mix_efficiency_ratios::npl_ratio,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,issued_ordinary_shares::at_beginning_of_period_year,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,issued_ordinary_shares::cancellation_of_shares,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,shares_issued_to_non_executive_directors::issued_ordinary_shares::at_end_of_period_year,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::at_beginning_of_period_year,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::at_end_of_period_year,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::cancellation_of_shares,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::issued_share_capital_s_million,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_SHARE_CAPITAL,treasury_shares::issued_share_capital_s_million,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::share_buyback,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::share_option_scheme,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::share_purchase_plan,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::total_issued_ordinary_shares_excluding_treasury_shares,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+OCBC,FS_SHARE_CAPITAL,treasury_shares::total_issued_ordinary_shares_excluding_treasury_shares,single_period,only in 4Q25
+OCBC,FS_SHARE_CAPITAL,treasury_shares::treasury_shares_transferred_to_dsp_trust,single_period,only in 4Q25
+OCBC,FS_VOLUME_RATE,,multi_panel_nonidentical,5 panels with non-identical row sets
+OCBC,FS_VOLUME_RATE,interest_expense::due_to_change_in_number_of_days,single_period,only in 4Q25
+OCBC,FS_VOLUME_RATE,interest_expense::impact_on_net_interest_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_ALLOWANCES_DETAIL,general_allowance,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans::greater_china,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans::indonesia,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans::malaysia,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans::others,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans::singapore,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_loans::thailand,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::specific_allowance_on_securities_and_others,single_period,only in 4Q25
+UOB,FS_ALLOWANCES_DETAIL,specific_allowance::total,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::cash_balances_and_placements_with_central_banks,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::deferred_tax_assets,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::derivative_financial_assets,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::fixed_assets,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::intangible_assets,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::investment_in_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::investment_in_subsidiaries,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::investment_properties,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::investment_securities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::loans_to_customers,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::other_assets,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::other_government_treasury_bills_and_securities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::placements_and_balances_with_banks,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::placements_with_and_advances_to_subsidiaries,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::singapore_government_treasury_bills_and_securities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::total_assets,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,assets::trading_securities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,equity::equity_attributable_to_equity_holders_of_the_bank,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,equity::non_controlling_interests,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,equity::other_reserves,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,equity::retained_earnings,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,equity::share_capital_and_other_capital,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,equity::total_equity,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::bills_and_drafts_payable,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::debts_issued,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::deferred_tax_liabilities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::deposits_and_balances_of_banks,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::deposits_and_balances_of_customers,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::deposits_and_balances_of_subsidiaries,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::derivative_financial_liabilities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::other_liabilities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::tax_payable,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::total_equity_and_liabilities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,liabilities::total_liabilities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,off_balance_sheet_items::commitments,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,off_balance_sheet_items::contingent_liabilities,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,off_balance_sheet_items::financial_derivatives,single_period,only in 4Q25
+UOB,FS_BALANCE_STATUTORY,off_balance_sheet_items::net_asset_value_per_ordinary_share,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,additional_tier_1_capital_at1,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,additional_tier_1_capital_at1,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,capital_adequacy_ratios_car::cet,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,capital_adequacy_ratios_car::leverage_exposure,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,capital_adequacy_ratios_car::leverage_ratio,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,capital_adequacy_ratios_car::tier,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,capital_adequacy_ratios_car::total,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,common_equity_tier_1_capital_cet1,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,common_equity_tier_1_capital_cet1,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,disclosed_reserves_others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,disclosed_reserves_others,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,eligible_total_capital,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,perpetual_capital_securities_others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,perpetual_capital_securities_others,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,provisions_others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,provisions_others,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,regulatory_adjustments,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,regulatory_adjustments,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,risk_weighted_assets_rwa,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,share_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,share_capital,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,subordinated_notes,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,subordinated_notes,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,tier_1_capital,near_duplicate,edit distance 1 from 'tier_2_capital'
+UOB,FS_CAPITAL_ADEQUACY,tier_1_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,tier_1_capital,single_period,only in 4Q25
+UOB,FS_CAPITAL_ADEQUACY,tier_2_capital,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CAPITAL_ADEQUACY,tier_2_capital,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::allowance_for_credit_and_other_losses,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::amortisation_of_intangible_assets,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::depreciation_of_assets,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::fair_value_change_in_other_debts_issued,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::net_gain_on_disposal_of_assets,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::operating_profit_before_working_capital_changes,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::share_based_compensation,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::share_of_profit_of_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_CASHFLOW,adjustments_for::tax,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::cash_and_cash_equivalents_at_beginning_of_the_financial_year,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::cash_and_cash_equivalents_at_end_of_the_financial_year,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::change_in_non_controlling_interests,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::currency_translation_adjustments,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::distribution_on_perpetual_capital_securities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::dividends_paid_on_ordinary_shares,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::dividends_paid_to_non_controlling_interests,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::issuance_of_debts_issued,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::lease_payments,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::net_cash_used_in_provided_by_financing_activities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::net_decrease_in_cash_and_cash_equivalents,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::redemption_of_debts_issued,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::shares_re_purchased_cancelled,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_financing_activities::shares_re_purchased_held_in_treasury,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_investing_activities::capital_injection_into_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_investing_activities::disposal_of_properties_and_other_fixed_assets,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_investing_activities::distribution_from_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_investing_activities::net_cash_used_in_investing_activities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_investing_activities::proceeds_from_disposal_of_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_investing_activities::purchase_of_properties_and_other_fixed_assets,single_period,only in 4Q25
+UOB,FS_CASHFLOW,cash_flows_from_operating_activities::profit_for_the_financial_year,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::bills_and_drafts_payable,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::cash_generated_from_used_in_operations,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::deposits_and_balances_of_banks,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::deposits_and_balances_of_customers,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::government_treasury_bills_and_securities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::income_tax_paid,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::investment_securities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::loans_to_customers,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::net_cash_provided_by_used_in_operating_activities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::other_assets,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::other_liabilities,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::placements_and_balances_with_banks,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::restricted_balances_with_central_banks,single_period,only in 4Q25
+UOB,FS_CASHFLOW,change_in_working_capital::trading_securities,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::change_in_share_of_other_comprehensive_income_of_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::other_comprehensive_income_for_the_financial_period_net_of_tax,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::subtotal_net_gain_loss_on_debt_instruments,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::attributable_to::total_comprehensive_income_attributable_to_equity_holders_and_non_controlling_interests,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::attributable_to::total_comprehensive_income_for_the_financial_period_net_of_tax::equity_holders_of_the_bank,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::attributable_to::total_comprehensive_income_for_the_financial_period_net_of_tax::non_controlling_interests,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::currency_translation_adjustments,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::change_in_allowance_for_expected_credit_losses,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::net_valuation_taken_to_equity,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::related_tax,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::total_comprehensive_income_for_the_financial_period_net_of_tax,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::total_comprehensive_income_for_the_financial_period_net_of_tax,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_may_be_subsequently_reclassified_to_income_statement::net_gain_loss_on_debt_instruments_classified_at_fair_value_through_other_comprehensive_income_and_cash_flow_hedge::transferred_to_income_statement,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_will_not_be_reclassified_to_income_statement::fair_value_changes_on_financial_liabilities_designated_at_fair_value_due_to_the_bank_s_own_credit_risk,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_will_not_be_reclassified_to_income_statement::net_gain_loss_on_equity_instruments_at_fair_value_through_other_comprehensive_income,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_will_not_be_reclassified_to_income_statement::related_tax_on_items_at_fair_value_through_other_comprehensive_income,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_will_not_be_reclassified_to_income_statement::remeasurement_of_defined_benefit_obligation,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,other_comprehensive_income_that_will_not_be_reclassified_to_income_statement::subtotal_other_comprehensive_income_that_will_not_be_reclassified,single_period,only in 4Q25
+UOB,FS_COMPREHENSIVE_INCOME,profit_for_the_financial_period,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_COMPREHENSIVE_INCOME,profit_for_the_financial_period,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::group_loan_deposit_ratio,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::indonesian_rupiah,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::malaysian_ringgit,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::others,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::singapore_dollar,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::singapore_dollar_loan_deposit_ratio,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::thai_baht,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::total,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::us_dollar,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_currency::us_dollar_loan_deposit_ratio,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_maturity::over_1_year_but_within_3_years,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_maturity::over_3_years_but_within_5_years,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_maturity::over_5_years,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_maturity::total,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_maturity::within_1_year,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_product::current_accounts,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_product::fixed_deposits,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_product::others,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_product::savings_deposits,single_period,only in 4Q25
+UOB,FS_CUSTOMER_DEPOSITS,by_product::total,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::indonesian_rupiah,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::malaysian_ringgit,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::others,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::singapore_dollar,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::thai_baht,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::total_gross,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_currency::us_dollar,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::greater_china,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::indonesia,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::malaysia,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::others,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::singapore,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::thailand,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_geography::total_gross,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::building_and_construction,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::financial_institutions_investment_and_holding_companies,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::general_commerce,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::housing_loans,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::manufacturing,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::others,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::professionals_and_private_individuals,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::total_gross,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_industry::transport_storage_and_communication,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_maturity::over_1_year_but_within_3_years,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_maturity::over_3_years_but_within_5_years,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_maturity::over_5_years,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_maturity::total_gross,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,by_maturity::within_1_year,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,gross_customer_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CUSTOMER_LOANS,gross_customer_loans,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,less_general_allowance,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_CUSTOMER_LOANS,less_general_allowance,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CUSTOMER_LOANS,less_general_allowance,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,less_general_allowance::specific_allowance,single_period,only in 4Q25
+UOB,FS_CUSTOMER_LOANS,net_customer_loans,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_CUSTOMER_LOANS,net_customer_loans,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,secured::covered_bonds,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,secured::due_after_1_year,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,secured::due_within_1_year,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,secured::total,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,unsecured::commercial_papers,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,unsecured::fixed_and_floating_rate_notes,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,unsecured::others,single_period,only in 4Q25
+UOB,FS_DEBTS_ISSUED,unsecured::subordinated_debts,single_period,only in 4Q25
+UOB,FS_DIVIDENDS,ordinary_dividends::final_dividend_of_92_cents_2024_85_cents_and_special_dividend_of_50_cents_2024_nil_tax_exempt_per_share_paid_in_respect_of_prior_financial_year,single_period,only in 4Q25
+UOB,FS_DIVIDENDS,ordinary_dividends::interim_dividend_of_85_cents_2024_88_cents_tax_exempt_per_share_paid_in_respect_of_the_financial_year,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,,multi_panel_nonidentical,2 panels with non-identical row sets
+UOB,FS_EQUITY_CHANGES_GROUP,balance_at_1_january,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,balance_at_31_december,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,change_in_non_controlling_interests,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,dividends,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,other_comprehensive_income_for_the_financial_year,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,profit_for_the_financial_year,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,share_based_compensation,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,shares_issued_under_share_based_compensation_plan,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,shares_re_purchased_cancelled,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,shares_re_purchased_held_in_treasury,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,total_comprehensive_income_for_the_financial_year,single_period,only in 4Q25
+UOB,FS_EQUITY_CHANGES_GROUP,transfers,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,of_which::total::employees_number,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::it_related,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::occupancy_related,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::other_operating_expenses_total,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::other_operating_expenses_total,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::others,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::revenue_related,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::total,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_EXPENSES_DETAIL,other_operating_expenses::total,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,staff_costs,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_EXPENSES_DETAIL,staff_costs,single_period,only in 4Q25
+UOB,FS_EXPENSES_DETAIL,total::of_which::depreciation_of_assets,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,,multi_panel_nonidentical,2 panels with non-identical row sets
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::central_banks,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::derivative_financial_assets,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::derivative_financial_assets,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::loans_to_customers,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::other_government_treasury_bills_and_securities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::placements_and_balances_with_banks,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::singapore_government_treasury_bills_and_securities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,cash_balances_and_placements_with_central_banks::trading_securities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,dec::assets::derivative_financial_assets,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_FAIR_VALUE_HIERARCHY,dec::assets::derivative_financial_assets,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,dec::assets::investment_securities::debt,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,dec::assets::investment_securities::equity,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,dec::assets::trading_securities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,dec::liabilities::derivative_financial_liabilities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::cash_balances_and_placements_with_central_banks::derivative_financial_assets::debt,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::cash_balances_and_placements_with_central_banks::derivative_financial_assets::equity,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::other_assets,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_assets_carried_at_fair_value,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_assets_carried_at_fair_value,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_assets_carried_at_fair_value::debts_issued,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_assets_carried_at_fair_value::deposits_and_balances_of_banks_and_customers,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_assets_carried_at_fair_value::derivative_financial_liabilities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_assets_carried_at_fair_value::other_liabilities,single_period,only in 4Q25
+UOB,FS_FAIR_VALUE_HIERARCHY,investment_securities::total_financial_liabilities_carried_at_fair_value,single_period,only in 4Q25
+UOB,FS_INCOME_SELECTED,,multi_panel_nonidentical,2 panels with non-identical row sets
+UOB,FS_INCOME_SELECTED,add_associate_and_joint_ventures,near_duplicate,edit distance 1 from 'add_associates_and_joint_ventures'
+UOB,FS_INCOME_SELECTED,add_associate_and_joint_ventures,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,add_associate_and_joint_ventures,single_period,only in 1Q25
+UOB,FS_INCOME_SELECTED,add_associates_and_joint_ventures,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,add_associates_and_joint_ventures,single_period,only in 3Q25
+UOB,FS_INCOME_SELECTED,less_amortisation_of_intangible_assets,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_INCOME_SELECTED,less_amortisation_of_intangible_assets,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,less_amortisation_of_intangible_assets::allowance_for_credit_and_other_losses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,less_total_expenses,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,net_fee_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,net_interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,operating_profit,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,other_non_interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_SELECTED,total_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,attributable_to::operating_profit_before_allowance_and_amortisation,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_INCOME_STATUTORY,attributable_to::operating_profit_before_allowance_and_amortisation,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,attributable_to::total_operating_income::equity_holders_of_the_bank,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,attributable_to::total_operating_income::non_controlling_interests,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,earnings_per_share::operating_profit_before_allowance_and_amortisation::basic,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,earnings_per_share::operating_profit_before_allowance_and_amortisation::diluted,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,interest_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,less_interest_expense,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,less_interest_expense,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,net_fee_and_commission_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,net_fee_and_commission_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,net_gain_loss_from_investment_securities,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,net_gain_loss_from_investment_securities,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,net_interest_income,near_duplicate,edit distance 2 from 'non_interest_income'
+UOB,FS_INCOME_STATUTORY,net_interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,net_interest_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,net_trading_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,net_trading_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,non_interest_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,non_interest_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,operating_profit_after_allowance_and_amortisation,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,operating_profit_before_allowance_and_amortisation::allowance_for_credit_and_other_losses,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,operating_profit_before_allowance_and_amortisation::less_amortisation_of_intangible_assets,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,operating_profit_before_allowance_and_amortisation::less_tax,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,operating_profit_before_allowance_and_amortisation::share_of_profit_of_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,other_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,other_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,profit_before_tax,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,profit_for_the_financial_period,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,rental_income,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_INCOME_STATUTORY,rental_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,total_operating_income,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_INCOME_STATUTORY,total_operating_income,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,total_operating_income::less_staff_costs,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,total_operating_income::other_operating_expenses,single_period,only in 4Q25
+UOB,FS_INCOME_STATUTORY,total_operating_income::total_operating_expenses,single_period,only in 4Q25
+UOB,FS_INCOME_TAX,current_income_tax_expense,single_period,only in 4Q25
+UOB,FS_INCOME_TAX,deferred_income_tax_expense,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,,multi_panel_nonidentical,2 panels with non-identical row sets
+UOB,FS_NPA_COVERAGE,by_ageing::current,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_ageing::over_180_days,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_ageing::over_90_to_180_days,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_ageing::total,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_ageing::within_90_days,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_grading::doubtful,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_grading::loss,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_grading::substandard,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_grading::total,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type::fixed_deposits,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type::others,ancestor_is_also_leaf,this leaf's token is an ancestor of another leaf here
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type::others,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type::properties,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,by_security::secured_by_collateral_type::shares_and_debentures,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,debt_securities_and_others,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_NPA_COVERAGE,debt_securities_and_others,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,greater_china::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,greater_china::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,group_npa::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,group_npa::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,group_npl::dec,near_duplicate,edit distance 1 from 'group_npa::dec'
+UOB,FS_NPA_COVERAGE,group_npl::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,group_npl::jun,near_duplicate,edit distance 1 from 'group_npa::jun'
+UOB,FS_NPA_COVERAGE,group_npl::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,indonesia::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,indonesia::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,loans_npl,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_NPA_COVERAGE,loans_npl,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,malaysia::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,malaysia::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,non_performing_assets_npa,orphan_parent,some instance printed indented but had NULL row_parent (loader total/note skip) — keys shallower than printed
+UOB,FS_NPA_COVERAGE,non_performing_assets_npa,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,others::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,others::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,secured_by_collateral_type::by_security::total,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,secured_by_collateral_type::by_security::unsecured,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,singapore::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,singapore::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,thailand::dec,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,thailand::jun,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,total_allowance::general,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,total_allowance::specific,single_period,only in 4Q25
+UOB,FS_NPA_COVERAGE,total_allowance::total,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,allowance_for_write_back_of_credit_and_other_losses,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,amortisation_of_intangible_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,intangible_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,net_interest_income,near_duplicate,edit distance 2 from 'non_interest_income'
+UOB,FS_PERF_BY_GEOGRAPHY,net_interest_income,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,non_interest_income,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,operating_expenses,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,operating_income,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,profit_before_tax,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,share_of_profit_loss_of_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,total_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_GEOGRAPHY,total_assets_before_intangible_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,,multi_panel_nonidentical,5 panels with non-identical row sets
+UOB,FS_PERF_BY_SEGMENT,allowance_for_write_back_of_credit_and_other_losses,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,amortisation_of_intangible_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_30_june::intangible_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_30_june::investment_in_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_30_june::segment_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_30_june::segment_liabilities,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_30_june::total_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::intangible_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::investment_in_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::other_information::gross_customer_loans,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::other_information::non_performing_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::segment_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::segment_liabilities,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,at_31_december::total_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,net_interest_income,near_duplicate,edit distance 2 from 'non_interest_income'
+UOB,FS_PERF_BY_SEGMENT,net_interest_income,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,non_interest_income,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,operating_expenses,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,operating_income,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,other_information::additions_to_fixed_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,other_information::depreciation_of_assets,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,profit_for_the_financial_year,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,profit_loss_before_tax,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,share_of_profit_loss_of_associates_and_joint_ventures,single_period,only in 4Q25
+UOB,FS_PERF_BY_SEGMENT,tax,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,ordinary_shares::balance_at_beginning_of_period,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,ordinary_shares::balance_at_end_of_period,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,ordinary_shares::shares_re_purchased_cancelled,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::2_25_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_15_january,near_duplicate,edit distance 2 from 'treasury_shares::5_25_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_19_january'
+UOB,FS_SHARE_CAPITAL,treasury_shares::2_25_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_15_january,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::2_55_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_22_june,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::3_58_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_17_july,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::4_25_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_4_july,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::5_25_non_cumulative_non_convertible_perpetual_capital_securities_issued_on_19_january,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::balance_at_beginning_of_period,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::balance_at_end_of_period,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::ordinary_share_capital,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::share_capital_and_other_capital_of_the_bank_and_the_group,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::shares_issued_under_share_based_compensation_plan,single_period,only in 4Q25
+UOB,FS_SHARE_CAPITAL,treasury_shares::shares_re_purchased_held_in_treasury,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_expense::change_in_number_of_days,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_expense::customer_deposits,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_expense::interbank_balances_others,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_expense::net_interest_income,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_expense::total,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_income::customer_loans,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_income::interbank_balances,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_income::securities,single_period,only in 4Q25
+UOB,FS_VOLUME_RATE,interest_income::total,single_period,only in 4Q25

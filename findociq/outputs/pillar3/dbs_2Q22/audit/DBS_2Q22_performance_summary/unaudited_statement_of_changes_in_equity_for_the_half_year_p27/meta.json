@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_statement_of_changes_in_equity_for_the_half_year_p27",
+  "section_ids": [
+    "unaudited_statement_of_changes_in_equity_for_the_half_year"
+  ],
+  "section_titles": [
+    "UNAUDITED STATEMENT OF CHANGES IN EQUITY FOR THE HALF YEAR ENDED 30 JUNE 2022"
+  ],
+  "pages": [
+    27
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 16,
+  "usage": {
+    "ts": "2026-07-26T09:06:34",
+    "script": "extract_to_excel",
+    "label": "unaudited_statement_of_changes_in_equity_for_the_half_year_p27",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3977,
+    "output_tokens": 3153,
+    "thinking_tokens": 0,
+    "total_tokens": 7130,
+    "est_cost_usd": 0.03434,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Transfer of treasury shares' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Draw-down of reserves upon vesting of pe' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Cost of share-based payments' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Dividends paid to shareholders\u00b9' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Total comprehensive income' [UNAUDITED STATEMENT OF CHANGES]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

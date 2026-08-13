@@ -1,0 +1,67 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,88.02,69.19,To OurShareholders,9.96,True,left,False
+1,154.53,69.0,Unaudited Financial Results for the Half Year Ended 30 June 2022,9.96,True,left,True
+1,238.32,69.08,Ordinary Dividend,9.96,True,left,False
+1,337.38,69.35,Closure of Books,9.95,True,left,False
+1,436.26,69.24,ScripDividendScheme,9.95,True,left,False
+1,568.35,69.06,Peter Yeoh Secretary,9.95,False,left,False
+1,605.94,69.35,"Singapore, 3August 2022",9.96,False,left,True
+11,138.24,69.53,1. General,9.0,True,left,False
+11,260.05,69.19,2. Basisofpreparation,9.0,True,left,False
+11,284.34,86.09,2.1 Statementofcompliance,9.0,True,center,False
+11,371.72,86.13,2.2 Basisofpresentation,9.0,True,center,False
+11,458.59,86.17,2.3 Useofestimatesandjudgements,9.0,True,center,False
+11,594.61,85.26,Impairmentoffinancialassets,9.0,True,center,False
+12,91.83,69.1,2. Basisofpreparation(continued),9.0,True,left,False
+12,116.75,86.09,2.3 Useofestimatesandjudgements(continued),9.0,True,center,False
+12,167.08,85.47,Allowancesfornon-credit-impairedloanstocustomers,9.0,False,center,False
+12,477.23,85.75,Allowancesforcredit-impairedloanstocustomers,9.0,False,center,False
+13,91.7,68.89,2. Basisofpreparation(continued),9.0,True,left,False
+13,116.54,85.84,2.4 Significantaccountingpolicies,9.0,True,center,False
+13,398.96,68.74,3. Net interestincome,9.0,True,left,False
+13,604.9,68.41,4. Profit from lifeinsurance,9.0,True,left,False
+14,93.19,70.91,5.Feesandcommissions(net),9.0,True,left,False
+14,319.63,68.79,6. Other income,9.0,True,left,False
+14,438.55,70.91,7.Otheroperatingexpenses,9.0,True,left,False
+14,573.37,69.27,8. Allowancesfor loans and other assets,9.0,True,left,False
+15,91.82,69.11,9. Dividends/distributions,9.0,True,left,False
+15,253.67,69.43,10. Share capital,9.0,True,left,False
+16,93.19,70.91,11.Depositsandbalancesofnon-bankcustomersandbanks,9.0,True,left,False
+16,241.75,69.62,12. Debt issued,9.0,True,left,False
+16,443.5,69.8,13. Loans tocustomers,9.0,True,left,False
+17,91.92,69.37,14. Segmentinformation,9.0,True,left,False
+17,115.47,83.76,14.1 Business segments,9.0,True,center,False
+18,91.94,69.45,14.Segmentinformation (continued),9.0,True,left,False
+18,113.94,85.06,14.1Businesssegments(continued),9.0,True,center,False
+19,91.81,69.23,14.Segmentinformation (continued),9.0,True,left,False
+19,112.69,83.24,14.1 Business segments (continued),9.0,True,center,False
+19,171.73,82.93,Global Consumer/Private Banking,9.0,True,center,False
+19,283.66,83.16,Global Wholesale Banking,9.0,True,center,False
+19,382.51,83.27,Global Treasury and Markets,9.0,True,center,False
+19,482.88,83.49,Insurance,9.0,True,center,False
+19,560.48,83.35,Others,9.0,True,center,False
+20,91.89,69.35,14.Segmentinformation (continued),9.0,True,left,False
+20,115.98,85.06,14.2Geographicalsegments,9.0,True,center,False
+21,91.87,69.19,15. Fair values offinancialinstruments,9.0,True,left,False
+21,112.92,83.43,15.1 Valuationgovernance framework,9.0,True,center,False
+21,371.94,85.31,Bid Offer Adjustments,9.0,False,center,False
+21,408.7,85.36,Model Adjustments,9.0,False,center,False
+21,446.0,85.31,Day 1 Profitor LossAdjustments,9.0,False,center,False
+21,545.69,85.45,Credit Valuation Adjustments,9.0,False,center,False
+21,594.61,85.55,Collateral Valuation Adjustments,9.0,False,center,False
+21,644.68,85.55,Parameter Uncertainty Adjustments,9.0,False,center,False
+22,94.21,69.25,15.Fair values offinancialinstruments (continued),9.0,True,left,False
+22,115.29,83.57,15.2 Fair values,9.0,True,center,False
+22,223.25,85.76,Financial assets,9.0,True,center,False
+22,371.93,85.9,Financial liabilities,9.0,True,center,False
+22,508.4,83.48,15.3 Fair value hierarchy,9.0,True,center,False
+23,91.68,69.26,15.Fair values offinancialinstruments (continued),9.0,True,left,False
+23,112.65,83.43,15.3 Fair value hierarchy (continued),9.0,True,center,False
+26,91.69,69.35,15.Fair values offinancialinstruments (continued),9.0,True,left,False
+28,91.67,69.0,OTHER INFORMATION,11.03,True,left,False
+28,116.67,69.33,1. Review,9.0,True,left,False
+28,203.51,68.72,2. Review of the performanceof the Group for the six-month periodended30June2022,9.0,True,left,False
+28,253.56,68.83,3. Dividendinformation,9.0,True,left,False
+28,303.02,68.79,4. Interested person transactions,9.0,True,left,False
+28,365.5,69.18,5. Undertakingfrom directorsand executive officers,9.0,True,left,False
+29,83.58,68.4,,0.0,False,center,False

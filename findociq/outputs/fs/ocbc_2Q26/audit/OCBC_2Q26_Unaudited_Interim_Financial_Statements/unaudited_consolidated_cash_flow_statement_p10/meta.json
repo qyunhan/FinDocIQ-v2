@@ -1,0 +1,42 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_cash_flow_statement_p10",
+  "section_ids": [
+    "unaudited_consolidated_cash_flow_statement"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT"
+  ],
+  "pages": [
+    10
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 50,
+  "usage": {
+    "ts": "2026-08-07T04:55:45",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_cash_flow_statement_p10",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3922,
+    "output_tokens": 5724,
+    "thinking_tokens": 0,
+    "total_tokens": 9646,
+    "est_cost_usd": 0.0574,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

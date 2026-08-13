@@ -1,0 +1,541 @@
+{
+  "tables": [
+    {
+      "title": "Allowance for Credit and Other Losses",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2025",
+          "leaf": "$m"
+        },
+        {
+          "group": "2024",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        },
+        {
+          "group": "2H25",
+          "leaf": "$m"
+        },
+        {
+          "group": "2H24",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        },
+        {
+          "group": "1H25",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "General allowance 1",
+          "values": [
+            {
+              "value": "856",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(148)",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "743",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(224)",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Specific allowance 2",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Specific allowance on loans 3",
+          "values": [
+            {
+              "value": "1,139",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,063",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "710",
+              "cell_state": "reported"
+            },
+            {
+              "value": "735",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "429",
+              "cell_state": "reported"
+            },
+            {
+              "value": "65",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "152",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Malaysia",
+          "values": [
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(56)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(98)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(98)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Thailand",
+          "values": [
+            {
+              "value": "339",
+              "cell_state": "reported"
+            },
+            {
+              "value": "462",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "188",
+              "cell_state": "reported"
+            },
+            {
+              "value": "274",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(31)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Indonesia",
+          "values": [
+            {
+              "value": "59",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(55)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Greater China 4",
+          "values": [
+            {
+              "value": "353",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "75",
+              "cell_state": "reported"
+            },
+            {
+              "value": "274",
+              "cell_state": "reported"
+            },
+            {
+              "value": "127",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "78",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Others",
+          "values": [
+            {
+              "value": "204",
+              "cell_state": "reported"
+            },
+            {
+              "value": "273",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(25)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105",
+              "cell_state": "reported"
+            },
+            {
+              "value": "245",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(57)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Specific allowance on securities and others",
+          "values": [
+            {
+              "value": "47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(21)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "2,042",
+              "cell_state": "reported"
+            },
+            {
+              "value": "926",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,474",
+              "cell_state": "reported"
+            },
+            {
+              "value": "531",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "569",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 4,
+            "indent": 0,
+            "label_clean": "General allowance"
+          },
+          {
+            "line_id": 5,
+            "indent": 0,
+            "label_clean": "Specific allowance"
+          },
+          {
+            "line_id": 6,
+            "indent": 1,
+            "label_clean": "Specific allowance on loans 1,"
+          },
+          {
+            "line_id": 7,
+            "indent": 2,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 8,
+            "indent": 2,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 9,
+            "indent": 2,
+            "label_clean": "Thailand"
+          },
+          {
+            "line_id": 10,
+            "indent": 2,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 11,
+            "indent": 2,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 12,
+            "indent": 2,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Specific allowance on securities and others"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Total 2,"
+          }
+        ],
+        "title_clean": "Allowance for Credit and Other Losses",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

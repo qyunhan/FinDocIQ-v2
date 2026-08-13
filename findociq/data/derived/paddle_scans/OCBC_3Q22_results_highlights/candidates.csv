@@ -1,0 +1,97 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,372.9,61.27,ThirdQuarter2022ResultsHighlights,31.9,True,left,False
+1,416.88,61.27,4November2022,24.0,True,left,True
+2,25.98,35.06,Agenda,31.9,True,left,False
+2,163.0,69.07,FinancialHighlights,18.0,False,center,False
+2,272.7,69.07,GroupNetProfit,18.0,False,center,False
+2,383.08,69.07,GroupPerformanceTrends,18.0,False,center,False
+2,519.72,943.03,2,13.9,False,right,False
+4,32.14,34.94,3Q22Performance,28.1,True,left,False
+4,148.71,46.92,GroupNetProfittime,25.0,False,center,False
+4,194.94,46.92,S$1.60b,22.1,True,center,False
+5,32.91,34.62,Financial Highlights,28.1,True,left,False
+5,81.42,39.52,Banking,13.92,True,left,False
+5,81.67,40.34,BankingWealthManagement,13.9,True,left,False
+5,90.42,727.42,■Recordquarterlybanking,15.1,False,center,False
+5,108.42,749.76,operationsnetprofit,15.1,False,center,False
+5,138.4,727.42,■WMincomeupYoYandQoQ,15.1,False,right,False
+5,168.44,727.42,■WMAUMsteadyQoQ,15.1,False,center,False
+5,198.42,727.42,■TWNSYoYandQoQdecline,15.1,False,center,False
+5,215.6,218.57,"1,972mainlyfromlowerinsurance",15.1,True,center,False
+5,234.47,749.76,"salesinSingapore,while",15.1,False,center,False
+5,252.45,749.76,NBEVmarginroseon,15.1,False,center,False
+5,270.49,749.76,favourableproductmix,15.1,False,center,False
+5,289.41,382.9,Insurance,13.9,True,center,False
+5,519.72,943.03,55,13.9,False,right,False
+6,32.32,34.0,Earnings Well-Diversified Across Business and Geography,28.1,True,left,False
+7,33.16,34.58,Robust Balance Sheet Position,28.1,True,left,False
+7,278.33,49.35,Liquidity,13.92,True,center,False
+7,278.47,382.65,Capital,13.94,True,center,False
+9,32.84,33.02,3Q22 Group Net Profit,28.1,True,left,False
+9,77.08,48.98,YoYMovement,13.9,True,center,False
+9,79.02,879.5,+31%,13.9,True,center,False
+9,79.84,837.43,YoY,13.9,True,center,False
+9,105.83,837.43,QoQ,13.9,True,center,False
+9,149.58,728.11,YoY,16.1,True,center,False
+9,175.99,729.55,■Increaseinnetprofit,16.1,False,center,False
+9,195.19,751.9,underpinnedbystrongrise,16.1,False,center,False
+9,214.37,751.9,inNIIfromhigherNIMand,16.1,False,center,False
+9,233.61,751.9,assetgrowth,16.1,False,center,False
+9,278.82,726.09,QoQ,16.1,True,center,False
+9,305.18,728.62,■HighernetprofitasNII,16.1,False,center,False
+9,324.38,750.94,growthmorethanoffset,16.1,False,center,False
+9,343.56,750.94,declineintradingand,16.1,False,center,False
+9,362.8,750.94,insuranceincome;,16.1,False,center,False
+9,382.0,750.94,operatingexpenseswell-,16.1,False,center,False
+9,401.18,750.94,"controlled,up1%QoQ",16.1,False,center,False
+9,519.72,943.03,99,13.9,False,right,False
+10,31.11,32.92,9M22 Group Net Profit,28.1,True,left,False
+11,31.61,32.6,Group Performance,28.1,True,left,False
+12,32.14,34.94,BankingOperationsPerformance,28.1,True,left,False
+14,32.14,34.94,NetInterestIncome,28.1,True,left,False
+15,31.38,33.04,Non-interest Income,28.1,True,left,False
+16,30.96,33.19,Net Fees & Commissions,28.1,True,left,False
+16,76.66,747.41,9M22,16.1,True,center,False
+16,163.16,737.28,■Feeincomein3Q22lower,15.1,False,center,False
+16,181.16,759.6,YoYfromdeclineinWM,15.1,False,center,False
+16,199.14,595.58,204feesasaresultofsubdued,15.1,True,center,False
+16,217.19,759.6,customeractivitiesamid,15.1,False,center,False
+16,235.19,759.6,globalrisk-offinvestment,15.1,False,center,False
+16,253.17,759.6,sentiments,15.1,False,center,False
+16,288.87,483.56,24■Growthinotherfee,15.1,True,center,False
+16,307.19,759.6,"segmentsforthequarter,",15.1,False,center,False
+16,325.24,759.6,"includingcreditcard,and",15.1,False,center,False
+16,343.24,759.6,"loanandtrade-relatedfees,",15.1,False,center,False
+16,361.22,759.6,helpedtopartlyoffsetYoY,15.1,False,center,False
+16,379.26,759.6,dropinWMfees,15.1,False,center,False
+17,32.14,34.94,TradingIncome,28.1,True,left,False
+18,31.42,33.25,Operating Expenses,28.1,True,left,False
+19,32.14,34.94,Allowances,28.1,True,left,False
+19,76.66,747.41,9M22,16.1,True,center,False
+20,31.29,33.49,Total Cumulative Allowances,28.1,True,left,False
+20,162.37,735.68,■ NPA coverage ratio rose to 108%,15.12,False,center,False
+20,180.68,759.6,108%,15.1,False,center,False
+21,31.36,33.91,Asset Quality,28.1,True,left,False
+22,32.14,34.94,AssetQuality,28.1,True,left,False
+23,32.03,33.5,Customer Loans,28.1,True,left,False
+23,155.75,724.34,"■LoansupYoYfromSingapore,",15.1,False,right,False
+23,173.8,746.66,"Indonesia,GreaterChina,",15.1,False,center,False
+23,191.8,746.66,"USA,AustraliaandUK",15.1,False,center,False
+23,221.82,724.34,"■Corporate,SMEand",15.1,False,center,False
+23,239.82,746.66,Consumer/PrivateBanking,15.1,False,center,False
+23,257.8,746.66,"comprise53%,10%and37%",15.1,False,right,False
+23,275.84,746.66,ofloanbookrespectively,15.1,False,center,False
+23,305.84,724.34,■Greenandsustainablefinance,15.1,False,right,False
+23,323.82,746.66,loansmadeup9%oftotal,15.1,False,center,False
+23,341.87,746.66,loans,15.1,False,center,False
+23,371.85,724.34,■UKloansamountedto4%of,15.1,False,center,False
+23,389.89,746.66,"totalloans,mostlytonetwork",15.1,False,center,False
+23,407.89,234.77,Taiwancustomers,15.1,False,center,False
+23,437.91,724.34,■OnshoreChinacorporatereal,15.1,False,right,False
+23,455.91,746.66,estateloansmadeup<1%of,15.1,False,center,False
+23,473.91,746.66,"loanbook,mainlylendingto",15.1,False,center,False
+23,491.94,746.66,networkcustomers,15.1,False,center,False
+23,519.27,935.14,23,14.6,False,right,False
+24,31.35,33.08,Customer Deposits,28.1,True,left,False
+25,32.14,34.94,Capital,28.1,True,left,False
+26,251.7,370.83,Thankyou,42.74,True,left,False

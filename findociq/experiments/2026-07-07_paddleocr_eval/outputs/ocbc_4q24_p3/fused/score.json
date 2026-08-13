@@ -1,0 +1,37 @@
+{
+ "doc_id": "ocbc_4q24_p3",
+ "tables": [
+  {
+   "period": "2024-12-31",
+   "pages": [
+    95
+   ],
+   "n_gt": 142,
+   "exact": 142,
+   "text_mismatch": 0,
+   "missing": 0,
+   "extra_lines": [],
+   "dup_lines": [],
+   "val_col_counts": [
+    5
+   ],
+   "examples": []
+  },
+  {
+   "period": "2024-09-30",
+   "pages": [
+    96
+   ],
+   "n_gt": 142,
+   "exact": 142,
+   "text_mismatch": 0,
+   "missing": 0,
+   "extra_lines": [],
+   "dup_lines": [],
+   "val_col_counts": [
+    5
+   ],
+   "examples": []
+  }
+ ]
+}

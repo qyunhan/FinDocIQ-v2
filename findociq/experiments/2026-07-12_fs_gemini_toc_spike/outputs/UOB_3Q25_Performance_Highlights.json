@@ -1,0 +1,151 @@
+{
+  "doc_id": "UOB_3Q25_Performance_Highlights",
+  "source_pdf": "findociq/data/sources/financial_statements/UOB/2025/3Q25/UOB_3Q25_Performance Highlights.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "UOB\u2019s 3Q25 operating profit at S$1.9 billion, with continued franchise growth",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Steady progress in delivering our strategic priorities across business segments",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "3Q25 key financial indicators",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Strong balance sheet growth underpins resilient earnings",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Financial performance",
+      "page": 2,
+      "level": 1
+    },
+    {
+      "title": "9M25 versus 9M24",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "3Q25 versus 2Q25",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "3Q25 versus 3Q24",
+      "page": 2,
+      "level": 2
+    },
+    {
+      "title": "Asset quality",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "Allowance coverage",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "title": "Capital, funding and liquidity positions",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "Liquidity and capital ratios",
+      "page": 3,
+      "level": 2
+    },
+    {
+      "title": "Financial Highlights 3Q25",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "Selected income statement items (S$m)",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Selected balance sheet items (S$m)",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Key financial ratios (%)",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "Capital adequacy ratios",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "Notes:",
+      "page": 4,
+      "level": 2
+    },
+    {
+      "title": "1",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "2",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "3",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "4",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "5",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "6",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "7",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "8",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "9",
+      "page": 4,
+      "level": 3
+    },
+    {
+      "title": "10",
+      "page": 4,
+      "level": 3
+    }
+  ],
+  "contents_page_number": 4,
+  "contents_page_text": "Third Quarter 2025 Performance Highlights\n6 November 2025\nFinancial Highlights 3Q25\n9M25 9M24 +/(-) % 3Q25 2Q25 +/(-) % 3Q24 +/(-) %\nSelected income statement items (S$m)\nNet interest income 7,009 7,223 (3) 2,265 2,336 (3) 2,460 (8)\nNet fee income 1,945 1,828 6 615 636 (3) 630 (2)\nOther non-interest income 1,565 1,782 (12) 518 493 5 744 (30)\nTotal income 10,519 10,832 (3) 3,398 3,465 (2) 3,834 (11)\nLess: Total expenses 4,629 4,730 (2) 1,535 1,535 (0) 1,626 (6)\nOperating profit 5,890 6,102 (3) 1,863 1,929 (3) 2,208 (16)\nLess: Amortisation of intangible assets 23 20 15 7 9 (23) 7 3\nAllowance for credit and other losses 1,930 699 >100 1,361 279 >100 304 >100\nAdd: Share of profit of associates and joint ventures 44 81 (46) 25 ( 3) >100 25 1\nNet profit before tax 3,980 5,464 (27) 520 1,638 (68) 1,923 (73)\nLess: Tax and non-controlling interests 709 943 (25) 77 301 (74) 312 (75)\nNet profit 1 3,271 4,522 (28) 443 1,338 (67) 1,610 (72)\nSelected balance sheet items (S$m)\nGross customer loans 351,084 333,998 5 351,084 342,900 2 333,998 5\nCustomer deposits 419,660 400,784 5 419,660 405,076 4 400,784 5\nTotal assets 555,419 541,885 2 555,419 537,838 3 541,885 2\nShareholders' equity 1 49,707 48,596 2 49,707 50,346 (1) 48,596 2\nRisk-weighted assets 273,150 252,220 8 273,150 265,875 3 252,220 8\nKey financial ratios (%)\nNet interest margin 2 1.91 2.04 1.82 1.91 2.05\nCost/Income ratio 44.0 43.7 45.2 44.3 42.4\nCredit costs on loans (bp) 2\nGeneral 32 1 79 - ( 2)\nSpecific 36 26 55 32 36\nTotal 68 27 134 32 34\nNPA coverage ratio 100 99 100 88 99\nNPL ratio 3 1.6 1.5 1.6 1.6 1.5\nReturn on average ordinary shareholders' equity 2,4 9.0 13.4 3.5 11.0 14.0\nReturn on average total assets 2 0.81 1.16 0.33 0.99 1.23\nLoan/Deposit ratio 5 82.5 82.3 82.5 83.7 82.3\nLiquidity coverage ratios (\"LCR\") 6,10\nAll-currency 142 150 143 141 141\nSingapore Dollar 417 488 404 444 458\nNet stable funding ratio (\"NSFR\") 7,10 116 116 116 118 116\nCapital adequacy ratios\nCommon Equity Tier 1 14.6 15.5 14.6 15.3 15.5\nTier 1 15.6 16.6 15.6 16.3 16.6\nTotal 17.3 18.4 17.3 17.9 18.4\nLeverage ratio 8 6.6 6.8 6.6 7.1 6.8\nEarnings per ordinary share ($) 2,4\nBasic 2.56 3.55 1.01 3.15 3.79\nDiluted 2.55 3.53 1.01 3.14 3.78\nNet asset value (\"NAV\") per ordinary share ($) 9 28.34 27.42 28.34 28.62 27.42\nNotes:\n1 Relates to amount attributable to equity holders of the Bank.\n2 Computed on an annualised basis.\n3 Refers to non-performing loans (\"NPL\") as a percentage of gross customer loans.\n4 Calculated based on profit attributable to equity holders of the Bank net of perpetual capital securities distributions.\n5 Refers to net customer loans and customer deposits.\n6 Figures reported are based on average LCR for the respective periods, calculated based on MAS Notice 651. A minimum requirement of Singapore Dollar LCR of 100% and all-currency LCR of\n100% shall be maintained at all times.\n7 NSFR is calculated based on MAS Notice 652 which requires a minimum of 100% to be maintained.\n8 Leverage ratio is calculated based on MAS Notice 637 which requires a minimum ratio of 3%.\n9 Perpetual capital securities are excluded from the computation.\n10 Public disclosure required under MAS Notice 651 and 653 are available in the UOB website at www.UOBgroup.com/investor-relations/financial/index.html.",
+  "n_pages": 4
+}

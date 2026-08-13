@@ -1,0 +1,64 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "share_capital_p38",
+  "section_ids": [
+    "share_capital"
+  ],
+  "section_titles": [
+    "SHARE CAPITAL"
+  ],
+  "pages": [
+    38
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 13,
+  "usage": {
+    "ts": "2026-07-16T11:30:07",
+    "script": "extract_to_excel",
+    "label": "share_capital_p38",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2916,
+    "output_tokens": 1999,
+    "thinking_tokens": 0,
+    "total_tokens": 4915,
+    "est_cost_usd": 0.02236,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '500000' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2838' pdf=6x json=5x (missing from extraction)",
+      "  deficit: '2850' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '720' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '258' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '920' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '704' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Balance at beginning of period' [SHARE CAPITAL\n(a) The movement]",
+      "  duplicate row label x2: 'Issue of bonus shares' [SHARE CAPITAL\n(a) The movement]",
+      "  duplicate row label x2: 'Balance at end of period' [SHARE CAPITAL\n(a) The movement]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "SHARE CAPITAL\n(a) The movement in the number of issued and fully paid-up ordinary shares of the Company is as follows:",
+      "anchor_label": "SHARE CAPITAL\n(a) The movement in the number of issued and fully paid-up ordinary shares of the Company is as follows:",
+      "anchor_y": 97.79,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

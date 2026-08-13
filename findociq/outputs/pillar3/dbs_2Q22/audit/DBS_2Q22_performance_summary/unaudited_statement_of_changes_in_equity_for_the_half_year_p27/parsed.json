@@ -1,0 +1,477 @@
+{
+  "tables": [
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY\nFOR THE HALF YEAR ENDED 30 JUNE 2022\nThe Company",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Share capital"
+        },
+        {
+          "group": null,
+          "leaf": "Other equity instruments"
+        },
+        {
+          "group": null,
+          "leaf": "Other reserves"
+        },
+        {
+          "group": null,
+          "leaf": "Revenue reserves"
+        },
+        {
+          "group": null,
+          "leaf": "Total equity"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 1 January 2022",
+          "values": [
+            {
+              "value": "11,425",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "131",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,451",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,399",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transfer of treasury shares",
+          "values": [
+            {
+              "value": "107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "107",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Draw-down of reserves upon vesting of performance shares",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(122)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(122)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cost of share-based payments",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "66",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "66",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends paid to shareholders¹",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1,895)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,895)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(79)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,912",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,833",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 30 June 2022",
+          "values": [
+            {
+              "value": "11,532",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,468",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,388",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 1 January 2021",
+          "values": [
+            {
+              "value": "10,968",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,982",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,508",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transfer of treasury shares",
+          "values": [
+            {
+              "value": "111",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "111",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Draw-down of reserves upon vesting of performance shares",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(112)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(112)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cost of share-based payments",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Issue of shares pursuant to Scrip Dividend Scheme",
+          "values": [
+            {
+              "value": "342",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(342)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends paid to shareholders¹",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(638)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(638)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total comprehensive income",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "766",
+              "cell_state": "reported"
+            },
+            {
+              "value": "753",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at 30 June 2021",
+          "values": [
+            {
+              "value": "11,421",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,768",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,689",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:\n1 Includes distributions of $42 million paid on capital securities classified as equity for 1st Half 2022 (1st Half 2021: $60 million)",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,42.34,51.02,IncomeStatements,20.0,False,left,False
+2,42.34,36.85,StatementsofComprehensiveIncome,20.0,False,left,False
+3,42.34,51.02,BalanceSheets,20.0,False,left,False
+4,42.34,36.85,StatementofChangesinEquity–Group,20.0,False,left,False
+6,42.34,36.85,StatementofChangesinEquity–Bank,20.0,False,left,False
+7,42.34,51.02,ConsolidatedCashFlowStatement,20.0,False,left,False
+8,42.34,36.85,NNootteessttootthheeFFiinnaanncciiaallSSttaatteemmeennttss,20.0,False,left,False
+8,144.12,295.14,2.2 BasisofConsolidation,10.0,True,center,False
+8,156.48,295.75,2.2.1 Subsidiaries,9.0,True,center,False
+8,169.9,34.98,1. General,13.0,True,left,False
+8,170.55,36.85,1.GeneralSubsidiariesareentitiesoverwhichtheGroupcontrolswhen,9.0,True,left,False
+8,331.35,34.55,2. Material Accounting Policy Information,13.0,True,left,False
+8,332.97,36.85,2.MaterialAccounting,13.0,True,left,False
+8,347.97,70.87,PolicyInformation,13.0,True,center,False
+8,362.73,34.96,2.1 BasisofPreparation,10.0,True,left,False
+9,97.42,48.33,2. Material Accounting Policy Information (continued) 2.2 BasisofConsolidation (continued) 2.2.1 Subsidiaries(continued),10.0,True,left,False
+9,98.96,51.02,"2.MaterialAccountingentitythatisaventurecapitalorganisation,oramutualfund,",9.0,True,left,False
+9,130.5,51.02,2.2BasisofConsolidation(continued),10.0,True,left,False
+9,143.23,51.02,2.2.1Subsidiaries(continued),9.0,True,left,False
+9,417.37,49.01,2.2.2 StructuredEntities,9.0,True,left,False
+9,537.71,48.92,2.2.3 AssociatesandJointVentures,9.0,True,left,False
+9,673.52,309.15,"2.2.4 InvestmentsinSubsidiaries,Associatesand JointVenturesbytheBank",9.0,True,center,False
+10,97.28,34.32,2. Material Accounting Policy Information (continued) 2.3 CurrencyTranslation,13.0,True,left,False
+10,98.98,36.85,2.MaterialAccountingwithinthetimeperiodestablishedbyregulationor,9.0,True,left,False
+10,128.43,35.0,2.3 CurrencyTranslation,10.0,True,left,False
+10,133.17,295.37,2.5.2 Derecognition,9.0,True,center,False
+10,141.62,34.97,2.3.1 ForeignCurrencyTransactions,9.0,True,left,False
+10,241.04,295.01,2.5.3 Modifications,9.0,True,center,False
+10,357.69,34.86,2.3.2 ForeignOperations,9.0,True,left,False
+10,385.24,295.16,2.5.4 Offsetting,9.0,True,center,False
+10,481.07,294.77,2.5.5 SaleandRepurchaseAgreements(Including SecuritiesLendingandBorrowing),9.0,True,center,False
+10,482.97,297.63,2.5.5SaleandRepurchaseAgreements(Including,9.0,True,center,False
+10,548.59,34.59,2.4 CashandCashEquivalents,10.0,True,left,False
+10,632.24,35.03,2.5 FinancialInstruments 2.5.1 Recognition,10.0,True,left,False
+10,633.5,36.85,2.5FinancialInstruments,10.0,True,left,False
+10,646.23,36.85,2.5.1Recognition,9.0,True,left,False
+11,97.72,48.62,2. Material Accounting,13.0,True,left,False
+11,99.68,309.59,(b) AssessmentofWhetherContractualCashFlowsare SolelyPaymentsofPrincipalandInterest,9.0,True,center,False
+11,128.43,48.9,2.6 Non-DerivativeFinancialAssets,10.0,True,left,False
+11,219.8,309.15,2.6.1 DebtInstrumentsMeasuredatAmortisedCost,9.0,True,center,False
+11,249.56,48.75,(a) BusinessModelAssessment,9.0,True,left,False
+11,411.53,309.27,2.6.2 DebtInstrumentsMeasuredatFVOCI,9.0,True,center,False
+12,97.4,34.15,2. Material Accounting Policy Information (continued),13.0,True,left,False
+12,98.98,36.85,2.MaterialAccountingsheetasanassetorliabilitydependingonwhetheritis,9.0,True,left,False
+12,130.5,36.85,2.6Non-DerivativeFinancialAssets(continued),10.0,True,left,False
+12,155.23,36.85,2.6.3DebtInstrumentsMeasuredatFVTPL,9.0,True,left,False
+12,249.8,34.72,2.6.4 DesignationatFVTPL,9.0,True,left,False
+12,381.49,34.77,2.6.5 EquityInstruments,9.0,True,left,False
+12,621.67,34.79,2.6.6 Reclassification,9.0,True,left,False
+12,680.59,34.64,2.7 DerivativeFinancialInstruments,10.0,True,left,False
+13,97.28,48.26,2. Material Accounting Policy Information (continued),13.0,True,left,False
+13,97.37,309.35,"2.8 Property,PlantandEquipment",10.0,True,center,False
+13,98.98,51.02,"2.MaterialAccounting2.8Property,PlantandEquipment",10.0,True,left,False
+13,130.5,51.02,2.7DerivativeFinancialInstruments(continued),10.0,True,left,False
+13,601.22,309.51,2.9 InvestmentProperty,10.0,True,center,False
+14,97.0,294.92,2.11.2 ExpectedCreditLossImpairmentModel,9.0,True,center,False
+14,97.56,34.4,2. Material Accounting Policy Information (continued),13.0,True,left,False
+14,98.98,36.85,2.MaterialAccounting2.11.2ExpectedCreditLossImpairmentModel,9.0,True,left,False
+14,128.53,34.93,2.9 InvestmentProperty (continued),10.0,True,left,False
+14,260.11,34.53,2.10 GoodwillandOtherIntangibleAssets 2.10.1 Goodwill,10.0,True,left,False
+14,262.0,36.85,2.10GoodwillandOtherIntangibleAssets,10.0,True,left,False
+14,274.73,36.85,2.10.1Goodwill,9.0,True,left,False
+14,336.59,295.23,2.11.3 Measurement,9.0,True,center,False
+14,441.02,34.71,2.10.2 IntangibleAssets,9.0,True,left,False
+14,547.63,34.78,2.11 ImpairmentofAssets,10.0,True,left,False
+14,560.56,34.57,(I) FinancialAssets,9.0,True,left,False
+14,620.5,34.81,2.11.1 Scope,9.0,True,left,False
+15,98.97,51.02,2.MaterialAccountingAdefaultoccurswhentheborrowerorbondissueris,9.0,True,left,False
+15,130.5,51.02,2.11ImpairmentofAssets(continued),10.0,True,left,False
+15,153.58,48.87,2.11.3 Measurement(continued),9.0,True,left,False
+15,336.94,309.57,2.11.4 MovementbetweenStages,9.0,True,center,False
+16,97.07,294.88,"2.11.7 InvestmentsinSubsidiariesandAssociates Property,PlantandEquipment InvestmentProperty IntangibleAssets",9.0,True,center,False
+16,97.56,34.5,2. Material Accounting,13.0,True,left,False
+16,98.95,36.85,2.MaterialAccounting2.11.7InvestmentsinSubsidiariesandAssociates,9.0,True,left,False
+16,128.38,34.93,2.11 ImpairmentofAssets (continued) (I) FinancialAssets(continued),10.0,True,left,False
+16,130.5,36.85,2.11ImpairmentofAssets(continued),10.0,True,left,False
+16,153.31,34.79,2.11.4 MovementbetweenStages(continued),9.0,True,left,False
+16,371.87,295.36,2.12 FinancialLiabilities,10.0,True,center,False
+16,405.74,34.7,2.11.5 RegulatoryRequirement,9.0,True,left,False
+16,573.62,34.89,(II) OtherAssets,9.0,True,left,False
+16,585.44,34.92,2.11.6 Goodwill,9.0,True,left,False
+17,97.33,48.08,2. Material Accounting Policy Information (continued),13.0,True,left,False
+17,97.35,48.22,2. Material Accounting Policy Information (continued) 2.13 InsuranceandReinsuranceContracts 2.13.1 DefinitionandClassification,10.0,True,left,False
+17,98.95,51.02,2.MaterialAccountinggroupofcontractsundertheVariableFeeApproach(VFA).,9.0,True,left,False
+17,128.47,48.68,2.13 InsuranceandReinsuranceContracts 2.13.1 DefinitionandClassification,10.0,True,left,False
+17,130.5,51.02,2.13InsuranceandReinsuranceContracts,10.0,True,left,False
+17,143.23,51.02,2.13.1DefinitionandClassification,9.0,True,left,False
+17,301.08,309.21,2.13.2 SeparatingComponentsfromInsuranceand ReinsuranceContracts,9.0,True,center,False
+17,302.92,311.78,2.13.2SeparatingComponentsfromInsuranceand,9.0,True,center,False
+18,97.33,34.13,2. Material Accounting Policy Information (continued),13.0,True,left,False
+18,97.51,34.5,2. Material Accounting,13.0,True,left,False
+18,98.95,36.85,"2.MaterialAccountingFornon-lifeinsurancecontracts,setsofcontractsusually",9.0,True,left,False
+18,128.25,34.46,2.13 InsuranceandReinsuranceContracts(continued) 2.13.2 SeparatingComponentsfromInsuranceand ReinsuranceContracts(continued),9.0,True,left,False
+18,143.23,36.85,2.13.2SeparatingComponentsfromInsuranceand,9.0,True,left,False
+18,241.12,295.05,2.13.3.2ReinsuranceContracts,9.0,False,center,False
+18,273.13,35.09,2.13.3 LevelofAggregation,9.0,True,left,False
+18,285.43,35.08,2.13.3.1InsuranceContracts,9.0,False,left,False
+18,468.91,295.05,2.13.4 Recognition,9.0,True,center,False
+19,97.4,48.26,2. Material Accounting Policy Information (continued),13.0,True,left,False
+19,98.94,51.02,"2.MaterialAccountingGEHGroup,thatGEHGroupwouldconsiderwhen",9.0,True,left,False
+19,130.23,48.88,2.13.4 Recognition(continued),9.0,True,left,False
+19,321.92,48.74,2.13.5 ContractBoundary,9.0,True,left,False
+19,337.18,309.25,2.13.6 Measurement,9.0,True,center,False
+19,349.13,309.14,2.13.6.1Measurement–ContractsNotMeasuredUnder thePAA,9.0,False,center,False
+20,96.85,295.36,2.13.6.3ContractualServiceMargin,9.0,False,center,False
+20,97.22,34.19,2. Material Accounting Policy Information (continued) 2.13 InsuranceandReinsuranceContracts (continued),13.0,True,left,False
+20,98.95,36.85,2.MaterialAccounting2.13.6.3ContractualServiceMargin,9.0,True,left,False
+20,130.5,36.85,2.13InsuranceandReinsuranceContracts,10.0,True,left,False
+20,153.14,34.8,2.13.6 Measurement(continued),9.0,True,left,False
+20,164.51,34.67,2.13.6.1Measurement–ContractsNotMeasuredUnder thePAA(continued),9.0,False,left,False
+20,404.73,34.64,2.13.6.2FulfilmentCashFlows(FCF),9.0,False,left,False
+20,488.81,34.64,Theestimatesoffuturecashflows:,9.0,False,left,False
+20,601.3,295.4,2.13.6.4SubsequentMeasurement–ContractsNot MeasuredUnderthePAA,9.0,False,center,False
+21,97.07,48.44,2. Material Accounting Policy Information (continued),13.0,True,left,False
+21,97.69,48.72,2. Material Accounting,13.0,True,left,False
+21,98.97,51.02,2.MaterialAccountingbasedontheratioofthelosscomponenttotheFCFrelatingto,9.0,True,left,False
+21,128.01,48.45,2.13 InsuranceandReinsuranceContracts(continued) 2.13.6 Measurement(continued),10.0,True,left,False
+21,143.23,51.02,2.13.6Measurement(continued),9.0,True,left,False
+21,313.3,309.5,2.13.6.5ReinsuranceContracts,9.0,False,center,False
+21,616.54,48.68,Onerouscontracts–Losscomponent,9.0,False,left,False
+22,97.36,34.28,2. Material Accounting Policy Information (continued),13.0,True,left,False
+22,98.96,36.85,"2.MaterialAccountingb)iftheassetrelatestofuturerenewals,recognisesan",9.0,True,left,False
+22,128.49,34.69,2.13 InsuranceandReinsuranceContracts(continued) 2.13.6 Measurement(continued),10.0,True,left,False
+22,153.66,35.09,2.13.6.5ReinsuranceContracts(continued),9.0,False,left,False
+22,241.16,294.98,2.13.7 Measurement–ContractsMeasuredUnderthePAA,9.0,True,right,False
+22,285.49,34.98,2.13.6.6InsuranceAcquisitionCashFlows,9.0,False,left,False
+23,97.21,48.45,2. Material Accounting Policy Information (continued),13.0,True,left,False
+23,97.78,48.79,2. Material Accounting,13.0,True,left,False
+23,98.94,51.02,2.MaterialAccountinga)ifthemodifiedtermshadbeenincludedatcontract,9.0,True,left,False
+23,128.34,48.68,2.13 InsuranceandReinsuranceContracts(continued) 2.13.7 Measurement–ContractsMeasuredUnderthePAA (continued),9.0,True,left,False
+23,143.23,51.02,2.13.7Measurement–ContractsMeasuredUnderthePAA,9.0,True,left,False
+23,549.43,48.88,2.13.8 DerecognitionandContractModification,9.0,True,left,False
+24,97.13,34.11,2. Material Accounting Policy Information (continued),13.0,True,left,False
+24,97.5,34.58,2. Material Accounting,13.0,True,left,False
+24,98.98,36.85,"2.MaterialAccountingb)changesintheriskadjustmentfornon-financialrisk,",9.0,True,left,False
+24,143.23,36.85,2.13.8DerecognitionandContractModification(continued),9.0,True,left,False
+24,393.35,34.89,2.13.9 InsuranceServiceResultfromInsurance ContractsIssued,9.0,True,left,False
+24,397.15,295.29,InsuranceServiceExpenses,9.0,False,center,False
+24,417.36,34.65,InsuranceRevenue,9.0,False,left,False
+25,97.67,48.64,2. Material Accounting,13.0,True,left,False
+25,98.98,51.02,2.MaterialAccountingb)changesintheriskadjustmentfornon-financial,9.0,True,left,False
+25,112.15,80.77,Policy Information (continued),13.0,True,center,False
+25,128.21,48.54,2.13 InsuranceandReinsuranceContracts(continued) 2.13.9 InsuranceServiceResultfromInsurance ContractsIssued(continued),9.0,True,left,False
+25,143.23,51.02,2.13.9InsuranceServiceResultfromInsurance,9.0,True,left,False
+25,361.41,309.64,InsuranceFinanceIncomeorExpenses,9.0,False,center,False
+26,98.36,34.36,2. Material Accounting,13.0,True,left,False
+26,99.83,36.85,2.MaterialAccountingInterimdividendsonordinarysharesanddividendson,9.0,True,left,False
+26,129.65,34.52,2.13 InsuranceandReinsuranceContracts(continued) 2.13.9 InsuranceServiceResultfromInsuranceContracts Issued(continued),9.0,True,left,False
+26,144.08,36.85,2.13.9InsuranceServiceResultfromInsuranceContracts,9.0,True,left,False
+26,165.79,34.35,InsuranceFinanceIncomeorExpenses(continued),9.0,False,left,False
+26,169.23,295.18,2.15 Leases,10.0,True,center,False
+26,181.49,295.57,2.15.1 AsLessee,9.0,True,center,False
+26,277.2,295.66,Right-of-UseAssets,9.0,False,center,False
+26,465.94,34.53,2.13.10 AssetsandLiabilitiesofLifeInsuranceFunds,9.0,True,left,False
+26,504.48,295.65,LeaseLiabilities,9.0,False,center,False
+26,572.58,34.85,2.14 ShareCapitalandDividend,10.0,True,left,False
+26,648.25,295.2,Short-TermLeasesandLow-ValueAssets,9.0,False,center,False
+27,97.32,309.61,2.16.4 EmployeeBenefits,9.0,True,center,False
+27,97.43,48.3,2. Material Accounting Policy Information (continued) 2.15 Leases(continued),13.0,True,left,False
+27,98.98,51.02,2.MaterialAccounting2.16.4EmployeeBenefits,9.0,True,left,False
+27,128.4,48.84,2.15 Leases(continued),10.0,True,left,False
+27,142.03,48.87,2.15.2 AsLessor,9.0,True,left,False
+27,224.67,48.96,2.16 RecognitionofIncomeandExpense,10.0,True,left,False
+27,238.73,51.02,2.16.1InterestIncomeandExpense,9.0,True,left,False
+27,464.96,48.94,2.16.2 FeesandCommissions,9.0,True,left,False
+27,576.26,309.59,2.17 IncomeTaxExpense,10.0,True,center,False
+27,621.25,48.95,2.16.3 Dividends,9.0,True,left,False
+28,97.38,309.35,2.18 FiduciaryActivities,10.0,True,center,False
+28,97.64,34.18,2. Material Accounting Policy Information (continued),13.0,True,left,False
+28,98.98,36.85,2.MaterialAccounting2.18FiduciaryActivities,10.0,True,left,False
+28,129.25,34.95,2.17 IncomeTaxExpense (continued),10.0,True,left,False
+28,193.07,309.33,2.19 EarningsPerShare,10.0,True,center,False
+28,336.82,309.44,2.20 SegmentReporting,10.0,True,center,False
+28,612.12,308.94,2.21 CriticalAccountingEstimatesandJudgements,10.0,True,right,False
+29,97.24,48.15,2. Material Accounting Policy Information (continued) 2.21 CriticalAccountingEstimatesandJudgements (continued),10.0,True,left,False
+29,97.64,48.67,2. Material Accounting,13.0,True,left,False
+29,98.98,51.02,2.MaterialAccountingvaluesoffinancialinstrumentsthatarenottradedinanactive,9.0,True,left,False
+29,128.38,48.65,2.21 CriticalAccountingEstimatesandJudgements (continued),10.0,True,left,False
+29,153.08,48.89,2.21.1 ImpairmentofFinancialAssets,9.0,True,left,False
+29,313.29,309.47,2.21.3 InsuranceBusiness,9.0,True,center,False
+29,332.45,48.6,AllowancesforNon-Credit-ImpairedLoanstoCustomers,9.0,False,left,False
+29,372.75,309.88,DiscountRates,9.0,False,center,False
+29,464.39,48.71,SensitivityofECL,8.5,False,left,False
+29,703.64,48.78,2.21.2 FairValueEstimation,9.0,True,left,False
+30,97.01,33.9,2. Material Accounting Policy Information (continued),13.0,True,left,False
+30,113.7,34.58,2.21 CriticalAccountingEstimatesandJudgements (continued),10.0,True,left,False
+30,126.72,34.63,2.21.3 InsuranceBusiness(continued),9.0,True,left,False
+30,360.56,34.24,RiskAdjustmentforNon-FinancialRisk,9.0,False,left,False
+30,504.19,34.19,EstimatesofFutureCashFlows,9.0,False,left,False
+31,97.05,48.64,2. Material Accounting Policy Information (continued),13.0,True,left,False
+31,113.88,48.37,2.21 CriticalAccountingEstimatesandJudgements (continued),10.0,True,left,False
+31,126.73,48.36,2.21.3 InsuranceBusiness(continued),9.0,True,left,False
+31,234.27,48.7,CoverageUnits,9.0,False,left,False
+31,426.14,48.57,2.21.4 ImpairmentofGoodwillandOtherIntangibleAssets,9.0,True,left,False
+31,570.06,48.76,2.21.5 IncomeTaxes,9.0,True,left,False
+32,97.46,34.43,3. Net Interest Income,13.0,True,left,False
+32,484.09,36.85,4.InsuranceServiceResultsandNetInvestmentandFinanceIncome/(Expenses),13.0,True,left,False
+32,499.09,70.87,fromLifeInsurance,13.0,True,center,False
+33,98.98,51.02,4.InsuranceServiceResultsandNetInvestmentandFinanceIncome/(Expenses),13.0,True,left,False
+33,113.98,85.04,fromLifeInsurance(continued),13.0,True,center,False
+34,97.25,34.45,5. Fees and Commissions (Net),13.0,True,left,False
+34,371.19,34.49,6. Dividends from Subsidiaries and Associates,13.0,True,left,False
+35,97.41,48.6,7. Net Trading Income,13.0,True,left,False
+35,362.45,48.59,8. Other Income,13.0,True,left,False
+36,40.63,34.96,Notes to the Financial Statements For the financial year ended 31 December 2025,9.0,False,left,True
+36,97.33,34.4,9. Staff Costs and Other Operating Expenses,13.0,True,left,False
+37,97.37,49.34,10. Allowances for Loans and Other Assets,13.0,True,left,False
+37,244.62,49.3,11. Income Tax Expense,13.0,True,left,False
+38,97.2,34.68,11. Income Tax Expense (continued),13.0,True,left,False
+38,114.43,34.46,OECDPillarTwoModelRules,9.0,False,left,False
+38,258.76,35.03,12. Earnings Per Share,13.0,True,left,False
+39,97.46,49.58,13. Share Capital,13.0,True,left,False
+39,115.5,51.02,13.1ShareCapital,10.0,True,left,False
+39,543.53,48.99,13.2 ShareOptionScheme,10.0,True,left,False
+40,97.04,34.51,13. Share Capital (continued),13.0,True,left,False
+40,113.83,35.06,13.2 ShareOptionScheme (continued),10.0,True,left,False
+40,339.89,34.55,13.3 EmployeeSharePurchasePlan,10.0,True,left,False
+41,97.14,48.99,13. Share Capital (continued),13.0,True,left,False
+41,115.5,51.02,13.3EmployeeSharePurchasePlan(continued),10.0,True,left,False
+41,331.93,48.68,13.4 DeferredSharePlan,10.0,True,left,False
+42,97.45,34.83,14. Other Equity Instruments,13.0,True,left,False
+43,97.29,48.72,14. Other Equity Instruments (continued),13.0,True,left,False
+43,330.48,48.25,(c) The4.50%CapitalSecuritiesissuedbytheBankon15August2023arenon-cumulativenon-convertibleperpetualcapital securities.TheyqualifyasAdditionalTier1capitaloftheBankundertherequirementsofMAS.,9.0,False,left,False
+43,546.6,48.14,(d) The4.05%CapitalSecuritiesissuedbytheBankon16January2024arenon-cumulativenon-convertibleperpetualcapital securities.TheyqualifyasAdditionalTier1capitaloftheBankundertherequirementsofMAS.,9.0,False,left,False
+44,97.33,34.05,14. Other Equity Instruments (continued),13.0,True,left,False
+44,283.34,34.97,15. Capital Reserves,13.0,True,left,False
+44,492.38,34.87,16. Revenue Reserves,13.0,True,left,False
+45,96.88,48.86,16. Revenue Reserves (continued) 16.1 UnappropriatedProfit,13.0,True,left,False
+45,98.98,51.02,16.RevenueReserves(continued),13.0,True,left,False
+45,115.5,51.02,16.1UnappropriatedProfit,10.0,True,left,False
+45,528.65,49.21,At31December,9.0,True,left,False
+46,97.26,34.65,16. Revenue Reserves (continued),13.0,True,left,False
+46,114.14,35.18,16.2 GeneralReserves,10.0,True,left,False
+46,272.53,34.52,16.3 CashFlowandOtherHedgeReserves,10.0,True,left,False
+46,368.38,34.72,16.4 CurrencyTranslationReserves,10.0,True,left,False
+47,97.1,49.37,17. Deposits and Balances of Non-Bank Customers and Banks,13.0,True,left,False
+48,97.64,34.58,18. Derivative Financial Instruments,13.0,True,left,False
+49,97.17,49.35,18. Derivative Financial Instruments (continued),13.0,True,left,False
+50,97.18,34.72,19. Other Liabilities,13.0,True,left,False
+50,294.28,34.46,20. Deferred Tax,13.0,True,left,False
+51,97.16,48.51,20. Deferred Tax (continued),13.0,True,left,False
+52,97.47,34.58,21. Debt Issued,13.0,True,left,False
+52,249.0,35.02,21.1 SubordinatedDebt,10.0,True,left,False
+53,97.09,48.39,21. Debt Issued (continued),13.0,True,left,False
+53,113.81,48.38,21.1 SubordinatedDebt (continued),10.0,True,left,False
+54,96.91,34.52,21. Debt Issued (continued) 21.2 FixedandFloatingRateNotes,10.0,True,left,False
+54,97.11,34.84,21. Debt Issued (continued),13.0,True,left,False
+54,115.5,36.85,21.2FixedandFloatingRateNotes,10.0,True,left,False
+55,97.05,48.6,21. Debt Issued (continued),13.0,True,left,False
+55,113.98,48.72,21.3 CommercialPaper,10.0,True,left,False
+55,285.01,48.73,21.4 StructuredNotes,10.0,True,left,False
+56,97.23,34.47,21. Debt Issued (continued),13.0,True,left,False
+56,113.94,35.01,21.5 CoveredBonds,10.0,True,left,False
+56,302.4,36.85,21.6ReconciliationofMovementsofLiabilitiestoCashFlowsArisingfromFinancingActivities,10.0,True,left,False
+57,97.37,48.75,22. Assets and Liabilities for Life Insurance Funds,13.0,True,left,False
+58,97.09,34.06,22. Assets and Liabilities for Life Insurance Funds (continued),13.0,True,left,False
+58,115.5,36.85,22.1ReconciliationoftheLiabilityforRemainingCoverageandLiabilityforIncurredClaimsforLifeInsurance,10.0,True,left,False
+59,97.21,48.18,22. Assets and Liabilities for Life Insurance Funds (continued),13.0,True,left,False
+59,115.5,51.02,22.1ReconciliationoftheLiabilityforRemainingCoverageandLiabilityforIncurredClaimsforLifeInsurance,10.0,True,left,False
+60,97.17,34.14,22. Assets and Liabilities for Life Insurance Funds (continued),13.0,True,left,False
+60,115.5,36.85,22.2ReconciliationoftheMeasurementComponentsofInsuranceContractBalancesforLifeInsurance–,10.0,True,left,False
+61,115.5,51.02,22.3ImpactofLifeInsuranceContractsRecognisedDuringtheYear,10.0,True,left,False
+61,291.58,48.16,22.4 AmountsDeterminedonTransitiontoSFRS(I)17,10.0,True,left,False
+62,97.39,34.29,22. Assets and Liabilities for Life Insurance Funds (continued),13.0,True,left,False
+62,115.5,36.85,22.5ExpectedRecognitionoftheContractualServiceMarginforLifeInsuranceContractsIssued,10.0,True,left,False
+62,238.06,34.43,23. Cash and Placements with Central Banks,13.0,True,left,False
+63,97.43,48.62,24. Government Treasury Bills and Securities,13.0,True,left,False
+63,202.97,48.86,25. Placements with and Loans to Banks,13.0,True,left,False
+64,97.77,34.67,26. Loans to Customers,13.0,True,left,False
+65,97.75,48.59,27. Non-Performing Assets,13.0,True,left,False
+66,97.17,34.27,27. Non-Performing Assets (continued),13.0,True,left,False
+66,522.86,34.38,27.4 Restructured/RenegotiatedLoans,10.0,True,left,False
+67,97.34,48.59,28. Allowances for Impaired Loans to Customers,13.0,True,left,False
+67,253.55,48.94,Analysed by Industry,10.0,True,left,False
+68,97.33,34.64,29. Debt and Equity Securities,13.0,True,left,False
+69,97.46,48.89,30. Allowances for Financial Assets,13.0,True,left,False
+70,96.88,34.37,30. Allowances for Financial Assets (continued) AnalysedbyMainClassofFinancialInstruments LoanstoCustomersatAmortisedCost(1),10.0,True,left,False
+70,97.15,34.83,30. Allowances for Financial Assets (continued),13.0,True,left,False
+71,97.19,48.86,30. Allowances for Financial Assets (continued),13.0,True,left,False
+72,97.02,34.47,30. Allowances for Financial Assets (continued),13.0,True,left,False
+73,97.41,48.76,31. Other Assets,13.0,True,left,False
+73,255.32,48.71,32. Associates,13.0,True,left,False
+73,489.33,48.68,32.1 MaterialAssociate,10.0,True,left,False
+74,97.23,34.58,32. Associates (continued),13.0,True,left,False
+74,115.5,36.85,32.2FinancialInformationofMaterialAssociate,10.0,True,left,False
+75,97.45,48.76,32. Associates (continued),13.0,True,left,False
+75,113.81,48.76,32.3 FinancialInformationofOtherAssociates,10.0,True,left,False
+75,399.58,49.06,33. Subsidiaries,13.0,True,left,False
+76,97.17,34.61,33. Subsidiaries (continued),13.0,True,left,False
+76,115.5,36.85,33.1ListofPrincipalSubsidiaries,10.0,True,left,False
+76,459.6,35.02,Stockbroking,9.0,True,left,False
+77,97.26,48.73,33. Subsidiaries (continued),13.0,True,left,False
+77,113.86,48.27,33.2 Non-ControllingInterestsinSubsidiaries,10.0,True,left,False
+77,458.44,48.42,33.3 ConsolidatedStructuredEntities,10.0,True,left,False
+78,97.3,34.56,"34. Property, Plant and Equipment",13.0,True,left,False
+79,97.17,48.65,"34. Property, Plant and Equipment (continued)",13.0,True,left,False
+80,97.43,34.57,35. Investment Property,13.0,True,left,False
+81,97.37,48.84,36. Goodwill and Other Intangible Assets,13.0,True,left,False
+82,97.09,34.45,36. Goodwill and Other Intangible Assets (continued),13.0,True,left,False
+82,113.72,34.63,ImpairmentTestsforGoodwill,10.0,True,left,False
+83,97.6,48.84,37. Segment Information,13.0,True,left,False
+83,137.97,49.02,37.1 BusinessSegments,10.0,True,left,False
+84,97.22,34.43,37. Segment Information (continued),13.0,True,left,False
+84,113.78,34.74,37.1 BusinessSegments (continued),10.0,True,left,False
+84,577.67,34.53,GlobalConsumer/PrivateBanking,9.0,True,left,False
+84,661.8,34.6,GlobalWholesaleBanking,9.0,True,left,False
+85,97.04,48.84,37. Segment Information (continued),13.0,True,left,False
+85,113.91,48.99,37.1 BusinessSegments (continued),10.0,True,left,False
+85,126.76,48.93,GlobalMarkets,9.0,True,left,False
+85,211.42,48.87,Insurance,9.0,True,left,False
+85,259.3,49.03,Others,9.0,True,left,False
+85,413.79,48.91,37.2 GeographicalSegments,10.0,True,left,False
+86,97.69,34.65,38. Risk Management,13.0,True,left,False
+86,114.02,34.83,38.1 Overview,10.0,True,left,False
+87,97.17,48.72,38. Risk Management (continued),13.0,True,left,False
+87,113.73,48.76,38.2 CreditRisk,10.0,True,left,False
+87,174.46,48.53,MaximumExposuretoCreditRisk,9.0,True,left,False
+87,472.19,49.59,Totalmaximumcreditriskexposure,9.0,True,left,False
+87,500.54,49.2,Collateral,9.0,True,left,False
+89,97.27,48.93,38. Risk Management (continued),13.0,True,left,False
+89,113.78,48.75,38.2 CreditRisk (continued),10.0,True,left,False
+89,126.58,49.1,TotalLoansandAdvances–CreditQuality,9.0,True,left,False
+89,347.81,48.75,PastDueLoans,9.0,True,left,False
+90,97.18,34.54,38. Risk Management (continued),13.0,True,left,False
+90,113.71,34.81,38.2 CreditRisk (continued),10.0,True,left,False
+90,126.79,34.71,LoansPastDueButNotImpaired,9.0,True,left,False
+90,279.07,34.39,CollateralandOtherCreditEnhancementsObtained,9.0,True,left,False
+90,363.16,34.56,CountryRisk,9.0,True,left,False
+90,446.11,34.41,38.3 MarketRiskandLiquidityRiskManagement,10.0,True,left,False
+91,97.16,48.7,38. Risk Management (continued),13.0,True,left,False
+91,113.62,48.37,38.3 MarketRiskandLiquidityRiskManagement (continued) InterestRateRisk,10.0,True,left,False
+91,330.6,48.75,CurrencyRisk,9.0,True,left,False
+91,506.57,48.64,StructuralForeignExchangeRisk,9.0,True,left,False
+92,97.29,34.59,38. Risk Management (continued),13.0,True,left,False
+92,113.77,34.45,38.3 MarketRiskandLiquidityRiskManagement (continued) LiquidityRisk,10.0,True,left,False
+93,97.25,48.77,38. Risk Management (continued),13.0,True,left,False
+94,97.25,34.5,38. Risk Management (continued),13.0,True,left,False
+94,113.67,34.57,38.3 MarketRiskandLiquidityRiskManagement (continued),10.0,True,left,False
+94,126.41,34.59,ContractualMaturityforFinancialLiabilities,9.0,True,left,False
+94,650.52,34.42,InformationSecurityandDigitalRisk,10.0,True,left,False
+94,698.0,34.56,OperationalRisk,10.0,True,left,False
+95,97.19,48.76,38. Risk Management (continued),13.0,True,left,False
+95,113.63,48.82,38.3 MarketRiskandLiquidityRiskManagement (continued),10.0,True,left,False
+95,126.47,49.04,Hedging,10.0,True,left,False
+95,490.86,48.52,NetInvestmentHedges,10.0,True,left,False
+96,97.17,34.54,38. Risk Management (continued),13.0,True,left,False
+96,113.84,35.05,38.4 Insurance-RelatedRiskManagement,10.0,True,left,False
+96,150.93,34.72,GovernanceFramework,9.0,True,left,False
+96,630.62,34.54,RegulatoryFramework,9.0,True,left,False
+97,97.19,49.29,38. Risk Management (continued),13.0,True,left,False
+97,126.87,49.37,CapitalManagement,9.0,True,left,False
+97,233.56,48.81,RegulatoryCapital,9.0,True,left,False
+98,97.21,34.73,38. Risk Management (continued),13.0,True,left,False
+98,294.32,34.18,InsuranceRisksofLifeInsuranceContracts,9.0,True,left,False
+99,97.21,48.82,38. Risk Management (continued),13.0,True,left,False
+100,97.05,34.5,38. Risk Management (continued),13.0,True,left,False
+101,97.32,48.58,38. Risk Management (continued),13.0,True,left,False
+101,113.77,48.47,38.4 Insurance-RelatedRiskManagement (continued),10.0,True,left,False
+101,126.63,48.39,"Market,CreditandLiquidityRisk",9.0,True,left,False
+101,342.47,48.2,(a) InterestRateRisk(IncludingAssetLiabilityMismatchRiskandBasisRisk),9.0,True,left,False
+101,534.37,48.59,(b) ForeignExchangeRisk,9.0,True,left,False
+102,97.09,34.49,38. Risk Management (continued),13.0,True,left,False
+103,97.32,48.62,38. Risk Management (continued),13.0,True,left,False
+103,114.12,48.54,38.4 Insurance-RelatedRiskManagement (continued),10.0,True,left,False
+103,126.18,48.77,"Market,CreditandLiquidityRisk(continued)",9.0,True,left,False
+103,138.42,48.89,(c) EquityPriceRisk,9.0,True,left,False
+103,210.4,48.48,(d) CreditSpreadRisk,9.0,True,left,False
+103,270.49,48.6,(e) AlternativeInvestmentRisk,9.0,True,left,False
+103,342.33,48.81,(f) CommodityRisk,9.0,True,left,False
+103,378.36,48.66,(g) LiquidityRisk,9.0,True,left,False
+104,97.18,34.45,38. Risk Management (continued),13.0,True,left,False
+104,138.16,34.93,(g) LiquidityRisk(continued),9.0,True,left,False
+105,97.39,48.65,38. Risk Management (continued),13.0,True,left,False
+105,114.09,48.53,38.4 Insurance-RelatedRiskManagement (continued),10.0,True,left,False
+105,138.38,48.94,(g) LiquidityRisk(continued),9.0,True,left,False
+105,342.22,48.94,AmountsPayableonDemand,10.0,True,left,False
+106,97.19,34.49,38. Risk Management (continued),13.0,True,left,False
+106,138.36,35.05,(h) CreditRisk,9.0,True,left,False
+107,97.27,48.72,38. Risk Management (continued),13.0,True,left,False
+107,113.96,48.62,38.4 Insurance-RelatedRiskManagement (continued),10.0,True,left,False
+107,126.17,48.71,"Market,CreditandLiquidityRisk(continued)",9.0,True,left,False
+107,138.2,48.89,(h) CreditRisk(continued),9.0,True,left,False
+108,97.02,34.33,38. Risk Management (continued),13.0,True,left,False
+108,138.11,34.98,(h) CreditRisk(continued),9.0,True,left,False
+108,560.12,34.63,(i) ConcentrationRisk,9.0,True,left,False
+109,97.23,48.58,38. Risk Management (continued),13.0,True,left,False
+109,113.9,48.68,38.4 Insurance-RelatedRiskManagement (continued),10.0,True,left,False
+109,125.81,48.46,"Market,CreditandLiquidityRisk(continued)",9.0,True,left,False
+109,138.0,48.77,(j) SensitivityAnalysisonFinancialRisks,9.0,True,left,False
+109,258.65,48.81,MarketRiskSensitivityAnalysis,9.0,True,left,False
+110,97.04,34.56,38. Risk Management (continued),13.0,True,left,False
+111,97.32,48.81,39. Financial Assets and Financial Liabilities Classification,13.0,True,left,False
+112,96.95,34.61,39. Financial Assets and Financial Liabilities Classification (continued),13.0,True,left,False
+113,96.9,48.8,39. Financial Assets and Financial Liabilities Classification (continued),13.0,True,left,False
+114,96.98,34.56,39. Financial Assets and Financial Liabilities Classification (continued),13.0,True,left,False
+115,97.63,48.8,40. Fair Values of Financial Instruments,13.0,True,left,False
+115,114.21,48.91,40.1 ValuationGovernanceFramework,10.0,True,left,False
+115,317.81,49.15,BidOfferAdjustments,9.0,False,left,False
+115,353.81,48.92,ModelRiskAdjustments,9.0,False,left,False
+115,389.38,49.06,Day1ProfitorLossAdjustments,9.0,False,left,False
+115,472.24,48.72,CreditValuationAdjustments,9.0,False,left,False
+115,507.6,48.7,CollateralValuationAdjustments,9.0,False,left,False
+115,555.31,49.52,ParameterUncertaintyAdjustments,9.0,False,left,False
+116,97.28,34.21,40. Fair Values of Financial Instruments (continued),13.0,True,left,False
+116,114.05,34.74,40.2 FairValues,10.0,True,left,False
+116,198.6,34.34,FinancialAssets,9.0,True,left,False
+116,330.85,34.47,FinancialLiabilities,9.0,True,left,False
+116,449.85,34.54,40.3 FairValueHierarchy,10.0,True,left,False
+117,97.29,48.73,40. Fair Values of Financial Instruments (continued),13.0,True,left,False
+117,114.12,48.82,40.3 FairValueHierarchy (continued),10.0,True,left,False
+118,97.2,34.33,40. Fair Values of Financial Instruments (continued),13.0,True,left,False
+120,97.22,34.25,40. Fair Values of Financial Instruments (continued),13.0,True,left,False
+122,97.18,34.29,40. Fair Values of Financial Instruments (continued),13.0,True,left,False
+123,97.47,48.57,41. Offsetting Financial Assets and Financial Liabilities,13.0,True,left,False
+124,96.94,34.58,41. Offsetting Financial Assets and Financial Liabilities (continued),13.0,True,left,False
+125,97.56,48.62,42. Contingent Liabilities,13.0,True,left,False
+126,97.71,34.71,43. Commitments,13.0,True,left,False
+127,97.57,48.56,44. Unconsolidated Structured Entities,13.0,True,left,False
+128,97.16,34.18,45. Financial Assets Transferred 45.1 AssetsPledged,13.0,True,left,False
+128,98.98,36.85,45.FinancialAssetsTransferred,13.0,True,left,False
+128,113.82,35.05,45.1 AssetsPledged,10.0,True,left,False
+128,502.56,33.98,45.2 AssetsAssignedasSecurityforCoveredBondsIssued(Note21.5),10.0,True,left,False
+129,97.79,48.71,46. Related Party Transactions,13.0,True,left,False
+129,162.11,48.65,46.1 MaterialRelatedPartyTransactions,10.0,True,left,False
+130,97.24,34.74,46. Related Party Transactions (continued),13.0,True,left,False
+130,113.93,34.86,46.2 KeyManagementPersonnelCompensation,10.0,True,left,False
+130,295.23,34.51,47. Capital Management,13.0,True,left,False
+131,97.53,48.73,48. New Accounting Standards and Interpretations,13.0,True,left,False
+131,366.15,48.21,SFRS(I)18PresentationandDisclosureinFinancialStatements,10.0,True,left,False

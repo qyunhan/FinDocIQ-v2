@@ -1,0 +1,30 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+5,0,6,0,1,NEW_TABLE,cols differ
+6,0,7,0,1,NEW_TABLE,cols differ
+7,0,8,0,1,NEW_TABLE,cols differ
+8,0,10,0,1,NEW_TABLE,non-adjacent pages
+10,0,11,0,1,NEW_TABLE,cols differ
+11,0,12,0,1,NEW_TABLE,cols differ
+12,0,12,1,0,NEW_TABLE,"break:text-between:1 Includes trade & remittances, guarante"
+12,1,13,0,1,NEW_TABLE,break:text-between:EXPENSES1
+13,0,13,1,0,NEW_TABLE,cols differ
+13,1,14,0,1,NEW_TABLE,cols differ
+14,0,15,0,1,NEW_TABLE,cols differ
+15,0,17,0,1,NEW_TABLE,non-adjacent pages
+17,0,18,0,1,NEW_TABLE,cols differ
+18,0,20,0,1,NEW_TABLE,non-adjacent pages
+20,0,21,0,1,NEW_TABLE,cols differ
+21,0,22,0,1,NEW_TABLE,cols differ
+22,0,23,0,1,NEW_TABLE,cols differ
+23,0,24,0,1,NEW_TABLE,cols differ
+24,0,25,0,1,NEW_TABLE,break:text-between:DEBTS ISSUED
+25,0,26,0,1,NEW_TABLE,cols differ
+26,0,27,0,1,NEW_TABLE,cols differ
+27,0,28,0,1,NEW_TABLE,break:text-between:UNAUDITED CONSOLIDATED STATEMENT OF COMP
+28,0,29,0,1,NEW_TABLE,cols differ
+29,0,30,0,1,NEW_TABLE,cols differ
+30,0,31,0,1,NEW_TABLE,cols differ
+31,0,32,0,1,NEW_TABLE,cols differ
+32,0,33,0,1,NEW_TABLE,cols differ
+33,0,33,1,0,NEW_TABLE,cols differ
+33,1,34,0,1,NEW_TABLE,cols differ

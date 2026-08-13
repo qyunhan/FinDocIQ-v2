@@ -1,0 +1,46 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "business_segments_p17-20/chunks/c2",
+  "section_ids": [
+    "business_segments"
+  ],
+  "section_titles": [
+    "13.1 Business segments"
+  ],
+  "pages": [
+    19,
+    20
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-07-14T15:01:26",
+    "script": "extract_to_excel",
+    "label": "business_segments_p17-20/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3540,
+    "output_tokens": 4882,
+    "thinking_tokens": 0,
+    "total_tokens": 8422,
+    "est_cost_usd": 0.01327
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '13.1' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Elimination' [Business segments \u2014 At 31 Dece]",
+      "  duplicate row label x2: 'Elimination' [Business segments \u2014 At 31 Dece]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

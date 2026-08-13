@@ -1,0 +1,82 @@
+{
+  "tables": [
+    {
+      "title": "Income Tax",
+      "label_header": "In $m",
+      "continued_from_previous": false,
+      "section_id": "2",
+      "columns": [
+        {
+          "group": "Group",
+          "leaf": "1H26"
+        },
+        {
+          "group": "Group",
+          "leaf": "1H25"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current income tax expense",
+          "values": [
+            {
+              "value": "506",
+              "cell_state": "reported"
+            },
+            {
+              "value": "725",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deferred income tax expense",
+          "values": [
+            {
+              "value": "57",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(99)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Current income tax expense"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Deferred income tax expense"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,623 @@
+{
+  "tables": [
+    {
+      "title": "OPERATING EXPENSES",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H26"
+        },
+        {
+          "group": null,
+          "leaf": "1H25"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Staff costs",
+          "values": [
+            {
+              "value": "2,123",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,931",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Property, plant and equipment",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Depreciation",
+          "values": [
+            {
+              "value": "291",
+              "cell_state": "reported"
+            },
+            {
+              "value": "262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Maintenance and rental",
+          "values": [
+            {
+              "value": "96",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Others",
+          "values": [
+            {
+              "value": "220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "211",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Property, plant and equipment total",
+          "values": [
+            {
+              "value": "607",
+              "cell_state": "reported"
+            },
+            {
+              "value": "556",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other operating expenses",
+          "values": [
+            {
+              "value": "350",
+              "cell_state": "reported"
+            },
+            {
+              "value": "317",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total operating expenses",
+          "values": [
+            {
+              "value": "3,080",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,804",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Group staff strength",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Period end",
+          "values": [
+            {
+              "value": "33,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,311",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Average",
+          "values": [
+            {
+              "value": "33,223",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,513",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H26"
+        },
+        {
+          "group": null,
+          "leaf": "1H25"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances/(write-back):",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h3",
+          "label": "Impaired loans",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "57",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "nm",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Malaysia",
+          "values": [
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(8)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "nm",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Indonesia",
+          "values": [
+            {
+              "value": "51",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "149",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Greater China",
+          "values": [
+            {
+              "value": "104",
+              "cell_state": "reported"
+            },
+            {
+              "value": "88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h4",
+          "label": "Others",
+          "values": [
+            {
+              "value": "(80)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40",
+              "cell_state": "reported"
+            },
+            {
+              "value": "nm",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h3",
+          "label": "Impaired loans total",
+          "values": [
+            {
+              "value": "145",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Impaired other assets",
+          "values": [
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(87)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-impaired loans",
+          "values": [
+            {
+              "value": "210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "155",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-impaired other assets",
+          "values": [
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Allowances for loans and other assets",
+          "values": [
+            {
+              "value": "372",
+              "cell_state": "reported"
+            },
+            {
+              "value": "326",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Staff costs"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Property, plant and equipment"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Depreciation"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Maintenance and rental"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Other operating expenses"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Total operating expenses"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Group staff strength"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Period end"
+          },
+          {
+            "line_id": 20,
+            "indent": 1,
+            "label_clean": "Average"
+          }
+        ],
+        "title_clean": "OPERATING EXPENSES",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Allowances/(write-back):"
+          },
+          {
+            "line_id": 29,
+            "indent": 1,
+            "label_clean": "Impaired loans"
+          },
+          {
+            "line_id": 30,
+            "indent": 2,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 31,
+            "indent": 2,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 32,
+            "indent": 2,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 33,
+            "indent": 2,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 34,
+            "indent": 2,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 37,
+            "indent": 1,
+            "label_clean": "Impaired other assets"
+          },
+          {
+            "line_id": 39,
+            "indent": 1,
+            "label_clean": "Non-impaired loans"
+          },
+          {
+            "line_id": 41,
+            "indent": 1,
+            "label_clean": "Non-impaired other assets"
+          },
+          {
+            "line_id": 43,
+            "indent": 0,
+            "label_clean": "Allowances for loans and other assets"
+          }
+        ],
+        "title_clean": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

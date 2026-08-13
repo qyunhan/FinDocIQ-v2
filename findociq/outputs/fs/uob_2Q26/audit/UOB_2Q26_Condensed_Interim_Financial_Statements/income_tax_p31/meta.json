@@ -1,0 +1,45 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "income_tax_p31",
+  "section_ids": [
+    "income_tax"
+  ],
+  "section_titles": [
+    "2 Income Tax"
+  ],
+  "pages": [
+    31
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 2,
+  "usage": {
+    "ts": "2026-08-07T09:25:09",
+    "script": "extract_to_excel",
+    "label": "income_tax_p31",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3883,
+    "output_tokens": 350,
+    "thinking_tokens": 0,
+    "total_tokens": 4233,
+    "est_cost_usd": 0.00897,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Current income tax expense' printed bands [2] -> extracted slots [1,2]",
+      "  col-repair: declined for 'Current income tax expense' \u2014 4 printed tokens share band(s) [2] \u2014 no unambiguous destination"
+    ]
+  },
+  "crop": null
+}

@@ -1,0 +1,143 @@
+{
+  "tables": [
+    {
+      "title": "IRBA - RWA Flow Statement for Credit Risk Exposures",
+      "label_header": "$'m",
+      "continued_from_previous": false,
+      "section_id": "6.1",
+      "columns": [
+        {
+          "group": "30 Sep 2025",
+          "leaf": "RWA amounts"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "RWA as at end of previous quarter",
+          "values": [
+            {
+              "value": "216,494",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "2",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Asset size",
+          "values": [
+            {
+              "value": "3,260",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "3",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Asset quality (1)",
+          "values": [
+            {
+              "value": "3,321",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "4",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Model updates",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "5",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Methodology and Policy",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "6",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Acquisitions and disposals",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "7",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Foreign exchange movements",
+          "values": [
+            {
+              "value": "1,279",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "8",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "9",
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "RWA as at end of quarter",
+          "values": [
+            {
+              "value": "224,354",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) This represents movement in RWA resulting from factors (other than exposure movements) such as changes in portfolio mix, tenor, credit risk mitigation, etc.",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

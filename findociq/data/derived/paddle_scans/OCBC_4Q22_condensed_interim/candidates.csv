@@ -1,0 +1,89 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,88.07,69.27,To OurShareholders,9.96,True,left,False
+1,154.72,68.98,Financial Results forthe Financial Year Ended31 December 2022,9.96,True,left,False
+1,238.39,69.06,Ordinary Dividend,9.96,True,left,False
+1,369.32,69.13,Closure of Books,9.95,True,left,False
+1,468.99,69.22,ScripDividendScheme,9.95,True,left,False
+11,138.28,69.56,1. General,9.0,True,left,False
+11,260.08,69.18,2. Basisofpreparation,9.0,True,left,False
+11,284.38,86.06,2.1 Statementofcompliance,9.0,True,center,False
+11,371.76,86.13,2.2 Basisofpresentation,9.0,True,center,False
+11,458.64,86.12,2.3 Useofestimatesandjudgements,9.0,True,center,False
+11,632.61,85.26,Impairmentoffinancialassets,9.0,True,center,False
+12,91.85,69.06,2. Basisofpreparation(continued),9.0,True,left,False
+12,116.76,86.02,2.3 Useofestimatesandjudgements(continued),9.0,True,center,False
+12,166.91,85.35,Allowancesfornon-credit-impairedloanstocustomers,9.0,False,center,False
+12,366.57,85.58,SensitivityofECL,9.0,False,center,False
+12,410.21,85.36,Allowancesforcredit-impairedloanstocustomers,9.0,False,center,False
+12,509.1,85.31,Impairmentofgoodwillandotherintangibleassets,9.0,True,center,False
+13,94.25,68.68,2. Basisofpreparation(continued),9.0,True,left,False
+13,119.11,85.75,2.4 Significantaccountingpolicies,9.0,True,center,False
+13,399.09,68.75,3. Net interestincome,9.0,True,left,False
+13,604.25,68.64,4. Profit from lifeinsurance,9.0,True,left,False
+14,93.19,70.91,5.Feesandcommissions(net),9.0,True,left,False
+14,313.26,69.28,6. Other income,9.0,True,left,False
+14,449.45,68.96,7. Other operatingexpenses,9.0,True,left,False
+14,609.38,70.91,8.Allowancesforloansandotherassets,9.0,True,left,False
+15,91.71,69.02,9. Dividends/distributions,9.0,True,left,False
+15,284.42,69.17,10. Share capital,9.0,True,left,False
+16,93.19,70.91,11.Depositsandbalancesofnon-bankcustomersandbanks,9.0,True,left,False
+16,252.33,69.65,12. Debt issued,9.0,True,left,False
+16,454.01,69.73,13. Loans tocustomers,9.0,True,left,False
+17,91.98,69.44,14. Segmentinformation,9.0,True,left,False
+17,115.98,87.94,14.1Businesssegments,9.0,True,center,False
+18,91.92,69.3,14. Segmentinformation (continued),9.0,True,left,False
+18,113.94,87.94,14.1Businesssegments(continued),9.0,True,center,False
+19,91.99,69.45,14. Segmentinformation (continued),9.0,True,left,False
+19,113.94,87.94,14.1Businesssegments(continued),9.0,True,center,False
+20,91.79,69.15,14. Segmentinformation (continued),9.0,True,left,False
+20,112.62,85.77,14.1 Business segments (continued),9.0,True,center,False
+20,173.46,85.94,Global Consumer/Private Banking,9.0,True,center,False
+20,291.67,86.04,Global Wholesale Banking,9.0,True,center,False
+20,409.96,86.09,Global Treasury and Markets,9.0,True,center,False
+20,514.52,86.16,Insurance,9.0,True,center,False
+20,592.97,86.49,Others,9.0,True,center,False
+21,91.88,69.24,14. Segmentinformation (continued),9.0,True,left,False
+21,115.29,86.08,14.2 Geographical segments,9.0,True,center,False
+22,91.86,69.15,15. Fair values offinancialinstruments,9.0,True,left,False
+22,112.87,85.77,15.1 Valuationgovernance framework,9.0,True,center,False
+22,371.95,85.31,Bid Offer Adjustments,9.0,False,center,False
+22,408.74,85.3,Model Adjustments,9.0,False,center,False
+22,446.05,85.3,Day 1 Profitor LossAdjustments,9.0,False,center,False
+22,545.76,85.41,Credit Valuation Adjustments,9.0,False,center,False
+22,595.56,85.39,Collateral Valuation Adjustments,9.0,False,center,False
+22,644.71,85.55,Parameter Uncertainty Adjustments,9.0,False,center,False
+23,94.2,69.24,15. Fair values offinancialinstruments (continued),9.0,True,left,False
+23,115.32,86.07,15.2 Fair values,9.0,True,center,False
+23,223.28,85.8,Financial assets,9.0,True,center,False
+23,371.97,85.9,Financial liabilities,9.0,True,center,False
+23,506.21,83.64,15.3 Fair value hierarchy,9.0,True,center,False
+24,91.82,69.12,15. Fair values offinancialinstruments (continued),9.0,True,left,False
+24,112.78,85.72,15.3 Fair value hierarchy (continued),9.0,True,center,False
+25,91.58,69.21,15. Fair values offinancialinstruments (continued),9.0,True,left,False
+25,112.55,85.72,15.3 Fair value hierarchy (continued),9.0,True,center,False
+26,91.71,69.27,15. Fair values offinancial instruments (continued),9.0,True,left,False
+26,113.94,85.06,15.3Fairvaluehierarchy(continued),9.0,True,center,False
+27,91.83,69.26,15. Fair values of financial instruments,9.0,True,left,False
+27,112.73,83.57,15.3 Fair value hierarchy (continued),9.0,True,center,False
+29,91.47,69.96,OTHER INFORMATION,11.03,True,left,False
+29,116.88,69.9,1. Audit or review,9.0,True,left,False
+29,253.46,69.75,2. Review of the performanceof the Group for the financial year ended31 December 2022,9.0,True,left,False
+29,302.69,70.14,3. Dividendinformation,9.0,True,left,False
+29,352.56,69.84,4. Interested person transactions,9.0,True,left,False
+29,414.3,69.93,"5. Disclosure of persons occupying managerial positions who are related to a director, CEO or substantialshareholder",9.0,True,left,False
+29,501.65,69.83,6. Undertakingfrom directorsand executive officers,9.0,True,left,False
+30,125.88,71.04,,0.0,False,left,False
+30,259.41,70.8,,0.0,False,left,False
+30,401.65,69.77,,0.0,False,left,False
+30,492.87,69.57,,0.0,False,left,False
+30,572.9,68.24,,0.0,False,left,False
+31,88.81,69.94,,0.0,False,center,False
+31,134.83,70.36,,0.0,False,center,False
+34,239.96,283.77,,0.0,False,center,False
+34,353.25,283.5,,0.0,False,center,False
+36,88.43,68.06,,0.0,False,center,False
+36,135.47,68.79,,0.0,False,center,False
+36,369.09,68.91,,0.0,False,center,False
+36,536.17,68.99,,0.0,False,center,False
+37,88.22,68.36,,0.0,False,center,False
+37,494.65,69.14,,0.0,False,center,False

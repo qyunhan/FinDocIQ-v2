@@ -1,0 +1,265 @@
+{
+  "tables": [
+    {
+      "title": "1Q25 Performance Highlights",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Value"
+        },
+        {
+          "group": null,
+          "leaf": "YoY"
+        },
+        {
+          "group": null,
+          "leaf": "QoQ"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total Income",
+          "values": [
+            {
+              "value": "S$3.66b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+7%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Net Interest Income",
+          "values": [
+            {
+              "value": "S$2.35b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-4%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-4%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-Interest Income",
+          "values": [
+            {
+              "value": "S$1.31b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+10%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+36%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operating Expenses",
+          "values": [
+            {
+              "value": "S$1.42b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+5%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-9%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net Interest Margin",
+          "values": [
+            {
+              "value": "2.04%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-23bps",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-11bps",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit Costs",
+          "values": [
+            {
+              "value": "24bps",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+8bps",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3bps",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer Loans",
+          "values": [
+            {
+              "value": "S$322b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+7%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+1%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer Deposits",
+          "values": [
+            {
+              "value": "S$403b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPL Ratio",
+          "values": [
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.1ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "unchanged",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "CET1 CAR",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Transitional final Basel III reforms",
+          "values": [
+            {
+              "value": "17.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Fully phased-in final Basel III reforms",
+          "values": [
+            {
+              "value": "15.5%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

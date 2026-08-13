@@ -1,0 +1,305 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Dividends",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "OVERVIEW",
+      "page": 4,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_003",
+      "title": "First Half",
+      "page": 9,
+      "level": 2,
+      "parent_id": "sec_002"
+    },
+    {
+      "id": "sec_004",
+      "title": "Second Quarter",
+      "page": 9,
+      "level": 2,
+      "parent_id": "sec_002"
+    },
+    {
+      "id": "sec_005",
+      "title": "Balance Sheet",
+      "page": 9,
+      "level": 2,
+      "parent_id": "sec_002"
+    },
+    {
+      "id": "sec_006",
+      "title": "NET INTEREST INCOME",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_007",
+      "title": "NET FEE AND COMMISSION INCOME",
+      "page": 12,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_008",
+      "title": "OTHER NON-INTEREST INCOME",
+      "page": 12,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_009",
+      "title": "EXPENSES1",
+      "page": 13,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_010",
+      "title": "ALLOWANCES FOR CREDIT AND OTHER LOSSES",
+      "page": 13,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_011",
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS",
+      "page": 14,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_012",
+      "title": "Consumer Banking/ Wealth Management",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_011"
+    },
+    {
+      "id": "sec_013",
+      "title": "Institutional Banking",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_011"
+    },
+    {
+      "id": "sec_014",
+      "title": "Markets Trading",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_011"
+    },
+    {
+      "id": "sec_015",
+      "title": "Others",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_011"
+    },
+    {
+      "id": "sec_016",
+      "title": "PERFORMANCE BY GEOGRAPHY",
+      "page": 17,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_017",
+      "title": "Singapore",
+      "page": 18,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_018",
+      "title": "Hong Kong",
+      "page": 18,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_019",
+      "title": "Rest of Greater China",
+      "page": 19,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_020",
+      "title": "South and Southeast Asia",
+      "page": 19,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_021",
+      "title": "Rest of the World",
+      "page": 19,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_022",
+      "title": "CUSTOMER LOANS",
+      "page": 20,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_023",
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+      "page": 21,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_024",
+      "title": "CUSTOMER DEPOSITS",
+      "page": 24,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_025",
+      "title": "DEBTS ISSUED",
+      "page": 25,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_026",
+      "title": "CAPITAL ADEQUACY",
+      "page": 26,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_027",
+      "title": "PILLAR 3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDING RATIO DISCLOSURES",
+      "page": 26,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_028",
+      "title": "UNREALISED PROPERTY VALUATION SURPLUS",
+      "page": 26,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_029",
+      "title": "UNAUDITED CONSOLIDATED INCOME STATEMENT",
+      "page": 27,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_030",
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "page": 28,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_031",
+      "title": "UNAUDITED BALANCE SHEETS",
+      "page": 29,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_032",
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "page": 30,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_033",
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY",
+      "page": 31,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_034",
+      "title": "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "page": 32,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_035",
+      "title": "OTHER FINANCIAL INFORMATION",
+      "page": 33,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_036",
+      "title": "1. Fair Value of Financial Instruments",
+      "page": 33,
+      "level": 2,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_037",
+      "title": "Fair Value Hierarchy",
+      "page": 33,
+      "level": 3,
+      "parent_id": "sec_036"
+    },
+    {
+      "id": "sec_038",
+      "title": "2. Off-balance Sheet Items",
+      "page": 33,
+      "level": 2,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_039",
+      "title": "ADDITIONAL INFORMATION",
+      "page": 34,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_040",
+      "title": "SHARE CAPITAL",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_041",
+      "title": "INTERESTED PARTY TRANSACTIONS PURSUANT TO LISTING RULE 920(1)",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_042",
+      "title": "CONFIRMATION OF DIRECTORS AND EXECUTIVE OFFICERS\u2019 UNDERTAKINGS PURSUANT TO LISTING RULE 720(1)",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_043",
+      "title": "CONFIRMATION BY THE BOARD",
+      "page": 35,
+      "level": 1,
+      "parent_id": null
+    }
+  ]
+}

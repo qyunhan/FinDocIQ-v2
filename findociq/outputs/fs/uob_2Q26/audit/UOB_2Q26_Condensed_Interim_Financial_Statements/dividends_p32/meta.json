@@ -1,0 +1,61 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "dividends_p32",
+  "section_ids": [
+    "dividends"
+  ],
+  "section_titles": [
+    "4 Dividends"
+  ],
+  "pages": [
+    32
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 4,
+  "usage": {
+    "ts": "2026-08-07T09:25:18",
+    "script": "extract_to_excel",
+    "label": "dividends_p32",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3878,
+    "output_tokens": 575,
+    "thinking_tokens": 0,
+    "total_tokens": 4453,
+    "est_cost_usd": 0.01099,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1453' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '174' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '537' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '373' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: '' printed bands [1] -> extracted slots [1,2]",
+      "  col-repair: declined for '' \u2014 printed token '1' maps to 2 bands (need exactly 1)"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "4 Dividends",
+      "anchor_label": "4 Dividends",
+      "anchor_y": 79.57,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

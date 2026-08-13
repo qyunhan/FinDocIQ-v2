@@ -1,0 +1,287 @@
+# DRAFT — proposed additions to concept_dictionary.yaml, for review only.
+# NOT loaded by the pipeline (load_dictionary.py reads concept_dictionary.yaml
+# by exact name). This file exists so you can review/edit before any of it is
+# merged in — nothing here has been applied.
+#
+# Source: row_dim.row_leaf_label WHERE concept_key IS NULL, ranked by how many
+# distinct docs each label recurs in (2026-07-27, 24-doc corpus). 74% of
+# extracted rows (3,989 / 5,383) are currently unresolved; this covers the
+# highest-leverage recurring labels — each entry here applies retroactively
+# to every doc already loaded AND every future doc using the same template,
+# since NSFR/LCR/capital-adequacy tables are near-identical across banks and
+# quarters (Basel/MAS Notice 637/649/651 templates).
+#
+# Grouped to match concept_dictionary.yaml's own section headers so each
+# block can be pasted straight into the matching section.
+
+# ============================================================ P&L LINE ITEMS
+  - key: pnl.opex.amortisation_intangibles
+    name: Amortisation of intangible assets
+    definition: Non-cash amortisation charge on intangibles (incl. goodwill-adjacent items).
+    unit: currency
+    kind: line_item
+    thesis: [T3]
+    aliases: ["amortisation of intangible assets", "amortization of intangible assets"]
+    # seen in 10/24 docs — highest single-label count in the unresolved list
+
+  - key: pnl.other.share_of_associates_jv
+    name: Share of profits/losses of associates and JVs
+    definition: Equity-accounted share of associate/JV results, below operating income.
+    unit: currency
+    kind: line_item
+    thesis: [T6]
+    aliases: ["share of profits/losses of associates and joint ventures",
+             "share of profits/losses of associates and jvs"]
+
+# ============================================================ BALANCE SHEET
+  - key: bs.liabilities.fixed_deposits
+    name: Fixed deposits
+    definition: Time/fixed-tenor deposits (vs. CASA). Funding-cost/duration mix.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["fixed deposits", "time deposits"]
+
+  - key: bs.liabilities.other_borrowings
+    name: Other borrowings
+    definition: Wholesale/market borrowings outside customer deposits (bonds, MTNs, etc.).
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["other borrowings"]
+
+  - key: bs.equity.noncontrolling_interests
+    name: Non-controlling interests
+    definition: Equity attributable to minority shareholders of consolidated subsidiaries.
+    unit: currency
+    kind: line_item
+    thesis: [T6]
+    aliases: ["non-controlling interests", "minority interests"]
+
+  - key: bs.assets.allowance_coverage_npa
+    name: Allowance coverage (total NPA)
+    definition: Total allowances as a % of total non-performing assets.
+    unit: percent
+    kind: line_item
+    thesis: [T4]
+    aliases: ["total allowances/ npa", "total allowances/npa", "allowance coverage"]
+
+  - key: bs.assets.allowance_coverage_unsecured_npa
+    name: Allowance coverage (unsecured NPA)
+    definition: Total allowances as a % of UNSECURED non-performing assets — the
+      more conservative coverage cut (excludes collateral benefit).
+    unit: percent
+    kind: line_item
+    thesis: [T4]
+    aliases: ["total allowances/ unsecured npa", "total allowances/unsecured npa"]
+
+# ============================================================ CAPITAL
+  - key: reg.capital.tier1_capital
+    name: Tier 1 capital
+    definition: CET1 + Additional Tier 1 capital. Numerator of the Tier 1 ratio.
+    unit: currency
+    kind: line_item
+    thesis: [T5]
+    aliases: ["tier 1 capital"]
+
+  - key: reg.capital.total_capital
+    name: Total capital
+    definition: Tier 1 + Tier 2 capital. Numerator of the Total Capital ratio.
+    unit: currency
+    kind: line_item
+    thesis: [T5]
+    aliases: ["total capital"]
+
+  - key: reg.capital.leverage_ratio
+    name: Leverage ratio
+    definition: Tier 1 capital / total exposure measure. Non-risk-weighted
+      capital backstop (Basel III). Directly disclosed like CET1/LCR/NSFR
+      (kind=line_item, not derived) — same treatment as the other three
+      regulator-mandated % disclosures already in this file.
+    unit: percent
+    kind: line_item
+    thesis: [T5]
+    aliases: ["leverage ratio"]
+
+# ============================================================ LIQUIDITY (LCR / NSFR LINE ITEMS)
+# All currency amounts feeding the already-modeled lcr_ratio/nsfr_ratio -- a
+# fixed MAS Notice 649/651 template, near-identical across DBS/OCBC/UOB, so
+# this block is the single highest-leverage addition in this draft: 17
+# labels, each already recurring in 5 of the 7 loaded pillar3 docs (i.e.
+# ~85 currently-unresolved rows), and will keep paying off on every future
+# pillar3 doc.
+  - key: reg.liquidity.hqla_total
+    name: Total HQLA
+    definition: Total High-Quality Liquid Assets (LCR numerator).
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["total hqla"]
+
+  - key: reg.liquidity.cash_inflows_total
+    name: Total cash inflows
+    definition: Total contractual/expected cash inflows over the 30-day LCR horizon.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["total cash inflows"]
+
+  - key: reg.liquidity.cash_outflows_total
+    name: Total cash outflows
+    definition: Total expected cash outflows over the 30-day LCR horizon (LCR denominator basis).
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["total cash outflows"]
+
+  - key: reg.liquidity.stable_deposits
+    name: Stable deposits
+    definition: Fully-insured/highly stable retail deposits — lowest NSFR/LCR run-off factor.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["stable deposits"]
+
+  - key: reg.liquidity.less_stable_deposits
+    name: Less stable deposits
+    definition: Retail deposits with a higher run-off factor than "stable deposits".
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["less stable deposits"]
+
+  - key: reg.liquidity.retail_sme_deposits
+    name: Retail and small-business-customer deposits
+    definition: Retail deposits and deposits from small business customers (combined LCR category).
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["retail deposits and deposits from small business customers, of which"]
+
+  - key: reg.liquidity.operational_deposits
+    name: Operational deposits (all counterparties)
+    definition: Deposits required for clearing/custody/cash-management activity — preferential LCR treatment.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["operational deposits (all counterparties) and deposits in institutional networks of cooperative banks"]
+
+  - key: reg.liquidity.nonoperational_deposits
+    name: Non-operational deposits (all counterparties)
+    definition: Wholesale deposits without an operational relationship — higher LCR run-off.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["non-operational deposits (all counterparties)"]
+
+  - key: reg.liquidity.secured_wholesale_funding
+    name: Secured wholesale funding
+    definition: Wholesale funding collateralized against assets (repos, etc.), LCR outflow category.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["secured wholesale funding"]
+
+  - key: reg.liquidity.secured_lending
+    name: Secured lending (reverse repos)
+    definition: Reverse-repo / collateralized lending — LCR inflow category.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["secured lending (e.g. reverse repos)"]
+
+  - key: reg.liquidity.credit_liquidity_facilities
+    name: Credit and liquidity facilities
+    definition: Undrawn committed credit/liquidity facilities extended to clients — LCR outflow category.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["credit and liquidity facilities"]
+
+  - key: reg.liquidity.inflows_fully_performing
+    name: Inflows from fully performing exposures
+    definition: Contractual inflows from loans/exposures with no default risk factor applied.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["inflows from fully performing exposures"]
+
+  - key: reg.liquidity.other_cash_inflows
+    name: Other cash inflows
+    definition: Residual LCR inflow category not captured by the named lines above.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["other cash inflows"]
+
+  - key: reg.liquidity.other_contractual_funding_obligations
+    name: Other contractual funding obligations
+    definition: Contractual LCR outflow obligations not captured by the named lines above.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["other contractual funding obligations"]
+
+  - key: reg.liquidity.other_contingent_funding_obligations
+    name: Other contingent funding obligations
+    definition: Contingent (off-balance-sheet) LCR outflow obligations not captured above.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["other contingent funding obligations"]
+
+  - key: reg.liquidity.derivatives_outflows
+    name: Outflows related to derivatives / collateral requirements
+    definition: LCR outflows from derivative exposures and additional collateral calls.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["outflows related to derivatives exposures and other collateral requirements"]
+
+  - key: reg.liquidity.debt_products_outflows
+    name: Outflows related to loss of funding on debt products
+    definition: LCR outflows from maturing/non-rolled-over own-debt-product funding.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["outflows related to loss of funding on debt products"]
+
+  - key: reg.liquidity.additional_requirements
+    name: Additional requirements
+    definition: Catch-all LCR outflow line for additional contractual/regulatory requirements.
+    unit: currency
+    kind: line_item
+    thesis: [T1]
+    aliases: ["additional requirements, of which"]
+
+# ============================================================ DERIVED METRICS
+  - key: ratio.roa
+    name: Return on assets
+    definition: Net profit / AVERAGE total assets. Symmetric treatment with ratio.roe
+      (computed, not matched against the printed % directly, for the same
+      cross-bank-consistency reason roe is derived).
+    unit: percent
+    kind: derived
+    thesis: [T6]
+    formula: "pnl.profit.net_attributable / avg(bs.assets.total)"
+
+# ============================================================ FLAGGED — needs your call, NOT drafted above
+#
+# "Tier 1" (6 docs) — ambiguous: could be the Tier 1 CAPITAL RATIO (%, a
+#   sibling of cet1_ratio/leverage_ratio) or a truncated duplicate of "Tier 1
+#   capital" (the $ amount above) depending on which table it's in. I didn't
+#   want to guess an alias that could silently misfile percent values as
+#   currency or vice versa — want me to pull a real source row and confirm?
+#
+# "Total" (12 docs), "Others" (66 rows / 6 docs), "Basic" (9 rows / 6 docs) —
+#   generic, context-dependent labels. "Total" means a different concept in
+#   every table it appears in (subtotal of whatever that table is); aliasing
+#   it globally would create false cross-table matches. "Basic" is very
+#   likely a truncated "Basic earnings per share" row, but I won't alias it
+#   without confirming — a bare "Basic" collision elsewhere would misfile.
+#
+# "Singapore" (6 docs), "Rest of the World" (5 docs), "Constant-currency
+#   change" (6 docs) — these are GEOGRAPHY dimension values / presentation
+#   labels, not financial concepts. They belong in geo_dim resolution, not
+#   concept_dictionary.yaml — flagging so they don't get treated as a gap in
+#   concept mapping when they're actually a different pipeline stage's job.

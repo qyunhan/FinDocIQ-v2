@@ -1,0 +1,55 @@
+{
+  "document": "DBS_1Q25_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "balance_sheet_p4-5",
+  "section_ids": [
+    "balance_sheet"
+  ],
+  "section_titles": [
+    "Balance sheet"
+  ],
+  "pages": [
+    4,
+    5
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-24T09:52:18",
+    "script": "extract_to_excel",
+    "label": "balance_sheet_p4-5",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4468,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 4477,
+    "est_cost_usd": 0.00678,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '4.86' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.16' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '17.4' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '15.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '120' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '205' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '137' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '230' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '145' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '115' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,40 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+2,0,4,0,1,NEW_TABLE,non-adjacent pages
+4,0,5,0,1,NEW_TABLE,cols differ
+5,0,5,1,0,NEW_TABLE,cols differ
+5,1,5,2,0,NEW_TABLE,cols differ
+5,2,6,0,1,NEW_TABLE,cols differ
+6,0,8,0,1,NEW_TABLE,non-adjacent pages
+8,0,8,1,0,NEW_TABLE,cols differ
+8,1,9,0,1,NEW_TABLE,cols differ
+9,0,9,1,0,NEW_TABLE,cols differ
+9,1,10,0,1,NEW_TABLE,cols differ
+10,0,11,0,1,NEW_TABLE,break:text-between:Operating Expenses
+11,0,12,0,1,NEW_TABLE,break:text-between:Allowance for Credit and Other Losses
+12,0,13,0,1,NEW_TABLE,cols differ
+13,0,14,0,1,NEW_TABLE,cols differ
+14,0,15,0,1,NEW_TABLE,cols differ
+15,0,16,0,1,NEW_TABLE,cols differ
+16,0,17,0,1,NEW_TABLE,cols differ
+17,0,18,0,1,PERIOD_INSTANCE,"repeats ['Net interest income', 'Non-interest income', 'Operating income']"
+18,0,19,0,1,NEW_TABLE,cols differ
+19,0,22,0,1,NEW_TABLE,non-adjacent pages
+22,0,22,1,0,NEW_TABLE,cols differ
+22,1,23,0,1,NEW_TABLE,cols differ
+23,0,26,0,1,NEW_TABLE,non-adjacent pages
+26,0,27,0,1,NEW_TABLE,cols differ
+27,0,28,0,1,NEW_TABLE,cols differ
+28,0,29,0,1,NEW_TABLE,cols differ
+29,0,30,0,1,NEW_TABLE,cols differ
+30,0,31,0,1,NEW_TABLE,cols differ
+31,0,32,0,1,NEW_TABLE,cols differ
+32,0,34,0,1,NEW_TABLE,non-adjacent pages
+34,0,34,1,0,PERIOD_INSTANCE,"date change ['2H24', '2H25'] -> ['15 January 2021', '17 July 2019', '19 January 2023', '22 June 2021', '4 July 2022']"
+34,1,35,0,1,NEW_TABLE,break:own-title:Dividends
+35,0,35,1,0,NEW_TABLE,break:own-title:The Group
+35,1,36,0,1,NEW_TABLE,cols differ
+36,0,37,0,1,NEW_TABLE,cols differ
+37,0,38,0,1,NEW_TABLE,cols differ
+38,0,39,0,1,NEW_TABLE,cols differ
+39,0,42,0,1,NEW_TABLE,non-adjacent pages
+42,0,43,0,1,FLAG,col sig not evaluable

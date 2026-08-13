@@ -1,0 +1,53 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "by_ageing_p13",
+  "section_ids": [
+    "by_ageing"
+  ],
+  "section_titles": [
+    "By ageing"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 6,
+  "usage": {
+    "ts": "2026-08-07T09:24:28",
+    "script": "extract_to_excel",
+    "label": "by_ageing_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3887,
+    "output_tokens": 913,
+    "thinking_tokens": 0,
+    "total_tokens": 4800,
+    "est_cost_usd": 0.01405,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '3357' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3557' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2776' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1320' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1332' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1610' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4677' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4889' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4386' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

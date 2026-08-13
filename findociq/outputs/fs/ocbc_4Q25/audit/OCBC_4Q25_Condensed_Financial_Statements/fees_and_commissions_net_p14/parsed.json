@@ -1,0 +1,477 @@
+{
+  "tables": [
+    {
+      "title": "4. Fees and commissions (net)",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "2H 2025 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2H 2024 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Gross fee and commission income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Brokerage",
+          "values": [
+            {
+              "value": "65",
+              "cell_state": "reported"
+            },
+            {
+              "value": "47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "87",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit card",
+          "values": [
+            {
+              "value": "212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "205",
+              "cell_state": "reported"
+            },
+            {
+              "value": "414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "404",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fund management",
+          "values": [
+            {
+              "value": "64",
+              "cell_state": "reported"
+            },
+            {
+              "value": "54",
+              "cell_state": "reported"
+            },
+            {
+              "value": "121",
+              "cell_state": "reported"
+            },
+            {
+              "value": "108",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Guarantees",
+          "values": [
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment banking",
+          "values": [
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            },
+            {
+              "value": "109",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loan-related",
+          "values": [
+            {
+              "value": "138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "112",
+              "cell_state": "reported"
+            },
+            {
+              "value": "262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "213",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Service charges",
+          "values": [
+            {
+              "value": "54",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61",
+              "cell_state": "reported"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Trade-related and remittances",
+          "values": [
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "140",
+              "cell_state": "reported"
+            },
+            {
+              "value": "278",
+              "cell_state": "reported"
+            },
+            {
+              "value": "271",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Wealth management (2)",
+          "values": [
+            {
+              "value": "819",
+              "cell_state": "reported"
+            },
+            {
+              "value": "565",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,443",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,079",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Gross fee and commission income total",
+          "values": [
+            {
+              "value": "1,583",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,266",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,433",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fee and commission expense",
+          "values": [
+            {
+              "value": "(298)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(241)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(530)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(463)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Fees and commissions (net)",
+          "values": [
+            {
+              "value": "1,285",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,025",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,411",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,970",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Unaudited and unreviewed.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) Includes trust and custodian fees.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Gross fee and commission income"
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Brokerage"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Credit card"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Fund management"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Guarantees"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Investment banking"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Loan-related"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Service charges"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Trade-related and remittances"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Wealth management"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Fee and commission expense"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 64,
+            "indent": 2,
+            "label_clean": "Unaudited and unreviewed."
+          },
+          {
+            "line_id": 65,
+            "indent": 2,
+            "label_clean": "Includes trust and custodian fees."
+          }
+        ],
+        "title_clean": "4. Fees and commissions (net)",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

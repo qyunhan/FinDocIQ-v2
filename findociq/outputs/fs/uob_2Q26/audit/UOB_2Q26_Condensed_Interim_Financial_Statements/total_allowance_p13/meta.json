@@ -1,0 +1,49 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "total_allowance_p13",
+  "section_ids": [
+    "total_allowance"
+  ],
+  "section_titles": [
+    "Total allowance"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 36,
+  "usage": {
+    "ts": "2026-08-07T09:24:15",
+    "script": "extract_to_excel",
+    "label": "total_allowance_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3887,
+    "output_tokens": 5702,
+    "thinking_tokens": 0,
+    "total_tokens": 9589,
+    "est_cost_usd": 0.05715,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x4: 'Total' [Non-Performing Assets]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Others' printed bands [2,4,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Total' printed bands [2,4,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-repair: declined for 'Others' \u2014 extracted values ['1.0', '1.2', '1.4', '205', '239', '283'] != printed tokens ['23', '24', '32']",
+      "  col-repair: declined for 'Total' \u2014 extracted values ['1.5', '1.6', '1.6', '5,341', '5,379', '5,700'] != printed tokens ['5,386', '5,440', '5,750']"
+    ]
+  },
+  "crop": null
+}

@@ -1,0 +1,43 @@
+{
+  "document": "OCBC 1H25 Media Release Financial Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "1 August 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "operating_expenses_p13",
+  "section_ids": [
+    "operating_expenses"
+  ],
+  "section_titles": [
+    "OPERATING EXPENSES"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-25T08:07:04",
+    "script": "extract_to_excel",
+    "label": "operating_expenses_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3891,
+    "output_tokens": 3133,
+    "thinking_tokens": 0,
+    "total_tokens": 7024,
+    "est_cost_usd": 0.03403,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

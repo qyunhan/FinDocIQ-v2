@@ -1,0 +1,653 @@
+# ---------------------------------------------------------------------------
+# SEGMENT PARTITIONS
+#
+# A bank's reporting segments that EXHAUSTIVELY partition the whole bank, so the
+# parent slice can be RECOVERED by summing the members. This is a property of
+# the BANK's reporting structure, not of any one concept -- declare it once and
+# every additive concept measured at those segments rolls up the same way.
+#
+# Why this is NOT a `formula:` string: every formula here combines DIFFERENT
+# concepts at the SAME grain (`pnl.noninterest.total = fee + trading +
+# investment`), evaluated by pandas.eval across the COLUMNS of a concept-pivot.
+# A partition sum is the opposite shape -- the SAME concept summed across ROWS
+# of the segment axis to produce a different segment value. Overloading the
+# formula syntax would conflate two different operations behind one parser;
+# `concept.compute_ratios.segment_rollup` is a separate pass instead.
+#
+# STRICTLY A FALLBACK. The roll-up only fills a parent slot that has NO value
+# after build_fact_metric's tier resolution has run, so a direct anchor or a
+# statutory-statement row always wins. It never overwrites, exactly like the
+# existing fill-only derived-metric pass.
+#
+# `segment_dim` cannot express this today: it is corpus-global (one parent per
+# segment, no bank dimension), so it cannot say WHICH members are exhaustive
+# FOR A GIVEN BANK -- DBS partitions into Commercial Book + Markets, OCBC into
+# Retail/Wholesale/Markets/Insurance/Other. Those are different partitions of
+# the same SEG_TOTAL and only a per-bank declaration can distinguish them.
+# ---------------------------------------------------------------------------
+segment_partitions:
+  - bank: DBS
+    parent: SEG_TOTAL
+    members: [SEG_COMMERCIAL, SEG_MARKETS]
+    note: >
+      DBS presents the group income statement as Commercial Book + Markets
+      trading; the two are disjoint and exhaustive, and the printed group
+      total equals their sum (FY25: 14,494 + 6 = 14,500). Recovers
+      pnl.nii.net for the group when the direct row is absent -- the case
+      lineage_identity_map.csv records as resolution=derived with formula
+      "[Commercial book] NII + [Markets] NII", which had no implementation.
+
+# concept_dictionary.yaml
+# PROVENANCE: tracked copy of the curated vocabulary authored by the user
+#   (source: ~/Downloads/concept_dictionary_2.yaml, imported 2026-07-14). This
+#   in-repo copy is the SOURCE OF TRUTH the concept-resolution layer loads
+#   (findociq/pipeline/concept/load_dictionary.py). Edit HERE, not the Download.
+#
+# The canonical vocabulary for FinDocIQ cross-bank analysis.
+# This is the SOURCE OF TRUTH you curate. A resolver applies it to stamp
+# row_dim.concept_key; cell_fact inherits via v_cell_flat.
+#
+# Namespace is a dotted hierarchy so uniqueness is structural (like a filesystem)
+# and concepts are prefix-queryable (WHERE concept_key LIKE 'ratio.%').
+# Grounded in: IAS 1 / IFRS 7&9 (statement line items), Basel III / MAS Notice 637
+# (regulatory metrics), and standard bank-analysis conventions (derived ratios).
+#
+# Each concept: canonical key, human name, definition, unit family, which of the
+# 6 analyst theses it serves, and whether it's a raw line item or derived.
+# `aliases` seeds the deterministic matcher with the label variants seen across
+# DBS / OCBC / UOB. Extend as you load more docs.
+#
+# `nature` is the IAS-1 flow-vs-stock distinction, load-bearing (not just docs):
+# concept.validate()'s nature check and load_dictionary's alias-ambiguity gate
+# both key off it to catch a P&L charge and a balance-sheet balance sharing one
+# concept_key (e.g. "provisions" as a period charge vs "allowances" as an as-at
+# balance) before it silently corrupts a chart. One of:
+#   flow        - an income-statement/cash-flow amount for a DURATION
+#                 (never legitimately period_span='as_at').
+#   stock       - a balance-sheet amount AT A POINT IN TIME.
+#   ratio_flow  - a derived ratio computed OVER a period (CIR, NIM, ROE,
+#                 credit-cost-bps, non-II share).
+#   ratio_point - a derived/regulatory ratio computed AS OF a date (CET1, LCR,
+#                 NSFR, CASA ratio, LDR, NPL ratio).
+# bs.assets.iea_average is tagged `flow`, not `stock`, even though it's a
+# balance-sheet quantity -- it's an AVERAGE reported over a duration (never
+# as_at), so it behaves like a flow for period_span-validation purposes.
+
+meta:
+  version: 0.1
+  basis: group_consolidated          # ALWAYS group/consolidated, never bank-only
+  currency: SGD
+  theses:
+    T1: funding_franchise            # CASA, NIM sustainability
+    T2: earnings_quality            # non-II mix, fees, wealth
+    T3: efficiency                  # CIR, operating leverage
+    T4: credit_risk                 # credit cost, NPL, coverage, geography
+    T5: capital_return              # CET1, payout, buybacks
+    T6: roe_synthesis               # the master metric everything ladders to
+
+# ============================================================ P&L LINE ITEMS
+concepts:
+  - key: pnl.nii.interest_income
+    name: Interest income (gross)
+    definition: Total interest and similar income earned on assets.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T1]
+    aliases: ["interest income", "total interest income", "interest and similar income"]
+
+  - key: pnl.nii.interest_expense
+    name: Interest expense (gross)
+    definition: Total interest paid on funding.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T1]
+    aliases: ["interest expense", "total interest expense"]
+
+  - key: pnl.nii.net
+    name: Net interest income
+    definition: Interest income minus interest expense. Engine 1 of bank earnings.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T1, T6]
+    aliases: ["net interest income", "net interest income (nii)", "net interest income/(expense)"]
+
+  - key: pnl.noninterest.fee_commission
+    name: Net fee & commission income
+    definition: Fees from wealth, cards, transaction banking, advisory. Capital-light.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T2, T6]
+    aliases: ["net fee and commission income", "net fees and commissions", "fee and commission income", "net fee income", "fees and commissions net"]
+
+  - key: pnl.noninterest.trading
+    name: Net trading income
+    definition: Trading & treasury customer-flow income.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T2]
+    aliases: ["net trading income", "markets trading income", "trading income", "treasury customer sales and other income"]
+
+  - key: pnl.noninterest.investment
+    name: Net income from investment securities
+    definition: Realised/unrealised gains on the investment book.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T2]
+    aliases: ["net income from investment securities", "income from investment securities"]
+
+  - key: pnl.noninterest.total
+    name: Non-interest income (total)
+    definition: All income not from NII. Engine 2. Quality-of-earnings signal.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T2, T6]
+    aliases: ["non-interest income", "other non-interest income", "non interest income"]
+
+  - key: pnl.income.total
+    name: Total income
+    definition: NII + non-interest income. Top line.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T6]
+    aliases: ["total income", "total operating income", "income", "commercial book total income"]
+
+  - key: pnl.opex.total
+    name: Operating expenses
+    definition: Staff + other operating costs. Drives CIR.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T3, T6]
+    aliases: ["total expenses", "operating expenses", "expenses", "total operating expenses"]
+
+  - key: pnl.opex.staff
+    name: Staff / employee costs
+    definition: Employee benefits expense.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T3]
+    aliases: ["staff costs", "employee benefits", "employee benefits expense", "personnel expenses"]
+
+  - key: pnl.provisions.total
+    name: Total allowances / provisions
+    definition: Expected credit loss charge (GP+SP). The cyclical, volatile line.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T4, T6]
+    # "total allowances"/"total allowance" REMOVED: corpus evidence shows these
+    # phrases only ever appear in credit_quality disclosure tables (the BALANCE,
+    # never the P&L charge) -- see bs.credit.allowances_total below, which owns
+    # them instead. "allowances for loans and other assets" is genuinely
+    # ambiguous (used for both the charge AND, as a Pillar3 table title, the
+    # balance) so it's scoped rather than a wildcard.
+    aliases: ["allowances for credit and other losses", "allowance for credit and other losses", "impairment losses"]
+    scoped_aliases:
+      income_statement: ["allowances for loans and other assets"]
+
+  - key: pnl.provisions.stage12_gp
+    name: General provisions (ECL stage 1 & 2)
+    definition: Forward-looking overlay on performing book. The reversible piece.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T4]
+    # "ecl stage 1 and 2 (gp)" scoped, not wildcard: the exact same label is also
+    # the closing BALANCE in a credit_quality/customer_loans allowance table --
+    # see bs.credit.allowances_stage12_gp.
+    aliases: ["general allowances", "stage 1 and 2"]
+    scoped_aliases:
+      income_statement: ["ecl stage 1 and 2 (gp)"]
+
+  - key: pnl.provisions.stage3_sp
+    name: Specific provisions (ECL stage 3)
+    definition: Provisions on credit-impaired (NPL) exposures.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T4]
+    # "ecl stage 3 (sp)" scoped, not wildcard -- same reasoning as stage12_gp
+    # above; see bs.credit.allowances_stage3_sp.
+    aliases: ["specific allowances", "stage 3"]
+    scoped_aliases:
+      income_statement: ["ecl stage 3 (sp)"]
+
+  - key: pnl.profit.operating
+    name: Operating profit
+    definition: >
+      Profit BEFORE allowances (credit/other losses) and amortisation of
+      intangible assets, for all three banks. DBS prints this line as
+      "Profit before allowances and amortisation"; UOB as "Operating profit";
+      OCBC as "Operating profit before allowances and amortisation" -- same
+      concept, three labels.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T3, T6]
+    aliases: ["profit before allowances and amortisation", "operating profit", "operating profit before allowances and amortisation"]
+
+  - key: pnl.opex.amortisation_intangibles
+    name: Amortisation of intangible assets
+    definition: Amortisation charge on intangible assets, deducted after operating profit.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T3]
+    aliases: ["amortisation of intangible assets", "less: amortisation of intangible assets"]
+
+  - key: pnl.associates
+    name: Share of results of associates and joint ventures
+    definition: Group's share of the post-tax results of associates and joint ventures.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T6]
+    aliases: ["share of profits/losses of associates and jvs", "add: share of profit of associates and joint ventures", "share of results of associates, net of tax"]
+
+  - key: pnl.profit.pretax
+    name: Profit before tax
+    definition: Profit after provisions, before tax.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T6]
+    aliases: ["profit before tax", "profit before income tax", "net profit before tax"]
+
+  - key: pnl.profit.net_attributable
+    name: Net profit attributable to shareholders
+    definition: Bottom line for the parent's shareholders. The ROE numerator.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T6]
+    # KNOWN GAP (not a dictionary/alias issue, left for the pass2/stamp layer):
+    # "Net profit" inside a Statement of Changes in Equity table sometimes gets
+    # period_span='as_at' -- the SOCE table mixes balance rows (Opening/Closing
+    # balance, genuinely as_at) with movement rows (Net profit, a flow) in one
+    # table, and stamping isn't yet row-aware. The VALUE is correct (matches the
+    # true period figure); only the span tag is wrong. concept.validate()'s
+    # nature_flow_as_at check will keep flagging this until that's fixed --
+    # tracked in findociq/docs/specs/, not solved by a concept split.
+    aliases: ["net profit", "reported net profit", "profit attributable to shareholders", "net profit attributable to shareholders", "total attributable"]
+
+  - key: pnl.tax
+    name: Income tax expense
+    definition: Tax charge for the period.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T6]
+    aliases: ["income tax expense", "tax expense", "income tax"]
+
+# ============================================================ BALANCE SHEET
+  - key: bs.assets.customer_loans_gross
+    name: Customer loans (gross)
+    definition: Loans to non-bank customers before allowances.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T1, T4]
+    # "gross customer loans" scoped, not wildcard: it's the SAME stock figure in
+    # both a balance_sheet table and a dedicated customer_loans breakdown table
+    # -- not a different meaning, just disclosed in two table types, so the
+    # ambiguity gate (concept.load_dictionary._corpus_label_buckets) correctly
+    # refuses to guess and this makes the two contexts explicit instead.
+    # 2026-08-04: `bs.assets.customer_loans_net` was RETIRED and its three
+    # aliases folded in here ("net customer loans", "loans and advances to
+    # customers", "net loans to customers"). Policy, per the review_flags in
+    # lineage_identity_map.csv: "for customer loans, we use Gross customer
+    # loans instead of net". The net/gross split was a concept-key mistake,
+    # not a real second concept -- keeping both meant one KPH row served a
+    # different basis per bank (UOB gross 352,180 vs DBS/OCBC net), which is
+    # exactly the cross-bank incomparability the concept layer exists to
+    # prevent. Folding the aliases rather than deleting them keeps every row
+    # that used to resolve still resolving; deleting would have silently
+    # unstamped OCBC's "Net loans to customers" and DBS's "Loans and advances
+    # to customers".
+    aliases: ["customer loans", "loans to customers", "gross loans to customers", "customer non-trade loans",
+              "net customer loans", "loans and advances to customers", "net loans to customers"]
+    scoped_aliases:
+      balance_sheet: ["gross customer loans"]
+      customer_loans: ["gross customer loans"]
+
+  - key: bs.assets.total
+    name: Total assets
+    definition: Balance-sheet size.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T6]
+    aliases: ["total assets"]
+
+  - key: bs.assets.iea_average
+    name: Average interest-earning assets
+    definition: Denominator for NIM. Often stated in NII/margin tables.
+    unit: currency
+    kind: line_item
+    nature: flow
+    thesis: [T1]
+    aliases: ["average interest-bearing assets (iba)", "average interest-bearing assets", "interest-bearing assets", "average interest-earning assets"]
+
+  - key: bs.liabilities.customer_deposits
+    name: Customer deposits (total)
+    definition: Non-bank customer deposits. Core funding.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T1]
+    aliases: ["customer deposits", "deposits of non-bank customers", "deposits from customers", "total customer deposits"]
+
+  - key: bs.liabilities.deposits_casa
+    name: CASA deposits
+    definition: Current + savings account balances. Cheap/free funding = the moat.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T1]
+    aliases: ["casa", "current and savings accounts", "current account and savings account", "casa deposits"]
+
+  - key: bs.liabilities.total
+    name: Total liabilities
+    definition: Total obligations.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T6]
+    aliases: ["total liabilities"]
+
+  - key: bs.equity.shareholders
+    name: Shareholders' equity
+    definition: Parent shareholders' funds. The ROE denominator (use AVERAGE of two periods).
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T5, T6]
+    aliases: ["shareholders' funds", "shareholders’ funds", "total shareholders' equity", "equity attributable to shareholders", "shareholders"]
+
+  - key: bs.equity.total
+    name: Total equity
+    definition: >
+      Total equity INCLUDING non-controlling interests and other equity
+      instruments (e.g. perpetual capital securities/preference shares) --
+      the whole-of-equity balance-sheet total. DISTINCT from
+      bs.equity.shareholders, which is parent shareholders' funds only.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T5, T6]
+    aliases: ["total equity"]
+
+  - key: bs.nav_per_share
+    name: Net asset value per ordinary share
+    definition: Total equity attributable to ordinary shareholders divided by the number of ordinary shares in issue.
+    unit: per_share
+    kind: line_item
+    nature: stock
+    thesis: [T5, T6]
+    aliases: ["net book value", "net asset value (\"nav\") per ordinary share ($)", "net asset value per ordinary share - s$", "net asset value per ordinary share"]
+
+  # Earnings per share. ONE concept per share class, NOT one per reporting basis:
+  # DBS prints EPS twice (underlying "Earnings" 3.88/3.86 and "Reported earnings"
+  # 3.84/3.82) and the two are the SAME economic quantity on different bases.
+  # The basis is an attribute of the fact (bank_line_map.basis), so it must not
+  # be baked into the concept key — otherwise every basis fork in the corpus
+  # would double the dictionary.
+  #
+  # These carry NO aliases on purpose. A bare "Basic" is meaningless without its
+  # parent ("Earnings per share" > "Basic"), and DBS has two such blocks, so a
+  # wildcard alias would stamp every one of them. They resolve ONLY through
+  # bank_line_map's parent-qualified anchor — which is the capability that made
+  # EPS mappable at all.
+  - key: pnl.eps.basic
+    name: Earnings per share — basic
+    definition: Profit attributable to ordinary shareholders divided by the weighted-average number of ordinary shares in issue.
+    unit: per_share
+    kind: line_item
+    nature: ratio_flow
+    thesis: [T5, T6]
+    aliases: []
+
+  - key: pnl.eps.diluted
+    name: Earnings per share — diluted
+    definition: As pnl.eps.basic, with the share count adjusted for all dilutive potential ordinary shares.
+    unit: per_share
+    kind: line_item
+    nature: ratio_flow
+    thesis: [T5, T6]
+    aliases: []
+
+  - key: bs.assets.npa
+    name: Non-performing assets / loans
+    definition: Credit-impaired exposures. NPL-ratio numerator.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T4]
+    aliases: ["non-performing assets", "of which: non-performing assets", "non-performing loans", "npl", "npa"]
+
+  # ---- credit-quality STOCK counterparts of pnl.provisions.* -----------------
+  # A bank's credit-quality note discloses the ALLOWANCE BALANCE (as at a date)
+  # alongside the P&L CHARGE for the period (pnl.provisions.*) -- same row
+  # labels, different table, different accounting nature. These three own the
+  # balance side; see the scoped_aliases on pnl.provisions.total/stage12_gp/
+  # stage3_sp above for the charge side of the same split.
+  - key: bs.credit.allowances_total
+    name: Total allowances (balance)
+    definition: Cumulative loan-loss allowance balance (GP+SP), as at the reporting date. Coverage-ratio numerator.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T4]
+    aliases: ["total allowances", "total allowance"]
+    scoped_aliases:
+      credit_quality: ["allowances for loans and other assets"]
+
+  - key: bs.credit.allowances_stage12_gp
+    name: General allowances balance (ECL stage 1 & 2)
+    definition: Cumulative forward-looking overlay balance on the performing book, as at the reporting date.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T4]
+    scoped_aliases:
+      credit_quality: ["ecl stage 1 and 2 (gp)"]
+      customer_loans: ["ecl stage 1 and 2 (gp)"]
+
+  - key: bs.credit.allowances_stage3_sp
+    name: Specific allowances balance (ECL stage 3)
+    definition: Cumulative allowance balance on credit-impaired (NPL) exposures, as at the reporting date.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T4]
+    scoped_aliases:
+      credit_quality: ["ecl stage 3 (sp)"]
+      customer_loans: ["ecl stage 3 (sp)"]
+
+# ============================================================ REGULATORY (Basel/MAS 637)
+  - key: reg.capital.cet1_ratio
+    name: CET1 ratio
+    definition: Common Equity Tier 1 / RWA. Core solvency. Safety-vs-ROE tension.
+    unit: percent
+    kind: line_item
+    nature: ratio_point
+    thesis: [T5]
+    aliases: ["cet1 ratio", "common equity tier 1 ratio", "cet1 capital ratio", "cet1 (%)"]
+
+  - key: reg.capital.rwa
+    name: Risk-weighted assets
+    definition: Denominator for capital ratios.
+    unit: currency
+    kind: line_item
+    nature: stock
+    thesis: [T5]
+    aliases: ["risk-weighted assets", "total rwa", "rwa"]
+
+  - key: reg.liquidity.nsfr_ratio
+    name: Net Stable Funding Ratio
+    definition: Stable funding vs required, 1-yr horizon. (Maps existing nsfr_ratio.)
+    unit: percent
+    kind: line_item
+    nature: ratio_point
+    thesis: [T1]
+    aliases: ["net stable funding ratio", "nsfr"]
+
+  - key: reg.liquidity.lcr_ratio
+    name: Liquidity Coverage Ratio
+    definition: HQLA vs 30-day stressed outflows.
+    unit: percent
+    kind: line_item
+    nature: ratio_point
+    thesis: [T1]
+    aliases: ["liquidity coverage ratio", "lcr", "all-currency lcr"]
+
+# ============================================================ DERIVED METRICS (computed, not extracted)
+# These have NO row in any table. They are computed in metric_fact from the
+# line items above. `formula` names the inputs by concept_key.
+  - key: ratio.nim
+    name: Net interest margin
+    definition: NII / average interest-earning assets. The spread, as a %.
+    unit: percent
+    kind: derived
+    nature: ratio_flow
+    thesis: [T1, T6]
+    formula: "pnl.nii.net / bs.assets.iea_average"
+
+  - key: ratio.cir
+    name: Cost-income ratio
+    definition: Opex / total income. Efficiency. Lower better.
+    unit: percent
+    kind: derived
+    nature: ratio_flow
+    thesis: [T3, T6]
+    formula: "pnl.opex.total / pnl.income.total"
+
+  - key: ratio.roe
+    name: Return on equity
+    definition: Net profit / AVERAGE shareholders' equity. The master metric.
+    unit: percent
+    kind: derived
+    nature: ratio_flow
+    thesis: [T6]
+    formula: "pnl.profit.net_attributable / avg(bs.equity.shareholders)"   # needs two periods
+
+  - key: ratio.casa
+    name: CASA ratio
+    definition: CASA deposits / total customer deposits. Funding quality.
+    unit: percent
+    kind: derived
+    nature: ratio_point
+    thesis: [T1]
+    formula: "bs.liabilities.deposits_casa / bs.liabilities.customer_deposits"
+
+  - key: ratio.ldr
+    name: Loan-to-deposit ratio
+    definition: Gross customer loans / customer deposits. Liquidity + growth headroom.
+    unit: percent
+    kind: derived
+    nature: ratio_point
+    thesis: [T1]
+    # 2026-08-04: numerator moved net -> gross because `bs.assets.customer_
+    # loans_net` was retired (see that entry's note). This CHANGES THE RATIO'S
+    # BASIS -- an LDR on gross loans reads higher than on net, by the allowance
+    # balance. Flagged rather than silently carried: if the published LDR must
+    # stay net-based, this needs a net figure reintroduced as a derivation
+    # (gross - allowances), not a re-stamp.
+    formula: "bs.assets.customer_loans_gross / bs.liabilities.customer_deposits"
+
+  - key: ratio.credit_cost_bps
+    name: Credit cost (bps)
+    definition: Total provisions / average gross loans, in basis points. Cyclical.
+    unit: bps
+    kind: derived
+    nature: ratio_flow
+    thesis: [T4, T6]
+    formula: "pnl.provisions.total / avg(bs.assets.customer_loans_gross)"   # scale comes from unit: bps (load_dictionary.unit_scale), not the formula
+
+  - key: ratio.npl
+    name: NPL ratio
+    definition: NPA / gross customer loans. Asset quality.
+    unit: percent
+    kind: derived
+    nature: ratio_point
+    thesis: [T4]
+    formula: "bs.assets.npa / bs.assets.customer_loans_gross"
+
+  - key: ratio.roa
+    name: Return on assets
+    definition: >
+      Reported (not computed here) return-on-assets ratio. CAUTION: UOB also
+      prints "Return on average risk-weighted assets" -- a DIFFERENT ratio,
+      deliberately NOT aliased here.
+    unit: percent
+    kind: line_item
+    nature: ratio_flow
+    thesis: [T6]
+    aliases: ["return on assets", "return on average total assets"]
+
+  - key: ratio.noninterest_share
+    name: Non-interest income share
+    definition: Non-II / total income. Earnings-quality mix.
+    unit: percent
+    kind: derived
+    nature: ratio_flow
+    thesis: [T2, T6]
+    formula: "pnl.noninterest.total / pnl.income.total"
+
+# ======================================================== DERIVED METRICS
+# Unlike the ratios above, these produce a source-unit (currency) VALUE, not a
+# percent/bps/ratio -- same 'kind: derived' registry, distinguished by
+# `metric_kind: metric` (missing/absent metric_kind on a derived entry still
+# means "ratio", i.e. today's overwrite-on-recompute behaviour). A metric's
+# computed rows are FILL-ONLY: compute_ratios.py only inserts where fact_metric
+# has NO existing non-formula (reported/human) row for that exact identity +
+# concept_key -- a reported value always wins and is never clobbered by a
+# derived one.
+  - key: pnl.noninterest.total
+    name: Non-interest income (derived, fill-only)
+    definition: >
+      Finance-team intent: Treasury customer sales and other income (commercial
+      book) + Markets trading non-interest income. NOTE (best-guess, unconfirmed):
+      the corpus does not yet tag "Treasury customer sales and other income" and
+      "Markets trading income" as separate concept keys -- both currently share
+      concept_key pnl.noninterest.trading (see its aliases above), an alias
+      collision, not a distinct-inputs sum. Until tagging is granular enough to
+      split them, this formula approximates non-interest income from the
+      granular components that ARE separately tagged (fee & commission income,
+      the conflated trading/treasury line, and investment-securities income).
+      Targets the SAME concept_key as the reported line item
+      (pnl.noninterest.total) on purpose, so fill-only-missing is what keeps it
+      from ever overwriting a reported number.
+    unit: currency
+    kind: derived
+    metric_kind: metric
+    nature: flow
+    thesis: [T2, T6]
+    formula: "pnl.noninterest.fee_commission + pnl.noninterest.trading + pnl.noninterest.investment"
+
+  - key: pnl.noninterest.other
+    name: Other non-interest income
+    definition: >
+      Non-interest income excluding fee & commission income (total non-II
+      minus the fee/commission component). UOB prints this row directly
+      ("Other non-interest income"); DBS and OCBC do not print it as a
+      separate line but it is derivable from their reported totals. Verified
+      against the printed/derivable figure for all three banks (FY25):
+      UOB 4453-2569=1884, OCBC 5464-2411=3053, DBS 8400-4898=3502 -- all
+      three match, so one formula serves all banks with no per-bank branch.
+    unit: currency
+    kind: derived
+    metric_kind: metric
+    nature: flow
+    thesis: [T2, T6]
+    aliases: ["other non-interest income"]
+    formula: "pnl.noninterest.total - pnl.noninterest.fee_commission"

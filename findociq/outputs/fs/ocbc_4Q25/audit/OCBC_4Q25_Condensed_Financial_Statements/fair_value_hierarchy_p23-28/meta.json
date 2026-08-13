@@ -1,0 +1,54 @@
+{
+  "unit_id": "fair_value_hierarchy_p23-28",
+  "pages": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 10626,
+    "output_tokens": 13601,
+    "thinking_tokens": 0,
+    "total_tokens": 24227,
+    "est_cost_usd": 0.03719
+  },
+  "chunks": 3,
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "fair_value_hierarchy"
+  ],
+  "section_titles": [
+    "14.3 Fair value hierarchy"
+  ],
+  "n_tables": 7,
+  "n_rows": 75,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '14.3' pdf=5x json=0x (missing from extraction)",
+      "  deficit: '14.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.2' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Total' [14.3 Fair value hierarchy (con]",
+      "  duplicate row label x2: 'Total' [Valuation techniques and unobs]",
+      "  duplicate row label x2: 'Total' [Valuation techniques and unobs]"
+    ],
+    "letter_leaf_issues": []
+  }
+}

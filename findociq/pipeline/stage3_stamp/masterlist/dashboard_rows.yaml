@@ -1,0 +1,156 @@
+# PROPOSED human_confirmed rows for bank_line_map — the 26-item highlights dashboard.
+#
+# STATUS: APPROVED. Loaded as map_status='human_confirmed' by apply_dashboard_rows.py.
+#
+# Authored by READING each exhibit's structure (row order, indent depth, section
+# headers, parent chain), never by matching a value to an expected figure.
+# Standing rule: value-matching may propose a candidate, never confirm one —
+# DBS commercial-book NII 14,494 sits within 0.05% of group NII 14,500, so a
+# value match cannot tell them apart. The parent can.
+#
+# DBS anchors are taken from the GEOMETRY-branch layout (DBS_1Q26_trading_update),
+# which is the trustworthy hierarchy. DBS_4Q25 is still model-branch and its
+# parents differ (it has a phantom 'Selected income statement items' header row
+# acting as parent, and 'Of which: Net interest income' is mis-parented to
+# 'Markets trading Income'). Those anchors will MISS until the re-extraction
+# sweep runs — which is correct: the map is the template, the document is what
+# gets fixed.
+#
+# legal_entity: CONSOLIDATED throughout. For FS_BALANCE_STATUTORY rows this is
+# now enforceable per-cell via the column-level axis (legal_entity_map), which
+# separates DBS 68,916/17,643, UOB 572,061/485,263, OCBC 63,570/42,540.
+
+rows:
+
+# ═══════════════════════════ DBS ═══════════════════════════
+# FS_INCOME_SELECTED — the two-book decomposition. The segment member is what
+# stops the three NII rows and the two total-income rows colliding.
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: commercial_book_total_income,        parent: "",                            concept: pnl.income.total,                 segment: SEG_COMMERCIAL, basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: net_interest_income,                 parent: commercial_book_total_income,  concept: pnl.nii.net,                      segment: SEG_COMMERCIAL, basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: net_fee_and_commission_income,       parent: commercial_book_total_income,  concept: pnl.noninterest.fee_commission,   segment: SEG_COMMERCIAL, basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: treasury_customer_sales_and_other_income, parent: commercial_book_total_income, concept: pnl.noninterest.other,        segment: SEG_COMMERCIAL,
+   note: "ELEMENT CORRECTION: was pnl.noninterest.trading. Treasury CUSTOMER SALES is customer flow, not trading.", basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: markets_trading_income,              parent: "",                            concept: pnl.income.total,                 segment: SEG_MARKETS,
+   note: "ELEMENT CORRECTION: was pnl.noninterest.trading. This row is NII + non-II = total income of the markets book (6 + 1,368 = 1,374).", basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: net_interest_income,                 parent: markets_trading_income,        concept: pnl.nii.net,                      segment: SEG_MARKETS, basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: non_interest_income,                 parent: markets_trading_income,        concept: pnl.noninterest.total,            segment: SEG_MARKETS,
+   note: "MEMBER ADDED: element was right, but with no member it impersonated the GROUP total 8,400. It is the markets cut, 1,368.", basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: total_income,                        parent: "",                            concept: pnl.income.total,                 segment: null, basis: underlying}   # 22,900 group
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: of_which_net_interest_income,        parent: total_income,                  concept: pnl.nii.net,                      segment: null,
+   note: "ITEM 1. The GROUP NII, 14,500 = 14,494 commercial + 6 markets. NOT the bare commercial-book line.", basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: expenses,                            parent: "",                            concept: pnl.opex.total,                   basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: profit_before_allowances_and_amortisation, parent: "",                      concept: pnl.profit.operating,             basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: amortisation_of_intangible_assets,   parent: "",                            concept: pnl.opex.amortisation_intangibles, basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: allowances_for_credit_and_other_losses, parent: "", basis: underlying,                         concept: pnl.provisions.total}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: share_of_profits_losses_of_associates_and_jvs, parent: "", basis: underlying,                  concept: pnl.associates}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: profit_before_tax,                   parent: "",                            concept: pnl.profit.pretax,                basis: underlying}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: net_profit,                          parent: "",                            concept: pnl.profit.net_attributable,      basis: underlying,
+   note: "11,033. The dashboard shows Net profit AND Reported net profit plus the one-time/CSR bridge, so BOTH bases are mapped."}
+- {bank: DBS, tt: FS_INCOME_SELECTED, label: reported_net_profit,                 parent: "",                            concept: pnl.profit.net_attributable,      basis: reported,
+   note: "D1 = REPORTED basis: 10,933. Same concept as the row above; only `basis` separates them."}
+# FS_BALANCE_SELECTED — CORRECTED to parent: "" (top-level). These five were
+# originally authored with parent: selected_balance_sheet_items, copied from
+# the MODEL-branch layout (like the OCBC block below). But DBS's own geometry
+# branch (DBS_1Q26_trading_update — the trustworthy hierarchy per the header
+# note above) has all five at row_hierarchy=0 / row_parent NULL: there is no
+# 'Selected balance sheet items' ROW, only a table TITLE. The old anchors
+# (parent: selected_balance_sheet_items) stay in bank_line_map as deprecated,
+# superseded_by the new top-level anchors — never deleted (MAPPING_LAYER §2.4.5).
+- {bank: DBS, tt: FS_BALANCE_SELECTED, label: customer_loans,   parent: "", concept: bs.assets.customer_loans_gross,
+   note: "D3-consistent: NET. Fixes the gross/net mis-stamp (one of the 2 backfill CONFLICTs)."}
+- {bank: DBS, tt: FS_BALANCE_SELECTED, label: customer_deposits, parent: "", concept: bs.liabilities.customer_deposits}
+- {bank: DBS, tt: FS_BALANCE_SELECTED, label: total_assets,      parent: "", concept: bs.assets.total}
+- {bank: DBS, tt: FS_BALANCE_SELECTED, label: total_liabilities, parent: "", concept: bs.liabilities.total}
+- {bank: DBS, tt: FS_BALANCE_SELECTED, label: shareholders_funds, parent: "", concept: bs.equity.shareholders}
+- {bank: DBS, tt: FS_BALANCE_STATUTORY, label: total_equity,     parent: "",  concept: bs.equity.total,
+   note: "ITEM 16. Group 68,916 vs Company 17,643 now separated by the COLUMN legal-entity axis, not by this row."}
+# FS_RATIOS_KEY — 'Net interest margin - Group' vs '- Commercial Book' differ by LABEL, not parent
+- {bank: DBS, tt: FS_RATIOS_KEY, label: net_interest_margin_group,          parent: "", concept: ratio.nim}
+- {bank: DBS, tt: FS_RATIOS_KEY, label: net_interest_margin_commercial_book, parent: "", concept: ratio.nim, segment: SEG_COMMERCIAL}
+- {bank: DBS, tt: FS_RATIOS_KEY, label: cost_income_ratio,                  parent: "", concept: ratio.cir}
+- {bank: DBS, tt: FS_RATIOS_KEY, label: return_on_assets,                   parent: "", concept: ratio.roa}
+- {bank: DBS, tt: FS_RATIOS_KEY, label: return_on_equity,                   parent: "", concept: ratio.roe}
+- {bank: DBS, tt: FS_RATIOS_KEY, label: npl_ratio,                          parent: "", concept: ratio.npl}
+- {bank: DBS, tt: FS_RATIOS_KEY, label: common_equity_tier_1_cet_1_ratio,   parent: "", concept: reg.capital.cet1_ratio}
+# FS_PER_SHARE — parent-qualified, the whole reason EPS was unmappable before
+- {bank: DBS, tt: FS_PER_SHARE, label: basic,           parent: earnings,          concept: pnl.eps.basic,   basis: underlying}
+- {bank: DBS, tt: FS_PER_SHARE, label: diluted,         parent: earnings,          concept: pnl.eps.diluted, basis: underlying}
+- {bank: DBS, tt: FS_PER_SHARE, label: basic,           parent: reported_earnings, concept: pnl.eps.basic,   basis: reported}
+- {bank: DBS, tt: FS_PER_SHARE, label: diluted,         parent: reported_earnings, concept: pnl.eps.diluted, basis: reported,
+   note: "FOUR EPS anchors, TWO concepts. DBS prints EPS on both bases (3.88/3.86 underlying, 3.84/3.82 reported); the basis attribute separates them, never a per-basis concept."}
+- {bank: DBS, tt: FS_PER_SHARE, label: net_book_value,  parent: "", concept: bs.nav_per_share,
+   note: "parent is TOP-LEVEL per geometry (1Q26). The model branch mis-parents it under 'Reported earnings' — a defect the sweep fixes."}
+
+# ═══════════════════════════ UOB ═══════════════════════════
+# FS_HIGHLIGHTS_COMBINED is FLAT: the three section headers are h0 siblings, not
+# parents, so parent is "" for most rows. That is the model-branch hierarchy;
+# after the sweep these should re-parent under their section headers.
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: net_interest_income,           parent: "", concept: pnl.nii.net}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: net_fee_and_commission_income, parent: "", concept: pnl.noninterest.fee_commission}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: other_non_interest_income,     parent: "", concept: pnl.noninterest.other,
+   note: "UOB PRINTS this row (1,884). Unlike DBS/OCBC it is atomic here, not derived — same metric_key, different resolution."}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: total_income,                  parent: "", concept: pnl.income.total}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: less_operating_expenses,       parent: "", concept: pnl.opex.total,  negated_label: true}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: operating_profit,              parent: "", concept: pnl.profit.operating}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: less_amortisation_of_intangible_assets, parent: "", concept: pnl.opex.amortisation_intangibles, negated_label: true}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: allowance_for_credit_and_other_losses,  parent: "", concept: pnl.provisions.total}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: add_share_of_profit_of_associates_and_joint_ventures, parent: "", concept: pnl.associates}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: net_profit_before_tax,         parent: "", concept: pnl.profit.pretax}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: net_profit,                    parent: "", concept: pnl.profit.net_attributable}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: customer_deposits,             parent: "", concept: bs.liabilities.customer_deposits}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: total_assets,                  parent: "", concept: bs.assets.total}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: shareholders_equity,           parent: "", concept: bs.equity.shareholders}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: net_interest_margin,           parent: "", concept: ratio.nim}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: cost_income_ratio,             parent: "", concept: ratio.cir}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: npl_ratio,                     parent: "", concept: ratio.npl}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: return_on_average_ordinary_shareholders_equity, parent: "", concept: ratio.roe}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: return_on_average_total_assets, parent: "", concept: ratio.roa,
+   note: "NOT 'Return on average risk-weighted assets', which is the adjacent row."}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: common_equity_tier_1,          parent: capital_adequacy_ratios, concept: reg.capital.cet1_ratio}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: basic,                         parent: earnings_per_ordinary_share, concept: pnl.eps.basic}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: diluted,                       parent: earnings_per_ordinary_share, concept: pnl.eps.diluted}
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: net_asset_value_nav_per_ordinary_share, parent: "", concept: bs.nav_per_share,
+   note: "NOT 'Revalued NAV per ordinary share', the adjacent row."}
+# UOB highlights carries GROSS loans only; net loans + liabilities + equity come from the statutory BS
+- {bank: UOB, tt: FS_HIGHLIGHTS_COMBINED, label: gross_customer_loans, parent: "", concept: bs.assets.customer_loans_gross,
+   note: "GROSS 352,180 stays gross. The dashboard's '(Gross customer loans)' parenthetical is a DISPLAY alias, not a shared concept — gross and net are never collapsed at concept level. A comparable cross-bank net figure would be a metric_definition derivation, not a re-stamp. NOTE: the dictionary key is bs.assets.customer_loans_gross, not the bs.loans.gross shorthand."}
+- {bank: UOB, tt: FS_BALANCE_STATUTORY, label: loans_to_customers, parent: "", concept: bs.assets.customer_loans_gross,
+   note: "D3 = NET 347,877. UOB's highlights row is GROSS 352,180, so item 12 must come from here."}
+- {bank: UOB, tt: FS_BALANCE_STATUTORY, label: total_liabilities,  parent: "", concept: bs.liabilities.total}
+- {bank: UOB, tt: FS_BALANCE_STATUTORY, label: total_equity,       parent: "", concept: bs.equity.total}
+- {bank: UOB, tt: FS_BALANCE_STATUTORY, label: deposits_and_balances_of_customers, parent: "", concept: bs.liabilities.customer_deposits,
+   note: "Closes the gap found in the tagging report: 425,938 was covered by NO alias."}
+
+# ═══════════════════════════ OCBC ═══════════════════════════
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: net_interest_income,   parent: selected_income_statement_items, concept: pnl.nii.net}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: non_interest_income,   parent: selected_income_statement_items, concept: pnl.noninterest.total}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: total_income,          parent: selected_income_statement_items, concept: pnl.income.total}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: operating_expenses,    parent: selected_income_statement_items, concept: pnl.opex.total,
+   note: "ITEM 5. My value-matcher reported NO ANCHOR here — wrongly: the cell is stored NEGATIVE (-5,882). Exactly the `balance` gap."}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: operating_profit_before_allowances_and_amortisation, parent: selected_income_statement_items, concept: pnl.profit.operating}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: amortisation_of_intangible_assets, parent: selected_income_statement_items, concept: pnl.opex.amortisation_intangibles}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: share_of_results_of_associates_net_of_tax, parent: selected_income_statement_items, concept: pnl.associates}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: profit_before_income_tax, parent: selected_income_statement_items, concept: pnl.profit.pretax}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: net_profit_attributable_to_equity_holders, parent: selected_income_statement_items, concept: pnl.profit.net_attributable,
+   note: "D2 = ATTRIBUTABLE 7,422, consistent with DBS and UOB (not 'Profit for the period/year' 7,560 which includes NCI)."}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: net_loans_to_customers,      parent: selected_balance_sheet_items, concept: bs.assets.customer_loans_gross}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: deposits_of_non_bank_customers, parent: selected_balance_sheet_items, concept: bs.liabilities.customer_deposits}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: total_assets,                parent: selected_balance_sheet_items, concept: bs.assets.total}
+- {bank: OCBC, tt: FS_INCOME_SELECTED, label: equity_attributable_to_equity_holders_of_the_bank, parent: selected_balance_sheet_items, concept: bs.equity.shareholders}
+# items 2 and 8 are not in the selected block; they come from the statutory statement
+- {bank: OCBC, tt: FS_INCOME_STATUTORY, label: fees_and_commissions_net,      parent: "", concept: pnl.noninterest.fee_commission, note: "ITEM 2."}
+- {bank: OCBC, tt: FS_INCOME_STATUTORY, label: allowances_for_loans_and_other_assets, parent: "", concept: pnl.provisions.total,
+   note: "ITEM 8. The selected block SPLITS this into impaired + non-impaired; the single 665 total is only here."}
+- {bank: OCBC, tt: FS_BALANCE_STATUTORY, label: total_liabilities, parent: "", concept: bs.liabilities.total}
+- {bank: OCBC, tt: FS_BALANCE_STATUTORY, label: total_equity,      parent: "", concept: bs.equity.total,
+   note: "Group 63,570 vs Bank 42,540 separated by the column legal-entity axis."}
+# FS_RATIOS_KEY — OCBC's ratios ARE parent-qualified, unlike UOB's flat block
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: return_on_equity,  parent: performance_ratios,            concept: ratio.roe}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: return_on_assets,  parent: performance_ratios,            concept: ratio.roa}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: net_interest_margin, parent: revenue_mix_efficiency_ratios, concept: ratio.nim}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: cost_to_income,    parent: revenue_mix_efficiency_ratios, concept: ratio.cir}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: npl_ratio,         parent: revenue_mix_efficiency_ratios, concept: ratio.npl}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: common_equity_tier_1, parent: capital_adequacy_ratios,    concept: reg.capital.cet1_ratio}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: basic_earnings,    parent: earnings_per_share,            concept: pnl.eps.basic}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: diluted_earnings,  parent: earnings_per_share,            concept: pnl.eps.diluted}
+- {bank: OCBC, tt: FS_RATIOS_KEY, label: net_asset_value_per_share, parent: "",                    concept: bs.nav_per_share}

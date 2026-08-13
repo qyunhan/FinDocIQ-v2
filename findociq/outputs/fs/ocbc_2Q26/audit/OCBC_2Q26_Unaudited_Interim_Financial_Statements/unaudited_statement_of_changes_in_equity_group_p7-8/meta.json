@@ -1,0 +1,73 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_statement_of_changes_in_equity_group_p7-8",
+  "section_ids": [
+    "unaudited_statement_of_changes_in_equity_group"
+  ],
+  "section_titles": [
+    "UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP"
+  ],
+  "pages": [
+    7,
+    8
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 79,
+  "usage": {
+    "ts": "2026-08-07T04:56:19",
+    "script": "extract_to_excel",
+    "label": "unaudited_statement_of_changes_in_equity_group_p7-8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4520,
+    "output_tokens": 16802,
+    "thinking_tokens": 0,
+    "total_tokens": 21322,
+    "est_cost_usd": 0.158,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '0.5' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '445' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '452' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '455' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '444' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [UNAUDITED STATEMENT OF CHANGES IN EQUITY]",
+      "  col-bands: uncalibrated (0 dense lines) [UNAUDITED STATEMENT OF CHANGES IN EQUITY]",
+      "  col-repair: declined for table 'UNAUDITED STATEMENT OF CHANGES IN EQUITY' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked",
+      "  col-repair: declined for table 'UNAUDITED STATEMENT OF CHANGES IN EQUITY' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP\nFor the half year ended 30 June 2026",
+      "anchor_label": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP\nFor the half year ended 30 June 2026",
+      "anchor_y": 58.53,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP\nFor the half year ended 30 June 2025",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    }
+  ],
+  "all_dropped": false
+}

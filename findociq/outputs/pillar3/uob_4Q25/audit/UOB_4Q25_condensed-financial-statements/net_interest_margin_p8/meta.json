@@ -1,0 +1,43 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_interest_margin_p8",
+  "section_ids": [
+    "net_interest_margin"
+  ],
+  "section_titles": [
+    "Net interest margin"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 20,
+  "usage": {
+    "ts": "2026-07-14T14:53:55",
+    "script": "extract_to_excel",
+    "label": "net_interest_margin_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2923,
+    "output_tokens": 5065,
+    "thinking_tokens": 0,
+    "total_tokens": 7988,
+    "est_cost_usd": 0.01354
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Net interest margin 2025 / 202]",
+      "  duplicate row label x2: 'Total' [Net interest margin 2H25 / 2H2]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

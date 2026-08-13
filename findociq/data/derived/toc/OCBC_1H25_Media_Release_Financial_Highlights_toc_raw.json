@@ -1,0 +1,269 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Media Release",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "OCBC Group First Half 2025 Net Profit at S$3.70 billion",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Interim dividend of 41 cents declared",
+      "page": 1,
+      "level": 3,
+      "parent_id": "sec_002"
+    },
+    {
+      "id": "sec_004",
+      "title": "1H25 Performance Highlights",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_005",
+      "title": "First Half 2025 Performance",
+      "page": 2,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_006",
+      "title": "1H25 Year-on-Year Performance",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_005"
+    },
+    {
+      "id": "sec_007",
+      "title": "Second Quarter 2025 Performance",
+      "page": 3,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_008",
+      "title": "2Q25 Quarter-on-Quarter Performance",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_007"
+    },
+    {
+      "id": "sec_009",
+      "title": "2Q25 Year-on-Year Performance",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_007"
+    },
+    {
+      "id": "sec_010",
+      "title": "Asset Quality and Allowances",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_011",
+      "title": "Non-performing assets (\u201cNPAs\u201d)",
+      "page": 5,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_012",
+      "title": "Allowances",
+      "page": 5,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_013",
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "page": 6,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_014",
+      "title": "Interim Dividend",
+      "page": 7,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_015",
+      "title": "Message from Group CEO, Helen Wong",
+      "page": 8,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_016",
+      "title": "FINANCIAL HIGHLIGHTS",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_017",
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_018",
+      "title": "NET INTEREST INCOME",
+      "page": 11,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_019",
+      "title": "Average Balance Sheet",
+      "page": 11,
+      "level": 3,
+      "parent_id": "sec_018"
+    },
+    {
+      "id": "sec_020",
+      "title": "Volume and Rate Analysis",
+      "page": 11,
+      "level": 3,
+      "parent_id": "sec_018"
+    },
+    {
+      "id": "sec_021",
+      "title": "NON-INTEREST INCOME",
+      "page": 12,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_022",
+      "title": "OPERATING EXPENSES",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_023",
+      "title": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_024",
+      "title": "LOANS TO CUSTOMERS",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_025",
+      "title": "NON-PERFORMING ASSETS",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_026",
+      "title": "NON-PERFORMING ASSETS (continued)",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_027",
+      "title": "DEPOSITS",
+      "page": 17,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_028",
+      "title": "CAPITAL ADEQUACY RATIOS 1/",
+      "page": 18,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_029",
+      "title": "PERFORMANCE BY BUSINESS SEGMENT",
+      "page": 19,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_030",
+      "title": "Profit Before Income Tax by Business Segment",
+      "page": 19,
+      "level": 3,
+      "parent_id": "sec_029"
+    },
+    {
+      "id": "sec_031",
+      "title": "Global Consumer/Private Banking",
+      "page": 19,
+      "level": 3,
+      "parent_id": "sec_029"
+    },
+    {
+      "id": "sec_032",
+      "title": "Global Wholesale Banking",
+      "page": 19,
+      "level": 3,
+      "parent_id": "sec_029"
+    },
+    {
+      "id": "sec_033",
+      "title": "PERFORMANCE BY BUSINESS SEGMENT (continued)",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_034",
+      "title": "Global Markets",
+      "page": 20,
+      "level": 3,
+      "parent_id": "sec_033"
+    },
+    {
+      "id": "sec_035",
+      "title": "Insurance",
+      "page": 20,
+      "level": 3,
+      "parent_id": "sec_033"
+    },
+    {
+      "id": "sec_036",
+      "title": "Others",
+      "page": 20,
+      "level": 3,
+      "parent_id": "sec_033"
+    },
+    {
+      "id": "sec_037",
+      "title": "About OCBC",
+      "page": 21,
+      "level": 1,
+      "parent_id": null
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 11546,
+    "output_tokens": 2233,
+    "thinking_tokens": null
+  }
+}

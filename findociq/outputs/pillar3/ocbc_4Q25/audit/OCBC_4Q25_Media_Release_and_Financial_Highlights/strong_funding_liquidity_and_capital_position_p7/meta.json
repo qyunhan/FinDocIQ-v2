@@ -1,0 +1,55 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "strong_funding_liquidity_and_capital_position_p7",
+  "section_ids": [
+    "strong_funding_liquidity_and_capital_position"
+  ],
+  "section_titles": [
+    "Strong Funding, Liquidity and Capital Position"
+  ],
+  "pages": [
+    7
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 12,
+  "usage": {
+    "ts": "2026-07-16T13:56:48",
+    "script": "extract_to_excel",
+    "label": "strong_funding_liquidity_and_capital_position_p7",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2954,
+    "output_tokens": 2135,
+    "thinking_tokens": 0,
+    "total_tokens": 5089,
+    "est_cost_usd": 0.02365,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '16.9' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '15.1' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '56.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '80.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '78.6' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.1' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '0.2' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '341' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '428' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '1.9' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.4' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.3' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

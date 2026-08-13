@@ -1,0 +1,45 @@
+{
+  "document": "DBS_4Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "loss_allowance_coverage_p21",
+  "section_ids": [
+    "loss_allowance_coverage"
+  ],
+  "section_titles": [
+    "Loss Allowance Coverage"
+  ],
+  "pages": [
+    21
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 22,
+  "usage": {
+    "ts": "2026-07-26T09:12:45",
+    "script": "extract_to_excel",
+    "label": "loss_allowance_coverage_p21",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3916,
+    "output_tokens": 5909,
+    "thinking_tokens": 0,
+    "total_tokens": 9825,
+    "est_cost_usd": 0.05905,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total non-performing loans (NPL)' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Debt securities, contingent liabilities ' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Total non-performing assets (NPA)' [NON-PERFORMING ASSETS AND LOSS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

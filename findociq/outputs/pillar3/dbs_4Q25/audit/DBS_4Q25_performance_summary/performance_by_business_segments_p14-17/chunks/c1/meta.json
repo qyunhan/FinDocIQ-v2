@@ -1,0 +1,56 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_business_segments_p14-17/chunks/c1",
+  "section_ids": [
+    "performance_by_business_segments"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY BUSINESS SEGMENTS"
+  ],
+  "pages": [
+    14,
+    15
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 75,
+  "usage": {
+    "ts": "2026-07-16T11:27:45",
+    "script": "extract_to_excel",
+    "label": "performance_by_business_segments_p14-17/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3525,
+    "output_tokens": 11372,
+    "thinking_tokens": 0,
+    "total_tokens": 14897,
+    "est_cost_usd": 0.10764,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x5: 'Net interest income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Net fee and commission income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Other non-interest income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Total income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Expenses' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Amortisation of intangible assets' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Allowances for credit and other losses' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Share of profits/losses of associates an' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x5: 'Profit before tax' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Total assets before goodwill and intangi' [Selected balance sheet and oth]",
+      "  duplicate row label x3: 'Goodwill and intangible assets' [Selected balance sheet and oth]",
+      "  duplicate row label x3: 'Total assets' [Selected balance sheet and oth]",
+      "  duplicate row label x3: 'Total liabilities' [Selected balance sheet and oth]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,353 @@
+BEFORE YOU BEGIN — KNOWN FAILURE MODES:
+
+Spatial charts (donuts, concentric rings, grouped bars,
+side-by-side charts) are where extraction goes wrong most
+often. Before observing any such element, ask yourself:
+
+  1. Am I reading position correctly?
+     Values close together spatially can belong to
+     different series. Proximity to a label or ring
+     does not mean the value belongs to it — trace
+     the visual connector.
+
+  2. Am I assuming an order?
+     Never assume left=first, outer=newer,
+     top=higher, or any other default ordering.
+     Read what is actually on the slide.
+
+  3. Can I verify with a sum or total?
+     If yes — do it. A sum check is the only way
+     to confirm spatial reading was correct.
+     If your reading fails the check, you made a
+     spatial error. Re-read before continuing.
+
+  4. Have I captured everything?
+     Count the distinct data elements on the slide.
+     At the end of your observation, verify every
+     element has been described.
+     A missing element here means missing data in
+     the final output.
+
+If you catch yourself guessing at any of these —
+stop, re-examine the image, and state what you
+actually see.
+You are observing a financial presentation slide to describe
+its structure before extraction. Your observations will guide
+a separate extraction step — be precise and complete.
+
+═══════════════════════════════════════════════════
+STEP 1 — ELEMENT INVENTORY
+═══════════════════════════════════════════════════
+List every distinct data element on this slide. For each:
+
+  element_type: describe what you see in your own words.
+    Common types in financial presentations include:
+      text_table, waterfall, stacked_bar,
+      stacked_bar_overlay, trend_line, kpi_grid,
+      donut_single, donut_dual_ring
+    But if you see something that does not match any
+    of these, name it descriptively:
+      e.g. "horizontal_bar", "bubble_chart",
+           "heat_map", "sankey", "scatter_plot"
+    Never force a chart into a category it does not
+    fit. An accurate novel name is better than a
+    wrong familiar one.
+
+  element_title:  printed label above the element
+                  verbatim, or "" if untitled
+
+  has_printed_values: true if discrete numbers are
+                      printed ON the element and
+                      readable; false if values are
+                      not shown (purely decorative
+                      or only visible as bar heights
+                      with no labels)
+
+  position:       where on the slide (top / bottom /
+                  left / right / full)
+
+  if element_type is unfamiliar or novel, add:
+  visual_description: 2-3 sentences describing what
+                      the chart looks like and what
+                      data relationship it appears
+                      to encode. This replaces the
+                      structured steps below for
+                      that element — use the
+                      UNKNOWN CHART TYPES rules
+                      at the end of this prompt.
+
+For elements where has_printed_values=false:
+  Note them in the inventory but do not proceed to
+  Steps 2-6 for them — they cannot be extracted.
+
+For elements where element_type is novel/unfamiliar:
+  Use visual_description and the UNKNOWN CHART TYPES
+  section instead of Steps 2-5.
+
+═══════════════════════════════════════════════════
+STEP 2 — TEXT TABLES
+(skip entirely if no text_table on this slide)
+═══════════════════════════════════════════════════
+For EACH text_table:
+
+  A. COLUMN HEADERS
+     List every column header left to right EXACTLY as
+     printed. If there are two header rows (a group
+     header spanning sub-columns, then individual column
+     labels below it), describe both levels separately:
+       Level 1 group headers: [list]
+       Level 2 leaf headers:  [list]
+     Identify which columns are period labels (dates,
+     quarters, fiscal years) and which are derived
+     columns (YoY %, QoQ %, change, variance).
+
+  B. ROW STRUCTURE
+     Count total data rows.
+     Identify visual hierarchy signals present:
+       Bold rows      → likely totals or section headers
+       Indented rows  → likely sub-items of the row above
+       Boxed groups   → rows visually grouped under a parent
+       Separator lines → section or category boundaries
+       Shaded rows    → totals, highlights, or category breaks
+     For each bold, indented, or grouped row, state its
+     label and what it appears to be a sub-item or total of.
+
+  C. STRUCTURE NOTES
+     Note anything unusual that would affect extraction:
+       Split tables across columns or sections
+       Dual blocks (e.g. Group vs Bank side by side)
+       Repeated column structures for different periods
+       Rotated text in headers
+       Merged cells spanning multiple columns or rows
+
+  D. FOOTNOTES
+     List any footnote markers visible (1/, 2/, *, †, #).
+     Note which rows or values they attach to.
+     Copy footnote text verbatim if shown on the slide.
+
+  E. UNITS
+     State the unit label shown (S$m, S$b, US$m, HK$m,
+     %, bps, ¢/share, x, times).
+     If units differ between sections of the same table,
+     note which unit applies to which rows.
+
+═══════════════════════════════════════════════════
+STEP 3 — WATERFALL CHARTS
+(skip entirely if no waterfall on this slide)
+═══════════════════════════════════════════════════
+For EACH waterfall chart:
+
+  A. LEGEND
+     Find the colour legend printed on the slide.
+     State it exactly: "[colour] = [meaning]" for every
+     colour in the legend.
+     If no legend is printed, describe how you can
+     visually distinguish positive from negative bars
+     (colour difference, position above/below baseline,
+     shading, pattern) — be specific about what you see.
+
+  B. BAR INVENTORY (every bar, strictly left to right)
+     For each bar state ALL of the following:
+       label       printed below or beside the bar, verbatim
+       fill_colour the visual fill colour you actually see
+                   (e.g. dark green, salmon pink, grey,
+                   navy blue) — describe what you see,
+                   not what you expect based on the label
+       value       number printed on or beside the bar,
+                   verbatim including sign if shown
+       bar_type    opening | delta | closing
+     If a bar contains a subsidiary adjustment (a smaller
+     inset box or secondary value modifying the main bar),
+     list both values separately and describe their
+     relationship (e.g. "main bar 2,522 with inset
+     adjustment (100) reducing it to 2,422").
+
+  C. SIGN ASSIGNMENT
+     For each delta bar, derive sign SOLELY from the
+     fill colour you described in Step B.
+     Never assign sign from the financial meaning of
+     the label — the same label (Expenses, Allowances,
+     Tax, Provisions) can be positive or negative
+     depending on the direction of change shown.
+     Write explicitly for every delta bar:
+       "[label]: [fill_colour] fill → sign=[+/-]"
+
+  D. ARITHMETIC CHECK
+     Write the full equation with actual numbers:
+       opening + [±delta1] + [±delta2] + ... = closing
+     If the equation does not balance within ±2 units,
+     your colour reading in Step B is wrong somewhere.
+     Re-examine fill colours and correct before proceeding.
+     Do not proceed with unbalanced waterfall data.
+
+═══════════════════════════════════════════════════
+STEP 4 — STACKED BAR CHARTS
+(skip entirely if no stacked_bar or stacked_bar_overlay)
+═══════════════════════════════════════════════════
+For EACH stacked bar chart:
+
+  A. AXES
+     Left axis:  metric name and units.
+     Right axis: metric name and units (or "none").
+     X-axis:     list every label left to right exactly
+                 as printed — these become the period
+                 columns in extraction.
+
+  B. LEGEND
+     List every colour segment label from the legend
+     or from labels printed directly on the bars.
+     State the visual stacking order: which segment
+     sits at the bottom, which in the middle, which
+     at the top.
+
+  C. SEGMENT VALUES (read one complete bar fully)
+     For the leftmost bar, state each segment's label
+     and its printed value, bottom to top.
+     Write the sum check:
+       "[seg1] + [seg2] + [seg3] = [total shown above bar]"
+     If the sum does not match the total, note the
+     discrepancy without correcting it.
+
+  D. ALL PERIOD VALUES
+     For each x-axis period:
+       - Total value shown above the bar
+       - Value of each segment if printed
+     If segment values are not printed for every period
+     (only the total is visible), state this explicitly
+     per period — do not estimate missing values.
+
+  E. OVERLAY LINE (stacked_bar_overlay only)
+     Line series label as shown in legend or on chart.
+     Which axis does the line use — left or right?
+     Values at each x-axis point, exactly as printed.
+     Units of the line — same as bars or different?
+     If line values are not printed, state
+     "line values not printed — not extractable".
+
+  F. SUPPLEMENTARY DATA BELOW THE CHART
+     Some slides show additional metrics in rows below
+     the x-axis labels (growth rates, ratios, counts,
+     basis points). These are separate from the bars.
+     For each such row: label verbatim | value per period.
+     Note: these are NOT bar segments — they are
+     standalone data rows that must be captured separately.
+
+═══════════════════════════════════════════════════
+STEP 5 — OTHER VISUAL TYPES
+(skip sections that do not apply)
+═══════════════════════════════════════════════════
+
+── KPI GRID ──
+  Count visible KPI boxes or metric callouts.
+  For each box state:
+    metric label    exactly as printed
+    primary value   with units
+    secondary value if shown (e.g. prior period figure)
+    delta/change    any arrow, +/-, bps, % indicator shown
+  Are there period column headers above the boxes
+  (making this a matrix), or is each box standalone?
+  List any bullet-point or sentence text on the slide
+  that is commentary — these must NOT be extracted
+  as data rows, they are narrative only.
+
+── DONUT / PIE (single ring) ──
+  List every segment: label | percentage or value.
+  Verify segments sum to ~100% (or to total if absolute).
+  Note the total value shown in the centre if present.
+
+── DONUT (dual ring — two concentric rings) ──
+  MANDATORY ring identification before reading values:
+  Step i:   Find each period label bubble on the slide.
+  Step ii:  For each label bubble, physically trace its
+            pointer line or arrow to the ring it touches.
+            State explicitly:
+              "[Period A] pointer touches: [inner/outer] ring"
+              "[Period B] pointer touches: [inner/outer] ring"
+            NEVER assume outer=newer or inner=older.
+            The inner ring is sometimes the current period.
+  Step iii: For each segment, read its value from the
+            ring identified for each period.
+            State: "[Segment]: [Period A ring]=[value],
+                               [Period B ring]=[value]"
+  Step iv:  Sum check:
+              "[Period A] segments sum: [v1+v2+...] = [total]%"
+              "[Period B] segments sum: [v1+v2+...] = [total]%"
+            If either does not sum to ~100%, re-trace
+            the pointers in Step ii.
+
+── TREND LINE (line chart only, no bars) ──
+  X-axis labels left to right exactly as printed.
+  Y-axis units.
+  For each line series:
+    label and colour as shown in legend
+    values at each x-axis point if printed on chart
+  If values are not printed on the line, state
+  "values not printed — not extractable" for that series.
+
+═══════════════════════════════════════════════════
+STEP 6 — MIXED SLIDES
+(skip if only one element type on this slide)
+═══════════════════════════════════════════════════
+If this slide contains more than one element type:
+
+  A. SPATIAL LAYOUT
+     Describe which element is in which position.
+
+  B. OVERLAPPING DATA
+     Do any elements show the SAME underlying data
+     in different visual forms?
+     If yes: the text_table is the authoritative source
+     for those shared values.
+     State: "[element] shares data with [element] —
+             text_table is authoritative source."
+
+  C. CHART-ONLY VALUES
+     Are there values visible ONLY in a chart that
+     do not appear in any table on this slide?
+     List each one explicitly:
+       "[value] from [chart element] — no table equivalent"
+     These must be extracted from the chart.
+
+  D. SOURCE ASSIGNMENT
+     For every element identified in Step 1, state:
+       "[element_title]: source = image | text_layer | both"
+
+       text_layer → clean text table readable from
+                    PDF text layer directly
+       image      → chart element; all values were
+                    captured above from the image
+       both       → appears as text table AND chart;
+                    text_layer is authoritative
+
+═══════════════════════════════════════════════════
+UNKNOWN CHART TYPES
+═══════════════════════════════════════════════════
+If you encounter a chart type not in the common list:
+
+  1. Name it descriptively based on appearance.
+  2. Describe the data model: what is on each axis
+     or dimension? what does position, size, colour,
+     or shape encode?
+  3. State whether discrete values are printed on the
+     chart or only implied by visual position/size.
+  4. Describe any legend, axis labels, or annotations.
+  5. List every printed number you can read with its
+     nearest label context.
+  6. Flag it:
+     "NOVEL CHART TYPE: [your name].
+      Human verification recommended before extraction."
+
+═══════════════════════════════════════════════════
+OUTPUT RULES
+═══════════════════════════════════════════════════
+- Plain text only. No JSON. No markdown fences.
+- Work through each applicable step in order.
+- Copy all numbers EXACTLY as printed — no rounding,
+  no paraphrasing, no unit conversion, no omissions.
+- If a value is partially obscured or ambiguous,
+  write your best read followed by "?" e.g. "1,23?"
+- Do not skip any element, any bar, any row, any period.
+- Do not summarise or combine values.
+- Do not extract to JSON — that happens in the next step.
+- If a step does not apply to this slide, write
+  "STEP N: not applicable" and move on.

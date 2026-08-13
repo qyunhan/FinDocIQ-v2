@@ -1,0 +1,30 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+4,0,5,0,1,NEW_TABLE,cols differ
+5,0,6,0,1,NEW_TABLE,cols differ
+6,0,8,0,1,NEW_TABLE,non-adjacent pages
+8,0,8,1,0,NEW_TABLE,cols differ
+8,1,9,0,1,NEW_TABLE,cols differ
+9,0,10,0,1,NEW_TABLE,break:text-between:Operating Expenses
+10,0,11,0,1,NEW_TABLE,break:text-between:Allowance for Credit and Other Losses
+11,0,12,0,1,NEW_TABLE,cols differ
+12,0,13,0,1,NEW_TABLE,cols differ
+13,0,14,0,1,NEW_TABLE,cols differ
+14,0,15,0,1,NEW_TABLE,cols differ
+15,0,16,0,1,NEW_TABLE,cols differ
+16,0,17,0,1,NEW_TABLE,cols differ
+17,0,19,0,1,NEW_TABLE,non-adjacent pages
+19,0,21,0,1,NEW_TABLE,non-adjacent pages
+21,0,22,0,1,NEW_TABLE,cols differ
+22,0,23,0,1,NEW_TABLE,cols differ
+23,0,24,0,1,NEW_TABLE,cols differ
+24,0,25,0,1,NEW_TABLE,cols differ
+25,0,26,0,1,NEW_TABLE,cols differ
+26,0,27,0,1,NEW_TABLE,cols differ
+27,0,29,0,1,NEW_TABLE,non-adjacent pages
+29,0,29,1,0,NEW_TABLE,cols differ
+29,1,30,0,1,NEW_TABLE,cols differ
+30,0,30,1,0,NEW_TABLE,cols differ
+30,1,31,0,1,PERIOD_INSTANCE,"repeats ['Cash, balances and placements with central banks', 'Singapore government treasury bills and securities', 'Other government treasury bills and securities']"
+31,0,32,0,1,NEW_TABLE,cols differ
+32,0,33,0,1,NEW_TABLE,cols differ
+33,0,34,0,1,NEW_TABLE,cols differ

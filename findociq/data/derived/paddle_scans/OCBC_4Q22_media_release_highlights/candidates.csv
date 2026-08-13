@@ -1,0 +1,30 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,83.51,70.91,MediaRelease,16.0,False,left,False
+1,120.4,179.33,OCBCGroupFullYear2022NetProfit,14.0,True,center,False
+1,136.48,185.24,Rose18%toaRecordS$5.75billion,14.0,True,center,False
+2,80.97,69.2,FY22 Year-on-Year Performance,9.96,True,left,False
+3,369.56,68.71,4Q22 Year-on-Year Performance,9.95,True,left,False
+3,583.64,69.02,4Q22 Quarter-on-Quarter Performance,9.95,True,left,False
+4,365.06,69.03,Asset Quality,9.95,True,left,False
+4,566.84,68.77,Allowances,9.95,True,left,False
+5,482.48,69.05,Dividend,11.99,True,left,False
+6,82.22,69.25,"Message from Group CEO, Helen Wong",11.99,True,left,False
+7,82.91,70.91,FINANCIALHIGHLIGHTS,12.0,True,left,False
+10,105.54,68.82,NET INTEREST INCOME,11.03,True,left,False
+12,82.07,68.97,FINANCIAL HIGHLIGHTS (continued),11.99,True,left,False
+13,81.88,68.92,FINANCIAL HIGHLIGHTS (continued),11.99,True,left,False
+15,82.12,69.07,FINANCIAL HIGHLIGHTS (continued),11.99,True,left,False
+16,81.99,69.05,FINANCIAL HIGHLIGHTS (continued),11.99,True,left,False
+16,103.4,69.42,DEPOSITS,11.03,True,left,False
+16,424.74,68.62,CAPITAL ADEQUACY RATIOS 1/,11.03,True,left,False
+16,691.66,68.98,Notes:,8.04,False,left,False
+17,82.26,69.2,FINANCIAL HIGHLIGHTS (continued),11.99,True,left,False
+17,105.44,68.98,PERFORMANCE BY BUSINESS SEGMENT,11.03,True,left,False
+17,312.79,69.19,Global Consumer/Private Banking,9.0,True,left,False
+17,481.47,69.09,Global Wholesale Banking,9.0,True,left,False
+18,82.41,69.23,FINANCIAL HIGHLIGHTS (continued),11.99,True,left,False
+18,105.82,69.11,PERFORMANCE BY BUSINESS SEGMENT (continued),11.03,True,left,False
+18,128.52,69.17,Global Treasury and Markets,9.0,True,left,False
+18,271.24,69.48,Insurance,9.0,True,left,False
+18,437.46,69.4,Others,9.0,True,left,False
+19,82.38,68.52,About OCBC Bank,14.03,True,left,False

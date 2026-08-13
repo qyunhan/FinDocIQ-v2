@@ -1,0 +1,53 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "allowances_for_loans_and_other_assets_p14",
+  "section_ids": [
+    "allowances_for_loans_and_other_assets"
+  ],
+  "section_titles": [
+    "7. Allowances for loans and other assets"
+  ],
+  "pages": [
+    14
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 6,
+  "usage": {
+    "ts": "2026-08-07T04:56:18",
+    "script": "extract_to_excel",
+    "label": "allowances_for_loans_and_other_assets_p14",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3937,
+    "output_tokens": 758,
+    "thinking_tokens": 0,
+    "total_tokens": 4695,
+    "est_cost_usd": 0.01273,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "7. Allowances for loans and other assets",
+      "anchor_label": "7. Allowances for loans and other assets",
+      "anchor_y": 361.34,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

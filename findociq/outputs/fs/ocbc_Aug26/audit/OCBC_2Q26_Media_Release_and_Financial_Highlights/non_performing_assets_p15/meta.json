@@ -1,0 +1,63 @@
+{
+  "document": "OCBC_2Q26_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 August 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_performing_assets_p15",
+  "section_ids": [
+    "non_performing_assets"
+  ],
+  "section_titles": [
+    "NON-PERFORMING ASSETS"
+  ],
+  "pages": [
+    15
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 32,
+  "usage": {
+    "ts": "2026-08-07T05:03:00",
+    "script": "extract_to_excel",
+    "label": "non_performing_assets_p15",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3897,
+    "output_tokens": 5506,
+    "thinking_tokens": 0,
+    "total_tokens": 9403,
+    "est_cost_usd": 0.0554,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x7: '30 Jun 2026' [NON-PERFORMING ASSETS]",
+      "  duplicate row label x7: '31 Dec 2025' [NON-PERFORMING ASSETS]",
+      "  duplicate row label x7: '30 Jun 2025' [NON-PERFORMING ASSETS]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (1 dense lines) [NON-PERFORMING ASSETS]",
+      "  col-repair: declined for table 'NON-PERFORMING ASSETS' \u2014 uncalibrated (1 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "NON-PERFORMING ASSETS",
+      "anchor_label": "NON-PERFORMING ASSETS",
+      "anchor_y": 111.57,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

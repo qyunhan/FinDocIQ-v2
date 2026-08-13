@@ -1,0 +1,46 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_interest_income_p9",
+  "section_ids": [
+    "non_interest_income"
+  ],
+  "section_titles": [
+    "Non-Interest Income"
+  ],
+  "pages": [
+    9
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 17,
+  "usage": {
+    "ts": "2026-08-07T09:23:39",
+    "script": "extract_to_excel",
+    "label": "non_interest_income_p9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3890,
+    "output_tokens": 3136,
+    "thinking_tokens": 0,
+    "total_tokens": 7026,
+    "est_cost_usd": 0.03406,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.3' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

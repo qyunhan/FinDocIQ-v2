@@ -1,0 +1,178 @@
+{
+  "tables": [
+    {
+      "title": "Of which: restructured assets",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2022",
+          "leaf": "NPA"
+        },
+        {
+          "group": "30 Jun 2022",
+          "leaf": "SP¹"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "NPA"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "SP¹"
+        },
+        {
+          "group": "30 Jun 2021",
+          "leaf": "NPA"
+        },
+        {
+          "group": "30 Jun 2021",
+          "leaf": "SP¹"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Substandard",
+          "values": [
+            {
+              "value": "904",
+              "cell_state": "reported"
+            },
+            {
+              "value": "234",
+              "cell_state": "reported"
+            },
+            {
+              "value": "953",
+              "cell_state": "reported"
+            },
+            {
+              "value": "245",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,253",
+              "cell_state": "reported"
+            },
+            {
+              "value": "247",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Doubtful",
+          "values": [
+            {
+              "value": "507",
+              "cell_state": "reported"
+            },
+            {
+              "value": "316",
+              "cell_state": "reported"
+            },
+            {
+              "value": "473",
+              "cell_state": "reported"
+            },
+            {
+              "value": "265",
+              "cell_state": "reported"
+            },
+            {
+              "value": "569",
+              "cell_state": "reported"
+            },
+            {
+              "value": "334",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loss",
+          "values": [
+            {
+              "value": "159",
+              "cell_state": "reported"
+            },
+            {
+              "value": "159",
+              "cell_state": "reported"
+            },
+            {
+              "value": "146",
+              "cell_state": "reported"
+            },
+            {
+              "value": "146",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "1,570",
+              "cell_state": "reported"
+            },
+            {
+              "value": "709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,572",
+              "cell_state": "reported"
+            },
+            {
+              "value": "656",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,966",
+              "cell_state": "reported"
+            },
+            {
+              "value": "725",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:\n1 Refers to Expected Credit Loss Stage 3",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

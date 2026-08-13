@@ -1,0 +1,50 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "movements_in_level_3_non_financial_assets_p26-27",
+  "section_ids": [
+    "movements_in_level_3_non_financial_assets"
+  ],
+  "section_titles": [
+    "Movements in Level 3 non-financial assets"
+  ],
+  "pages": [
+    26,
+    27
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 10,
+  "usage": {
+    "ts": "2026-08-07T04:58:55",
+    "script": "extract_to_excel",
+    "label": "movements_in_level_3_non_financial_assets_p26-27",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4528,
+    "output_tokens": 1815,
+    "thinking_tokens": 0,
+    "total_tokens": 6343,
+    "est_cost_usd": 0.02313,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p27) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '14.3' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.2' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [Movements in Level 3 non-financial asset]",
+      "  col-repair: declined for table 'Movements in Level 3 non-financial asset' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

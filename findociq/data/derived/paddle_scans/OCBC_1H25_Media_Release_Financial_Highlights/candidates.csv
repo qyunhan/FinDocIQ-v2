@@ -1,0 +1,26 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,88.36,75.38,MediaRelease,16.1,False,left,False
+1,128.25,123.65,OCBCGroupFirstHalf2025NetProfitatS$3.70billion,13.9,True,center,False
+2,379.61,68.82,1H25 Year-on-YearPerformance,10.08,True,left,False
+3,403.82,68.68,Second Quarter 2025 Performance,12.0,True,left,False
+4,86.33,68.8,2Q25Quarter-on-QuarterPerformance,10.08,True,left,False
+4,386.96,68.69,2Q25Year-on-YearPerformance,10.08,True,left,False
+5,392.61,68.69,Non-performingassets(“NPAs”),10.08,True,left,False
+5,505.98,72.46,Allowances,10.08,True,left,False
+7,86.01,69.51,Interim Dividend,12.0,True,left,False
+8,86.12,69.33,"Message from Group CEO, Helen Wong",12.0,True,left,False
+9,86.1,73.01,FINANCIAL HIGHLIGHTS,12.0,True,left,False
+11,85.81,68.88,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+14,85.76,68.83,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+17,85.95,69.17,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+18,85.92,68.87,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+18,111.88,68.71,CAPITAL ADEQUACY RATIOS 1/,11.04,True,left,False
+19,85.97,68.97,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+19,109.54,68.62,PERFORMANCE BY BUSINESS SEGMENT,11.04,True,left,False
+19,317.83,69.02,GlobalConsumer/PrivateBanking,9.12,True,left,False
+19,472.05,69.06,GlobalWholesaleBanking,9.12,True,left,False
+20,86.19,69.15,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+20,109.9,68.69,PERFORMANCE BY BUSINESS SEGMENT (continued),11.04,True,left,False
+20,133.57,69.41,GlobalMarkets,9.12,True,left,False
+20,273.84,69.48,Insurance,9.12,True,left,False
+20,426.34,69.35,Others,9.12,True,left,False

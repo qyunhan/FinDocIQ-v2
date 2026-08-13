@@ -1,0 +1,11 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,85.78,87.17,ThirdQuarter2025ResultsPressRelease,22.1,True,center,False
+1,133.91,169.27,OCBCGroupThirdQuarter2025NetProfit,13.4,True,center,False
+1,154.07,133.97,Rose9%abovethePreviousQuartertoS$1.98billion,13.4,True,center,False
+2,405.77,68.67,3Q25Quarter-on-QuarterPerformance,10.08,True,left,False
+3,286.8,68.4,3Q25Year-on-Year Performance,10.08,True,left,False
+4,393.32,68.38,9M25Year-on-YearPerformance,10.08,True,left,False
+5,398.28,68.55,Non-performingassets(“NPAs”),10.08,True,left,False
+5,512.24,68.77,Allowances,10.08,True,left,False
+7,92.97,68.77,"Message from Group CEO, Helen Wong",12.0,True,left,False
+9,91.99,69.07,Further Information,10.08,True,left,False

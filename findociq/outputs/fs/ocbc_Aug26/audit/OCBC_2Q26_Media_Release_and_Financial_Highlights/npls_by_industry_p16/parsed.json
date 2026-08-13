@@ -1,0 +1,1043 @@
+{
+  "tables": [
+    {
+      "title": "NPLs by Industry",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2026",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "30 Jun 2026",
+          "leaf": "% of gross loans"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "% of gross loans"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "% of gross loans"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Loans and advances",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Agriculture, mining and quarrying",
+          "values": [
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Manufacturing",
+          "values": [
+            {
+              "value": "342",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "308",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "328",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Building and construction",
+          "values": [
+            {
+              "value": "1,589",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,738",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,302",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Housing loans",
+          "values": [
+            {
+              "value": "326",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "341",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "390",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "General commerce",
+          "values": [
+            {
+              "value": "215",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "231",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "318",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.0",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transport, storage and communication",
+          "values": [
+            {
+              "value": "69",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "74",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Financial institutions, investment and holding companies",
+          "values": [
+            {
+              "value": "284",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "221",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Professionals and individuals",
+          "values": [
+            {
+              "value": "90",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "102",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "199",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total NPLs",
+          "values": [
+            {
+              "value": "3,119",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,229",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,983",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Classified debt securities",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Classified contingent liabilities",
+          "values": [
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total NPAs",
+          "values": [
+            {
+              "value": "3,132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3,243",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3,009",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "NPAs by Period Overdue",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2026",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "30 Jun 2026",
+          "leaf": "%"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "%"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "S$ million"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 180 days",
+          "values": [
+            {
+              "value": "1,361",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,494",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,315",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 90 to 180 days",
+          "values": [
+            {
+              "value": "277",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "199",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "315",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 to 90 days",
+          "values": [
+            {
+              "value": "136",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "232",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "312",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Less than 30 days",
+          "values": [
+            {
+              "value": "234",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "253",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "387",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Not overdue",
+          "values": [
+            {
+              "value": "1,124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,065",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33",
+              "cell_state": "reported"
+            },
+            {
+              "value": "680",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "3,132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,243",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,009",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Restructured Loans",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2026",
+          "leaf": "Loan"
+        },
+        {
+          "group": "30 Jun 2026",
+          "leaf": "Allowance"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "Loan"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "Allowance"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "Loan"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "Allowance"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Substandard",
+          "values": [
+            {
+              "value": "155",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            },
+            {
+              "value": "64",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Doubtful",
+          "values": [
+            {
+              "value": "528",
+              "cell_state": "reported"
+            },
+            {
+              "value": "396",
+              "cell_state": "reported"
+            },
+            {
+              "value": "391",
+              "cell_state": "reported"
+            },
+            {
+              "value": "280",
+              "cell_state": "reported"
+            },
+            {
+              "value": "388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "310",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loss",
+          "values": [
+            {
+              "value": "42",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "725",
+              "cell_state": "reported"
+            },
+            {
+              "value": "467",
+              "cell_state": "reported"
+            },
+            {
+              "value": "492",
+              "cell_state": "reported"
+            },
+            {
+              "value": "339",
+              "cell_state": "reported"
+            },
+            {
+              "value": "571",
+              "cell_state": "reported"
+            },
+            {
+              "value": "395",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Loans and advances"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Agriculture, mining and quarrying"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Manufacturing"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Building and construction"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Housing loans"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "General commerce"
+          },
+          {
+            "line_id": 20,
+            "indent": 1,
+            "label_clean": "Transport, storage and communication"
+          },
+          {
+            "line_id": 21,
+            "indent": 1,
+            "label_clean": "Financial institutions, investment and holding companies"
+          },
+          {
+            "line_id": 23,
+            "indent": 1,
+            "label_clean": "Professionals and individuals"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Total NPLs"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Classified debt securities"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Classified contingent liabilities"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Total NPAs"
+          }
+        ],
+        "title_clean": "NPLs by Industry",
+        "col_labels_clean": [
+          "S$ million",
+          null,
+          "S$ million",
+          null,
+          "S$ million",
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Over 180 days"
+          },
+          {
+            "line_id": 35,
+            "indent": 0,
+            "label_clean": "Over 90 to 180 days"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "30 to 90 days"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Less than 30 days"
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "Not overdue"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "NPAs by Period Overdue",
+        "col_labels_clean": [
+          "S$ million",
+          null,
+          "S$ million",
+          null,
+          "S$ million",
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 45,
+            "indent": 0,
+            "label_clean": "Substandard"
+          },
+          {
+            "line_id": 46,
+            "indent": 0,
+            "label_clean": "Doubtful"
+          },
+          {
+            "line_id": 47,
+            "indent": 0,
+            "label_clean": "Loss"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "Restructured Loans",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

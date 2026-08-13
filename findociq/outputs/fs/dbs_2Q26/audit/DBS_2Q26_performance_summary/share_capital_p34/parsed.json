@@ -1,0 +1,253 @@
+{
+  "tables": [
+    {
+      "title": "SHARE CAPITAL\n(a) The movement in the number of issued and fully paid-up ordinary shares of the Company is as follows:",
+      "label_header": "Number of shares (million)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Half 2026"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Issued Ordinary shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at beginning of period",
+          "values": [
+            {
+              "value": "2,838",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,846",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares repurchased and cancelled",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(8)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares issued pursuant to DBSH Share Plan",
+          "values": [
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at end of period",
+          "values": [
+            {
+              "value": "2,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,838",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Treasury shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at beginning of period",
+          "values": [
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shares transferred pursuant to DBSH Share Plan",
+          "values": [
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Balance at end of period",
+          "values": [
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Issued Ordinary shares net of Treasury shares",
+          "values": [
+            {
+              "value": "2,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,838",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "# represents less than 500,000 shares",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Issued Ordinary shares"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Balance at beginning of period"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Shares repurchased and cancelled"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Shares issued pursuant to DBSH Share Plan"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Balance at end of period"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Treasury shares"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Balance at beginning of period"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Shares transferred pursuant to DBSH Share Plan"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Balance at end of period"
+          },
+          {
+            "line_id": 21,
+            "indent": 1,
+            "label_clean": "Issued Ordinary shares net of Treasury shares"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "# represents less than 500,000 shares"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "tables": [
+    {
+      "title": "Non-Performing Assets (cont\u2019d) - NPL by geography 1",
+      "label_header": "NPL by geography 1",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "NPL/NPA $m"
+        },
+        {
+          "group": null,
+          "leaf": "NPL ratio %"
+        },
+        {
+          "group": null,
+          "leaf": "Specific allowance $m"
+        },
+        {
+          "group": null,
+          "leaf": "Specific allowance as a % of NPL/NPA %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Singapore",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "775",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "308",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "890",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "416",
+              "cell_state": "reported"
+            },
+            {
+              "value": "47",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "878",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "320",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Malaysia",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "874",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "193",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "880",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "193",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "1,005",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "330",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Thailand",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "930",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "353",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "963",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "375",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "971",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "390",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Indonesia",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "87",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "360",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "120",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "370",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Greater China",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "2,319",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "182",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "1,481",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "1,314",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Others",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "503",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "175",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "805",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "135",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "803",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "329",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Group NPL",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "5,700",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,298",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "5,379",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,306",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "5,341",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,593",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Group NPA",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1,320",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1,332",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1,610",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Total allowance",
+      "label_header": "Group",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "NPA\u00b2 %"
+        },
+        {
+          "group": null,
+          "leaf": "as a % of unsecured NPA\u00b2 %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-26",
+          "values": [
+            {
+              "value": "88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "306",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dec-25",
+          "values": [
+            {
+              "value": "97",
+              "cell_state": "reported"
+            },
+            {
+              "value": "254",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Jun-25",
+          "values": [
+            {
+              "value": "88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "209",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Dec-2"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Jun-2"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Jun-26"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Dec-25"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Jun-25"
+          }
+        ],
+        "title_clean": "Total allowance",
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

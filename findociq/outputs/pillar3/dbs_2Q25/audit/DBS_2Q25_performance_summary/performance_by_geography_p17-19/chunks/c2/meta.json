@@ -1,0 +1,57 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_geography_p17-19/chunks/c2",
+  "section_ids": [
+    "performance_by_geography"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY GEOGRAPHY"
+  ],
+  "pages": [
+    19
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-13T17:10:40",
+    "script": "extract_to_excel",
+    "label": "performance_by_geography_p17-19/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2984,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 2993,
+    "est_cost_usd": 0.00092
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.14' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.12' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '268' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '636' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '106' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '438' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '652' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '463' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '127' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '254' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '897' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '474' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '423' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '134' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '420' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '126' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

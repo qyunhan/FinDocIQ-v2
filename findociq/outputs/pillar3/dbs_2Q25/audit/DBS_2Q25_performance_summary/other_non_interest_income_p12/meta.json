@@ -1,0 +1,65 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "other_non_interest_income_p12",
+  "section_ids": [
+    "other_non_interest_income"
+  ],
+  "section_titles": [
+    "OTHER NON-INTEREST INCOME"
+  ],
+  "pages": [
+    12
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 7,
+  "usage": {
+    "ts": "2026-07-13T17:09:28",
+    "script": "extract_to_excel",
+    "label": "other_non_interest_income_p12",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2936,
+    "output_tokens": 1533,
+    "thinking_tokens": 0,
+    "total_tokens": 4469,
+    "est_cost_usd": 0.00471
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1373' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1054' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1129' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2898' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2535' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2551' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2442' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.44' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.37' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.87' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.72' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '467' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '459' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '412' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '599' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '371' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '273' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '614' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '626' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '456' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '444' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '474' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [OTHER NON-INTEREST INCOME]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,502 @@
+{
+  "tables": [
+    {
+      "title": "CAPITAL ADEQUACY",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2025"
+        },
+        {
+          "group": null,
+          "leaf": "31 Mar 2025"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2024"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Common Equity Tier 1 capital",
+          "values": [
+            {
+              "value": "60,538",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61,022",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,993",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56,955",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Tier 1 capital",
+          "values": [
+            {
+              "value": "61,538",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62,022",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62,386",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,348",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total capital",
+          "values": [
+            {
+              "value": "64,709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "65,238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "65,601",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62,531",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Risk-Weighted Assets (“RWA”)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Credit RWA",
+          "values": [
+            {
+              "value": "278,204",
+              "cell_state": "reported"
+            },
+            {
+              "value": "279,232",
+              "cell_state": "reported"
+            },
+            {
+              "value": "274,670",
+              "cell_state": "reported"
+            },
+            {
+              "value": "303,707",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Market RWA",
+          "values": [
+            {
+              "value": "39,139",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,488",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,512",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,619",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Operational RWA",
+          "values": [
+            {
+              "value": "37,817",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37,817",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37,820",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51,704",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total RWA",
+          "values": [
+            {
+              "value": "355,160",
+              "cell_state": "reported"
+            },
+            {
+              "value": "351,537",
+              "cell_state": "reported"
+            },
+            {
+              "value": "352,002",
+              "cell_state": "reported"
+            },
+            {
+              "value": "386,030",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Capital Adequacy Ratio (“CAR”) (%)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Common Equity Tier 1 (CET-1)¹",
+          "values": [
+            {
+              "value": "17.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Tier 1¹",
+          "values": [
+            {
+              "value": "17.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Total¹",
+          "values": [
+            {
+              "value": "18.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Fully phased-in CET-1²",
+          "values": [
+            {
+              "value": "15.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NA",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Minimum CAR including Buffer Requirements (%)³",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "CET-1",
+          "values": [
+            {
+              "value": "9.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9.3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Effective Tier 1",
+          "values": [
+            {
+              "value": "10.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Effective Total",
+          "values": [
+            {
+              "value": "12.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Of which: Buffer Requirements (%)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Capital Conservation Buffer",
+          "values": [
+            {
+              "value": "2.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Countercyclical Capital Buffer",
+          "values": [
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "1 CAR ratios as at 30 Jun 2025, 31 Mar 2025 and 31 Dec 2024 were computed based on the Basel III reforms implemented from 1 July 2024 under transitional arrangements",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "2 Calculated based on the Basel III reforms output floor at 72.5% when fully phased-in on 1 January 2029",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "3 Includes minimum Common Equity Tier 1, Tier 1 and Total CAR of 6.5%, 8.0% and 10.0% respectively",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "NA Not Applicable",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

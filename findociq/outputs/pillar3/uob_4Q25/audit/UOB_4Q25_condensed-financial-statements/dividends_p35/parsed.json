@@ -1,0 +1,95 @@
+{
+  "tables": [
+    {
+      "title": "4 Dividends",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "4",
+      "columns": [
+        {
+          "group": "The Group",
+          "leaf": "2025 $m"
+        },
+        {
+          "group": "The Group",
+          "leaf": "2024 $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary dividends:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Final dividend of 92 cents (2024: 85 cents) and special dividend of 50 cents (2024: Nil) tax-exempt per share paid in respect of prior financial year",
+          "values": [
+            {
+              "value": "2,370",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,424",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Interim dividend of 85 cents (2024: 88 cents) tax-exempt per share paid in respect of the financial year",
+          "values": [
+            {
+              "value": "1,411",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,472",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "document": "1Q25_P3_other_regulatory_disclosures.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "A_8_1_p9",
+  "section_ids": [
+    "A.8.1"
+  ],
+  "section_titles": [
+    "RWA Flow Statements of Market Risk Exposures under IMA"
+  ],
+  "pages": [
+    9
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-26T09:29:46",
+    "script": "extract_to_excel",
+    "label": "A_8_1_p9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3904,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3913,
+    "est_cost_usd": 0.00594,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '212026' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '219548' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5285' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3550' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1313' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9.1' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

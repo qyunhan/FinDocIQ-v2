@@ -1,0 +1,48 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "share_capital_p30",
+  "section_ids": [
+    "share_capital"
+  ],
+  "section_titles": [
+    "SHARE CAPITAL"
+  ],
+  "pages": [
+    30
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 9,
+  "usage": {
+    "ts": "2026-07-26T09:06:40",
+    "script": "extract_to_excel",
+    "label": "share_capital_p30",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3881,
+    "output_tokens": 1182,
+    "thinking_tokens": 0,
+    "total_tokens": 5063,
+    "est_cost_usd": 0.01646,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2572082189' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '720' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '920' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Balance at beginning of period' [SHARE CAPITAL\n(a) The movement]",
+      "  duplicate row label x2: 'Balance at end of period' [SHARE CAPITAL\n(a) The movement]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

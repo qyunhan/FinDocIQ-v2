@@ -1,0 +1,205 @@
+{
+  "tables": [
+    {
+      "title": "10. Deposits and balances of non-bank customers and banks",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "10",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "31 Dec 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "166,140",
+              "cell_state": "reported"
+            },
+            {
+              "value": "161,185",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Savings deposits",
+          "values": [
+            {
+              "value": "105,869",
+              "cell_state": "reported"
+            },
+            {
+              "value": "81,150",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "111,441",
+              "cell_state": "reported"
+            },
+            {
+              "value": "109,603",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "44,836",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,749",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers total",
+          "values": [
+            {
+              "value": "428,286",
+              "cell_state": "reported"
+            },
+            {
+              "value": "390,687",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "15,280",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,565",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total deposits",
+          "values": [
+            {
+              "value": "443,566",
+              "cell_state": "reported"
+            },
+            {
+              "value": "402,252",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Fixed deposits"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Savings deposits"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Current accounts"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Total deposits"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

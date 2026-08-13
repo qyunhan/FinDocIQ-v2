@@ -1,0 +1,406 @@
+{
+  "tables": [
+    {
+      "title": "EXPENSES1",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "2nd Half 2025"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Half 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2025"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "Year 2025"
+        },
+        {
+          "group": null,
+          "leaf": "Year 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Staff",
+          "values": [
+            {
+              "value": "2,923",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,866",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,909",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0",
+              "cell_state": "zero"
+            },
+            {
+              "value": "5,832",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,594",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Occupancy",
+          "values": [
+            {
+              "value": "245",
+              "cell_state": "reported"
+            },
+            {
+              "value": "238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "214",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "459",
+              "cell_state": "reported"
+            },
+            {
+              "value": "453",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Computerisation",
+          "values": [
+            {
+              "value": "720",
+              "cell_state": "reported"
+            },
+            {
+              "value": "729",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "640",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,360",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,335",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Revenue-related",
+          "values": [
+            {
+              "value": "336",
+              "cell_state": "reported"
+            },
+            {
+              "value": "283",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "276",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            },
+            {
+              "value": "612",
+              "cell_state": "reported"
+            },
+            {
+              "value": "536",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "541",
+              "cell_state": "reported"
+            },
+            {
+              "value": "528",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "445",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            },
+            {
+              "value": "986",
+              "cell_state": "reported"
+            },
+            {
+              "value": "977",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "4,765",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,644",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,484",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,249",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,895",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Staff count2 at period-end",
+          "values": [
+            {
+              "value": "39,721",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,354",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,187",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,721",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,354",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Included in the above table was:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Depreciation of properties and other fixed assets",
+          "values": [
+            {
+              "value": "414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "410",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "824",
+              "cell_state": "reported"
+            },
+            {
+              "value": "806",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": "1",
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "Excludes impact arising from Citi Integration and Provision for CSR",
+          "values": []
+        },
+        {
+          "row_id": "2",
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "Measured based on full-time equivalent",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

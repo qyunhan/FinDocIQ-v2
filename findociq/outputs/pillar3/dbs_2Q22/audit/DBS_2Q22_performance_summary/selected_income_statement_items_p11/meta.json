@@ -1,0 +1,41 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "selected_income_statement_items_p11",
+  "section_ids": [
+    "selected_income_statement_items"
+  ],
+  "section_titles": [
+    "Selected income statement items2"
+  ],
+  "pages": [
+    11
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-07-26T09:06:13",
+    "script": "extract_to_excel",
+    "label": "selected_income_statement_items_p11",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3899,
+    "output_tokens": 4830,
+    "thinking_tokens": 0,
+    "total_tokens": 8729,
+    "est_cost_usd": 0.04932,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

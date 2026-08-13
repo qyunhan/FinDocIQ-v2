@@ -1,0 +1,70 @@
+{
+  "document": "DBS_3Q22_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 September 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "asset_quality_resilient_balance_sheet_strong_p3-4",
+  "section_ids": [
+    "asset_quality_resilient_balance_sheet_strong"
+  ],
+  "section_titles": [
+    "Asset quality resilient, balance sheet strong"
+  ],
+  "pages": [
+    3,
+    4
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-26T09:10:58",
+    "script": "extract_to_excel",
+    "label": "asset_quality_resilient_balance_sheet_strong_p3-4",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4505,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 4514,
+    "est_cost_usd": 0.00684,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.83' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.66' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.43' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.99' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.13' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.96' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.60' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '14.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '13.8' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.08' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '16.3' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '771' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '323' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '223' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '122' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '230' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '753' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.3' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '153' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '120' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '216' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '533' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '133' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '114' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '100' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.1' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

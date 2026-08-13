@@ -1,0 +1,62 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "debts_issued_p36",
+  "section_ids": [
+    "debts_issued"
+  ],
+  "section_titles": [
+    "7 Debts Issued"
+  ],
+  "pages": [
+    36
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 11,
+  "usage": {
+    "ts": "2026-08-07T09:25:31",
+    "script": "extract_to_excel",
+    "label": "debts_issued_p36",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3886,
+    "output_tokens": 1292,
+    "thinking_tokens": 0,
+    "total_tokens": 5178,
+    "est_cost_usd": 0.01746,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1693' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '4423' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '3716' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7906' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2156' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1555' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9946' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3972' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1747' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0451' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '861' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '483' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '599' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '637' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '361' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '842' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '555' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [7 Debts Issued]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

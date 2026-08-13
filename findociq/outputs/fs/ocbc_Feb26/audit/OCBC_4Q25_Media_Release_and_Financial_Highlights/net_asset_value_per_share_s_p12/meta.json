@@ -1,0 +1,49 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_asset_value_per_share_s_p12",
+  "section_ids": [
+    "net_asset_value_per_share_s"
+  ],
+  "section_titles": [
+    "Net asset value per share (S$)"
+  ],
+  "pages": [
+    12
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-07-30T15:47:55",
+    "script": "extract_to_excel",
+    "label": "net_asset_value_per_share_s_p12",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3899,
+    "output_tokens": 5638,
+    "thinking_tokens": 0,
+    "total_tokens": 9537,
+    "est_cost_usd": 0.05659,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '637' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '649' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '652' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '651' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '653' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

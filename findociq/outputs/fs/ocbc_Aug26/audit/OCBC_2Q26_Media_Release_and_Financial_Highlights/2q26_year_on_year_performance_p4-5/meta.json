@@ -1,0 +1,64 @@
+{
+  "document": "OCBC_2Q26_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 August 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "2q26_year_on_year_performance_p4-5",
+  "section_ids": [
+    "2q26_year_on_year_performance"
+  ],
+  "section_titles": [
+    "2Q26 Year-on-Year Performance"
+  ],
+  "pages": [
+    4,
+    5
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 9,
+  "usage": {
+    "ts": "2026-08-07T04:59:56",
+    "script": "extract_to_excel",
+    "label": "2q26_year_on_year_performance_p4-5",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4505,
+    "output_tokens": 2167,
+    "thinking_tokens": 0,
+    "total_tokens": 6672,
+    "est_cost_usd": 0.02626,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p5) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '193200032' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '37.8' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '2.22' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.97' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.26' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.91' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '39.3' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '39.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.13' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '156' pdf=5x json=2x (missing from extraction)",
+      "  deficit: '325' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '470' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '695' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.9' pdf=4x json=3x (missing from extraction)",
+      "  deficit: '163' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '372' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '147' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '159' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '225' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

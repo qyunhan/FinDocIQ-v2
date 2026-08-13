@@ -1,0 +1,43 @@
+{
+  "document": "OCBC 3Q25 Results Press Release.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 November 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "financial_highlights_unaudited_p8",
+  "section_ids": [
+    "financial_highlights_unaudited"
+  ],
+  "section_titles": [
+    "FINANCIAL HIGHLIGHTS (unaudited)"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 49,
+  "usage": {
+    "ts": "2026-07-25T08:14:56",
+    "script": "extract_to_excel",
+    "label": "financial_highlights_unaudited_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3928,
+    "output_tokens": 11397,
+    "thinking_tokens": 0,
+    "total_tokens": 15325,
+    "est_cost_usd": 0.10846,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

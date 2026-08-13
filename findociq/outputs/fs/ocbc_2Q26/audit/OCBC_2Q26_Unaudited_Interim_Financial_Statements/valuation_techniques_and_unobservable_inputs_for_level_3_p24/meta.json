@@ -1,0 +1,69 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "valuation_techniques_and_unobservable_inputs_for_level_3_p24",
+  "section_ids": [
+    "valuation_techniques_and_unobservable_inputs_for_level_3"
+  ],
+  "section_titles": [
+    "Valuation techniques and unobservable inputs for Level 3 instruments"
+  ],
+  "pages": [
+    24
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 18,
+  "usage": {
+    "ts": "2026-08-07T04:58:06",
+    "script": "extract_to_excel",
+    "label": "valuation_techniques_and_unobservable_inputs_for_level_3_p24",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3943,
+    "output_tokens": 2988,
+    "thinking_tokens": 0,
+    "total_tokens": 6931,
+    "est_cost_usd": 0.03281,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Valuation techniques and unobs]",
+      "  duplicate row label x2: 'Total' [Valuation techniques and unobs]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [Valuation techniques and unobservable in]",
+      "  col-bands: uncalibrated (0 dense lines) [Valuation techniques and unobservable in]",
+      "  col-repair: declined for table 'Valuation techniques and unobservable in' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked",
+      "  col-repair: declined for table 'Valuation techniques and unobservable in' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments - GROUP 30 June 2026",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments - GROUP 31 December 2025",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    }
+  ],
+  "all_dropped": false
+}

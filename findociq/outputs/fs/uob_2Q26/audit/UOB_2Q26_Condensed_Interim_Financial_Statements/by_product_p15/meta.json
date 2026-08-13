@@ -1,0 +1,45 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "by_product_p15",
+  "section_ids": [
+    "by_product"
+  ],
+  "section_titles": [
+    "By product"
+  ],
+  "pages": [
+    15
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-08-07T09:23:59",
+    "script": "extract_to_excel",
+    "label": "by_product_p15",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3884,
+    "output_tokens": 3236,
+    "thinking_tokens": 0,
+    "total_tokens": 7120,
+    "est_cost_usd": 0.03495,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Others' [Customer Deposits]",
+      "  duplicate row label x3: 'Total' [Customer Deposits]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,40 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "loans_to_customers_p16",
+  "section_ids": [
+    "loans_to_customers"
+  ],
+  "section_titles": [
+    "12. Loans to customers"
+  ],
+  "pages": [
+    16
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 25,
+  "usage": {
+    "ts": "2026-07-14T15:00:08",
+    "script": "extract_to_excel",
+    "label": "loans_to_customers_p16",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2951,
+    "output_tokens": 3067,
+    "thinking_tokens": 0,
+    "total_tokens": 6018,
+    "est_cost_usd": 0.00855
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

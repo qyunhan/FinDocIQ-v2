@@ -1,0 +1,42 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_cash_flow_statement_p32",
+  "section_ids": [
+    "unaudited_consolidated_cash_flow_statement"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT"
+  ],
+  "pages": [
+    32
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 51,
+  "usage": {
+    "ts": "2026-08-06T09:22:42",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_cash_flow_statement_p32",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3922,
+    "output_tokens": 5594,
+    "thinking_tokens": 0,
+    "total_tokens": 9516,
+    "est_cost_usd": 0.05623,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

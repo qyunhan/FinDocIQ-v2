@@ -1,0 +1,58 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_geography_p17-19/chunks/c2",
+  "section_ids": [
+    "performance_by_geography"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY GEOGRAPHY"
+  ],
+  "pages": [
+    19
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-08-06T09:22:31",
+    "script": "extract_to_excel",
+    "label": "performance_by_geography_p17-19/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3949,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3958,
+    "est_cost_usd": 0.006,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p19) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '1.31' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.24' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '533' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '616' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '621' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '645' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '592' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '116' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '246' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '815' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '449' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '275' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '474' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '126' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

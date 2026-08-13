@@ -1,0 +1,10 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,101.3,70.15,To: Shareholders,11.04,False,left,False
+1,170.21,69.26,TradingUpdatefortheThirdQuarterEnded 30September 2022,11.04,True,left,True
+1,215.09,69.65,Dividends,11.04,True,left,False
+1,435.91,69.53,By order ofthe Board,11.04,False,left,False
+2,99.42,69.8,"Third-quarternet profit rises32%toSGD2.24billionwhilereturnonequityreaches16.3%, bothatnew highs",11.04,True,left,False
+2,159.0,70.01,Nine-monthnet profitup 8%toSGD5.85billion,11.04,True,left,False
+2,507.52,70.21,Third-quarternet profitup23%frompreviousquarter and 32%from ayear ago,11.04,True,left,False
+3,507.35,69.98,Nine-monthnet profitup 8%,11.04,True,left,False
+3,699.59,69.24,"Assetqualityresilient,balance sheet strong",11.04,True,left,False

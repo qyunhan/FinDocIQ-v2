@@ -1,0 +1,241 @@
+{
+  "tables": [
+    {
+      "title": "6. Other operating expenses",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "6",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "2H 2025 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2H 2024 (1)"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Property, plant and equipment",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Depreciation",
+          "values": [
+            {
+              "value": "282",
+              "cell_state": "reported"
+            },
+            {
+              "value": "247",
+              "cell_state": "reported"
+            },
+            {
+              "value": "544",
+              "cell_state": "reported"
+            },
+            {
+              "value": "456",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Maintenance and rental",
+          "values": [
+            {
+              "value": "97",
+              "cell_state": "reported"
+            },
+            {
+              "value": "115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "201",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "251",
+              "cell_state": "reported"
+            },
+            {
+              "value": "219",
+              "cell_state": "reported"
+            },
+            {
+              "value": "462",
+              "cell_state": "reported"
+            },
+            {
+              "value": "405",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Property, plant and equipment total",
+          "values": [
+            {
+              "value": "630",
+              "cell_state": "reported"
+            },
+            {
+              "value": "581",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,186",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,062",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other operating expenses",
+          "values": [
+            {
+              "value": "472",
+              "cell_state": "reported"
+            },
+            {
+              "value": "456",
+              "cell_state": "reported"
+            },
+            {
+              "value": "789",
+              "cell_state": "reported"
+            },
+            {
+              "value": "843",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total other operating expenses",
+          "values": [
+            {
+              "value": "1,102",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,037",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,975",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,905",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 44,
+            "indent": 0,
+            "label_clean": "Property, plant and equipment"
+          },
+          {
+            "line_id": 45,
+            "indent": 1,
+            "label_clean": "Depreciation"
+          },
+          {
+            "line_id": 46,
+            "indent": 1,
+            "label_clean": "Maintenance and rental"
+          },
+          {
+            "line_id": 47,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 49,
+            "indent": 0,
+            "label_clean": "Other operating expenses"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "6. Other operating expenses",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

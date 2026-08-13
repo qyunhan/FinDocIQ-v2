@@ -1,0 +1,23 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,338.02,262.56,Pillar3andLiquidityDisclosures,15.2,False,left,False
+1,376.78,367.56,30September2022,15.2,False,right,True
+3,89.38,51.25,PART A: PILLAR3DISCLOSURES,8.52,False,left,False
+3,113.29,51.65,1 INTRODUCTION,8.52,False,left,False
+3,334.89,51.32,2 SCOPEOF CONSOLIDATION,8.52,False,left,False
+4,89.92,51.37,3 OVERVIEW OF KEY PRUDENTIAL REGULATORY METRICS,8.52,False,left,False
+5,89.96,51.53,4 LEVERAGE RATIO,8.52,False,left,False
+7,89.5,51.38,5 OVERVIEW OF RISK-WEIGHTEDASSETS,8.52,False,left,False
+8,89.8,51.33,6 CREDIT RISK,8.52,False,left,False
+8,113.11,51.06,6.1 IRBA-RWAFlowStatement for Credit RiskExposures,8.52,False,left,False
+8,378.21,50.98,"7 COUNTERPARTY CREDIT RISK (""CCR"")",8.52,False,left,False
+8,399.41,50.96,7.1 RWAFlow Statementsunder theCCRInternal ModelsMethod,8.52,False,left,False
+8,463.8,51.15,8 MARKET RISK,8.52,False,left,False
+8,484.95,50.65,8.1 RWAFlow Statementsof Market RiskExposuresunderIMA,8.52,False,left,False
+9,89.92,51.3,PART B: LIQUIDITY COVERAGERATIO (“LCR”) DISCLOSURES,8.52,False,left,False
+12,90.27,51.51,1.3 LiquidityCoverageRatio,8.52,False,left,False
+12,269.26,60.94,a) Composition ofHigh QualityLiquid Assets(“HQLA”),8.52,False,left,False
+12,404.67,61.52,b) Concentration ofFunding Sources,8.52,False,center,False
+12,495.82,60.89,c) DerivativeExposuresandPotential Collateral Calls,8.52,False,left,False
+13,90.25,51.59,1.3 LiquidityCoverageRatio (continued),8.52,False,left,False
+13,114.17,61.6,d) CurrencyMismatch,8.52,False,center,False
+13,205.06,61.09,e) Centralization of LiquidityManagement,8.52,False,left,False

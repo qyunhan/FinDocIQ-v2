@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "other_non_interest_income_p12",
+  "section_ids": [
+    "other_non_interest_income"
+  ],
+  "section_titles": [
+    "OTHER NON-INTEREST INCOME"
+  ],
+  "pages": [
+    12
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 9,
+  "usage": {
+    "ts": "2026-08-06T09:20:26",
+    "script": "extract_to_excel",
+    "label": "other_non_interest_income_p12",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3901,
+    "output_tokens": 1918,
+    "thinking_tokens": 0,
+    "total_tokens": 5819,
+    "est_cost_usd": 0.02311,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2.02' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.90' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [OTHER NON-INTEREST INCOME]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,914 @@
+{
+  "tables": [
+    {
+      "title": "CUSTOMER LOANS",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2026"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Gross",
+          "values": [
+            {
+              "value": "475,238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "439,100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Less:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "ECL Stage 3 (SP)",
+          "values": [
+            {
+              "value": "2,297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,324",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,216",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "ECL Stage 1 & 2 (GP)",
+          "values": [
+            {
+              "value": "3,561",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,581",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,838",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net total",
+          "values": [
+            {
+              "value": "469,380",
+              "cell_state": "reported"
+            },
+            {
+              "value": "445,011",
+              "cell_state": "reported"
+            },
+            {
+              "value": "433,046",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By business unit",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Consumer Banking/Wealth Management",
+          "values": [
+            {
+              "value": "139,635",
+              "cell_state": "reported"
+            },
+            {
+              "value": "135,158",
+              "cell_state": "reported"
+            },
+            {
+              "value": "132,549",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Institutional Banking",
+          "values": [
+            {
+              "value": "329,180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "310,034",
+              "cell_state": "reported"
+            },
+            {
+              "value": "302,098",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "6,423",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,724",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,453",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total (Gross)",
+          "values": [
+            {
+              "value": "475,238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "439,100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By geography\u00b9",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "210,852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202,317",
+              "cell_state": "reported"
+            },
+            {
+              "value": "197,458",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Hong Kong",
+          "values": [
+            {
+              "value": "58,031",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56,184",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,196",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of Greater China",
+          "values": [
+            {
+              "value": "61,416",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,429",
+              "cell_state": "reported"
+            },
+            {
+              "value": "59,236",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "South and Southeast Asia",
+          "values": [
+            {
+              "value": "42,375",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,773",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,588",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "102,564",
+              "cell_state": "reported"
+            },
+            {
+              "value": "95,213",
+              "cell_state": "reported"
+            },
+            {
+              "value": "86,622",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total (Gross)",
+          "values": [
+            {
+              "value": "475,238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "439,100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By industry",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Manufacturing",
+          "values": [
+            {
+              "value": "51,180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46,829",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43,744",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Building and construction",
+          "values": [
+            {
+              "value": "116,133",
+              "cell_state": "reported"
+            },
+            {
+              "value": "111,925",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113,902",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Housing loans",
+          "values": [
+            {
+              "value": "84,776",
+              "cell_state": "reported"
+            },
+            {
+              "value": "84,012",
+              "cell_state": "reported"
+            },
+            {
+              "value": "85,512",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "General commerce",
+          "values": [
+            {
+              "value": "48,236",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45,576",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,961",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Transportation, storage & communications",
+          "values": [
+            {
+              "value": "35,384",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,703",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,092",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Financial institutions, investment & holding companies",
+          "values": [
+            {
+              "value": "47,084",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45,343",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,941",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Professionals & private individuals (excluding housing loans)",
+          "values": [
+            {
+              "value": "46,592",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44,437",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,331",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "45,853",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,091",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37,617",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total (Gross)",
+          "values": [
+            {
+              "value": "475,238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "439,100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By currency",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore dollar",
+          "values": [
+            {
+              "value": "176,809",
+              "cell_state": "reported"
+            },
+            {
+              "value": "168,298",
+              "cell_state": "reported"
+            },
+            {
+              "value": "168,077",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "US dollar",
+          "values": [
+            {
+              "value": "130,622",
+              "cell_state": "reported"
+            },
+            {
+              "value": "120,367",
+              "cell_state": "reported"
+            },
+            {
+              "value": "108,154",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Hong Kong dollar",
+          "values": [
+            {
+              "value": "38,631",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,366",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,918",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Taiwan dollar",
+          "values": [
+            {
+              "value": "23,760",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23,071",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,987",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Chinese yuan",
+          "values": [
+            {
+              "value": "26,351",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,366",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,332",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "79,065",
+              "cell_state": "reported"
+            },
+            {
+              "value": "74,448",
+              "cell_state": "reported"
+            },
+            {
+              "value": "72,632",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total (Gross)",
+          "values": [
+            {
+              "value": "475,238",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "439,100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": "1",
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "Loans by geography are determined according to the location where the borrower, or the issuing bank in the case of bank backed export financing, is incorporated",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 5,
+            "indent": 0,
+            "label_clean": "Gross"
+          },
+          {
+            "line_id": 6,
+            "indent": 0,
+            "label_clean": "Less:"
+          },
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "ECL Stage 3 (SP)"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "ECL Stage 1 & 2 (GP)"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Net total"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "By business unit"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Consumer Banking/Wealth Management"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Institutional Banking"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Total (Gross)"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "By geography"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Hong Kong"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Rest of Greater China"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "South and Southeast Asia"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Rest of the World"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Total (Gross)"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "By industry"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Manufacturing"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Building and construction"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Housing loans"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "General commerce"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Transportation, storage & communications"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Financial institutions, investment & holding companies"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Professionals & private individuals (excluding housing loans)"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Total (Gross)"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "By currency"
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Singapore dollar"
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "US dollar"
+          },
+          {
+            "line_id": 39,
+            "indent": 0,
+            "label_clean": "Hong Kong dollar"
+          },
+          {
+            "line_id": 40,
+            "indent": 0,
+            "label_clean": "Taiwan dollar"
+          },
+          {
+            "line_id": 41,
+            "indent": 0,
+            "label_clean": "Chinese yuan"
+          },
+          {
+            "line_id": 42,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 43,
+            "indent": 0,
+            "label_clean": "Total (Gross)"
+          },
+          {
+            "line_id": 44,
+            "indent": 0,
+            "label_clean": "Notes:"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "CUSTOMER LOANS",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

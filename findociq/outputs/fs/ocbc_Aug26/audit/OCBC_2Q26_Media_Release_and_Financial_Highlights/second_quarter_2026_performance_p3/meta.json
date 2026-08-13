@@ -1,0 +1,49 @@
+{
+  "document": "OCBC_2Q26_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "7 August 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "second_quarter_2026_performance_p3",
+  "section_ids": [
+    "second_quarter_2026_performance"
+  ],
+  "section_titles": [
+    "Second Quarter 2026 Performance"
+  ],
+  "pages": [
+    3
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 16,
+  "usage": {
+    "ts": "2026-08-07T04:59:46",
+    "script": "extract_to_excel",
+    "label": "second_quarter_2026_performance_p3",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3913,
+    "output_tokens": 3248,
+    "thinking_tokens": 0,
+    "total_tokens": 7161,
+    "est_cost_usd": 0.0351,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.4' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (1 dense lines) [Second Quarter 2026 Performance]",
+      "  col-repair: declined for table 'Second Quarter 2026 Performance' \u2014 uncalibrated (1 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

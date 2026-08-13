@@ -1,0 +1,47 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "key_audit_matters_p40-43/chunks/c2",
+  "section_ids": [
+    "key_audit_matters"
+  ],
+  "section_titles": [
+    "Key Audit Matters"
+  ],
+  "pages": [
+    42,
+    43
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 4,
+  "usage": {
+    "ts": "2026-08-07T10:15:05",
+    "script": "extract_to_excel",
+    "label": "key_audit_matters_p40-43/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4517,
+    "output_tokens": 1115,
+    "thinking_tokens": 0,
+    "total_tokens": 5632,
+    "est_cost_usd": 0.01681,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p42) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '1319' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '612' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

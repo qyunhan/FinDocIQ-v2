@@ -1,0 +1,262 @@
+{
+  "tables": [
+    {
+      "title": "7 Debts Issued",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "7",
+      "columns": [
+        {
+          "group": "The Group",
+          "leaf": "Dec-25 $m"
+        },
+        {
+          "group": "The Group",
+          "leaf": "Dec-24 $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Unsecured",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Subordinated debts",
+          "values": [
+            {
+              "value": "4,483",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,506",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Commercial papers",
+          "values": [
+            {
+              "value": "17,906",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,401",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fixed and floating rate notes",
+          "values": [
+            {
+              "value": "11,555",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,516",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "2,637",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,098",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Secured",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Covered bonds",
+          "values": [
+            {
+              "value": "7,842",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,846",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "44,423",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,367",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due within 1 year",
+          "values": [
+            {
+              "value": "23,972",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,017",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due after 1 year",
+          "values": [
+            {
+              "value": "20,451",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,350",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "44,423",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41,367",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 6,
+            "indent": 0,
+            "label_clean": "Unsecured"
+          },
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Subordinated debts"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Commercial papers"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Fixed and floating rate notes"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Secured"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Covered bonds"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Due within 1 year"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Due after 1 year"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

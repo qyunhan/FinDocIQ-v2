@@ -1,0 +1,71 @@
+{
+  "document": "OCBC 1H25 Media Release Financial Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "1 August 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_performing_assets_continued_p16",
+  "section_ids": [
+    "non_performing_assets_continued"
+  ],
+  "section_titles": [
+    "NON-PERFORMING ASSETS (continued)"
+  ],
+  "pages": [
+    16
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-07-25T08:08:41",
+    "script": "extract_to_excel",
+    "label": "non_performing_assets_continued_p16",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3902,
+    "output_tokens": 5731,
+    "thinking_tokens": 0,
+    "total_tokens": 9633,
+    "est_cost_usd": 0.05743,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "NPLs by Industry",
+      "anchor_label": "NPLs by Industry",
+      "anchor_y": 183.41,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "NPAs by Period Overdue",
+      "anchor_label": "NPAs by Period Overdue",
+      "anchor_y": 352.42,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "Restructured Loans",
+      "anchor_label": "Restructured Loans",
+      "anchor_y": 532.73,
+      "owning_section": "30",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": false
+}

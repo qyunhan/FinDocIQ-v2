@@ -1,0 +1,64 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_interest_margin_p8",
+  "section_ids": [
+    "net_interest_margin"
+  ],
+  "section_titles": [
+    "Net interest margin"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 21,
+  "usage": {
+    "ts": "2026-08-07T10:13:39",
+    "script": "extract_to_excel",
+    "label": "net_interest_margin_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3888,
+    "output_tokens": 5142,
+    "thinking_tokens": 0,
+    "total_tokens": 9030,
+    "est_cost_usd": 0.05211,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Net interest margin \u2014 2025 / 2]",
+      "  duplicate row label x2: 'Total' [Net interest margin \u2014 2H25 / 2]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Net interest margin \u00b9' printed bands [] -> extracted slots [3,6]",
+      "  col-shift: 'Customer loans' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Interbank balances' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Securities' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Total' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Customer deposits' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Interbank balances/others' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Total' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,5,6,7,8,9]",
+      "  col-shift: 'Net interest margin \u00b9' printed bands [] -> extracted slots [3,6,9]",
+      "  col-repair: declined for 'Net interest margin \u00b9' \u2014 extracted values ['1.89', '2.03'] != printed tokens []",
+      "  col-repair: declined for 'Customer loans' \u2014 extracted values ['325,815', '332,452', '341,366', '4.20', '4.75', '5.24', '7,236', '7,828', '8,590'] != printed tokens ['15,064', '17,055', '320,955', '336,945', '4.47', '5.31']",
+      "  col-repair: declined for 'Interbank balances' \u2014 extracted values ['1,115', '1,365', '3.36', '3.70', '4.22', '48,274', '60,786', '64,369', '819'] != printed tokens ['1,933', '2,890', '3.55', '4.33', '54,479', '66,681']",
+      "  col-repair: declined for 'Securities' \u2014 extracted values ['1,729', '1,744', '1,949', '110,474', '3.50', '3.65', '3.73', '92,979', '95,579'] != printed tokens ['103,088', '3,314', '3,679', '3.57', '3.72', '89,099']",
+      "  col-repair: declined for 'Total' \u2014 extracted values ['10,004', '10,672', '11,699', '3.97', '4.40', '4.82', '483,164', '488,817', '500,115'] != printed tokens ['20,676', '23,259', '4.18', '4.88', '476,735', '494,512']",
+      "  col-repair: declined for 'Customer deposits' \u2014 extracted values ['2.06', '2.42', '2.73', '391,927', '4,285', '4,807', '401,205', '412,813', '5,374'] != printed tokens ['10,944', '2.23', '2.81', '389,372', '407,057', '9,093']",
+      "  col-repair: declined for 'Interbank balances/others' \u2014 extracted values ['1,108', '1,120', '1,414', '3.60', '3.88', '4.54', '58,248', '61,023', '61,885'] != printed tokens ['2,228', '2,641', '3.74', '4.54', '58,175', '59,647']",
+      "  col-repair: declined for 'Total' \u2014 extracted values ['2.26', '2.60', '2.98', '453,812', '459,453', '473,836', '5,394', '5,927', '6,787'] != printed tokens ['11,321', '13,585', '2.43', '3.04', '447,547', '466,703']",
+      "  col-repair: declined for 'Net interest margin \u00b9' \u2014 extracted values ['1.83', '1.96', '2.02'] != printed tokens []"
+    ]
+  },
+  "crop": null
+}

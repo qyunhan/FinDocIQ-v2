@@ -1,0 +1,781 @@
+{
+  "tables": [
+    {
+      "title": "6 Fair Value of Financial Instruments\n(b) The Group classifies financial instruments carried at fair value by level following the fair value measurement hierarchy:",
+      "label_header": "In $m",
+      "continued_from_previous": false,
+      "section_id": "6",
+      "columns": [
+        {
+          "group": "Jun-26",
+          "leaf": "Level 1"
+        },
+        {
+          "group": "Jun-26",
+          "leaf": "Level 2"
+        },
+        {
+          "group": "Jun-26",
+          "leaf": "Level 3"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "Level 1"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "Level 2"
+        },
+        {
+          "group": "Dec-25",
+          "leaf": "Level 3"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial assets carried at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cash, balances and placements with central banks",
+          "values": [
+            {
+              "value": "8,477",
+              "cell_state": "reported"
+            },
+            {
+              "value": "270",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "4,828",
+              "cell_state": "reported"
+            },
+            {
+              "value": "181",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore Government treasury bills and securities",
+          "values": [
+            {
+              "value": "10,493",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "10,888",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other government treasury bills and securities",
+          "values": [
+            {
+              "value": "30,442",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,908",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "32,222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,520",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Trading securities",
+          "values": [
+            {
+              "value": "389",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,309",
+              "cell_state": "reported"
+            },
+            {
+              "value": "81",
+              "cell_state": "reported"
+            },
+            {
+              "value": "406",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,041",
+              "cell_state": "reported"
+            },
+            {
+              "value": "109",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Placements and balances with banks",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "10,439",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "9,910",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans to customers",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "4,167",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,517",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative financial assets",
+          "values": [
+            {
+              "value": "398",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,555",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "183",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,706",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "h1",
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Investment securities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Debt",
+          "values": [
+            {
+              "value": "57",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,799",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,761",
+              "cell_state": "reported"
+            },
+            {
+              "value": "254",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29,534",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,999",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Equity",
+          "values": [
+            {
+              "value": "1,236",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,288",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,192",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,305",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other assets",
+          "values": [
+            {
+              "value": "425",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,491",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "7,033",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "51,917",
+              "cell_state": "reported"
+            },
+            {
+              "value": "77,938",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,140",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57,006",
+              "cell_state": "reported"
+            },
+            {
+              "value": "64,416",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,417",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total financial assets carried at fair value",
+          "values": [
+            {
+              "value": "133,995",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "124,839",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial liabilities carried at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks and customers",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "8,376",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,730",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative financial liabilities",
+          "values": [
+            {
+              "value": "388",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,675",
+              "cell_state": "reported"
+            },
+            {
+              "value": "220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "339",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,962",
+              "cell_state": "reported"
+            },
+            {
+              "value": "231",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other liabilities",
+          "values": [
+            {
+              "value": "429",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,306",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "275",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debts issued",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "3,599",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,637",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "817",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26,956",
+              "cell_state": "reported"
+            },
+            {
+              "value": "220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21,470",
+              "cell_state": "reported"
+            },
+            {
+              "value": "231",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total financial liabilities carried at fair value",
+          "values": [
+            {
+              "value": "27,993",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "22,315",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Cash, balances and placements with central banks"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Singapore Government treasury bills and securities"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Other government treasury bills and securities"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Trading securities"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Placements and balances with banks"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Loans to customers"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Derivative financial assets"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Investment securities"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Debt5"
+          },
+          {
+            "line_id": 33,
+            "indent": 1,
+            "label_clean": "Equity"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Other assets"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Total financial assets carried at fair value"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Deposits and balances of banks and customers - 8,376- - 5,730-"
+          },
+          {
+            "line_id": 39,
+            "indent": 0,
+            "label_clean": "Derivative financial liabilities"
+          },
+          {
+            "line_id": 40,
+            "indent": 0,
+            "label_clean": "Other liabilities"
+          },
+          {
+            "line_id": 41,
+            "indent": 0,
+            "label_clean": "Debts issued - 3,599- - 2,637-"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 43,
+            "indent": 0,
+            "label_clean": "Total financial liabilities carried at fair value"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

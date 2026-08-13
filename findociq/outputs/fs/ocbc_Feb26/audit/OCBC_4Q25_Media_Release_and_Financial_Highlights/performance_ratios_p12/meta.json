@@ -1,0 +1,42 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_ratios_p12",
+  "section_ids": [
+    "performance_ratios"
+  ],
+  "section_titles": [
+    "Performance ratios"
+  ],
+  "pages": [
+    12
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-30T15:45:35",
+    "script": "extract_to_excel",
+    "label": "performance_ratios_p12",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3887,
+    "output_tokens": 5312,
+    "thinking_tokens": 0,
+    "total_tokens": 9199,
+    "est_cost_usd": 0.05364,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

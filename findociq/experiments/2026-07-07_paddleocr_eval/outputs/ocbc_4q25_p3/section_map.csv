@@ -1,0 +1,51 @@
+doc_id,section_id,section_title,start_page,end_page,n_tables,source
+ocbc_4q25_p3,4,Key Metrics,7,7,1,printed_toc
+ocbc_4q25_p3,5.1,Disclosure of G-SIB Indicators,8,9,2,printed_toc
+ocbc_4q25_p3,5.2,Geographical Distribution of Credit Exposures Used in the Countercyclical Capital Buffer,10,10,2,printed_toc
+ocbc_4q25_p3,6.1,Reconciliation of Regulatory Capital to Balance Sheet,11,12,2,printed_toc
+ocbc_4q25_p3,6.2,Composition of Regulatory Capital,13,15,3,printed_toc
+ocbc_4q25_p3,6.3,Main Features of Regulatory Capital Instruments,16,19,4,printed_toc
+ocbc_4q25_p3,7.1,Differences between Accounting and Regulatory Scopes of Consolidation and Mapping of Financial Statement Categories with Regulatory Risk Categories,20,21,2,printed_toc
+ocbc_4q25_p3,7.2,Main Sources of Differences between Regulatory Exposure Amounts and Carrying Amounts in Financial Statements,22,22,1,printed_toc
+ocbc_4q25_p3,7.3,Prudent Valuation Adjustments,23,23,2,printed_toc
+ocbc_4q25_p3,8.1,Leverage Ratio Summary Comparison Table,24,24,1,printed_toc
+ocbc_4q25_p3,8.2,Leverage Ratio Common Disclosure Table,25,26,2,printed_toc
+ocbc_4q25_p3,9.1,Credit Quality of Assets,27,27,2,printed_toc
+ocbc_4q25_p3,9.2,Changes in Stock of Defaulted Loans to Customers and Debt Securities,28,28,1,printed_toc
+ocbc_4q25_p3,9.3,Additional Disclosures related to Credit Quality of Assets,29,33,13,printed_toc
+ocbc_4q25_p3,9.4,Overview of Past Due Exposure and Impairment Allowances,34,40,14,printed_toc
+ocbc_4q25_p3,9.5,Restructured Exposures,40,40,1,printed_toc
+ocbc_4q25_p3,10,Asset Encumbrance,41,41,2,printed_toc
+ocbc_4q25_p3,11,Key Approaches used for Computation of RWA,42,42,1,printed_toc
+ocbc_4q25_p3,12,Overview of RWA,43,43,1,printed_toc
+ocbc_4q25_p3,13.1,Comparison of Modelled and Standardised RWA at Risk Level,44,44,1,printed_toc
+ocbc_4q25_p3,13.2,Comparison of Modelled and Standardised RWA for Credit Risk at Asset Class Level,45,45,1,printed_toc
+ocbc_4q25_p3,14,IRBA - RWA Flow Statement for Credit Risk Exposures,46,46,1,printed_toc
+ocbc_4q25_p3,15.1,SA(CR) – Credit Risk Exposures and CRM Effects,47,48,2,printed_toc
+ocbc_4q25_p3,15.2,SA(CR) - Exposures by Asset Classes and Risk Weights,49,52,4,printed_toc
+ocbc_4q25_p3,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,53,56,10,printed_toc
+ocbc_4q25_p3,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,57,60,8,printed_toc
+ocbc_4q25_p3,15.5,Overview of CRM Techniques,61,61,2,printed_toc
+ocbc_4q25_p3,16.1,F-IRBA – Backtesting of PD per portfolio,62,65,10,printed_toc
+ocbc_4q25_p3,16.2,A-IRBA - Backtesting of PD per portfolio,66,69,8,printed_toc
+ocbc_4q25_p3,17,IRBA - Specialised Lending under the Slotting Approach,70,70,2,printed_toc
+ocbc_4q25_p3,18.1,Analysis of CCR Exposures by Approach,71,71,2,printed_toc
+ocbc_4q25_p3,18.2,Exposures to Central Counterparties,72,73,2,printed_toc
+ocbc_4q25_p3,18.3,SA - CCR Exposures by Portfolio and Risk Weights,74,74,1,printed_toc
+ocbc_4q25_p3,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,75,78,10,printed_toc
+ocbc_4q25_p3,18.5,A-IRBA - CCR Exposures by Portfolio and PD Range,79,80,4,printed_toc
+ocbc_4q25_p3,18.6,Composition of Collateral for CCR Exposure,81,81,2,printed_toc
+ocbc_4q25_p3,18.7,Credit Derivative Exposures,82,82,1,printed_toc
+ocbc_4q25_p3,19.1,Securitisation Exposures in the Banking Book,83,83,1,printed_toc
+ocbc_4q25_p3,19.2,Securitisation Exposures in the Trading Book,84,84,1,printed_toc
+ocbc_4q25_p3,19.4,Securitisation Exposures in the Banking Book and associated Regulatory Capital Requirements – A Reporting Bank acting as Investor,85,85,1,printed_toc
+ocbc_4q25_p3,20.1,Market Risk under Standardised Approach,86,86,2,printed_toc
+ocbc_4q25_p3,20.2,CVA Risk Capital Requirements,87,87,1,printed_toc
+ocbc_4q25_p3,21.1,Historical Losses,88,89,3,printed_toc
+ocbc_4q25_p3,21.2,Business Indicator and Subcomponents,90,90,1,printed_toc
+ocbc_4q25_p3,21.3,Minimum Required Operational Risk Capital,91,91,1,printed_toc
+ocbc_4q25_p3,22,Interest Rate Risk in the Banking Book,92,92,2,printed_toc
+ocbc_4q25_p3,23.1,Average Group All Currency LCR,94,94,1,printed_toc
+ocbc_4q25_p3,23.2,Average Group SGD LCR,95,95,1,printed_toc
+ocbc_4q25_p3,24,Net Stable Funding Ratio,97,98,2,printed_toc
+ocbc_4q25_p3,25,Abbreviations,99,102,4,printed_toc

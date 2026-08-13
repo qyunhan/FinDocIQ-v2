@@ -1,0 +1,67 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "classification_of_financial_assets_and_financial_p32-33",
+  "section_ids": [
+    "classification_of_financial_assets_and_financial"
+  ],
+  "section_titles": [
+    "5 Classification of Financial Assets and Financial Liabilities (continued)"
+  ],
+  "pages": [
+    32,
+    33
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 46,
+  "usage": {
+    "ts": "2026-08-07T09:25:49",
+    "script": "extract_to_excel",
+    "label": "classification_of_financial_assets_and_financial_p32-33",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4511,
+    "output_tokens": 8629,
+    "thinking_tokens": 0,
+    "total_tokens": 13140,
+    "est_cost_usd": 0.08443,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [5 Classification of Financial Assets and]",
+      "  col-bands: uncalibrated (0 dense lines) [5 Classification of Financial Assets and]",
+      "  col-repair: declined for table '5 Classification of Financial Assets and' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked",
+      "  col-repair: declined for table '5 Classification of Financial Assets and' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities \u2014 Jun 26",
+      "anchor_label": "Singapore Government treasury bills and securities",
+      "anchor_y": 167.43,
+      "owning_section": "25",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "5 Classification of Financial Assets and Financial Liabilities (continued) \u2014 Dec 25",
+      "anchor_label": "Singapore Government treasury bills and securities",
+      "anchor_y": 167.43,
+      "owning_section": "25",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": true
+}

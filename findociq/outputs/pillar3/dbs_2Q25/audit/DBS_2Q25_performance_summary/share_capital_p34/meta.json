@@ -1,0 +1,61 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "share_capital_p34",
+  "section_ids": [
+    "share_capital"
+  ],
+  "section_titles": [
+    "SHARE CAPITAL"
+  ],
+  "pages": [
+    34
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 12,
+  "usage": {
+    "ts": "2026-07-13T17:12:19",
+    "script": "extract_to_excel",
+    "label": "share_capital_p34",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2916,
+    "output_tokens": 1347,
+    "thinking_tokens": 0,
+    "total_tokens": 4263,
+    "est_cost_usd": 0.00424
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '500000' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2839' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '720' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '258' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '920' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Balance at beginning of period' [SHARE CAPITAL\n(a) The movement]",
+      "  duplicate row label x2: 'Issue of bonus shares' [SHARE CAPITAL\n(a) The movement]",
+      "  duplicate row label x2: 'Balance at end of period' [SHARE CAPITAL\n(a) The movement]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "SHARE CAPITAL\n(a) The movement in the number of issued and fully paid-up ordinary shares of the Company is as follows:",
+      "anchor_label": "SHARE CAPITAL\n(a) The movement in the number of issued and fully paid-up ordinary shares of the Company is as follows:",
+      "anchor_y": 97.79,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

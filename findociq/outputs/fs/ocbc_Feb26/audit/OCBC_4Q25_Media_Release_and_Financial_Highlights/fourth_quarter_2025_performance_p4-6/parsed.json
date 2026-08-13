@@ -1,0 +1,1014 @@
+{
+  "tables": [
+    {
+      "title": "Fourth Quarter 2025 Performance",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "4Q25"
+        },
+        {
+          "group": null,
+          "leaf": "4Q24"
+        },
+        {
+          "group": null,
+          "leaf": "YoY (%)"
+        },
+        {
+          "group": null,
+          "leaf": "3Q25"
+        },
+        {
+          "group": null,
+          "leaf": "QoQ (%)"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "2,296",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,455",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,226",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-interest income",
+          "values": [
+            {
+              "value": "1,320",
+              "cell_state": "reported"
+            },
+            {
+              "value": "961",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+37",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,570",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "of which: Fees and commissions",
+          "values": [
+            {
+              "value": "602",
+              "cell_state": "reported"
+            },
+            {
+              "value": "517",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "683",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Trading income",
+          "values": [
+            {
+              "value": "395",
+              "cell_state": "reported"
+            },
+            {
+              "value": "303",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+30",
+              "cell_state": "reported"
+            },
+            {
+              "value": "518",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-24",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Income from life and general insurance",
+          "values": [
+            {
+              "value": "226",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+122",
+              "cell_state": "reported"
+            },
+            {
+              "value": "311",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-28",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total income",
+          "values": [
+            {
+              "value": "3,616",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,416",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,796",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operating expenses",
+          "values": [
+            {
+              "value": "(1,559)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,560)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(1,519)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Operating profit before allowances",
+          "values": [
+            {
+              "value": "2,057",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,856",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,277",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances",
+          "values": [
+            {
+              "value": "(200)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(208)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(139)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+44",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Amortisation of intangible assets",
+          "values": [
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Associates",
+          "values": [
+            {
+              "value": "261",
+              "cell_state": "reported"
+            },
+            {
+              "value": "245",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "279",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before tax",
+          "values": [
+            {
+              "value": "2,113",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,888",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,412",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Tax and NCI",
+          "values": [
+            {
+              "value": "(368)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(201)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+83",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(434)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-15",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Group net profit",
+          "values": [
+            {
+              "value": "1,745",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,687",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,978",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Group EPS (S$) \u2013 annualised",
+          "values": [
+            {
+              "value": "1.52",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.72",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Group ROE \u2013 annualised",
+          "values": [
+            {
+              "value": "11.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11.8%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.2ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.4%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-1.8ppt",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Asset Quality and Allowances",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "Dec 2024"
+        },
+        {
+          "group": null,
+          "leaf": "Sep 2025"
+        },
+        {
+          "group": null,
+          "leaf": "YoY"
+        },
+        {
+          "group": null,
+          "leaf": "QoQ"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-performing assets (NPAs)",
+          "values": [
+            {
+              "value": "3,243",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,869",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,989",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+13%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+9%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-performing loan (NPL) ratio",
+          "values": [
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total NPA coverage",
+          "values": [
+            {
+              "value": "151%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "159%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "160%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-8ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-9ppt",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allowances",
+      "label_header": "Allowances (S$ million)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "FY25"
+        },
+        {
+          "group": null,
+          "leaf": "FY24"
+        },
+        {
+          "group": null,
+          "leaf": "4Q25"
+        },
+        {
+          "group": null,
+          "leaf": "4Q24"
+        },
+        {
+          "group": null,
+          "leaf": "3Q25"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": "h1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances charge/(write-back) for loans and other assets",
+          "values": [
+            {
+              "value": "665",
+              "cell_state": "reported"
+            },
+            {
+              "value": "690",
+              "cell_state": "reported"
+            },
+            {
+              "value": "200",
+              "cell_state": "reported"
+            },
+            {
+              "value": "208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "139",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "of which: Impaired",
+          "values": [
+            {
+              "value": "535",
+              "cell_state": "reported"
+            },
+            {
+              "value": "526",
+              "cell_state": "reported"
+            },
+            {
+              "value": "236",
+              "cell_state": "reported"
+            },
+            {
+              "value": "155",
+              "cell_state": "reported"
+            },
+            {
+              "value": "140",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Non-impaired",
+          "values": [
+            {
+              "value": "130",
+              "cell_state": "reported"
+            },
+            {
+              "value": "164",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(36)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Credit costs (bps) 1/",
+      "label_header": "Credit costs (bps) 1/",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "FY25"
+        },
+        {
+          "group": null,
+          "leaf": "FY24"
+        },
+        {
+          "group": null,
+          "leaf": "4Q25"
+        },
+        {
+          "group": null,
+          "leaf": "4Q24"
+        },
+        {
+          "group": null,
+          "leaf": "3Q25"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": "h2",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total loans",
+          "values": [
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "of which: Impaired loans",
+          "values": [
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "1/ Credit costs refer to allowances for loans as a percentage of average loans, on annualised basis.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 1,
+            "label_clean": "Net interest income"
+          },
+          {
+            "line_id": 8,
+            "indent": 1,
+            "label_clean": "Non-interest income"
+          },
+          {
+            "line_id": 9,
+            "indent": 2,
+            "label_clean": "of which: Fees and commissions"
+          },
+          {
+            "line_id": 10,
+            "indent": 3,
+            "label_clean": "Trading income"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Total income"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Operating expenses"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Operating profit before allowances"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Allowances"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Amortisation of intangible assets"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Associates"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Profit before tax"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Tax and NCI"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Group net profit"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Group EPS (S$) \u2013 annualised"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Group ROE \u2013 annualised"
+          }
+        ],
+        "title_clean": "Fourth Quarter 2025 Performance",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 87,
+            "indent": 0,
+            "label_clean": "Non-performing assets (NPAs) 3,"
+          },
+          {
+            "line_id": 88,
+            "indent": 0,
+            "label_clean": "Non-performing loan (NPL) ratio 0."
+          },
+          {
+            "line_id": 89,
+            "indent": 0,
+            "label_clean": "Total NPA coverage 15"
+          }
+        ],
+        "title_clean": "Asset Quality and Allowances",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 96,
+            "indent": 0,
+            "label_clean": "of which: Impaired"
+          },
+          {
+            "line_id": 97,
+            "indent": 1,
+            "label_clean": "Non-impaired"
+          }
+        ],
+        "title_clean": "Allowances",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 101,
+            "indent": 0,
+            "label_clean": "Total loans"
+          },
+          {
+            "line_id": 102,
+            "indent": 1,
+            "label_clean": "of which: Impaired loans"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

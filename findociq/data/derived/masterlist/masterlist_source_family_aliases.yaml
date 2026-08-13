@@ -1,0 +1,53 @@
+# Curated DOCUMENT-TYPE synonyms — HUMAN-AUTHORED.
+#
+# The masterlist's `source_family` column says which KIND of filing a table
+# type is printed in. `resolve_canonical_leaf.locate_tables()` uses it as a
+# structural bar: a table type may only claim a table inside a document of its
+# own family. Without it a small entry authored off the media release will
+# happily claim a neighbouring table in the financial statements — MIN_MATCH_
+# FRACTION of a 14-leaf entry is only 7 rows — and OCBC's consolidated income
+# statement was being re-stamped FS_INCOME_SELECTED, stranding six dashboard
+# lines whose anchors address FS_INCOME_CONSOLIDATED.
+#
+# A document's own family is derived from its doc_id by `norm_family()`:
+# lowercased, separators folded, filler words (and/the/of/for) dropped, and
+# PRESENTATION/ASSURANCE qualifiers (condensed/interim/unaudited/audited)
+# dropped. That rule alone already collapses every name the corpus prints —
+#
+#   OCBC 4Q25  Condensed Financial Statements            -> financial_statements
+#   OCBC 2Q26  Unaudited Interim Financial Statements    -> financial_statements
+#   UOB  4Q25  condensed-financial-statements            -> financial_statements
+#   UOB  2Q26  Condensed Interim Financial Statements    -> financial_statements
+#   OCBC 2Q26  Media_Release_and_Financial_Highlights    -> media_release_financial_highlights
+#   OCBC 1H25  Media_Release_Financial_Highlights        -> media_release_financial_highlights
+#
+# — onto the masterlist's own two families, so THIS FILE IS CURRENTLY EMPTY.
+#
+# It stays as the escape hatch for the residue the rule cannot reach: a filing
+# a bank NAMES with a word that is not a qualifier while printing the same
+# statement set. Same standing as masterlist_leaf_aliases.yaml, and the same
+# rule of thumb: same document type under a changed name, record it; if the
+# CONTENTS differ, do not — leave it unresolved so it queues for review.
+#
+# Prefer extending `_FAMILY_QUALIFIER` to adding an entry here whenever the
+# difference is a qualifier: one rule beats N hand-written facts, and an entry
+# here is a fact that must be maintained for every future vintage.
+#
+# Shape:  <bank>: {<normalised doc-type from doc_id>: <source_family in the masterlist>}
+
+# 2026-08-11 — DBS_masterlist.csv gained `source_family: Performance_summary`
+# (it was the last masterlist with no family, i.e. unconstrained). A trading
+# update prints a REDUCED SET of the same Overview exhibits, not different ones:
+# FS_INCOME_SELECTED, FS_BALANCE_SELECTED, FS_RATIOS_KEY and FS_PER_SHARE all
+# appear in both filings with the same leaves. That is the "same document type
+# under a changed name" case this file exists for — the contents of the shared
+# exhibits do not differ, the trading update simply carries fewer of them.
+#
+# Measured: without this entry the family bar drops DBS_1Q26_trading_update from
+# 45 stamped rows to 0 (DBS totals 141 -> 96).
+#
+# NOT a qualifier, so `_FAMILY_QUALIFIER` cannot absorb it: 'trading update' and
+# 'performance summary' are different words for the filing, not presentation or
+# assurance adjectives like condensed/interim/unaudited.
+DBS:
+  trading_update: Performance_summary

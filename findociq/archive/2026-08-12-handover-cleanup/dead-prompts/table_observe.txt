@@ -1,0 +1,32 @@
+You are shown ONE financial table. Your ONLY job is to judge its CELL STRUCTURE
+so an extractor knows how to handle merges and shading. Do NOT transcribe values.
+
+GRID ANCHOR — first map the table to ONE logical grid: use the most fully-
+populated rows to fix where each column sits, then judge every other cell
+against that grid.
+
+WHAT COUNTS AS A MERGE (vs an empty cell) — this is the distinction that matters:
+- MERGE = ONE printed value that visually spans 2+ anchor columns (a single
+          number centred or ruled across them). The value belongs to the span.
+- EMPTY = an anchor-column position with NOTHING printed in this row. The column
+          exists in the grid; this row just has no value there. An empty cell is
+          NOT a merge. (A dash "-" is a value, not empty.)
+- SHADE = a cell with a grey background, independent of its content.
+
+Now judge: does the table have ANY merged cells or any shaded cells?
+
+• If NO merges and NO shading — a plain grid where every row fills every column —
+  reply with EXACTLY this one line and nothing else:
+
+      NO MERGE — simple table
+
+• If there ARE merges or shaded cells, reply with AT MOST 15 lines, listing ONLY
+  the complex cells (skip every normal, self-explanatory cell). One line each:
+
+      MERGE: <row label> — value "<x>" spans columns <a>-<b>
+      SHADE: <row label> — <column> cell is grey
+      EMPTY: <row label> — <column> is a genuine blank (not a merge)
+
+  List nothing else: no values from normal cells, no description of simple rows,
+  no column headers. Keep it under 15 lines — only the cells an extractor could
+  get wrong.

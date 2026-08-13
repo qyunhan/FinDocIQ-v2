@@ -1,0 +1,751 @@
+{
+  "tables": [
+    {
+      "title": "14.3 Fair value hierarchy (continued)",
+      "label_header": "GROUP\nS$ million",
+      "continued_from_previous": false,
+      "section_id": "14.3",
+      "columns": [
+        {
+          "group": "31 Dec 2025",
+          "leaf": "Level 1"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "Level 2"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "Level 3"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "Total"
+        },
+        {
+          "group": "31 Dec 2024",
+          "leaf": "Level 1"
+        },
+        {
+          "group": "31 Dec 2024",
+          "leaf": "Level 2"
+        },
+        {
+          "group": "31 Dec 2024",
+          "leaf": "Level 3"
+        },
+        {
+          "group": "31 Dec 2024",
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial assets measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Placements with and loans to banks",
+          "values": [
+            {
+              "value": "4,182",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,213",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "19,395",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,383",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,514",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "21,897",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt and equity securities",
+          "values": [
+            {
+              "value": "36,705",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,684",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,951",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51,340",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,176",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,405",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,059",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42,640",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative receivables",
+          "values": [
+            {
+              "value": "117",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,261",
+              "cell_state": "reported"
+            },
+            {
+              "value": "657",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13,035",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,574",
+              "cell_state": "reported"
+            },
+            {
+              "value": "584",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,203",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Government treasury bills and securities",
+          "values": [
+            {
+              "value": "44,865",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,875",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "52,740",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,766",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,502",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "34,268",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Assets for life insurance funds",
+          "values": [
+            {
+              "value": "53,137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "42,625",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100,376",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63,363",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,271",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,648",
+              "cell_state": "reported"
+            },
+            {
+              "value": "94,282",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "139,006",
+              "cell_state": "reported"
+            },
+            {
+              "value": "90,658",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "236,886",
+              "cell_state": "reported"
+            },
+            {
+              "value": "134,733",
+              "cell_state": "reported"
+            },
+            {
+              "value": "69,266",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,291",
+              "cell_state": "reported"
+            },
+            {
+              "value": "210,290",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Non-financial assets measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment properties for life insurance funds",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,939",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,939",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Associates",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "86",
+              "cell_state": "reported"
+            },
+            {
+              "value": "86",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "68",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,181",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,181",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,007",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,007",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Financial liabilities measured at fair value",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivative payables",
+          "values": [
+            {
+              "value": "314",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13,205",
+              "cell_state": "reported"
+            },
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,078",
+              "cell_state": "reported"
+            },
+            {
+              "value": "160",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,482",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,238",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Trading portfolio liabilities",
+          "values": [
+            {
+              "value": "197",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "197",
+              "cell_state": "reported"
+            },
+            {
+              "value": "281",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "281",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt issued/other deposits",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "3,396",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,608",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "3,436",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "3,436",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other liabilities for life insurance funds",
+          "values": [
+            {
+              "value": "64",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "206",
+              "cell_state": "reported"
+            },
+            {
+              "value": "237",
+              "cell_state": "reported"
+            },
+            {
+              "value": "458",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "695",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "575",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,743",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,771",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,089",
+              "cell_state": "reported"
+            },
+            {
+              "value": "678",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,376",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,650",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 71,
+            "indent": 0,
+            "label_clean": "Placements with and loans to banks"
+          },
+          {
+            "line_id": 73,
+            "indent": 0,
+            "label_clean": "Debt and equity securities"
+          },
+          {
+            "line_id": 75,
+            "indent": 0,
+            "label_clean": "Derivative receivables"
+          },
+          {
+            "line_id": 76,
+            "indent": 0,
+            "label_clean": "Government treasury bills and securities"
+          },
+          {
+            "line_id": 78,
+            "indent": 0,
+            "label_clean": "Assets for life insurance funds"
+          },
+          {
+            "line_id": 80,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 83,
+            "indent": 0,
+            "label_clean": "Investment properties for life insurance funds"
+          },
+          {
+            "line_id": 85,
+            "indent": 0,
+            "label_clean": "Associates"
+          },
+          {
+            "line_id": 86,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 89,
+            "indent": 0,
+            "label_clean": "Derivative payables"
+          },
+          {
+            "line_id": 90,
+            "indent": 0,
+            "label_clean": "Trading portfolio liabilities"
+          },
+          {
+            "line_id": 91,
+            "indent": 0,
+            "label_clean": "Debt issued/other deposits"
+          },
+          {
+            "line_id": 93,
+            "indent": 0,
+            "label_clean": "Other liabilities for life insurance funds"
+          },
+          {
+            "line_id": 95,
+            "indent": 0,
+            "label_clean": "Total"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          "Total",
+          null,
+          null,
+          null,
+          "Total"
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+ "doc_id": "dbs_4q23_p3",
+ "tables": [
+  {
+   "period": "2023-12-31",
+   "pages": [
+    75,
+    76
+   ],
+   "n_gt": 144,
+   "exact": 143,
+   "text_mismatch": 0,
+   "missing": 1,
+   "extra_lines": [],
+   "dup_lines": [],
+   "val_col_counts": [
+    5
+   ],
+   "examples": [
+    [
+     12,
+     5,
+     "",
+     "<MISSING>"
+    ]
+   ]
+  },
+  {
+   "period": "2023-09-30",
+   "pages": [
+    77,
+    78
+   ],
+   "n_gt": 144,
+   "exact": 144,
+   "text_mismatch": 0,
+   "missing": 0,
+   "extra_lines": [],
+   "dup_lines": [],
+   "val_col_counts": [
+    5
+   ],
+   "examples": []
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+  "unit_id": "non_performing_assets_and_loss_allowance_coverage_p23-25",
+  "pages": [
+    23,
+    24,
+    25
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 6584,
+    "output_tokens": 12917,
+    "thinking_tokens": 0,
+    "total_tokens": 19501,
+    "est_cost_usd": 0.12613,
+    "batch": 0
+  },
+  "chunks": 2,
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "non_performing_assets_and_loss_allowance_coverage"
+  ],
+  "section_titles": [
+    "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE"
+  ],
+  "n_tables": 5,
+  "n_rows": 60,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '500000' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.28' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.0' pdf=6x json=5x (missing from extraction)",
+      "  deficit: '130' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '197' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total non-performing loans (NPL)' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Debt securities, contingent liabilities ' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Total non-performing assets (NPA)' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Substandard' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Doubtful' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Loss' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Total' [NON-PERFORMING ASSETS AND LOSS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "table_drops": [
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE \u2014 By industry",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE \u2014 By loan grading",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE \u2014 By collateral type",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "By period overdue",
+      "anchor_label": "By period overdue",
+      "anchor_y": 112.55,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

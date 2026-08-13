@@ -1,0 +1,811 @@
+{
+  "tables": [
+    {
+      "title": "Average Balance Sheet",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "1H26",
+          "leaf": "Average Balance"
+        },
+        {
+          "group": "1H26",
+          "leaf": "Average Interest"
+        },
+        {
+          "group": "1H26",
+          "leaf": "Average Rate 2/ %"
+        },
+        {
+          "group": "1H25",
+          "leaf": "Average Balance"
+        },
+        {
+          "group": "1H25",
+          "leaf": "Average Interest"
+        },
+        {
+          "group": "1H25",
+          "leaf": "Average Rate 2/ %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest-earning assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans to customers",
+          "values": [
+            {
+              "value": "342,776",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,475",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.81",
+              "cell_state": "reported"
+            },
+            {
+              "value": "312,807",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,126",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.59",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Placements with and loans to banks",
+          "values": [
+            {
+              "value": "60,318",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,031",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.45",
+              "cell_state": "reported"
+            },
+            {
+              "value": "66,855",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,474",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.45",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other interest-earning assets",
+          "values": [
+            {
+              "value": "120,652",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "92,061",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,804",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.95",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Interest-earning assets",
+          "values": [
+            {
+              "value": "523,746",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,621",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "471,723",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,404",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.45",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest-bearing liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": [
+            {
+              "value": "441,914",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,143",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.89",
+              "cell_state": "reported"
+            },
+            {
+              "value": "398,070",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,882",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.47",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "23,065",
+              "cell_state": "reported"
+            },
+            {
+              "value": "370",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,270",
+              "cell_state": "reported"
+            },
+            {
+              "value": "243",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.43",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other borrowings",
+          "values": [
+            {
+              "value": "32,283",
+              "cell_state": "reported"
+            },
+            {
+              "value": "622",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.89",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,051",
+              "cell_state": "reported"
+            },
+            {
+              "value": "651",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.37",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Interest-bearing liabilities",
+          "values": [
+            {
+              "value": "497,262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,135",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.08",
+              "cell_state": "reported"
+            },
+            {
+              "value": "442,391",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,776",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.63",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest income/margin 1/",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "4,486",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "4,628",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.98",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "1. Net interest margin is net interest income as a percentage of interest-earning assets.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "2. Average rates are computed on an annualised basis.",
+          "values": []
+        }
+      ]
+    },
+    {
+      "title": "Volume and Rate Analysis",
+      "label_header": "Increase/(decrease) due to change in: S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "1H26 vs 1H25",
+          "leaf": "Volume"
+        },
+        {
+          "group": "1H26 vs 1H25",
+          "leaf": "Rate"
+        },
+        {
+          "group": "1H26 vs 1H25",
+          "leaf": "Net change"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans to customers",
+          "values": [
+            {
+              "value": "683",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,334)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(651)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Placements with and loans to banks",
+          "values": [
+            {
+              "value": "(144)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(299)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(443)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other interest-earning assets",
+          "values": [
+            {
+              "value": "560",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(249)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "311",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Interest income",
+          "values": [
+            {
+              "value": "1,099",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,882)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(783)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest expense",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": [
+            {
+              "value": "538",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,277)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(739)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(23)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "127",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other borrowings",
+          "values": [
+            {
+              "value": "48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(77)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(29)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Interest expense",
+          "values": [
+            {
+              "value": "736",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1,377)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(641)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Impact on net interest income",
+          "values": [
+            {
+              "value": "363",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(505)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(142)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Due to change in number of days",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "(142)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Interest-earning assets"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Loans to customers"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Placements with and loans to banks"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Other interest-earning assets"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Interest-bearing liabilities"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Deposits of non-bank customers"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Deposits and balances of banks"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Other borrowings"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Net interest income/margin"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Notes:"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "2. Average rates are computed on an annualised basis."
+          }
+        ],
+        "title_clean": "Average Balance Sheet",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Interest income"
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "Loans to customers"
+          },
+          {
+            "line_id": 39,
+            "indent": 0,
+            "label_clean": "Placements with and loans to banks"
+          },
+          {
+            "line_id": 40,
+            "indent": 0,
+            "label_clean": "Other interest-earning assets"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 43,
+            "indent": 0,
+            "label_clean": "Interest expense"
+          },
+          {
+            "line_id": 44,
+            "indent": 0,
+            "label_clean": "Deposits of non-bank customers"
+          },
+          {
+            "line_id": 45,
+            "indent": 0,
+            "label_clean": "Deposits and balances of banks"
+          },
+          {
+            "line_id": 46,
+            "indent": 0,
+            "label_clean": "Other borrowings"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 49,
+            "indent": 0,
+            "label_clean": "Impact on net interest income"
+          },
+          {
+            "line_id": 51,
+            "indent": 0,
+            "label_clean": "Due to change in number of days"
+          },
+          {
+            "line_id": 53,
+            "indent": 0,
+            "label_clean": "Net interest income"
+          }
+        ],
+        "title_clean": "Volume and Rate Analysis",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

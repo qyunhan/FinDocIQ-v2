@@ -1,0 +1,61 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statements_of_changes_in_equity_audited_for_the_financial_p30-31",
+  "section_ids": [
+    "statements_of_changes_in_equity_audited_for_the_financial"
+  ],
+  "section_titles": [
+    "Statements of Changes in Equity (Audited) for the financial year ended 31 December 2025"
+  ],
+  "pages": [
+    30,
+    31
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 49,
+  "usage": {
+    "ts": "2026-07-14T14:55:37",
+    "script": "extract_to_excel",
+    "label": "statements_of_changes_in_equity_audited_for_the_financial_p30-31",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3592,
+    "output_tokens": 7858,
+    "thinking_tokens": 0,
+    "total_tokens": 11450,
+    "est_cost_usd": 0.02072
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '5.70' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Profit for the financial year' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Other comprehensive income for the finan' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Total comprehensive income for the finan' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Transfers' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Change in non-controlling interests' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Dividends' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares re-purchased - held in treasury' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Share-based compensation' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares issued under share-based compensa' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Profit for the financial year' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Other comprehensive income for the finan' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Total comprehensive income for the finan' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Transfers' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Dividends' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares re-purchased - held in treasury' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Share-based compensation' [Statements of Changes in Equit]",
+      "  duplicate row label x2: 'Shares issued under share-based compensa' [Statements of Changes in Equit]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

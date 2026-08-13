@@ -1,0 +1,445 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "To: All Shareholders",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "Audited Financial Results for the Financial Year Ended 31 December 2025",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Dividend for the Second Half Ended 31 December 2025",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_004",
+      "title": "Ordinary share dividend",
+      "page": 1,
+      "level": 3,
+      "parent_id": "sec_003"
+    },
+    {
+      "id": "sec_005",
+      "title": "Interested Person Transactions",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_006",
+      "title": "Confirmation by Directors",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_007",
+      "title": "Undertakings from Directors and Executive Officers",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_008",
+      "title": "Information relating to persons occupying managerial position in the issuer or any of its principal subsidiaries who are relatives of a director or chief executive officer or substantial shareholder of the issuer pursuant to Rule 704(13)",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_009",
+      "title": "Financial Highlights",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_010",
+      "title": "Performance Review",
+      "page": 7,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_011",
+      "title": "2025 versus 2024",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_012",
+      "title": "2H25 versus 2H24",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_013",
+      "title": "2H25 versus 1H25",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_014",
+      "title": "Asset Quality",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_015",
+      "title": "Capital, Funding and Liquidity Positions",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_016",
+      "title": "Net Interest Income",
+      "page": 8,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_017",
+      "title": "Net interest margin",
+      "page": 8,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_018",
+      "title": "Volume and rate analysis",
+      "page": 9,
+      "level": 2,
+      "parent_id": "sec_016"
+    },
+    {
+      "id": "sec_019",
+      "title": "Non-Interest Income",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_020",
+      "title": "Operating Expenses",
+      "page": 11,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_021",
+      "title": "Allowance for Credit and Other Losses",
+      "page": 12,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_022",
+      "title": "Customer Loans",
+      "page": 13,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_023",
+      "title": "Non-Performing Assets",
+      "page": 14,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_024",
+      "title": "Customer Deposits",
+      "page": 16,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_025",
+      "title": "Performance by Business Segment 1",
+      "page": 17,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_026",
+      "title": "Group Retail (\"GR\")",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_027",
+      "title": "Group Wholesale Banking (\"GWB\")",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_028",
+      "title": "Global Markets (\"GM\")",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_029",
+      "title": "Others",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_030",
+      "title": "Performance by Geographical Segment 1",
+      "page": 22,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_031",
+      "title": "Singapore",
+      "page": 24,
+      "level": 2,
+      "parent_id": "sec_030"
+    },
+    {
+      "id": "sec_032",
+      "title": "Malaysia",
+      "page": 24,
+      "level": 2,
+      "parent_id": "sec_030"
+    },
+    {
+      "id": "sec_033",
+      "title": "Thailand",
+      "page": 24,
+      "level": 2,
+      "parent_id": "sec_030"
+    },
+    {
+      "id": "sec_034",
+      "title": "Indonesia",
+      "page": 24,
+      "level": 2,
+      "parent_id": "sec_030"
+    },
+    {
+      "id": "sec_035",
+      "title": "Greater China",
+      "page": 24,
+      "level": 2,
+      "parent_id": "sec_030"
+    },
+    {
+      "id": "sec_036",
+      "title": "Others",
+      "page": 25,
+      "level": 2,
+      "parent_id": "sec_030"
+    },
+    {
+      "id": "sec_037",
+      "title": "Capital Adequacy and Leverage Ratios 1,2,3",
+      "page": 26,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_038",
+      "title": "Income Statement (Audited) for the financial year ended 31 December 2025",
+      "page": 27,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_039",
+      "title": "Statement of Comprehensive Income (Audited) for the financial year ended 31 December 2025",
+      "page": 28,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_040",
+      "title": "Balance Sheets (Audited) as at 31 December 2025",
+      "page": 29,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_041",
+      "title": "Statements of Changes in Equity (Audited) for the financial year ended 31 December 2025",
+      "page": 30,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_042",
+      "title": "Cash Flow Statement (Audited) for the financial year ended 31 December 2025",
+      "page": 32,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_043",
+      "title": "Notes to the Condensed Financial Statements for the financial year ended 31 December 2025",
+      "page": 33,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_044",
+      "title": "1 Summary of Material Accounting Policies",
+      "page": 33,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_045",
+      "title": "(a) Basis of Preparation",
+      "page": 33,
+      "level": 3,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_046",
+      "title": "(b) Changes in Accounting Policies",
+      "page": 33,
+      "level": 3,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_047",
+      "title": "(c) Critical Accounting Estimates and Judgements",
+      "page": 33,
+      "level": 3,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_048",
+      "title": "2 Income Tax",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_049",
+      "title": "3 Share Capital and Other Capital",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_050",
+      "title": "4 Dividends",
+      "page": 35,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_051",
+      "title": "5 Classification of Financial Assets and Financial Liabilities",
+      "page": 35,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_052",
+      "title": "6 Fair Value of Financial Instruments",
+      "page": 37,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_053",
+      "title": "7 Debts Issued",
+      "page": 39,
+      "level": 2,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_054",
+      "title": "Independent Auditor\u2019s Report for the financial year ended 31 December 2025",
+      "page": 40,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_055",
+      "title": "To the Shareholders of United Overseas Bank Limited",
+      "page": 40,
+      "level": 2,
+      "parent_id": "sec_054"
+    },
+    {
+      "id": "sec_056",
+      "title": "Report on the Audit of the Financial Statements",
+      "page": 40,
+      "level": 3,
+      "parent_id": "sec_055"
+    },
+    {
+      "id": "sec_057",
+      "title": "Opinion",
+      "page": 40,
+      "level": 4,
+      "parent_id": "sec_056"
+    },
+    {
+      "id": "sec_058",
+      "title": "Basis for Opinion",
+      "page": 40,
+      "level": 4,
+      "parent_id": "sec_056"
+    },
+    {
+      "id": "sec_059",
+      "title": "Key Audit Matters",
+      "page": 40,
+      "level": 4,
+      "parent_id": "sec_056"
+    },
+    {
+      "id": "sec_060",
+      "title": "Other Information",
+      "page": 43,
+      "level": 3,
+      "parent_id": "sec_055"
+    },
+    {
+      "id": "sec_061",
+      "title": "Responsibilities of Management and Directors for the Financial Statements",
+      "page": 44,
+      "level": 3,
+      "parent_id": "sec_055"
+    },
+    {
+      "id": "sec_062",
+      "title": "Auditor\u2019s Responsibilities for the Audit of the Financial Statements",
+      "page": 44,
+      "level": 3,
+      "parent_id": "sec_055"
+    },
+    {
+      "id": "sec_063",
+      "title": "Report on Other Legal and Regulatory Requirements",
+      "page": 45,
+      "level": 3,
+      "parent_id": "sec_055"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "tables": [
+    {
+      "title": "Selected balance sheet items ($m)",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "1st Qtr 2026",
+          "leaf": "1st Qtr 2026"
+        },
+        {
+          "group": "1st Qtr 2025",
+          "leaf": "1st Qtr 2025"
+        },
+        {
+          "group": "% chg",
+          "leaf": "% chg"
+        },
+        {
+          "group": "4th Qtr 2025",
+          "leaf": "4th Qtr 2025"
+        },
+        {
+          "group": "% chg",
+          "leaf": "% chg"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer loans",
+          "values": [
+            {
+              "value": "453,180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "435,295",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "445,011",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Constant-currency change",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "935,365",
+              "cell_state": "reported"
+            },
+            {
+              "value": "840,823",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "897,488",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "of which: Non-performing assets",
+          "values": [
+            {
+              "value": "4,720",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,861",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,843",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "629,868",
+              "cell_state": "reported"
+            },
+            {
+              "value": "575,663",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "610,023",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Constant-currency change",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total liabilities",
+          "values": [
+            {
+              "value": "866,004",
+              "cell_state": "reported"
+            },
+            {
+              "value": "772,080",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "828,572",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Shareholders\u2019 funds",
+          "values": [
+            {
+              "value": "69,311",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68,697",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68,867",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Customer loans"
+          },
+          {
+            "line_id": 28,
+            "indent": 1,
+            "label_clean": "Constant-currency change"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Total assets"
+          },
+          {
+            "line_id": 30,
+            "indent": 1,
+            "label_clean": "of which: Non-performing assets"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Customer deposits"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Constant-currency change"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Total liabilities"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Shareholders\u2019 funds"
+          }
+        ],
+        "title_clean": "Selected balance sheet items ($m)",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

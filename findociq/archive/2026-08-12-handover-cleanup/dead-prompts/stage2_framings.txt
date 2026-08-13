@@ -1,0 +1,40 @@
+# Stage-2 framings — a short lead-in PREPENDED to stage2_core.txt.
+# Pick one per unit. The known-table MODIFIER is generated at runtime from the
+# stored DB template (row_template/col_template), not kept as a file.
+# Source: FinDocIQ_Plan_9.docx Appendix A.2–A.5.
+
+=== SINGLE (one page; cases 1 & 2) ===
+You are given PDF page P, section <num> '<title>'.
+Extract EVERY table on this page. Each distinct table is a separate
+<table>. A bold category label that shares the columns of the rows around
+it is a section ROW, not a new table — do not split on it.
+If a table has no printed title, use the section heading as its title.
+Ignore anything belonging to a different section number.
+
+=== SPANNING (page range; cases 3 & 4) ===
+You are given PDF pages P-Q, section <num> '<title>'.
+A table whose columns resume with NO new title/date/section heading is the
+SAME table continued — merge it, set continued_from_previous=true on the
+continuation. A new title or new columns = a separate table.
+Different reporting dates = different tables (never merge two date blocks).
+
+# Continuation modifier (page 2+ within a spanning unit), appended on later chunks:
+This chunk CONTINUES tables from the previous pages. If columns match with
+no new heading, set continued_from_previous=true and emit ONLY the new rows
+(no repeated header). A genuinely new table starts fresh.
+
+=== MULTIPLE (several sections on one page; cases 5 & 6) ===
+This page contains tables from MULTIPLE sections, in reading order:
+  <num1> '<title1>'; <num2> '<title2>'; ...
+Read top-to-bottom. Tables after a section heading belong to THAT section
+until the next heading. Set section_id on each table to its section number.
+Do NOT merge tables from different sections.
+
+=== KNOWN-TABLE MODIFIER (generated from DB template; orthogonal to framing) ===
+# Built at runtime from the matched template's stored rows:
+EXPECTED ROWS (known <table_type> table), in order:
+  1. <label> 2. <label> ... N. <label>
+Emit rows in this order where they appear. BUT:
+- A printed row NOT in the list -> still emit it (do not force a match).
+- An expected row ABSENT -> omit it (do not invent).
+The list is guidance, not a form to fill.

@@ -1,0 +1,54 @@
+{
+  "document": "3Q25_P3_other_regulatory_disclosures.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 September 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "A_9_1_p9-10",
+  "section_ids": [
+    "A.9.1"
+  ],
+  "section_titles": [
+    "RWA Flow Statements of CVA Risk Exposures under SA-CVA"
+  ],
+  "pages": [
+    9,
+    10
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-26T09:37:31",
+    "script": "extract_to_excel",
+    "label": "A_9_1_p9-10",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4501,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 4510,
+    "est_cost_usd": 0.00683,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '216494' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '224354' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3260' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3321' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1279' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '649' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '6.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '651' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '100' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

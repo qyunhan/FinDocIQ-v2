@@ -1,0 +1,535 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Unaudited Financial Results for the First Half ended 30 June 2026",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "Dividend for the First Half ended 30 June 2026",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_003",
+      "title": "Ordinary share dividend",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_002"
+    },
+    {
+      "id": "sec_004",
+      "title": "Interested Person Transactions",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_005",
+      "title": "Confirmation by Directors",
+      "page": 2,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_006",
+      "title": "Undertakings from Directors and Executive Officers",
+      "page": 2,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_007",
+      "title": "Financial Highlights",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_008",
+      "title": "Financial Highlights (cont'd)",
+      "page": 6,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_009",
+      "title": "Performance Review",
+      "page": 7,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_010",
+      "title": "1H26 versus 1H25",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_009"
+    },
+    {
+      "id": "sec_011",
+      "title": "1H26 versus 2H25",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_009"
+    },
+    {
+      "id": "sec_012",
+      "title": "Asset Quality",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_009"
+    },
+    {
+      "id": "sec_013",
+      "title": "Capital, Funding and Liquidity Positions",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_009"
+    },
+    {
+      "id": "sec_014",
+      "title": "Net Interest Income",
+      "page": 8,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_015",
+      "title": "Net interest margin",
+      "page": 8,
+      "level": 2,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_016",
+      "title": "Volume and rate analysis",
+      "page": 8,
+      "level": 2,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_017",
+      "title": "Non-Interest Income",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_018",
+      "title": "Expenses",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_019",
+      "title": "Allowance for Credit and Other Losses",
+      "page": 11,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_020",
+      "title": "Customer Loans",
+      "page": 12,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_021",
+      "title": "By industry",
+      "page": 12,
+      "level": 2,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_022",
+      "title": "By currency",
+      "page": 12,
+      "level": 2,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_023",
+      "title": "By maturity",
+      "page": 12,
+      "level": 2,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_024",
+      "title": "By geography 1",
+      "page": 12,
+      "level": 2,
+      "parent_id": "sec_020"
+    },
+    {
+      "id": "sec_025",
+      "title": "Non-Performing Assets",
+      "page": 13,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_026",
+      "title": "By grading",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_027",
+      "title": "By security",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_028",
+      "title": "By ageing",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_029",
+      "title": "Total allowance",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_030",
+      "title": "NPL by industry",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_025"
+    },
+    {
+      "id": "sec_031",
+      "title": "Non-Performing Assets (cont\u2019d)",
+      "page": 14,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_032",
+      "title": "NPL by geography 1",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_031"
+    },
+    {
+      "id": "sec_033",
+      "title": "Customer Deposits",
+      "page": 15,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_034",
+      "title": "By product",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_033"
+    },
+    {
+      "id": "sec_035",
+      "title": "By maturity",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_033"
+    },
+    {
+      "id": "sec_036",
+      "title": "By currency",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_033"
+    },
+    {
+      "id": "sec_037",
+      "title": "Performance by Business Segment 1",
+      "page": 16,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_038",
+      "title": "Performance by Business Segment 1 (cont\u2019d)",
+      "page": 17,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_039",
+      "title": "Performance by Business Segment (cont\u2019d)",
+      "page": 18,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_040",
+      "title": "Group Retail (\"GR\")",
+      "page": 18,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_041",
+      "title": "Group Wholesale Banking (\"GWB\")",
+      "page": 18,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_042",
+      "title": "Global Markets (\"GM\")",
+      "page": 18,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_043",
+      "title": "Others",
+      "page": 19,
+      "level": 2,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_044",
+      "title": "Performance by Geographical Segment 1",
+      "page": 20,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_045",
+      "title": "Performance by Geographical Segment (Cont\u2019d)",
+      "page": 21,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_046",
+      "title": "Singapore",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_045"
+    },
+    {
+      "id": "sec_047",
+      "title": "Malaysia",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_045"
+    },
+    {
+      "id": "sec_048",
+      "title": "Thailand",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_045"
+    },
+    {
+      "id": "sec_049",
+      "title": "Indonesia",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_045"
+    },
+    {
+      "id": "sec_050",
+      "title": "Greater China",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_045"
+    },
+    {
+      "id": "sec_051",
+      "title": "Others",
+      "page": 22,
+      "level": 2,
+      "parent_id": "sec_045"
+    },
+    {
+      "id": "sec_052",
+      "title": "Capital Adequacy and Leverage Ratios 1,2,3",
+      "page": 23,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_053",
+      "title": "Income Statement (Unaudited) for the financial period ended 30 June 2026",
+      "page": 24,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_054",
+      "title": "Statement of Comprehensive Income (Unaudited) for the financial period ended 30 June 2026",
+      "page": 25,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_055",
+      "title": "Balance Sheets (Unaudited) as at 30 June 2026",
+      "page": 26,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_056",
+      "title": "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2026",
+      "page": 27,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_057",
+      "title": "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2026",
+      "page": 28,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_058",
+      "title": "Cash Flow Statement (Unaudited) for the financial period ended 30 June 2026",
+      "page": 29,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_059",
+      "title": "1 Summary of Material Accounting Policies",
+      "page": 30,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_060",
+      "title": "(a) Basis of Preparation",
+      "page": 30,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_061",
+      "title": "(b) Changes in Accounting Policies",
+      "page": 30,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_062",
+      "title": "(c) Critical Accounting Estimates and Judgements",
+      "page": 30,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_063",
+      "title": "2 Income Tax",
+      "page": 31,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_064",
+      "title": "3 Share Capital and Other Capital",
+      "page": 31,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_065",
+      "title": "4 Dividends",
+      "page": 32,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_066",
+      "title": "5 Classification of Financial Assets and Financial Liabilities",
+      "page": 32,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_067",
+      "title": "5 Classification of Financial Assets and Financial Liabilities (continued)",
+      "page": 33,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_068",
+      "title": "6 Fair Value of Financial Instruments",
+      "page": 34,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_069",
+      "title": "(a) Valuation methodology, processes and controls for the financial period ended 30 June 2026 remained largely similar to that applied in the audited financial statements for the year ended 31 December 2025.",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_068"
+    },
+    {
+      "id": "sec_070",
+      "title": "(b) The Group classifies financial instruments carried at fair value by level following the fair value measurement hierarchy:",
+      "page": 34,
+      "level": 2,
+      "parent_id": "sec_068"
+    },
+    {
+      "id": "sec_071",
+      "title": "6 Fair Value of Financial Instruments (continued)",
+      "page": 35,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_072",
+      "title": "(c) The following table presents the changes in Level 3 instruments for the financial period ended:",
+      "page": 35,
+      "level": 2,
+      "parent_id": "sec_071"
+    },
+    {
+      "id": "sec_073",
+      "title": "(d) Effect of changes in significant unobservable inputs",
+      "page": 35,
+      "level": 2,
+      "parent_id": "sec_071"
+    },
+    {
+      "id": "sec_074",
+      "title": "7 Debts Issued",
+      "page": 36,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_075",
+      "title": "8 Subsequent Events",
+      "page": 36,
+      "level": 1,
+      "parent_id": null
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 19526,
+    "output_tokens": 4508,
+    "thinking_tokens": null
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fy25_performance_highlights_p1",
+  "section_ids": [
+    "fy25_performance_highlights"
+  ],
+  "section_titles": [
+    "FY25 Performance Highlights"
+  ],
+  "pages": [
+    1
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 12,
+  "usage": {
+    "ts": "2026-07-16T13:56:45",
+    "script": "extract_to_excel",
+    "label": "fy25_performance_highlights_p1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2921,
+    "output_tokens": 1413,
+    "thinking_tokens": 0,
+    "total_tokens": 4334,
+    "est_cost_usd": 0.0171,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7.42' pdf=3x json=0x (missing from extraction)",
+      "  deficit: '9.12' pdf=3x json=0x (missing from extraction)",
+      "  deficit: '14.6' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '7.59' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9.15' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.46' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.88' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '12.6' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.63' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.9' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '151' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '341' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '428' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.1' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

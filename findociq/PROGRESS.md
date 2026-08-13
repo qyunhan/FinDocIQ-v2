@@ -1,0 +1,3205 @@
+# PROGRESS
+
+Running log, newest on top. One block per working session.
+Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
+
+---
+
+## 2026-08-13 (cont'd) — sibling period banners: 771 cells were carrying the wrong date
+
+🐞 **Prior-period comparatives were addressable as current-period, and `verify_cells`
+   passed on every one of them** — the values matched the PDF, only the dates were
+   wrong. `load_v7`'s row rung inherited a period from ANCESTORS only, but banks
+   stack period blocks vertically and the model emits the banner at the SAME level
+   as the rows it heads (or deeper), so `row_parents_by_position` gives banner and
+   data rows one shared parent and the walk finds nothing.
+   - DBS_4Q25 `PERFORMANCE BY BUSINESS SEGMENTS`: 51 rows all at `row_hierarchy=1`,
+     `row_parent=1`; five banners (2H25/1H25/2H24/FY25/FY24) all parsed CORRECTLY,
+     yet all 225 cells fell to `doc_period` — **135 wrong**.
+   - UOB_4Q25 `Classification of Financial Assets … Dec 24`: banner at level 1,
+     data rows at level 0. All **105 cells** — a whole Dec-2024 balance sheet —
+     stamped 2025-12-31.
+
+✅ **New rung `row_banner`**, between the ancestor walk and `table_title`:
+   `load_v7.row_period_banners()` — a pure, unit-testable pre-pass returning the
+   nearest preceding banner per row, with a level-scoped stack.
+
+🐞 **The discriminator is valueless-ness, NOT span.** An earlier design keyed on a
+   duration span (1H/2H/FY) and would have left the UOB table above broken — its
+   banner is `as_at`. Of 70 valueless period rows, 42 duration + **28 `as_at`**, and
+   both kinds scope. What separates a banner from an opening-balance row
+   (`At 1 January 2026`, which owns its figures) is `row_type in (section_header,
+   sub_header)` — the same membership that GUARANTEES no `cell_fact` is emitted, so
+   banner-ness and owning-values are exclusive **by construction**. Verified over
+   every `parsed.json`: valueless period rows are `section_header` 87/87, valued
+   ones `data`/`total` 121/121.
+
+🐞 **Companion fix — the bare-year clamp was never applied on the row axis.**
+   `clamp_bare_year_to_doc_period` ran for columns and titles but not rows, so
+   `'2026'` banners resolved to 2026-12-31 in 2Q26 filings: **141 cells carried a
+   period LATER than their own `doc_period`**. Now 0.
+
+✅ **Measured, live `compiled_fs.db` after backfilling 4 documents:**
+   **771 cells changed period, 468 gained a span.** `period > doc_period` 141 → **0**.
+   DBS segments now resolves to 5 blocks of 45 cells with correct spans; UOB Dec-24
+   → 2024-12-31. `period_source`: col 12,531 · table_title 2,662 · row 2,437 ·
+   doc 2,041 · **row_banner 1,910**. Verify PASS throughout — values never moved.
+   OCBC docs re-loaded as a control: **zero delta**, confirming valued `as_at`
+   balance rows are untouched.
+
+🐞 **Caught by my own test, not by review:** "restore-on-pop" cannot unwind on a
+   shallower DATA row — the UOB banner sits *deeper* than its data, so unwinding
+   there would pop the banner before any row could read it. The stack unwinds on a
+   new BANNER only; documented in the function.
+
+⏭️ 33/33 pipeline tests pass, incl. 3 new test groups. `compiled_v2.db` NOT rebuilt
+   (run `--stage3`); BigQuery NOT re-synced — both now lag `compiled_fs.db`.
+
+
+## 2026-08-13 (cont'd) — `run_doc` gains `--stage1/--stage2/--stage3`
+
+✅ **The driver now exposes the three stages `pipeline/` is already organised into**,
+   so a reload no longer costs a re-extract:
+
+       --stage1  EXTRACT  STEP 0,1,2,2b    -> outputs/fs/<bank>_<period>/
+       --stage2  LOAD     STEP 3,3b,5,6,7  -> --db (compiled_fs.db)
+       --stage3  SERVE    build_compiled_v2 -> --compiled-v2 (compiled_v2.db)
+
+   They compose (`--stage2 --stage3`). A bare `--stage3` needs no `--pdf` — it is a
+   whole-DB step. **No flag = stages {1,2} = exactly today's behaviour**, verified by
+   running it: same STEP sequence, same 51/34/572/1978, verify PASS, and the summary
+   block prints no `stages` line at all.
+
+✅ **Measured on OCBC_2Q26_Media_Release:** `--stage2` alone = **11.7s vs 77–109s** for
+   the full run, identical counts and verify PASS. `--stage1` alone = 72.6s, writes the
+   xlsx, reports `db: NOT written (stage 2 skipped)`. Bare `--stage3` built
+   compiled_v2.db (9 tables, 5,772 rows, 4,053 stamped) with no document. All 33
+   pipeline tests pass.
+
+🐞 **Two naming traps, documented in the module docstring rather than papered over:**
+   - **Stage 3 does NOT stamp.** `canonical_leaf_id`/`table_type_id` are written by
+     `load_v7.py:2199` during STAGE 2; `build_compiled_v2` only CARRIES them. Changing
+     what is stamped means re-running stage 2, then 3 — never 3 alone.
+   - **Stage 1 is not purely file-output.** STEP 1's `toc_to_db` writes the doc's
+     `section` rows into `--db`. Pre-existing, kept as-is; running stage 2 alone
+     against a DB that has never seen the doc re-seeds sections from the cached TOC
+     first (the same guard `--verify-only` uses).
+
+⏭️ Stage 3 is **opt-in and absent from the default** because `build_compiled_v2`
+   unlinks and rebuilds its `--dst`. `run_doc` never built compiled_v2.db before, so
+   including it by default would have been a behaviour change, not a re-slice.
+
+
+## 2026-08-13 — STEP 1 + STEP 2 were BROKEN since the 3-stage refactor; found by running a doc
+
+🐞 **`run_doc` could not extract ANY new document since `5ce26d0`** (the three-stage
+   split). Two path casualties, each fatal on its own, both invisible to how that
+   commit was verified:
+   - `stage1_extract/toc/toc_stage.py:47` — `PROMPT_FILE` still resolved
+     `pipeline/prompts/fs_toc_headings.txt`; the prompt had moved to
+     `pipeline/stage1_extract/gemini/prompts/`. STEP 1 → `FileNotFoundError`.
+   - `stage1_extract/chunk/PASS2_v2.py:14` — imports `stage1_extract.*` as packages,
+     but `run_doc` launches it as a SCRIPT with cwd `stage1_extract/chunk`, so
+     `sys.path[0]` was `chunk/`, not `pipeline/`. STEP 2 →
+     `ModuleNotFoundError: No module named 'stage1_extract'`. Checked all 8 subprocess
+     entrypoints `run_doc` shells out to — PASS2 was the ONLY one with cross-package
+     imports and no `sys.path` bootstrap.
+
+🐞 **Why the suite and `--rebuild-db` both stayed green:** `--rebuild-db` replays from
+   cached TOC JSON + existing audit artifacts, so it never invokes `toc_stage.py` or
+   `PASS2_v2.py` at all. STEP 1 and STEP 2 have had NO post-refactor coverage — every
+   green signal since `5ce26d0` came from the replay path. See `docs/DECISIONS.md`.
+
+✅ **Proven by a full `run_doc` on OCBC_2Q26_Media_Release_and_Financial_Highlights:**
+   51 sections / 34 tables / 572 rows / 1,978 cells, **verify PASS (0 fail, 0 missing)**,
+   109.3s, **$0.00** (0 Gemini calls — extraction resumed from the 25 cached audit units).
+   Per-doc workbook written: `outputs/fs/ocbc_Aug26/OCBC_2Q26_Media_Release_and_Financial_Highlights_fs.xlsx`
+   (33 sheets). STEP 6 whole-DB dump: `outputs/checks/compiled_fs.xlsx` (342 sheets).
+
+⏭️ **`outputs/fs/` run dirs are keyed by the PDF's RELEASE month, not the reporting
+   period.** `render.py:170 derive_period` maps only quarter-end months (Mar/Jun/Sep/Dec)
+   to a quarter slug; media releases publish off-quarter, so they land in `ocbc_Feb26`/
+   `ocbc_Aug26` while statements land in `ocbc_4Q25`/`ocbc_2Q26`. `run_doc.infer_period`
+   reads the FILENAME token and gets it right (`2026-06-30`) — two period derivations,
+   two answers, same document. The xlsx FILENAME is already correct. Not fixed here.
+
+⏭️ 62 load warnings + 7 duplicate-table detections on this doc (e.g. `LOANS TO CUSTOMERS`
+   in 5 units on p14). Pre-existing; verify passes because the cells match the PDF.
+
+
+## 2026-08-12 (cont'd) — concept layer retired; `--rebuild-db` fixed and proven on the real corpus
+
+✅ **`pipeline/concept/` RETIRED** (10 modules + 9 tests) on measurement: `fact_metric`
+   /`concept_dim`/`metric_definition` ABSENT from the DB, `concept_resolution_log`
+   empty, and `compiled_v2.db` (what the app reads) carries no concept table at all.
+   `run_doc` lost STEP 4a/4b/4c + `--with-concepts` + `--no-llm` (-51 lines). STEP 3b
+   survives on its own `--seed-registry` flag (the masterlist AUTHORING flow needs
+   `table_registry_alias`). `sync_bq` TABLES_TO_SYNC pruned — every remaining entry
+   AST-checked to exist in the built DB.
+
+✅ **`preflight_invariants.py` archived** — both earlier passes kept it as an
+   "operator CLI"; it is broken (`no such table: bank_line_map`, line 61) and
+   `run_doc` never referenced it. It was the ONLY live importer of
+   `concept.load_dictionary` — the single thread making concept/ look reachable.
+   `mapping/migrate_serving_views.py` followed it (schema_v7:621 declares v_cell now).
+
+✅ **`mapping/Stamping/` flattened into `mapping/`** — 9 modules, one package.
+
+🐞 **`--rebuild-db` could NEVER complete on this corpus.** `run_doc.infer_period`
+   had no `1H`/`2H` grammar while `classify/family.py` (which routes the same doc)
+   has always had it — so the driver refused a document the router accepted. Fixed
+   at parity. Also fixed 3 `db.relative_to(REPO)` crash sites (`--db` outside repo).
+
+✅ **Proven by running the pipeline, not the tests:** `--rebuild-db` on a scratch DB
+   = 25 docs / 865 sections / 528 tables / 9,038 rows / 33,671 cells, **verify PASS
+   (0 fail)**, 49s. `--verify-only` on DBS_1Q26 = 4 tables, 201 cells, 0 fail.
+   All 22 live pipeline modules import as packages; all 38 test files pass.
+
+
+## 2026-08-12 (cont'd) — full pipeline sweep: 114 -> 50 modules, pipeline no longer imports app/
+
+✅ **Five dead clusters archived** to `archive/2026-08-12-handover-cleanup/` (that
+   README carries the per-cluster evidence): the rest of Pillar-3 Branch B
+   (`toc_match`/`assign_tables`/`typographic_headings`/`gemini_arrange`/
+   `sections_from_gemini` — they import `candidates.py`, nothing imports THEM); the
+   anchor/`bank_line_map` mapping layer (8 modules — every target table absent from
+   BOTH `schema_v7.sql` and the built DB); an applied migration; two orphaned concept
+   outputs; and the old `chat_report.py` Streamlit app.
+
+✅ **`pipeline/` no longer depends on `app/`.** `parse_llm_json` moved into
+   `pipeline/gemini_client.py`; `toc_stage.py:44` dropped the `findociq/app`
+   `sys.path` insert. Coverage carried over as `pipeline/test_gemini_client.py`.
+   `app/` is now exactly the deploy surface (`findociq_app.py` + Dockerfile +
+   requirements), matching `app/DEPLOY.md`.
+
+✅ **`tools/slides/`** — slide kit parked out of the pipeline tree with a README
+   showing WHY it cannot run: `slide_kit.fetch_series` selects `cd.col_key`, and
+   `grep -c col_key schema/schema_v7.sql` = 0. Its test was removed (not wanted).
+
+🐞 **Fixed cross-test pollution:** `test_slide_kit` called `sqlite3.connect` on the
+   missing `final.db`, CREATING a 0-byte file, which then flipped `test_spec`'s
+   "skip if absent" guard and made it fail on the next run.
+
+✅ **Suite: 48 files, 44 pass.** The 4 failures are `test_concept`/`test_fact_metric`/
+   `test_query_db` (need a DB with STEP 3b/4b built — off by default) and
+   `test_geo_stamp` (the open `geo_map` ruling, see DECISIONS).
+
+
+## 2026-08-12 (cont'd) — handover cleanup: dead Branch B out, lost test fixtures rebuilt, run_doc self-bootstraps
+
+✅ **`run_doc.py` is a true one-liner from a bare clone.** A stdlib-only bootstrap
+   above every project import re-execs into `<repo>/.venv`, creating it and
+   installing `requirements.txt` if absent (hash-stamped, so run 2 is a no-op).
+   Measured on this box: `python3 -m venv` FAILS (no ensurepip — Debian ships it
+   in python3-venv) and `virtualenv` is absent, so it falls through to
+   `venv --without-pip` + `pip --python <venv_py>` and installed the full
+   requirements into a fresh tree with **no sudo, no apt**. Failed attempts are
+   captured, not streamed, and a half-built venv is wiped before each retry.
+   `.venv-paddle` (~1GB) is built ON DEMAND by STEP 0 only.
+
+✅ **STEP 0 paddle env fixed** — `paddle_env()` sets `PYTHONPATH=/tmp/paddle-scratch`
+   + `HOME=.../paddlehome`, closing the open item at
+   `docs/2026-07-24-ingest-handoff.md` line 96.
+
+🐞 **Pillar-3 "Branch B" had been dead AND broken since 2026-08-06.** That pass
+   archived `section_manifest.py`; `tag_sections.py` imports it at line 40, so the
+   command PIPELINE.md documented raised `ModuleNotFoundError` on start. Nothing
+   lost — `run_doc.py:389` routes pillar3 to `pass1_toc.py` -> `pass1_to_v7.py`.
+   `tag_sections.py` + `score_sections.py` (+ tests) -> `archive/2026-08-12-handover-cleanup/`;
+   PIPELINE.md STEP 1 rewritten to the route that actually runs.
+
+✅ **Test suite 45/56 -> 47/52, and every remaining failure is DB-state, not rot.**
+   - 3 column-band checks read a retired laptop's scratchpad path; rebuilt as a
+     committed fixture `pipeline/pass2/fixtures/dbs_1Q26_col_shift/` (the tracked
+     audit artifact is POST-repair, so it cannot exercise detection). ALL PASS.
+   - `test_load_v7.py` now BUILDS its fixture DB (schema_v7 + `toc_to_db.py`) instead
+     of copying a never-tracked spike DB. All 178 checks ALL PASS.
+   - Remaining 5 need a fully-built DB (`fact_metric` / `table_registry` are STEP
+     3b/4b products, off by default) or the retired `final.db`.
+
+✅ **outputs/fs 35MB -> 20MB.** 147 `parsed.json` + 147 `meta.json` from 5 new runs
+   (ocbc_2Q26/4Q25/Aug26, uob_2Q26/4Q25) committed as the $0 replay source;
+   regenerable `pages.pdf`/`prompt.txt`/`response.txt`/workbooks deleted. Verified
+   safe: `pass2/extract.py:540 load_cached_unit` reads ONLY parsed.json + meta.json.
+
+🐞 **`geo_map` disagreement, NOT actioned.** `test_geo_stamp.py` asserts
+   `geo_lookup('Total') is None`, but the seeded map has `('total','GLOBAL')` and
+   `GLOBAL` is a real `geo_dim` member. Live path (`load_v7.py:2026`), so it
+   matters — needs a semantic ruling, not a test edit.
+
+⏭️ **`final.db` cluster is retired but still referenced** — `app/chat_report.py`,
+   `tools/{nsfr_slide,slide_kit,test_slide_kit}.py` and the PIPELINE.md folder map
+   still point at a DB that was never git-tracked and does not exist. The live app
+   uses `compiled_v2.db` (`findociq_app.py:41`).
+
+
+## 2026-08-12 (cont'd) — column identity re-applied to the built DB, loans breakdown renders
+
+✅ **`tools/restamp_columns.py`** — applies load stage 3 ALONE to a database
+   already on disk. `col_dim.canonical_col_id` is normally written at LOAD time,
+   which made a column-block edit invisible to `compiled_v2.db` (56 stamped
+   columns, all geography — it predates the resolver being wired in). A full
+   re-load is the clean fix, but the replay lineage still loses 531 row-stamped
+   leaves, so re-loading to pick up a COLUMN edit would trade one gap for a
+   bigger one. This drives the SAME `RCC.resolve_columns` — no reimplemented
+   matching, every id copied verbatim from the masterlist — and reads
+   `(bank, table_type_id)` from `table_t` rather than re-running `locate_tables`,
+   so the column VETO does not apply and table typing is taken as settled.
+
+✅ **compiled_v2.db: 56 → 197 stamped columns.** Leaf stamping UNTOUCHED —
+   4,064 rows, 21,581 cells, byte-identical counts before and after. Snapshot at
+   `db/compiled_v2.db.bak-precolstamp`.
+
+✅ **Breakdown of gross non-bank loans now renders its By Business Unit rows.**
+   UOB's `gr`/`gwb`/`gm`/`others` match the curated column masterlist 9/9 and
+   resolve to real columns. Cross-checked, and it RECONCILES:
+
+       UOB @30-Jun-26   gross loans 361,411   sum(BU) 361,411   diff 0
+       DBS @30-Jun-26   gross loans 475,238   sum(BU) 475,238   diff 0
+
+🐞 **OCBC's segment columns do not exist.** `FS_BALANCE_BY_SEGMENT` has ZERO
+   columns for OCBC in every lineage, and OCBC carries no stamped segment column
+   under any table type — so its 5 By-Business-Unit members cannot resolve
+   whatever vocabulary is chosen. Not a naming mismatch; missing data.
+
+🧭 **Column vocabulary is now label slugs** (`gr`, `global_markets`,
+   `singapore`), curated for all three banks. NOTE the curated files dropped the
+   `dim` and `dim_key` columns. Both are read with `.get()` so nothing crashes,
+   but `dim_key` carried the SHARED cross-bank axis (`SEG_RETAIL`, `SG`) — the
+   thing `cell_fact.segment_key` is populated from and the thing the deferred
+   `row_dim_key=SEG_*` addressing was going to use. Confirm that is intended
+   before the curated files are renamed over the live ones.
+
+✅ **Curated lists promoted to live** — `*_cols_curated.csv` replaced
+   `*_masterlist_cols.csv` for all three banks and the curated copies deleted, so
+   there is ONE source of truth and a real ingest now reads the slug vocabulary
+   instead of silently reverting to codes. Diff before promoting: DBS and OCBC
+   0 rows added/removed and 0 label changes (`canonical_col_id` only); UOB **+8
+   rows, 0 removed** (new blocks for `FS_FAIR_VALUE_HIERARCHY` and
+   `FS_NPA_BY_GEOGRAPHY`, plus `FS_BALANCE_CONSOLIDATED` ordinal 2) and one real
+   label fix, `'Dec-'` -> `'Group'` — the bad capture flagged earlier. Purely
+   additive; nothing lost a block.
+
+   Verified by re-running the restamp from the PRE-PATCH snapshot using the
+   DEFAULT glob: 197 columns matched, and the resulting
+   (doc_id, table_id, col_id, canonical_col_id) set is IDENTICAL to the shipped
+   DB's. The live files reproduce the shipped stamping exactly.
+
+🧭 **`dim` / `dim_key` are gone for good.** They fed ONLY
+   `col_dim.{geo,segment,industry}_key` (`load_v7.py:2279`), and that write is
+   guarded by `and c["dim_key"]`, so nothing crashes — those columns simply stop
+   being populated on a fresh ingest. **`compiled_v2` is unaffected**:
+   `build_compiled_v2` already drops the geo/segment stamps from `col_dim`, so
+   the dashboard never read them. The cost is confined to `compiled_fs.db`, and
+   it retires the `row_dim_key=SEG_*` idea entirely — addressing is
+   `canonical_col_id` only from here.
+
+---
+
+## 2026-08-12 — the title's trailing year, a DBS printing slip, and exact close dates on the dashboard
+
+🐞 **UOB's FY2024 geography figures were stamped FY2025.** UOB 4Q25 splits one
+   geography exhibit five ways by a printed trailing caption. `— 1H25`, `— 2H24`
+   and `— 2H25` parsed; `— 2024` and `— 2025` did not, so both fell through to
+   `doc_period`, putting 77 FY2024 cells on `2025-12-31` — colliding with the
+   genuine FY2025 table on the same period key. `— 2025` was right only because
+   `doc_period` happened to agree.
+
+✅ **Fixed at the grammar, not per-bank.** `_period_match_ctx` gains ONE
+   title-context branch, tried **last** so it can never shadow a printed token: a
+   bare year that is the entire trailing caption after a delimiter (`— – - | :`)
+   → FY, ends 31 Dec. The general title bare-year guard is untouched — it is a
+   tested invariant, and lifting it would make `Basel III 2024 framework` and
+   `Note 3 2025` periods. Both are now regression cases. The result passes
+   through the existing `clamp_bare_year_to_doc_period`, so a trailing `— 2026`
+   on an interim filing cannot invent a future period. 9 new assertions;
+   `test_period_span.py` ALL PASS.
+
+✅ **DBS printing slip aliased.** DBS's 2Q26 performance summary spells the line
+   "intangible assets" in its 30 Jun 2026 and 31 Dec 2025 blocks and
+   "intangible**s** assets" in the 30 Jun 2025 block of the same exhibit. That
+   row loaded with `canonical_leaf_id` NULL, so the 1H25 figure (835,499) was
+   extracted correctly and then unaddressable — an unstamped leaf cannot be
+   reached by an anchor. One entry in `masterlist_leaf_aliases.yaml`; a general
+   singular/plural normaliser was rejected (it would collapse genuinely distinct
+   leaves corpus-wide). **Correction:** first written as "invisible to the
+   dashboard while its siblings rendered — a hole at exactly one period". Wrong —
+   the leaf appears in 0 of the 4 anchor files, so no sibling rendered either.
+   Real defect, but not a visible one.
+
+🧭 **NEITHER pending fix is visible today, so NOTHING needs rebuilding** — the UOB
+   FY2024 period bug touches 77 cells of which **0** are anchored, and the DBS
+   leaf appears in **0** anchor files. Both apply automatically on the next
+   ingest. This and every other known-but-unfixed item now lives in
+   **`docs/TO_FIX.md`**, with evidence, blast radius and what would make each
+   worth doing.
+
+✅ **Both verified by replay.** `replay_load.py` → the three-bank stamp chain:
+   `— 2024` now `2024-12-31 via table_title` (all 77 cells), and the DBS row
+   stamps `total_assets_before_goodwill_and_intangible_assets`.
+
+✅ **Dashboard period headers carry the exact close date** — `1H26` →
+   `1H26 · 30-Jun-26`. Balance-sheet anchors are STOCKS placed by
+   `filter_by='period_end_date'`, so the figure under `1H26` is the balance AS AT
+   that column's close; for loan and asset balances that date is the figure's
+   meaning. Display-only rename — `period_order` and every grid key stay the bare
+   label. App suite 98 passed. Mirrored to `Findociq-Dashboard` via its `sync.sh`.
+
+🐞 **DB NOT rebuilt — deliberate.** Rebuilding `compiled_v2.db` from the replay
+   lineage yields 3,776 stamped rows against the tracked 4,064: **531 lost, 243
+   gained**, spread across UOB `FS_PERF_BY_SEGMENT` (60), OCBC
+   `FS_EQUITY_CHANGES_GROUP` (58), `FS_L3_MOVEMENTS` (56), `FS_PERF_BY_GEOGRAPHY`,
+   `FS_INCOME_SELECTED` and 8 more. `replay_load.py` + `stamp_tables --bank
+   {DBS,OCBC,UOB}` does NOT reproduce how the shipped DB reached 4,064. Shipping
+   it would silently unstamp 531 rows, so the tracked DB is left alone and both
+   fixes land on the next real ingest.
+
+⏭️ **Next:** document the actual `compiled_fs.db` → 4,064 rebuild procedure (extra
+   stamp scoping? `resolve_canonical_col`? the equity-component migration?), then
+   re-run it with these fixes in and refresh `compiled_v2.db`.
+
+⏭️ **Open, evidence gathered:** a SECTION-HEADER rung for the period cascade is
+   NOT worth building today — of 3,203 `doc`-sourced cells across 87 tables,
+   exactly one table (6 cells) sits under a dated section, and that date equals
+   the `doc_period` already stamped. See `DECISIONS.md`.
+
+---
+
+## 2026-08-11 (cont'd) — one table one type, OCBC's p12 untangled, corpus re-stamped
+
+🧭 **PIPELINE PIVOT — `_one_table_one_type` in `resolve_canonical_leaf`.** A
+   physical table now belongs to exactly one `table_type_id`. Two stages: the
+   SECTION BAR (computed by `load_masterlist` since forever, never read until
+   now, normalised with `norm_family` so audited/unaudited collapse), then match
+   FRACTION to decide. Two guards found by measurement — 3+ claimants is a
+   combined exhibit and is left alone, and no entry is ever starved of every
+   table. 4 regression tests.
+
+🐞 **OCBC's p12 ratio block was declared five times over.** The page is ONE
+   printed block extracted EIGHT times, once per section header, and the
+   proposal generator drafted an entry per registration each declaring the whole
+   block — `REG_LCR` was declaring `capital_adequacy_ratios::common_equity_tier`.
+   All five tied at 17 matched, so stamping was last-write-wins, and a full
+   re-stamp took the dashboard 83/83 → 77/83.
+
+✅ **Fixed by deleting, not partitioning.** OCBC's `REG_LCR` / `REG_NSFR` /
+   `REG_LEVERAGE` / `FS_PER_SHARE` entries dropped, `FS_CAPITAL_ADEQUACY` trimmed
+   to its own p20 table; `FS_RATIOS_KEY` (curated long before) already owns all
+   22 lines in the `_1` form the anchors use. Partitioning by banner was tried
+   and rejected: `REG_LEVERAGE` and `REG_NSFR` are ONE ROW each, below
+   `MIN_MATCH_ABSOLUTE`, so neither could locate anything.
+   OCBC_masterlist.csv 372 → 287 rows, 22 → 18 types.
+
+✅ **Contested non-duplicate tables 27 → 1**, all 58 entries locate.
+
+✅ **Corpus re-stamped, all three banks:** `compiled_fs.db` 1,226 → **2,451**
+   rows, **0 altered, 0 removed**. DBS 95%, OCBC 92%, UOB 82% of attempted rows
+   resolved. `compiled_v2.db` rebuilt. Dashboard unchanged at 83/83 anchors and
+   26/26 concepts for DBS, OCBC and UOB.
+
+🐞 **One stale path alias deleted** — `(UOB, FS_INCOME_SELECTED) 'Allowance for
+   credit and other losses'` pointed at a leaf no masterlist declares, illegal by
+   `stamp_into_db`'s own invariant and hard-failing every UOB run. UOB's
+   `FS_INCOME_SELECTED` genuinely lacks that printed line.
+
+⏭️ **Next:** curate OCBC's financial-statements half (260 leaves) and UOB's
+   remaining 368; M2 scoping still reads `fact_metric`.
+
+## 2026-08-11 — every extracted table now has a name, and 1,266 masterlist leaves are drafted
+
+🧭 **PIPELINE PIVOT — registry granularity.** `pipeline/mapping/table_registry.yaml`
+   goes 26 → 51 types, 172 aliases. All 184 tables in the four 4Q25 documents
+   classify: **184/184, 0 UNCLASSIFIED** (was 148/184). The rule is now in the
+   file header: one `table_type_id` per distinct printed exhibit — split on the
+   decomposition axis, never on the period. `FS_NII_DETAIL` → four income types;
+   NPA → eight; `FS_AVG_BALANCE_SHEET` separated from `FS_VOLUME_RATE`; segment
+   and geography each into income-by-axis and balance-by-axis. Rationale and the
+   four discarded alternatives in `docs/DECISIONS.md`.
+
+✅ **UOB p5-6 stops being swallowed.** Three composite aliases so the split
+   highlight tables resolve to `FS_INCOME_SELECTED` / `FS_BALANCE_SELECTED` /
+   `FS_RATIOS_KEY` rather than `FS_HIGHLIGHTS_COMBINED` — matching the 42 leaves
+   `UOB_masterlist.csv` already declares. Section beats title in the resolver, so
+   without the composites the section caption claimed all three.
+
+✅ **`FS_INCOME_STATUTORY` / `FS_BALANCE_STATUTORY` renamed to `_CONSOLIDATED`,**
+   following the curated masterlists (72 OCBC rows) and dashboard anchors (21
+   rows) rather than making them follow the YAML.
+
+✅ **DBS gains `source_family`** + the first entry in
+   `masterlist_source_family_aliases.yaml` (`trading_update → Performance_summary`).
+   Verified through the real `locate_tables`: all 141 DBS stamps survive
+   (50 + 46 + 45), Pillar 3 correctly barred.
+
+✅ **New `pipeline/mapping/propose_masterlist.py`** →
+   `data/derived/masterlist_proposed_2026-08-11/`: **1,314 leaves** (DBS 390,
+   OCBC 518, UOB 406) across 93 table types, plus **82 column identities**.
+   Reuses the stamper's own `leaf_id` / `classify` / `build_ancestry` /
+   `_printed_chain` / `doc_source_family`, so a promoted draft resolves back to
+   its own rows. Refuses to write into `data/derived/masterlist/`.
+
+   Round-tripped through `load_masterlist` + `locate_tables`: **106/106 entries
+   locate a table, 95/106 match every leaf they declare.** 6 of the 11 partials
+   are pre-existing curated entries; the 5 proposed ones are multi-slice types
+   where one document prints the type as several tables. 0 duplicate ids,
+   0 empty paths.
+
+🐞 **Two generator defects found by inspection and fixed** (both would have
+   silently lost data):
+
+   * *Leaves came from the richest table only.* DBS prints its geography exhibit
+     twice on p18-21 — banner-prefixed and bare — and the two leaf sets are
+     DISJOINT, so 11 of 22 were dropped. Leaves are now the UNION across one
+     document, and the union is **self-checking**: `locate_tables` needs a
+     candidate to match half of everything declared, so unioning DBS's four
+     changes-in-equity slices or OCBC's three Level 3 tables made them stop
+     resolving entirely. The generator tests the union against the resolver's own
+     constants and falls back when it would not survive them.
+   * *Column identity was read at a fixed level.* It sits at different levels per
+     exhibit, so DBS's changes-in-equity columns (Share capital, Other equity
+     instruments, Other reserves, Revenue reserves, Total Shareholders' funds,
+     Non-controlling interests, Total equity) produced NOTHING. Now walks up from
+     each leaf to the nearest non-period, non-unit ancestor. Column entries went
+     42 → 82.
+
+✅ **The equity column axis gets a dimension.** New `equity_component_dim` +
+   `equity_component_map` in `schema/schema_v7.sql` (mirroring
+   `segment_dim`/`segment_map`), plus
+   `pipeline/mapping/migrate_add_equity_component_dim.py` to backfill an existing
+   DB. 10 members, 17 aliases, **149 `col_dim.equity_key` stamped**, 1 unmatched
+   (`the bank` — correctly the legal-entity axis).
+
+   It unifies three house names for one concept: DBS `Total Shareholders' funds`
+   = OCBC `Total` = UOB `Total` = `EQ_ATTRIBUTABLE`; DBS/OCBC `Revenue reserves`
+   = UOB `Retained earnings` = `EQ_RETAINED_EARNINGS`. And it is HIERARCHICAL,
+   because the printed columns are not peers —
+   `EQ_TOTAL = EQ_ATTRIBUTABLE + EQ_NCI (+ EQ_OEI_SUB)`. Summing them as siblings
+   double-counts; `eq_level`/`parent_eq` are the same guard as
+   `seg_level`/`geo_level`.
+
+   ⚠️ **A bare `Total` column on an equity statement is NOT total equity** — it is
+   the attributable subtotal, printed before NCI. The map sends `total` to
+   `EQ_ATTRIBUTABLE` and only `total equity` to `EQ_TOTAL`.
+
+✅ **All 82 column identities now carry a `dim_key`** — 0 unresolved (was 49).
+   `equity_component` 35, `segment` 32, `geo` 12, `legal_entity` 3. UOB's
+   `GR`/`GWB`/`GM` resolved once `_dim_lookup` started reading the `*_map` alias
+   tables (the verbatim house names) rather than only the `*_dim` canonical
+   labels.
+
+🧭 **PIPELINE PIVOT — rule 3b in the stamper.** The 62 `PERIOD IN ID` rows are
+   fixed at source, not worked around. `masterlist_derive` gains
+   `is_period_banner_label`, used by `classify` for the VALUELESS branch only:
+   rule 3 plus the bare `At <date>` and `Half year ended <date>` forms, with
+   footnote markers stripped. Rule 3 is untouched.
+
+   The split is on `has_values` because the two cases need opposite answers — a
+   valueless `At 31 December 2025` heads a segment balance block (period, no
+   identity), a valued `At 1 January 2025` is an opening balance carrying 4-8
+   figures (the date IS the identity, `masterlist_derive.py:125`).
+
+   Blast radius measured by re-deriving the whole corpus under both classifies:
+   4,723 rows before and after, **66 ids changed, 0 rows changed class**, every
+   change an `at_<date>::` prefix disappearing. `balance_at_1_january` and
+   `balance_at_31_december` stay distinct. 4 regression tests added; full
+   mapping suite 38 passed.
+
+✅ **`DATE PARENT` fixed too — 15 → 0.** One condition in `build_ancestry`
+   (`masterlist_derive.py:519`): a date-labelled ancestor contributes no id
+   segment even when it carries values. OCBC indents its changes-in-equity
+   movements under the opening balance, so `At 1 January 2024` was captured as
+   their parent; in print they are siblings, as DBS already captures them.
+
+   The row is dropped as an ANCESTOR, not as a row — `at_1_january` and
+   `at_31_december` keep their own leaves and their figures. 13 leaves before,
+   13 after; 11 get a shorter address. `full_path` loses the prefix in step with
+   the id, so the masterlist and `table_paths()` cannot drift. 24 rows across 4
+   OCBC tables, nothing elsewhere. 2 regression tests; suite 40 passed.
+
+   Zero rows change in either DB — OCBC is not promoted or stamped, and
+   `build_ancestry` is derivation. Streamlit renders identically: the dashboard
+   anchors address 7 table types, none of them equity.
+
+✅ **DBS masterlist complete — 47 → 436 leaves, 35 of 36 types.** The curated
+   `DBS_Master.csv` merged into the authority file and deleted. Types were
+   disjoint so the union introduced no duplicate ids; `section_ordinal`
+   renumbered globally by printed page. 35/35 entries locate, 34 at full match.
+   Two `FS_CUSTOMER_LOANS` paths had lost their ` > ` separator in curation
+   (`Less: ECL Stage 3 (SP)`) and silently matched nothing — restored to the
+   printed chain, leaf ids left flat as curated.
+
+⏭️ **Still to do:** curate OCBC (518 drafted) and UOB (406), quarantine the
+   duplicate page tables, then stamp and rebuild `compiled_v2`.
+
+⏭️ **Next:** curate the proposal and promote; run `m2_canonical_leaf.py`
+   (`canonical_leaf` exists in NEITHER db, so today's 702 stamps are
+   unvalidated); run `quarantine_duplicate_page_tables.py` before promotion —
+   OCBC p18 registers each NPA cut 4×, p16 loans 5×, p12 ratios 8×.
+
+📋 **Coverage checklist renamed:** `data/derived/masterlist/table_registry_seed.csv`
+   → `table_type_coverage.csv`. It has no caption column and no consumer; the old
+   name collided with the retired input of the same name.
+
+---
+
+## 2026-08-10 (cont'd) — dashboard render audit: 4 of 5 issues closed, one fiscal axis replaces the basis radio
+
+📊 **Live-render audit against `db/compiled_v2.db` found 5 issues.** Four fixed
+   here; #4 (blank `Total equity` / UOB `Total liabilities`, `Operating
+   expenses`, `Allowances`) is masterlist/normaliser work and deliberately out
+   of scope. All changes are in `app/findociq_app.py` + the two anchor CSVs —
+   **no loader, no schema, no `cell_fact`**.
+
+✅ **#1 + #2 — one fiscal period axis, per spec §4.5.** The "Period basis"
+   radio is gone. Each anchor declares `filter_by` ∈ {`period_label`,
+   `period_end_date`}: a flow joins a column by its label, a stock by its END
+   DATE, so both land under `1H26` together. Blank derives from
+   `table_type_id` (`FS_BALANCE*` → end date, else label) — a PREFIX test, so
+   an unseen balance variant classifies itself. **Landing view before → after:
+   DBS 25/26 → 25/26, OCBC 6/26 → 26/26, UOB absent-from-the-page → 24/26.**
+   UOB was dropped entirely because `default_basis` picks the basis with the
+   most distinct periods (`quarter`) and UOB files half-yearly; OCBC showed
+   only its 6 ratio rows because its balance sheet is stamped `as_at` and
+   matched no flow basis. No setting of that radio could show a full grid.
+
+🐞 **The end-date fan-out double-counted stocks — caught in verification, not
+   by a test.** A balance at one date is filed under several spans (DBS `Total
+   assets` at 2025-12-31 arrives as `4Q`, `2H` and `FY`); each matched every
+   column closing that day and composition SUMMED them — **2,692,464 rendered
+   against a filed 897,488, exactly 3x**. `_collapse_same_date_stocks` keeps
+   one per (institution, slice, end date), under `period_end_date` only.
+   Post-fix reconciles: DBS 4Q25 897,488 · OCBC 1H26 729,887 · UOB 1H26
+   590,222.
+
+✅ **#3 — precision is a property of the VALUE now, not of `unit_hint`.** The
+   `S$m` branch was `:,.0f`, and only DBS stamps `per_share` on its per-share
+   rows: **OCBC's carry `S$m`, UOB's carry `%`**. So OCBC EPS `0.81` → `1`,
+   EPS `1.63` → `2`, NAV `13.73` → `14`. One rule for every unit — own
+   precision, capped at 2dp. Cost stated: a ratio prints `12.3`, not `12.30`.
+
+✅ **#5 — minimum column density (`MIN_COLUMN_DENSITY = 0.20`), judged per
+   bank.** DBS drops `4Q24` + `3Q25` (three per-share rows and whitespace);
+   UOB drops `4Q24`/`2Q25`/`4Q25`/`2Q26`; OCBC drops none. Pruned periods are
+   NAMED in the caption and re-addable from the period multiselect — the rule
+   tidies the default, it does not withhold data.
+
+✅ **118 app tests pass** (95 → 118: 23 new across `test_filter_by_dispatch.py`,
+   `test_column_density.py`, `test_format_highlight_value.py`). **105 pass2 +
+   mapping pass.** Three existing app tests pinned behaviour this task
+   deliberately changed (2 formatter, 1 member-tuple arity) and were updated
+   with the reason inline. One pre-existing failure untouched and unrelated:
+   `test_m2_canonical_leaf` wants `fact_metric`, which `compiled_v2.db` drops
+   by design.
+
+🐞 **Found, NOT fixed — an extraction defect the dashboard now surfaces.**
+   `FS_INCOME_CONSOLIDATED net_interest_income` reads **3.0** at OCBC FY25 and
+   1H26 (correct sibling `FS_INCOME_SELECTED` reads 9,150 / 4,486), and
+   `allowances_for_loans_and_other_assets` reads **7.0** at the same two
+   points. Looks like a footnote marker captured as the value. Pre-existing in
+   the DB, unrelated to this change, and upstream of the app.
+
+⏭️ **Next:** the two spec references this task could not check — the file on
+   disk is **v2 (677 lines)** and there is no v3 in any branch, stash, worktree
+   or editor history, so §4.5 was implemented from the task brief's own
+   description; and `breakdown_dashboard_anchors.csv` does not exist, so only
+   the `highlights_*` pair carries the new column.
+
+---
+
+## 2026-08-10 — UOB p6 rejoined and STAMPED: the continuation merge is correct end to end
+
+✅ **`Key financial ratios (%)` is ONE table across pages 5-6 in BOTH vintages,
+   `FS_RATIOS_KEY`, 23 of 23 value-carrying leaves stamped.** (The 4-5 unstamped
+   rows are the valueless sub-headers and the footnote block — correct.) The p6
+   extraction itself was never the problem: `financial_highlights_cont_d_p6`
+   has existed since 2026-08-09 21:51 and holds all 19 rows. Two POSITIONAL
+   contracts silently broke when the merge appended those rows to p5.
+
+✅ **DEFECT 1 — `GRow.parent='hN'` is an ORDINAL, not an id.** It indexes the
+   table's own header list, so appending re-bases every reference. Worse, the
+   join can PROMOTE the predecessor's last row to a header: p5's `Notes:` block
+   (level 0) becomes one the moment p6's level-1 rows sit under it, so the shift
+   is not a constant offset and cannot be precomputed. Left un-rebased, all three
+   of p6's references landed one block early — `All-currency` under `Credit costs
+   on loans`, `Common Equity Tier 1` under `Notes:`, `Basic` under LCR — and the
+   merged 27-row table matched 12 of 27 masterlist paths, under
+   `MIN_MATCH_FRACTION`'s 13.5, so `table_type_id` stayed NULL and NOTHING
+   stamped. `merge_continuation_tables` now resolves each `hN` to its header ROW
+   while the source table is still the frame of reference and re-emits the
+   ordinal against the merged row list. The header rule itself moved to ONE
+   copy — `transforms.header_row_indices`, imported by
+   `load_v7.resolve_printed_parents` — because a second copy that drifted would
+   rebase onto different rows than the reader counts.
+
+✅ **DEFECT 2 — a footnote block was excluded by POSITION, not by label.**
+   `masterlist_derive.classify` caught the block with a `note_` prefix that
+   missed the PLURAL every filing actually prints, and it cost nothing only
+   while the trailing-prose rule was covering for it (the block was the last
+   row of its table). Once the merge puts a page beneath it, it becomes a
+   mid-table BANNER prefixing the whole continuation:
+   `Notes: 1 Relates to … > Liquidity coverage ratios > NSFR` — two spurious
+   ancestors where `match_variants` can strip only one. NSFR / Leverage ratio /
+   NAV / Revalued NAV went unstamped. Now `^notes?_`; a valued line item
+   ("Notes and coins") is untouched because this branch only sees valueless rows.
+
+📊 **Dashboard anchors, UOB @1H26: 13/26 -> 22/26** (@4Q25 unchanged at 24/26).
+   The last four are all PREVIOUSLY LOGGED gaps, none of them p6:
+   `Total liabilities` + `Total equity` (no `FS_BALANCE_STATUTORY` masterlist for
+   any bank), `Operating expenses` (UOB prints `Less: Total expenses`, deliberately
+   not aliased), `Allowances for credit and other losses` (no leading `Less:`/`Add:`
+   strip in the normaliser).
+
+✅ **Zero regressions, measured, not asserted.** Every one of the 10 docs
+   reloaded twice — once with both fixes reverted — and diffed row by row: no
+   leaf anywhere LOST a stamp, one table gained a `table_type_id`, UOB 2Q26
+   51 -> 74 stamped. Corpus 702 stamped over 5,772 rows. `--verify-only` PASSES
+   for both UOB docs (fail=0), which is the real test of the merged table's
+   page union — STEP 5 checks numbers against the page range, and a 5-6 table
+   filed under a p5-only unit would fail and trigger the auto-re-extract that
+   destroyed this table once already.
+
+✅ **New `pass2/test_continuation_merge.py` (12 checks)** pins the rebasing, the
+   `Notes:`-promoted-to-header case, the column-subset re-lay, and the two
+   things that must NOT merge (unmarked caption, mismatched columns).
+   105 pass2+mapping checks and 95 app tests still pass. Two pre-existing
+   failures untouched and unrelated: `test_mapping.py` needs `pipeline/mapping`
+   on PYTHONPATH, `test_m2_canonical_leaf` wants `fact_metric` (opt-in since
+   `--with-concepts`).
+
+🐞 **The DB had gone stale where nobody was looking.** `db/compiled_fs.db` still
+   carried OCBC `Business segments` tables stamped `FS_INCOME_SELECTED` — 48
+   leaves at the WRONG ADDRESS, the exact defect family-scoped location fixed on
+   2026-08-07. They predate that fix and only a reload clears them. All 10 docs
+   are now reloaded uniformly and `compiled_v2.db` rebuilt from it, so the two
+   DBs and the code finally agree.
+
+⏭️ **Next:** the three remaining UOB dashboard blanks are all masterlist/normaliser
+   work, not extraction — author `FS_BALANCE_STATUTORY` for DBS + UOB, then the
+   leading `Less:`/`Add:` strip. The TOC `(cont'd)` unit-planning question is now
+   MOOT for stamping: the loader rejoins the halves whatever the TOC did.
+
+---
+
+## 2026-08-09 — dashboard grouping declared; UOB CET1 addressed; column-axis spec written
+
+✅ **The extra row between `Total liabilities` and `Total equity` is gone.** It was a
+   spurious section header, and it was in ALL THREE grids, not just OCBC/UOB.
+   `items` is the cross-bank union (`findociq_app.py:1537-1543`) and
+   `attach_sections` derived each label's section from the first record in the
+   concatenated frame; `Total equity` resolves only for OCBC, so it took OCBC's
+   `UNAUDITED BALANCE SHEETS` caption while its neighbours took DBS's
+   `Selected balance sheet items ($m)`. `section` is now a DECLARED column in both
+   anchors CSVs; `attach_sections` is a fallback for files without it.
+   Measured: 31 -> 30 rows per grid, 4 headers each, identical grouping, 26/26
+   concepts still rendering with blanks visible.
+
+✅ **UOB `Common Equity Tier 1` renders (0 -> 5 values).** Anchor typo, not a
+   stamping failure: the address was the bare `common_equity_tier_1`, the DB and
+   `UOB_masterlist.csv:36` both carry `capital_adequacy_ratios::common_equity_tier_1`.
+   An audit of all 83 anchor addresses found no second case.
+
+✅ **93 app tests pass** (89 + 4 new), including a regression test that pins the
+   header between `Total liabilities` and `Total equity`.
+
+✅ **PIPELINE PIVOT — spec `docs/specs/2026-08-09-column-axis-identity.md`.** The
+   dashboard address becomes `bank > table > line item > column`, backed by
+   `col_dim.canonical_col_id` (declared at `schema/schema_v7.sql:384`, 0/1915
+   populated). 799 of 1,915 columns carry no period. Two invariants written down
+   verbatim so a rewrite cannot lose them: *"A date is period data, never
+   identity"* (UOB perf-by-geography is the test — period on the ROW axis), and
+   *column decisions are stamped at load, filtered at query, never reasoned about
+   in the app* (with `WHERE parent.col_leaf_label = 'GROUP'` named as a banned
+   anti-pattern and Gate 5 a CI grep for it). Settled BEFORE the masterlist is
+   populated across all tables — retrofitting a column axis into authored tables
+   costs a rebuild.
+
+🐞 **UOB 2Q26 `Key financial ratios (%)` is 10 of 27 rows — page 6 was never
+   extracted.** The 2Q26 TOC split the exhibit into `financial_highlights` (p5)
+   and `financial_highlights_cont_d` (p6); only the p5 unit was built
+   (`.../financial_highlights_p5/meta.json` -> `"pages": [5]`), and no audit unit
+   exists for the cont'd section. 4Q25 kept it as ONE section spanning p5-6 and
+   got all 27 rows. The truncation then trips `MIN_MATCH_FRACTION = 0.5`
+   (`resolve_canonical_leaf.py:514`) — 9 usable rows against a 27-leaf entry is
+   33% — so the table is left `table_type_id = NULL` and ALL 10 rows unstamped.
+   The loader is correct to refuse a half-table; the gap is upstream at TOC/unit
+   planning. `merge_continuation_tables` (WIP in `pass2/transforms.py`) handles
+   the merge but can only merge tables that were extracted.
+
+🐞 **`FS_BALANCE_STATUTORY` has an id in `table_registry.yaml:103` and zero
+   masterlist rows for any bank**, so DBS/UOB `Total equity` and UOB
+   `Total liabilities` can never resolve. All four statutory balance sheets
+   (DBS 2Q26/4Q25, UOB 2Q26/4Q25) sit at `table_type_id = NULL`; only OCBC's is
+   stamped, as `FS_BALANCE_CONSOLIDATED`. Rows are fully extracted and both
+   vintages print identical lists, so this needs a masterlist entry, not a
+   re-ingest.
+
+⏭️ **Next:** author the DBS + UOB `FS_BALANCE_STATUTORY` blocks (per-bank ids —
+   `table_registry.yaml` is never read at stamping time, proven by OCBC's
+   `FS_BALANCE_CONSOLIDATED` stamping fine while absent from it); then the TOC
+   `(cont'd)` unit-planning fix + UOB 2Q26 re-ingest; then the column-axis
+   implementation against the new spec, one hard-axis table first
+   (UOB perf-by-geography — geography already has a dim table).
+
+---
+
+## 2026-08-07 (cont'd) — OCBC 26/26 at 1H26; family-scoped addressing; UOB 2Q26 ingested
+
+✅ **OCBC's three blank highlight lines closed — 23/26 -> 26/26 at BOTH 4Q25 and 1H26.**
+   Three distinct defects, none of them the masterlist:
+   1. **`Net book value (NAV)`** — the masterlist label carries a bracketed
+      footnote (`Net asset value per ordinary share – S$ (1)`), the interim
+      prints it without. `_TRAILING_FOOTNOTE` only ever matched BARE digits, so
+      `(1)` survived AND shielded the `– S$` unit tail from `_BARE_UNIT`:
+      `..._s_1` vs `...share`. New `_BRACKET_FOOTNOTE` in the same fixpoint loop
+      strips the marker, the unit then becomes trailing and goes on the next turn.
+   2. **`Total equity`** — `build_ancestry` gave the DE-INDENTED level-0 total the
+      level-1 sub-heading as an ancestor: `EQUITY > Attributable to equity
+      holders of the Bank > Total equity` against a masterlist `EQUITY > Total
+      equity`. A DATA row now inherits only banners at level <= its own. `<=`,
+      not `<`, so Rule 3's level-drift repair still holds. Unstamped in BOTH
+      vintages, so never a 2Q26 regression.
+   3. **`Net profit`** — OCBC prints `Profit for the period/year` at year-end and
+      `Profit for the period` at the half year. A rename, not derivable, so it
+      goes in `masterlist_leaf_aliases.yaml` — which until today **had no reader
+      anywhere in the code**. Now loaded into `by_alias`.
+✅ **Pipeline pivot: table location is scoped by FILING FAMILY before content.**
+   `locate_tables()` skips any masterlist entry whose `source_family` is not the
+   document's own. OCBC's 14-leaf `FS_INCOME_SELECTED` had been clearing
+   MIN_MATCH_FRACTION against the consolidated income statement inside the
+   FINANCIAL STATEMENTS and re-stamping 16 rows to the wrong `table_type_id` —
+   leaves correct, ADDRESS wrong, six dashboard lines blank while the stamper
+   still reported them resolved. OCBC denominator 643 -> 522, resolve 72% -> 76%.
+   Family comes from the doc_id via `norm_family()`, which drops filler words AND
+   presentation qualifiers (`condensed/interim/unaudited/audited`) — four printed
+   names across OCBC and UOB collapse to one family with ZERO hand-written
+   aliases. `masterlist_source_family_aliases.yaml` exists as the escape hatch and
+   is empty.
+✅ **The highlights dashboard now STATES its consolidation basis.** `_ANCHOR_SQL`
+   filters `COALESCE(c.legal_entity,'CONSOLIDATED')='CONSOLIDATED'`. OCBC's
+   balance sheet prints GROUP and BANK columns both dated 30 Jun 2026, and the
+   group figure was surviving only because `col_id 1 < 3` — reversing the row
+   order yielded the BANK number (477,550) for `Total assets` instead of the
+   filed 729,887. `col_dim.legal_entity` already existed and was already
+   populated; only the predicate was missing.
+✅ **UOB 2Q26 ingested and loaded — 37 units, 48 tables, 892 rows, verify PASS.**
+   STEP 0 needs `PYTHONPATH=$HOME/paddle-fix` **AND `--no-ipv4-shim`**: run_doc's
+   shim writes its own `sitecustomize.py` and prepends it, and Python loads only
+   the first one found, shadowing the mkldnn patch.
+🐞 **One stale boolean aborted a whole document.** Gemini flagged UOB p6
+   `continued_from_previous`; PASS2 correctly declined to merge it but passed the
+   flag on, and `load_v7._load_table` refuses any table still carrying it. The
+   load path never runs PASS2's bucketing at all —
+   `run_doc.build_units_from_audit` reads `parsed.json` verbatim. Now one shared
+   `is_true_continuation()` + `resolve_continuations()` called from `load_units`,
+   clearing the flag whenever the merge does not fire. Measured no-op: exactly
+   1 table of ~700 across all 24 ingested docs carries the flag. The two PASS2
+   copies had also DRIFTED (3 conditions cached vs 5 live).
+📊 **Dashboard @1H26: DBS 25/26, OCBC 26/26, UOB 18/26** (10 docs, 656 stamped).
+   @4Q25: DBS 25/26, OCBC 26/26, UOB 20/26.
+⏭️ OPEN: **UOB's "Key financial ratios (%)" is ONE printed exhibit across pages
+   5-6** that the TOC split into two units, so a 27-leaf entry is split 8/15 and
+   only the 15-half clears the 13.5 threshold — NIM / Cost-income / NPL unstamped
+   in BOTH vintages. Needs the MIRROR of `split_caption_tables` (DBS's one
+   physical -> many logical): many physical -> one logical, aligning p6's 3
+   columns onto p5's 5 BY PERIOD since the carry-over page drops the two
+   `+/(-)%` variance columns.
+⏭️ OPEN: UOB `Less: Total expenses` (2Q26) vs masterlist `Less: Operating
+   expenses` (4Q25). Same arithmetic slot — `Total income - r5 = Operating
+   profit` holds in both — but the names are NOT synonyms, so deliberately left
+   FLAGGED rather than aliased.
+⏭️ OPEN: UOB `Less: Allowance for credit and other losses` needs a general
+   leading-`Less:`/`Add:` strip in the normaliser (same words, prefix added).
+⏭️ OPEN: `FS_BALANCE_STATUTORY` still has no masterlist for ANY bank — costs
+   `Total equity` for DBS and `Total liabilities`+`Total equity` for UOB.
+⏭️ OPEN: EPS renders as `1` — `row_dim.unit` is NULL on the per-share rows, so
+   they inherit the document's modal `S$m` and format at 0dp.
+⏭️ OPEN: `run_doc.py --rebuild-db` dies on `infer_period` — no `1H25` token — AND
+   wipes the DB before it gets there (dropped to 14 DBS docs; restored from backup).
+⏭️ OPEN: the Streamlit Cloud deployment is undocumented in `app/DEPLOY.md`, which
+   covers only local + Cloud Run. It serves GitHub, so the DB must be ON the
+   pushed branch.
+
+---
+
+## 2026-08-07 — OCBC 4Q25 re-routed + 2Q26 ingested; DB collapsed to one; 1H26 renders
+
+✅ **OCBC 4Q25 Condensed re-routed through the fs path, $0.** Restored the spoilt
+   archive's scan/TOC/23 audit units (COPIED, archive kept intact), landed
+   `outputs/fs/ocbc_4Q25/`. Settled the open TOC question: the family-routed
+   STEP 1 branch landed **2026-07-16** (`c6c09f6`), before the 2026-07-29 ingest,
+   and `_toc_raw.json` (72 sections, Gemini shape, covers all 23 units'
+   `section_ids` with none missing) confirms it. The archived artifacts were
+   correct in SUBSTANCE — only filing + labels were Pillar 3.
+✅ **Three DBs collapsed to one ingest + one generated view.** `compiled_fs.db`
+   was pre-`f48599a` schema (no `row_dim.canonical_leaf_id`,
+   `col_dim.canonical_col_id/col_role`) so `_stamp_identity` died on it;
+   `compiled_2q26.db` was a per-run copy that had quietly become the working DB.
+   Rebuilt `compiled_fs.db` from `schema_v7` via `--rebuild-db`. **33.6MB→24.9MB
+   ingest, 12.2MB→8.6MB serving**, `compiled_2q26.db` retired.
+✅ **OCBC 2Q26 ingested — media release + Unaudited Interim FS, $1.89/47 calls.**
+   STEP 0 unblocked with `PYTHONPATH=$HOME/paddle-fix` (persists in `/home`;
+   `/tmp/paddle-scratch` does not).
+🐞 **Bare-year columns resolved to a FUTURE date.** 2Q26's Level 3 movements
+   tables print bare-year banners (`2026`/`2025`); the grammar maps a bare year
+   to 31 December, right for a year-end filing and wrong for the first HALF-YEAR
+   interim in the corpus — `2026-12-31` had not happened. The period guard
+   correctly refused the load. Fix: `clamp_bare_year_to_doc_period`
+   (`load_v7.py`) — no filing reports a period ending after its own reporting
+   date. Fired on exactly 3 tables, each warned.
+🐞 **The app found ZERO dashboard anchors for every bank.** `load_dashboard_anchors`
+   globbed `{bank}*_anchors.csv`; the anchor set is now one cross-bank pair
+   (`highlights_dashboard_anchors.csv` + `highlights_formulaanchors.csv`).
+   Selection was always the `bank` COLUMN, never the filename → glob `*{suffix}`.
+🐞 **OCBC's `N/` footnote convention was never stripped.** `Capital adequacy
+   ratios 8/ 9/` → `capital_adequacy_ratios_8_9`; 2Q26 RENUMBERED its footnotes
+   to `8/` → `capital_adequacy_ratios_8`. Same row, different address. The
+   ratios table scored 8/22, under `MIN_MATCH_FRACTION` (needs 11), so it was
+   never located and all 22 ratio leaves went unstamped. One char in
+   `_TRAILING_FOOTNOTE` (optional `/` per marker); 19/19 tests still pass.
+   **OCBC @1H26: 17/26 → 23/26 lines**, all six ratios recovered.
+✅ **Pipeline pivot: the concept layer is opt-in** (`--with-concepts`). STEP
+   3b/4a/4b/4c off by default — identity comes from the masterlist at load and
+   `compiled_v2.db` drops those tables. 3b/4b were also *crashing* on
+   `table_registry` (D6), aborting runs before verify + xlsx.
+✅ **`--rebuild-db` hardened**: `--only "4Q25,1Q26,2Q26"` rebuilds a maintained
+   subset, and a stale empty audit dir no longer aborts the whole rebuild (one
+   `DBS_1Q22_trading_update` was taking out all 24 docs via `load_doc`'s
+   `SystemExit`).
+📊 **Dashboard @1H26: DBS 25/26, OCBC 23/26, UOB 0/26** (9 docs, 616 stamped).
+⏭️ OPEN: **`table_type_id` last-writer-wins.** One printed exhibit legitimately
+   carries rows from ≥2 masterlist table types (OCBC `FINANCIAL HIGHLIGHTS` =
+   income + balance leaves), but `_stamp_identity`'s `UPDATE table_t SET
+   table_type_id` is unconditional so only the last survives. `_ANCHOR_SQL`
+   joins on `(table_type_id, canonical_leaf_id)`, so correctly-stamped leaves
+   are unreachable — costs OCBC `Net profit` and NAV at 1H26. Fix is to record
+   `table_type_id` per ROW (stamping is already per-row).
+⏭️ OPEN: `FS_BALANCE_STATUTORY` has no masterlist for ANY bank — `Total equity`
+   blank for both DBS and OCBC.
+⏭️ OPEN: UOB 1Q26/2Q26 PDFs present but not ingested — UOB is 0/26 at 1H26.
+⏭️ OPEN: `test_m2_canonical_leaf.py` fails on `no such table: fact_metric` —
+   fallout from the concept-layer pivot; the test needs updating to match.
+
+---
+
+## 2026-08-06 (cont'd) — column-level write audit; OCBC 4Q25 Condensed pulled as spoilt
+
+✅ **`audit_pipeline.py` now audits writes at COLUMN level, not file level.**
+   File-count-per-table was too blunt to act on: it flagged 12 "multi-writer"
+   tables, most of them the design working. Two passes writing DISJOINT columns
+   of one table is correct (`load_v7` lays the row down, a stamping pass adds
+   its own); a SHARED column is where one pass silently clobbers another.
+   New `column_writes()` pulls the actual column set from each statement via AST
+   string constants (adjacent-literal concatenation means multi-line SQL arrives
+   as ONE constant; f-string placeholders are blanked), excludes
+   `archive/`/`experiments/`/tests, and reports collisions + a full ownership map.
+   Result: 27 shared columns across 5 tables — and it immediately cleared two
+   suspects the file-level check had flagged.
+🐞 **Fixed the dead-code detector.** The entrypoint filter tested `"__main__" not
+   in <function defs>` — `defs` holds only `{name,line,args}`, so the string can
+   never appear and the filter never fired. `audit_pipeline.py` flagged *itself*
+   as dead code. Now regexes the source for the guard. **55 → 8** candidates.
+✅ **Verified the deterministic/LLM split on `row_dim.concept_key`.** Both passes
+   write the SAME column, so the column check flags it — but disjointness is
+   enforced on ROWS and is correct, two independent ways: `resolve_llm(con,
+   residue)` takes its work as an argument and never queries `row_dim` for NULLs
+   (no `FROM row_dim` in the file), and the suppression branch
+   (`resolve_deterministic.py:149`) `continue`s WITHOUT appending to `residue`.
+   Plus `AND concept_key IS NULL` on the UPDATE as belt-and-braces.
+🐞 OPEN: **`resolve_llm` logs stamps that did not happen.** `:178` increments
+   `rows_stamped` and `:172` writes a `concept_resolution_log` row unconditionally,
+   but the UPDATE's `concept_key IS NULL` guard may match zero rows — `rowcount`
+   is never checked. Reachable: the plain-unmatched branch
+   (`resolve_deterministic.py:151`) appends to `residue` WITHOUT clearing a stale
+   `cur_key`. The audit trail then disagrees with the table it audits, and the
+   Gemini call was paid for.
+🐞 **D6 root-caused — it is not a schema-version problem.** `table_registry` has
+   NO live creator: the only non-test `CREATE TABLE table_registry` was in
+   `migrations/migrate_add_mapping_layer.py`, archived TODAY in `b0e039d`.
+   `seed_registry.py:47` only INSERTs. So `compiled_fs.db` has the table (it was
+   migrated while that code was live, typed 303/375) and every freshly-built DB
+   does not (typed 25/410 — those 25 come from `stamp_tables`, not classify).
+   **It does NOT block the highlights dashboard**: the app reads `compiled_v2.db`,
+   which drops the concept layer by design and has no `fact_metric` at all
+   (`4d3cd50` un-gated highlights from it). `table_registry` is needed for the
+   concept/analytics layer — `build_fact_metric.py:316` joins it UNGUARDED —
+   not for the DBS leaf-addressed highlights path.
+🗄️ **OCBC 4Q25 Condensed FS pulled as spoilt** (archived, not deleted:
+   `archive/2026-08-06-ocbc-4q25-condensed-spoilt/`, 67 files, + `RESTORE.md`).
+   Ingested 2026-07-29 10:25, one day before family-aware output paths landed.
+   The router classified it `family='fs' confidence='high'` all along — re-checked
+   today — but `pass2/schema.py` hardcoded `_P3_ROOT`, so it was filed and
+   labelled Pillar 3. Cell VALUES are unaffected; location and labels are not.
+   Also cleared 3,329 rows from `compiled_v2.db` (25 docs remain; backup at
+   `db/compiled_v2.db.bak-before-ocbc-purge`; data still intact in
+   `compiled_2q26.db` + `compiled_fs.db`).
+⏭️ OPEN: did `run_doc.py:389`'s family-based TOC-framework branch exist on
+   2026-07-29? If not, the archived OCBC artifacts are wrong in SUBSTANCE (wrong
+   TOC framework), not just misfiled. `_toc_raw.json` hints it did — unverified.
+⏭️ OPEN: `fix_identity_misstamps.py:72` is a THIRD writer of `row_dim.concept_key`,
+   unguarded — no `concept_key IS NULL`, no `identity_source='human_anchor'`
+   exemption. Callers not traced; it can overwrite a human anchor.
+
+---
+
+## 2026-08-06 (cont'd) — DBS 2Q26 end-to-end: the first UNSEEN document
+
+Full writeup: `docs/followthrough.md` (lifecycle flowchart, per-stage
+inputs/outputs, 10 logged discrepancies).
+
+✅ **Ran the whole pipeline on a document never ingested before.** route(DBS/fs)
+   -> 43 sections -> 21 audit units -> 36 tables / 584 rows / 2,276 cells ->
+   **50/50 Overview leaves stamped**, dashboard renders **25/26 at 1H26**. The
+   one blank is `Total equity` (no FS_BALANCE_STATUTORY masterlist).
+🐞 **The first pass stamped 5 leaves, not 50.** Three defects that only appear
+   when the PRINT SHAPE changes between vintages — invisible on the six DBS docs
+   already loaded:
+   1. **Section printed as ONE table, not three.** 2Q26 emitted the whole Overview
+      as `OVERVIEW` (45 rows) with the three captions as body rows. Direct match
+      0/41. Worse, three logical tables competed for one `table_type_id` —
+      last-writer-wins left 28 correct leaves unreachable.
+      FIX `transforms.split_caption_tables()`: >=2 valueless min-level rows that
+      STATE A UNIT = several tables. **The unit test is load-bearing** — without
+      it the rule fired on `Earnings2`/`Reported earnings` (ordinary banners) and
+      broke 5 geometry tests. Also split `CAPITAL ADEQUACY` unprompted.
+   2. **Caption demoted to a body row silently changes a table's UNIT.** DBS's
+      half-year per-share table came through titled `DBS GROUP HOLDINGS LTD AND
+      ITS SUBSIDIARIES`; the loader takes the unit from the title, so every
+      per-share figure inherited `S$m` and NAV rendered **25** not **24.69**.
+      FIX title repair in the same transform.
+   3. **One line, two parents in the SAME document.** `Net book value` sits under
+      `Reported earnings` in the quarterly table, under the caption in the
+      half-year one. NOT a normalisation gap — normalisation is label-only by
+      design. FIX an alias row in the masterlist; `full_path` is exactly that
+      mechanism.
+✅ **`stamp_tables.py` now writes `table_type_id`.** The one-row masterlist edit
+   above forced a full re-load to take effect. The masterlist changes far more
+   often than the extraction; re-stamping is now standalone and seconds-long.
+✅ **`.venv-paddle` repaired** — it symlinked into `.venv/bin/` with no
+   `pyvenv.cfg`, so Python resolved to the system interpreter and lost paddleocr.
+   Now a symlink to `.venv`, per workstation-setup.md step 4.
+✅ `db/compiled_v2.db` rebuilt with 2Q26: 26 docs, 288 leaves, 25 tables typed.
+⏭️ OPEN: `--dry-run` ignored for a single `--pdf` (spends money); STEP 3b
+   `registry classify` crashes on a schema_v7 DB (`no such table: table_registry`)
+   AFTER a successful load; 1H26 basic EPS 4.27 sits below both 1Q26 (4.19) and
+   2Q26 (4.35) — looks like an average, verify against the filing.
+
+---
+
+## 2026-08-06 (cont'd) — STAMP AT LOAD: identity moves into load_v7
+
+The pipeline now emits a DB that is already stamped with document-INDEPENDENT
+identity. No post-hoc script in the required path.
+
+✅ **THE RULE, enforced not documented: `canonical_leaf_id` ALWAYS comes from
+   `data/derived/masterlist/`.** Never derived, never invented. Matching decides
+   WHICH masterlist row a DB row is; the id is copied verbatim. A miss stays
+   NULL. `_stamp_identity` re-checks every id against the masterlist set and
+   RAISES rather than writing one that is not there.
+   🐞 This exists because a stamping run matched against the generated
+   `masterlist_proposed_v3/` and wrote ids that disagreed with the authored file
+   (`of_which::net_interest_income` vs `of_which_net_interest_income`, and all of
+   FS_PER_SHARE). That DB was discarded and re-stamped.
+✅ **schema_v7 gains 4 nullable columns** — `table_t.table_type_id`,
+   `row_dim.canonical_leaf_id`, `col_dim.col_role`, `col_dim.canonical_col_id`.
+   They existed only in `compiled_v2.db` before, invented by build_compiled_v2 as
+   empty slots, so the loader's own output could never hold a stamp.
+✅ **`load_v7._stamp_identity()`** runs at the end of `load_units`, two stages
+   split by dependency: (1) `col_role='derived_skip'` — masterlist-INDEPENDENT,
+   every table, every doc; (2) `table_type_id` + `canonical_leaf_id` from the
+   masterlist. **NO-OP when no masterlist is present**, so all 76 pass2 tests and
+   any bare-schema load run unchanged. Partial coverage is the designed state.
+✅ **Tables are located by CONTENT, not caption** — a table IS the one whose
+   printed row paths match the masterlist's `full_path`. Strictly better:
+   immune to the caption collision that let PERFORMANCE BY GEOGRAPHY borrow
+   Overview leaves (12 unresolved + 3 rows wearing the wrong ids), and it finds
+   the same table in 1Q23/1Q25/2Q25/3Q25/1Q26/4Q25 off one masterlist.
+✅ **DBS 4Q25 Overview verified 46/46**, exact 1:1 with the masterlist, zero
+   extras. Periods: every real column stamped (`2H25 2H24 1H25 FY25 FY24` with
+   `period_start`); the only null-span cells are the `% chg` columns, already
+   `derived_skip`. NON-derived cells missing a span: **0**.
+✅ **Dashboard renders 25/26 straight off the DB** via
+   `data/derived/dashboards/DBS_highlights_dashboard_{anchors,formulaanchors}.csv`
+   keyed on `(bank, table_type_id, canonical_leaf_id)` — no fact_metric, no
+   concept_map, no bank_line_map, no v_fact_metric_serving. Rollups are DECLARED
+   (`Net interest income = commercial + markets = 14,500 FY25`), so
+   `resolved_by='conflict'` (219 facts today) goes away by construction.
+   Row 16 `Total equity` blank — anchors to FS_BALANCE_STATUTORY, not yet authored.
+🗄️ **Retired** to `archive/2026-08-06-masterlist-retirement/`:
+   `masterlist_proposed{,_v2,_v3}/` and `table_registry_seed.csv` (replaced by
+   content matching). **Deleted**: `build_masterlist_proposed.py`,
+   `build_masterlist_v3.py` — one-time generators, recoverable from git.
+   `masterlist_leaf_aliases.yaml` moved INTO `data/derived/masterlist/`, NOT
+   archived: its 5 entries are exactly the rows that fail on 1Q23.
+⏭️ Next: stamp DBS 1Q26; wire `findociq_app.py` onto the anchor path; author
+   FS_BALANCE_STATUTORY; fold the 5 aliases into the masterlist CSV.
+🐞 Still open from earlier today: `build_compiled_v2` NULLs `cell_fact.period_source`
+   that the loader populated; period-banner rows do not scope their block
+   (1,057 cells) and `is_period_text` rejects `DD Mon YY` (614 cells).
+
+---
+
+## 2026-08-06 (cont'd) — masterlist v3: reference-set authority + banner rule
+
+Full report: `docs/2026-08-06-masterlist-v3-build-report.md`. Output in
+`data/derived/masterlist_proposed_v3/`; `_v2` and the original untouched.
+
+✅ **Row tagging coverage 99.7%** (1,705/1,710 value-bearing rows given a
+   canonical leaf in place). Only **5 untagged rows** corpus-wide, each named in
+   `untagged_rows.csv`. Gate G3 was reframed to this definition — a failure is a
+   row that could not be tagged, not a leaf-count delta.
+✅ **Date-segment leaves 56 → 0.** Two classes carry period and contribute no id
+   segment: PERIOD_BANNER (valueless date row) and PERIOD_ROW (a *valued* date
+   row — UOB/OCBC print `Dec-25` as a leaf under a geography).
+✅ **Ghost-ancestors 330 → 41**, DBS `markets_trading_income::` phantom prefix
+   15 → 2 (both legitimate — the 5 curated aliases point at them and all 5
+   targets survive, 0 need re-pointing). DBS `FS_INCOME_SELECTED` holds at 21.
+✅ **Hierarchy anchors on the CAPTURED chain** (`row_dim.row_parent`, carrying
+   the printed-parent precedence from 01151d1); the banner rule is a repair for
+   orphans only. An earlier iteration re-derived from scratch and was wrong both
+   ways (DBS FS_PERF_BY_SEGMENT 45 rows → 9 leaves; OCBC NPA 18 → 43).
+✅ **Structure guard:** reference tables grouped by column signature, built
+   independently — one entry can never take rows from a differently-shaped
+   table (the v2 FS_BALANCE_SELECTED disease). 19 blocks carry `sub_table`.
+🐞 **normalize change forced (one):** `_TRAILING_FOOTNOTE` gained `(?<!\d)`. The
+   1-2 digit cap was no protection — the engine ate the TAIL of a longer run, so
+   `2024` lost `24` then `20`. That single rule was doing all three jobs: right
+   answer for `balance_at_1_january`, wrong answer fusing `31 Dec
+   2021/2022/2024/2025` into one `31_dec` identity. Now three separate rules;
+   19 tests in `pipeline/mapping/test_masterlist_derive.py`.
+🐞 **P1: seed col_axis inverted for all 6 equity rows** — components are COLUMNS,
+   movements are ROWS. Correction is `equity_component`, NOT
+   `period+equity_component`: `col_period` is NULL on every column, the period
+   comes from the title. 16 mismatches logged for a curated seed edit.
+🐞 **DBS Group equity panels (2024) and (2025) BOTH carry period=2025-12-31.**
+   Harmless for v3 (identities only, identical leaf sets) — **blocks the
+   stamping pass**, where two panels on one `(leaf, period)` key collide.
+⏭️ Gates 70 pass / 23 fail, all logged and emitted with `gate_status`. 15
+   NO_REFERENCE_TABLE are seed/caption gaps (DBS prints `Fair Value Hierarchy`,
+   seed names `Fair Value Measurement`) — gate-failed, never fed to the HY
+   fallback. Review queue 425 with ordinal suggestions.
+
+---
+
+## 2026-08-06 — printed-parent tests + masterlist re-run/re-measure
+
+Branch `mapping/masterlist-registry`. Full report:
+`docs/2026-08-06-printed-parent-rerun-measurement.md`.
+
+✅ **`pass2/test_printed_parents.py` — 15 cases.** The printed-parent path became
+   load-bearing hierarchy input in 01151d1 with zero coverage. Pins `hN` decoding
+   (positional headers; `section_header` takes no slot), the literal-label
+   nearest-match fallback, the shallower-than-child guard (DROPS, never clamps),
+   printed-wins-on-disagreement, and the residual warning (once per unresolvable
+   row, suppressed under geometry). Part C runs end-to-end through `load_units`
+   into a temp schema_v7 DB. **Every rule mutation-verified** to fail when
+   reverted — `c4` fails with `Markets trading income` vs `Total income`, i.e. it
+   reproduces the `pnl.nii.net` defect. `pytest pass2` 61 → **76**.
+🐞 **Two stale assertions in `test_load_v7.py` repaired** (red at HEAD, not from
+   this work). `_heads_a_block` needs `sums_to` to tell a terminal total from a
+   total-shaped header; those two fixtures called `row_parents_by_position`
+   without it. Now supply what the production caller supplies. Only ONE
+   production caller exists (`load_v7.py:1566`) and it always passes `sums_to`,
+   so the permissive no-evidence default is unreachable in production.
+✅ **Re-run reproduces last session's build.** replay → `compiled_reload_rerun.db`
+   → `compiled_v2_rerun.db` → `masterlist_proposed_v2/`. 368 tables / 6,331 rows,
+   identical. Registry diff vs `masterlist_proposed/`: OCBC + UOB byte-identical,
+   DBS one alias line reordered. The loader fixes were ALREADY in the committed
+   registry, and 3Q25 was already included. Tool change: `--out` on
+   `build_masterlist_proposed.py`. No normalizer touched.
+✅ **Orphans down.** Model path, absolute-level: **1,055 → 946** (baseline
+   reproduced exactly). Table-relative: 811 (12.4%) → **666 (10.5%)**.
+✅ **DBS 3Q25 phantom leaves gone.** `FS_INCOME_SELECTED` 23 leaves / 2 historical
+   → **21 / 0**. The two were `amortisation_of_intangible_assets::ecl_stage_3_sp`
+   and `…::ecl_stage_1_and_2_gp` — the documented mis-parent. "Six" is not
+   reproducible: that count predates the current id rules.
+🐞 **Historical count went UP, 336 → 339 — NOT a loader regression.** DBS −13 ✅,
+   OCBC **+16**. Decomposed: historicals whose only period is `4Q25`
+   (self-contradictory) 19 → 29, all OCBC = the known `Q4_DOCS` two-document bug
+   (worklist §2), made worse *because the width-overflow fix RECOVERED tables*
+   (`FS_RATIOS_KEY` 0 → 17 leaves, all active). Genuine historical 224 → **222**.
+   Residual OCBC rise is `FS_HIGHLIGHTS_COMBINED` id churn from the missing
+   page-split dedup step (`dedup_status` NULL, worklist §3.3).
+🐞 **GT regression BLOCKED.** `gt_check` needs `v_fact_metric_serving` →
+   `fact_metric` → `table_registry`; the reloaded DB has no mapping layer.
+   `concept.run --no-llm` succeeded, `build_fact_metric` failed on
+   `no such table: table_registry`. BEFORE baseline reproduced byte-identically:
+   609 match / 186 mismatch / 499 missing = **76.6%**. **The 92.2% figure is not
+   reproducible from the tree** (DBS 94.5%, UOB 79.6%, OCBC 49.2%) — its
+   definition needs pinning down before it is used as a gate.
+⏭️ **No curation applied**, per instruction. Next: fix `Q4_DOCS` → reference SET
+   per bank from the seed's `doc_kind`; run dedup against the replay; pin the
+   92.2% definition; make registry alias ordering deterministic.
+
+---
+
+## 2026-08-05 (cont'd) — masterlist LEAF layer + five loader fixes + compiled_v2.db
+
+Branch `mapping/masterlist-registry`. Full worklist:
+`docs/specs/2026-08-05-master-registry-next-steps.md`.
+
+### Loader fixes (`pass2/load_v7.py`) — all found by replaying real documents
+
+✅ **Printed parents are CONSUMED, not warned about.** The extractor emits
+   `parent='h1'/'h2'…` (a POSITIONAL header reference — `GRow.row_id` is None
+   throughout the corpus, which is why the old cross-check could never resolve
+   it and only ever warned, with position winning). Now resolved via
+   `resolve_printed_parents()`; a literal-label form (`parent='Total'`) resolves
+   too. This alone fixes the defect `lineage_identity_map.csv` logs for
+   `pnl.nii.net`: DBS 4Q25 says `Of which: Net interest income` → **h3 = Total
+   income**, and the position rule had put it under the markets book.
+✅ **Header-vs-terminal total discriminator.** The blanket "a `total` row is
+   never a parent" skip orphaned **1,055 rows** on the model path and
+   mis-parented others — DBS 3Q25's ECL rows landed under *Amortisation of
+   intangible assets* instead of *Allowances for credit and other losses*.
+   A total that **aggregates nothing** (absent from `sums_to`'s values) and is
+   followed by deeper rows is a section header and a legitimate parent. The
+   DEBTS ISSUED protection is preserved and now has its own explicit test.
+✅ **Width overflow is ROW-scoped.** Was `raise` → propagated through
+   `load_units`' `except: rollback; raise`, so one surplus cell discarded every
+   table in the document. OCBC 4Q25 media release: `'Total income'` emitted 6
+   cells against 5 declared columns (one duplicated `%`), destroying
+   `Key Financial Ratios`, `NII — Average Balance Sheet` and `Volume and Rate
+   Analysis`. The row is skipped WHOLE, not truncated — truncating assumes the
+   surplus cell is at the end, and a spurious leading cell would shift every
+   value one column left and load wrong numbers under right-looking headers.
+✅ **GATE A2 is TABLE-scoped.** Same pattern; its own comment said "fails the
+   whole table load" while the `raise` killed the document. `_load_table`
+   returns `None`, `load_units` counts it in a new `skipped_tables`. Cost of a
+   grammar gap: one table, not DBS_2Q25's 37.
+✅ **Two period-grammar gaps closed.**
+   - `9 Mths 2025` — fell past both nine-month patterns to the column-context
+     bare-year fallback, which claimed just the `2025` and returned **FY/31-Dec
+     for a Jan–Sep column**. GATE A2 caught the residual and refused the table;
+     the guard was right, the grammar was wrong. `_NINEM_CMP_RX` now takes
+     `9 Mths / 9 Mth / 9 Months / 9 Mos` (longest alternative first).
+   - `30 Jun 2025 NPA` — extractor **flattened** a two-level header
+     (`group='30 Jun 2025', leaf='NPA ($m)'` in sibling tables) into one leaf.
+     New SHARED-RESIDUAL RESCUE: if every period-candidate leaf in a table
+     leaves the *same* residual, that residual is a flattened measure token on
+     the axis, not a disqualifier. No term list, no per-bank branch;
+     `'Note 3 2025'` still correctly refused. Every rescue emits a warning.
+
+### Replay + compiled_v2.db
+
+✅ **`tools/replay_load.py`** — rebuilds from the tracked `parsed.json`/`meta.json`
+   audit artifacts. No Gemini calls, no re-extraction. Replay coverage is
+   complete: only 2 of 25 documents lack artifacts and both hold 0 tables.
+🐞 **Finding: `compiled_fs.db` could NOT be rebuilt from its own artifacts.**
+   Guards added after it was loaded now reject documents sitting inside it. The
+   35 MB file was effectively unreproducible. Fixed by the table/row-scoping
+   above; the replay now completes with 0 gate refusals.
+✅ **Replay: 368 tables / 6,331 rows / 23,834 cells**, vs `compiled_fs.db`'s
+   375 / 6,531 / 24,788. The shortfall is DUPLICATE COLLAPSE, not loss: the old
+   DB carried 32 `duplicate_page_split` tables (728 rows, 2,757 cells) —
+   `FINANCIAL HIGHLIGHTS (continued)` appeared **10×**, now 2×. Against the old
+   DB with duplicates removed (343/5,803/22,031) the replay is **+25 tables,
+   +528 rows, +1,803 cells**, and the three tables killed by the width abort are
+   back.
+✅ **`tools/build_compiled_v2.py` → `db/compiled_v2.db`** — the clean target
+   schema, built not inherited. **34 tables → 9**, **35.2 MB → 10.5 MB**.
+   `table_type_id` / `canonical_leaf_id` / `period_id` / `period_type` /
+   `canonical_col_id` / `col_role` / `period_source` all NULL awaiting
+   resolution; concept/geo/segment stamps, lineage ids, `line_no`, `colspan`,
+   `is_shade` dropped; `geo_dim` flattened, `SEG_TOTAL` removed. **Period chain
+   preserved end to end** (cell → col label → parent label → table title → section
+   title → doc period; quarter/half/FY all still derivable). True orphans
+   **659 (10.4%)**, down from 804 (12.3%).
+
+### Masterlist leaf layer
+
+✅ **`tools/build_masterlist_proposed.py`** — per-bank registry YAMLs, leaves in
+   document order, unioned across periods, seeded from `compiled_v2.db`. L1 is
+   consumed from `table_registry_seed.csv` and never regenerated.
+   DBS 644 / OCBC 603 / UOB 366 leaves. Phase 2 reverse-tag of the three 4Q25
+   docs: **0 unresolved**.
+✅ Four id rules: subtotal collapse · of-which memo parent · **banner ancestors
+   by scope not level** (value-presence is the only vintage-stable signal) ·
+   **suffix collapse** (133 ids folded).
+✅ `DBS FS_INCOME_SELECTED`: **55 → 21 leaves, all 21 active.** All six
+   "historical" leaves proved to be loader artifacts — 4 orphans, 2 mis-parents.
+✅ Normaliser: footnote superscripts stripped ANYWHERE (before NFKC, which folds
+   `¹`→`1`) — `ECL¹/²/³ Stage 1 and 2 (GP)` and `ECL Stage…` are one line, not
+   four; `&`→`and`. Caption resolution strips date subtitles, `(continued)`,
+   `audited`/`unaudited` (a vintage qualifier, not identity) symmetrically on
+   both sides: table-unresolved 3,597 → 1,826 rows, coverage 55% → 72%.
+✅ `data/derived/masterlist_leaf_aliases.yaml` — 5 human-confirmed renames.
+⏭️ **NEXT, highest value: reference set = ONE full document per bank.** The union
+   currently gives a 4-table trading update the same authority as a 45-table
+   full document. Includes a known bug — OCBC's full picture spans TWO 4Q25
+   documents but `Q4_DOCS` names one, so Media-Release-only leaves are wrongly
+   marked historical. See the spec §2.
+
+### Also
+
+🐞 `test_verify_cells.py` and `app/test_spec.py` call `sys.exit()` at module
+   scope, aborting pytest collection for any parent directory. `pytest` from the
+   repo root cannot run; suites must be invoked per-directory. Not fixed.
+🐞 `ingest_status` holds 4 rows for 25 documents, and 0 after replay — the only
+   store that distinguishes a skipped table from a merged one.
+✅ Tests: `pass2` 61 · `concept` 46 · `mapping` 16 · `app` 87.
+
+---
+
+## 2026-08-05 — push the Streamlit render set (app + config + DB) for the public link
+
+✅ **App render fixes shipped** — `format_highlight_value()` gained a
+   `per_share` branch (renders the value's own decimals; EPS 3.71 was showing
+   as `4`), and the KPH balance-sheet row now anchors
+   `bs.assets.customer_loans_gross` instead of the retired `_net`, so UOB's
+   352,180 surfaces (`docs/six-bug-diagnosis.md` bug 3).
+✅ **Concept layer: `bs.assets.customer_loans_net` RETIRED**, its 3 aliases
+   folded into `_gross` per the `lineage_identity_map.csv` review_flag policy
+   ("for customer loans, we use Gross"). ⚠️ `ratio.ldr`'s numerator moved with
+   it — **the LDR basis changed net → gross**; flagged in the dictionary, not
+   silently carried.
+✅ **Verified before push** — 87/87 `test_findociq_app.py` pass; app boots
+   headless and serves `HTTP 200` + `/_stcore/health ok` against the committed
+   `compiled_fs.db` (35 MB).
+✅ **Pushed the render set**: `app/findociq_app.py`, `app/highlights.yaml`,
+   `db/compiled_fs.db`, plus the pipeline changes that produced that DB.
+   Repo-root `requirements.txt` already forwards to `app/requirements.txt`
+   (Streamlit Cloud only reads the root), `.streamlit/config.toml` present at
+   both root and `findociq/`.
+⏭️ **Manual step remaining (only a human can do it)**: share.streamlit.io →
+   New app → repo `qyunhan/FinDocIQ`, branch `mapping/close-logged-items`,
+   main file `findociq/app/findociq_app.py` → Deploy. Record the resulting
+   `*.streamlit.app` URL in `app/DEPLOY.md`.
+🐞 **Known, not fixed here**: `app/DEPLOY.md` still names the older
+   `dashboard.py` as the main file; the Ingest tab's `run_doc.py` subprocess
+   and PDF page rendering cannot work on Streamlit Cloud (no PDFs in the repo,
+   no GCS creds) — the other tabs are unaffected. `dashboard_rows.yaml`'s DBS
+   `customer_loans` note still reads "D3-consistent: NET" against a now-gross
+   concept.
+
+---
+
+## 2026-08-04 (cont'd 7) — M3 cleanup + full re-hydration; found and fixed a guard bug the cleanup exposed; 5 new docs
+
+Session ran: masterlist spec → M3 store investigation → concept_key wipe →
+ingest inventory → runbook execution → guard fix → GCS sync.
+
+✅ **`docs/specs/2026-08-04-masterlist.md`** — the masterlist as a pipeline
+   component: L1 (table, declared) vs L2 (line item, derived), every store
+   named, and a **one-writer-per-level rule**. Pointers added in
+   `MAPPING_LAYER.md` and in the 3 writer docstrings. Debt recorded: L1 has
+   TWO writers (`table_registry_seed.csv` + `table_registry.yaml`); seed CSV
+   wins on disagreement.
+✅ **`docs/m3-store-relationship.md`** — verdict: `lineage_identity_map.csv`
+   and `bank_line_map.concept_key` are **two independent stores, sync hazard**.
+   Three writers (`backfill:corpus` 484 / `dashboard_rows.yaml` 94 /
+   `lineage_identity_map.csv` 15); the CSV supplied 2.5% of bindings and none
+   for DBS/UOB. Measured 72/72 agreement at the time — residue, not mechanism.
+✅ **`docs/m3-cleanup-report.md`** — wiped all 593 `bank_line_map.concept_key`
+   values. Snapshot `bank_line_map_pre_cleanup_2026_08_04` (2329 rows) + file
+   snapshot; non-concept columns verified unchanged by SHA-256 over the other
+   20 columns. `binding_source` does not exist on this schema (N/A).
+✅ **`docs/ingest-inventory.md`** — stage-by-stage script inventory, dead-code
+   candidates, DBS 4Q25 data shapes, runbook. Key finding: **`table_registry_
+   seed.csv` does NOT drive `table_type_id` tagging** — `classify_corpus()`
+   reads the YAML only (0 seed-CSV references in `registry.py`/
+   `seed_registry.py`). `run_doc.py` covers stages 1a/1b/2a and stops; 2b and 3
+   are hand-run.
+✅ **`docs/architecture/00-overview.md`** — M1/M2/M3 model, data path, storage
+   state, open questions. Entry point for a new team member.
+🐞→✅ **Guard bug in `load_anchors.py`, exposed by our own cleanup.** The wipe
+   cleared `concept_key` but left `map_status`, breaking the implicit invariant
+   `human_confirmed ⟹ concept_key IS NOT NULL`. 15 rows violated it, and
+   `load_anchors.py:130`'s conflict guard read `None != <concept>` as a rival
+   binding and aborted the run. Fixed with one condition
+   (`old_ck is not None`) + a comment recording why. Re-run reconciles exactly:
+   57 `confirmed_in_place` + 15 `superseded_placeholder` = 72 = the CSV's full
+   anchor set; 3 `skipped_pending_extraction` (the DBS per-share trio, as
+   designed).
+✅ **Re-hydration complete.** `bank_line_map` 2665 rows, **683** with a
+   `concept_key` from all three writers; `human_confirmed` with NULL concept:
+   **0**. `fact_metric` 2068 rows, 86.0% clean resolution. **DBS KPH coverage
+   26/26.**
+🐞 **Corrected an entry we logged earlier the same day**: the DBS NAV cell is
+   NOT blank — it reads 24.29 FY25/2H25. `backfill_map`'s corpus-stamped
+   `ai_proposed` row at the mis-parented address carries the concept from
+   `row_dim`, so the geometry defect's consequences are absorbed. EPS was never
+   affected at all (`dashboard_rows.yaml` authors both parent variants).
+   CORRECTION block appended to `DECISIONS.md` rather than editing the claim.
+✅ DB synced to GCS, md5-verified (`30845437…228c` both sides). First sync
+   since 2026-07-30.
+⏭️ **Next**: (1) regression test for `load_anchors` branch selection — logged in
+   DECISIONS as cheap/high-leverage, currently the fix's only protection is a
+   comment; (2) DBS + UOB `canonical_leaf` (L2); (3) converge the two L1
+   writers; (4) preflight A1a is a row-status counter, not a binding-health
+   check — it read 104 while every row had a NULL concept and the dashboard was
+   dark.
+
+---
+
+## 2026-08-04 (cont'd 6) — the masterlist written down as a pipeline component + a one-writer rule
+
+User: "this is the masterlist. record it somewhere. this is part of our
+pipeline. don't have multiple scripts to store the masterlist."
+
+✅ New `docs/specs/2026-08-04-masterlist.md` — authoritative. Defines the
+   masterlist at two levels (**L1 table** = declared, hand-authored from real
+   filings; **L2 line item** = derived by code from a benchmark document
+   instance), enumerates every file/table that stores it, names the readers,
+   and states the rule: **one writer per level; a new masterlist *source* is a
+   change to the existing writer, never a new script beside it.**
+✅ Pointer added at the top of `docs/specs/MAPPING_LAYER.md` — that spec covers
+   `table_registry`/`bank_line_map` as *schema* and does not define the
+   masterlist. Called out explicitly there that **`bank_line_map` is NOT the
+   masterlist** (it's a period-agnostic additive accumulation that enriches it).
+✅ One-line "MASTERLIST WRITER (L1/L2)" header added to the 3 writers
+   (`migrate_add_table_catalog.py`, `m2_canonical_leaf.py`, `seed_registry.py`),
+   each linking to the spec instead of re-describing the masterlist locally.
+🐞 **Documented, not fixed — L1 is split across two writers.** L1 is authored in
+   TWO files (`data/derived/table_registry_seed.csv` + `pipeline/mapping/
+   table_registry.yaml`) and loaded by TWO scripts. Historical, not designed:
+   the YAML vocabulary predates the seed CSV, and the seed renames/folds 11 of
+   the YAML's original 26 `table_type_id`s. Recorded as debt with a stated
+   tiebreak (**the seed CSV wins**) so the split can't silently become a
+   disagreement. Converging them touches idempotent migrations + the app — not
+   done under this task.
+📌 Live coverage recorded: L1 complete for all 3 banks (`table_catalog` 102 =
+   DBS 31 / OCBC 43 / UOB 28). **L2 exists for OCBC only** (`canonical_leaf`
+   364 across 13 table types); DBS and UOB are not built.
+⏭️ Next: build L2 (`canonical_leaf`) for DBS and UOB; then converge the two L1
+   writers.
+
+---
+
+## 2026-08-04 (cont'd 5) — M2 gate built for OCBC (canonical_leaf/canonical_leaf_alias); found + fixed a real dedup bug along the way
+
+✅ New `pipeline/mapping/m2_canonical_leaf.py`: `canonical_leaf` +
+   `canonical_leaf_alias` tables (additive, no `bank_line_map`/`fact_metric`
+   writes), built from each (bank='OCBC', table_type_id)'s 4Q25 benchmark
+   instance (13 table_types currently backing OCBC `fact_metric`, post-dedup
+   → 364 canonical leaves), `resolve_address()` gate function (exact >
+   alias > deprecated > unresolved), `verify_fact_metric`/
+   `verify_concept_bindings` (M3) checks, and 3 generated reports:
+   `docs/m2-ocbc-canonical-report.md`, `docs/m2-ocbc-unresolved-rows.md`,
+   `docs/m3-ocbc-concept-binding-check.md`.
+✅ Results: 327/608 OCBC `fact_metric` rows resolve; 281 don't — traced one
+   concretely to genuine cross-period table-layout drift (`FS_ALLOWANCES`'s
+   4Q25 table has no NPL-ratio row at all — an older period's version of
+   this table_type was a different physical table), confirming the gate is
+   surfacing real drift, not a matching bug. M3: 99/240 concept bindings
+   resolve; of the 4 dedup-shifted concepts, `pnl.eps.basic`/
+   `pnl.eps.diluted`/`reg.capital.cet1_ratio` each have ≥1 resolving
+   binding, but **`bs.nav_per_share` has ZERO** — flagged prominently, not
+   fixed (would require editing a `bank_line_map` address, out of scope).
+🐞→✅ **Found a real bug while building this**: `quarantine_duplicate_page_
+   tables.py`'s canonical-pick logic re-derived `doc_id` from a bare
+   `table_id` via `LIMIT 1` with no `ORDER BY` — `table_id` is only unique
+   WITHIN one document, not corpus-wide. Confirmed live:
+   `loans_to_customers_loans_to_customers_2025-12-31` exists under two
+   different OCBC docs; the bug tagged the wrong one (a legitimate,
+   unrelated table) as a duplicate while leaving the REAL duplicate
+   untagged. Found via an M2 side effect (large gaps in
+   `FS_CUSTOMER_LOANS`'s canonical position sequence). Fixed to carry
+   `(doc_id, table_id)` pairs through end-to-end; re-ran the full cascade
+   (F2 quarantine still 0, `stamp_human_anchors` still 303, `fact_metric`
+   rebuilt) to confirm nothing else broke. Regression test added.
+✅ 25/25 new M2 tests + 5/5 new quarantine regression tests + all existing
+   suites (85 app, 62 build_fact_metric, 12 concept, mapping/serving-views/
+   normalize) still passing.
+⏭️ Not done (explicitly out of scope per the task): DBS/UOB canonical sets,
+   the OCBC extraction root-cause, dashboard rendering changes.
+
+---
+
+## 2026-08-04 (cont'd 4) — OCBC/UOB per-table masterlist: found + quarantined a real duplicate-extraction bug (17 clusters, 49 table_t rows)
+
+User asked to extend the 4Q25-benchmark masterlist fix to OCBC/UOB. UOB
+turned out clean (single table per type, e.g. `FS_INCOME_STATUTORY` — EPS
+just lives as 2 embedded rows in the statutory income statement, no
+dedicated per-share table). OCBC did not.
+
+🐞→✅ OCBC's per-share content lives inside a combined "Financial
+   Highlights" ratios+per-share table — but that ONE physical page (4Q25,
+   page 12) was extracted 8 SEPARATE times as 8 different `table_t` rows,
+   one per section-header, all with byte-identical 136-cell values.
+   Corpus-wide: 17 duplicate clusters, 49/375 `table_t` rows (13%), 100%
+   isolated to OCBC's `media_release_financial_highlights` doc_kind across
+   all 4 periods it appears in. Asked the user how to handle it (quick
+   stopgap / investigate root cause / just flag) — chose stopgap.
+✅ New `pipeline/mapping/quarantine_duplicate_page_tables.py` (tag-don't-
+   delete, same pattern as `quarantine_f2_geo_wildcard.py`): picks one
+   canonical table per cluster (shallowest row hierarchy), tags the rest
+   `table_t.dedup_status='duplicate_page_split'`. Wired into the Table
+   Registry masterlist queries AND `build_fact_metric.py` (column-existence
+   checked, so it's additive/safe on a DB that predates this migration).
+   Rebuilt fact_metric: exactly 4 concepts changed
+   (`bs.nav_per_share`/`pnl.eps.basic`/`pnl.eps.diluted`/
+   `reg.capital.cet1_ratio`, all traceable to this exact cluster), verified
+   against a pre-dedup snapshot rebuild.
+🐞→✅ **Caught before shipping**: `_ordered_row_addresses` sorted by
+   `row_id` alone, which restarts at 1 per `table_id` — OCBC genuinely has
+   TWO different physical tables both classified `FS_CAPITAL_ADEQUACY` in
+   one document (page 12 summary + page 20 detailed capital breakdown), and
+   row_id-only sorting interleaved their rows by coincidental collision.
+   Fixed to sort by `(table_id, row_id)`; regression test added.
+✅ 85/85 app tests + 62/62 build_fact_metric tests + 12/12 concept tests
+   passing. Verified live: OCBC's deduped `FS_CAPITAL_ADEQUACY` masterlist
+   (38 rows, correctly grouped by table) and UOB's `FS_INCOME_STATUTORY`
+   masterlist (32 rows, clean single table) both render correctly.
+⏭️ Root cause of the OCBC extraction split (why table-detection creates one
+   table per section-header on this doc_kind) — explicitly deferred, not
+   investigated this session.
+🐞 **Known side-effect, not a regression**: post-dedup, the masterlist's
+   OCBC "times_captured" for `REG_LEVERAGE`/`REG_LCR`/`REG_NSFR`/
+   `FS_RATIOS_KEY` on this page will read lower than before — content is
+   still there, now correctly attributed to one physical table's
+   classification instead of counted once per duplicate.
+
+---
+
+## 2026-08-04 (cont'd 3) — Line-item masterlist rebuilt as a 4Q25 benchmark view, not a historical union
+
+User caught it live: DBS's FS_PER_SHARE showed 12 line items in the
+Table Registry tab's drill-down, but the real "Per share data" table only
+ever prints 7. Root cause: `bank_line_map` is period-agnostic and additive
+by design — every address ever seen since 2022 stays forever (footnote-
+number variants, a documented mis-parenting defect on `net_book_value`,
+3 structural-header rows). Listing all of it was right for "every identity
+this bank has ever used" but wrong for "what does this table actually
+look like."
+
+✅ New `line_item_benchmark_frame()` + shared `_ordered_row_addresses()`
+   helper (factored out of `line_item_display_order`, same address logic
+   `stamp_human_anchors` uses). Sources rows from `row_dim` for ONE
+   benchmark document instance — `BENCHMARK_PERIOD = "2025-12-31"` (4Q25,
+   confirmed the same `doc_period` string across all 3 banks incl. both of
+   OCBC's doc_kinds) — not from `bank_line_map`. `bank_line_map` is now
+   used only to ENRICH a matching printed row with concept_key/status/note;
+   an unmatched printed row still shows, as `status='not_yet_anchored'`,
+   instead of vanishing. Falls back to the most recent available period
+   (with a visible `st.warning`) if a table type has no 4Q25 instance.
+✅ Verified live: DBS FS_PER_SHARE's 12 historical addresses collapse to
+   exactly the 7 real 4Q25 rows. `net_book_value` correctly surfaces as
+   `not_yet_anchored` — its real 4Q25 address (`reported_earnings` parent,
+   per the actual row_dim geometry) matches NEITHER of its two existing
+   bank_line_map anchors (one bare top-level, one mis-parented under
+   `per_basic_and_diluted_share` from an older period) — a genuine gap this
+   view now exposes instead of hiding behind a stale match.
+✅ 84/84 tests passing (3 new). Verified in-browser via Playwright
+   screenshot, app auto-reloaded with no restart.
+🐞 **Found, not fixed** (out of scope of this ask): `bank_line_map` has 44
+   OCBC rows tagged `FS_PER_SHARE` that are actually Key-Financial-Ratios/
+   Capital-Adequacy/Selected-Income-Statement content, not per-share data —
+   invisible in the current UI (OCBC has no `FS_PER_SHARE` row in
+   `table_catalog` at all, so it never appears in the drill-down selector)
+   but still sitting in `bank_line_map` as garbage. Needs its own cleanup
+   pass, not a fold — likely a backfill-script classification bug distinct
+   from the `REG_*`/duplicate-registry issue.
+
+---
+
+## 2026-08-04 (cont'd 2) — Table Registry tab rebuilt as canonical FS masterlist; registry consolidation (item 2, first pass)
+
+### Table Registry tab (item 1, per user's explicit build order)
+✅ Rebuilt `findociq_app.py`'s "Table Registry" view from a per-document-
+   instance dump into the canonical, bank-specific, period-agnostic
+   masterlist the user described: `table_masterlist_frame()` (bank × doc_kind
+   × section × table_type_id, from `table_catalog`, cross-referenced against
+   live `table_t` occurrences) + `line_item_masterlist_frame()` (the stable
+   `(parent, line_item)` addresses `bank_line_map` holds for one selected
+   table). Old per-instance `registry_rows()` deleted (dead code).
+✅ Three mid-turn fixes the user caught live: (1) masterlist + table
+   dropdown must render in TOC/page order, not alphabetical — fixed via
+   `ORDER BY bank, CAST(page AS INTEGER)`, dropdown fixed separately by
+   dropping a redundant `.sort_values()` that was undoing it;
+   (2) OCBC's two document forms (`condensed_financial_statements` vs
+   `media_release_financial_highlights`) must not merge coverage counts —
+   `doc_kind` added to the masterlist's key, `_doc_kind_of()` built since
+   `doc_cadence` is incomplete (misses ≥1 of OCBC's own 5 documents);
+   (3) dev workflow — confirmed Streamlit's `fileWatcherType` defaults to
+   `auto`, so a plain browser refresh already picks up code changes; no
+   more killing/relaunching on a new port per edit.
+✅ `line_item_display_order()` added: ranks each line item's display
+   position by its real row_id in the most recent live document for that
+   exact (bank, doc_kind, table_type_id), using the same address-computation
+   rule (title-like-parent collapse) `stamp_human_anchors` uses — so the
+   drill-down reads in section/reading order, not alphabetically. Unranked
+   addresses (never seen in the reference doc) sort to the bottom.
+✅ 81/81 tests passing (`app/test_findociq_app.py`).
+
+### Registry consolidation (item 2, first pass)
+🐞→✅ User noticed "multiple duplicated registry for tables" while looking
+   at the new tab. Root cause: `migrate_add_table_catalog.py` had already
+   documented 11 `table_registry_seed.csv` renames/folds (e.g.
+   `FS_NPA`→`FS_NPA_COVERAGE`) but explicitly deferred the corpus re-stamp —
+   live data sat under the OLD id, the masterlist looked for the NEW one,
+   showing false "0 captures" for tables that were actually captured.
+✅ Ran that deferred re-stamp for the 6 pairs with zero `bank_line_map`
+   collisions (new `migrate_consolidate_table_type_ids.py`, also fixed
+   `table_registry.yaml` and `quarantine_f2_geo_wildcard.py`'s hardcoded id
+   so the fix survives the next `seed_registry.py`/ingest run). Verified:
+   `stamp_human_anchors` restamps the same 303 rows, F2 quarantine still
+   tags 0 cells, `fact_metric` rebuild diffed clean against a pre-migration
+   snapshot rebuild (the 11 concepts that shifted were pre-existing
+   `fact_metric` staleness, proven identical in both). Full writeup in
+   `docs/DECISIONS.md`.
+⏭️ Deliberately NOT done: `REG_LCR`/`REG_LEVERAGE`/`REG_NSFR`/
+   `REG_KEY_METRICS` → `FS_RATIOS_KEY` (4-way fold, 40 real `bank_line_map`
+   address collisions with existing `FS_RATIOS_KEY` rows — needs a
+   per-collision merge decision) and `FS_ALLOWANCES` (context-dependent
+   split, flagged unresolved by the original migration too). ~49 genuinely
+   UNCLASSIFIED FS live tables (never had ANY id) also still open — the
+   original "item 2" alias-gap work, not yet started.
+
+---
+
+## 2026-08-04 (cont'd) — Serve the dashboard: automation-readiness audit → live task, Step 1+2 done
+
+Follow-on to the same-day automation-readiness audit (22/27 metrics ready, 5
+gaps named). Reference-source rule reconfirmed before writing anything:
+nothing writes `lineage_identity_map.csv` programmatically; `bank_line_map`'s
+only writers (`load_anchors.py`, `apply_dashboard_rows.py`) read from the
+CSV/YAML and write forward, never the reverse.
+
+### Step 1 — verify/serve the 22 ready metrics
+✅ Confirmed 132/132 slots (22 concepts × 3 banks × {FY,2H}) serve in
+   `v_fact_metric_serving`, using the same as_at-aware stock-concept logic
+   as this session's E2 fix (a naive FY/2H-literal check under-counts by 12
+   — not a data gap, a query-writing trap, caught before reporting a false
+   negative). Dashboard confirmed running clean (health=ok, no exceptions)
+   and reads by identity with zero render-time derivation (re-grepped,
+   confirmed again).
+🐞 **Found, not fixed (flagged, not silently claimed done)**: the task's
+   acceptance criterion "3 empty-state types intact" does not hold as a UI
+   feature — `app/dashboard.py` never references `concept_disclosure` or
+   `concept_home` (the tables that back `not_disclosed`/`pending_anchor`
+   in `preflight_invariants.py`'s E1 check). The dashboard is a flat
+   row-list of whatever exists in `fact_metric`; it doesn't visually
+   distinguish WHY a slot is empty. Data-layer coverage is real and
+   verified; the 3-state UI distinction would be new work, not a
+   confirmation — flagged per this session's "stop and report, don't
+   scope-creep" discipline rather than built without being asked.
+
+### Step 2 — DBS per-share table: FIXED, all 3 gaps closed
+✅ Root cause found by reading the cached extraction artifact directly
+   (`outputs/pillar3/dbs_4Q25/.../overview_p4-8/parsed.json`): the
+   extractor swapped `title` (masthead) and `label_header` (the real
+   caption "Per share data ($)3,8") for this one table — both already
+   correctly captured, just in the wrong fields. **Zero re-extraction
+   needed.**
+✅ Checked blast radius before designing the fix: a naive "swap whenever
+   title looks like a masthead" rule would have corrupted 2 OTHER corpus
+   tables (one has no real caption in `label_header` to recover; one's
+   title merely mentions the filer as genuine boilerplate, not a masthead).
+   New `pass2.load_v7.repair_swapped_captions()` requires both signals;
+   fired exactly once corpus-wide. Full reasoning in `docs/DECISIONS.md`
+   and `docs/specs/2026-07-13-gtable-schema-v7-loader-design.md` §5
+   (decision-tree pivot, called out per CLAUDE.md).
+✅ Independently re-verified: headline coverage **158/162 → 162/162**
+   (spine complete). `fact_metric` diff corpus-wide: +10 rows (DBS
+   eps.basic/diluted, all periods), 0 removed, 0 changed. Other 3 tables in
+   the same extracted chunk cell-identical before/after. DBS eps.basic
+   FY=3.88/2H=3.71, eps.diluted FY=3.86/2H=3.69 (FY matches
+   `bank_line_map`'s own "3.88/3.86 underlying" note exactly). `pass2/`+
+   `concept/` 99/99, new `test_swapped_caption.py` 5/5.
+
+### Step 3 — nii.net segment-sum (DBS): DONE. OCBC noninterest.other: needed NOTHING (audit correction)
+✅ **Corrected my own earlier audit before touching anything**: OCBC
+   `pnl.noninterest.other` doesn't need a new anchor — it already serves
+   correctly via the EXISTING generic formula (`total - fee_commission`),
+   verified exact (FY25 5,464-2,411=3,053; 2H25 2,890-1,285=1,605). The
+   original "Link 2 missing" finding only checked `bank_line_map`, never
+   checked whether Link 3 already covered it. No CSV/bank_line_map edit —
+   would have been unnecessary, possibly conflicting.
+✅ DBS `pnl.nii.net` shipped a **segment-partition roll-up** — declared
+   once per bank (`concept_dictionary.yaml`'s new `segment_partitions:`,
+   `DBS: SEG_TOTAL = SEG_COMMERCIAL + SEG_MARKETS`), applies generically to
+   every additive concept at those segments, not hardcoded to nii.net. New
+   code path (`compute_ratios.segment_rollup`), not a formula-string
+   extension — a partition sum is the transpose of every existing formula
+   (same concept across segment ROWS, not different concepts at one grain).
+   Three independent guards: additive-only (unit kind), grain-match
+   (institution/period/span/geo/industry/legal_entity/unit, only segment
+   differs), fill-only (runs last, never overwrites a real value). Full
+   reasoning in `docs/DECISIONS.md`.
+✅ Independently re-verified: DBS FY25=14,500/2H25=7,171 **unchanged**,
+   still `resolved_by='prefer_table'` — confirmed this is a pure fallback,
+   not a value-changing fix. Corpus-wide `fact_metric` diff: **+2 rows
+   only** (2 historical quarters that had no group value at all before),
+   0 removed, 0 changed. `preflight_invariants.py` byte-identical to
+   pre-Step-3. New `test_segment_rollup.py` 8/8, `concept/` 46/46,
+   `pass2/` 61/61.
+🐞 **Flagged, not fixed**: `SEG_COMMERCIAL` is in neither `segment_dim` nor
+   `segment_map` (arrives only via `bank_line_map.segment_key`) — a
+   pre-existing segment-dimension bookkeeping gap, found while checking
+   whether partition-completeness could live there instead.
+✅ Decision-tree pivot: no — new pipeline stage, but no routing changes.
+
+### Step 4 — end-to-end dry-run: found the ONE missing wire-in, fixed it, now provably zero-touch
+✅ **Proved, not argued**: deleted `DBS_4Q25_performance_summary`'s doc
+   data on a scratch copy (kept the durable state — anchors/registry/
+   dictionary — intact), replayed from cached artifacts through the real
+   `run_doc.py` driver, zero API cost. First run: **0/45 classified, 0
+   anchors projected** — the chain was NOT actually zero-touch despite
+   every individual link being automatic in isolation.
+🐞→✅ **Root cause, found precisely**: `classify_corpus()` (writes
+   `table_t.table_type_id`) is called from exactly one place codebase-wide
+   — `mapping/seed_registry.py`, never `run_doc.py`. Fixed with new
+   `run_doc.step3b_registry()`, wired into both `run_one()` and
+   `run_db_steps_only()` before STEP 4a. Calls `seed_registry.py` (not
+   `classify_corpus` directly — `seed()` must run first so new YAML
+   aliases actually reach the DB before classification). Re-ran the exact
+   same dry-run with the fix: **38/45 classified, 4 anchors projected,
+   Commercial/Markets split formed, bit-identical to live (NEW=0 GONE=0
+   CHANGED=0)** — idempotent, not just successful. Confirmed re-seeding an
+   already-classified corpus is a no-op (0/375 changed).
+🐞→✅ **Caught in my OWN independent verification** (not the delegate's):
+   running the full test suite mutated `table_registry_alias` on the LIVE
+   db. Traced to `test_run_db_steps_only_order` — it mocks every whole-DB
+   step except the newly-added `step3b_registry`, so it called the REAL
+   `seed_registry.py` against the live DB path as a side effect of testing
+   step order. Fixed the test (added the missing mock + asserted the new
+   step's position). This is exactly why "re-hash the live DB after the
+   test suite" is standing procedure, not formality.
+✅ Also fixed in passing: `--db-steps-only`'s crash on a scratch DB outside
+   the repo tree (`Path.relative_to` raises on out-of-tree paths).
+🔄 **Deferred, deliberately**: `--verify-only`'s hard local-PDF requirement
+   (vs. this project's own GCS-backed `source_store.py` path) — a one-line
+   fix that would convert a fail-fast $0 offline mode into a silent network
+   fetch; needs its own flag and its own verification, not a drive-by on
+   the final piece of an already-large task.
+✅ Independently re-verified: `pipeline/test_run_doc.py`+`concept/`+
+   `pass2/` 115/115, `mapping/test_mapping.py` pass, live DB hash
+   re-confirmed identical to HEAD (post test-isolation fix), full
+   preflight on live unaffected (162/162, same 2 pre-existing FAILs — this
+   is a driver-behavior change, no retroactive data effect).
+✅ Decision-tree pivot: yes, called out — the automatic driver now runs
+   registry classification unconditionally for every future document.
+
+### findociq_app.py's Dashboard — found and fixed, while getting the user a live look
+✅ User asked to see the dashboard; surfaced that `app/findociq_app.py`
+   (the cobalt-themed sidebar-nav app, separate from `dashboard.py`) has a
+   stale docstring claiming 3 of 4 views are "Coming soon" — false, all
+   four are fully built. Corrected it.
+🐞→✅ Its Dashboard view had the same `fact_metric` vs
+   `v_fact_metric_serving` bug already fixed in `dashboard.py` this
+   session (Bank/Company duplicate rows). Fixed identically.
+🐞→✅ `app/highlights.yaml` had DBS EPS basic/diluted `concept: null` with
+   a 2026-07-30 note explaining why the resolver couldn't disambiguate —
+   exactly what this session's Step 2 fix (DBS per-share table
+   classification) unblocked via the parent-qualified anchor mechanism.
+   Un-nulled both, updated the note; named (not fixed) the remaining
+   underlying-vs-reported basis nuance, same class as `net_profit`'s
+   existing `basis` column.
+✅ Verified via direct function smoke-tests against live data (zero
+   warnings, 26/26 items, DBS EPS FY25=3.88/3.86 correct) since no browser
+   tooling is available in this environment to screenshot — stated
+   explicitly rather than claimed as full UI confirmation.
+   `app/test_findociq_app.py` 68/68 pass.
+🔄 Flagged, not fixed: `default_basis()` picks `as_at` as the initial view,
+   under which the whole "Per share" section renders blank until the user
+   switches basis — pre-existing, unrelated to this change.
+
+### Bottom line — the automation-readiness goal, closed
+**All 27/27 spine metrics are now automation-ready, and the pipeline is
+provably end-to-end executable for a same-layout DBS release with ZERO
+human touch** — proven by an actual re-ingest dry-run, not asserted from
+reading code. One git worktree (`findociq-docs/`, branch `docs/handover`)
+surfaced during this work — confirmed it's the user's own separate work,
+not mine to touch; left alone, noted in memory so it isn't re-flagged.
+
+### findociq_app.py Dashboard — 3-bank comparison toggle + click-to-chart
+✅ User asked for bold section headers (already existed, confirmed by
+   reading the code, carried into the new view below) + a "3 bank
+   comparison toggle" with click-into-item charting.
+✅ New `st.toggle` + `highlights_compare_grid_frame` (item rows x bank
+   columns for one period, same section-header-bold convention as the
+   existing per-bank grid) + native Streamlit row-click
+   (`on_select="rerun"`) reusing the EXISTING "Item over time" chart —
+   no duplicate chart logic.
+🐞→✅ **Caught before shipping**: Streamlit's table selection is sticky
+   across reruns, so a naive click-handler would silently stomp a user's
+   manual selectbox change back to the stale table click on the next
+   rerun. Fixed by tracking whether the click actually changed.
+✅ 4 new tests, `app/test_findociq_app.py` 72/72 (was 68/68). Smoke-tested
+   the full render path against live data, no exceptions. App relaunched,
+   clean startup, no errors through several real reruns.
+🐞 **Found, flagged, not fixed — genuine design tension for the user to
+   decide, not mine to resolve unilaterally**: building the comparison
+   table exposed that stock concepts (`bs.equity.total`, some banks'
+   `bs.liabilities.total`, UOB `bs.assets.customer_loans_net`) render
+   BLANK under "Full year"/"Half-year" basis — not a data gap (values are
+   correct, verified in this session's E2 fix) but because `period_label`'s
+   OWN documented design explicitly refuses to let an `as_at` stock value
+   share a column with an `FY` flow value — the opposite treatment from
+   E2's pipeline-layer fix, which treats them as the same instant.
+   Workaround today: pick the "Point in time (as at)" basis for these
+   items. Not merged — overriding an already-deliberate design decision is
+   a product call, not a bug fix.
+
+---
+
+## 2026-08-04 — Resume audit: found + closed a 7th issue (self-inconsistent HEAD) before starting the 6-item list
+
+Per this session's brief ("Resume from `e8e78f1`"), read PROGRESS.md + DECISIONS.md
+first as instructed — but the working tree was NOT clean at `e8e78f1`. 13 tracked
+files modified + 4 untracked, none logged anywhere. Investigated before touching the
+DB or starting item 1, per the standing rule ("an unattributable change is a bug —
+investigate, don't proceed").
+
+✅ **DB integrity confirmed clean vs git**: live `db/compiled_fs.db` hashes identical
+   to the `e8e78f1` blob (`1a0808f8…`) — nothing has written to the DB since the
+   commit. The `docs/findings/2026-08-03-flow-map.md` audit's "concurrent claude
+   process (PID 932)" alarm
+   describes an episode that predates `e8e78f1`; not a current risk. No other `claude`
+   process running (checked `ps aux`).
+🐞→✅ **7th finding: `e8e78f1` shipped a DB whose code was never committed with it.**
+   Full root-cause + fix in `docs/DECISIONS.md` (2026-08-04 entry). Summary: the
+   committed `build_fact_metric.py` had no `legal_entity`/unit-promotion logic, yet
+   the committed DB's `fact_metric` (3,558 rows) could only have been built by code
+   that has both — that code was sitting uncommitted in the tree. Verified by
+   reproduction (scratch copy of `pre_reresolve_2026-08-03.db` + the uncommitted
+   `concept/run.py --no-llm → build_fact_metric.py → compute_ratios.py` →
+   byte-identical `fact_metric`/`row_dim` vs the live DB), then committed
+   `build_fact_metric.py`, `compute_ratios.py`, `validate.py` (+ new
+   `assert_single_legal_entity_per_group` hard gate), `test_fact_metric.py`,
+   `test_validate.py` as their own continuation commit. HEAD is now reproducible.
+✅ **FLOW_MAP.md** relocated to `docs/findings/2026-08-03-flow-map.md` + committed.
+   It's the read-only audit that independently found the same gap (its "G2") —
+   written *before* the fix above landed, so it saw an intermediate, inconsistent
+   2,524-row `fact_metric` mid-rebuild. Real, dated, thorough (stage inventory,
+   feature provenance, seam analysis) — kept, not discarded. Prepended a status
+   header marking G1/G2/G3/G8/G4/G5/G11 fixed-since, G7/G10(→D1)/G12/G13 still open
+   and carried into this session's worklist. No stale references to the old root
+   path found elsewhere in the repo.
+✅ **Second uncommitted thread, classified and committed as 3 attributed commits**
+   (none touched `legal_entity` — a separate, unlogged effort from the same prior
+   session):
+   - **DBS anchor correction** (`dashboard_rows.yaml` + `apply_dashboard_rows.py`'s
+     new `retire_orphans` + `mapping/test_mapping.py`): 5 `FS_BALANCE_SELECTED`
+     anchors re-parented to top-level per the DBS geometry branch's actual
+     hierarchy; old anchors deprecated (never deleted) with `superseded_by`.
+     Verified via `apply_dashboard_rows.py --check` (read-only) against the live
+     DB: 89 authored rows, 0 problems — yaml and `bank_line_map` already agreed.
+   - **D27 + D29** (`run_doc.py`, `verify_cells.py`, their tests): currency-prefix
+     stripping in `norm_token` (S$/US$/$/SGD/USD/RM/HK$) before numeric parsing;
+     a verify still failing after `max_rounds` now writes a durable `ingest_status`
+     record + loud stderr block naming the skipped downstream stages, instead of a
+     bare `sys.exit(1)`. Both fixed/failure paths only — no effect on current DB
+     state. Tests green.
+   - **legal_entity follow-ups found while classifying**: `dashboard.py` (reads
+     `v_fact_metric_serving`, not raw `fact_metric` — was about to resurface the
+     Bank/Company duplicate rows the serving view exists to hide) and `sync_bq.py`
+     (syncs `v_fact_metric_serving` to BigQuery too). Both committed onto the
+     legal_entity thread as follow-ups, since that's what they belong to.
+   - **`tools/timeseries_metrics.py`** (new, + `data/derived/timeseries_metrics.
+     jsonl`): read-only before/after metrics harness, confirmed no
+     INSERT/UPDATE/DELETE/DROP anywhere. Running it surfaced one non-issue worth
+     recording: its `anchor_coverage` check expects 89 `human_confirmed`
+     `bank_line_map` rows, found 104. Not a defect — 89 from `dashboard_rows.yaml`
+     + 15 from a second legitimate source, `mapped_by='lineage_identity_map.csv'`.
+     The tool's expectation constant is just narrower than the DB's actual
+     provenance; noted, not fixed (out of scope this pass).
+✅ **HEAD is now fully reproducible and every uncommitted thread is attributed.**
+   7 commits since `e8e78f1`: legal_entity axis + 3 follow-ups (dashboard.py,
+   sync_bq.py — folded into their own commits), DBS anchor correction, D27+D29,
+   the metrics tool, FLOW_MAP.md relocation.
+
+### Item 1/6 — F2 FIXED
+✅ Root cause was bigger than scoped: `FS_GEO_INCOME`-shaped tables exist for
+   **UOB and DBS** (DBS = 942/1,117 tagged cells), plus an untagged 790-cell
+   segment-panel equivalent the quarantine script never covered. Fixed with a
+   new NO_WILDCARD_SCOPES mechanism (`dim_geo`/`dim_segment`/`dim_industry`,
+   two independent detection signals) — full design + the deliberately-left-
+   open tension in `docs/DECISIONS.md` (2026-08-04) and
+   `docs/specs/2026-07-14-concept-resolution.md`'s pivot section. Delegated to
+   deep-reasoner (scratch-copy-first discipline followed), then independently
+   re-verified by the orchestrator: `preflight_invariants.py` re-run directly
+   (not trusted from the report) confirms F2 PASS, `quarantine_f2_geo_wildcard.
+   py` re-run confirms 0 tags (idempotent), 26/26 `pipeline/concept/` tests
+   green. One claim in the delegate's report was checked and corrected: it's
+   NOT a dashboard regression (`app/dashboard.py` never imports `query_db`),
+   only a standalone analyst CLI's `--dimension` flag.
+🔄 **Handed to item 2 (B6/D2)**: the grain-correct fix — a breakdown table may
+   supply dimension MEMBERS but never the canonical `(GLOBAL, SEG_TOTAL)`
+   slot — lives one layer down in `build_fact_metric`, not done as part of F2.
+
+### Item 2/6 — B6/D2 re-checked: B6 FIXED, D2 partially fixed (residue is 3 separate, deliberately-unfixed mechanisms)
+✅ B6's own signature was measuring the wrong thing (a table-level proxy, wrong
+   in both directions — proof: fixing the real defect made the proxy count go
+   UP, 63→73, while the true signature went to 0). Redefined to assert
+   `load_v7`'s own GATE A2 post-hoc. Real defect: the 2026-08-03 period-grammar
+   fix's own delivery mechanism ("STEP-3 reload of all docs") never ran — 39
+   columns across the 3 `*_trading_update` docs still had `col_period IS NULL`
+   on labels the current grammar parses fine. Fixed with new
+   `pass2/backfill_col_period.py` (re-derives `col_period` in place by
+   replaying the loader's own functions — no re-extraction). Full root cause +
+   the proxy-was-wrong proof in `docs/DECISIONS.md` (2026-08-04) and
+   `docs/specs/2026-08-03-period-uniform-rule.md`.
+✅ D2's largest slice (30/209, stale `col_period`) shared B6's root cause and
+   is fixed by the same backfill. **The other 179 are NOT period-related** —
+   confirmed by replaying `_canonicalize`'s grouping on all 209 pre-fix
+   conflicts: 67 measure-axis collisions (`average_balance_sheet`: one row ×
+   `Average balance ($m)`/`Interest ($m)` columns — same shape as F2, axis is
+   measure not dimension), 92 dictionary alias over-claiming
+   (`reg.capital.cet1_ratio` claims 3 non-equivalent labels), 20 cross-exhibit
+   basis clashes. **Deliberately not fixed this pass** — each is its own
+   design decision, not a period-fallback artifact; bundling them would repeat
+   the "code lands without attribution" pattern this session already
+   corrected once (the 7-commit cleanup above).
+✅ Independently re-verified (not trusted from the delegate's report):
+   `preflight_invariants.py` — B6 PASS, D2 179/293, A4/D1/E2 byte-identical
+   (D1's list confirmed pre-existing), F2 still 0. `pass2/` 56/56, `concept/`
+   26/26, new backfill tests 5/5.
+
+### Item 3/6 — A4 fixed: 2 real gaps closed; the "title==0" acceptance bar itself rejected (same premise-error shape as B6)
+✅ "Apply the resolution corpus-wide" would have changed nothing — A4's check
+   already RE-RESOLVES live on every run, it wasn't being skipped. The real
+   defects were two general gaps in `normalize_exhibit_title`
+   (`pipeline/mapping/normalize.py`): hierarchical/lettered note numbering
+   (`13.2 Geographical segments`) wasn't stripped, so renumbering between
+   quarters fragmented the same exhibit's key; spelled-out period qualifiers
+   (`First Half 2025 Performance`) weren't stripped either (only the bare
+   year was), fragmenting OCBC's one income summary into 8 unclassified keys.
+   Fixed both, plus 15 `table_registry_alias` rows + 2 new type blocks (data,
+   not code — matches "the mechanism already exists").
+✅ **The 22 title-level matches are not a defect** — inspected all 22
+   individually; `registry.py`'s own cascade documents title as the CORRECT
+   identity for DBS-shaped documents. Forcing them to 0 would require
+   section-level aliases proven actively harmful (merges DBS Group/Company
+   legal entities; hijacks OCBC's Allowances tables). Redefined A4 to assert
+   coverage (`unclassified==0`), not match level. Same premise-error shape as
+   B6's proxy-was-wrong finding — verified by reading contents, not asserted.
+   Full reasoning in `docs/DECISIONS.md` (2026-08-04) and
+   `docs/specs/MAPPING_LAYER.md`.
+✅ **Unexpected, intended coupling**: better `table_type_id` coverage
+   (261→302/375) strengthened F2 — 9 more spurious spine concepts un-stamped
+   via `dimensional_scopes`'s declared-signal path. Quarantine still 0.
+🔄 **Residual, honestly reported, not silently dropped**: spine unclassified
+   33→13 — the brief's acceptance assumed residuals would be narrative/
+   out-of-scope; **none of the 13 are**. All real exhibits, blocked by two
+   further causes named in DECISIONS.md: (a) DBS's running page header
+   captured as table title upstream (extraction defect, 4 tables); (b) 7
+   OCBC `<period> Performance` tables where the section header IS the title
+   with no separate caption (needs a non-alias disambiguation mechanism).
+   Both out of scope this pass — future session.
+✅ Independently re-verified: `preflight_invariants.py` — A4
+   `{composite:2, section:118, title:22, unclassified:13}`, B6/F2 still
+   PASS/0, D2/E2 byte-identical, 4 FAILED of 21 (same set). `pipeline/
+   mapping/`, `pipeline/concept/` 26/26, `pipeline/pass2/` 56/56 all green.
+✅ **Decision-tree pivot, called out**: `normalize_exhibit_title` changes
+   routing for every future document (41 tables moved UNCLASSIFIED→typed
+   this run). Recorded in `docs/specs/MAPPING_LAYER.md`.
+
+### Item 4/6 — D1 FIXED: the brief's own risk read was backwards on both halves
+✅ The 4 `ratio.*` concepts (brief: "pure string-spelling variants") were
+   actually a genuine **100x scale bug** — `%` rows are percentage points,
+   `percent` rows are fractions. Relabeling without rescaling would have
+   silently corrupted a real discrepancy into invisibility. The per-share
+   concepts (brief: "more concerning, a genuine wrong-unit candidate") were
+   actually fine — concept and value both correct, just an inherited-caption
+   unit string. Root cause: `concept_dictionary.yaml`'s `unit:` is a KIND,
+   `fact_metric.unit` needs a STRING, and the two vocabularies were leaking
+   into the same column (plus a literal `*10000` hardcoded in one formula
+   only, so every OTHER percent formula silently emitted a bare fraction).
+   Fixed with `load_dictionary._UNIT_KINDS` (kind → canonical string + scale,
+   declared once); `build_fact_metric`/`compute_ratios` both enforce at write
+   time; new `validate.assert_single_unit_per_concept` hard gate alongside
+   the legal_entity one. Full reasoning + evidence in `docs/DECISIONS.md`
+   (2026-08-04).
+✅ **Verified against dashboard-facing reference values** (highest-stakes
+   item so far — this directly changes displayed ratio numbers): UOB
+   `ratio.roe` FY=9.6/2H=7.6/1H25=11.7/FY24=13.3/2H24=13.5 and OCBC 4Q25=11.6%
+   — all exact matches to figures already confirmed earlier this session.
+✅ Independently re-verified: `preflight_invariants.py` — D1 PASS (0), both
+   hard gates pass (unit: 49 concepts/0 violations; legal_entity: 2,207
+   groups/0 violations), A4/D2/E2 byte-identical, 3 FAILED of 21 (down from
+   4). All 6 `validate()` suspicion-check counts byte-identical to
+   pre-change baseline. New `test_unit_canonical.py` 6/6, `concept/` 32/32,
+   `pass2/` 56/56.
+🔄 **Residual, named not chased**: now-consistent scales expose bad formula
+   INPUTS previously camouflaged as fractions (`ratio.nim` max 468,
+   `credit_cost_bps` up to 106000) — this is D2's already-logged
+   measure-axis/alias residue feeding the formulas, not a new problem; the
+   fix made it visible, which is correct behavior.
+✅ Decision-tree pivot: no — serving-layer canonicalization + hard gate only.
+
+### Item 5/6 — E2 FIXED: not an accounting decision (the brief's framing) — a check bug hiding two real data bugs
+✅ Investigated read-only first (orchestrator kept the accept/reject call
+   per CLAUDE.md, given the brief framed this as accounting judgment).
+   **None of the 12 needed a decision** — all 6 (bank,concept) combos
+   already resolved correctly; E2 only counted FY/2H spans, and every
+   failing concept is `nature='stock'` (an instant, not a duration) whose
+   natural span is `as_at`. Proof: `bs.equity.total` is reported by all 3
+   banks and none print it in any period-columned exhibit.
+✅ **Two real data bugs found and fixed FIRST** (fixing the check alone
+   would have made E2 "pass" on wrong numbers — caught before implementation,
+   not after):
+   1. OCBC `bs.liabilities.total`/`bs.assets.total` served a SUBTOTAL
+      (502,719/566,079) instead of the GRAND TOTAL (612,118/675,688) — fixed
+      with a general row_depth tie-break in `build_fact_metric`'s conflict
+      resolution (checked corpus-wide, 13 candidate groups, also corrected
+      DBS `bs.equity.shareholders`/`deposits_casa`/`bs.assets.npa`/
+      `credit.allowances_*`).
+   2. DBS `bs.assets.customer_loans_net` served -23,317 (a cash-flow
+      MOVEMENT row) for a stock concept needing the closing balance
+      (445,011) — wasn't even in E2's original 12, found because it's the
+      same concept as the UOB item under investigation. Fixed generally:
+      stock concepts excluded from resolving off cash-flow-statement rows.
+   3. Then E2's span taxonomy: stock concepts satisfied by `as_at` at the
+      matching period-end date.
+   **Independent verification the fix is right, not just that the check
+   passes**: the balance-sheet identity (Assets = Liabilities + Equity) now
+   holds EXACTLY for all three banks — OCBC was previously off by 109,609
+   (the subtotal bug).
+✅ **Follow-on fix caught before committing**: E1's own bucket counts
+   stopped summing to `slots` after the E2 fix (12 newly-excused slots fell
+   into an uncounted gap), freezing the headline number at 146/162 despite
+   E2 going 12→0 — contradicting the brief's explicit expectation the
+   number rises. Fixed with a precise per-span increment; E1's `record()`
+   upgraded from an unconditional `True` to actually asserting the
+   bucket-sum invariant (why the drift went unnoticed in the first place).
+✅ Independently re-verified at each stage: **19 PASS / 2 FAIL (A4, D2 —
+   both pre-existing, named residuals) of 21**. Headline coverage
+   **146/162 → 158/162**. `concept/` 38/38, `pass2/` 56/56, new
+   `test_grain_resolution.py` 6/6, all prior session test files still green.
+✅ Left alone per no-scope-creep discipline: UOB's spurious span=NULL
+   487,707 row (already-logged D2 residue) and D2's other 174 conflicts.
+✅ Decision-tree pivot: no.
+
+### Item 6/6 — full gate re-run: 19 PASS / 2 FAIL — PARTIAL PASS, dashboard test does NOT proceed
+✅ Final `preflight_invariants.py --db db/compiled_fs.db` run, all 21 checks:
+
+```
+PASS: A1a A1b A2 A3 B1 B2 B3 B4 B5 B6 C1 C2 C3 D1 E1 E2 E3 F1 F2   (19)
+FAIL: A4 (13 unclassified, each named), D2 (175/289 conflicts)     (2)
+```
+
+✅ **Headline coverage: 90.1% → 97.5%** (146/162 at session start →
+   **158/162**). F2 removed spurious rows (canonical values already
+   counted, as predicted); E2's stock/as_at fix + the two data bugs it
+   surfaced (OCBC subtotal-vs-total, DBS cash-flow-movement) added the real
+   12-slot rise.
+🛑 **Per the brief's own rule ("Do NOT proceed to the dashboard on a partial
+   pass"), the dashboard test does NOT proceed this session.** Both
+   remaining failures satisfy the brief's fallback condition ("named,
+   root-caused, and... added to PROGRESS.md for the pass after") —
+   neither is an unexplained failure:
+   - **A4** (13 unclassified spine tables): 4 are a DBS upstream
+     caption-extraction defect (running page header captured as table
+     title); 7 are OCBC `<period> Performance` tables with no caption of
+     their own beyond the section header (a broad alias would hijack the
+     Allowances tables under the same header, proven harmful during the A4
+     pass). Both need a non-alias mechanism, not a registry-data addition.
+   - **D2** (175/293 residual grain conflicts): 3 distinct, already-classed
+     mechanisms — 67 measure-axis collisions (`average_balance_sheet`:
+     row=concept, column=measure, same shape as F2 but the wrong axis), 92
+     dictionary alias over-claiming (`reg.capital.cet1_ratio` claims 3
+     non-equivalent labels), 20 cross-exhibit basis clashes (commercial-book
+     vs statutory cuts of the same doc). Each needs its own design decision
+     (a measure-axis grain rule; dictionary re-granulation; explicit
+     tier-precedence), not a period-fallback-style fix.
+   Neither residual affects a canonical spine figure currently served to
+   the dashboard — both were checked against dashboard-facing values during
+   their respective fix passes (F2/B6D2/A4/D1/E2) and found clean.
+⏭️ **For the next session**: fix A4's 11 residual tables (upstream caption
+   extraction for DBS's 4; a non-alias disambiguation mechanism for OCBC's
+   7) and D2's 3 named mechanisms, in that order or whichever the next
+   session's priorities dictate — then re-run the full gate. If it passes
+   clean, the dashboard test (`dashboard_test_prompt.md`) proceeds.
+
+### Session-wide summary
+- **7 preliminary commits** (108009b back through the legal_entity-axis
+  commit) resolved a self-inconsistent `e8e78f1` HEAD before any of the
+  6-item list started — full writeup at the top of this file and in
+  `docs/DECISIONS.md`.
+- **5 commits closed the 6-item list** (F2, B6/D2, A4, D1, E2 — D1/E2 are
+  the two most consequential, changing displayed ratio and balance-sheet
+  figures; both were checked against known-good reference values, not just
+  against the gate, before committing).
+- **Recurring pattern across F2, B6, A4, and E2**: the task brief's own
+  characterization of a finding was wrong and had to be corrected with
+  evidence before fixing it — a proxy measuring the wrong signal (B6), an
+  acceptance bar itself being the defect (A4), a "cosmetic" collision that
+  was actually a 100x scale bug and a "concerning" one that wasn't (D1), an
+  "accounting decision" that was actually a check bug hiding two data bugs
+  (E2). Every one of these was verified by reading actual values before
+  accepting the correction, not asserted.
+- **db/compiled_fs.db is git-tracked** (deliberate, for Streamlit Cloud
+  deploy — confirmed via `.gitignore`'s explicit un-ignore) and is now
+  reproducible from the committed code at every commit in this session's
+  chain — the original problem (a committed DB whose code was never
+  committed with it) is what triggered the whole investigation and does not
+  recur here.
+
+---
+
+## 2026-08-03 — Pre-flight assertion pass: 6 open items found, DB retained + quarantined, dashboard test BLOCKED
+
+**Snapshots (durable, in-repo, not git-tracked — see `.gitignore`; hashes are the
+durable record):**
+- pristine (pre-re-resolve): `db/snapshots/pre_reresolve_2026-08-03.db`
+  sha256 `2de723b7e723bda408eefc462b85d6194e61ea88d1fa3e67a85659450d7b18a5`
+- current (post-re-resolve, retained as live `db/compiled_fs.db`):
+  `db/snapshots/post_reresolve_2026-08-03.db`
+  sha256 `82d792bfa9fdd93bc1413fbd25c4876c5aafed524977cb7106629a030f8544bb`
+
+✅ Ran the mandated re-resolve (`concept/run.py --no-llm` → `build_fact_metric.py`
+   → `compute_ratios.py`) over existing extracted data (no re-extraction, no
+   reload). 863 newly-stamped `row_dim.concept_key` values, fact_metric/ratios
+   refreshed. Genuine progress, retained.
+✅ Added `pipeline/preflight_invariants.py` — the permanent gate to re-run before
+   every dashboard build / quarterly ingest. 21 checks (A–F: identity/anchors,
+   period uniform-rule, legal entity, units/grain, coverage states, cleanliness).
+   Headline coverage: **146/162 = 90.1%** (27 spine concepts × 3 banks × {FY25,2H25}).
+🐞 **6 of 21 checks FAILED — dashboard test does not proceed until these clear.**
+
+### F2 — BLOCKER, a regression from THIS session's own mandated re-resolve
+Root cause: `concept/run.py`'s deterministic resolver matches `concept_map`
+WILDCARD aliases with no `table_type_id` scoping. UOB's `FS_GEO_INCOME` table
+(geography breakdown, deliberately never wired into the spine — see the
+2026-08-03 "UOB title-context bare-year gap" decision) has row labels
+("Total assets", "Net interest income", ...) identical to genuine spine line
+items. Before today's re-resolve these rows were unmatched residue
+(`concept_key IS NULL`, confirmed against `pre_reresolve_2026-08-03.db`); the
+re-resolve stamped 6 spine concepts (`bs.assets.total`, `pnl.nii.net`,
+`pnl.noninterest.total`, `pnl.opex.total`, `pnl.opex.amortisation_intangibles`,
+`pnl.profit.pretax`) with spurious per-region rows (SG/MY/TH/ID/OTH/
+GREATER_CHINA) alongside the correct GLOBAL total.
+✅ **Contained, not fixed**: `pipeline/mapping/quarantine_f2_geo_wildcard.py`
+   tags (never deletes) exactly these cells — `cell_fact.review_status =
+   'F2_geo_wildcard'`, 1,117 cells, idempotent (re-run re-tags the same set,
+   un-tags anything that stops matching). Canonical dashboard number
+   unaffected: UOB `bs.assets.total` FY25 CONSOLIDATED still reads 572,061.
+⏭️ **Real fix (next session, FIRST)**: scope the 6 affected `concept_map`
+   wildcard aliases away from `table_type_id='FS_GEO_INCOME'` (same mechanism
+   as the existing corpus-ambiguity gate for `'ECL Stage 3 (SP)'` — see
+   `pipeline/concept/load_dictionary.py`'s ambiguity-gate tests). Then re-run
+   `concept/run.py`; confirm `review_status='F2_geo_wildcard'` count → 0.
+
+### B6 / D2 — likely downstream of F2, re-check AFTER the F2 fix
+63 spine (bank,table) combos where a genuinely multi-period-column table still
+has a cell falling back to table/doc-level `period_source` instead of its own
+column. 367/517 `fact_metric_conflicts.csv` 8-key-grain conflicts are spine
+concepts — plausibly inflated by F2's spurious geo rows creating apparent
+grain contradictions; do not treat as a fully independent defect until F2 is
+fixed and D2/B6 are re-measured.
+
+### A4 — table_type_id resolution not fully corpus-wide on the live DB
+22 spine-hosting tables matched via raw-title fallback (weakest registry key,
+collision-prone — e.g. OCBC's repeated "FINANCIAL HIGHLIGHTS" title), 39
+unclassified entirely. ⏭️ apply `registry.classify_corpus()`'s composite/
+section-level resolution corpus-wide; target 0 title-fallbacks on spine tables.
+
+### D1 — unit vocabulary inconsistency (8 spine concepts)
+String-level collisions, not semantic contradictions: `%`/`percent`
+(ratio.cir/nim/npl/roe), `S$m`/`currency` (pnl.noninterest.other), `S$m`/
+`per_share` (bs.nav_per_share, pnl.eps.basic/diluted — the `S$m` value here is
+more concerning, a genuine wrong-unit candidate, not just a spelling
+variant). ⏭️ declare one canonical unit string per concept; enforce at write
+in `build_fact_metric.py` + `compute_ratios.py`.
+
+### E2 — 12 named failed_resolve slots (of 162 spine×bank×{FY,2H})
+UOB `bs.assets.customer_loans_net`; DBS/OCBC/UOB `bs.equity.total`; OCBC/UOB
+`bs.liabilities.total` — 6 concept×bank combos × 2 spans, not covered by
+`concept_disclosure`(not_disclosed) or `concept_home`(pending_anchor). Already
+adjacent to open concept-level decisions from earlier sessions (gross-vs-net
+loans, combined-equity totals); resolve at concept level, not urgent unless a
+dashboard row needs it.
+
+### Ordering for next session
+1. F2 (scoped alias fix) FIRST.
+2. Re-check B6, D2 (likely resolve as a side effect of #1).
+3. A4 (table_type_id corpus-wide classification).
+4. D1 (canonical unit strings).
+5. E2 (concept-level decisions, lower urgency).
+6. Re-run `pipeline/preflight_invariants.py` — all-pass → dashboard test proceeds.
+
+**Session hygiene:** no lock-file mechanism exists in this repo (checked: no
+`*.lock`/`*LOCK*`/pidfile pattern anywhere, no `db/*.db-journal`/`-wal`/`-shm`
+left open, no process holding `db/compiled_fs.db`) — "one claude process, lock
+held" was a procedural constraint for this session, not a file artifact to
+release. Every sqlite3 connection opened this session was explicitly closed.
+Session: `session_011QU7Ebha5cYysaqTRhQoMn`.
+
+---
+
+## 2026-07-31 — Mapping-layer design: schema gap analysis + `bank_line_map` spec (decisions 1+4)
+
+Session was analysis + design only. **No pipeline code changed; no DB writes.**
+
+✅ **In-flight agent from last session VERIFIED against the DB** (the wrap-up said
+   "verify before trusting it"). Result: work landed and is committed in `513cb9a`.
+   All 7 new concepts live (`pnl.profit.operating` 31 rows, `.amortisation_intangibles`
+   62, `pnl.associates` 57, `bs.equity.total` 5, `ratio.roa` 14, `bs.nav_per_share` 10,
+   and `pnl.noninterest.other` 117 fact rows as a pure derivation). Mis-stamp fixer:
+   **3 of 4 classes hold** — equity-on-Total-equity gone, UOB noninterest double-count
+   gone (1,884 now `resolved_by=formula`, total correctly 4,453), header rows clear.
+   **Class 1 partially reverted as predicted**: DBS 445,011 carries BOTH
+   `customer_loans_net` and `customer_loans_gross`; UOB/OCBC are clean.
+🐞 **Two defects found that were NOT in the log**: (1) `ratio.roe` mixes units —
+   reported rows 15.3/17.0 (percent) sit beside formula rows 0.295/0.0419/**1.015**/
+   **1.933** (fraction, and nonsense because the divisor is Company-basis equity);
+   (2) `fact_metric` duplication reaches **23 rows for one (concept, institution,
+   period)**.
+✅ **Per-bank 4Q25 tagging report** → `docs/2026-07-31-4q25-tagging-by-bank.md`.
+   70 of 72 bank×item cells contain the right value but only **3 are unambiguous**
+   (UOB NPL, UOB CET1, OCBC NPL). Two real failures: DBS `pnl.noninterest.other`
+   derives 11 values, none 3,502 (wildcard alias corrupts the minuend); UOB customer
+   deposits 425,938 not stamped at all.
+✅ **DBS overview exhibit rendered with identity tags** →
+   `docs/2026-07-31-dbs-4q25-overview-tagged.md`, via the app's own `raw_table_frame`
+   so it matches Streamlit byte-for-byte.
+🐞 **USER-FOUND MODELLING ERROR, confirmed**: DBS `Markets trading income` is a TOTAL
+   INCOME line (NII + non-II), mis-tagged `pnl.noninterest.trading`; the
+   `Non-interest income` beneath it is the markets-book cut, mis-tagged as the GROUP
+   total. Arithmetic: 14,494+4,898+2,134=21,526; 6+1,368=1,374; 21,526+1,374=22,900;
+   group non-II 8,400 = 7,032 commercial + 1,368 markets. **`SEG_COMMERCIAL` is an
+   intermediate node, not a rival partition** — proved from the segment exhibit:
+   CBG 5,257 + IBG 4,400 + Others 1,013 = 10,670, and its `Trading` column equals the
+   Markets block exactly (NII 21, income 593). `segment_dim` already has `parent`.
+✅ **STEP 1 SCHEMA GAP ANALYSIS** → `docs/specs/2026-07-31-schema-gap-analysis.md`.
+   All measured, not inferred. Headlines: `cell_fact.concept_key` **0% populated**;
+   dims 100% non-NULL but **89–99% sentinel** (GLOBAL/SEG_TOTAL/IND_TOTAL);
+   `cell_fact` has **no `period_start` column** (derived in `v_cell_flat`);
+   `row_lineage` is **100% populated and already carries the parent chain** —
+   the anchor exists today at zero cost; `fact_metric`'s PK **already includes**
+   segment/geo/industry (dims-as-identity is implemented) but has **no legal-entity
+   axis**; concept dictionary already has periodType (`nature`) and unit_class
+   (`unit`) but **no `balance`, no `is_abstract`**; variance columns pollute
+   **5,576 cells (22.5%) with NULL span → 456 of 2,925 `fact_metric` rows**;
+   unit-class violations (`ratio.nim` carrying `S$m` on 142 cells).
+🐞 **BLOCKING FINDING — `table_type` cannot be the map anchor.** 217 distinct values,
+   **158 (73%) appear in exactly one document**; period tokens and footnote digits get
+   baked into it. Normalization alone collapses only **217 → 175 (19%)**, so a seeded
+   ALIAS TABLE is required, not just a normalizer.
+🐞 **Correction to a user pointer**: the "`table_type_norm.py` + seed registry,
+   112 stems → ~18 types, 71% auto-match" work is **not in this repo**. What exists is
+   `map_table_type_norm()` (`pipeline/concept/load_dictionary.py:36-65`) — 11 substring
+   rules → 7 buckets, **34% coverage, 66% falling through to `'*'`**, and a `'*'` row
+   resolves against wildcard aliases (i.e. it guesses). Seeding fresh instead.
+✅ **All four user decisions recorded in DECISIONS.md** (registry-assigned table_type;
+   `bank_line_map` as source of truth with one-way projection; column-per-axis this
+   phase; un-materialize derived facts with a snapshot-and-reproduce check first).
+✅ **`docs/specs/MAPPING_LAYER.md` WRITTEN** — decisions 1+4, with DDL sketches,
+   per-column justification tied to the concrete bugs, the one-way-flow invariants
+   (projection never writes the map; reload never touches it; `human_confirmed`
+   survives every re-run), and the three-NII case threaded end to end
+   (**3,592 + 1 = 3,593** at 4Q25, holding on 3/3 period columns).
+⏭️ **NEXT**: `AI_MANUAL_SPLIT.md` and `INGEST_LOOP.md`, then the migration in
+   MAPPING_LAYER §4 (steps 1–5 are non-destructive; step 6 — converting
+   `concept/run.py` into the projection — is the behavioural pivot and must be
+   called out when it lands).
+⏭️ **Sources for the highlights dashboard are ALREADY INGESTED** — the UOB/OCBC URLs
+   supplied map to `UOB_4Q25_condensed-financial-statements`,
+   `OCBC_4Q25_Media_Release_and_Financial_Highlights`,
+   `OCBC_4Q25_Condensed_Financial_Statements`; DBS_4Q25 was recovered to GCS
+   last session. No re-download needed.
+
+---
+
+## 2026-07-30 (cont'd) — GEOMETRY STAGE LIVE end-to-end: loader consumes it, DBS_1Q26 hierarchy FIXED
+
+Resumed after the workstation restart per the RESTART CHECKPOINT below. Env survived
+intact (apt libs + `.venv` + `~/paddle-fix` all present — no re-bootstrap needed).
+**Pipeline pivot (per CLAUDE.md, called out explicitly): a new deterministic PASS2
+stage now sits between extraction and load, and the row hierarchy of a table can
+come from one of TWO branches. Spec: `docs/specs/2026-07-30-geometry-row-hierarchy.md`.**
+
+✅ **STEP 2b — geometry wired into the pipeline** (was built + committed last session
+   but NOTHING invoked it). `run_doc.step2b_geometry` runs in-process, $0, over every
+   audit unit, at BOTH load sites (after extract, and after the verify re-extract
+   loop). Never fails a run: a unit that raises is caught + reported, and the loader
+   falls back per-table. `"geometry"` added to `ingest_status.STAGES` and to the app's
+   Ingest stepper (mid-list insertion verified safe — no positional deps).
+✅ **Loader consumes the side-car** (`transforms.apply_geometry` + `load_v7`):
+   ALL-OR-NOTHING PER TABLE (fires only on `all_rows_matched` + row-count agreement +
+   every indent present; any shortfall → wholly today's behaviour). Two rewrites:
+   printed-line **twin merge** (phantom valueless `section_header` + identical-label
+   data twin → the valued row survives) then **depth override** (`level := indent`),
+   with `row_parents_by_position(skip_terminal=False)` on the geometry branch.
+✅ **`*_clean` columns + visible branch marker** (schema_v7 + `migrate_add_clean_labels.py`,
+   run on the live DB; 322 existing tables backfilled `hierarchy_source='model'`):
+   `row_dim.row_leaf_label_clean`, `col_dim.col_leaf_label_clean`,
+   `table_t.table_title_clean`, `table_t.hierarchy_source` ('geometry'|'model').
+   Verbatim labels are NEVER rewritten — clean forms ride alongside and are preferred
+   only on IDENTITY paths (`row_lineage`, row-axis geo/segment/industry lookups,
+   `concept.resolve_deterministic`). Column cleans are stored but deliberately NOT
+   consumed (see DECISIONS).
+✅ **DBS_1Q26 RELOADED on the live DB — every QA defect from the geometry list is gone.**
+   4/4 tables matched (49/49 rows), all four `hierarchy_source='geometry'`;
+   **49 → 47 rows** (2 phantom twins merged) with **cells UNCHANGED at 201**.
+   `Of which: Net interest income` → parent `Total income`; the three commercial-book
+   items → parent `Commercial book total income`; `Expenses`/`Profit before tax`/
+   `Net profit`/`Reported net profit` all top-level; per-share `Net book value5` now
+   top-level (was mis-nested under `Reported earnings`). Lineage key `Return on equity`
+   (was `Return on equity4, 5`); `table_title_clean` = `Key financial ratios (%)`.
+   Concepts re-run BEFORE fact_metric (the recorded reload gotcha): 23 concepts × 3
+   periods from this doc; `bs.assets.total` 935,365 @1Q26 agreeing exactly with the
+   independent P3 doc. Pre-geometry DB backed up before the reload.
+✅ **Tests**: pass2 suite **33 → 51** (new `pass2/test_geometry_load.py`: 10 pure
+   `apply_geometry` cases incl. all four fallback gates + purity, 1 `skip_terminal`
+   case, 7 end-to-end loader assertions against the real DBS_1Q26 units).
+   `test_run_doc.py` and the app suite (39) green.
+✅ **Concept resolver reads the clean label** (`COALESCE(row_leaf_label_clean,
+   row_leaf_label)`, both for the row and its parent context). Purely additive.
+   This also feeds the LLM residue, so **no NEW footnote-polluted aliases get minted**.
+🐞 **Correction to the entry below**: "INV-4/INV-6" appear NOWHERE in the repo — they
+   were undefined shorthand. The real gates in `concept/validate.py` are
+   `additive_identity` / `ratio_formula` / `uniqueness_per_table` /
+   `sums_to_component_vs_total` / `nature_flow_as_at` / `nature_as_at_magnitude`.
+   Measured before vs after this change: **essentially unchanged** (uniqueness 283/283
+   failed both; sums_to 39→40; nature_as_at_magnitude 207→204). They are dominated by
+   the **318 tables still on the `model` branch** and will not move until the sweep.
+✅ **App: cleaned labels are VISIBLE** (user request): `row_leaf_label_clean` now sits
+   beside the verbatim label in the Database view's "Row identity mapping" expander
+   (with a caption explaining which is evidence and which is identity) and in both
+   Table Registry row grids. Blank on the `model` branch ON PURPOSE — that blank is
+   the signal for which rows geometry has not reached yet, so it is never
+   back-filled from the verbatim label.
+✅ **App: ONE canonical period label** (user request; see DECISIONS): new pure
+   `period_label(period, period_span)` composes the token from the STORED fields —
+   `FY25` / `2H25` / `1H25` / `1Q26` / `9M25`, and `31-Dec-25` for `as_at`. The three
+   banks print the same period six different ways (`1st Qtr 2026`, `1Q25`,
+   `1st Half 2025¹`, `2024 $m`, `2H 2025 (1)`, bare `2025`); they now all collapse to
+   one comparable token. Applied to the Registry period column, the numeric-pivot
+   headers, and the Dashboard axes. NOT applied to the raw PDF-shape view (verbatim
+   headers keep it aligned with the PDF panel); the CSV/Excel export keeps its ISO
+   `period` and only GAINS `period_label`. **Behaviour change**: the old
+   `_fm_period_label` rendered `as_at` as a derived quarter, so a 31-Dec stock showed
+   `4Q25` — indistinguishable from the `FY25` flow ending the same day. App tests
+   46 → 51.
+🐞 **Gap found and closed: the fs audit artifacts were never committed.**
+   `.gitignore` whitelists `outputs/fs/**/audit/**/{parsed,meta}.json` (same terms as
+   pillar3) but the 8 DBS_1Q26 files had never been added — so the geometry side-cars,
+   which are now the LOADER'S INPUT, existed only on this workstation's disk. On a
+   workstation rebuild the hierarchy fix would have been lost until a paid
+   re-extraction. Committed.
+⏭️ **BLOCKED until the sweep — `concept_map` alias purge.** The 3 polluted aliases
+   (`return on equity4 5`, `return on equity3 4`, `net interest margin commercial
+   book1`, each a duplicate of a clean alias that already exists) must NOT be deleted
+   yet: un-reloaded rows still key on the polluted verbatim label and would lose their
+   concept stamp.
+✅ **Branch is VISIBLE in the app** (CLAUDE.md rule — a pivot a human can SEE without
+   reading code): Table Registry gained a "Row hierarchy from" column ("PDF geometry"
+   / "model levels"); the Database view's per-table caption line carries
+   `· row hierarchy: PDF geometry`; and every title render now prefers
+   `table_title_clean` when non-NULL (new pure helpers `hierarchy_source_label` +
+   `resolve_title`, display-layer only). App tests 39 → 46.
+✅ **Sweep plumbing: `--defer-db-steps` / `--db-steps-only`** on `run_doc`. Deferring
+   skips the four whole-DB steps (concepts 4a, fact_metric 4b, ratios 4c, sync_bq 7),
+   each O(whole DB) and today re-run once per document; `--db-steps-only` runs them
+   ONCE, in the required concepts→fact_metric→ratios→sync_bq order (the reload gotcha
+   is preserved, never reordered). `ingest_quarter.py` / `ingest_manifest.py` now
+   defer per doc + run the DB pass once at the end; `--all`'s sweep-level sync_bq is
+   gated too (it would otherwise sync a DB missing that batch's concepts).
+   **Honesty note**: a deferred stage is left UNMARKED in `ingest_status`, never faked
+   as "ok" — there is no "deferred" state in the schema. `done=ok` IS still marked
+   (per-doc work genuinely finished), which means `should_retry` won't re-attempt the
+   doc; the DB steps are recovered by the single `--db-steps-only` pass, not by retry.
+   run_doc tests 5 → 7.
+### Second half of the session — cross-bank identity mapping
+
+✅ **26-item cross-bank identity mapping VERIFIED** against the DB (user supplied the
+   canonical list + per-bank lineage). Full write-up with per-bank evidence:
+   `docs/specs/2026-07-30-cross-bank-identity-mapping.md`. Coverage: DBS 26/26,
+   UOB 26/26, OCBC 26/26. Each bank's income-statement waterfall verified
+   arithmetically (e.g. UOB 9,355+2,569+1,884=13,808; 13,808−6,157=7,651;
+   7,651−31−2,042+79=5,657).
+✅ **OCBC Media Release RE-EXTRACTED** (was 0 tables / 0 rows — a structural load
+   failure, `row width 6 > 5 columns`, unrepairable by any deterministic step).
+   Now 53 tables / 866 rows; identity items 18-23 (the six ratios) UNBLOCKED.
+   Verify fails on ONE table only (`fy25_performance_highlights`) — see the
+   currency-prefix finding below.
+✅ **UOB_4Q25 + OCBC_4Q25_Condensed_FS reloaded for $0** from existing audit
+   artifacts. **Correction to an earlier assumption**: these DO have local audit
+   artifacts (filed under the legacy `outputs/pillar3/` root), so the
+   loader-side fixes needed only geometry + STEP 3 — NOT re-extraction. An
+   in-flight re-extraction of both was killed ~1 min in after the user asked
+   "isn't everything deterministic apart from LLM→JSON?" — correct, and it saved
+   ~$1.50 of re-deriving JSON that already existed (and would have re-rolled
+   known-good extractions).
+🐞 **GEOMETRY GENERALISES UNEVENLY** — the spec's "validated on DBS only" caveat
+   confirmed: DBS_1Q26 4/4 tables, **UOB 28/44 (64%)**, **OCBC 4/41 (10%)**.
+   Root cause measured, NOT guessed: **171 of OCBC's ~211 unmatched rows (81%)
+   come AFTER the first failure in their table.** The row↔line scan is strictly
+   monotone, so landing on the wrong occurrence of a REPEATED label (OCBC's
+   multi-sub-table units repeat 'Allowances for loans and other assets' etc. 4×)
+   strands every following row. One miss becomes eighty. Secondary: exempting
+   `note` rows from the all-or-nothing gate (they carry no cells and never parent
+   a data row) recovers only ~2 tables/doc — measured, so NOT the fix.
+   **The fix is scan re-anchoring: free, deterministic, re-runnable. Queued.**
+🐞 **DBS_4Q25 FY2025 FIGURES IN fact_metric ARE FY2024 NUMBERS.** Both `Year 2025`
+   and `Year 2024` columns have `col_period NULL`, so both fall back to the doc
+   period and collapse into 2025-12-31; the conflict resolver then picked the
+   wrong year. Measured: `pnl.income.total` 22,297 (FY24; FY25=22,900),
+   `pnl.opex.total` 8,895 (FY24; FY25=9,249), `pnl.profit.pretax` 13,007
+   (FY24; FY25=13,099). NOT a mapping problem — the mapping points at the right
+   row and still returns last year's value. Fixed by RELOAD alone (the
+   `Year YYYY`→FY grammar is already in `load_v7`), but DBS_4Q25 had neither
+   audit artifacts NOR a source PDF on this workstation.
+✅ **DBS_4Q25 source PDF RECOVERED** (user supplied the DBS IR URL): downloaded,
+   verified (46 pages, "Financial Results for the Year Ended 31 December 2025"),
+   and uploaded to GCS at `data/sources/financial_statements/DBS_4Q25_performance_summary.pdf`.
+   Gotcha recorded: `source_store.GCS_SOURCES_PREFIX` is `data/sources/` — a first
+   upload to the bucket ROOT was invisible to `list_sources()`; corrected.
+🐞 **Verifier blind spot: currency-prefixed values.** `verify_cells.norm_token`
+   normalises thousands commas, footnote glyphs, trailing `%` and parenthesised
+   negatives — but NOT a leading currency prefix. `S$1.63` fails to parse, so
+   `1.63` reads as missing. 29 cells across 5 docs (OCBC media releases + UOB
+   highlights, printed as `S$2.1b` — prefix AND magnitude suffix). Cost is real:
+   a failed verify makes `run_doc` exit 1, aborting before xlsx/sync_bq. Queued.
+🐞 **Mis-stamps confirmed across ALL THREE banks** (same classes): `customer_loans_gross`
+   stamped on NET values (DBS 445,011 / UOB 347,877 / OCBC 336,692);
+   `bs.equity.shareholders` on BOTH Total equity and Shareholders' equity;
+   UOB `Other non-interest income` (1,884, the residual) stamped
+   `pnl.noninterest.total` (true total 4,453) — the exact double-count predicted
+   in DECISIONS when the Highlights view was built; unit `S$m` on ratio/per-share
+   cells; concept keys on bare section-header rows.
+🔄 **IN FLIGHT at session end** — an agent wiring 7 new concepts
+   (`pnl.profit.operating`, `pnl.opex.amortisation_intangibles`, `pnl.associates`,
+   `bs.equity.total`, `ratio.roa`, `pnl.noninterest.other` (derived),
+   `bs.nav_per_share`) + the mis-stamp fixes + `app/highlights.yaml`. Its result
+   was NOT confirmed before wrap-up — **verify the DB state before trusting it.**
+🐞 **CORRECTION — my mid-session "6 of 7 concepts resolve across all 3 banks" was
+   PRESENCE, not CORRECTNESS.** Row-level concept identity IS right for all 26
+   items across all 3 banks (the core goal). But several fact_metric VALUES are
+   wrong, for reasons downstream of the mapping:
+   1. **Group vs Bank/Company columns collide.** UOB/OCBC balance sheets carry
+      Group AND Bank columns on the same nominal date; DBS carries The Group vs
+      The Company. `build_fact_metric`'s candidate key has **no consolidation-basis
+      axis**, so conflict resolution sometimes picks the non-consolidated column:
+      UOB Total assets **485,263 (Bank)** instead of 572,061 (Group); DBS Total
+      equity **17,643 (Company)** instead of 68,916. This is a correctness bug
+      affecting headline balance-sheet figures on the dashboard TODAY.
+   2. **ROA/ROE missing for UOB (both) and OCBC (ROA) is NOT an alias miss** —
+      the rows ARE correctly stamped. `build_fact_metric` has a global
+      `row_hierarchy >= 1` candidate filter and those ratio rows sit at
+      hierarchy 0. Pre-existing, unrelated to the concept layer.
+   3. **UOB `Deposits and balances of customers`** is covered by no
+      `bs.liabilities.customer_deposits` alias.
+   4. DBS `Other non-interest income`: the PRE-EXISTING wildcard alias
+      `other non-interest income` -> `pnl.noninterest.total` (used by DBS's
+      geography breakdowns) corrupts that concept for DBS; the correct headline
+      derivation (8,400 − 4,898 = 3,502) was confirmed directly from cell_fact.
+🐞 **THE MIS-STAMP FIXES ARE NOT DURABLE.** `concept/run.py`'s deterministic
+   resolver **unconditionally re-derives** `row_dim.concept_key` from the alias
+   table on every run, overwriting any manual correction. Pre-existing wildcard
+   aliases (`loans to customers` -> `bs.assets.customer_loans_gross`) therefore
+   REVERTED the gross→net fixes. Worked around by running the fixer AGAIN after
+   `concept/run.py` and before `build_fact_metric` (order executed: fixer → run.py
+   → fixer → fact_metric → ratios). **This is a workaround, not a fix** — any
+   future `concept/run.py` reverts them again. The real fix is to correct the
+   offending ALIASES in the dictionary (so the resolver derives the right key),
+   not to patch rows after the fact.
+🐞 **`ratio.roa` resolved for DBS ONLY** — UOB `Return on average total assets` and OCBC `Return on assets 3/` did not match their aliases — CORRECTED: root cause is the `row_hierarchy >= 1` filter in build_fact_metric, NOT an alias miss.
+⏭️ **EPS Basic/Diluted deliberately NOT mapped.** The deterministic resolver keys
+   on leaf label + table_type and cannot see the parent chain, but `Basic` is
+   meaningless without `Earnings per share > Basic` — and DBS prints TWO such
+   blocks (`Earnings` 3.88/3.86 vs `Reported earnings` 3.84/3.82). Aliasing
+   `basic` would stamp every such row in the corpus. Real fix: parent-qualified
+   aliases in the resolver, using the lineage `row_lineage` already stores.
+⏭️ **User decisions RESOLVED**: D1 DBS = **reported**, and sourced from the
+   OVERVIEW exhibit (`Reported net profit` 10,933 is row 22 of the same table as
+   the underlying `Net profit` 11,033 — no need to touch the audited statement);
+   D2 OCBC net profit = 7,422 attributable; D3 UOB loans = net 347,877.
+
+⏭️ **NEXT — the 18-doc FS re-extraction sweep** (`--defer-db-steps` / `--db-steps-only`
+   added to `run_doc` for it). This needs real Gemini spend (~$0.10/doc) and is
+   **awaiting the user's go-ahead**. It picks up periods + hierarchy + footnotes +
+   industry + axis-exclusivity together, and unblocks the alias purge and the DB-wide
+   gates. Docs with NO local audit artifacts need full re-extraction; DBS_1Q26 is done.
+
+---
+
+## 2026-07-30 — Workstation env LIVE; first end-to-end ingest from inside the workstation
+
+First Claude Code session running INSIDE `w-yunhan-ms4efqkw` (per the resume handoff).
+
+✅ **Workstation env set up** (workstation-setup.md steps 3–5): apt `python3.12-venv`
+   (was missing — venv creation failed without it), single `.venv` with all THREE
+   requirement files (pipeline + paddle + **app** — app reqs were missing from the
+   runbook; tests need altair/matplotlib), `~/paddle-fix/sitecustomize.py`,
+   `.venv-paddle/bin/python3` symlink, ADC verified, `compiled_fs.db` in the clone.
+✅ **End-to-end smoke ingest PASSED**: `DBS_1Q26_trading_update` (known-good, in GCS)
+   via `run_doc --pdf … --no-ipv4-shim`. STEP 0 skipped (scan committed), verify
+   PASS (0 fail), 4 tables / 49 rows / 201 cells, 4 Gemini calls ≈ $0.10, 339 s.
+   BQ synced; DB pushed to GCS (via storage-client — gsutil user creds hit
+   `ReauthUnattendedError`; ADC is fine, fallback documented in
+   workstation-persistence.md).
+✅ **Fix: subprocess steps use `sys.executable`** in `run_doc.py` / `ingest_quarter.py`
+   / `ingest_manifest.py` (was literal `python3` → system interpreter → STEP 1
+   `ModuleNotFoundError: pdfplumber` when the venv wasn't on PATH). See DECISIONS.md.
+✅ Tests: `test_run_doc.py` 4 pass, app `test_findociq_app.py` 11 pass (run from
+   `findociq/app/`), `test_spec.py` ALL PASS. `matplotlib` added to app requirements
+   (spec.py imports it; nothing declared it).
+✅ **App: Database view "Original document" panel** (user request): the drill-down
+   now renders the source PDF's pages (pypdfium2 → cached PNG), auto-jumping to the
+   selected table's `page_range`, page picker for the rest; local-first then
+   `source_store.materialize` from GCS; pre-migration docs (no blob) degrade to an
+   info message. New pure helpers `pages_from_range` / `source_key_of` + 4 tests
+   (app suite now 15). `pypdfium2` added to app requirements. See DECISIONS.md.
+   Verified: DBS_1Q26 income-statement pivot matches PDF page 6 value-for-value.
+✅ **App: raw table view — original PDF shape** (user request): new pure helper
+   `raw_table_frame` rebuilds any table from schema_v7 exactly as the PDF shows it
+   (row/col order, indentation from `row_hierarchy`, `value_raw` text incl. '(7)'/
+   'NM'/'>100', duplicate '% chg' headers preserved). Database view: primary
+   "Raw table" + CSV download per table, "Full document" checkbox stacking all
+   tables in PDF order, numeric pivot demoted to an expander (it collapsed
+   duplicate columns and dropped non-numeric cells). App tests 15 → 19.
+✅ **App: Database drill-down restructured** (user request): View selector defaults
+   to "Full view — all N tables (PDF order)" (whole exhibit stacked), sub-tables
+   drill down by human title ("Selected income statement items ($m) (p.6)" …).
+   PDF reading order from `section.seq` (table_t.section_no is NULL for FS docs —
+   was silently alphabetical). New helper `table_view_labels` + 2 tests (suite 21).
+✅ **App: naming + drill-down parity + Registry identity** (user request; executed
+   by fast-worker/Sonnet per the new delegation model, reviewed here):
+   `display_name()` (underscores→spaces, ALL-CAPS→sentence case, display-layer
+   only — stored titles untouched); single-table drill-down now presents like the
+   full view (title → caption → raw table → CSV) with row identity in an expander;
+   Table Registry gained "Sample table + identity" (sample raw table + per-row
+   identity + per-cell identity expander, Bank/Family-filtered, seq-ordered);
+   `registry_rows` ordering now follows `section.seq`. App tests 21 → 25.
+🐞 **NEW loader bug found by the raw view**: phantom `col_dim` rows (col_id 100+)
+   with ZERO cells duplicate the real headers on 2 of 4 DBS_1Q26 tables (ratios,
+   balance sheet). Hidden in display with a visible caption; root cause in the
+   loader queued under extraction quality.
+🐞 **Known, not fixed** (extraction-quality roadmap): STEP 4c prints
+   `Error evaluating ratio.nim: name 'bs' is not defined` etc. — ratio formulas
+   reference concepts with no `fact_metric` data yet, so `compute_ratios.py:95-98`
+   never backtick-wraps them and pandas eval raises NameError. Symptom of concept
+   coverage gaps, not of the formula engine; should become an explicit
+   "skip: missing concepts […]" message when ratios are revisited.
+🐞 STEP 4a DB-wide concept checks still failing (uniqueness_per_table 0/276,
+   sums_to_component_vs_total 0/39, …) — pre-existing, tracked under extraction quality.
+✅ **Streamlit Community Cloud deploy prep** (user chose public hosting option 1):
+   repo-root `requirements.txt` (pointer to `findociq/app/requirements.txt` —
+   Streamlit Cloud only reads the root), root `.streamlit/config.toml` (cobalt
+   theme copy; Cloud reads CWD=repo root), app deps completed for cloud
+   (openpyxl, pyyaml — lazy imports by export/registry paths), DB committed at
+   this milestone so the public app carries current data. User does the
+   share.streamlit.io click-through (entrypoint `findociq/app/findociq_app.py`).
+   Cloud app is read-only browsing (Ingest can't run there — no ADC/paddle).
+🐞 **Extraction-quality defects CONFIRMED in DB** (user QA on DBS_1Q26; Opus
+   design task launched): (1) per-column periods never stamped — col_dim
+   col_period/period_span NULL, every cell_fact.period = doc period, fact_metric
+   cross-period contaminated (bs.assets.total 840,823 = 1Q25 value stamped as
+   1Q26); (2) systematic row mis-nesting — income-statement rows 10-21 parented
+   under 'Markets trading income'; per-share 'Net book value' under 'Reported
+   earnings'; (3) footnote markers kept in labels/titles ('Earnings2', 'Return on
+   equity4, 5'); (4) duplicated bold header rows (depth-0 phantom + depth-1 value
+   twin). Also 'nan' render bug in raw view (pandas NULL→NaN) — FIXED same day.
+✅ **PHASE 1 extraction-quality fixes SHIPPED** (Opus design → Sonnet impl →
+   reviewed/validated here; see DECISIONS.md 3 entries): period grammar in
+   `pass2/load_v7.py` (`1st Qtr 2026`/`Year 2025`/abbrev halves now parse;
+   ordered before the bare-year fallback; residual guard untouched), new
+   load-gate warning ("period-looking column yielded no period"),
+   `drop_echo_groups` in transforms.py (kills phantom col_id 100+ cols).
+   pass2 tests 20 pass. **DBS_1Q26 reloaded (STEP 3) + concepts re-run +
+   fact_metric rebuilt: 22 rows@1 period → 69 rows@3 periods; bs.assets.total
+   now 935,365@1Q26 / 897,488@4Q25 / 840,823@1Q25 (was 840,823 stamped as
+   1Q26). Phantom cols 0. INV-1 clean for reloaded doc.** Gotcha recorded:
+   a doc-scoped reload wipes row_dim.concept_key — concepts (STEP 4a) MUST
+   re-run before build_fact_metric or the doc vanishes from fact_metric.
+⏭️ **Remaining reloads**: other FS docs (DBS_4Q25: 26 unstamped period cols,
+   3Q25/1Q23/DBS_1Q25 trading updates, OCBC_4Q25, DBS_2Q25, DBS_4Q22) have NO
+   local audit artifacts on this workstation — they need re-extraction, best
+   done as ONE batch sweep after the geometry stage (Phase 2) lands so a
+   single sweep picks up all fixes. P3 docs unaffected (periods already fine).
+✅ **Industry axis + axis exclusivity SHIPPED** (Sonnet impl, validated here):
+   `industry_dim` (10 MAS categories) + `industry_key` on row/col/cell/fact_metric,
+   migration run on live DB (100% backfilled IND_TOTAL), v_cell_flat + sync_bq
+   updated, stamping + drift gates cloned from geo; ambiguous labels ('Others')
+   now stamp only the table-dominant axis. pass2 suite 33 green. 682 legacy
+   double-stamped cells clear at the batch reload.
+✅ **Dashboard "Key Financial Highlights" SHIPPED** (user's 4-section item list in
+   `app/highlights.yaml`): per-bank item×period grids + cross-bank chart; derived
+   values marked ᵈ with formula on chart hover + per-grid derivations expander.
+   16/24 items mapped high-confidence; 8 left null-on-purpose (see DECISIONS —
+   null over guessed). Fixed pre-existing `_bank_of()` bug that dropped OCBC/UOB
+   from bank-colored views. App tests 26 → 39.
+✅ **Derived-metrics engine**: compute_ratios.py generalized — `metric_kind: metric`
+   entries with FILL-ONLY-MISSING (reported never overwritten; 186 reported
+   noninterest rows untouched, 1 DBS gap filled = 7,429 @ FY25 with formula in
+   source_row_label); missing-input concepts now skip cleanly (ratio.nim/roe/cir…
+   compute instead of NameError).
+🔄 **RESTART CHECKPOINT (2026-07-30)** — workstation restarting. State: geometry
+   stage BUILT+COMMITTED but loader does NOT consume it yet (loader integration =
+   next task: hierarchy from side-car, twin merge, *_clean cols, concept_map purge
+   of polluted aliases, spec entry under docs/specs/). Then: reload DBS_1Q26,
+   verify INV-4/INV-6, THEN batch re-extraction sweep of all FS docs (picks up
+   periods+hierarchy+footnotes+industry+exclusivity together; add the
+   "defer whole-DB steps" flag to run_doc first). Then axis-by-axis audits with
+   the user (geometry evidence sheet 1 approved 2026-07-30). AFTER RESTART:
+   re-run apt step 2 (libgomp1 libgl1 libglib2.0-0t64 + python3.12-venv — apt
+   resets; .venv itself persists) and relaunch streamlit per workstation-setup
+   6b (with the CORS/XSRF flags).
+⏭️ Next (per handoff roadmap): extraction quality — full-year `period_span`,
+   key-resolution precedence, header-row noise filter, re-extract the 3 `nt=0` FS
+   docs (`DBS_1Q22_trading_update`, `DBS_3Q22_trading_update`,
+   `OCBC_4Q25_Media_Release_and_Financial_Highlights`); "defer whole-DB steps" flag
+   for `run_doc` before the 18-doc sweep; then registry mapping + the two Cloud flows.
+
+---
+
+## 2026-07-29 — pass2 FS fixes; concept-tagging round-trip DESIGNED (build next session)
+
+✅ **pass2 FS extraction fixes** (branch `v2-concept-toolkit`, pushed to origin):
+family-aware output paths + labelling + `--out-root` fix (was silently ignored for
+non-pillar3 → fs wrote into the repo tree) + conditional `Table N` sheet suffix
+(`79d8849`); section-region validators / column-band repair + section-scoped number
+check (`95c42cb`); + repair test. All WIP tests green.
+
+✅ **Source→GCS migration** SDD Tasks 1–3 + rekey migration done (Task 4 review-pending,
+PAUSED). Plan: `docs/superpowers/plans/2026-07-29-gcs-source-migration.md`.
+
+🔄 **Concept-tagging round-trip — DESIGN AGREED, not built.** Two Cloud flows with a
+human gate (Flow 1: doc → tagging Excel; Flow 2: re-uploaded tagged Excel → existing
+concept→fact→BQ tail). Identity = tuple (row × column). Reuse original logic at every
+step (infer_period, nature flow/stock, load_v7, build_fact_metric, sync_bq) — new code
+is two thin adapters (`tag_workbook.py`, `tag_ingest.py`). Reference artifact:
+`~/Downloads/FinDocIQ_Tag_Highlights_FY25.xlsx`. **Full design + next-session checklist:
+`docs/2026-07-29-tag-workbook-design.md`.** User to pass concept-mapping md/guidelines
+next session.
+
+⏭️ **Next:** build on the Cloud Workstation `w-yunhan-ms4efqkw` (RUNNING). See the design doc.
+
+---
+
+## 2026-07-27 (cont'd 4) — Phase B unattended-retry infra built + verified; Phase C blocked on IAM
+
+Continues the plan at `~/.claude/plans/lively-beaming-twilight.md` (Phase A
+shipped last session). This session built and end-to-end verified Phase B
+(containerized retry worker + Cloud Run Job); Phase C (Workflows + Scheduler
+autonomous trigger) is deliberately not pursued further — see blocker below.
+
+✅ **Dashboard cleanup**: dropped `cell_state` from the "Inspect table" cell
+   view (`app/dashboard.py`) — internal verification metadata, not useful in a
+   human-browsing view. (Landed in the concurrent session's commit `98ee6af`
+   since both sessions shared this working tree.)
+✅ **Disk cleanup** (not committed — these were never tracked; `*.pdf` is
+   root-gitignored): deleted `data/sources/financial_statements/OCBC/
+   UNKNOWN_PERIOD/` (20 PDFs, ~5.5MB — bond pricings/M&A notices scraped by
+   `scrape_bank_ir.py`, outside the `fs`/`pillar3` scope per `GCP_TASKS.md`)
+   and the 2 DBS 1Q26 transcript PDFs (confirmed via `document`/`ingest_status`
+   query: never loaded, so safe to remove from disk).
+✅ **GCS bucket** `gs://findociq-sources-igc2026-team08-6311/` (asia-southeast1)
+   — the durable checkpoint retry_worker.py pulls from / pushes to at each run
+   (Cloud Shell's own disk resets; this doesn't). Seeded with `data/sources/` +
+   `db/compiled_fs.db`, **re-synced at end of session** (via `gsutil -m rsync
+   -d`) to match the concurrent session's dedupe/relink/flatten pass — pulling
+   before that re-sync would have silently resurrected deleted duplicate PDFs.
+✅ **`findociq/pipeline/Dockerfile`** — single unified image (paddle+paddlex+
+   Gemini deps installed together, no `.venv-paddle` split needed in a
+   container). Bakes in the mkldnn CPU-crash patch
+   (`paddle-mkldnn-workaround` memory) via a `sitecustomize.py` at
+   `/opt/paddle-fix`, `PYTHONPATH`-activated. **3 real bugs found + fixed**
+   during verification (a first attempt at this file was written by a
+   background agent that died mid-task to a spend-limit cutoff, unverified):
+   1. A multi-line heredoc for writing the sitecustomize patch isn't valid
+      classic-Dockerfile syntax (needs a BuildKit `# syntax=` directive this
+      file didn't have) — the parser would've choked on the patch's own
+      `from paddlex...` line as a stray second `FROM`. Rewrote via `printf`.
+   2. `CMD` instead of `ENTRYPOINT` — args passed at run time (`gcloud run
+      jobs execute --args=...`, or `docker run image --dry-run`) REPLACE a
+      bare `CMD` instead of appending to it, so the container tried to
+      literally exec `--dry-run` as a program. This is what caused the first
+      real Cloud Run Job execution to fail ("container may have exited
+      abnormally", no other detail in the logs — traced by reproducing
+      locally with `docker run`, which gave the real error immediately).
+   3. Missing `libgl1`/`libglib2.0-0`: `paddlex` imports opencv, which
+      dlopen's `libGL.so.1` — without it, importing `paddlex` inside
+      `sitecustomize.py` fails. Python swallows `sitecustomize` import errors
+      at startup (prints a warning, doesn't crash), so **the mkldnn patch was
+      silently not applying** — would only have surfaced later as the
+      original PaddleOCR CPU crash resurfacing in production. Verified the
+      fix directly: `pp_option.is_mkldnn_available()` returns `False` inside
+      the built image.
+✅ **`findociq/pipeline/retry_worker.py`** — the Cloud Run Job body. Pulls
+   `compiled_fs.db` + `data/sources/` from GCS, sweeps every FS/Pillar3 PDF,
+   gates each on `ingest_status.should_retry()`, runs the existing
+   `run_doc.py --pdf <file> --batch --no-ipv4-shim --no-sync-bq` per eligible
+   doc (no duplicated pipeline logic — `--no-ipv4-shim` matters: this
+   container has no IPv6 blackhole, and the shim's own `sitecustomize.py`
+   would otherwise shadow the paddle patch via the same PYTHONPATH-shadowing
+   bug documented in the 2026-07-24 handoff), then pushes the DB back to GCS
+   and runs `sync_bq.py` once for the whole sweep. **Closes the "looks done
+   forever" gap the plan flagged**: `run_doc.py --all` only ever checks
+   `table_t` membership to decide what's already loaded, so a doc that got
+   SOME rows loaded then failed a later stage is skipped by `--all` forever;
+   `retry_worker.py` does its own enumeration + `ingest_status`-based gating
+   instead of calling `--all`, so both brand-new arrivals AND that partial-
+   load case are covered by the same attempt cap. One thing this does NOT
+   fix (out of scope, flagged only): docs that fail before any `table_t` row
+   exists (STEP 0/1) are still also picked up by a plain `run_doc.py --all`
+   sweep with no attempt cap at all — not an issue here since retry_worker.py
+   never calls `--all`, but worth knowing if anyone reaches for `--all` in an
+   unattended context later.
+   Verified end-to-end: `--dry-run` correctly listed 44/63 on-disk PDFs as
+   eligible (new arrivals + previously-failed docs) and correctly skipped the
+   ~19 already-loaded legacy docs (no `ingest_status` row, but already in
+   `table_t` — loaded before Phase A shipped).
+✅ **Cloud Run Job `findociq-retry-worker`** (asia-southeast1, 2 CPU/4Gi,
+   3600s task timeout, `663571970232-compute@developer.gserviceaccount.com`,
+   `maxRetries=0`) — built via `gcloud builds submit` (reused the existing
+   `cloud-run-source-deploy` Artifact Registry repo), **verified with a real
+   `gcloud run jobs execute --args="--dry-run,--no-push,--no-sync-bq" --wait`**
+   run: pulled from GCS, correctly listed the same 44 eligible docs as the
+   local dry-run, exited 0. This path works TODAY, manually, using your own
+   `gcloud` credentials — no infra blocker on it.
+🐞 **Phase C (Workflows + Scheduler) blocked on IAM, not pursued further this
+   session** — per the user's call once the blocker was confirmed. Built and
+   logic-verified `findociq/pipeline/workflows/retry_worker_workflow.yaml`
+   (invokes the Cloud Run Job execution via the
+   `googleapis.run.v2.projects.locations.jobs.run` connector, with Workflows'
+   native retry-with-backoff at the job-invocation level, plus a `job_args`
+   override param for safe dry-run testing). Deployed fine. But invoking it
+   fails: `IAM permission denied for service account 663571970232-compute@
+   developer.gserviceaccount.com` — Cloud Run deliberately excludes job-invoke
+   rights from `roles/editor` (same carve-out that blocked the dashboard's
+   public-access flip earlier). Tried granting `roles/run.invoker` to that SA
+   both project-wide and scoped to just this Job; both `add-iam-policy-binding`
+   calls were denied (`Policy update access denied` — the account driving this
+   session only has `roles/editor`, which can't call `setIamPolicy` at all).
+   This is the exact risk the plan's Phase C section flagged in advance
+   ("flag immediately if any gcloud/gcloud workflows call hits a permission
+   wall, rather than working around it") — stopped there rather than trying
+   new service accounts or org-policy changes, which would hit the same wall.
+⏭️ **Next steps**:
+   1. **Unblock**: have the `provisioner-sa` owner / competition organizer run
+      `gcloud run jobs add-iam-policy-binding findociq-retry-worker
+      --region=asia-southeast1 --project=igc2026-team08-6311
+      --member="serviceAccount:663571970232-compute@developer.gserviceaccount.com"
+      --role="roles/run.invoker"`.
+   2. Once that lands: re-test `gcloud workflows run findociq-retry-worker-workflow
+      --data='{"job_args": ["--dry-run", "--no-push", "--no-sync-bq"]}'` to
+      confirm the connector call itself now succeeds, THEN create the Cloud
+      Scheduler job (HTTP target + OIDC auth, every 30-60 min per the plan).
+   3. **Before the first REAL (non-dry-run) run — manual or scheduled** —
+      note it will process all 44 currently-eligible backlog docs through
+      Gemini in one sweep (historical cost ~$0.03-0.04/doc => rough estimate
+      only, not a quote). Cheap, but worth a conscious go rather than
+      discovering it fired unattended.
+   4. In the meantime, the Cloud Run Job is fully usable manually right now:
+      `gcloud run jobs execute findociq-retry-worker --region=asia-southeast1`
+      (no `--args` = real run) using your own credentials, no IAM grant needed
+      for that path.
+
+---
+
+## 2026-07-27 (cont'd 3) — data/sources cleanup: flatten, relink, dedupe
+
+✅ **Deleted transcript WIP**: `DBS_1Q26_analyst_transcript`/`media_transcript` —
+   uncommitted `paddle_scans`/`toc` artifacts and the `outputs/pillar3/dbs_Apr26`
+   audit dir that held only them. Never in the committed DB.
+✅ **Fixed "unknown period" output dirs**: `outputs/pillar3/` had several dirs
+   named by scrape month instead of fiscal quarter (`ocbc_Aug25/May25/Nov25/
+   Feb26`, `uob_May25/Nov25`) — renamed to `NQyy` form.  `ocbc_Feb26` (a second
+   4Q25 OCBC doc) merged into the existing `ocbc_4Q25/` dir, matching the
+   multi-doc-per-quarter pattern `dbs_1Q26` already uses.
+✅ **Flattened `data/sources/financial_statements/`** to match `pillar3/`'s flat,
+   no-year-subfolder convention. Deleted 4 confirmed byte-identical duplicates
+   (old flat vs. newer `BANK/YEAR/QN/` scraper copies). Moved 4 Pillar3-family
+   docs that were misfiled under `financial_statements/` into `pillar3/`.
+🐞→✅ **Relinked 4 of the 6 "missing source PDF" docs flagged in an earlier
+   session** (OCBC 4Q25 Condensed FS, UOB 1Q25/3Q25/4Q25) — the bank had
+   renamed the file between scrapes; found the renamed copy under the newer
+   scrape path and pointed `document.source_file` at it. 23/25 docs now
+   resolve to a real file on disk (was 19/25).
+🐞 **2 still genuinely orphaned, not fixable by relinking**:
+   `DBS_2Q25_performance_summary` / `DBS_4Q25_performance_summary` — no source
+   PDF survives anywhere in the repo, only derived artifacts (toc/paddle_scans/
+   audit output). `fact_metric` data for these is intact; only the "link to
+   original PDF" is dead until re-downloaded.
+✅ **Kept 4 filenames without the DBS prefix** (`1Q23_trading_update`,
+   `3Q25_trading_update`, `1Q25`/`3Q25_P3_other_regulatory_disclosures`) even
+   though it's inconsistent with `NAMING.md` — these doc_ids are already baked
+   into `row_dim`/`cell_fact`/`concept_resolution_log` from a prior ingest;
+   renaming the file would mint a different doc_id on next re-ingest and orphan
+   the existing data instead of updating it. User confirmed: leave as-is for
+   now, full doc_id rename (touching every referencing table) is a separate,
+   deliberate future task if wanted.
+✅ Verified: full test suite passes (2 pre-existing, unrelated `test_query_db.py`
+   failures unchanged), dashboard starts clean against the relinked DB.
+
+---
+
+## 2026-07-27 (cont'd 2) — concept `nature` (flow vs stock); dashboard geo filter; pipeline pivot doc
+
+Started from a dashboard bug report (concept time-series chart mixing GLOBAL
+totals with geo breakdowns) and ended up tracing a real concept-dictionary bug.
+Full writeup: `docs/specs/2026-07-27-concept-nature-flow-vs-stock.md`.
+
+✅ **`app/dashboard.py` fix**: the concept time-series chart/table never filtered
+   on `geo_key` — 13 of 96 concept×segment combos carry both a GLOBAL total and
+   per-region rows under the same `concept_key`, so the chart/table silently
+   mixed them. Added a Geography selector (defaults to GLOBAL).
+🐞→✅ **Found via that fix: `pnl.provisions.total` (a P&L flow — "the cyclical,
+   volatile line") was ALSO matching a Pillar3 balance-sheet allowance-stock
+   row** — same alias (`"allowances for loans and other assets"`), 15-20x the
+   magnitude, every period, because `load_into_concept_map()` seeded every
+   dictionary alias as a wildcard with no notion of flow vs stock. Same pattern
+   in `pnl.provisions.stage12_gp`/`.stage3_sp`.
+✅ **Fix, embedded as a structural pivot, not a one-off patch** (see spec doc for
+   full detail):
+   - `nature` (flow/stock/ratio_flow/ratio_point) now required on every
+     `concept_dictionary.yaml` concept.
+   - `concept_map.table_type_norm` scoped-alias mechanism (existed, unused by
+     the dictionary path — only the 19 NSFR rows used it) now wired into
+     `load_into_concept_map()` via a new `scoped_aliases:` YAML field.
+   - New alias-ambiguity gate in `load_into_concept_map()`, mirroring
+     `resolve_llm._dedupe_residue()`'s existing instinct: a label seen under
+     >=2 real `table_type_norm` buckets in the corpus is not silently
+     wildcarded.
+   - New `credit_quality` `_TYPE_NORM_RULES` bucket (Pillar3 ECL/NPA/allowance
+     tables previously fell through to `'*'`).
+   - Two new `concept.validate()` checks (`nature_flow_as_at`,
+     `nature_as_at_magnitude`), same "flag loudly, never auto-fix" pattern as
+     the existing 4; pure-function, unit-tested without a DB fixture.
+   - New punch-list driver `python -m concept.audit_nature` →
+     `data/derived/concept_nature_conflicts.csv`.
+   - Split the 3 conflated concepts: new `bs.credit.allowances_total` /
+     `.allowances_stage12_gp` / `.allowances_stage3_sp` (stock) alongside the
+     existing `pnl.provisions.*` (flow), aliases scoped so both resolve
+     correctly per table type.
+✅ **Verified end-to-end**: re-ran `concept/run.py --no-llm` +
+   `build_fact_metric.py` against `db/compiled_fs.db`. `nature_flow_as_at`
+   failures 98→32 (remainder is pre-existing LLM-residue-classified rows, a
+   separate tracked gap — see spec doc). All of `test_concept.py` (18 new
+   checks added), `test_fact_metric.py`, `test_query_db.py` still pass (2
+   pre-existing `test_query_db.py` failures confirmed unrelated via a
+   before/after diff against a DB backup).
+🐞 **One-time migration gotcha, not automated**: `concept_map` is
+   `INSERT OR IGNORE` (additive) by design, so reassigning an alias's ownership
+   in the dictionary does NOT overwrite an already-inserted wildcard row from a
+   prior run — required a one-off `DELETE FROM concept_map WHERE ...` for the 5
+   reassigned slots before re-running. Documented in the spec doc; shouldn't
+   recur now that the ambiguity gate catches new instances before they're ever
+   wildcarded.
+⏭️ **Not done, tracked as known gaps** (spec doc has detail): (1)
+   `pnl.profit.net_attributable`'s remaining `as_at` flags are a `pass2`
+   row-level period_span stamping issue inside Statement-of-Changes-in-Equity
+   tables, not a dictionary issue. (2) 6 LLM-residue-classified labels
+   ("General"/"Specific"/etc., 32 flags) predate this pivot and aren't covered
+   by the new dictionary-path ambiguity gate. (3) `fact_metric_conflicts.csv`'s
+   pre-existing geo-breakdown-table collisions (e.g. `bs.assets.npa`) are
+   unrelated and untouched.
+
+---
+
+## 2026-07-27 (cont'd) — ingest_status stage tracking; paddle venv rebuild; rescrape; gcloud auth blocker
+
+✅ **`.venv-paddle` rebuilt** (was gone again — lives on ephemeral `/tmp`, not
+   `$HOME`, by design; see `paddle-mkldnn-workaround` memory). New
+   `tools/setup_paddle_venv.sh` + `findociq/requirements-paddle.txt` so this is
+   a one-command rebuild next time instead of a hand-run recipe. Smoke-tested
+   STEP 0 end-to-end on a real 97-page PDF (263 candidates, 96 regions).
+✅ **Rescraped 2025 filings, all 3 banks** (`scrape_bank_ir.py --periods 2025`,
+   85s). Confirmed the known gotcha bites again: bank sites rename files
+   between scrapes (`DBS_2Q25_performance_summary.pdf` -> now
+   `condensed-financial-statements-2q-2025.pdf` etc.), so 6 of 7 previously
+   "missing source PDF" docs got a same-content-different-filename file back,
+   not a doc_id match — left unresolved (relink, not re-extract, is the right
+   fix; not done this session). One (`OCBC_4Q25_Media_Release_and_Financial_
+   Highlights`) was manually copied back under its original filename.
+✅ **`ingest_status`** — new table (`schema_v7.sql`) + module
+   (`pipeline/ingest_status.py`) + `run_doc.py` instrumentation at all 7 STEP
+   boundaries + a `sync_bq.py` sync + dashboard "Ingest Status" tab columns
+   (stage/last_error/attempts). Answers "what stage is doc X in and why did it
+   stop." Classifies failures transient (503/timeout/metadata-server/auth
+   blip) vs structural (real bug — e.g. a row wider than its declared
+   columns), with an escalation rule: the SAME error recurring on a doc
+   forces structural regardless, so a retry loop can't spin forever on a bug
+   that only looks transient. Verified against two real re-runs (see below).
+🐞→✅ **Found while wiring this in**: `run_one`'s per-step handlers only caught
+   `SystemExit`, but `load_v7._load_table` raises a plain `RuntimeError` on a
+   structural failure — was silently escaping uncaught. Broadened all 7
+   handlers to `except (SystemExit, Exception)`.
+🐞 **Found via `--force` re-runs, not yet fixed**:
+   1. **`OCBC_4Q25_Media_Release_and_Financial_Highlights` STEP 3 load bug is
+      real and reproduces on demand**: `financial_highlights_continued row 4:
+      cell 6 has no leaf column (row width 6 > 5 columns)` — a genuine
+      structural extraction/column-count mismatch, not flaky. `ingest_status`
+      now classifies it `structural` correctly.
+   2. **`--force` regenerates a doc's WHOLE audit dir**, so a unit that fails
+      this run (Gemini 503/auth error) but had a good `parsed.json` from a
+      PRIOR successful run gets its dir wiped with nothing to replace it —
+      caught this deleting already-committed, paid-for extraction data for
+      several `OCBC_4Q25_Media...` units before committing; restored via
+      `git checkout`. `--force` should arguably only clear the units it's
+      about to re-run, not the whole audit dir — not fixed, just flagged.
+   3. **Known accuracy gap in `ingest_status` classification**: when STEP 2
+      fails silently (zero successful calls), STEP 3 only sees a generic "no
+      loadable audit units" and classifies it `structural` even when the real
+      cause (seen in console output, not captured structurally) was
+      transient. Documented in the plan file, not fixed this session.
+🐞 **GCP metadata-server auth flaking all session** — `RefreshError:
+   "Unexpected response from metadata server: service account info is
+   missing 'email' field"` hit Gemini/Vertex calls on 2 separate docs AND
+   later broke `gcloud` itself (billing/IAM checks, blocking Phase B/C
+   infra work — GCS bucket + Cloud Run Job + Workflow + Scheduler for
+   unattended retries). User is re-running `gcloud auth login`; infra work
+   paused until that's confirmed clear.
+📋 Plan for the unattended-retry infra (Phase B/C, approved, not yet built):
+   `~/.claude/plans/lively-beaming-twilight.md`.
+
+---
+
+## 2026-07-27 — table-region overlap attribution fix; scope bigger than first thought
+
+🐞→✅ **PaddleOCR region → section attribution** (`toc_stage.build_windows`,
+   spec `docs/specs/2026-07-27-table-region-overlap-attribution.md`). PaddleOCR
+   was always returning correct table boxes ("true tables"); the bug was
+   downstream — a region was attributed to exactly ONE section by a
+   first-match point test, so (a) a region sitting in the next page's
+   top-of-page strip could be stolen by the previous section (window-boundary
+   rounding disagreed with `page_end`'s own top-of-page snap), and (b) one
+   Paddle box spanning several stacked sections on a summary page silently
+   starved every section after the first of its table. Fixed via a shared
+   `_breakpoint()` snap + overlap-based one-to-many attribution
+   (`_window_overlaps_region`); validation invariant moved from exact
+   partition to coverage. `test_toc_stage.py` (new) locks both bugs + 2
+   must-not-regress cases.
+🔍 **Re-checked all 18 loaded FS-family docs for free** (STEP 1 is
+   cache-resumable — cached Gemini heading JSON + cached Paddle regions.csv
+   means re-running `toc_stage.py` costs $0). Was expecting the 2 known
+   "0-table" 2022 trading-update failures from yesterday's sweep (previously
+   filed as "possibly genuinely headline-only, unconfirmed") plus the
+   `1Q23_trading_update` doc that originally exposed the bug — **actually 9 of
+   18 docs have sections flipping table-bearing status** (4–31 sections each):
+   `1Q23_trading_update`, `3Q25_trading_update`, `DBS_1Q22_trading_update`,
+   `DBS_1Q25_trading_update`, `DBS_1Q26_trading_update`,
+   `DBS_2Q22_performance_summary`, `DBS_3Q22_trading_update`,
+   `DBS_4Q22_performance_summary`, `OCBC_1Q25_Results__Press_Release`. Several
+   of these (the two DBS 1Q25/1Q26 trading updates) already loaded SOME real
+   tables, so this was a silent partial-digestion bug, not just the loud
+   0-table failure mode. 7 more FS docs couldn't be re-checked — their source
+   PDF is no longer on disk at the path recorded in `document.source_file`
+   (gitignored, lost across environment resets / re-scrapes that renamed the
+   file) — needs a re-fetch/relink pass before they can be verified either way.
+⏭️ **Next**: re-extract (STEP 2) + reload (STEP 3) + re-verify the 9 confirmed
+   docs; locate/re-fetch the 7 blocked PDFs and re-check those too; re-sync
+   BigQuery once after.
+✅ **5 of the 9 re-extracted** (the non-2022 ones): `1Q23_trading_update`
+   (0→4 tables), `3Q25_trading_update` (1→4), `DBS_1Q25_trading_update` (1→4),
+   `DBS_1Q26_trading_update` (1→4), `OCBC_1Q25_Results__Press_Release` (7→12).
+   All verify PASS (0 fail). Total re-extraction cost $0.48. BigQuery synced —
+   Cloud Run dashboard reflects the fix. Remaining: the 4 2022-vintage DBS
+   docs, folded into a planned 2022 full-corpus sweep (OCBC/UOB 2022 have
+   never been ingested at all — see manifest gap report) rather than run
+   separately.
+🐞→✅ **Cost log silently overwritten across sibling docs** (`pass2/workbook.
+   save_cost_summary`) — two doc_ids sharing a bank+period run dir (a bank's
+   pillar3 + trading_update for the same quarter, the common case) wrote one
+   flat `calls` list for whichever doc ran last, silently discarding the
+   other's cost history. Fixed to stamp + merge per `document` (de-duped on
+   document/ts/label) with a `by_document` breakdown; `PASS2_v2.py` now
+   passes `document` through. `test_workbook.py` (new) locks it. Known gap:
+   a few dirs already lost a doc's history to the old bug before this fix
+   (recoverable from `api_log.xlsx`, which was already doc-tagged and
+   cumulative — not done).
+✅ **Dashboard**: `Docs`/`Tables` tabs show a display-only `Bank_Period_
+   DocType` label (doc_id/source_file untouched); `fact_metric` tab hides
+   `resolved_by` (QA provenance, not a chart filter) and adds a `period_label`
+   column (`1Q25`/`FY25`/`1H25`, including `as_at` rows labeled by calendar
+   quarter); new one-button concept time-series chart (fixed per-bank colors
+   from the validated palette, never repainted by a filter).
+🔍 **Concept-mapping gap sized**: 74% of extracted rows (3,989/5,383) have no
+   `concept_key`. Top unresolved labels are mostly a missing NSFR/LCR
+   liquidity vocabulary (appears in 5 of 7 pillar3 docs each) plus some
+   capital/P&L gaps. Draft additions (29 concepts, schema-validated, zero key
+   collisions) in `pipeline/concept/concept_dictionary_additions_2026-07-27.
+   yaml` — NOT merged into the real dictionary yet, awaiting user review
+   (it's explicitly the user's curated file). 3 label groups flagged as
+   needing a source-row check or out of scope (geography values, generic
+   "Total"/"Others"/"Basic") rather than guessed.
+
+---
+
+## 2026-07-26 — manifest-driven ingest orchestrator; 3 latent bugs fixed; DBS sweep in flight
+
+✅ **`pipeline/ingest_manifest.py`** (new) — the manifest-driven orchestrator: runs
+   `run_doc.py --all` (route → TOC → Gemini extract → load → verify → fact_metric →
+   ratios, one doc at a time) over everything on disk under `data/sources/`, then
+   reconciles the resulting DB against `data/sources/manifest.csv` by CONTENT
+   (institution/period/family from the DB — never filename, since actual bank
+   filenames routinely differ from the manifest's planned name) and auto-fills
+   `have(y/n)`/`file_notes` + prints a gap report. Supports `--bank` to scope a
+   sweep to one bank at a time (user-requested, to bound cost/risk per run).
+✅ **`run_doc.py --all` fixed to actually be a full sweep**: was scoped to
+   `financial_statements/` only (missed the flat `pillar3/` folder entirely);
+   synced BigQuery once PER DOC instead of once per batch (the "gotcha" flagged in
+   the 2026-07-24 handoff) — now deferred to one sync at the end. Added `--bank`
+   filter and a real `--dry-run` (plan only, $0).
+🐞→✅ **Transcript mis-classification** (`classify/family.py`) — DBS's
+   `analyst_transcript`/`media_transcript` PDFs were routing to `family=fs` because
+   their dialogue body is full of FS vocabulary ('results', 'performance'). Fixed
+   with a title-line "transcript" signal (issuer-agnostic, content-based — not a
+   per-bank filename hack). `run_doc.py` now also skips `family in (other, slides)`
+   BEFORE spending any API call (previously only the scraper's keep/discard
+   checked family; a doc already on disk would silently burn a Gemini call).
+🐞→✅ **Duplicate downloads** (`ingest/scrape_bank_ir.py`) — confirmed real via
+   byte-identical SHA-256 hashes: bank IR sites relink the SAME PDF under a
+   bank-prefixed and unprefixed URL (or an `UNKNOWN_PERIOD`-dated duplicate).
+   Added content-hash dedup shared across the whole scrape invocation. Cleaned up
+   20 already-downloaded duplicate source PDFs + their orphaned `paddle_scans`/
+   `toc` derived artifacts on disk.
+🐞→✅ **UOB institution resolution** (`toc/toc_to_db.py`, `classify/family.py`) —
+   `institution_for(doc_id)` required the bank code as a strict doc_id PREFIX.
+   UOB's own IR filenames (`performance-highlights-1q-2025.pdf`) never carry a
+   bank code at all — every UOB doc currently on disk would have hard-failed
+   ingestion ("no institution for doc_id"). Fixed with a fallback that trusts the
+   scraper's own `<BANK>/<year>/<quarter>/` placement directory — the same signal
+   the scraper already uses structurally, just not previously read back downstream.
+🐞→✅ **`run_all` per-doc exception handling** — only caught `SystemExit`, so a bare
+   exception in ONE doc (e.g. an un-merged `continued_from_previous` table
+   fragment reaching the loader) killed the entire batch and silently dropped the
+   remaining queued docs. Broadened to catch `Exception`, matching the
+   documented contract ("per-doc failures don't stop the sweep").
+🐞 **Deleted 2 already-loaded mis-classified transcript docs** from
+   `compiled_fs.db` (`DBS_1Q26_analyst_transcript`/`media_transcript` — 0
+   `table_t`/`cell_fact` rows, so no fact_metric pollution, just noise in
+   `document`/`section`). DB: 15 → 13 docs before today's DBS sweep.
+🐞 **Paddle env rebuilt from scratch** — Cloud Shell VM reset since 2026-07-24
+   wiped `.venv-paddle` + `/tmp/paddle-scratch` (ephemeral, documented in
+   [[paddle-mkldnn-workaround]] memory). Reinstalled `paddlepaddle==3.3.1
+   paddleocr==3.7.0 paddlex==3.7.2` + `pdfplumber`, re-applied the mkldnn
+   sitecustomize patch. Confirmed the memory's documented invocation still
+   holds: STEP 0 needs BOTH `PYTHONPATH=/tmp/paddle-scratch` on the whole
+   `run_doc.py` process AND `--no-ipv4-shim` (its shim's own sitecustomize
+   otherwise shadows the mkldnn patch). Cosmetic-only side effect: every
+   non-paddle subprocess now also inherits that `PYTHONPATH` and prints a
+   swallowed `ModuleNotFoundError: No module named 'paddlex'` from
+   sitecustomize — harmless (CPython ignores sitecustomize errors) but noisy;
+   worth scoping the env var to just the STEP 0 subprocess later.
+🔄 **DBS sweep running** (`ingest_manifest.py --bank DBS`, 3rd attempt with the
+   env fix applied) — 13 docs queued. Two genuine (non-bug) failures seen on the
+   first two attempts, both worth tracking rather than re-fixing blindly:
+   - `DBS_1Q22_trading_update` / `DBS_3Q22_trading_update`: Gemini extraction
+     found 0 tables → "no loadable audit units". Possibly these 2022-era trading
+     updates are genuinely headline-only (no real tables), unlike the 2025/2026
+     trading updates already in the DB — unconfirmed, not yet worth a routing
+     change on a sample of 2.
+   - `DBS_4Q22_performance_summary`: 37 Gemini calls / $1.69 spent, then STEP 3
+     load hard-refused with `continued_from_previous=True reached the loader`
+     — a table continuation whose predecessor fragment landed in a different
+     PASS2 extraction unit, so the in-unit merge safety-net (`PASS2_v2.py`
+     ~line 300) never saw it. Real gap in the cross-unit continuation-merge
+     design, not a one-off; also hit a one-time SIGSEGV (rc=-11) mid-retry on
+     the same doc, likely resource contention, not chased further. Deferred —
+     doc-level failure, doesn't block the rest of the sweep now that run_all's
+     exception handling is fixed.
+⏭️ **Next**: finish DBS sweep, then OCBC (36 new docs) and UOB (13 docs — 3
+   periods will double up under a new doc_id vs already-loaded ones with a
+   stale prefixed doc_id, since the on-disk filenames changed; decide whether
+   to delete the stale UOB doc_ids first). Investigate the continuation-merge
+   gap if it recurs on more than this one doc.
+
+---
+
+## 2026-07-13 — FS branch end-to-end: deterministic TOC stage → pass2 (native) → GTable→schema_v7 loader; first FS cells queryable
+
+✅ **FS Gemini TOC spike, full corpus** — 14/14 docs ok (`experiments/2026-07-12_fs_gemini_toc_spike/`);
+   short docs don't hallucinate structure. Contract experiment (2× temp-0 runs): Gemini-minted
+   ordinal ids 0/43 stable run-to-run → ids must be adapter-derived; titles 43/43 stable.
+✅ **TOC stage FINAL design (user) BUILT + validated on DBS 2Q25** (`contract_v2/toc_stage.py`):
+   slim prompt (headings/page/level/parent ONLY — no counts/kinds, config is extraction's job)
+   → titles anchored to exact printed coordinates (candidates.csv → direct text-search → page-top;
+   98% coordinate-anchored) → section window = anchor→next anchor → Paddle region top-point in
+   window ⇒ has_tables Y/N. 9 shared-page attribution fixes vs page-granular. Paddle = table-
+   detection AUTHORITY (user directive; Gemini counts advisory only).
+✅ **pass2 PORTED from _legacy (copy) + native FS TOC ingestion, NO adapter** — `pipeline/pass2/` +
+   `PASS2_v2.py`; `load_sections()` format-sniff branch reads the new contract directly, prose
+   sections excluded via has_tables. Dry-run: 42 sections → 22 Y → exactly 22 planned calls
+   (4 prompt routes: single/spanning/continuation(col-sig)/multiple — decided from page spans).
+✅ **First LIVE FS extraction** — debts_issued p25, 1 call $0.0055: 30/30 value parity vs page,
+   0 hallucinations, full region coverage (8 residual tokens = header dates + footnote markers).
+✅ **GTable→schema_v7 loader** (`pipeline/pass2/load_v7.py`, spec `docs/specs/2026-07-13-gtable-
+   schema-v7-loader-design.md`, Option A user-approved): 35/35 checks; period-axis exclusion live
+   (3 date cols → col_period, ONE 'amount' col_header, table period NULL legal); idempotent
+   doc-scoped reload; v_cell_flat serves the cells. TOC→DB (`toc_to_db.py`): document + 42
+   section rows (prose included — "has tables" DB truth = LEFT JOIN table_t), FK-clean, idempotent.
+✅ **Stitcher hardened then PARKED for P3** — 3-check rule (breaks/col-sig/rows-continue) adjudicated
+   corpus-wide by per-bank Opus agents; period-instances never stitched; FS docs proven
+   ~one-table-per-page so the stitcher is out of the FS critical path; UOB 'ratios (cont'd)' re-flows
+   columns across pages (measured 485.6→536.4pt) = unstitchable by absolute geometry, FLAG by design.
+🐞→✅ **User corrections that changed the record**: UOB p18/p20 have NO tables (adjudicator inferred
+   from titles; numeric density 8/19 words proved prose) → Paddle-authority feedback memory;
+   NII p10 = 2 tables in 1 Paddle region (region-merge; de-merge parked pending words_from_chars
+   de-tokenization); EXPENSES¹ footnote marker → strip_footnote w/ acronym guard.
+✅ **PM refinements (user review round)** — section ids = normalized OWN title only (printed
+   numbers → section_no; full chain → NEW section_path column, additive); year-guard on number
+   prefixes ('2025 versus 2024' is not a section number); row semantics split into TWO relations:
+   printed indent (totals/notes TERMINAL, never parents) + NEW row_dim.sums_to = arithmetic-VERIFIED
+   total membership (1-6→7, 8-9→10 on debts_issued, all columns proven); registries RENAMED
+   row_header/col_header → row_lineage/col_lineage (+ *_lineage_id everywhere) — 'header' misled;
+   pure-date col token 'amount' → 'value'; db_to_xlsx_check.py = Excel view FROM loaded cells
+   (printed note numbering retained via line_no). 65/65 loader checks green after each round.
+⏭️ **Next**: FS-branch routing spec under docs/specs/ (pivot writeup); y-attribution/table_type from
+   router (controlled vocabulary = the cross-bank table axis); remaining 13 docs through
+   toc_stage→pass2→load; one-command driver (PDF in → verified DB out); km1/lcr instances.
+
+---
+
+## 2026-07-06 — Post-load verification gate LIVE; final.db verified 18/18 vs source PDFs; slide → PDF
+
+✅ **verify_cells.py first fleet run** (written late 07-05, never logged; unit tests green):
+   zero-LLM verbatim check of every cell_fact.value_num against pdfplumber page text, tiered
+   line/page anchoring. First run looked alarming — ocbc_4q23 98/101 "missing",
+   uob_4q23/uob_4q25 ~40 each — but was almost entirely verifier false-negatives.
+🐞→✅ **pdfplumber word fragmentation** (one root cause, two severities): ocbc_4q23's
+   letter-spaced text layer shreds pages to per-char fragments; uob/dbs split the first digit
+   off numbers ("182,768" → "1"+"82,768"). General fix (no per-doc hacks):
+   `words_from_chars()` rebuilds tokens from raw `page.chars` with a per-page adaptive gap
+   threshold = 0.5 × median glyph advance width (measured separation band: intra-number gaps
+   ≤ 0.62 pt vs column gutters ≥ 20.48 pt, ~30× margin). Validated: 100% value recovery on
+   the broken docs, zero regression on clean docs. test_verify_cells 30/30.
+🐞→✅ **11 phantom duplicate cells in final.db (DBS only)** — Gemini back-filled blank
+   unweighted cells with a copy of the weighted value on RSF parent rows (dbs_4q23: 6,
+   dbs_4q25: 5). Defect present in the raw HTML artifacts (85.html prints 8,022 twice) —
+   merge-perception floor, quarter-inconsistent ⇒ prompt-unfixable. Verifier-guided deletion
+   (value-anchored, row_id-unique precondition; label matching rejected as ambiguous);
+   backup `final_pre_phantom_cleanup.db` in session scratchpad; cell_fact 3052 → 3041.
+   **Fleet re-verify: 18/18 tables, 0 fail, 0 missing, exit 0.**
+✅ **PIPELINE PIVOT: post-load verification gate** — spec
+   `docs/specs/2026-07-06-post-load-verification-gate.md`. extract_run.py now verifies every
+   doc post-load by default, live AND --from-html, no off switch: per-table
+   `✓ verified-clean` / `✗ FLAGGED-verify` stdout, report JSON under `route/out/verify/`,
+   run exits 1 if any table flagged. test_extract_run 22/22 (16 old + 6 new).
+✅ **NSFR slide report → PDF** — nsfr_slide.py emits vector `reports/nsfr_timeseries.pdf`
+   alongside pptx/preview; right chart replaced with a single-item cross-bank time-series
+   line chart (`--item`, default asf_total) with bank legend; fixed y-tick/end-label clipping
+   (imshow aspect + shared fit_chart_layout). Regenerated from the full fleet: 54 rows,
+   3 banks × 6 periods.
+✅ **Chat-with-data interface BUILT + first live query verified** — spec
+   `docs/specs/2026-07-06-chat-with-data-design.md`, plan `docs/plans/2026-07-06-chat-with-data.md`,
+   executed subagent-driven (6 tasks, per-task adversarial review + final whole-branch review).
+   Pieces: `tools/slide_kit.py` (rendering kit refactored out of nsfr_slide.py; line + grouped-bar
+   charts, 1-or-2-chart slide assembly), `app/spec.py` (Registry/QuerySpec/validate_spec/run_query/
+   nl_to_spec/gemini_llm — LLM emits ONLY a JSON spec validated against the live registry; never
+   SQL, never numbers), `app/chat_report.py` (Streamlit; `.venv-reports/bin/streamlit run
+   findociq/app/chat_report.py`). Review loop caught + fixed: hardcoded chart/column enums
+   (→ registry-driven), figure leak, brittle JSON extraction, missing bar renderer, empty-slice
+   crash, percent-fmt hardcode (→ general template signal: canonical_label contains "(%)"),
+   Gemini 503 (→ _with_backoff retries + error banner). Tests: spec 30/30, slide_kit 13/13,
+   extract_run 22/22, CLI regression green. First live query (rsf_total × 3 banks) verified
+   value-for-value against final.db. Eval list: `app/eval_questions.md` (10 phrasings, partially run).
+✅ **schema housekeeping** — documented the col_dim group-header convention (leaves 1..N =
+   page position; span banners 100, 101, … out-of-band; cell_fact must never reference
+   col_id ≥ 100) in `schema/schema_v5.sql` after user question traced it through the loader.
+
+---
+
+## 2026-07-05 — extract_run --from-html replay + NSFR fleet complete (3 banks × 3 quarters)
+
+✅ **`extract_run.py --from-html` implemented** (tests were written 07-05 AM, implementation
+   interrupted): replays existing `route/out/extract/<doc_id>/<page>.html` artifacts into the
+   DB — zero API calls, deterministic, doc-scoped idempotent. Missing artifact →
+   `FileNotFoundError` (loud), never FLAGGED. `test_extract_run.py` 16/16.
+🐞→✅ **Silent partial-doc load** — `ocbc_4q24_p3/96.html` was a 0-byte artifact (interrupted
+   write last session); `parse_html("")` = no tables, so the doc loaded with 1 of 2 period
+   tables and nothing complained. Hardened generally: empty artifact = missing content
+   (`FileNotFoundError`); non-empty HTML parsing to ZERO tables raises (a router-selected
+   unit is table-bearing by construction) → live path FLAGs the unit, never silent-loads.
+✅ **NSFR fleet extraction COMPLETE** — the interrupted 9-doc run finished: `ocbc_4q23`,
+   `ocbc_4q25`, `uob_4q24`, `uob_4q25` live-extracted (8 calls, $0.11, zero FLAGs, zero
+   retries); `ocbc_4q24` re-extracted after the empty-artifact fix ($0.03, both periods now
+   present). Model pinned gemini-3.5-flash throughout.
+✅ **DBS periods normalized to ISO** — final.db's 3 DBS docs predated period normalization
+   ("30 Sep 2023" style table_id/period). Fixed by zero-cost `--from-html` replay; cell
+   counts byte-identical (322/327/335); whole-DB `table_t.period` now uniformly ISO.
+🐞→✅ **`stamp.py` drift-CSV clobber** — the review-queue CSV was rewritten per TABLE, so a
+   doc's second table wiped the first table's drift rows (real review-queue data loss).
+   Now accumulates across all tables in one invocation, writes once; fresh-rewrite per
+   invocation kept. New `templates/test_stamp.py` 3/3 (TDD, fixture DB).
+✅ **Fleet stamped + first cross-bank time series LIVE** — 9 docs × 68/68 concept rows
+   matched, 0 absent; drift rows = band labels only ('ASF Item'/'RSF Item', drift-by-design).
+   Weighted Total ASF + RSF queryable per institution across 6 ISO periods
+   (2023-09-30 → 2025-12-31) for DBS / OCBC / UOB.
+✅ **`ocbc_nsfr_2025` spike doc DELETED** (user-approved) — it duplicated `ocbc_4q25_p3`
+   under the inconsistent institution string "OCBC". final.db now: 9 docs, 3 institutions,
+   asf_total weighted = exactly 18 rows (3 banks × 6 periods), no dupes. Pre-delete backup
+   in session scratchpad (`final_pre_dedupe_backup.db`).
+⏭️ **Open:** (a) `table_title` on uob_4q25 p74 picked the running header ("Pillar 3
+   Disclosure Report") — cosmetic, needs a general title-selection rule, not a per-doc
+   patch; (b) band-row drift noise (band rows with non-zero cells escape the band-skip)
+   could be suppressed by a template band-label rule — currently visible-by-design,
+   tolerable.
+
+---
+
+## 2026-06-29 — Stage-2 HTML methodology + project reshape
+
+✅ **Reshaped the repo** into `findociq/` — now the ONLY project folder at repo root (besides
+   the `google-cloud-sdk/` install). Active work consolidated; all old folders parked in
+   `_legacy/` (archives, DELIVERABLE, DOCAI_Experiment, findb, Merge_Experiment, out, MDs,
+   logs, scripts, misc) — moved, not deleted, reversible. Deleted 5 accidental junk files
+   (88-byte bash-error captures). 20 source PDFs sorted into `data/sources/{pillar3,
+   financial_statements,presentations}/`. API key → `findociq/.env` (gitignored).
+✅ **Surfaced the Stage-2 prompt** (was trapped in scratchpad) → `pipeline/prompts/stage2_core.txt`
+   + `stage2_framings.txt`. Verbatim from Plan 9 Appendix A.
+✅ **`html_to_cells.py`** — parses Stage-2 HTML → `schema_v5` cells. Tests **18/18 on two real
+   Gemini samples** (2.5 & 3.5-flash). In `experiments/2026-06-29_mineru_eval/`.
+✅ **Captured real Gemini HTML** for OCBC NSFR (Dec+Sep 2025) via the API (3.5-flash), used as
+   ground-truth samples. Token cost (NSFR×2 periods): 3.5 ≈ 10.6k out / 26k total.
+
+🐞→✅ **Same prompt, divergent HTML across models** — parser hardened to absorb it:
+   `data-level` on `<tr>` *or* first `<td>`; line-no as a column *or* a label prefix; header
+   `rowspan` tolerated; section bands as `<td>` *or* `<th colspan>` rows. See
+   `docs/findings/2026-06-29-gemini-2.5-vs-3.5-html.md`.
+
+✅ **HTML → DB proven end-to-end** — `experiments/.../load_to_db.py` (Stage-3) loads the NSFR
+   3.5 HTML into a real `schema_v5` SQLite (FK-on): 302 cells, 32 shaded, NSFR%/Total ASF/RSF
+   queryable as a cross-period time series. The "can it parse through to the DB" question = YES.
+
+📋 **Spec: universal Stage-1 discovery + orchestration** —
+   `docs/specs/2026-06-29-universal-stage1-discovery-design.md`. Decisions: detection is
+   OFFLINE (pdfplumber + MinerU layout, zero Gemini tokens); manifest = DB `table_t` rows (no
+   json); table_type = DB reference driving customised prompts; TOC verified vs page-scan.
+
+✅ **MinerU validated as the no-TOC detector** (DBS FS, 32pp): found tables on 29/29
+   table-bearing pages (vs pdfplumber pre-filter 5/32) + 177 leveled headings = a de-facto TOC.
+   User-confirmed clean on the visual overlay. Runs in isolated `.venv-mineru` (base env has a
+   numpy/TF ABI conflict). Finding: `docs/findings/2026-06-29-mineru-detection-on-financial-statements.md`.
+   Remaining = reconcile (title-from-heading + cross-page continuation stitch), not detection.
+
+✅ **MinerU = universal Stage-1 engine** (vs pdfplumber TOC, DBS 4Q25 Pillar3, 92pp): matched
+   ~64/64 PASS1_TOC sections incl. PART + dotted numbering + page + continuations, AND detected
+   92 tables/69pp. Replaces pdfplumber TOC **and** the Gemini per-page table-count → zero-LLM
+   discovery for every doc type. Gemini kept for Stage-2 extraction only (MinerU flattens
+   hierarchy). Finding: `docs/findings/2026-06-29-mineru-replaces-pdfplumber-toc.md`.
+
+🔄 **3.5-flash 9.3/12.9 baselines** — OCBC 9.3 captured (parses clean: 18 rows, 2 period-COLUMNS,
+   0 warnings → flags need: `col_period` extraction from column headers for cell_fact.period).
+   UOB 12.9 still 503-retrying. 3.5 capacity intermittent.
+
+🔄 **Decision pending:** can MinerU(+pdfplumber) replace/reduce Gemini in Stage 2 (extract)
+   AND serve as the offline table detector (Stage 1)? Spec
+   `docs/specs/2026-06-29-mineru-pdfplumber-stage2-spike-design.md`.
+
+🧭 **ARCHITECTURE DECISION (supersedes "deterministic table_t at discovery"):** MinerU is
+   unreliable at *counting/titling* individual tables (caption bleed — not deterministically
+   solvable). Split the concerns:
+   - **Stage 1 (MinerU, deterministic):** emit a STAGING manifest (temp JSON) = section tree
+     (accurate headers) + per-section **table-bearing page ranges**. Do NOT enumerate/title
+     tables here. Text-only sections (Qualitative Disclosures) marked → skipped (saves Gemini).
+   - **Routing (pure code, zero extra Gemini calls) on the MinerU SECTION HEADER:**
+     · table_type = classify(section_header) vs DB template library → known (NSFR/LCR/SA-CR →
+       core + EXPECTED-ROWS modifier) | new (core blind). · framing from page geometry
+       (1pg=SINGLE, Npg=SPANNING+chunk, shared page=MULTIPLE). Orthogonal axes (Plan 9 §A.5/A.6).
+   - **Stage 2 (Gemini):** one call per table-bearing section page-range → ACTUAL tables with
+     accurate printed titles + HTML. Gemini does the naming/counting (kills caption bleed).
+   - **Stage 3 (load ONCE):** section + table_t (Gemini titles) + cells written together.
+   - **3.5-flash lag:** fewer/targeted calls; resumable per section; model fallback
+     3.5→2.5→flash-latest; batchable.
+   STATE: `pipeline/discover/discover.py` currently writes table_t directly (works — DBS 4Q25 =
+   105 sections/49 tables in `db/discovery.db`, but caption-bleed rough edges) → TO REFACTOR into
+   staging-manifest producer; then build `classify.py` + `orchestrate.py` (router + one-go loader).
+   MinerU runs in `.venv-mineru`; DBS 4Q25 + DBS FS content_list.json cached in scratch + experiment.
+
+⏭️ **Next:**
+   1. Gemini 3.5 HTML baselines for the two harder tables: OCBC 9.3, UOB 12.9 (14 blocks×2 periods).
+   2. Install MinerU; build `MinerUExtractor` + pdfplumber shading/indent overlay.
+   3. Harness + scorecard → drop/reduce/keep Gemini per table class.
+   4. Full-document run of the Plan-9 methodology (blocked on 3.5-flash latency/503s).
+   5. Migrate legacy folders into `_legacy/`; delete accidental junk files (list pending review).
+
+### Notes / gotchas
+- Gemini auth: `set -a; . DELIVERABLE/pillar3/.env` (key there). `genai.Client()`, model
+  `gemini-3.5-flash`, PDF as `application/pdf` Part, `response_mime_type="text/plain"` for HTML.
+- 3.5-flash hits transient **503 "high demand"** — retry with backoff (it cleared after ~6 tries).
+- Use **3.5-flash, not 2.5** for quality: 2.5 missed shading (2 vs ~34 cells) and duplicated a row.

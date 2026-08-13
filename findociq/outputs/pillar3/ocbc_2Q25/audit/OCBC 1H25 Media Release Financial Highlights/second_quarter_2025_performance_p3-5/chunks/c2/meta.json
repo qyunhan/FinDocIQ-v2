@@ -1,0 +1,51 @@
+{
+  "document": "OCBC 1H25 Media Release Financial Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "1 August 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "second_quarter_2025_performance_p3-5/chunks/c2",
+  "section_ids": [
+    "second_quarter_2025_performance"
+  ],
+  "section_titles": [
+    "Second Quarter 2025 Performance"
+  ],
+  "pages": [
+    5
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 10,
+  "usage": {
+    "ts": "2026-07-25T08:06:16",
+    "script": "extract_to_excel",
+    "label": "second_quarter_2025_performance_p3-5/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3966,
+    "output_tokens": 2237,
+    "thinking_tokens": 0,
+    "total_tokens": 6203,
+    "est_cost_usd": 0.02608,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.01' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.9' pdf=4x json=3x (missing from extraction)",
+      "  deficit: '156' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '326' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '114' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '159' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '334' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '167' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

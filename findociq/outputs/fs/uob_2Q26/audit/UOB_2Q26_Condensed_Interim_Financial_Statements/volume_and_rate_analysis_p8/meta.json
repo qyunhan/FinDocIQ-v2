@@ -1,0 +1,63 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "volume_and_rate_analysis_p8",
+  "section_ids": [
+    "volume_and_rate_analysis"
+  ],
+  "section_titles": [
+    "Volume and rate analysis"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 11,
+  "usage": {
+    "ts": "2026-08-07T09:23:52",
+    "script": "extract_to_excel",
+    "label": "volume_and_rate_analysis_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3890,
+    "output_tokens": 2317,
+    "thinking_tokens": 0,
+    "total_tokens": 6207,
+    "est_cost_usd": 0.02669,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '4.6' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Volume and rate analysis]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Customer loans' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Interbank balances' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Securities' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Total' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Customer deposits' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Interbank balances/others' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Total' printed bands [1,2,3,5,6] -> extracted slots [1,2,3,4,5,6]",
+      "  col-shift: 'Net interest income' printed bands [] -> extracted slots [1,2,3,4,5,6]",
+      "  col-repair: declined for 'Customer loans' \u2014 printed token '332,452' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Interbank balances' \u2014 printed token '60,786' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Securities' \u2014 printed token '95,579' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total' \u2014 printed token '488,817' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Customer deposits' \u2014 printed token '401,205' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Interbank balances/others' \u2014 printed token '58,248' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total' \u2014 printed token '459,453' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Net interest income' \u2014 extracted values ['(123)', '(290)', '(34)', '11', '122', '167'] != printed tokens []"
+    ]
+  },
+  "crop": null
+}

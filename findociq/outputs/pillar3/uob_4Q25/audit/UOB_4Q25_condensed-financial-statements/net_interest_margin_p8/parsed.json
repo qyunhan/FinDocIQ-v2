@@ -1,0 +1,878 @@
+{
+  "tables": [
+    {
+      "title": "Net interest margin 2025 / 2024",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2025",
+          "leaf": "Average balance $m"
+        },
+        {
+          "group": "2025",
+          "leaf": "Interest $m"
+        },
+        {
+          "group": "2025",
+          "leaf": "Average rate %"
+        },
+        {
+          "group": "2024",
+          "leaf": "Average balance $m"
+        },
+        {
+          "group": "2024",
+          "leaf": "Interest $m"
+        },
+        {
+          "group": "2024",
+          "leaf": "Average rate %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest bearing assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer loans",
+          "values": [
+            {
+              "value": "336,945",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,064",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "320,955",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,055",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5.31",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances",
+          "values": [
+            {
+              "value": "54,479",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,933",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.55",
+              "cell_state": "reported"
+            },
+            {
+              "value": "66,681",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,890",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.33",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Securities",
+          "values": [
+            {
+              "value": "103,088",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,679",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.57",
+              "cell_state": "reported"
+            },
+            {
+              "value": "89,099",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,314",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.72",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "494,512",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,676",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "476,735",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23,259",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.88",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest bearing liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "407,057",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,093",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "389,372",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,944",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.81",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances/others",
+          "values": [
+            {
+              "value": "59,647",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,228",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.74",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,175",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,641",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.54",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "466,703",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,321",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.43",
+              "cell_state": "reported"
+            },
+            {
+              "value": "447,547",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13,585",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.04",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest margin \u00b9",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.89",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "2.03",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Net interest margin 2H25 / 2H24 / 1H25",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2H25",
+          "leaf": "Average balance $m"
+        },
+        {
+          "group": "2H25",
+          "leaf": "Interest $m"
+        },
+        {
+          "group": "2H25",
+          "leaf": "Average rate %"
+        },
+        {
+          "group": "2H24",
+          "leaf": "Average balance $m"
+        },
+        {
+          "group": "2H24",
+          "leaf": "Interest $m"
+        },
+        {
+          "group": "2H24",
+          "leaf": "Average rate %"
+        },
+        {
+          "group": "1H25",
+          "leaf": "Average balance $m"
+        },
+        {
+          "group": "1H25",
+          "leaf": "Interest $m"
+        },
+        {
+          "group": "1H25",
+          "leaf": "Average rate %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest bearing assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer loans",
+          "values": [
+            {
+              "value": "341,366",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,236",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "325,815",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,590",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5.24",
+              "cell_state": "reported"
+            },
+            {
+              "value": "332,452",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,828",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.75",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances",
+          "values": [
+            {
+              "value": "48,274",
+              "cell_state": "reported"
+            },
+            {
+              "value": "819",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "64,369",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,365",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.22",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60,786",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.70",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Securities",
+          "values": [
+            {
+              "value": "110,474",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,949",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.50",
+              "cell_state": "reported"
+            },
+            {
+              "value": "92,979",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,744",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "95,579",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,729",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.65",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "500,115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,004",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.97",
+              "cell_state": "reported"
+            },
+            {
+              "value": "483,164",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,699",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "488,817",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,672",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.40",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest bearing liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer deposits",
+          "values": [
+            {
+              "value": "412,813",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,285",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.06",
+              "cell_state": "reported"
+            },
+            {
+              "value": "391,927",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,374",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "401,205",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,807",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.42",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Interbank balances/others",
+          "values": [
+            {
+              "value": "61,023",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,108",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.60",
+              "cell_state": "reported"
+            },
+            {
+              "value": "61,885",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.54",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,248",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,120",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.88",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "473,836",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,394",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.26",
+              "cell_state": "reported"
+            },
+            {
+              "value": "453,812",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,787",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.98",
+              "cell_state": "reported"
+            },
+            {
+              "value": "459,453",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,927",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.60",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest margin \u00b9",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.83",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "2.02",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "1.96",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Interest bearing assets"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Customer loans"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Interbank balances"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Securities"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Interest bearing liabilities"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Customer deposits"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Interbank balances/others"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Net interest margin"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Interest bearing assets"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Customer loans"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Interbank balances"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Securities"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Interest bearing liabilities"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Customer deposits"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "Interbank balances/others"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Net interest margin"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

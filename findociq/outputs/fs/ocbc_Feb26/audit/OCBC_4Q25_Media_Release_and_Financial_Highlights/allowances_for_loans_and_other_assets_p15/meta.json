@@ -1,0 +1,47 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "allowances_for_loans_and_other_assets_p15",
+  "section_ids": [
+    "allowances_for_loans_and_other_assets"
+  ],
+  "section_titles": [
+    "ALLOWANCES FOR LOANS AND OTHER ASSETS"
+  ],
+  "pages": [
+    15
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-30T15:49:07",
+    "script": "extract_to_excel",
+    "label": "allowances_for_loans_and_other_assets_p15",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3901,
+    "output_tokens": 3136,
+    "thinking_tokens": 0,
+    "total_tokens": 7037,
+    "est_cost_usd": 0.03408,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Allowances for loans and other assets' printed bands [] -> extracted slots [1,2,3]",
+      "  col-repair: declined for 'Allowances for loans and other assets' \u2014 extracted values ['(4)', '665', '690'] != printed tokens []"
+    ]
+  },
+  "crop": null
+}

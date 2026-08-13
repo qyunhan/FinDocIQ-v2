@@ -1,0 +1,51 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_performing_assets_and_loss_allowance_coverage_p21-23/chunks/c1",
+  "section_ids": [
+    "non_performing_assets_and_loss_allowance_coverage"
+  ],
+  "section_titles": [
+    "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE"
+  ],
+  "pages": [
+    21,
+    22
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 5,
+  "n_rows": 50,
+  "usage": {
+    "ts": "2026-07-13T17:11:03",
+    "script": "extract_to_excel",
+    "label": "non_performing_assets_and_loss_allowance_coverage_p21-23/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3560,
+    "output_tokens": 9566,
+    "thinking_tokens": 0,
+    "total_tokens": 13126,
+    "est_cost_usd": 0.02498
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '500000' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total non-performing loans (NPL)' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Debt securities, contingent liabilities ' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Total non-performing assets (NPA)' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Substandard' [By loan grading]",
+      "  duplicate row label x2: 'Doubtful' [By loan grading]",
+      "  duplicate row label x2: 'Loss' [By loan grading]",
+      "  duplicate row label x2: 'Total' [By loan grading]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

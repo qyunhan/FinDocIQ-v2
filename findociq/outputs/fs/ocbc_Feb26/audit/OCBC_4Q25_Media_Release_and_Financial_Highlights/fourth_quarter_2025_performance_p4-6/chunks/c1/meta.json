@@ -1,0 +1,69 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fourth_quarter_2025_performance_p4-6/chunks/c1",
+  "section_ids": [
+    "fourth_quarter_2025_performance"
+  ],
+  "section_titles": [
+    "Fourth Quarter 2025 Performance"
+  ],
+  "pages": [
+    4,
+    5
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 16,
+  "usage": {
+    "ts": "2026-07-30T15:44:42",
+    "script": "extract_to_excel",
+    "label": "fourth_quarter_2025_performance_p4-6/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4501,
+    "output_tokens": 3240,
+    "thinking_tokens": 0,
+    "total_tokens": 7741,
+    "est_cost_usd": 0.03591,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p5) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '193200032' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '2.30' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.32' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.74' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.56' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '43.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '45.7' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.57' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '200' pdf=3x json=1x (missing from extraction)",
+      "  deficit: '261' pdf=3x json=1x (missing from extraction)",
+      "  deficit: '602' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '517' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '395' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '226' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '101' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '122' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '208' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '245' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '279' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '0.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.8' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (1 dense lines) [Fourth Quarter 2025 Performance]",
+      "  col-repair: declined for table 'Fourth Quarter 2025 Performance' \u2014 uncalibrated (1 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

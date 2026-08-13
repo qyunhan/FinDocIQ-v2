@@ -1,0 +1,651 @@
+{
+  "tables": [
+    {
+      "title": "OVERVIEW OF RISK-WEIGHTED ASSETS",
+      "label_header": "$m",
+      "continued_from_previous": false,
+      "section_id": "5",
+      "columns": [
+        {
+          "group": "RWA",
+          "leaf": "30 Sep 2022"
+        },
+        {
+          "group": "RWA",
+          "leaf": "30 Jun 2022"
+        },
+        {
+          "group": "Minimum capital requirements(1)",
+          "leaf": "30 Sep 2022"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit risk (excluding CCR)",
+          "values": [
+            {
+              "value": "271,270",
+              "cell_state": "reported"
+            },
+            {
+              "value": "263,475",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,128",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "2",
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "of which: Standardised Approach",
+          "values": [
+            {
+              "value": "30,367",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30,825",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,037",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "3",
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "of which: F-IRBA",
+          "values": [
+            {
+              "value": "175,837",
+              "cell_state": "reported"
+            },
+            {
+              "value": "169,066",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,584",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "4",
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "of which: supervisory slotting approach",
+          "values": [
+            {
+              "value": "45,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45,427",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,592",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "5",
+          "row_type": "data",
+          "level": 2,
+          "parent": "1",
+          "label": "of which: A-IRBA",
+          "values": [
+            {
+              "value": "19,150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,915",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "6",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "CCR",
+          "values": [
+            {
+              "value": "16,426",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13,410",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,642",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "7",
+          "row_type": "data",
+          "level": 2,
+          "parent": "6",
+          "label": "of which: SA-CCR",
+          "values": [
+            {
+              "value": "12,778",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,493",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,278",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "8",
+          "row_type": "data",
+          "level": 2,
+          "parent": "6",
+          "label": "of which: CCR Internal Models Method",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "9",
+          "row_type": "data",
+          "level": 2,
+          "parent": "6",
+          "label": "of which: other CCR",
+          "values": [
+            {
+              "value": "2,614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,761",
+              "cell_state": "reported"
+            },
+            {
+              "value": "261",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "9a",
+          "row_type": "data",
+          "level": 2,
+          "parent": "6",
+          "label": "of which: CCP",
+          "values": [
+            {
+              "value": "1,034",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,156",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "10",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "CVA",
+          "values": [
+            {
+              "value": "8,267",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,258",
+              "cell_state": "reported"
+            },
+            {
+              "value": "827",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "11",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity exposures under the simple risk weight method",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "11a",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity exposures under the IMM",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "12",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity investments in funds – look-through approach",
+          "values": [
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "13",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity investments in funds – mandate-based approach",
+          "values": [
+            {
+              "value": "12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "14",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity investments in funds – fall-back approach",
+          "values": [
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "14a",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Equity investment in funds – partial use of an approach",
+          "values": [
+            {
+              "value": "310",
+              "cell_state": "reported"
+            },
+            {
+              "value": "297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "15",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Unsettled transactions",
+          "values": [
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "16",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Securitisation exposures in banking book",
+          "values": [
+            {
+              "value": "1,312",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,380",
+              "cell_state": "reported"
+            },
+            {
+              "value": "131",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "17",
+          "row_type": "data",
+          "level": 2,
+          "parent": "16",
+          "label": "of which: SEC-IRBA",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "18",
+          "row_type": "data",
+          "level": 2,
+          "parent": "16",
+          "label": "of which: SEC-ERBA, including IAA",
+          "values": [
+            {
+              "value": "1,164",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,324",
+              "cell_state": "reported"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "19",
+          "row_type": "data",
+          "level": 2,
+          "parent": "16",
+          "label": "of which: SEC-SA",
+          "values": [
+            {
+              "value": "148",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "20",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Market risk",
+          "values": [
+            {
+              "value": "24,754",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,707",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,475",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "21",
+          "row_type": "data",
+          "level": 2,
+          "parent": "20",
+          "label": "of which: SA(MR)",
+          "values": [
+            {
+              "value": "24,754",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,707",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,475",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "22",
+          "row_type": "data",
+          "level": 2,
+          "parent": "20",
+          "label": "of which: IMA",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "23",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operational risk",
+          "values": [
+            {
+              "value": "34,683",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,227",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,468",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "24",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Amounts below the thresholds for deduction (subject to 250% risk weight)",
+          "values": [
+            {
+              "value": "4,249",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "425",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "25",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Floor adjustment",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "26",
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "361,452",
+              "cell_state": "reported"
+            },
+            {
+              "value": "349,078",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36,145",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "# Numbers below 0.5.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Minimum capital requirements in this column correspond to 10% of the RWA in column \"(a)\" which is 2.0 percentage points higher than the Basel Committee’s requirement.",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "leverage_ratio_5_8_9_p12",
+  "section_ids": [
+    "leverage_ratio_5_8_9"
+  ],
+  "section_titles": [
+    "Leverage ratio 5/ 8/ 9/"
+  ],
+  "pages": [
+    12
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 23,
+  "usage": {
+    "ts": "2026-07-30T15:46:34",
+    "script": "extract_to_excel",
+    "label": "leverage_ratio_5_8_9_p12",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3906,
+    "output_tokens": 4160,
+    "thinking_tokens": 0,
+    "total_tokens": 8066,
+    "est_cost_usd": 0.0433,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

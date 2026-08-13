@@ -1,0 +1,45 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_business_segment_1_p17-21/chunks/c3",
+  "section_ids": [
+    "performance_by_business_segment_1"
+  ],
+  "section_titles": [
+    "Performance by Business Segment 1"
+  ],
+  "pages": [
+    21
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-08-07T10:15:02",
+    "script": "extract_to_excel",
+    "label": "performance_by_business_segment_1_p17-21/chunks/c3",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3960,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3969,
+    "est_cost_usd": 0.00602,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p21) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '512' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

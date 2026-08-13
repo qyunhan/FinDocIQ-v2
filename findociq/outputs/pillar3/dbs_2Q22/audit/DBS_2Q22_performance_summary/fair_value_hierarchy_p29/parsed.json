@@ -1,0 +1,621 @@
+{
+  "tables": [
+    {
+      "title": "Fair Value Hierarchy",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "1",
+      "columns": [
+        {
+          "group": "30 June 2022",
+          "leaf": "Level 1"
+        },
+        {
+          "group": "30 June 2022",
+          "leaf": "Level 2"
+        },
+        {
+          "group": "30 June 2022",
+          "leaf": "Level 3"
+        },
+        {
+          "group": "30 June 2022",
+          "leaf": "Total"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "Level 1"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "Level 2"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "Level 3"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "Total"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Financial assets at FVPL1",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "- Government securities and treasury bills",
+          "values": [
+            {
+              "value": "12,952",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,975",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,928",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,425",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,259",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "12,684",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "- Bank and corporate securities",
+          "values": [
+            {
+              "value": "17,432",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,066",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18,816",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,636",
+              "cell_state": "reported"
+            },
+            {
+              "value": "361",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,813",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "- Other financial assets",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "16,311",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "16,311",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "16,964",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "16,964",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "FVOCI2 financial assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "- Government securities and treasury bills",
+          "values": [
+            {
+              "value": "22,349",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,985",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "24,334",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,811",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "17,925",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "- Bank and corporate securities",
+          "values": [
+            {
+              "value": "17,668",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,913",
+              "cell_state": "reported"
+            },
+            {
+              "value": "628",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,251",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,235",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,916",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "- Other financial assets",
+          "values": [
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,719",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,721",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,197",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "5,199",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivatives",
+          "values": [
+            {
+              "value": "224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,097",
+              "cell_state": "reported"
+            },
+            {
+              "value": "158",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39,479",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,509",
+              "cell_state": "reported"
+            },
+            {
+              "value": "133",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,681",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Liabilities",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Financial liabilities at FVPL1",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "- Other debt securities",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "8,695",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "8,695",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "10,726",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "10,726",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "- Other financial liabilities",
+          "values": [
+            {
+              "value": "3,809",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,193",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,013",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,626",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,726",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,353",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Derivatives",
+          "values": [
+            {
+              "value": "137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,619",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,759",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,296",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,318",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "1 Refers to fair value through profit or loss.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "2 Refers to fair value through other comprehensive income",
+          "values": []
+        }
+      ]
+    },
+    {
+      "title": "2. Off-balance Sheet Items",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "2",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2022"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2021"
+        },
+        {
+          "group": null,
+          "leaf": "30 Jun 2021"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Contingent liabilities",
+          "values": [
+            {
+              "value": "38,584",
+              "cell_state": "reported"
+            },
+            {
+              "value": "34,079",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32,015",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Commitments1",
+          "values": [
+            {
+              "value": "344,829",
+              "cell_state": "reported"
+            },
+            {
+              "value": "332,024",
+              "cell_state": "reported"
+            },
+            {
+              "value": "324,482",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Financial Derivatives",
+          "values": [
+            {
+              "value": "2,845,672",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,303,224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,164,645",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "1 Includes commitments that are unconditionally cancellable at any time of $277,309 million for 30 Jun 2022 (31 Dec 2021: $264,953 million; 30 Jun 2021: $253,396 million).",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

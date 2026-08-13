@@ -1,0 +1,64 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "cash_flow_statement_unaudited_for_the_financial_period_p29",
+  "section_ids": [
+    "cash_flow_statement_unaudited_for_the_financial_period"
+  ],
+  "section_titles": [
+    "Cash Flow Statement (Unaudited) for the financial period ended 30 June 2026"
+  ],
+  "pages": [
+    29
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 50,
+  "usage": {
+    "ts": "2026-08-07T09:25:17",
+    "script": "extract_to_excel",
+    "label": "cash_flow_statement_unaudited_for_the_financial_period_p29",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3963,
+    "output_tokens": 5604,
+    "thinking_tokens": 0,
+    "total_tokens": 9567,
+    "est_cost_usd": 0.05638,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2553' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8913' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1805' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1100' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8507' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '924' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '833' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '139' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '224' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '300' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '709' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '614' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '423' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '148' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '769' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '389' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '481' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '447' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '054' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '881' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '187' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

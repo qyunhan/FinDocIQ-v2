@@ -1,0 +1,79 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "geographical_segments_p20",
+  "section_ids": [
+    "geographical_segments"
+  ],
+  "section_titles": [
+    "13.2 Geographical segments"
+  ],
+  "pages": [
+    20
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 34,
+  "usage": {
+    "ts": "2026-08-07T04:57:54",
+    "script": "extract_to_excel",
+    "label": "geographical_segments_p20",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3931,
+    "output_tokens": 3822,
+    "thinking_tokens": 0,
+    "total_tokens": 7753,
+    "est_cost_usd": 0.04029,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '13.2' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Singapore' [13.2 Geographical segments]",
+      "  duplicate row label x3: 'Malaysia' [13.2 Geographical segments]",
+      "  duplicate row label x3: 'Indonesia' [13.2 Geographical segments]",
+      "  duplicate row label x3: 'Greater China' [13.2 Geographical segments]",
+      "  duplicate row label x3: 'Other Asia Pacific' [13.2 Geographical segments]",
+      "  duplicate row label x3: 'Rest of the World' [13.2 Geographical segments]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Total income' printed bands [] -> extracted slots [1,2]",
+      "  col-shift: 'Operating profit before allowances and a' printed bands [] -> extracted slots [1,2]",
+      "  col-shift: 'Profit before income tax' printed bands [] -> extracted slots [1,2]",
+      "  col-shift: 'Total assets' printed bands [] -> extracted slots [1,2]",
+      "  col-repair: declined for 'Total income' \u2014 extracted values ['7,202', '7,998'] != printed tokens []",
+      "  col-repair: declined for 'Operating profit before allowances and a' \u2014 extracted values ['4,398', '4,918'] != printed tokens []",
+      "  col-repair: declined for 'Profit before income tax' \u2014 extracted values ['4,598', '5,174'] != printed tokens []",
+      "  col-repair: declined for 'Total assets' \u2014 extracted values ['675,688', '729,887'] != printed tokens []"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "13.2 Geographical segments",
+      "anchor_label": "13.2 Geographical segments",
+      "anchor_y": 116.16,
+      "owning_section": "13.2",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "13.2 Geographical segments \u2014 Total assets",
+      "anchor_label": "Other Asia Pacific",
+      "anchor_y": 223.62,
+      "owning_section": "13.2",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": true
+}

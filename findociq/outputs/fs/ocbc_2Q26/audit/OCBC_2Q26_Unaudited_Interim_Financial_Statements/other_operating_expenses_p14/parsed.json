@@ -1,0 +1,183 @@
+{
+  "tables": [
+    {
+      "title": "6. Other operating expenses",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "6",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "1H 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "1H 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Property, plant and equipment",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Depreciation",
+          "values": [
+            {
+              "value": "291",
+              "cell_state": "reported"
+            },
+            {
+              "value": "262",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Maintenance and rental",
+          "values": [
+            {
+              "value": "96",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "211",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "607",
+              "cell_state": "reported"
+            },
+            {
+              "value": "556",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other operating expenses",
+          "values": [
+            {
+              "value": "350",
+              "cell_state": "reported"
+            },
+            {
+              "value": "317",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total other operating expenses",
+          "values": [
+            {
+              "value": "957",
+              "cell_state": "reported"
+            },
+            {
+              "value": "873",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Property, plant and equipment"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Depreciation 291 262"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Maintenance and rental 96 83"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Others 220 211"
+          },
+          {
+            "line_id": 28,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

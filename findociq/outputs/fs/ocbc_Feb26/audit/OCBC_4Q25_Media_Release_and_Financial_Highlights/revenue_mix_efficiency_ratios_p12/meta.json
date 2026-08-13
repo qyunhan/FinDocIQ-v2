@@ -1,0 +1,42 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "revenue_mix_efficiency_ratios_p12",
+  "section_ids": [
+    "revenue_mix_efficiency_ratios"
+  ],
+  "section_titles": [
+    "Revenue mix/efficiency ratios"
+  ],
+  "pages": [
+    12
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 33,
+  "usage": {
+    "ts": "2026-07-30T15:45:58",
+    "script": "extract_to_excel",
+    "label": "revenue_mix_efficiency_ratios_p12",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3893,
+    "output_tokens": 6126,
+    "thinking_tokens": 0,
+    "total_tokens": 10019,
+    "est_cost_usd": 0.06097,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

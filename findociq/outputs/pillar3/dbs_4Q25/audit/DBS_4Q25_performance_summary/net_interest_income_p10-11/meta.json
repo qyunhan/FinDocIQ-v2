@@ -1,0 +1,50 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "net_interest_income_p10-11",
+  "section_ids": [
+    "net_interest_income"
+  ],
+  "section_titles": [
+    "NET INTEREST INCOME"
+  ],
+  "pages": [
+    10,
+    11
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 5,
+  "n_rows": 53,
+  "usage": {
+    "ts": "2026-07-16T11:27:17",
+    "script": "extract_to_excel",
+    "label": "net_interest_income_p10-11",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3513,
+    "output_tokens": 12012,
+    "thinking_tokens": 0,
+    "total_tokens": 15525,
+    "est_cost_usd": 0.11338,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.94' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '7.17' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '14.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Less: Markets Trading' [NET INTEREST INCOME]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis ($m) ]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis ($m) ]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

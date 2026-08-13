@@ -1,0 +1,44 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "business_segments_p17-19/chunks/c2",
+  "section_ids": [
+    "business_segments"
+  ],
+  "section_titles": [
+    "13.1 Business segments"
+  ],
+  "pages": [
+    19
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-08-07T04:57:36",
+    "script": "extract_to_excel",
+    "label": "business_segments_p17-19/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3984,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3993,
+    "est_cost_usd": 0.00606,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '13.1' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

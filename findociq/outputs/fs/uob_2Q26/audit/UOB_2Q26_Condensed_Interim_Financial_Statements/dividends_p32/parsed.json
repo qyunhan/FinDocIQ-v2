@@ -1,0 +1,117 @@
+{
+  "tables": [
+    {
+      "title": "4 Dividends",
+      "label_header": "In $m",
+      "continued_from_previous": false,
+      "section_id": "4",
+      "columns": [
+        {
+          "group": "The Group",
+          "leaf": "1H26"
+        },
+        {
+          "group": "The Group",
+          "leaf": "1H25"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Ordinary dividends:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Final dividend of 71 cents (2025: 92 cents) tax-exempt per share paid in respect of prior financial year",
+          "values": [
+            {
+              "value": "1,174",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,537",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Special dividend (2025: 50 cents) tax-exempt per share paid over two tranches in respect of prior financial year",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "836",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "1,174",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,373",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 5,
+            "indent": 0,
+            "label_clean": "Ordinary dividends:"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

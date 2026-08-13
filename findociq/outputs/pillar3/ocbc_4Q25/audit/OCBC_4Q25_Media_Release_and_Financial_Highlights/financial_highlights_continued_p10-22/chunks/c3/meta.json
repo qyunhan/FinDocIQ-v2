@@ -1,0 +1,47 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "financial_highlights_continued_p10-22/chunks/c3",
+  "section_ids": [
+    "financial_highlights_continued"
+  ],
+  "section_titles": [
+    "FINANCIAL HIGHLIGHTS (continued)"
+  ],
+  "pages": [
+    14,
+    15
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 53,
+  "usage": {
+    "ts": "2026-07-16T13:58:57",
+    "script": "extract_to_excel",
+    "label": "financial_highlights_continued_p10-22/chunks/c3",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3522,
+    "output_tokens": 7152,
+    "thinking_tokens": 0,
+    "total_tokens": 10674,
+    "est_cost_usd": 0.06965,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Others' [NON-INTEREST INCOME]",
+      "  duplicate row label x2: 'Sub-total' [NON-INTEREST INCOME]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

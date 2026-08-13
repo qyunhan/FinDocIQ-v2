@@ -1,0 +1,38 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,144.83,41.53,Announcement,12.96,False,left,False
+1,199.31,69.8,To:All Shareholders,11.04,True,center,False
+1,287.15,69.53,Unaudited FinancialResultsfortheFirstHalfended 30 June2025,11.04,True,center,True
+1,363.54,69.56,DividendsfortheFirstHalf ended30 June 2025 Ordinary share dividends,11.04,True,center,False
+1,654.67,69.76,Interested PersonTransactions,11.04,True,center,False
+2,115.12,69.95,Confirmation byDirectors,11.04,True,left,False
+2,203.6,69.6,UndertakingsfromDirectors andExecutiveOfficers,11.04,True,left,False
+2,431.16,69.52,BY ORDEROFTHE BOARD UNITEDOVERSEAS BANK LIMITED,11.04,True,left,False
+7,95.77,70.11,Performance Review,9.96,True,left,False
+7,129.6,70.24,1H25 versus 1H24,9.48,True,left,False
+7,348.11,69.88,1H25 versus 2H24,9.48,True,left,False
+7,512.58,70.01,AssetQuality,9.48,True,left,False
+7,599.35,69.61,"Capital,FundingandLiquidity Positions",9.48,True,left,False
+18,98.46,70.02,Performance by Business Segment (cont’d),9.96,True,left,False
+18,198.51,70.09,"GroupRetail (""GR"")",8.52,True,left,False
+18,354.85,69.87,"GroupWholesaleBanking(""GWB"")",8.52,True,left,False
+18,521.32,69.97,"Global Markets(""GM"")",8.52,True,left,False
+18,667.94,70.43,Others,8.52,True,left,False
+20,95.7,69.89,Performance by Geographical Segment (Cont’d),9.96,True,left,False
+20,147.85,70.38,Singapore,8.52,True,left,False
+20,265.4,70.21,Malaysia,8.52,True,left,False
+20,362.75,70.52,Thailand,8.52,True,left,False
+20,460.53,70.4,Indonesia,8.52,True,left,False
+20,538.93,70.25,Greater China,8.52,True,left,False
+20,636.22,70.57,Others,8.52,True,left,False
+28,76.79,30.93,1 Summaryof Material Accounting Policies,9.0,True,left,False
+28,104.7,47.76,(a) Basis of Preparation,9.05,True,center,False
+28,208.46,47.73,(b) Changes in Accounting Policies,9.05,True,center,False
+28,385.06,47.73,(c) CriticalAccounting Estimatesand Judgements,9.05,True,center,False
+29,75.3,31.16,2 Income Tax,8.16,True,left,False
+29,208.41,31.11,3 Share Capital and OtherCapital,8.16,True,left,False
+30,75.66,31.31,4 Dividends,8.16,True,left,False
+30,268.83,31.05,5 Classification of Financial Assets and Financial Liabilities,8.16,True,left,False
+31,72.22,31.33,5 Classification of Financial Assets and Financial Liabilities (continued),8.16,True,left,False
+32,72.43,30.88,6 FairValue of Financial Instruments,8.16,True,left,False
+33,72.14,30.79,6 FairValue of Financial Instruments (continued),8.16,True,left,False
+34,71.76,31.64,7 Debts Issued,8.16,True,left,False

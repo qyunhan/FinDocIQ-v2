@@ -1,0 +1,591 @@
+{
+  "tables": [
+    {
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "label_header": "In $ millions",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1st Half 2022"
+        },
+        {
+          "group": null,
+          "leaf": "1st Half 2021"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-) %"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Half 2021"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-) %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Net profit",
+          "values": [
+            {
+              "value": "3,617",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,713",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,094",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other comprehensive income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Items that may be reclassified subsequently to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Translation differences for foreign operations",
+          "values": [
+            {
+              "value": "(23)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "272",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "89",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Other comprehensive income of associates",
+          "values": [
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h1",
+          "label": "Gains/ (losses) on debt instruments classified at fair value through other comprehensive income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Net valuation taken to equity",
+          "values": [
+            {
+              "value": "(1,439)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(206)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(107)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Transferred to income statement",
+          "values": [
+            {
+              "value": "66",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(163)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h2",
+          "label": "Taxation relating to components of other comprehensive income",
+          "values": [
+            {
+              "value": "92",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 2,
+          "parent": "h1",
+          "label": "Cash flow hedge movements",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h3",
+          "label": "Net valuation taken to equity¹",
+          "values": [
+            {
+              "value": "(2,072)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(118)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(326)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h3",
+          "label": "Transferred to income statement",
+          "values": [
+            {
+              "value": "(177)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(78)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(149)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(19)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 3,
+          "parent": "h3",
+          "label": "Taxation relating to components of other comprehensive income",
+          "values": [
+            {
+              "value": "162",
+              "cell_state": "reported"
+            },
+            {
+              "value": "25",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40",
+              "cell_state": "reported"
+            },
+            {
+              "value": ">100",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Items that will not be reclassified to income statement:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Gains/ (losses) on equity instruments classified at fair value through other comprehensive income (net of tax)",
+          "values": [
+            {
+              "value": "(82)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Fair value change from own credit risk on financial liabilities designated at fair value (net of tax)",
+          "values": [
+            {
+              "value": "40",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(32)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Defined benefit plans remeasurements (net of tax)",
+          "values": [
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "55",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Other comprehensive income, net of tax",
+          "values": [
+            {
+              "value": "(3,432)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(157)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(450)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(>100)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total comprehensive income",
+          "values": [
+            {
+              "value": "185",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,556",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(95)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,644",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(93)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Attributable to:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Shareholders",
+          "values": [
+            {
+              "value": "188",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,553",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(95)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,641",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(93)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Non-controlling interests",
+          "values": [
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "NM",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "185",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,556",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(95)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,644",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(93)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note: 1 The Group hedges some of the assets in the banking book via interest rate swaps to manage interest rate sensitivity, e.g. to create synthetic fixed rate loans. About 8% of floating rate loans are hedged in this way. While the swaps are fair valued to other comprehensive income (OCI), the underlying banking book assets are accrual accounted. The asymmetry has no impact to profit or loss and will reverse over the life of the swaps. This creates artificial volatility in OCI and is reflected in the decline in cash flow hedge reserves by $2.1 billion in 1st Half 2022. For this reason, cash flow hedge reserves are derecognised by regulators and have no impact on regulatory capital.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "NM Not Meaningful",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

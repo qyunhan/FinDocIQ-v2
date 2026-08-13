@@ -1,0 +1,946 @@
+{
+  "tables": [
+    {
+      "title": "Performance by Business Segment 1 (cont\u2019d) \u2014 At 30 June 2026",
+      "label_header": "Selected balance sheet items",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "GR $m"
+        },
+        {
+          "group": null,
+          "leaf": "GWB $m"
+        },
+        {
+          "group": null,
+          "leaf": "GM $m"
+        },
+        {
+          "group": null,
+          "leaf": "Others $m"
+        },
+        {
+          "group": null,
+          "leaf": "Total $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "At 30 June 2026",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Segment assets",
+          "values": [
+            {
+              "value": "119,893",
+              "cell_state": "reported"
+            },
+            {
+              "value": "265,649",
+              "cell_state": "reported"
+            },
+            {
+              "value": "195,645",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,009",
+              "cell_state": "reported"
+            },
+            {
+              "value": "584,196",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Intangible assets",
+          "values": [
+            {
+              "value": "1,951",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "655",
+              "cell_state": "reported"
+            },
+            {
+              "value": "85",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,901",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment in associates and joint ventures",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "165",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "960",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,125",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "121,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "268,023",
+              "cell_state": "reported"
+            },
+            {
+              "value": "196,300",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,055",
+              "cell_state": "reported"
+            },
+            {
+              "value": "590,222",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Segment liabilities",
+          "values": [
+            {
+              "value": "209,959",
+              "cell_state": "reported"
+            },
+            {
+              "value": "229,872",
+              "cell_state": "reported"
+            },
+            {
+              "value": "76,424",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,767",
+              "cell_state": "reported"
+            },
+            {
+              "value": "537,022",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Other information:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "119,591",
+              "cell_state": "reported"
+            },
+            {
+              "value": "240,909",
+              "cell_state": "reported"
+            },
+            {
+              "value": "907",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "361,411",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-performing assets",
+          "values": [
+            {
+              "value": "1,294",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,277",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "179",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,750",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance by Business Segment 1 (cont\u2019d) \u2014 At 31 December 2025",
+      "label_header": "Selected balance sheet items",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "GR $m"
+        },
+        {
+          "group": null,
+          "leaf": "GWB $m"
+        },
+        {
+          "group": null,
+          "leaf": "GM $m"
+        },
+        {
+          "group": null,
+          "leaf": "Others $m"
+        },
+        {
+          "group": null,
+          "leaf": "Total $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "At 31 December 2025",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Segment assets",
+          "values": [
+            {
+              "value": "118,422",
+              "cell_state": "reported"
+            },
+            {
+              "value": "257,945",
+              "cell_state": "reported"
+            },
+            {
+              "value": "184,527",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,962",
+              "cell_state": "reported"
+            },
+            {
+              "value": "565,856",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Intangible assets",
+          "values": [
+            {
+              "value": "1,997",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,216",
+              "cell_state": "reported"
+            },
+            {
+              "value": "656",
+              "cell_state": "reported"
+            },
+            {
+              "value": "84",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,953",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment in associates and joint ventures",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "168",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,084",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,252",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "120,419",
+              "cell_state": "reported"
+            },
+            {
+              "value": "260,329",
+              "cell_state": "reported"
+            },
+            {
+              "value": "185,183",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,130",
+              "cell_state": "reported"
+            },
+            {
+              "value": "572,061",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Segment liabilities",
+          "values": [
+            {
+              "value": "211,684",
+              "cell_state": "reported"
+            },
+            {
+              "value": "222,045",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63,526",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23,313",
+              "cell_state": "reported"
+            },
+            {
+              "value": "520,568",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Other information:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "118,055",
+              "cell_state": "reported"
+            },
+            {
+              "value": "233,510",
+              "cell_state": "reported"
+            },
+            {
+              "value": "614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "352,180",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-performing assets",
+          "values": [
+            {
+              "value": "1,335",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,910",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "195",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,440",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Performance by Business Segment 1 (cont\u2019d) \u2014 At 30 June 2025",
+      "label_header": "Selected balance sheet items",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "GR $m"
+        },
+        {
+          "group": null,
+          "leaf": "GWB $m"
+        },
+        {
+          "group": null,
+          "leaf": "GM $m"
+        },
+        {
+          "group": null,
+          "leaf": "Others $m"
+        },
+        {
+          "group": null,
+          "leaf": "Total $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "At 30 June 2025",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Segment assets",
+          "values": [
+            {
+              "value": "115,081",
+              "cell_state": "reported"
+            },
+            {
+              "value": "246,733",
+              "cell_state": "reported"
+            },
+            {
+              "value": "166,034",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,814",
+              "cell_state": "reported"
+            },
+            {
+              "value": "531,662",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Intangible assets",
+          "values": [
+            {
+              "value": "1,983",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,216",
+              "cell_state": "reported"
+            },
+            {
+              "value": "656",
+              "cell_state": "reported"
+            },
+            {
+              "value": "85",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,940",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment in associates and joint ventures",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "163",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,073",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,236",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total assets",
+          "values": [
+            {
+              "value": "117,064",
+              "cell_state": "reported"
+            },
+            {
+              "value": "249,112",
+              "cell_state": "reported"
+            },
+            {
+              "value": "166,690",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,972",
+              "cell_state": "reported"
+            },
+            {
+              "value": "537,838",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Segment liabilities",
+          "values": [
+            {
+              "value": "206,012",
+              "cell_state": "reported"
+            },
+            {
+              "value": "204,001",
+              "cell_state": "reported"
+            },
+            {
+              "value": "58,161",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,091",
+              "cell_state": "reported"
+            },
+            {
+              "value": "487,265",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Other information:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Gross customer loans",
+          "values": [
+            {
+              "value": "114,729",
+              "cell_state": "reported"
+            },
+            {
+              "value": "226,702",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,064",
+              "cell_state": "reported"
+            },
+            {
+              "value": "405",
+              "cell_state": "reported"
+            },
+            {
+              "value": "342,900",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-performing assets",
+          "values": [
+            {
+              "value": "1,296",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,887",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "203",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,386",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note:\n1 Comparative segment information for prior periods has been adjusted for changes in organisational structure and accounting disclosure, if any.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "At 30 June 2026"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Segment assets 1 19"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Intangible assets"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Investment in associates and joint ventures"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Total assets 1 2"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Segment liabilities 2 1"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Other information:"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Gross customer loans 1 1"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Non-performing assets"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "At 31 December 2025"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Segment assets 1 1"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Intangible assets"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Investment in associates and joint ventures"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Total assets 1 2"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Segment liabilities 2 1"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Other information:"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Gross customer loans 1 1"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Non-performing assets"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "At 30 June 2025"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Segment assets 1 1"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Intangible assets"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Investment in associates and joint ventures"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Total assets 1 1"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Segment liabilities 2 0"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Other information:"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Gross customer loans 1 1"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Non-performing assets"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

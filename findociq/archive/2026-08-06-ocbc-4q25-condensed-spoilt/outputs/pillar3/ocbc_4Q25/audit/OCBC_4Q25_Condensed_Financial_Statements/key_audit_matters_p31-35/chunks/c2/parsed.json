@@ -1,0 +1,93 @@
+{
+  "tables": [
+    {
+      "title": "INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF OVERSEA-CHINESE BANKING CORPORATION LIMITED (continued)\nKey Audit Matter",
+      "label_header": "Key Audit Matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the Key Audit Matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Valuation of financial instruments measured at fair value - Levels 2 and 3\n(Refer to Notes 2.21 and 40.3 to the financial statements)\n\nAs at 31 December 2025, the Group had financial assets of S$90,658 million and financial liabilities of S$16,743 million measured at fair value which were classified as Level 2. These represent 38% of the financial assets and 88% of the financial liabilities measured at fair value respectively.\n\nWe considered valuation of Level 2 financial instruments to be a key audit matter due to their financial significance to the Group as well as the judgement required in relation to the application of the appropriate models, assumptions and inputs.\n\nThe Group also had financial assets of S$7,222 million and financial liabilities of S$1,771 million measured at fair value which were classified as Level 3. These represent 3% of the financial assets and 9% of the financial liabilities measured at fair value respectively.\n\nWe focused on the valuation of Level 3 financial assets and financial liabilities as management makes significant judgements and assumptions when valuing these financial instruments, they are complex or illiquid and the external evidence supporting the Group's valuations are limited due to the lack of a liquid market.",
+          "values": [
+            {
+              "value": "We assessed the design and tested the operating effectiveness of key controls over the Group's financial instruments valuation processes, including the controls over:\n\n\u2022 management's testing and approval of new valuation models including revalidation of existing models;\n\u2022 the completeness and accuracy of the data feeds and other inputs into valuation models;\n\u2022 monitoring of collateral disputes; and\n\u2022 governance mechanisms and monitoring over the valuation processes by the Market Risk Management Committee, including over valuation adjustments.\n\nWe determined that we could rely on the controls for the purposes of our audit.\n\nIn addition, we performed the following procedures:\n\n\u2022 we compared the Group's valuation of financial instruments to our own estimates on a sampling basis. This involved sourcing inputs from market data providers or external sources, using our own valuation models for certain instruments, and investigating material variances at the instrument level;\n\u2022 we assessed the reasonableness of the methodologies used and the key assumptions made for a sample of financial instruments; and\n\u2022 we performed procedures on collateral disputes, which take into account counterparty valuations, to identify possible indicators of inappropriate valuations by the Group.\n\nOverall, we have considered that the valuation of Level 2 and Level 3 financial instruments measured at fair value was within a reasonable range of outcomes.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF OVERSEA-CHINESE BANKING CORPORATION LIMITED (continued)\nKey Audit Matter",
+      "label_header": "Key Audit Matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the Key Audit Matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Impairment of goodwill\n(Refer to Notes 2.21 and 36 to the financial statements)\n\nThe Group has a significant amount of goodwill arising from its business acquisitions. As at 31 December 2025, the carrying amount of goodwill on the Group's balance sheet amounted to S$4,344 million.\n\nIn performing the impairment assessment of the carrying amount of goodwill, significant judgement is made by management in estimating the recoverable amounts of the relevant cash generating units (\"CGUs\").\n\nFor the Banking CGUs, this involves the estimation of discounted cash flows, where the significant assumptions used in the assessment include:\n\u2022 forecasts of future cash flows;\n\u2022 inputs to determine the risk-adjusted discount rates; and\n\u2022 perpetual growth rates.\n\nFor the Insurance CGU, the Group applies the appraisal value technique, which comprises the embedded value of in-force business and the estimated value of projected distributable profits from new businesses. The key assumptions used in this assessment include:\n\u2022 investment returns based on long term strategic asset mix and expected future returns; and\n\u2022 risk-adjusted discount rates.\n\nGiven the level of complexity and extent of judgement involved, we considered this to be a key audit matter.",
+          "values": [
+            {
+              "value": "We assessed the appropriateness of management's identification of the Group's CGUs and methodology used in the estimation of recoverable amounts. We also evaluated the key assumptions used and applied sensitivity analysis to the key assumptions to determine whether any possible change in these key assumptions would result in an impairment.\n\nBanking CGUs\nWe evaluated the following:\n\u2022 management's cash flow projections by comparing previous forecasts to actual results;\n\u2022 the methodology and external data sources used in deriving the discount rates and growth rates; and\n\u2022 the growth rate assumptions against historical performance and available external industry and economic indicators.\n\nInsurance CGU\nWe evaluated the following:\n\u2022 the methodologies in estimating the appraisal value; and\n\u2022 the key assumptions including the investment returns and the risk-adjusted discount rates used in deriving the appraisal value.\n\nWe have found the key assumptions and estimates made by management to be reasonable based on our audit procedures performed.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

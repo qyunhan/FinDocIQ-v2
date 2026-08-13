@@ -1,0 +1,65 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "deposits_and_balances_of_non_bank_customers_and_banks_p16",
+  "section_ids": [
+    "deposits_and_balances_of_non_bank_customers_and_banks"
+  ],
+  "section_titles": [
+    "10. Deposits and balances of non-bank customers and banks"
+  ],
+  "pages": [
+    16
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 8,
+  "usage": {
+    "ts": "2026-07-14T14:59:25",
+    "script": "extract_to_excel",
+    "label": "deposits_and_balances_of_non_bank_customers_and_banks_p16",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2965,
+    "output_tokens": 1040,
+    "thinking_tokens": 0,
+    "total_tokens": 4005,
+    "est_cost_usd": 0.00349
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '341120' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '319166' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '336692' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '315096' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '30482' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '31553' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '15299' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '17867' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '19630' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '23860' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '10852' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3551' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3492' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4689' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3938' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5428' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4833' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1515' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1423' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '7693' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1577' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1278' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2851' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2792' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

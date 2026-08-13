@@ -1,0 +1,27 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,88.36,70.82,MediaRelease,16.1,False,left,False
+1,113.13,124.61,OCBCGroupFullYear2025NetProfitatS$7.42billion,13.9,True,center,False
+1,135.21,97.01,Fullyearprofitbeforetaxup2%toanewhighofS$9.12billion,13.9,True,center,False
+2,428.54,68.61,FY25 Year-on-YearPerformance,10.08,True,left,False
+4,437.69,68.3,4Q25Year-on-YearPerformance,10.08,True,left,False
+5,202.3,68.41,4Q25Quarter-on-QuarterPerformance,10.08,True,left,False
+6,392.58,68.48,Non-performingassets(“NPAs”),10.08,True,left,False
+6,527.13,72.46,Allowances,10.08,True,left,False
+8,86.74,69.29,Dividend,12.0,True,left,False
+9,86.65,68.98,"Message from Group CEO, Tan Teck Long",12.0,True,left,False
+10,87.74,70.82,FINANCIALHIGHLIGHTS,12.0,True,left,False
+13,370.33,68.51,Note:,8.4,False,left,False
+14,86.54,68.86,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+16,86.4,68.78,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+19,86.54,68.93,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+20,86.53,68.79,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+20,111.89,68.67,CAPITAL ADEQUACY RATIOS 1/,11.04,True,left,False
+21,86.51,68.83,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+21,110.31,68.48,PERFORMANCE BY BUSINESS SEGMENT,11.04,True,left,False
+21,317.95,68.78,GlobalConsumer/PrivateBanking,9.12,True,left,False
+21,467.11,68.83,GlobalWholesaleBanking,9.12,True,left,False
+22,86.73,69.0,FINANCIAL HIGHLIGHTS (continued),12.0,True,left,False
+22,110.59,68.65,PERFORMANCE BY BUSINESS SEGMENT (continued),11.04,True,left,False
+22,133.58,69.18,GlobalMarkets,9.12,True,left,False
+22,284.19,68.84,Insurance,9.12,True,left,False
+22,429.18,69.24,Others,9.12,True,left,False

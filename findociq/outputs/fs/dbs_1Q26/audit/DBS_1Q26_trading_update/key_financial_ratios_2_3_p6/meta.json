@@ -1,0 +1,44 @@
+{
+  "document": "DBS_1Q26_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "key_financial_ratios_2_3_p6",
+  "section_ids": [
+    "key_financial_ratios_2_3"
+  ],
+  "section_titles": [
+    "Key financial ratios (%)2, 3"
+  ],
+  "pages": [
+    6
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 12,
+  "usage": {
+    "ts": "2026-07-30T02:40:42",
+    "script": "extract_to_excel",
+    "label": "key_financial_ratios_2_3_p6",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3913,
+    "output_tokens": 1895,
+    "thinking_tokens": 0,
+    "total_tokens": 5808,
+    "est_cost_usd": 0.02292,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '456' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

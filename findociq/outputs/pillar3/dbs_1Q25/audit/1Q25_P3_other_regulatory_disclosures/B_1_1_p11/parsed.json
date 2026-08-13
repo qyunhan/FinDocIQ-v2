@@ -1,0 +1,469 @@
+{
+  "tables": [
+    {
+      "title": "1.1 Average All-Currency LCR for the Quarter ended 31 Mar 2025\n(Number of data points: 90)",
+      "label_header": "$m",
+      "continued_from_previous": false,
+      "section_id": "1.1",
+      "columns": [
+        {
+          "group": "31 Mar 2025",
+          "leaf": "UNWEIGHTED(1)"
+        },
+        {
+          "group": "31 Mar 2025",
+          "leaf": "WEIGHTED VALUE"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "HIGH-QUALITY LIQUID ASSETS",
+          "values": []
+        },
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total high-quality liquid assets (HQLA)(2)",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "172,735",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "CASH OUTFLOWS",
+          "values": []
+        },
+        {
+          "row_id": "2",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Retail deposits and deposits from small business customers, of which",
+          "values": [
+            {
+              "value": "299,462",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,549",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "3",
+          "row_type": "data",
+          "level": 2,
+          "parent": "2",
+          "label": "Stable deposits",
+          "values": [
+            {
+              "value": "107,357",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,338",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "4",
+          "row_type": "data",
+          "level": 2,
+          "parent": "2",
+          "label": "Less stable deposits",
+          "values": [
+            {
+              "value": "192,105",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19,211",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "5",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Unsecured wholesale funding, of which",
+          "values": [
+            {
+              "value": "227,034",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124,175",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "6",
+          "row_type": "data",
+          "level": 2,
+          "parent": "5",
+          "label": "Operational deposits (all counterparties) and deposits in institutional networks of cooperative banks",
+          "values": [
+            {
+              "value": "39,115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,402",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "7",
+          "row_type": "data",
+          "level": 2,
+          "parent": "5",
+          "label": "Non-operational deposits (all counterparties)",
+          "values": [
+            {
+              "value": "177,121",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103,975",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "8",
+          "row_type": "data",
+          "level": 2,
+          "parent": "5",
+          "label": "Unsecured debt",
+          "values": [
+            {
+              "value": "10,798",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,798",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "9",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Secured wholesale funding",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "6,788",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "10",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Additional requirements, of which",
+          "values": [
+            {
+              "value": "96,628",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,433",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "11",
+          "row_type": "data",
+          "level": 2,
+          "parent": "10",
+          "label": "Outflows related to derivatives exposures and other collateral requirements",
+          "values": [
+            {
+              "value": "20,893",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,244",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "12",
+          "row_type": "data",
+          "level": 2,
+          "parent": "10",
+          "label": "Outflows related to loss of funding on debt products",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": "13",
+          "row_type": "data",
+          "level": 2,
+          "parent": "10",
+          "label": "Credit and liquidity facilities",
+          "values": [
+            {
+              "value": "75,735",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,189",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "14",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other contractual funding obligations",
+          "values": [
+            {
+              "value": "2,529",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,512",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "15",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other contingent funding obligations",
+          "values": [
+            {
+              "value": "35,331",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,566",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "16",
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "TOTAL CASH OUTFLOWS",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "180,023",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "CASH INFLOWS",
+          "values": []
+        },
+        {
+          "row_id": "17",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Secured lending (e.g. reverse repos)",
+          "values": [
+            {
+              "value": "29,319",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,204",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "18",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Inflows from fully performing exposures",
+          "values": [
+            {
+              "value": "79,382",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49,391",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "19",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other cash inflows",
+          "values": [
+            {
+              "value": "12,534",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,144",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "20",
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "TOTAL CASH INFLOWS",
+          "values": [
+            {
+              "value": "121,235",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60,739",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "TOTAL ADJUSTED VALUE",
+          "values": []
+        },
+        {
+          "row_id": "21",
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "TOTAL HQLA(2)",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "172,735",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "22",
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "TOTAL NET CASH OUTFLOWS",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "119,284",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "23",
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "LIQUIDITY COVERAGE RATIO (%)(3)",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "145%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) The unweighted amounts refer to cash flows due or callable within 30 days, with the exception of items in rows 13 and 15 which reflect the full notional balances.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) HQLA in row 1 and row 21 may not be equal as row 1 is before the application of caps on Level 2 liquid assets.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(3) The LCR is computed as an average of observations of LCR during the quarter. This may not be equal to an LCR computed with the average values of HQLA and net cash outflows disclosed in the table.",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

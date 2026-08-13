@@ -1,0 +1,40 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "cash_flow_statement_audited_for_the_financial_year_ended_31_p32",
+  "section_ids": [
+    "cash_flow_statement_audited_for_the_financial_year_ended_31"
+  ],
+  "section_titles": [
+    "Cash Flow Statement (Audited) for the financial year ended 31 December 2025"
+  ],
+  "pages": [
+    32
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 49,
+  "usage": {
+    "ts": "2026-07-14T14:55:33",
+    "script": "extract_to_excel",
+    "label": "cash_flow_statement_audited_for_the_financial_year_ended_31_p32",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3008,
+    "output_tokens": 5529,
+    "thinking_tokens": 0,
+    "total_tokens": 8537,
+    "est_cost_usd": 0.01472
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

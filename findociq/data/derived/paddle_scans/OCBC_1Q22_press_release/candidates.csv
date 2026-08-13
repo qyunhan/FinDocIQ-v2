@@ -1,0 +1,12 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,96.6,83.98,FirstQuarter2022ResultsPressRelease,23.0,True,center,False
+1,162.29,129.99,OCBC Group First Quarter 2022 Net Profit rose 39% from the previous quarter to S$1.36 billion,13.55,True,center,False
+1,163.24,163.62,OCBCGroupFirstQuarter2022NetProfit,13.6,True,center,False
+1,183.39,130.63,rose39%fromthepreviousquartertoS$1.36billion,13.6,True,center,False
+1,609.01,68.88,1Q22 Quarter-on-Quarter Performance,9.95,True,left,False
+2,500.72,69.0,1Q22 Year-on-Year Performance,9.95,True,left,False
+5,94.03,71.95,"Message from Group CEO, Helen Wong",11.99,True,left,False
+6,94.91,70.91,FINANCIALHIGHLIGHTS(unaudited),12.0,True,left,False
+6,807.44,518.36,6,12.0,False,right,False
+7,105.71,69.26,Further Information,11.99,True,left,False
+7,807.44,518.36,7,12.0,False,right,False

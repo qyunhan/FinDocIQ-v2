@@ -1,0 +1,53 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "customer_deposits_p24",
+  "section_ids": [
+    "customer_deposits"
+  ],
+  "section_titles": [
+    "CUSTOMER DEPOSITS"
+  ],
+  "pages": [
+    24
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 37,
+  "usage": {
+    "ts": "2026-08-06T09:21:11",
+    "script": "extract_to_excel",
+    "label": "customer_deposits_p24",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3888,
+    "output_tokens": 5346,
+    "thinking_tokens": 0,
+    "total_tokens": 9234,
+    "est_cost_usd": 0.05395,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '500000' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '638' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x7: 'Fixed deposits' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x7: 'Savings accounts' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x7: 'Current accounts' [CUSTOMER DEPOSITS]",
+      "  duplicate row label x8: 'Others' [CUSTOMER DEPOSITS]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Others' printed bands [1,2,3] -> extracted slots [2]",
+      "  col-repair: declined for 'Others' \u2014 extracted values ['#', '#', '1'] != printed tokens ['2,262', '3,096', '4,034']"
+    ]
+  },
+  "crop": null
+}

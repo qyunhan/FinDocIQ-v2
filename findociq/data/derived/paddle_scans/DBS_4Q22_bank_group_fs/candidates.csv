@@ -1,0 +1,264 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,205.82,111.6,DBSBANKLTD.,17.0,False,left,False
+1,236.9,111.6,ANDITSSUBSIDIARIES,17.0,False,left,False
+1,269.06,111.6,FINANCIALSTATEMENTS,17.0,False,left,False
+3,71.98,70.25,DBSBankLtd.anditsSubsidiaries,9.96,True,left,False
+3,95.62,69.71,Directors'Statement,9.96,True,left,False
+3,202.32,69.79,Intheopinion oftheDirectors:,9.96,False,left,False
+3,344.39,69.85,Board of Directors,9.96,True,left,False
+4,72.19,70.26,Directors' interests in shares or debentures,9.96,True,left,False
+4,503.13,69.88,DBSH Share Plan,9.96,True,left,False
+5,71.66,69.83,Under the terms of the DBSH Share Plan:,9.96,False,left,False
+6,76.21,71.88,,0.0,False,center,False
+6,146.1,71.69,,0.0,False,center,False
+6,216.59,71.34,,0.0,False,center,False
+7,186.59,96.81,Our opinion,9.96,True,left,False
+7,330.97,97.29,What wehaveaudited,9.96,False,left,False
+7,479.97,97.31,Basis for opinion,9.96,True,left,False
+7,586.47,96.8,Independence,9.96,False,left,False
+8,93.64,47.99,,0.0,False,center,False
+9,128.0,69.49,INDEPENDENT AUDITOR’S REPORT TO THE MEMBER OF DBS BANK LTD. (continued),9.96,True,left,False
+9,163.53,70.15,Materiality,9.96,False,left,False
+9,497.96,69.24,Howwedeveloped theaudit scope,9.96,False,left,False
+10,93.98,48.09,,0.0,False,center,False
+10,127.77,69.58,INDEPENDENT AUDITOR’S REPORT TO THE MEMBER OF DBS BANK LTD. (continued),9.96,True,left,False
+11,127.89,69.97,INDEPENDENT AUDITOR’S REPORT TO THE MEMBER OF DBS BANK LTD. (continued),9.96,True,left,False
+11,414.74,79.91,General allowances for credit losses (Stage 1 and 2 Expected Credit Loss),9.96,True,left,False
+12,94.02,48.14,,0.0,False,center,False
+12,164.14,80.6,Key audit matter,9.96,True,center,False
+12,342.97,80.65,Goodwill,9.96,True,center,False
+13,127.97,70.12,INDEPENDENT AUDITOR’S REPORT TO THE MEMBER OF DBS BANK LTD. (continued),9.96,True,left,False
+13,164.38,80.83,Key audit matter,9.96,True,center,False
+13,651.44,70.38,Other Information,9.96,True,left,False
+14,128.29,69.56,INDEPENDENT AUDITOR’S REPORT TO THE MEMBER OF DBS BANK LTD. (continued),9.96,True,left,False
+14,307.44,70.06,Responsibilities of Management and Directors for the Financial Statements,9.96,True,left,False
+14,495.39,69.02,Auditor’s Responsibilities for the Audit of the Financial Statements,9.96,True,left,False
+15,127.91,69.58,INDEPENDENT AUDITOR’S REPORT TO THE MEMBER OF DBS BANK LTD. (continued),9.96,True,left,False
+16,81.13,49.03,,0.0,False,center,False
+16,114.29,70.69,,0.0,False,center,False
+23,78.33,312.21,A) GeneralAccounting Policies,9.0,True,center,False
+23,143.99,55.9,1. Domicileand Activities,9.0,True,left,False
+23,147.5,57.6,1.DomicileandActivities,9.0,True,left,False
+23,171.69,311.68,2.5 Group Accounting,9.0,True,center,False
+23,192.65,311.57,Subsidiaries,9.0,True,center,False
+23,308.07,54.6,2. Summary of Significant Accounting Policies,9.0,True,left,False
+23,332.22,55.55,2.1 Basis ofpreparation,9.0,True,left,False
+23,335.31,57.6,2.1Basisofpreparation,9.0,True,left,False
+23,380.96,311.17,Associates and Joint Ventures,9.0,True,center,False
+23,477.75,55.38,2.2 Significant estimates and judgement,9.0,True,left,False
+23,622.47,55.44,2.3 New oramended SFRS(I)effectivefor2022 year-end,9.0,True,left,False
+23,649.61,311.75,2.6 Foreign currency treatment,9.0,True,center,False
+23,670.47,311.59,Functional and presentationcurrency,9.0,True,center,False
+23,694.89,55.36,2.4 New SFRS(I)and Interpretations effectivefor future periods,9.0,True,left,False
+24,181.9,311.87,B) Income Statement,9.0,True,center,False
+24,203.12,311.81,2.8 Incomerecognition,9.0,True,center,False
+24,358.92,311.54,Fee and commission income,9.0,True,center,False
+24,388.98,55.57,Foreign operations,9.0,True,left,False
+24,712.36,55.65,2.7 Segment reporting,9.0,True,left,False
+25,78.4,55.9,Dividendincome,9.0,True,left,False
+25,230.75,55.76,C) Balance Sheet,9.0,True,left,False
+25,250.69,55.5,2.9 Financial assets,9.0,True,left,False
+25,253.92,57.6,2.9Financialassets,9.0,True,left,False
+25,271.81,55.33,Initial recognition,9.0,True,left,False
+25,396.77,55.45,Classificationandsubsequent measurement,9.0,True,left,False
+25,536.02,311.9,Reclassification,9.0,True,center,False
+25,597.82,311.67,Determination of fairvalue,9.0,True,center,False
+26,78.48,55.55,Offsetting,9.0,True,left,False
+26,150.87,55.74,Derecognition,9.0,True,left,False
+26,409.63,55.68,2.10 Cash andcash equivalents,9.0,True,left,False
+26,482.12,55.44,2.11 Impairment of financial assets at amortised cost and FVOCI,9.0,True,left,False
+26,513.28,55.53,Expected Credit Losses (ECL),9.0,True,left,False
+26,680.54,311.8,Measurementof ECL,9.0,True,center,False
+27,453.09,55.37,ECL Modelling -Point-in-Time andForward-Looking Adjustments,9.0,True,left,False
+27,617.2,310.92,Governanceframework,9.0,True,center,False
+28,222.96,311.6,2.14 Properties and otherfixed assets,9.0,True,center,False
+28,226.3,313.56,2.14Propertiesandotherfixedassets,9.0,True,center,False
+28,297.18,55.51,Minimum RegulatoryLoss Allowance,9.0,True,left,False
+28,421.53,55.64,2.12 Repurchase agreements,9.0,True,left,False
+28,565.08,311.94,Leased properties and otherfixedassets,9.0,True,center,False
+28,701.9,55.79,2.13 Goodwill,9.0,True,left,False
+28,705.17,57.6,2.13Goodwill,9.0,True,left,False
+29,78.58,312.03,Determination of fairvalue,9.0,True,center,False
+29,109.48,55.78,2.15 Financial liabilities,9.0,True,left,False
+29,112.04,57.61,2.15Financialliabilitiesbetweenmarketparticipantsatthemeasurementdate.,9.0,True,left,False
+29,151.06,311.72,Derecognition,9.0,True,center,False
+29,203.14,311.91,"2.16 Loan commitments, letters of credit and financial guarantees",9.0,True,center,False
+29,205.64,313.56,"2.16Loancommitments,lettersofcreditand",9.0,True,center,False
+29,234.09,311.71,Loan commitments,9.0,True,center,False
+29,305.98,311.75,Letters ofcredit,9.0,True,center,False
+29,389.07,311.85,Financial guarantees,9.0,True,center,False
+29,597.72,311.93,2.17 Provisions andotherliabilities,9.0,True,center,False
+30,78.5,55.35,2.18 Share capitaland otherinstrumentsclassified as equity,9.0,True,left,False
+30,81.08,57.6,2.18Sharecapitalandotherinstrumentsclassifiedarebothrecordedinothercomprehensiveincomeand,9.0,True,left,False
+30,132.35,312.3,• Cash flow hedge,9.0,True,center,False
+30,305.79,55.9,D) OtherSpecificTopics,9.0,True,left,False
+30,326.74,55.59,2.19 Hedging and hedgeaccounting,9.0,True,left,False
+30,358.7,312.26,• Net investmenthedge,9.0,True,center,False
+30,649.25,55.56,• Fairvalue hedge,9.0,True,left,False
+30,701.76,311.87,2.20 Employee benefits,9.0,True,center,False
+30,704.81,313.59,2.20Employeebenefits,9.0,True,center,False
+31,206.06,56.0,2.21 Share-based compensation,9.0,True,left,False
+31,350.69,55.78,2.22 Current and deferred taxes,9.0,True,left,False
+31,353.72,57.62,2.22Currentanddeferredtaxes,9.0,True,left,False
+32,83.04,54.83,3. Critical AccountingEstimates,9.0,True,left,False
+32,83.46,82.59,Critical AccountingEstimates,9.0,True,center,False
+32,86.42,57.6,3.CriticalAccountingEstimates,9.0,True,left,False
+32,120.28,312.16,3.4 Incometaxes,9.0,True,center,False
+32,253.12,55.93,3.1 Impairment of financial assets,9.0,True,left,False
+32,439.88,55.86,3.2 Fairvalue of financial instruments,9.0,True,left,False
+32,677.61,55.78,3.3 Goodwillimpairment,9.0,True,left,False
+33,85.46,57.6,4.NetInterestIncome,9.0,True,left,False
+33,343.94,57.6,5.NetFeeandCommissionIncome,9.0,True,left,False
+34,85.46,57.6,6.NetTradingIncome,9.0,True,left,False
+34,220.46,57.6,7.NetIncomefromInvestmentSecurities,9.0,True,left,False
+34,400.79,55.18,8. Other Income,9.0,True,left,False
+34,548.0,55.13,9. Employee Benefits,9.0,True,left,False
+35,85.46,56.64,10.OtherExpenses,9.0,True,left,False
+35,436.7,56.64,11.AllowancesforCreditandOtherLosses,9.0,True,left,False
+40,376.79,54.57,Sensitivity of ECL,9.0,True,left,False
+40,494.17,53.86,12. Share of Profits or Losses of Associates and Joint Ventures,9.0,True,left,False
+40,497.42,56.64,12.ShareofProfitsorLossesofAssociatesandJointVentures,9.0,True,left,False
+42,85.46,56.64,14.ClassificationofFinancialInstruments,9.0,True,left,False
+44,110.11,54.28,Financial assetsandliabilities offset on the balance sheet,9.0,True,left,False
+44,182.48,54.07,Financial assetsandliabilities subject to netting agreements butnot offset onthe balancesheet,9.0,True,left,False
+46,537.62,56.64,15.CashandBalanceswithCentralBanks,9.0,True,left,False
+47,85.1,56.64,16.GovernmentSecuritiesandTreasuryBills,9.0,True,left,False
+47,224.66,56.64,17.BankandCorporateSecurities,9.0,True,left,False
+47,378.74,56.64,18.LoansandAdvancestoCustomers,9.0,True,left,False
+48,82.18,55.11,19. Financial Assets PledgedorTransferred,9.0,True,left,False
+48,190.26,53.8,Securitiesand Certificates of deposit,9.0,True,left,False
+48,516.47,53.95,Covered bonds,9.0,True,left,False
+49,85.46,56.64,20.OtherAssets,9.0,True,left,False
+49,249.97,53.3,21. Deferred Tax Assets/ Liabilities,9.0,True,left,False
+49,252.98,56.64,21.DeferredTaxAssets/Liabilities,9.0,True,left,False
+50,227.01,54.43,22.1 Main operating subsidiaries,9.0,True,left,False
+50,538.82,54.23,22.2 Consolidated structured entity,9.0,True,left,False
+51,422.07,54.56,23.1 Main associates,9.0,True,left,False
+52,82.0,52.92,24. Unconsolidated Structured Entities,9.0,True,left,False
+52,85.46,56.64,24.UnconsolidatedStructuredEntities,9.0,True,left,False
+53,82.24,53.33,25. Acquisitions,9.0,True,left,False
+53,85.46,56.64,25.Acquisitions,9.0,True,left,False
+53,106.99,54.15,25.1 Shenzhen Rural Commercial Bank Corporation Limited,9.0,True,left,False
+53,110.06,56.64,25.1ShenzhenRuralCommercialBankCorporationLimited,9.0,True,left,False
+53,283.35,54.17,25.2 Consumer banking business of Citigroup Inc (“Citi”) in Taiwan,9.0,True,left,False
+53,404.78,56.64,26.PropertiesandOtherFixedAssets,9.0,True,left,False
+54,402.26,56.64,28.DepositsandBalancesfromCustomers,9.0,True,left,False
+55,85.46,56.64,29.OtherLiabilities,9.0,True,left,False
+55,339.62,56.64,30.OtherDebtSecurities,9.0,True,left,False
+55,513.53,57.6,30.1Negotiablecertificatesofdepositissuedandoutstandingasat31Decemberareasfollows:,9.0,True,left,False
+56,80.92,57.6,30.2Seniormediumtermnotesissuedandoutstandingasat31Decemberareasfollows:,9.0,True,left,False
+56,427.65,57.62,30.5Otherdebtsecuritiesissuedandoutstandingasat31Decemberareasfollows:,9.0,True,left,False
+56,615.14,57.6,31.ShareCapital,9.0,True,left,False
+57,82.3,54.59,32. Other Equity Instruments,9.0,True,left,False
+57,85.46,57.6,32.OtherEquityInstruments,9.0,True,left,False
+57,312.89,57.6,"32.1Distributionsarepayableat3.98%perannumupto12September2025.Thereafter,thedistributionrateresetsevery",9.0,True,left,False
+57,364.62,57.6,"32.2Distributionsarepayableat3.30%perannumupto27February2025.Thereafter,thedistributionrateresetsevery",9.0,True,left,False
+57,428.01,54.94,33. Other Reserves and Revenue Reserves,9.0,True,left,False
+57,431.3,57.6,33.OtherReservesandRevenueReserves,9.0,True,left,False
+57,453.51,56.08,33.1 Other reserves,9.0,True,left,False
+59,422.11,55.89,33.2 Revenue reserves,9.0,True,left,False
+60,82.1,54.58,34. Non-controlling Interests,9.0,True,left,False
+60,85.46,57.6,34.Non-controllingInterests,9.0,True,left,False
+60,351.64,57.6,34.1Thepreferredshareshaveanannualdividendrateof4.0%from20January2015to(butexcluding)20January,9.0,True,left,False
+61,82.42,54.55,35. Contingent Liabilities and Commitments,9.0,True,left,False
+61,85.46,57.6,35.ContingentLiabilitiesandCommitments,9.0,True,left,False
+62,81.99,54.72,36 Financial Derivatives,9.0,True,left,False
+62,82.42,83.5,Financial Derivatives,9.0,True,center,False
+62,107.13,55.84,36.1 Trading derivatives,9.0,True,left,False
+62,220.7,55.81,36.2 Hedging derivatives,9.0,True,left,False
+62,223.85,57.59,36.2Hedgingderivatives,9.0,True,left,False
+64,83.46,54.72,37 Interest Rate Benchmark Reform,9.0,True,left,False
+64,242.87,55.28,Changesin contractual cashflowsoffinancial instruments,9.0,True,left,False
+64,311.4,55.88,Hedge accounting,9.0,True,left,False
+64,404.4,55.64,How the Group ismanagingthe transition to ARRs,9.0,True,left,False
+64,570.02,56.14,The Grouphas identified that the risks arising from IBOR reform are:,9.0,False,left,False
+65,78.66,55.76,Exposures impacted by IBOR reform,9.0,True,left,False
+66,82.25,54.8,38. Hedge Accounting,9.0,True,left,False
+66,85.46,57.6,38.HedgeAccounting,9.0,True,left,False
+66,169.29,55.34,38.1 Fairvaluehedge,9.0,True,left,False
+68,526.64,55.42,38.2 Cash flow hedge,9.0,True,left,False
+70,78.51,55.75,38.3 Net investment hedge,9.0,True,left,False
+71,82.18,54.59,39. Share-based Compensation Plans,9.0,True,left,False
+71,85.46,57.6,39.Share-basedCompensationPlans,9.0,True,left,False
+71,608.22,55.67,39.1 DBSH Share Plan and DBSH Employee Share Plan,9.0,True,left,False
+72,226.95,57.6,39.2DBSHEmployeeSharePurchasePlan,9.0,True,left,False
+72,430.81,55.08,40. Related Party Transactions,9.0,True,left,False
+72,433.94,57.6,40.RelatedPartyTransactions,9.0,True,left,False
+72,571.64,57.61,40.3Totalcompensationandfeestokeymanagementpersonnel(a)areasfollows:,9.0,True,left,False
+73,78.8,55.65,40.4 Income received from and expenses paid to related parties,9.0,True,left,False
+73,267.75,57.6,40.5Amountsduefromandtorelatedparties,9.0,True,left,False
+73,420.57,55.65,40.6 Guarantees issued to and received from related parties,9.0,True,left,False
+74,84.85,55.22,41. FairValue of Financial Instruments,9.0,True,left,False
+74,111.3,55.98,41.1 Valuation Process,9.0,True,left,False
+74,114.32,57.6,41.1ValuationProcessinputs.,9.0,True,left,False
+74,132.71,314.01,Credit Valuation Adjustments,9.0,True,center,False
+74,226.08,313.77,Funding Valuation Adjustments,9.0,True,center,False
+74,298.41,314.04,Day 1 ProfitorLoss(P&L) Reserve,9.0,True,center,False
+74,453.51,314.26,Bid-OfferAdjustments,9.0,True,center,False
+74,526.37,314.57,41.2 FairValue Hierarchy,9.0,True,center,False
+75,36.07,55.56,DBS Bank Ltd. and its subsidiaries Notes to the financial statements For the Year ended 31 December 2022,9.0,True,left,True
+76,417.74,55.08,41.3 Own credit adjustments on financial liabilities designated at fair value through profit or loss,9.0,True,left,False
+76,593.02,55.15,41.4 Financial assets & liabilities not carried at fair value,9.0,True,left,False
+77,82.06,55.85,42. Risk Governance,9.0,True,left,False
+77,85.46,57.6,42.RiskGovernance,9.0,True,left,False
+77,489.81,55.58,Key responsibilities:,9.0,False,left,False
+78,82.0,55.69,43. Credit Risk,9.0,True,left,False
+78,85.46,57.6,43.CreditRisk,9.0,True,left,False
+78,179.92,55.62,Credit RiskManagement,9.0,True,left,False
+78,222.8,55.88,• Policies,9.0,True,left,False
+78,441.45,332.32,Concentration RiskManagement,9.0,True,center,False
+78,512.93,55.87,• Risk Methodologies,9.0,True,left,False
+79,296.01,74.11,Country risk,9.0,True,center,False
+79,648.31,74.62,Credit stresstesting,9.0,True,center,False
+79,692.74,332.26,"Processes, Systemsand Reports",9.0,True,center,False
+80,369.18,55.68,Non-performingassets,9.0,True,left,False
+81,233.66,56.01,Credit RiskMitigants,9.0,True,left,False
+81,254.64,56.03,Collateral received,9.0,True,left,False
+81,420.49,314.64,Other credit risk mitigants,9.0,True,center,False
+82,78.5,55.54,43.1 Maximum exposure to credit risk,9.0,True,left,False
+82,421.63,55.65,Analysis of Collateral,9.0,True,left,False
+82,546.82,55.43,Derivatives,9.0,True,left,False
+82,597.97,54.72,"Loans and advances to customers, Contingent liabilities and commitments",9.0,True,left,False
+83,81.38,57.6,43.2Loansandadvancestocustomers,9.0,True,left,False
+83,280.96,55.92,Non-performing assets (NPAs),9.0,True,left,False
+85,78.5,55.56,43.3 Credit quality of Government securities and treasury bills and Bank and corporate debt securities,9.0,True,left,False
+86,81.38,57.6,43.4Creditriskbygeographyandindustry,9.0,True,left,False
+87,81.55,55.37,44. Market Risk,9.0,True,left,False
+87,85.46,57.6,44.MarketRisk,9.0,True,left,False
+87,323.11,56.25,Market RiskManagement,9.0,True,left,False
+87,374.55,55.88,• Policies,9.0,True,left,False
+87,530.93,55.77,• Risk Methodologies,9.0,True,left,False
+87,576.95,321.16,"Processes, Systemsand Reports",9.0,True,center,False
+88,88.95,56.1,Market Risk,9.0,True,left,False
+89,81.87,55.38,45. Liquidity Risk,9.0,True,left,False
+89,85.46,57.6,45.LiquidityRisk,9.0,True,left,False
+89,189.85,56.17,Liquidity RiskManagement,9.0,True,left,False
+89,250.88,59.15,• Policies,9.0,True,left,False
+89,441.55,313.64,Liquidity Managementand Funding Strategy,9.0,True,center,False
+89,572.98,59.48,• Risk Methodologies,9.0,True,left,False
+90,161.23,56.29,Liquidity riskin 2022,9.0,True,left,False
+91,77.07,55.67,45.1 Contractual maturity profile of assets and liabilities,9.0,True,left,False
+91,80.19,57.6,45.1Contractualmaturityprofileofassetsandliabilities,9.0,True,left,False
+92,77.16,55.79,45.2 Contingent liabilities and commitments,9.0,True,left,False
+92,80.19,57.6,45.2Contingentliabilitiesandcommitments,9.0,True,left,False
+93,77.89,343.1,Cybersecurity risk,9.0,True,center,False
+93,81.12,55.6,46. Operational Risk,9.0,True,left,False
+93,84.26,57.6,46.OperationalRisk,9.0,True,left,False
+93,188.77,55.87,Operational RiskManagement,9.0,True,left,False
+93,240.73,55.85,• Policies,9.0,True,left,False
+93,295.04,343.14,Compliance risk,9.0,True,center,False
+93,407.43,55.78,• Risk Methodologies,9.0,True,left,False
+93,688.95,342.66,"Newproduct, outsourcing and ecosystem partnershiprisks",9.0,True,center,False
+93,717.88,74.06,Technology risk,9.0,True,center,False
+94,77.61,73.59,Othermitigation programmes,9.0,True,center,False
+94,81.11,324.56,47. CapitalManagement,9.0,True,center,False
+94,84.26,326.76,47.CapitalManagement,9.0,True,center,False
+94,440.34,56.14,"• Processes, Systemsand Reports",9.0,True,left,False
+95,81.42,55.99,48. Segment Reporting,9.0,True,left,False
+95,106.14,55.98,48.1 Business segment reporting,9.0,True,left,False
+95,271.89,55.99,ConsumerBanking/ WealthManagement,9.0,True,left,False
+95,354.74,56.06,Institutional Banking,9.0,True,left,False
+95,510.11,56.03,TreasuryMarkets,9.0,True,left,False
+95,623.58,55.91,Others,9.0,True,left,False
+97,76.57,54.56,48.2 Geographical segment reporting(a),9.0,True,left,False
+97,79.59,56.64,48.2Geographicalsegmentreporting,9.0,True,left,False

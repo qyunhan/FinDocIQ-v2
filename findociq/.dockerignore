@@ -1,0 +1,15 @@
+# retry_worker.py pulls compiled_fs.db + source PDFs from GCS at container
+# start (checkpoint pattern — GCS is the source of truth, not the image), so
+# none of the bulky local data/outputs/db content needs to be baked in here.
+data/sources/
+data/derived/
+data/discovery/
+data/review/
+db/*.db
+outputs/
+reports/
+experiments/
+.venv-paddle
+**/__pycache__/
+*.pyc
+.DS_Store

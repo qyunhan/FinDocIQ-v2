@@ -1,0 +1,53 @@
+{
+  "document": "DBS_1Q26_trading_update.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "per_share_data_3_p7",
+  "section_ids": [
+    "per_share_data_3"
+  ],
+  "section_titles": [
+    "Per share data ($)3"
+  ],
+  "pages": [
+    7
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 7,
+  "usage": {
+    "ts": "2026-07-30T02:40:40",
+    "script": "extract_to_excel",
+    "label": "per_share_data_3_p7",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3900,
+    "output_tokens": 1242,
+    "thinking_tokens": 0,
+    "total_tokens": 5142,
+    "est_cost_usd": 0.01703,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.2904' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.3420' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.2840' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '72.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Basic' [Per share data ($)3]",
+      "  duplicate row label x2: 'Diluted8' [Per share data ($)3]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [Per share data ($)3]",
+      "  col-repair: declined for table 'Per share data ($)3' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

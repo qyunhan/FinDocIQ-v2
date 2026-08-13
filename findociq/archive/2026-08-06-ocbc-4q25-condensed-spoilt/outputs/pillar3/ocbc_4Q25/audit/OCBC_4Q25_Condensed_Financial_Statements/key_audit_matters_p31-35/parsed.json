@@ -1,0 +1,173 @@
+{
+  "tables": [
+    {
+      "title": "Key Audit Matters",
+      "label_header": "Key Audit Matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the Key Audit Matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Impairment of loans to customers (Refer to Notes 2.21, 26, 27, 28 and 30 to the financial statements)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "The Group's allowances on loans to customers are S$4,428 million as at 31 December 2025. These allowances are determined by the Group based on the Expected Credit Losses (\"ECL\") framework under SFRS(I) 9 Financial Instruments (\"SFRS(I) 9\").\n\nECL on non-credit impaired loans to customers\nIn respect of the ECL on non-credit impaired loans to customers (S$2,851 million), the Group utilises models which are reliant on internal and external data as well as a number of estimates. We considered this a key audit matter due to the inherent estimation uncertainty in this area which involves significant judgement and assumptions that relate to, amongst others:\n\u2022 determining whether a significant increase in credit risk (\"SICR\") has occurred;\n\u2022 estimating forward-looking macroeconomic scenarios; and\n\u2022 identifying and determining post-model adjustments and management overlays to account for limitations in the ECL models.",
+          "values": [
+            {
+              "value": "ECL on non-credit impaired loans to customers\nWe assessed the design effectiveness and evaluated the operating effectiveness of key controls over the ECL on non-credit impaired loans to customers. These controls include:\n\u2022 review and approval of forward-looking information and macroeconomic assumptions used in the ECL models;\n\u2022 review and approval of reliable and accurate critical data elements used in the ECL models;\n\u2022 review and approval of the ECL results, including post-model adjustments and management overlays applied;\n\u2022 independent validation of the ECL models and review of model validation results by management; and\n\u2022 general information technology (\"IT\") controls over the ECL system as well as IT application controls over the completeness and accuracy of data flows from source systems to the ECL system.\n\nWe determined that we could rely on these controls for the purposes of our audit.\n\nFor a sample of the Group's ECL models, we examined the model methodologies and assessed the reasonableness of key judgements and assumptions made by management in the model and parameters used. We also reviewed the results of independent model validation conducted by the Group's model validation function as part of our assessment of the ECL models.\n\nWe also assessed the reasonableness of criteria used to determine a SICR and the accuracy and timeliness of allocation of exposures into Stage 1 and Stage 2 based on quantitative and qualitative criteria.\n\nThrough the course of our work, we challenged the rationale and calculation basis of post-model adjustments and management overlays.\n\nOverall, we have assessed the methodologies and key assumptions made by the Group to estimate the ECL on non-credit impaired loans to customers to be appropriate.",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL on credit-impaired loans to customers\nAs at 31 December 2025, the allowances on credit-impaired loans to customers of the Group are S$1,577 million, a significant portion of which relates to the Global Wholesale Banking (\"GWB\") loan portfolio.\n\nWe focused on this area because of the significant judgements and assumptions applied by management in determining the necessity for, and estimating the amount of, the ECL allowances against credit-impaired loans to customers. Significant judgements were also required for the credit grading of borrowers in accordance with MAS Notice 612.\n\nFor GWB's credit-impaired loan portfolio, significant management judgement and estimation include:\n\u2022 identifying credit-impaired exposures;\n\u2022 assessing the future performance of the borrowers and recoverable cash flows; and\n\u2022 determining the expected realisable value of collaterals and the timing of realisation.",
+          "values": [
+            {
+              "value": "ECL on credit-impaired loans to customers\nWe assessed the design effectiveness and tested the operating effectiveness of key controls over credit grading, credit monitoring and management's determination of the ECL allowances for loans to customers. These controls include:\n\u2022 oversight and review of credit risk by the Credit Risk Management Committee;\n\u2022 credit portfolio review and monitoring;\n\u2022 collateral monitoring and valuation;\n\u2022 monitoring of loan covenants and breaches; and\n\u2022 classification of loans to customers in accordance with MAS Notice 612.\n\nWe determined that we could rely on these controls for the purposes of our audit.\n\nWe selected a sample of credit exposures in the GWB loan portfolio and performed credit file reviews to assess the appropriateness of credit grading in accordance with the requirements of MAS Notice 612. In that process, we also considered management's assessment on the impact of current significant events in the identification of credit-impaired exposures.\n\nWhere there was objective evidence of impairment, we assessed whether the ECL allowances were recognised on a timely basis and evaluated the sufficiency of such allowances. Our work includes:\n\u2022 considering the background facts and the latest circumstances in relation to the borrower;\n\u2022 examining and challenging management's key assumptions applied on expected future cash flows of the borrower, including amounts and timing of recoveries;\n\u2022 comparing the realisable value of collateral against externally derived evidence including independent valuation reports, where available; and\n\u2022 testing the calculation of impairment.\n\nFor a sample of non-credit impaired loans to customers which had not been classified by management as credit-impaired, we challenged management's key assumptions on whether their classification was appropriate, based on our understanding of the customers, business environment and other external evidence where available.\n\nBased on the procedures performed, we have assessed that the ECL allowances for credit-impaired loans to customers were within an acceptable range of estimates.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF OVERSEA-CHINESE BANKING CORPORATION LIMITED (continued)\nKey Audit Matter",
+      "label_header": "Key Audit Matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the Key Audit Matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Valuation of financial instruments measured at fair value - Levels 2 and 3\n(Refer to Notes 2.21 and 40.3 to the financial statements)\n\nAs at 31 December 2025, the Group had financial assets of S$90,658 million and financial liabilities of S$16,743 million measured at fair value which were classified as Level 2. These represent 38% of the financial assets and 88% of the financial liabilities measured at fair value respectively.\n\nWe considered valuation of Level 2 financial instruments to be a key audit matter due to their financial significance to the Group as well as the judgement required in relation to the application of the appropriate models, assumptions and inputs.\n\nThe Group also had financial assets of S$7,222 million and financial liabilities of S$1,771 million measured at fair value which were classified as Level 3. These represent 3% of the financial assets and 9% of the financial liabilities measured at fair value respectively.\n\nWe focused on the valuation of Level 3 financial assets and financial liabilities as management makes significant judgements and assumptions when valuing these financial instruments, they are complex or illiquid and the external evidence supporting the Group's valuations are limited due to the lack of a liquid market.",
+          "values": [
+            {
+              "value": "We assessed the design and tested the operating effectiveness of key controls over the Group's financial instruments valuation processes, including the controls over:\n\n\u2022 management's testing and approval of new valuation models including revalidation of existing models;\n\u2022 the completeness and accuracy of the data feeds and other inputs into valuation models;\n\u2022 monitoring of collateral disputes; and\n\u2022 governance mechanisms and monitoring over the valuation processes by the Market Risk Management Committee, including over valuation adjustments.\n\nWe determined that we could rely on the controls for the purposes of our audit.\n\nIn addition, we performed the following procedures:\n\n\u2022 we compared the Group's valuation of financial instruments to our own estimates on a sampling basis. This involved sourcing inputs from market data providers or external sources, using our own valuation models for certain instruments, and investigating material variances at the instrument level;\n\u2022 we assessed the reasonableness of the methodologies used and the key assumptions made for a sample of financial instruments; and\n\u2022 we performed procedures on collateral disputes, which take into account counterparty valuations, to identify possible indicators of inappropriate valuations by the Group.\n\nOverall, we have considered that the valuation of Level 2 and Level 3 financial instruments measured at fair value was within a reasonable range of outcomes.",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Impairment of goodwill\n(Refer to Notes 2.21 and 36 to the financial statements)\n\nThe Group has a significant amount of goodwill arising from its business acquisitions. As at 31 December 2025, the carrying amount of goodwill on the Group's balance sheet amounted to S$4,344 million.\n\nIn performing the impairment assessment of the carrying amount of goodwill, significant judgement is made by management in estimating the recoverable amounts of the relevant cash generating units (\"CGUs\").\n\nFor the Banking CGUs, this involves the estimation of discounted cash flows, where the significant assumptions used in the assessment include:\n\u2022 forecasts of future cash flows;\n\u2022 inputs to determine the risk-adjusted discount rates; and\n\u2022 perpetual growth rates.\n\nFor the Insurance CGU, the Group applies the appraisal value technique, which comprises the embedded value of in-force business and the estimated value of projected distributable profits from new businesses. The key assumptions used in this assessment include:\n\u2022 investment returns based on long term strategic asset mix and expected future returns; and\n\u2022 risk-adjusted discount rates.\n\nGiven the level of complexity and extent of judgement involved, we considered this to be a key audit matter.",
+          "values": [
+            {
+              "value": "We assessed the appropriateness of management's identification of the Group's CGUs and methodology used in the estimation of recoverable amounts. We also evaluated the key assumptions used and applied sensitivity analysis to the key assumptions to determine whether any possible change in these key assumptions would result in an impairment.\n\nBanking CGUs\nWe evaluated the following:\n\u2022 management's cash flow projections by comparing previous forecasts to actual results;\n\u2022 the methodology and external data sources used in deriving the discount rates and growth rates; and\n\u2022 the growth rate assumptions against historical performance and available external industry and economic indicators.\n\nInsurance CGU\nWe evaluated the following:\n\u2022 the methodologies in estimating the appraisal value; and\n\u2022 the key assumptions including the investment returns and the risk-adjusted discount rates used in deriving the appraisal value.\n\nWe have found the key assumptions and estimates made by management to be reasonable based on our audit procedures performed.",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Valuation of insurance contract liabilities for life insurance funds\n(Refer to Notes 2.21, 22 and 38.4 to the financial statements)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "The Group's insurance operations are conducted through Great Eastern Holdings Limited and its subsidiaries (\"GEH Group\").\n\nInsurance contract liabilities under SFRS(I) 17 are measured as the total of fulfilment cash flows and contractual service margin (\"CSM\"), the determination of which requires judgement and interpretation. This includes the selection of accounting policies and the use of complex methodologies which are applied in actuarial models. The selection and application of appropriate methodologies requires significant professional judgement. It also requires the determination of assumptions which involve estimation uncertainty.\n\nThe CSM represents the unearned profit that the Group will recognise as it provides insurance contract services in the future. The release of CSM of a group of contracts is recognised as insurance revenue in the income statement of the Group based on the number of coverage units provided in the period. Coverage units in turn are determined by the quantity of the benefits provided under a contract and its expected coverage duration. Management applied judgement in the identification of the service provided and the determination of the coverage units.",
+          "values": [
+            {
+              "value": "We performed the following procedures to address this matter:\n\n\u2022 we assessed the adherence of the accounting policies adopted by management with the requirements in SFRS(I) 17;\n\u2022 we understood the process over the selection of accounting policies, determination of methodologies and assumptions, and reconciliation of data used in determining the insurance contract liabilities;\n\u2022 we tested the design and operating effectiveness of controls over the accuracy and completeness of the data used;\n\u2022 we assessed the appropriateness of the methodologies used in the determination of the insurance contract liabilities comprising of fulfilment cash flows and CSM, and their application in actuarial models;\n\u2022 we assessed the reasonableness of the key assumptions used by management by comparing against GEH Group's historical experiences and market observable data, where applicable;\n\u2022 we assessed the appropriateness of management's identification of the services provided by reviewing the terms and features of the insurance contracts issued on a sample basis;\n\u2022 we assessed the appropriateness of management's determination of the coverage units against the type of service identified; and\n\u2022 we reviewed the reasonableness of the movement analysis of the insurance contract liabilities prepared by management. The movement analysis provides a reconciliation of the balance as at 31 December 2024 to 31 December 2025, showing the key drivers of the changes during the year.\n\nBased on the work performed and the evidence obtained, we have found the methodologies, assumptions and judgements used by management to be appropriate.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

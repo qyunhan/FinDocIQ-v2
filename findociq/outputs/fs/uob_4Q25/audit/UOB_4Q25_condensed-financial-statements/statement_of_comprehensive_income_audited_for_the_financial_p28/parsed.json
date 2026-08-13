@@ -1,0 +1,653 @@
+{
+  "tables": [
+    {
+      "title": "Statement of Comprehensive Income (Audited) for the financial year ended 31 December 2025",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "The Group",
+          "leaf": "2025 $m"
+        },
+        {
+          "group": "The Group",
+          "leaf": "2024 $m"
+        },
+        {
+          "group": "The Group",
+          "leaf": "2H25 \u00b9 $m"
+        },
+        {
+          "group": "The Group",
+          "leaf": "2H24 \u00b9 $m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit for the financial period",
+          "values": [
+            {
+              "value": "4,695",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,059",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,862",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,140",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other comprehensive income that will not be reclassified to income statement",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net gain/(loss) on equity instruments at fair value through other comprehensive income",
+          "values": [
+            {
+              "value": "320",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "239",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fair value changes on financial liabilities designated at fair value due to the Bank's own credit risk",
+          "values": [
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Remeasurement of defined benefit obligation",
+          "values": [
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(6)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Related tax on items at fair value through other comprehensive income",
+          "values": [
+            {
+              "value": "(7)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Subtotal - Items that will not be reclassified",
+          "values": [
+            {
+              "value": "297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "63",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other comprehensive income that may be subsequently reclassified to income statement",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Currency translation adjustments",
+          "values": [
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "264",
+              "cell_state": "reported"
+            },
+            {
+              "value": "349",
+              "cell_state": "reported"
+            },
+            {
+              "value": "446",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Net gain/(loss) on debt instruments classified at fair value through other comprehensive income and cash flow hedge:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Net valuation taken to equity",
+          "values": [
+            {
+              "value": "1,337",
+              "cell_state": "reported"
+            },
+            {
+              "value": "508",
+              "cell_state": "reported"
+            },
+            {
+              "value": "383",
+              "cell_state": "reported"
+            },
+            {
+              "value": "480",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Transferred to income statement",
+          "values": [
+            {
+              "value": "(153)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(293)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(33)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(147)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Change in allowance for expected credit losses",
+          "values": [
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Related tax",
+          "values": [
+            {
+              "value": "(84)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(32)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(37)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(34)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Subtotal - Net gain/(loss) on debt instruments...",
+          "values": [
+            {
+              "value": "1,127",
+              "cell_state": "reported"
+            },
+            {
+              "value": "448",
+              "cell_state": "reported"
+            },
+            {
+              "value": "678",
+              "cell_state": "reported"
+            },
+            {
+              "value": "743",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Change in share of other comprehensive income of associates and joint ventures",
+          "values": [
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Other comprehensive income for the financial period, net of tax",
+          "values": [
+            {
+              "value": "1,412",
+              "cell_state": "reported"
+            },
+            {
+              "value": "475",
+              "cell_state": "reported"
+            },
+            {
+              "value": "870",
+              "cell_state": "reported"
+            },
+            {
+              "value": "811",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total comprehensive income for the financial period, net of tax",
+          "values": [
+            {
+              "value": "6,107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,534",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,732",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,951",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Attributable to:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Equity holders of the Bank",
+          "values": [
+            {
+              "value": "6,079",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,711",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,939",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Non-controlling interests",
+          "values": [
+            {
+              "value": "28",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total comprehensive income attributable to equity holders and non-controlling interests",
+          "values": [
+            {
+              "value": "6,107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,534",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,732",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,951",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Note: 1 Unaudited.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Profit for the financial period"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Other comprehensive income that will not be reclassified to income statement"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Net gain/(loss) on equity instruments at fair value through other comprehensive income"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Fair value changes on financial liabilities designated at fair value due to the Bank's own credit risk"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Remeasurement of defined benefit obligation"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Related tax on items at fair value through other comprehensive income"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Other comprehensive income that may be subsequently reclassified to income statement"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Currency translation adjustments"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "Net gain/(loss) on debt instruments classified at fair value through other comprehensive income and cash flow hedge:"
+          },
+          {
+            "line_id": 25,
+            "indent": 2,
+            "label_clean": "Net valuation taken to equity"
+          },
+          {
+            "line_id": 26,
+            "indent": 2,
+            "label_clean": "Transferred to income statement"
+          },
+          {
+            "line_id": 27,
+            "indent": 2,
+            "label_clean": "Change in allowance for expected credit losses"
+          },
+          {
+            "line_id": 28,
+            "indent": 2,
+            "label_clean": "Related tax"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Change in share of other comprehensive income of associates and joint ventures"
+          },
+          {
+            "line_id": 32,
+            "indent": 0,
+            "label_clean": "Other comprehensive income for the financial period, net of tax"
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Total comprehensive income for the financial period, net of tax"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Attributable to:"
+          },
+          {
+            "line_id": 37,
+            "indent": 1,
+            "label_clean": "Equity holders of the Bank"
+          },
+          {
+            "line_id": 38,
+            "indent": 1,
+            "label_clean": "Non-controlling interests"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 58,
+            "indent": 0,
+            "label_clean": "Note: 1 Unaudited."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

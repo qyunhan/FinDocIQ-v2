@@ -1,0 +1,44 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "debts_issued_p39",
+  "section_ids": [
+    "debts_issued"
+  ],
+  "section_titles": [
+    "7 Debts Issued"
+  ],
+  "pages": [
+    39
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 11,
+  "usage": {
+    "ts": "2026-08-07T10:16:39",
+    "script": "extract_to_excel",
+    "label": "debts_issued_p39",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3924,
+    "output_tokens": 1291,
+    "thinking_tokens": 0,
+    "total_tokens": 5215,
+    "est_cost_usd": 0.0175,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [7 Debts Issued]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

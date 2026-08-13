@@ -1,0 +1,550 @@
+{
+  "tables": [
+    {
+      "title": "3. Net interest income",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "3",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "1H 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "1H 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans to customers",
+          "values": [
+            {
+              "value": "6,475",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,126",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Placements with and loans to banks",
+          "values": [
+            {
+              "value": "1,031",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,474",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other interest-earning assets",
+          "values": [
+            {
+              "value": "2,115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,804",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Interest income total",
+          "values": [
+            {
+              "value": "9,621",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10,404",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Interest expense",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": [
+            {
+              "value": "(4,143)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4,882)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "(370)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(243)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other borrowings",
+          "values": [
+            {
+              "value": "(622)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(651)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Interest expense total",
+          "values": [
+            {
+              "value": "(5,135)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5,776)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Net interest income",
+          "values": [
+            {
+              "value": "4,486",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,628",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Fees and commissions (net)",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "4",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "1H 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "1H 2025 (2)"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Gross fee and commission income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit card",
+          "values": [
+            {
+              "value": "204",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment banking",
+          "values": [
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "77",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loan-related",
+          "values": [
+            {
+              "value": "137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Service charges",
+          "values": [
+            {
+              "value": "61",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Trade-related (1)",
+          "values": [
+            {
+              "value": "154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Wealth management",
+          "values": [
+            {
+              "value": "1,038",
+              "cell_state": "reported"
+            },
+            {
+              "value": "734",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Gross fee and commission income total",
+          "values": [
+            {
+              "value": "1,709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,358",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fee and commission expense",
+          "values": [
+            {
+              "value": "(295)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(232)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Fees and commissions (net)",
+          "values": [
+            {
+              "value": "1,414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,126",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Includes trade, remittance and guarantee-related fees.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(2) Certain comparative figures have been reclassified to be consistent with the presentation for 1H 2026.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Interest income"
+          },
+          {
+            "line_id": 31,
+            "indent": 0,
+            "label_clean": "Loans to customers"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 35,
+            "indent": 0,
+            "label_clean": "Interest expense"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "Other borrowings"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 41,
+            "indent": 0,
+            "label_clean": "Net interest income"
+          }
+        ],
+        "title_clean": "3. Net interest income",
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 48,
+            "indent": 0,
+            "label_clean": "Credit card"
+          },
+          {
+            "line_id": 49,
+            "indent": 0,
+            "label_clean": "Investment banking"
+          },
+          {
+            "line_id": 50,
+            "indent": 0,
+            "label_clean": "Loan-related"
+          },
+          {
+            "line_id": 51,
+            "indent": 0,
+            "label_clean": "Service charges"
+          },
+          {
+            "line_id": 52,
+            "indent": 0,
+            "label_clean": "Trade-related"
+          },
+          {
+            "line_id": 53,
+            "indent": 0,
+            "label_clean": "Wealth management"
+          },
+          {
+            "line_id": 54,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

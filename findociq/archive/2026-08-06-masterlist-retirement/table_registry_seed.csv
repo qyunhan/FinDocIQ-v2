@@ -1,0 +1,103 @@
+bank,doc_kind,cadence,section_canonical,table_type_id,caption_canonical,col_axis,row_dim_axis,value_kind,page,expected,is_narrative,evidence,notes
+DBS,performance_summary,every_quarter,Overview,FS_INCOME_SELECTED,Selected income statement items,period,—,flow,3,True,False,observed,half-year + quarter versions p3-6
+DBS,performance_summary,every_quarter,Overview,FS_BALANCE_SELECTED,Selected balance sheet items,period,—,stock,3,True,False,observed,as_at
+DBS,performance_summary,every_quarter,Overview,FS_RATIOS_KEY,Key financial ratios,period,—,ratio,4,True,False,observed,
+DBS,performance_summary,every_quarter,Overview,FS_PER_SHARE,Per share data,period,earnings-basis,ratio,6,True,False,observed,basis rows: Earnings vs Reported earnings; page-6 caption-in-label bug
+DBS,performance_summary,half_year,Financial Review,FS_NII_DETAIL,Net interest income,period,—,flow,8,True,False,observed,NII reconciliation
+DBS,performance_summary,half_year,Financial Review,FS_AVG_BALANCE_SHEET,Average balance sheet,period+measure,asset/liab line,mixed,8,True,False,observed,THREE col roles: avg balance/interest/rate
+DBS,performance_summary,half_year,Financial Review,FS_VOLUME_RATE,Volume and rate analysis,period+measure,asset/liab line,delta,9,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_FEE_DETAIL,Net fee and commission income,period,fee type,flow,10,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_OTHER_NONII_DETAIL,Other non-interest income,period,income type,flow,10,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_EXPENSES_DETAIL,Expenses,period,expense type,flow,11,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_ALLOWANCES_DETAIL,Allowances for credit and other losses,period+geo,SP geography,flow,11,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_PERF_BY_SEGMENT,Performance by Business Segments,segment,P&L+BS line,mixed,12,True,False,observed,axis=business_unit: Consumer/Institutional/Others/Markets
+DBS,performance_summary,half_year,Financial Review,FS_PERF_BY_GEOGRAPHY,Performance by Geography,geo,P&L+BS line,mixed,16,True,False,observed,axis=geography
+DBS,performance_summary,half_year,Financial Review,FS_CUSTOMER_LOANS,Customer Loans,period,breakdown axis,stock,20,True,False,observed,by unit/geo/industry/currency
+DBS,performance_summary,half_year,Financial Review,FS_NPA_COVERAGE,Non-Performing Assets and Loss Allowance Coverage,period+measure,breakdown axis,stock,21,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_CUSTOMER_DEPOSITS,Customer Deposits,period,currency+product,stock,24,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_DEBTS_ISSUED,Debts Issued,period,instrument,stock,25,True,False,observed,
+DBS,performance_summary,half_year,Financial Review,FS_CAPITAL_ADEQUACY,Capital Adequacy,period,capital/RWA line,mixed,26,True,False,observed,
+DBS,performance_summary,half_year,Financial Statements,FS_INCOME_STATUTORY,Audited Consolidated Income Statement,period,—,flow,27,True,False,observed,statutory
+DBS,performance_summary,half_year,Financial Statements,FS_COMPREHENSIVE_INCOME,Audited Consolidated Statement of Comprehensive Income,period,—,flow,28,True,False,observed,
+DBS,performance_summary,half_year,Financial Statements,FS_BALANCE_STATUTORY,Audited Balance Sheets,period+entity,—,stock,29,True,False,observed,Group AND Company cols = legal_entity axis
+DBS,performance_summary,half_year,Financial Statements,FS_EQUITY_CHANGES_GROUP,Audited Consolidated Statement of Changes in Equity,period,equity component,flow,30,True,False,observed,
+DBS,performance_summary,half_year,Financial Statements,FS_EQUITY_CHANGES_COMPANY,Audited Statement of Changes in Equity,period,equity component,flow,32,True,False,observed,
+DBS,performance_summary,half_year,Financial Statements,FS_CASHFLOW,Audited Consolidated Cash Flow Statement,period,cf line,delta,34,True,False,observed,value_kind=delta; must NOT map to bs.* stock
+DBS,performance_summary,half_year,Financial Statements,FS_FAIR_VALUE_HIERARCHY,Fair Value Measurement,period+measure,level,stock,35,False,False,observed,
+DBS,performance_summary,half_year,Financial Statements,FS_OFF_BALANCE_SHEET,Off-balance Sheet Items,period,item,stock,35,True,False,observed,
+DBS,performance_summary,half_year,Additional Information,FS_SHARE_CAPITAL,Share Capital,period,—,stock,36,True,False,observed,
+DBS,performance_summary,any,Overview,UNCLASSIFIED,Overview accounting-policy prose,—,—,—,2,False,True,observed,narrative
+DBS,performance_summary,any,Financial Review,UNCLASSIFIED,Half / Quarter / Full Year commentary,—,—,—,7,False,True,observed,narrative
+DBS,performance_summary,any,Additional Information,UNCLASSIFIED,Interested Party Transactions / undertakings,—,—,—,36,False,True,observed,narrative
+DBS,performance_summary,any,Attachment,UNCLASSIFIED,Independent Auditor Report,—,—,—,99,False,True,observed,"has own ""Overview"" subhead - the collision source"
+UOB,condensed_financial_statements,every_quarter,Financial Highlights,FS_INCOME_SELECTED,Selected income statement items,period,—,flow,2,True,False,observed,
+UOB,condensed_financial_statements,every_quarter,Financial Highlights,FS_BALANCE_SELECTED,Selected balance sheet items,period,—,stock,2,True,False,observed,as_at
+UOB,condensed_financial_statements,every_quarter,Financial Highlights,FS_RATIOS_KEY,Key financial ratios,period,—,ratio,2,True,False,observed,"incl ROE on ORDINARY equity, LCR all-ccy+SGD, NSFR, leverage, EPS, NAV, credit costs"
+UOB,condensed_financial_statements,half_year,Net Interest Income,FS_AVG_BALANCE_SHEET,Net interest margin (average balance sheet),period+measure,asset/liab line,mixed,5,True,False,observed,THREE col roles avg balance/interest/rate
+UOB,condensed_financial_statements,half_year,Net Interest Income,FS_VOLUME_RATE,Volume and rate analysis,period+measure,asset/liab line,delta,6,True,False,observed,
+UOB,condensed_financial_statements,half_year,Non-Interest Income,FS_FEE_DETAIL,Non-Interest Income (fee + other),period,fee/income type,flow,7,True,False,observed,net fee AND other non-II in one exhibit
+UOB,condensed_financial_statements,half_year,Operating Expenses,FS_EXPENSES_DETAIL,Operating Expenses,period,expense type,flow,8,True,False,observed,
+UOB,condensed_financial_statements,half_year,Allowance for Credit and Other Losses,FS_ALLOWANCES_DETAIL,Allowance for Credit and Other Losses,period+geo,SP geography,flow,9,True,False,observed,"GP/SP split, SP by geography"
+UOB,condensed_financial_statements,half_year,Customer Loans,FS_CUSTOMER_LOANS,Customer Loans,period,breakdown axis,stock,10,True,False,observed,gross->net reconcile; by industry/currency/maturity/geo
+UOB,condensed_financial_statements,half_year,Non-Performing Assets,FS_NPA_COVERAGE,Non-Performing Assets,period+measure,breakdown axis,stock,11,True,False,observed,by grading/security/ageing; NPL by industry+geography
+UOB,condensed_financial_statements,half_year,Customer Deposits,FS_CUSTOMER_DEPOSITS,Customer Deposits,period,currency+product,stock,13,True,False,observed,incl loan/deposit ratios
+UOB,condensed_financial_statements,half_year,Performance by Business Segment,FS_PERF_BY_SEGMENT,Performance by Business Segment,segment,P&L+BS line,mixed,14,True,False,observed,axis=business_unit: GR/GWB/GM/Others
+UOB,condensed_financial_statements,half_year,Performance by Geographical Segment,FS_PERF_BY_GEOGRAPHY,Performance by Geographical Segment,geo,P&L+BS line,mixed,19,True,False,observed,axis=geography: SG/MY/TH/ID/GC/Others
+UOB,condensed_financial_statements,half_year,Capital Adequacy and Leverage Ratios,FS_CAPITAL_ADEQUACY,Capital Adequacy and Leverage Ratios,period,capital/RWA line,mixed,23,True,False,observed,
+UOB,condensed_financial_statements,half_year,Condensed Financial Statements,FS_INCOME_STATUTORY,Income Statement (Audited),period,—,flow,24,True,False,observed,statutory
+UOB,condensed_financial_statements,half_year,Condensed Financial Statements,FS_COMPREHENSIVE_INCOME,Statement of Comprehensive Income (Audited),period,—,flow,25,True,False,observed,
+UOB,condensed_financial_statements,half_year,Condensed Financial Statements,FS_BALANCE_STATUTORY,Balance Sheets (Audited),period+entity,—,stock,26,True,False,observed,"The Group AND The Bank cols = legal_entity axis; 572,061 vs 485,263"
+UOB,condensed_financial_statements,half_year,Condensed Financial Statements,FS_EQUITY_CHANGES_GROUP,Statements of Changes in Equity (Audited) - Group,period,equity component,flow,27,True,False,observed,
+UOB,condensed_financial_statements,half_year,Condensed Financial Statements,FS_EQUITY_CHANGES_COMPANY,Statements of Changes in Equity (Audited) - Bank,period,equity component,flow,28,True,False,observed,
+UOB,condensed_financial_statements,half_year,Condensed Financial Statements,FS_CASHFLOW,Cash Flow Statement (Audited),period,cf line,delta,29,True,False,observed,value_kind=delta
+UOB,condensed_financial_statements,half_year,Notes,FS_INCOME_TAX,Income Tax,period,—,flow,31,True,False,observed,note
+UOB,condensed_financial_statements,half_year,Notes,FS_SHARE_CAPITAL,Share Capital and Other Capital,period,—,stock,31,True,False,observed,note
+UOB,condensed_financial_statements,half_year,Notes,FS_DIVIDENDS,Dividends,period,—,flow,32,False,False,observed,note
+UOB,condensed_financial_statements,half_year,Notes,FS_FINANCIAL_CLASSIFICATION,Classification of Financial Assets and Liabilities,period+measure,FVPL/FVOCI/AC,stock,32,True,False,observed,note
+UOB,condensed_financial_statements,half_year,Notes,FS_FAIR_VALUE_HIERARCHY,Fair Value of Financial Instruments,period+measure,level,stock,34,True,False,observed,note; Level 1/2/3
+UOB,condensed_financial_statements,half_year,Notes,FS_DEBTS_ISSUED,Debts Issued,period,instrument,stock,36,True,False,observed,note
+UOB,condensed_financial_statements,any,Performance Review,UNCLASSIFIED,Performance Review commentary,—,—,—,4,False,True,observed,narrative
+UOB,condensed_financial_statements,any,Attachment,UNCLASSIFIED,Independent Auditor Report,—,—,—,99,False,True,observed,narrative
+OCBC,media_release_financial_highlights,every_quarter,FINANCIAL HIGHLIGHTS,FS_INCOME_SELECTED,Selected Income Statement Items,period,—,flow,10,True,False,observed,FY/4Q/3Q panel AND 2H/1H panel
+OCBC,media_release_financial_highlights,every_quarter,FINANCIAL HIGHLIGHTS,FS_BALANCE_SELECTED,Selected Balance Sheet Items,period,—,stock,10,True,False,observed,incl ordinary equity vs equity attributable = two equity concepts
+OCBC,media_release_financial_highlights,every_quarter,FINANCIAL HIGHLIGHTS,FS_RATIOS_KEY,Key Financial Ratios,period,ratio-group,ratio,12,True,False,observed,grouped: performance / revenue-mix / capital / liquidity; ROE/ROA/NIM/CIR/LDR/NPL/CET1/T1/Total/leverage/LCR SGD+all-ccy/NSFR/EPS/NAV
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_AVG_BALANCE_SHEET,Net Interest Income - Average Balance Sheet,period+measure,asset/liab line,mixed,13,True,False,observed,THREE col roles avg balance/interest/rate
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_VOLUME_RATE,Volume and Rate Analysis,period+measure,asset/liab line,delta,13,True,False,observed,
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_OTHER_NONII_DETAIL,Non-Interest Income,period,income type,flow,14,True,False,observed,fee detail + trading + insurance + other
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_EXPENSES_DETAIL,Operating Expenses,period,expense type,flow,15,True,False,observed,
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_ALLOWANCES_DETAIL,Allowances for Loans and Other Assets,period+geo,impaired/geo,flow,15,True,False,observed,impaired by geography + non-impaired
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_CUSTOMER_LOANS,Loans to Customers,period,breakdown axis,stock,16,True,False,observed,gross->net; by maturity/industry/currency/geography
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_NPA_COVERAGE,Non-Performing Assets,period+geo,breakdown axis,stock,17,True,False,observed,by geography/industry/overdue; restructured
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_CUSTOMER_DEPOSITS,Deposits,period,currency+product,stock,19,True,False,observed,
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_CAPITAL_ADEQUACY,Capital Adequacy Ratios,period,capital/RWA line,mixed,20,True,False,observed,
+OCBC,media_release_financial_highlights,half_year,FINANCIAL HIGHLIGHTS,FS_PERF_BY_SEGMENT,Performance by Business Segment,segment,PBT line,flow,21,True,False,observed,axis=business_unit: Consumer/Wholesale/Markets/Insurance/Others; PBT only
+OCBC,media_release_financial_highlights,every_quarter,FINANCIAL HIGHLIGHTS,FS_ASSET_QUALITY,Asset Quality and Allowances,period,measure,mixed,6,True,False,observed,NPA/NPL/coverage + credit-cost bps
+OCBC,media_release_financial_highlights,every_quarter,Media Release,FS_HIGHLIGHTS_COMBINED,FY25 Performance Highlights,period,—,mixed,1,True,False,observed,headline KPI tiles
+OCBC,media_release_financial_highlights,half_year,Media Release,FS_INCOME_STATUTORY,Full Year 2025 Performance,period,—,flow,2,True,False,observed,income-statement-shaped summary; FY panel
+OCBC,media_release_financial_highlights,half_year,Media Release,FS_INCOME_STATUTORY,Fourth Quarter 2025 Performance,period,—,flow,4,True,False,observed,"4Q panel; same table_type_id, different period cols"
+OCBC,media_release_financial_highlights,half_year,Media Release,FS_DIVIDENDS,Dividend,period,—,flow,8,False,False,observed,
+OCBC,media_release_financial_highlights,any,Media Release,UNCLASSIFIED,Performance narrative (YoY / QoQ prose),—,—,—,2,False,True,observed,narrative
+OCBC,media_release_financial_highlights,any,Media Release,UNCLASSIFIED,Strong Funding Liquidity and Capital Position,—,—,—,7,False,True,observed,narrative w/ inline KPI table
+OCBC,media_release_financial_highlights,any,Media Release,UNCLASSIFIED,Message from Group CEO / About OCBC,—,—,—,9,False,True,observed,narrative
+OCBC,media_release_financial_highlights,any,FINANCIAL HIGHLIGHTS,UNCLASSIFIED,Performance by Business Segment prose,—,—,—,21,False,True,observed,narrative
+OCBC,condensed_financial_statements,half_year,Condensed Financial Statements,FS_INCOME_STATUTORY,Consolidated Income Statement,period,—,flow,2,True,False,observed,statutory; 2H25/2H24/2025/2024; EPS basic/diluted at foot
+OCBC,condensed_financial_statements,half_year,Condensed Financial Statements,FS_COMPREHENSIVE_INCOME,Consolidated Statement of Comprehensive Income,period,—,flow,3,True,False,observed,
+OCBC,condensed_financial_statements,half_year,Condensed Financial Statements,FS_BALANCE_STATUTORY,Balance Sheets,period+entity,—,stock,4,True,False,observed,GROUP and BANK cols = legal_entity axis; NAV per share at foot
+OCBC,condensed_financial_statements,half_year,Condensed Financial Statements,FS_EQUITY_CHANGES_GROUP,Statement of Changes in Equity - Group,period,equity component,flow,5,True,False,observed,
+OCBC,condensed_financial_statements,half_year,Condensed Financial Statements,FS_EQUITY_CHANGES_COMPANY,Statement of Changes in Equity - Bank,period,equity component,flow,7,True,False,observed,
+OCBC,condensed_financial_statements,half_year,Condensed Financial Statements,FS_CASHFLOW,Consolidated Cash Flow Statement,period,cf line,delta,8,True,False,observed,value_kind=delta
+OCBC,condensed_financial_statements,half_year,Notes,FS_NII_DETAIL,Net interest income,period,interest line,flow,11,True,False,observed,note 3; interest income/expense breakdown
+OCBC,condensed_financial_statements,half_year,Notes,FS_FEE_DETAIL,Fees and commissions (net),period,fee type,flow,12,True,False,observed,note 4
+OCBC,condensed_financial_statements,half_year,Notes,FS_OTHER_NONII_DETAIL,Other income,period,income type,flow,12,True,False,observed,note 5
+OCBC,condensed_financial_statements,half_year,Notes,FS_EXPENSES_DETAIL,Other operating expenses,period,expense type,flow,12,True,False,observed,note 6
+OCBC,condensed_financial_statements,half_year,Notes,FS_ALLOWANCES_DETAIL,Allowances for loans and other assets,period,impaired/non-impaired,flow,12,True,False,observed,note 7
+OCBC,condensed_financial_statements,half_year,Notes,FS_DIVIDENDS,Dividends/distributions,period,—,flow,13,False,False,observed,note 8
+OCBC,condensed_financial_statements,half_year,Notes,FS_SHARE_CAPITAL,Share capital,period,—,stock,13,True,False,observed,note 9
+OCBC,condensed_financial_statements,half_year,Notes,FS_CUSTOMER_DEPOSITS,Deposits and balances of non-bank customers and banks,period,product,stock,14,True,False,observed,note 10
+OCBC,condensed_financial_statements,half_year,Notes,FS_DEBTS_ISSUED,Debt issued,period,instrument,stock,14,True,False,observed,note 11
+OCBC,condensed_financial_statements,half_year,Notes,FS_CUSTOMER_LOANS,Loans to customers,period,—,stock,14,True,False,observed,note 12; gross->net
+OCBC,condensed_financial_statements,half_year,Notes,FS_PERF_BY_SEGMENT,Segment information - business,segment,P&L+BS line,mixed,15,True,False,observed,note 13.1; axis=business_unit Consumer/Wholesale/Markets/Insurance/Others
+OCBC,condensed_financial_statements,half_year,Notes,FS_PERF_BY_GEOGRAPHY,Segment information - geographical,geo,income/PBT/assets,mixed,19,True,False,observed,note 13.2; axis=geography
+OCBC,condensed_financial_statements,half_year,Notes,FS_FAIR_VALUE_HIERARCHY,Fair values of financial instruments,period+measure,level,stock,20,True,False,observed,note 14; Level 1/2/3
+OCBC,condensed_financial_statements,any,Other Information,UNCLASSIFIED,Other Information (Listing Rule Appendix 7.2),—,—,—,26,False,True,observed,narrative
+OCBC,condensed_financial_statements,any,Attachment,UNCLASSIFIED,Independent Auditor Report,—,—,—,99,False,True,observed,narrative

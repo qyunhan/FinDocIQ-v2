@@ -1,0 +1,54 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "dividends_distributions_p15",
+  "section_ids": [
+    "dividends_distributions"
+  ],
+  "section_titles": [
+    "8. Dividends/distributions"
+  ],
+  "pages": [
+    15
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 28,
+  "usage": {
+    "ts": "2026-07-14T14:58:39",
+    "script": "extract_to_excel",
+    "label": "dividends_distributions_p15",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2951,
+    "output_tokens": 3932,
+    "thinking_tokens": 0,
+    "total_tokens": 6883,
+    "est_cost_usd": 0.01072
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '500000' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.398' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '16.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '17.13' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.05' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.9' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '216' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'At beginning of period/year' [9. Share capital]",
+      "  duplicate row label x2: 'Cancellation of shares' [9. Share capital]",
+      "  duplicate row label x2: 'At end of period/year' [9. Share capital]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,81 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "performance_by_business_segment_1_p17-21/chunks/c2",
+  "section_ids": [
+    "performance_by_business_segment_1"
+  ],
+  "section_titles": [
+    "Performance by Business Segment 1"
+  ],
+  "pages": [
+    19,
+    20
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 28,
+  "usage": {
+    "ts": "2026-08-07T10:14:56",
+    "script": "extract_to_excel",
+    "label": "performance_by_business_segment_1_p17-21/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4496,
+    "output_tokens": 5246,
+    "thinking_tokens": 0,
+    "total_tokens": 9742,
+    "est_cost_usd": 0.05396,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  number-scan: unscoped (section region unresolved on p20) \u2014 page-wide fallback, cross-section false positives possible",
+      "  deficit: '1.1' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '2.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.9' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.4' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.7' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '755' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '275' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '364' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Segment assets' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Total assets' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Segment liabilities' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Gross customer loans' printed bands [1,2,3,4] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Segment assets' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Total assets' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Segment liabilities' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Gross customer loans' printed bands [1,2,3,4] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Segment assets' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Total assets' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Segment liabilities' printed bands [1,2,3] -> extracted slots [1,2,3,4,5]",
+      "  col-shift: 'Gross customer loans' printed bands [1,2,3,4] -> extracted slots [1,2,3,4,5]",
+      "  col-repair: declined for 'Segment assets' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total assets' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Segment liabilities' \u2014 printed token '2' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Gross customer loans' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Segment assets' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total assets' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Segment liabilities' \u2014 printed token '2' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Gross customer loans' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Segment assets' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Total assets' \u2014 printed token '1' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Segment liabilities' \u2014 printed token '2' maps to 0 bands (need exactly 1)",
+      "  col-repair: declined for 'Gross customer loans' \u2014 printed token '1' maps to 0 bands (need exactly 1)"
+    ]
+  },
+  "crop": null
+}

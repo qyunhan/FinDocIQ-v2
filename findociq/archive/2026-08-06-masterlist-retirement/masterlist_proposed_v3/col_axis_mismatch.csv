@@ -1,0 +1,17 @@
+bank,table,declared,extracted
+DBS,FS_BALANCE_SELECTED[panel_1],period,"hard-axis: hong_kong, rest_of_greater_china, rest_of_the_world, singapore, south_and_south_east_asia, total"
+DBS,FS_VOLUME_RATE[panel_1],period+measure,"hard-axis: rate, volume"
+DBS,FS_VOLUME_RATE[panel_2],period+measure,"hard-axis: rate, volume"
+DBS,FS_EQUITY_CHANGES_GROUP,period,"hard-axis: non_controlling_interests, other_equity_instruments, other_reserves, revenue_reserves, share_capital, total_equity"
+DBS,FS_EQUITY_CHANGES_COMPANY,period,"hard-axis: other_equity_instruments, other_reserves, revenue_reserves, share_capital, total_equity"
+OCBC,FS_VOLUME_RATE,period+measure,"hard-axis: rate, volume"
+OCBC,FS_NPA_COVERAGE[panel_1],period+geo,"hard-axis: doubtful, loss, npl_ratio_2, npls_2, substandard, total_npas_1"
+OCBC,FS_ASSET_QUALITY,period,"hard-axis: qoq, yoy"
+OCBC,FS_HIGHLIGHTS_COMBINED,period,"hard-axis: value, yoy"
+OCBC,FS_INCOME_STATUTORY[panel_1],period,hard-axis: note
+OCBC,FS_INCOME_STATUTORY[panel_2],period,hard-axis: yoy
+OCBC,FS_INCOME_STATUTORY[panel_3],period,"hard-axis: qoq, yoy"
+OCBC,FS_EQUITY_CHANGES_GROUP,period,"hard-axis: capital_reserves_1, fair_value_reserves, non_controlling_interests, other_equity_instruments_issued_by_subsidiary, revenue_reserves, share_capital_and_other_equity"
+OCBC,FS_EQUITY_CHANGES_COMPANY,period,"hard-axis: capital_reserves_1, fair_value_reserves, revenue_reserves, share_capital_and_other_equity, total_equity"
+UOB,FS_NPA_COVERAGE[panel_1],period+measure,"hard-axis: npl_npa, npl_ratio, specific_allowance, specific_allowance_as_a_of_npl_npa"
+UOB,FS_FAIR_VALUE_HIERARCHY[panel_2],period+measure,"hard-axis: balance_at_1_january, balance_at_31_december, income_statement, other_comprehensive_income, purchases, settlements"

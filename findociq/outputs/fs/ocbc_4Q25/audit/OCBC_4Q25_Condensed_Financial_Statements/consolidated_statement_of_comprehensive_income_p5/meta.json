@@ -1,0 +1,42 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "consolidated_statement_of_comprehensive_income_p5",
+  "section_ids": [
+    "consolidated_statement_of_comprehensive_income"
+  ],
+  "section_titles": [
+    "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME"
+  ],
+  "pages": [
+    5
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 27,
+  "usage": {
+    "ts": "2026-07-14T14:56:15",
+    "script": "extract_to_excel",
+    "label": "consolidated_statement_of_comprehensive_income_p5",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2953,
+    "output_tokens": 3781,
+    "thinking_tokens": 0,
+    "total_tokens": 6734,
+    "est_cost_usd": 0.01034
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '0.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

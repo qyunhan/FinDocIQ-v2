@@ -1,0 +1,46 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "capital_adequacy_and_leverage_ratios_1_2_3_p26",
+  "section_ids": [
+    "capital_adequacy_and_leverage_ratios_1_2_3"
+  ],
+  "section_titles": [
+    "Capital Adequacy and Leverage Ratios 1,2,3"
+  ],
+  "pages": [
+    26
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 18,
+  "usage": {
+    "ts": "2026-07-14T14:54:58",
+    "script": "extract_to_excel",
+    "label": "capital_adequacy_and_leverage_ratios_1_2_3_p26",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2985,
+    "output_tokens": 2686,
+    "thinking_tokens": 0,
+    "total_tokens": 5671,
+    "est_cost_usd": 0.00761
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '2.5' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '637' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '123' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.7' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '6.5' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

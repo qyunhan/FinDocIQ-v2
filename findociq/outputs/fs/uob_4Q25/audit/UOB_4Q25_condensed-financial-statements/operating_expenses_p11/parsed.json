@@ -1,0 +1,508 @@
+{
+  "tables": [
+    {
+      "title": "Operating Expenses",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "2025",
+          "leaf": "$m"
+        },
+        {
+          "group": "2024",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        },
+        {
+          "group": "2H25",
+          "leaf": "$m"
+        },
+        {
+          "group": "2H24",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        },
+        {
+          "group": "1H25",
+          "leaf": "$m"
+        },
+        {
+          "group": "+/(-)",
+          "leaf": "%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Staff costs",
+          "values": [
+            {
+              "value": "3,413",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,699",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(8)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,589",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,898",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(16)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,825",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(13)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Other operating expenses",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Revenue-related",
+          "values": [
+            {
+              "value": "893",
+              "cell_state": "reported"
+            },
+            {
+              "value": "906",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "472",
+              "cell_state": "reported"
+            },
+            {
+              "value": "442",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "421",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "IT-related",
+          "values": [
+            {
+              "value": "1,136",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,057",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "624",
+              "cell_state": "reported"
+            },
+            {
+              "value": "529",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "512",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Occupancy-related",
+          "values": [
+            {
+              "value": "393",
+              "cell_state": "reported"
+            },
+            {
+              "value": "386",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "204",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "189",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "322",
+              "cell_state": "reported"
+            },
+            {
+              "value": "262",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            },
+            {
+              "value": "174",
+              "cell_state": "reported"
+            },
+            {
+              "value": "134",
+              "cell_state": "reported"
+            },
+            {
+              "value": "30",
+              "cell_state": "reported"
+            },
+            {
+              "value": "148",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Other operating expenses total",
+          "values": [
+            {
+              "value": "2,744",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,611",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,474",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,307",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,270",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "6,157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,310",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,062",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,205",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(4)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Of which,",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Depreciation of assets",
+          "values": [
+            {
+              "value": "748",
+              "cell_state": "reported"
+            },
+            {
+              "value": "647",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "392",
+              "cell_state": "reported"
+            },
+            {
+              "value": "336",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "356",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Employees (number)",
+          "values": [
+            {
+              "value": "31,224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32,071",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,224",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32,071",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(3)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,921",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2)",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Staff costs"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Other operating expenses"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Revenue-related"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "IT-related"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Occupancy-related"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Of which,"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Depreciation of assets"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Employees (number)"
+          }
+        ],
+        "title_clean": "Operating Expenses",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

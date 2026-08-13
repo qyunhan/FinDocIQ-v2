@@ -1,0 +1,56 @@
+section_id,section_title,first_page,last_page,n_pages,n_tables,confidence,note
+FS1,Income Statements,1,1,1,1,high,
+FS2,Statements of Comprehensive Income,2,2,1,1,high,
+FS3,Balance Sheets,3,3,1,1,high,
+FS4,Statement of Changes in Equity – Group,4,4,1,1,high,
+FS5,Statement of Changes in Equity – Group (continued),5,5,1,1,high,
+FS6,Statement of Changes in Equity – Bank,6,6,1,1,high,
+FS7,Consolidated Cash Flow Statement,7,7,1,1,high,
+1,General Subsidiaries,8,8,1,0,high,title spliced from two-column layout
+2,Material Accounting,8,31,24,3,review,prose note; only yield-curve tables counted
+3,Net Interest Income,32,32,1,1,high,
+4,Insurance Service Results and Net Investment and Finance Income/(Expenses),32,33,2,1,high,
+5,Fees and Commissions (Net),34,34,1,1,high,
+6,Dividends from Subsidiaries and Associates,34,34,1,1,high,
+7,Net Trading Income,35,35,1,1,high,
+8,Other Income,35,35,1,1,high,
+9,Staff Costs and Other Operating Expenses,36,36,1,1,high,
+10,Allowances for Loans and Other Assets,37,37,1,1,high,
+11,Income Tax Expense,37,38,2,2,high,
+12,Earnings Per Share,38,38,1,0,high,"EPS numbers inline, no header band"
+13,Share Capital,39,41,3,3,high,
+14,Other Equity Instruments,42,44,3,1,high,
+15,Capital Reserves,44,44,1,1,high,
+16,Revenue Reserves,44,46,3,4,high,
+17,Deposits and Balances of Non-Bank Customers and Banks,47,47,1,1,high,
+18,Derivative Financial Instruments,48,49,2,2,high,
+19,Other Liabilities,50,50,1,1,high,
+20,Deferred Tax,50,51,2,2,high,
+21,Debt Issued,52,56,5,7,review,debt-issued schedules
+22,Assets and Liabilities for Life Insurance Funds,57,62,6,7,review,"life-insurance reconciliations, many sub-tables"
+23,Cash and Placements with Central Banks,62,62,1,1,high,
+24,Government Treasury Bills and Securities,63,63,1,1,high,
+25,Placements with and Loans to Banks,63,63,1,1,high,
+26,Loans to Customers,64,64,1,1,high,
+27,Non-Performing Assets,65,66,2,3,high,
+28,Allowances for Impaired Loans to Customers,67,67,1,2,high,
+29,Debt and Equity Securities,68,68,1,1,high,
+30,Allowances for Financial Assets,69,72,4,4,high,
+31,Other Assets,73,73,1,1,high,
+32,Associates,73,75,3,5,high,
+33,Subsidiaries,75,77,3,2,high,
+34,"Property, Plant and Equipment",78,79,2,2,review,PPE cost/accum-dep blocks share one header -> undercount
+35,Investment Property,80,80,1,1,high,
+36,Goodwill and Other Intangible Assets,81,82,2,2,high,
+37,Segment Information,83,85,3,3,high,
+38,Risk Management,86,110,25,25,review,25 tables across 25pp; stacked sub-tables under shared headers
+39,Financial Assets and Financial Liabilities Classification,111,114,4,4,high,
+40,Fair Values of Financial Instruments,115,122,8,8,review,fair-value hierarchy tables stacked under shared headers
+41,Offsetting Financial Assets and Financial Liabilities,123,124,2,2,high,
+42,Contingent Liabilities,125,125,1,1,high,total/industry/geography blocks share one header -> undercount
+43,Commitments,126,126,1,1,high,same as 42
+44,Unconsolidated Structured Entities,127,127,1,1,high,
+45,Financial Assets Transferred,128,128,1,1,high,
+46,Related Party Transactions,129,130,2,2,high,
+47,Capital Management,130,130,1,0,high,no table
+48,New Accounting Standards and Interpretations,131,131,1,0,high,SFRS table has no numeric stub -> counted 0

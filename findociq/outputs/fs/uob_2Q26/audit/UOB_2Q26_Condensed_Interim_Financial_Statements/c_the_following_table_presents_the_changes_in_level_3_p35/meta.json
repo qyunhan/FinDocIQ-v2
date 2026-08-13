@@ -1,0 +1,73 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "c_the_following_table_presents_the_changes_in_level_3_p35",
+  "section_ids": [
+    "c_the_following_table_presents_the_changes_in_level_3"
+  ],
+  "section_titles": [
+    "(c) The following table presents the changes in Level 3 instruments for the financial period ended:"
+  ],
+  "pages": [
+    35
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 17,
+  "usage": {
+    "ts": "2026-08-07T09:25:37",
+    "script": "extract_to_excel",
+    "label": "c_the_following_table_presents_the_changes_in_level_3_p35",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3937,
+    "output_tokens": 3629,
+    "thinking_tokens": 0,
+    "total_tokens": 7566,
+    "est_cost_usd": 0.03857,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1377' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '999' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '484' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '305' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '849' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '399' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (1 dense lines) [(c) The following table presents the cha]",
+      "  col-bands: uncalibrated (1 dense lines) [(c) The following table presents the cha]",
+      "  col-repair: declined for table '(c) The following table presents the cha' \u2014 uncalibrated (1 dense lines), shifts in this table cannot be checked",
+      "  col-repair: declined for table '(c) The following table presents the cha' \u2014 uncalibrated (1 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "(c) The following table presents the changes in Level 3 instruments for the financial period ended: Jun 26",
+      "anchor_label": "Derivative financial liabilities",
+      "anchor_y": 240.63,
+      "owning_section": "26",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "(c) The following table presents the changes in Level 3 instruments for the financial period ended: Dec 25",
+      "anchor_label": "Derivative financial liabilities",
+      "anchor_y": 240.63,
+      "owning_section": "26",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": true
+}

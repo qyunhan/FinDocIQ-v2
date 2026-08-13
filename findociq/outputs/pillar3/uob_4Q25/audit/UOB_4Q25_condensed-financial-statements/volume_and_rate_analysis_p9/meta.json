@@ -1,0 +1,47 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "volume_and_rate_analysis_p9",
+  "section_ids": [
+    "volume_and_rate_analysis"
+  ],
+  "section_titles": [
+    "Volume and rate analysis"
+  ],
+  "pages": [
+    9
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 22,
+  "usage": {
+    "ts": "2026-07-14T14:54:22",
+    "script": "extract_to_excel",
+    "label": "volume_and_rate_analysis_p9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2925,
+    "output_tokens": 3869,
+    "thinking_tokens": 0,
+    "total_tokens": 6794,
+    "est_cost_usd": 0.01055
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.89' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9.4' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.6' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Volume and rate analysis \u2014 202]",
+      "  duplicate row label x2: 'Total' [Volume and rate analysis \u2014 2H2]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

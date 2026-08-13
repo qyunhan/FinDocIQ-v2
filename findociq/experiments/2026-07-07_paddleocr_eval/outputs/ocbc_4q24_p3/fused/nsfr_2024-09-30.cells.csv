@@ -1,0 +1,37 @@
+page,line_no,label,v1,v2,v3,v4,v5
+96,,Item,,,,,
+96,1,Capital:,"51,057",-,"1,242","4,554","56,232"
+96,2,Regulatorycapital,"51,057",-,-,"4,554","55,611"
+96,3,Other capital instruments,-,-,"1,242",-,621
+96,4,Retail depositsand depositsfromsmall business customers:,"113,191","72,252","5,718","1,032","176,087"
+96,5,Stable deposits,"51,565","8,588",41,1,"57,186"
+96,6,Lessstable deposits,"61,626","63,664","5,677","1,031","118,901"
+96,7,Wholesalefunding:,"71,739","132,450","12,750","4,689","74,120"
+96,8,Operational deposits,"39,002",-,-,-,"19,501"
+96,9,Other wholesalefunding,"32,737","132,450","12,750","4,689","54,619"
+96,10,Liabilities withmatching interdependentassets,-,-,-,-,-
+96,11,Other liabilities:,"5,093",,"8,450",,179
+96,12,NSFRderivative liabilities,,,"3,338",,
+96,13,All other liabilities andequitynotincluded inthe above categories,"5,093","4,932",-,179,179
+96,14,TotalASF,,,,,"306,618"
+96,,RSFItem,,,,,
+96,15,Total NSFR HQLA,,,,,"7,450"
+96,16,Deposits held at otherfinancial institutionsforoperational purposes,-,-,-,-,-
+96,17,Performing loansandsecurities:,"8,813","112,953","33,449","208,409","235,567"
+96,18,Performing loanstofinancialinstitutionssecured by Level 1HQLA,194,"3,954",106,-,879
+96,19,Performing loanstofinancialinstitutionssecured by non-Level 1 HQLAand unsecured performing loansto financial institutions,"2,719","13,948","3,327","4,159","8,519"
+96,20,"Performing loanstonon-financialcorporateclients, loans toretail andsmall businesscustomers,and loans tosovereigns,centralbanks and PSEs,ofwhich:","4,870","77,601","17,352","126,880","155,877"
+96,21,With ariskweight of lessthan orequal to35% under MAS Notice637’sstandardised approach to credit risk,302,"1,129",455,917,"1,808"
+96,22,"Performing residentialmortgages, of which:",237,"3,087","1,988","67,135","48,281"
+96,23,With ariskweight of lessthan orequal to35% under MAS Notice637’sstandardised approach to credit risk,186,"2,251","1,367","60,770","42,098"
+96,24,"Securitiesthatare not in defaultand do not qualify as HQLA, including exchange-traded equities",793,"14,363","10,677","10,235","22,011"
+96,25,Assetswithmatching interdependent liabilities,-,-,-,-,-
+96,26,Other assets:,"18,834",,"16,208",,"23,628"
+96,27,"Physicaltradecommodities, including gold","1,080",,,,918
+96,28,Assets posted as initial marginforderivativecontracts and contributionsto defaultfundsofCCPs,,,"1,028",,874
+96,29,NSFRderivative assets,,,"4,900",,"1,562"
+96,30,NSFRderivative liabilities before deduction ofvariation margin posted,,,"5,583",,279
+96,31,All other assets not included inthe abovecategories,"17,754","3,158",45,"1,493","19,995"
+96,32,Off-balancesheetitems,,,"240,642",,"2,114"
+96,33,TotalRSF,,,,,"268,759"
+96,34,NSFR (%),,,,,114

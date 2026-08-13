@@ -1,0 +1,28 @@
+You are reading the attached bank financial-statements PDF.
+
+Return EVERY section and sub-section heading in reading order, to the finest
+granularity you can identify. Include:
+- numbered notes and sub-notes exactly as printed (e.g. "13", "13.1", "13.1.2"),
+- unnumbered sub-headings printed as their own line (e.g. "Collateral held",
+  "Past due loans"),
+- top-level statement titles (e.g. "Income Statement", "Balance Sheet",
+  "Statement of Cash Flows", "Notes to the Financial Statements").
+
+For each heading give the 1-based PDF page number on which it STARTS.
+
+`level` = nesting depth: 1 for a top-level heading, 2 for its direct child, 3 for
+a grandchild, and so on (infer from the printed numbering and typography).
+
+Output JSON ONLY, no prose, in exactly this shape:
+{"sections": [{"title": "<verbatim heading text>", "page": <int>, "level": <int>}]}
+
+Rules:
+- Headings ONLY. Do NOT assign tables to sections, do NOT summarize content, do
+  NOT invent sections that are not actually printed in the document.
+- Preserve the heading text verbatim (including its printed number prefix).
+- If the document has no discernible section structure, return {"sections": []}.
+- Do NOT treat table column headers, row labels, or line items as headings.
+  A heading introduces a block of content; a word that appears only as a
+  column/row label inside a table is NOT a section.
+- A heading must be printed as its own line in heading typography (bold,
+  larger, or numbered), separate from any table grid.

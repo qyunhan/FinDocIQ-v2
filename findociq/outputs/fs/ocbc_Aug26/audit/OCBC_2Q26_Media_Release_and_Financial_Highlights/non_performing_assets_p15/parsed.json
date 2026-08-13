@@ -1,0 +1,999 @@
+{
+  "tables": [
+    {
+      "title": "NON-PERFORMING ASSETS",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Total NPAs 1/"
+        },
+        {
+          "group": null,
+          "leaf": "Substandard"
+        },
+        {
+          "group": null,
+          "leaf": "Doubtful"
+        },
+        {
+          "group": null,
+          "leaf": "Loss"
+        },
+        {
+          "group": null,
+          "leaf": "NPLs 2/"
+        },
+        {
+          "group": null,
+          "leaf": "NPL Ratio 2/ %"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Singapore",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "270",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "147",
+              "cell_state": "reported"
+            },
+            {
+              "value": "84",
+              "cell_state": "reported"
+            },
+            {
+              "value": "270",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "236",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "111",
+              "cell_state": "reported"
+            },
+            {
+              "value": "86",
+              "cell_state": "reported"
+            },
+            {
+              "value": "236",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "291",
+              "cell_state": "reported"
+            },
+            {
+              "value": "70",
+              "cell_state": "reported"
+            },
+            {
+              "value": "110",
+              "cell_state": "reported"
+            },
+            {
+              "value": "111",
+              "cell_state": "reported"
+            },
+            {
+              "value": "291",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Malaysia",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "369",
+              "cell_state": "reported"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "129",
+              "cell_state": "reported"
+            },
+            {
+              "value": "363",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "332",
+              "cell_state": "reported"
+            },
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "85",
+              "cell_state": "reported"
+            },
+            {
+              "value": "133",
+              "cell_state": "reported"
+            },
+            {
+              "value": "325",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.2",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "432",
+              "cell_state": "reported"
+            },
+            {
+              "value": "180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "109",
+              "cell_state": "reported"
+            },
+            {
+              "value": "143",
+              "cell_state": "reported"
+            },
+            {
+              "value": "414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Indonesia",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "457",
+              "cell_state": "reported"
+            },
+            {
+              "value": "73",
+              "cell_state": "reported"
+            },
+            {
+              "value": "184",
+              "cell_state": "reported"
+            },
+            {
+              "value": "200",
+              "cell_state": "reported"
+            },
+            {
+              "value": "456",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "457",
+              "cell_state": "reported"
+            },
+            {
+              "value": "67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "179",
+              "cell_state": "reported"
+            },
+            {
+              "value": "211",
+              "cell_state": "reported"
+            },
+            {
+              "value": "457",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "493",
+              "cell_state": "reported"
+            },
+            {
+              "value": "82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "217",
+              "cell_state": "reported"
+            },
+            {
+              "value": "194",
+              "cell_state": "reported"
+            },
+            {
+              "value": "493",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Greater China",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "1,401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "130",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,228",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.0",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "1,445",
+              "cell_state": "reported"
+            },
+            {
+              "value": "140",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,257",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,445",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.0",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "1,151",
+              "cell_state": "reported"
+            },
+            {
+              "value": "148",
+              "cell_state": "reported"
+            },
+            {
+              "value": "954",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,150",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other Asia Pacific",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "211",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "210",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "216",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "195",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "216",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "427",
+              "cell_state": "reported"
+            },
+            {
+              "value": "226",
+              "cell_state": "reported"
+            },
+            {
+              "value": "201",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "421",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "562",
+              "cell_state": "reported"
+            },
+            {
+              "value": "213",
+              "cell_state": "reported"
+            },
+            {
+              "value": "349",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "556",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "426",
+              "cell_state": "reported"
+            },
+            {
+              "value": "256",
+              "cell_state": "reported"
+            },
+            {
+              "value": "170",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "419",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Group",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2026",
+          "values": [
+            {
+              "value": "3,132",
+              "cell_state": "reported"
+            },
+            {
+              "value": "584",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,092",
+              "cell_state": "reported"
+            },
+            {
+              "value": "456",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,119",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "31 Dec 2025",
+          "values": [
+            {
+              "value": "3,243",
+              "cell_state": "reported"
+            },
+            {
+              "value": "573",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,191",
+              "cell_state": "reported"
+            },
+            {
+              "value": "479",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,229",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "30 Jun 2025",
+          "values": [
+            {
+              "value": "3,009",
+              "cell_state": "reported"
+            },
+            {
+              "value": "757",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,755",
+              "cell_state": "reported"
+            },
+            {
+              "value": "497",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,983",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "1. Refer to Non-performing assets. Comprise loans to customers, debt securities and contingent liabilities.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "2. Refer to Non-performing loans. Exclude debt securities and contingent liabilities.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 1,
+          "parent": null,
+          "label": "3. Amounts less than S$0.5 million are shown as \"#\".",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 270 39 147 84 270 0.2"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 236 39 111 86 236 0.2"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 291 70 110 111 291 0.2"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 369 116 124 129 363 1.2"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 332 114 85 133 325 1.2"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 432 180 109 143 414 1.6"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 457 73 184 200 456 2.5"
+          },
+          {
+            "line_id": 23,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 457 67 179 211 457 2.6"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 493 82 217 194 493 2.7"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 28,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 1,401 130 1,228 43 1,401 2.0"
+          },
+          {
+            "line_id": 29,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 1,445 140 1,257 48 1,445 2.0"
+          },
+          {
+            "line_id": 30,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 1,151 148 954 49 1,150 1.6"
+          },
+          {
+            "line_id": 33,
+            "indent": 0,
+            "label_clean": "Other Asia Pacific"
+          },
+          {
+            "line_id": 34,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 208 \u2013 208 # 208 0.7"
+          },
+          {
+            "line_id": 35,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 211 \u2013 210 1 210 0.8"
+          },
+          {
+            "line_id": 36,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 216 21 195 # 216 0.9"
+          },
+          {
+            "line_id": 39,
+            "indent": 0,
+            "label_clean": "Rest of the World"
+          },
+          {
+            "line_id": 40,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 427 226 201 # 421 0.7"
+          },
+          {
+            "line_id": 41,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 562 213 349 # 556 1.1"
+          },
+          {
+            "line_id": 42,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 426 256 170 # 419 0.9"
+          },
+          {
+            "line_id": 45,
+            "indent": 0,
+            "label_clean": "Group"
+          },
+          {
+            "line_id": 46,
+            "indent": 1,
+            "label_clean": "30 Jun 2026 3,132 584 2,092 456 3,119 0.9"
+          },
+          {
+            "line_id": 47,
+            "indent": 1,
+            "label_clean": "31 Dec 2025 3,243 573 2,191 479 3,229 0.9"
+          },
+          {
+            "line_id": 48,
+            "indent": 1,
+            "label_clean": "30 Jun 2025 3,009 757 1,755 497 2,983 0.9"
+          },
+          {
+            "line_id": 51,
+            "indent": 0,
+            "label_clean": "Notes:"
+          },
+          {
+            "line_id": 52,
+            "indent": 0,
+            "label_clean": "1. Refer to Non-performing assets. Comprise loans to customers, debt securities and contingent liabilities."
+          },
+          {
+            "line_id": 53,
+            "indent": 0,
+            "label_clean": "2. Refer to Non-performing loans. Exclude debt securities and contingent liabilities."
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "NON-PERFORMING ASSETS",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

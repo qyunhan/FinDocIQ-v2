@@ -1,0 +1,52 @@
+{
+  "document": "DBS_1Q22_pillar3.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 March 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "B_1_1_p10",
+  "section_ids": [
+    "B.1.1"
+  ],
+  "section_titles": [
+    "Average All-Currency LCR for the Quarter ended 31 March 2022"
+  ],
+  "pages": [
+    10
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 30,
+  "usage": {
+    "ts": "2026-07-26T09:44:48",
+    "script": "extract_to_excel",
+    "label": "B_1_1_p10",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3921,
+    "output_tokens": 3456,
+    "thinking_tokens": 0,
+    "total_tokens": 7377,
+    "est_cost_usd": 0.03699,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "1.1 Average All-Currency LCR for the Quarter ended 31 March 2022\n(Number of data points: 90)",
+      "anchor_label": "1.1 Average All-Currency LCR for the Quarter ended 31 March 2022\n(Number of data points: 90)",
+      "anchor_y": 94.74,
+      "owning_section": "1.1",
+      "dropped": false,
+      "reason": "legitimate_owner"
+    }
+  ],
+  "all_dropped": false
+}

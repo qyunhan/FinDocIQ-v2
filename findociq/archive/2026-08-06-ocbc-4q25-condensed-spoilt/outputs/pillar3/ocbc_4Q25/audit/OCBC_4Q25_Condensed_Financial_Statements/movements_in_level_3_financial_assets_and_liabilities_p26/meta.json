@@ -1,0 +1,69 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "movements_in_level_3_financial_assets_and_liabilities_p26",
+  "section_ids": [
+    "movements_in_level_3_financial_assets_and_liabilities"
+  ],
+  "section_titles": [
+    "Movements in Level 3 financial assets and liabilities"
+  ],
+  "pages": [
+    26
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 31,
+  "usage": {
+    "ts": "2026-07-14T15:04:30",
+    "script": "extract_to_excel",
+    "label": "movements_in_level_3_financial_assets_and_liabilities_p26",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2959,
+    "output_tokens": 5570,
+    "thinking_tokens": 0,
+    "total_tokens": 8529,
+    "est_cost_usd": 0.01481
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '14.3' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Movements in Level 3 financial assets and liabilities \u2014 Financial assets measured at fair value 2025",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "Movements in Level 3 financial assets and liabilities \u2014 Financial assets measured at fair value 2024",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "Movements in Level 3 financial assets and liabilities \u2014 Financial liabilities measured at fair value",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    }
+  ],
+  "all_dropped": false
+}

@@ -1,0 +1,355 @@
+{
+  "tables": [
+    {
+      "title": "Key financial ratios (%)2, 3",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "1st Qtr 2026",
+          "leaf": "1st Qtr 2026"
+        },
+        {
+          "group": "1st Qtr 2025",
+          "leaf": "1st Qtr 2025"
+        },
+        {
+          "group": "4th Qtr 2025",
+          "leaf": "4th Qtr 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest margin – Group",
+          "values": [
+            {
+              "value": "1.89",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.93",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net interest margin – Commercial Book",
+          "values": [
+            {
+              "value": "2.29",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.68",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.34",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Cost/income ratio",
+          "values": [
+            {
+              "value": "38.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44.5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on assets",
+          "values": [
+            {
+              "value": "1.31",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.42",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.06",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on equity4, 5",
+          "values": [
+            {
+              "value": "17.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.5",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on tangible equity4,5,6",
+          "values": [
+            {
+              "value": "18.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPL ratio",
+          "values": [
+            {
+              "value": "1.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.0",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances/ NPA",
+          "values": [
+            {
+              "value": "131",
+              "cell_state": "reported"
+            },
+            {
+              "value": "137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "130",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances/ unsecured NPA",
+          "values": [
+            {
+              "value": "200",
+              "cell_state": "reported"
+            },
+            {
+              "value": "230",
+              "cell_state": "reported"
+            },
+            {
+              "value": "197",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "SP for loans/ average loans (bp)",
+          "values": [
+            {
+              "value": "14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Common Equity Tier 1 (CET-1) ratio",
+          "values": [
+            {
+              "value": "16.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.0",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fully phased-in CET-1 ratio7",
+          "values": [
+            {
+              "value": "14.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.0",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 37,
+            "indent": 0,
+            "label_clean": "Net interest margin – Group"
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "Net interest margin – Commercial Book"
+          },
+          {
+            "line_id": 39,
+            "indent": 0,
+            "label_clean": "Cost/income ratio"
+          },
+          {
+            "line_id": 40,
+            "indent": 0,
+            "label_clean": "Return on assets"
+          },
+          {
+            "line_id": 41,
+            "indent": 0,
+            "label_clean": "Return on equity"
+          },
+          {
+            "line_id": 42,
+            "indent": 0,
+            "label_clean": "Return on tangible equity"
+          },
+          {
+            "line_id": 43,
+            "indent": 0,
+            "label_clean": "NPL ratio"
+          },
+          {
+            "line_id": 44,
+            "indent": 0,
+            "label_clean": "Total allowances/ NPA"
+          },
+          {
+            "line_id": 45,
+            "indent": 0,
+            "label_clean": "Total allowances/ unsecured NPA"
+          },
+          {
+            "line_id": 46,
+            "indent": 0,
+            "label_clean": "SP for loans/ average loans (bp)"
+          },
+          {
+            "line_id": 47,
+            "indent": 0,
+            "label_clean": "Common Equity Tier 1 (CET-1) ratio"
+          },
+          {
+            "line_id": 48,
+            "indent": 0,
+            "label_clean": "Fully phased-in CET-1 ratio"
+          }
+        ],
+        "title_clean": "Key financial ratios (%)",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

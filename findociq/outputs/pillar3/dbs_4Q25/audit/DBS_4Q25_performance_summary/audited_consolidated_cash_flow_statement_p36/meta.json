@@ -1,0 +1,41 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "audited_consolidated_cash_flow_statement_p36",
+  "section_ids": [
+    "audited_consolidated_cash_flow_statement"
+  ],
+  "section_titles": [
+    "AUDITED CONSOLIDATED CASH FLOW STATEMENT"
+  ],
+  "pages": [
+    36
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 52,
+  "usage": {
+    "ts": "2026-07-16T11:29:56",
+    "script": "extract_to_excel",
+    "label": "audited_consolidated_cash_flow_statement_p36",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2950,
+    "output_tokens": 5697,
+    "thinking_tokens": 0,
+    "total_tokens": 8647,
+    "est_cost_usd": 0.0557,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

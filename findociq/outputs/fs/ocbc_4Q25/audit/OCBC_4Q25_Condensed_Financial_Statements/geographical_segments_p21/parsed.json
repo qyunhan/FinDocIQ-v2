@@ -1,0 +1,926 @@
+{
+  "tables": [
+    {
+      "title": "13.2 Geographical segments",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "13.2",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "2H 2025 (1)"
+        },
+        {
+          "group": null,
+          "leaf": "2H 2024 (1)"
+        },
+        {
+          "group": null,
+          "leaf": "2025"
+        },
+        {
+          "group": null,
+          "leaf": "2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Total income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "4,381",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,347",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,644",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,913",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Malaysia",
+          "values": [
+            {
+              "value": "924",
+              "cell_state": "reported"
+            },
+            {
+              "value": "844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,860",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,655",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Indonesia",
+          "values": [
+            {
+              "value": "532",
+              "cell_state": "reported"
+            },
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,054",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,085",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Greater China",
+          "values": [
+            {
+              "value": "1,036",
+              "cell_state": "reported"
+            },
+            {
+              "value": "972",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,008",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,863",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other Asia Pacific",
+          "values": [
+            {
+              "value": "167",
+              "cell_state": "reported"
+            },
+            {
+              "value": "156",
+              "cell_state": "reported"
+            },
+            {
+              "value": "323",
+              "cell_state": "reported"
+            },
+            {
+              "value": "309",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "372",
+              "cell_state": "reported"
+            },
+            {
+              "value": "340",
+              "cell_state": "reported"
+            },
+            {
+              "value": "725",
+              "cell_state": "reported"
+            },
+            {
+              "value": "648",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total income total",
+          "values": [
+            {
+              "value": "7,412",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,218",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,614",
+              "cell_state": "reported"
+            },
+            {
+              "value": "14,473",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Operating profit before allowances and amortisation",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "2,580",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,534",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,447",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Malaysia",
+          "values": [
+            {
+              "value": "646",
+              "cell_state": "reported"
+            },
+            {
+              "value": "589",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,357",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,174",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Indonesia",
+          "values": [
+            {
+              "value": "265",
+              "cell_state": "reported"
+            },
+            {
+              "value": "276",
+              "cell_state": "reported"
+            },
+            {
+              "value": "536",
+              "cell_state": "reported"
+            },
+            {
+              "value": "539",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Greater China",
+          "values": [
+            {
+              "value": "526",
+              "cell_state": "reported"
+            },
+            {
+              "value": "479",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,008",
+              "cell_state": "reported"
+            },
+            {
+              "value": "923",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other Asia Pacific",
+          "values": [
+            {
+              "value": "115",
+              "cell_state": "reported"
+            },
+            {
+              "value": "111",
+              "cell_state": "reported"
+            },
+            {
+              "value": "228",
+              "cell_state": "reported"
+            },
+            {
+              "value": "213",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "206",
+              "cell_state": "reported"
+            },
+            {
+              "value": "466",
+              "cell_state": "reported"
+            },
+            {
+              "value": "435",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Operating profit before allowances and amortisation total",
+          "values": [
+            {
+              "value": "4,334",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,195",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,732",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,731",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Profit before income tax",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "2,624",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,587",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,056",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,489",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Malaysia",
+          "values": [
+            {
+              "value": "666",
+              "cell_state": "reported"
+            },
+            {
+              "value": "558",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,378",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,139",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Indonesia",
+          "values": [
+            {
+              "value": "237",
+              "cell_state": "reported"
+            },
+            {
+              "value": "256",
+              "cell_state": "reported"
+            },
+            {
+              "value": "493",
+              "cell_state": "reported"
+            },
+            {
+              "value": "527",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Greater China",
+          "values": [
+            {
+              "value": "811",
+              "cell_state": "reported"
+            },
+            {
+              "value": "620",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,671",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,277",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other Asia Pacific",
+          "values": [
+            {
+              "value": "107",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83",
+              "cell_state": "reported"
+            },
+            {
+              "value": "179",
+              "cell_state": "reported"
+            },
+            {
+              "value": "149",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "198",
+              "cell_state": "reported"
+            },
+            {
+              "value": "346",
+              "cell_state": "reported"
+            },
+            {
+              "value": "395",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Profit before income tax total",
+          "values": [
+            {
+              "value": "4,525",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,302",
+              "cell_state": "reported"
+            },
+            {
+              "value": "9,123",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,976",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "1",
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) Unaudited and unreviewed.",
+          "values": []
+        }
+      ]
+    },
+    {
+      "title": "Geographical segments \u2014 Total assets",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "13.2",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Total assets",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "396,538",
+              "cell_state": "reported"
+            },
+            {
+              "value": "362,744",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Malaysia",
+          "values": [
+            {
+              "value": "74,955",
+              "cell_state": "reported"
+            },
+            {
+              "value": "68,066",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Indonesia",
+          "values": [
+            {
+              "value": "24,895",
+              "cell_state": "reported"
+            },
+            {
+              "value": "24,657",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Greater China",
+          "values": [
+            {
+              "value": "105,110",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103,540",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Other Asia Pacific",
+          "values": [
+            {
+              "value": "25,456",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,945",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "48,734",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43,098",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total assets total",
+          "values": [
+            {
+              "value": "675,688",
+              "cell_state": "reported"
+            },
+            {
+              "value": "625,050",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total income"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Other Asia Pacific"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Rest of the World"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Operating profit before allowances and amortisation"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 23,
+            "indent": 1,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 25,
+            "indent": 1,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 26,
+            "indent": 1,
+            "label_clean": "Other Asia Pacific"
+          },
+          {
+            "line_id": 27,
+            "indent": 1,
+            "label_clean": "Rest of the World"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Profit before income tax"
+          },
+          {
+            "line_id": 31,
+            "indent": 1,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 33,
+            "indent": 1,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 34,
+            "indent": 1,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 35,
+            "indent": 1,
+            "label_clean": "Other Asia Pacific"
+          },
+          {
+            "line_id": 36,
+            "indent": 1,
+            "label_clean": "Rest of the World"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 38,
+            "indent": 2,
+            "label_clean": "Unaudited and unreviewed."
+          }
+        ],
+        "title_clean": "13.2 Geographical segments",
+        "col_labels_clean": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 42,
+            "indent": 0,
+            "label_clean": "Total assets"
+          },
+          {
+            "line_id": 43,
+            "indent": 1,
+            "label_clean": "Singapore"
+          },
+          {
+            "line_id": 44,
+            "indent": 1,
+            "label_clean": "Malaysia"
+          },
+          {
+            "line_id": 45,
+            "indent": 1,
+            "label_clean": "Indonesia"
+          },
+          {
+            "line_id": 46,
+            "indent": 1,
+            "label_clean": "Greater China"
+          },
+          {
+            "line_id": 47,
+            "indent": 1,
+            "label_clean": "Other Asia Pacific"
+          },
+          {
+            "line_id": 48,
+            "indent": 1,
+            "label_clean": "Rest of the World"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

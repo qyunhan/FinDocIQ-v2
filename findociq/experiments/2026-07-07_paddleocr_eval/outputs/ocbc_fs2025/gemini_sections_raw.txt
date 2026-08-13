@@ -1,0 +1,1103 @@
+{
+  "sections": [
+    {
+      "id": "income_statements",
+      "title": "Income Statements",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [0]
+    },
+    {
+      "id": "statements_of_comprehensive_income",
+      "title": "Statements of Comprehensive Income",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [1]
+    },
+    {
+      "id": "balance_sheets",
+      "title": "Balance Sheets",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [2]
+    },
+    {
+      "id": "statement_of_changes_in_equity_group",
+      "title": "Statement of Changes in Equity – Group",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [3]
+    },
+    {
+      "id": "statement_of_changes_in_equity_bank",
+      "title": "Statement of Changes in Equity – Bank",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [4]
+    },
+    {
+      "id": "consolidated_cash_flow_statement",
+      "title": "Consolidated Cash Flow Statement",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [5]
+    },
+    {
+      "id": "notes_to_the_financial_statements",
+      "title": "Notes to the Financial Statements",
+      "level": 1,
+      "parent_id": null,
+      "candidate_idxs": [6]
+    },
+    {
+      "id": "1",
+      "title": "1. General",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [9]
+    },
+    {
+      "id": "2",
+      "title": "2. Material Accounting Policy Information",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [10, 11, 12, 28, 34, 39, 43, 54, 61, 65, 66, 72, 84, 85, 89, 94, 95, 98, 99, 103, 104, 126, 132, 140, 145]
+    },
+    {
+      "id": "2.1",
+      "title": "2.1 Basis of Preparation",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [13]
+    },
+    {
+      "id": "2.2",
+      "title": "2.2 Basis of Consolidation",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [7]
+    },
+    {
+      "id": "2.2.1",
+      "title": "2.2.1 Subsidiaries",
+      "level": 4,
+      "parent_id": "2.2",
+      "candidate_idxs": [8]
+    },
+    {
+      "id": "2.2.2",
+      "title": "2.2.2 Structured Entities",
+      "level": 4,
+      "parent_id": "2.2",
+      "candidate_idxs": [15]
+    },
+    {
+      "id": "2.2.3",
+      "title": "2.2.3 Associates and Joint Ventures",
+      "level": 4,
+      "parent_id": "2.2",
+      "candidate_idxs": [16]
+    },
+    {
+      "id": "2.2.4",
+      "title": "2.2.4 Investments in Subsidiaries, Associates and Joint Ventures by the Bank",
+      "level": 4,
+      "parent_id": "2.2",
+      "candidate_idxs": [17]
+    },
+    {
+      "id": "2.3",
+      "title": "2.3 Currency Translation",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [19]
+    },
+    {
+      "id": "2.3.1",
+      "title": "2.3.1 Foreign Currency Transactions",
+      "level": 4,
+      "parent_id": "2.3",
+      "candidate_idxs": [21]
+    },
+    {
+      "id": "2.3.2",
+      "title": "2.3.2 Foreign Operations",
+      "level": 4,
+      "parent_id": "2.3",
+      "candidate_idxs": [23]
+    },
+    {
+      "id": "2.4",
+      "title": "2.4 Cash and Cash Equivalents",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [26]
+    },
+    {
+      "id": "2.5",
+      "title": "2.5 Financial Instruments",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [27]
+    },
+    {
+      "id": "2.5.2",
+      "title": "2.5.2 Derecognition",
+      "level": 4,
+      "parent_id": "2.5",
+      "candidate_idxs": [20]
+    },
+    {
+      "id": "2.5.3",
+      "title": "2.5.3 Modifications",
+      "level": 4,
+      "parent_id": "2.5",
+      "candidate_idxs": [22]
+    },
+    {
+      "id": "2.5.4",
+      "title": "2.5.4 Offsetting",
+      "level": 4,
+      "parent_id": "2.5",
+      "candidate_idxs": [24]
+    },
+    {
+      "id": "2.5.5",
+      "title": "2.5.5 Sale and Repurchase Agreements",
+      "level": 4,
+      "parent_id": "2.5",
+      "candidate_idxs": [25]
+    },
+    {
+      "id": "2.6",
+      "title": "2.6 Non-Derivative Financial Assets",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [30]
+    },
+    {
+      "id": "2.6.1",
+      "title": "2.6.1 Debt Instruments Measured at Amortised Cost",
+      "level": 4,
+      "parent_id": "2.6",
+      "candidate_idxs": [31]
+    },
+    {
+      "id": "2.6.2",
+      "title": "2.6.2 Debt Instruments Measured at FVOCI",
+      "level": 4,
+      "parent_id": "2.6",
+      "candidate_idxs": [33]
+    },
+    {
+      "id": "2.6.4",
+      "title": "2.6.4 Designation at FVTPL",
+      "level": 4,
+      "parent_id": "2.6",
+      "candidate_idxs": [35]
+    },
+    {
+      "id": "2.6.5",
+      "title": "2.6.5 Equity Instruments",
+      "level": 4,
+      "parent_id": "2.6",
+      "candidate_idxs": [36]
+    },
+    {
+      "id": "2.6.6",
+      "title": "2.6.6 Reclassification",
+      "level": 4,
+      "parent_id": "2.6",
+      "candidate_idxs": [37]
+    },
+    {
+      "id": "2.7",
+      "title": "2.7 Derivative Financial Instruments",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [38]
+    },
+    {
+      "id": "2.8",
+      "title": "2.8 Property, Plant and Equipment",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [40]
+    },
+    {
+      "id": "2.9",
+      "title": "2.9 Investment Property",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [41, 44]
+    },
+    {
+      "id": "2.10",
+      "title": "2.10 Goodwill and Other Intangible Assets",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [45]
+    },
+    {
+      "id": "2.10.2",
+      "title": "2.10.2 Intangible Assets",
+      "level": 4,
+      "parent_id": "2.10",
+      "candidate_idxs": [47]
+    },
+    {
+      "id": "2.11",
+      "title": "2.11 Impairment of Assets",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [48, 55]
+    },
+    {
+      "id": "2.11.1",
+      "title": "2.11.1 Scope",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [50]
+    },
+    {
+      "id": "2.11.2",
+      "title": "2.11.2 Expected Credit Loss Impairment Model",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [42]
+    },
+    {
+      "id": "2.11.3",
+      "title": "2.11.3 Measurement",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [46, 51]
+    },
+    {
+      "id": "2.11.4",
+      "title": "2.11.4 Movement between Stages",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [52, 56]
+    },
+    {
+      "id": "2.11.5",
+      "title": "2.11.5 Regulatory Requirement",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [58]
+    },
+    {
+      "id": "2.11.6",
+      "title": "2.11.6 Goodwill",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [60]
+    },
+    {
+      "id": "2.11.7",
+      "title": "2.11.7 Investments in Subsidiaries and Associates",
+      "level": 4,
+      "parent_id": "2.11",
+      "candidate_idxs": [53]
+    },
+    {
+      "id": "2.12",
+      "title": "2.12 Financial Liabilities",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [57]
+    },
+    {
+      "id": "2.13",
+      "title": "2.13 Insurance and Reinsurance Contracts",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [63]
+    },
+    {
+      "id": "2.13.2",
+      "title": "2.13.2 Separating Components from Insurance and Reinsurance Contracts",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [64]
+    },
+    {
+      "id": "2.13.3",
+      "title": "2.13.3 Level of Aggregation",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [69]
+    },
+    {
+      "id": "2.13.3.1",
+      "title": "2.13.3.1 Insurance Contracts",
+      "level": 5,
+      "parent_id": "2.13.3",
+      "candidate_idxs": [70]
+    },
+    {
+      "id": "2.13.3.2",
+      "title": "2.13.3.2 Reinsurance Contracts",
+      "level": 5,
+      "parent_id": "2.13.3",
+      "candidate_idxs": [68]
+    },
+    {
+      "id": "2.13.4",
+      "title": "2.13.4 Recognition",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [71, 73]
+    },
+    {
+      "id": "2.13.5",
+      "title": "2.13.5 Contract Boundary",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [74]
+    },
+    {
+      "id": "2.13.6",
+      "title": "2.13.6 Measurement",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [75, 79]
+    },
+    {
+      "id": "2.13.6.1",
+      "title": "2.13.6.1 Measurement – Contracts Not Measured Under the PAA",
+      "level": 5,
+      "parent_id": "2.13.6",
+      "candidate_idxs": [76, 80]
+    },
+    {
+      "id": "2.13.6.2",
+      "title": "2.13.6.2 Fulfilment Cash Flows (FCF)",
+      "level": 5,
+      "parent_id": "2.13.6",
+      "candidate_idxs": [81]
+    },
+    {
+      "id": "2.13.6.3",
+      "title": "2.13.6.3 Contractual Service Margin",
+      "level": 5,
+      "parent_id": "2.13.6",
+      "candidate_idxs": [77]
+    },
+    {
+      "id": "2.13.6.4",
+      "title": "2.13.6.4 Subsequent Measurement – Contracts Not Measured Under the PAA",
+      "level": 5,
+      "parent_id": "2.13.6",
+      "candidate_idxs": [83]
+    },
+    {
+      "id": "2.13.6.5",
+      "title": "2.13.6.5 Reinsurance Contracts",
+      "level": 5,
+      "parent_id": "2.13.6",
+      "candidate_idxs": [87, 91]
+    },
+    {
+      "id": "2.13.6.6",
+      "title": "2.13.6.6 Insurance Acquisition Cash Flows",
+      "level": 5,
+      "parent_id": "2.13.6",
+      "candidate_idxs": [93]
+    },
+    {
+      "id": "2.13.7",
+      "title": "2.13.7 Measurement – Contracts Measured Under the PAA",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [92]
+    },
+    {
+      "id": "2.13.8",
+      "title": "2.13.8 Derecognition and Contract Modification",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [97]
+    },
+    {
+      "id": "2.13.9",
+      "title": "2.13.9 Insurance Service Result from Insurance Contracts Issued",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [100]
+    },
+    {
+      "id": "2.13.10",
+      "title": "2.13.10 Assets and Liabilities of Life Insurance Funds",
+      "level": 4,
+      "parent_id": "2.13",
+      "candidate_idxs": [113]
+    },
+    {
+      "id": "2.14",
+      "title": "2.14 Share Capital and Dividend",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [115]
+    },
+    {
+      "id": "2.15",
+      "title": "2.15 Leases",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [110, 119]
+    },
+    {
+      "id": "2.15.1",
+      "title": "2.15.1 As Lessee",
+      "level": 4,
+      "parent_id": "2.15",
+      "candidate_idxs": [111]
+    },
+    {
+      "id": "2.15.2",
+      "title": "2.15.2 As Lessor",
+      "level": 4,
+      "parent_id": "2.15",
+      "candidate_idxs": [120]
+    },
+    {
+      "id": "2.16",
+      "title": "2.16 Recognition of Income and Expense",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [121]
+    },
+    {
+      "id": "2.16.2",
+      "title": "2.16.2 Fees and Commissions",
+      "level": 4,
+      "parent_id": "2.16",
+      "candidate_idxs": [122]
+    },
+    {
+      "id": "2.16.3",
+      "title": "2.16.3 Dividends",
+      "level": 4,
+      "parent_id": "2.16",
+      "candidate_idxs": [124]
+    },
+    {
+      "id": "2.16.4",
+      "title": "2.16.4 Employee Benefits",
+      "level": 4,
+      "parent_id": "2.16",
+      "candidate_idxs": [117]
+    },
+    {
+      "id": "2.17",
+      "title": "2.17 Income Tax Expense",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [123, 127]
+    },
+    {
+      "id": "2.18",
+      "title": "2.18 Fiduciary Activities",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [125]
+    },
+    {
+      "id": "2.19",
+      "title": "2.19 Earnings Per Share",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [128]
+    },
+    {
+      "id": "2.20",
+      "title": "2.20 Segment Reporting",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [129]
+    },
+    {
+      "id": "2.21",
+      "title": "2.21 Critical Accounting Estimates and Judgements",
+      "level": 3,
+      "parent_id": "2",
+      "candidate_idxs": [130, 133, 141, 146]
+    },
+    {
+      "id": "2.21.1",
+      "title": "2.21.1 Impairment of Financial Assets",
+      "level": 4,
+      "parent_id": "2.21",
+      "candidate_idxs": [134]
+    },
+    {
+      "id": "2.21.2",
+      "title": "2.21.2 Fair Value Estimation",
+      "level": 4,
+      "parent_id": "2.21",
+      "candidate_idxs": [139]
+    },
+    {
+      "id": "2.21.3",
+      "title": "2.21.3 Insurance Business",
+      "level": 4,
+      "parent_id": "2.21",
+      "candidate_idxs": [135, 142, 147]
+    },
+    {
+      "id": "2.21.4",
+      "title": "2.21.4 Impairment of Goodwill and Other Intangible Assets",
+      "level": 4,
+      "parent_id": "2.21",
+      "candidate_idxs": [149]
+    },
+    {
+      "id": "2.21.5",
+      "title": "2.21.5 Income Taxes",
+      "level": 4,
+      "parent_id": "2.21",
+      "candidate_idxs": [150]
+    },
+    {
+      "id": "3",
+      "title": "3. Net Interest Income",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [151]
+    },
+    {
+      "id": "4",
+      "title": "4. Insurance Service Results and Net Investment and Finance Income/(Expenses) from Life Insurance",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [152, 153, 154, 155]
+    },
+    {
+      "id": "5",
+      "title": "5. Fees and Commissions (Net)",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [156]
+    },
+    {
+      "id": "6",
+      "title": "6. Dividends from Subsidiaries and Associates",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [157]
+    },
+    {
+      "id": "7",
+      "title": "7. Net Trading Income",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [158]
+    },
+    {
+      "id": "8",
+      "title": "8. Other Income",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [159]
+    },
+    {
+      "id": "9",
+      "title": "9. Staff Costs and Other Operating Expenses",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [161]
+    },
+    {
+      "id": "10",
+      "title": "10. Allowances for Loans and Other Assets",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [162]
+    },
+    {
+      "id": "11",
+      "title": "11. Income Tax Expense",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [163, 164]
+    },
+    {
+      "id": "12",
+      "title": "12. Earnings Per Share",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [166]
+    },
+    {
+      "id": "13",
+      "title": "13. Share Capital",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [167, 169, 172]
+    },
+    {
+      "id": "13.2",
+      "title": "13.2 Share Option Scheme",
+      "level": 3,
+      "parent_id": "13",
+      "candidate_idxs": [168, 170]
+    },
+    {
+      "id": "13.3",
+      "title": "13.3 Employee Share Purchase Plan",
+      "level": 3,
+      "parent_id": "13",
+      "candidate_idxs": [171]
+    },
+    {
+      "id": "13.4",
+      "title": "13.4 Deferred Share Plan",
+      "level": 3,
+      "parent_id": "13",
+      "candidate_idxs": [173]
+    },
+    {
+      "id": "14",
+      "title": "14. Other Equity Instruments",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [174, 175, 178]
+    },
+    {
+      "id": "15",
+      "title": "15. Capital Reserves",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [179]
+    },
+    {
+      "id": "16",
+      "title": "16. Revenue Reserves",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [180, 182, 184]
+    },
+    {
+      "id": "16.1",
+      "title": "16.1 Unappropriated Profit",
+      "level": 3,
+      "parent_id": "16",
+      "candidate_idxs": [181]
+    },
+    {
+      "id": "16.2",
+      "title": "16.2 General Reserves",
+      "level": 3,
+      "parent_id": "16",
+      "candidate_idxs": [185]
+    },
+    {
+      "id": "16.3",
+      "title": "16.3 Cash Flow and Other Hedge Reserves",
+      "level": 3,
+      "parent_id": "16",
+      "candidate_idxs": [186]
+    },
+    {
+      "id": "16.4",
+      "title": "16.4 Currency Translation Reserves",
+      "level": 3,
+      "parent_id": "16",
+      "candidate_idxs": [187]
+    },
+    {
+      "id": "17",
+      "title": "17. Deposits and Balances of Non-Bank Customers and Banks",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [188]
+    },
+    {
+      "id": "18",
+      "title": "18. Derivative Financial Instruments",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [189, 190]
+    },
+    {
+      "id": "19",
+      "title": "19. Other Liabilities",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [191]
+    },
+    {
+      "id": "20",
+      "title": "20. Deferred Tax",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [192, 193]
+    },
+    {
+      "id": "21",
+      "title": "21. Debt Issued",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [194, 196, 199, 200, 203]
+    },
+    {
+      "id": "21.1",
+      "title": "21.1 Subordinated Debt",
+      "level": 3,
+      "parent_id": "21",
+      "candidate_idxs": [195, 197]
+    },
+    {
+      "id": "21.2",
+      "title": "21.2 Fixed and Floating Rate Notes",
+      "level": 3,
+      "parent_id": "21",
+      "candidate_idxs": [198]
+    },
+    {
+      "id": "21.3",
+      "title": "21.3 Commercial Paper",
+      "level": 3,
+      "parent_id": "21",
+      "candidate_idxs": [201]
+    },
+    {
+      "id": "21.4",
+      "title": "21.4 Structured Notes",
+      "level": 3,
+      "parent_id": "21",
+      "candidate_idxs": [202]
+    },
+    {
+      "id": "21.5",
+      "title": "21.5 Covered Bonds",
+      "level": 3,
+      "parent_id": "21",
+      "candidate_idxs": [204]
+    },
+    {
+      "id": "22",
+      "title": "22. Assets and Liabilities for Life Insurance Funds",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [205, 206, 207, 208, 210]
+    },
+    {
+      "id": "22.4",
+      "title": "22.4 Amounts Determined on Transition to SFRS(I) 17",
+      "level": 3,
+      "parent_id": "22",
+      "candidate_idxs": [209]
+    },
+    {
+      "id": "23",
+      "title": "23. Cash and Placements with Central Banks",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [211]
+    },
+    {
+      "id": "24",
+      "title": "24. Government Treasury Bills and Securities",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [212]
+    },
+    {
+      "id": "25",
+      "title": "25. Placements with and Loans to Banks",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [213]
+    },
+    {
+      "id": "26",
+      "title": "26. Loans to Customers",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [214]
+    },
+    {
+      "id": "27",
+      "title": "27. Non-Performing Assets",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [215, 216]
+    },
+    {
+      "id": "27.4",
+      "title": "27.4 Restructured/Renegotiated Loans",
+      "level": 3,
+      "parent_id": "27",
+      "candidate_idxs": [217]
+    },
+    {
+      "id": "28",
+      "title": "28. Allowances for Impaired Loans to Customers",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [218]
+    },
+    {
+      "id": "29",
+      "title": "29. Debt and Equity Securities",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [220]
+    },
+    {
+      "id": "30",
+      "title": "30. Allowances for Financial Assets",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [221, 222, 223, 224, 225]
+    },
+    {
+      "id": "31",
+      "title": "31. Other Assets",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [226]
+    },
+    {
+      "id": "32",
+      "title": "32. Associates",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [227, 229, 230]
+    },
+    {
+      "id": "32.1",
+      "title": "32.1 Material Associate",
+      "level": 3,
+      "parent_id": "32",
+      "candidate_idxs": [228]
+    },
+    {
+      "id": "32.3",
+      "title": "32.3 Financial Information of Other Associates",
+      "level": 3,
+      "parent_id": "32",
+      "candidate_idxs": [231]
+    },
+    {
+      "id": "33",
+      "title": "33. Subsidiaries",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [232, 233, 235]
+    },
+    {
+      "id": "33.2",
+      "title": "33.2 Non-Controlling Interests in Subsidiaries",
+      "level": 3,
+      "parent_id": "33",
+      "candidate_idxs": [236]
+    },
+    {
+      "id": "33.3",
+      "title": "33.3 Consolidated Structured Entities",
+      "level": 3,
+      "parent_id": "33",
+      "candidate_idxs": [237]
+    },
+    {
+      "id": "34",
+      "title": "34. Property, Plant and Equipment",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [238, 239]
+    },
+    {
+      "id": "35",
+      "title": "35. Investment Property",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [240]
+    },
+    {
+      "id": "36",
+      "title": "36. Goodwill and Other Intangible Assets",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [241, 242]
+    },
+    {
+      "id": "37",
+      "title": "37. Segment Information",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [244, 246, 250]
+    },
+    {
+      "id": "37.1",
+      "title": "37.1 Business Segments",
+      "level": 3,
+      "parent_id": "37",
+      "candidate_idxs": [245, 247, 251]
+    },
+    {
+      "id": "37.2",
+      "title": "37.2 Geographical Segments",
+      "level": 3,
+      "parent_id": "37",
+      "candidate_idxs": [255]
+    },
+    {
+      "id": "38",
+      "title": "38. Risk Management",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [256, 258, 263, 267, 273, 277, 279, 280, 285, 289, 293, 296, 298, 299, 300, 305, 306, 314, 316, 320, 322, 326, 329, 334]
+    },
+    {
+      "id": "38.1",
+      "title": "38.1 Overview",
+      "level": 3,
+      "parent_id": "38",
+      "candidate_idxs": [257]
+    },
+    {
+      "id": "38.2",
+      "title": "38.2 Credit Risk",
+      "level": 3,
+      "parent_id": "38",
+      "candidate_idxs": [259, 264, 268]
+    },
+    {
+      "id": "38.3",
+      "title": "38.3 Market Risk and Liquidity Risk Management",
+      "level": 3,
+      "parent_id": "38",
+      "candidate_idxs": [272, 274, 278, 281, 286]
+    },
+    {
+      "id": "38.4",
+      "title": "38.4 Insurance-Related Risk Management",
+      "level": 3,
+      "parent_id": "38",
+      "candidate_idxs": [290, 301, 307, 317, 323, 330]
+    },
+    {
+      "id": "39",
+      "title": "39. Financial Assets and Financial Liabilities Classification",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [335, 336, 337, 338]
+    },
+    {
+      "id": "40",
+      "title": "40. Fair Values of Financial Instruments",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [339, 347, 352, 354, 355, 356]
+    },
+    {
+      "id": "40.1",
+      "title": "40.1 Valuation Governance Framework",
+      "level": 3,
+      "parent_id": "40",
+      "candidate_idxs": [340]
+    },
+    {
+      "id": "40.2",
+      "title": "40.2 Fair Values",
+      "level": 3,
+      "parent_id": "40",
+      "candidate_idxs": [348]
+    },
+    {
+      "id": "40.3",
+      "title": "40.3 Fair Value Hierarchy",
+      "level": 3,
+      "parent_id": "40",
+      "candidate_idxs": [351, 353]
+    },
+    {
+      "id": "41",
+      "title": "41. Offsetting Financial Assets and Financial Liabilities",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [357, 358]
+    },
+    {
+      "id": "42",
+      "title": "42. Contingent Liabilities",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [359]
+    },
+    {
+      "id": "43",
+      "title": "43. Commitments",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [360]
+    },
+    {
+      "id": "44",
+      "title": "44. Unconsolidated Structured Entities",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [361]
+    },
+    {
+      "id": "45",
+      "title": "45. Financial Assets Transferred",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [363]
+    },
+    {
+      "id": "45.1",
+      "title": "45.1 Assets Pledged",
+      "level": 3,
+      "parent_id": "45",
+      "candidate_idxs": [364]
+    },
+    {
+      "id": "45.2",
+      "title": "45.2 Assets Assigned as Security for Covered Bonds Issued",
+      "level": 3,
+      "parent_id": "45",
+      "candidate_idxs": [365]
+    },
+    {
+      "id": "46",
+      "title": "46. Related Party Transactions",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [366, 368]
+    },
+    {
+      "id": "46.1",
+      "title": "46.1 Material Related Party Transactions",
+      "level": 3,
+      "parent_id": "46",
+      "candidate_idxs": [367]
+    },
+    {
+      "id": "46.2",
+      "title": "46.2 Key Management Personnel Compensation",
+      "level": 3,
+      "parent_id": "46",
+      "candidate_idxs": [369]
+    },
+    {
+      "id": "47",
+      "title": "47. Capital Management",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [370]
+    },
+    {
+      "id": "48",
+      "title": "48. New Accounting Standards and Interpretations",
+      "level": 2,
+      "parent_id": "notes_to_the_financial_statements",
+      "candidate_idxs": [371]
+    }
+  ]
+}

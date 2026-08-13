@@ -1,0 +1,73 @@
+{
+  "unit_id": "performance_by_business_segments_p14-16",
+  "pages": [
+    14,
+    15,
+    16
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 6514,
+    "output_tokens": 8173,
+    "thinking_tokens": 0,
+    "total_tokens": 14687,
+    "est_cost_usd": 0.02239
+  },
+  "chunks": 2,
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "performance_by_business_segments"
+  ],
+  "section_titles": [
+    "PERFORMANCE BY BUSINESS SEGMENTS"
+  ],
+  "n_tables": 2,
+  "n_rows": 52,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1.35' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '2.40' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.28' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.10' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.19' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.66' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.63' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.09' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.51' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.16' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.42' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '781' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '388' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '229' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '393' pdf=2x json=1x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Net interest income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Net fee and commission income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Other non-interest income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Total income' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Expenses' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Amortisation of intangible assets' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Allowances for credit and other losses' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Share of profits/losses of associates an' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Profit before tax' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x2: 'Total assets before goodwill and intangi' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Goodwill and intangible assets' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Total assets' [PERFORMANCE BY BUSINESS SEGMEN]",
+      "  duplicate row label x3: 'Total liabilities' [PERFORMANCE BY BUSINESS SEGMEN]"
+    ],
+    "letter_leaf_issues": []
+  }
+}

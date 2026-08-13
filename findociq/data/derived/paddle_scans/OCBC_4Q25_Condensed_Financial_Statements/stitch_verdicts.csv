@@ -1,0 +1,30 @@
+pageA,idxA,pageB,idxB,cross_page,verdict,detail
+4,0,5,0,1,NEW_TABLE,cols differ
+5,0,6,0,1,NEW_TABLE,cols differ
+6,0,7,0,1,NEW_TABLE,cols differ
+7,0,8,0,1,PERIOD_INSTANCE,"date change ['1 January 2025', '31 December 2025'] -> ['1 January 2024', '31 December 2024']"
+8,0,9,0,1,NEW_TABLE,cols differ
+9,0,10,0,1,NEW_TABLE,cols differ
+10,0,13,0,1,NEW_TABLE,non-adjacent pages
+13,0,14,0,1,NEW_TABLE,break:heading:4. Fees andcommissions(net)
+14,0,14,1,0,NEW_TABLE,break:heading:5. Otherincome
+14,1,14,2,0,PERIOD_INSTANCE,"repeats ['S$ million 2H', 'Others']"
+14,2,14,3,0,NEW_TABLE,break:heading:7. Allowancesforloansandother assets
+14,3,15,0,1,NEW_TABLE,cols differ
+15,0,15,1,0,NEW_TABLE,cols differ
+15,1,16,0,1,NEW_TABLE,cols differ
+16,0,16,1,0,NEW_TABLE,break:own-title:GROUP
+16,1,16,2,0,NEW_TABLE,break:heading:12. Loanstocustomers
+16,2,17,0,1,NEW_TABLE,cols differ
+17,0,18,0,1,PERIOD_INSTANCE,"repeats ['Net interest income', 'Non-interest income', 'Total income']"
+18,0,19,0,1,NEW_TABLE,cols differ
+19,0,21,0,1,NEW_TABLE,non-adjacent pages
+21,0,21,1,0,NEW_TABLE,cols differ
+21,1,24,0,1,NEW_TABLE,non-adjacent pages
+24,0,25,0,1,NEW_TABLE,cols differ
+25,0,25,1,0,PERIOD_INSTANCE,"repeats ['S$ million 31', 'Financial assets', 'Equity securities']"
+25,1,26,0,1,NEW_TABLE,cols differ
+26,0,26,1,0,PERIOD_INSTANCE,"repeats ['GROUP', 'Financial assets measured at fair value', 'Additions']"
+26,1,26,2,0,NEW_TABLE,cols differ
+26,2,27,0,1,NEW_TABLE,cols differ
+27,0,33,0,1,NEW_TABLE,non-adjacent pages

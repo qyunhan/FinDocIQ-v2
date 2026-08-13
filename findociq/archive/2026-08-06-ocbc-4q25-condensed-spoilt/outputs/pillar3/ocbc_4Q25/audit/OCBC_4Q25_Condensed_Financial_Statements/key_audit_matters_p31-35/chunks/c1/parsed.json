@@ -1,0 +1,82 @@
+{
+  "tables": [
+    {
+      "title": "Key Audit Matters",
+      "label_header": "Key Audit Matter",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "How our audit addressed the Key Audit Matter"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Impairment of loans to customers (Refer to Notes 2.21, 26, 27, 28 and 30 to the financial statements)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "The Group's allowances on loans to customers are S$4,428 million as at 31 December 2025. These allowances are determined by the Group based on the Expected Credit Losses (\"ECL\") framework under SFRS(I) 9 Financial Instruments (\"SFRS(I) 9\").\n\nECL on non-credit impaired loans to customers\nIn respect of the ECL on non-credit impaired loans to customers (S$2,851 million), the Group utilises models which are reliant on internal and external data as well as a number of estimates. We considered this a key audit matter due to the inherent estimation uncertainty in this area which involves significant judgement and assumptions that relate to, amongst others:\n\u2022 determining whether a significant increase in credit risk (\"SICR\") has occurred;\n\u2022 estimating forward-looking macroeconomic scenarios; and\n\u2022 identifying and determining post-model adjustments and management overlays to account for limitations in the ECL models.",
+          "values": [
+            {
+              "value": "ECL on non-credit impaired loans to customers\nWe assessed the design effectiveness and evaluated the operating effectiveness of key controls over the ECL on non-credit impaired loans to customers. These controls include:\n\u2022 review and approval of forward-looking information and macroeconomic assumptions used in the ECL models;\n\u2022 review and approval of reliable and accurate critical data elements used in the ECL models;\n\u2022 review and approval of the ECL results, including post-model adjustments and management overlays applied;\n\u2022 independent validation of the ECL models and review of model validation results by management; and\n\u2022 general information technology (\"IT\") controls over the ECL system as well as IT application controls over the completeness and accuracy of data flows from source systems to the ECL system.\n\nWe determined that we could rely on these controls for the purposes of our audit.\n\nFor a sample of the Group's ECL models, we examined the model methodologies and assessed the reasonableness of key judgements and assumptions made by management in the model and parameters used. We also reviewed the results of independent model validation conducted by the Group's model validation function as part of our assessment of the ECL models.\n\nWe also assessed the reasonableness of criteria used to determine a SICR and the accuracy and timeliness of allocation of exposures into Stage 1 and Stage 2 based on quantitative and qualitative criteria.\n\nThrough the course of our work, we challenged the rationale and calculation basis of post-model adjustments and management overlays.\n\nOverall, we have assessed the methodologies and key assumptions made by the Group to estimate the ECL on non-credit impaired loans to customers to be appropriate.",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL on credit-impaired loans to customers\nAs at 31 December 2025, the allowances on credit-impaired loans to customers of the Group are S$1,577 million, a significant portion of which relates to the Global Wholesale Banking (\"GWB\") loan portfolio.\n\nWe focused on this area because of the significant judgements and assumptions applied by management in determining the necessity for, and estimating the amount of, the ECL allowances against credit-impaired loans to customers. Significant judgements were also required for the credit grading of borrowers in accordance with MAS Notice 612.\n\nFor GWB's credit-impaired loan portfolio, significant management judgement and estimation include:\n\u2022 identifying credit-impaired exposures;\n\u2022 assessing the future performance of the borrowers and recoverable cash flows; and\n\u2022 determining the expected realisable value of collaterals and the timing of realisation.",
+          "values": [
+            {
+              "value": "ECL on credit-impaired loans to customers\nWe assessed the design effectiveness and tested the operating effectiveness of key controls over credit grading, credit monitoring and management's determination of the ECL allowances for loans to customers. These controls include:\n\u2022 oversight and review of credit risk by the Credit Risk Management Committee;\n\u2022 credit portfolio review and monitoring;\n\u2022 collateral monitoring and valuation;\n\u2022 monitoring of loan covenants and breaches; and\n\u2022 classification of loans to customers in accordance with MAS Notice 612.\n\nWe determined that we could rely on these controls for the purposes of our audit.\n\nWe selected a sample of credit exposures in the GWB loan portfolio and performed credit file reviews to assess the appropriateness of credit grading in accordance with the requirements of MAS Notice 612. In that process, we also considered management's assessment on the impact of current significant events in the identification of credit-impaired exposures.\n\nWhere there was objective evidence of impairment, we assessed whether the ECL allowances were recognised on a timely basis and evaluated the sufficiency of such allowances. Our work includes:\n\u2022 considering the background facts and the latest circumstances in relation to the borrower;\n\u2022 examining and challenging management's key assumptions applied on expected future cash flows of the borrower, including amounts and timing of recoveries;\n\u2022 comparing the realisable value of collateral against externally derived evidence including independent valuation reports, where available; and\n\u2022 testing the calculation of impairment.\n\nFor a sample of non-credit impaired loans to customers which had not been classified by management as credit-impaired, we challenged management's key assumptions on whether their classification was appropriate, based on our understanding of the customers, business environment and other external evidence where available.\n\nBased on the procedures performed, we have assessed that the ECL allowances for credit-impaired loans to customers were within an acceptable range of estimates.",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": false
+      }
+    ]
+  }
+}

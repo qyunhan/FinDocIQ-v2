@@ -1,0 +1,69 @@
+{
+  "document": "UOB_4Q25_condensed-financial-statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "fair_value_of_financial_instruments_p37-38",
+  "section_ids": [
+    "fair_value_of_financial_instruments"
+  ],
+  "section_titles": [
+    "6 Fair Value of Financial Instruments"
+  ],
+  "pages": [
+    37,
+    38
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 39,
+  "usage": {
+    "ts": "2026-07-14T14:57:58",
+    "script": "extract_to_excel",
+    "label": "fair_value_of_financial_instruments_p37-38",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3552,
+    "output_tokens": 7663,
+    "thinking_tokens": 0,
+    "total_tokens": 11215,
+    "est_cost_usd": 0.02022
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1377' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '714' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Trading securities' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: 'Derivative financial assets' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: '- debt' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: '- equity' [6 Fair Value of Financial Inst]",
+      "  duplicate row label x2: 'Derivative financial liabilities' [6 Fair Value of Financial Inst]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "6 Fair Value of Financial Instruments\n(b) The Group classifies financial instruments carried at fair value by level following the fair value measurement hierarchy:",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "6 Fair Value of Financial Instruments (continued)\n(c) The following table presents the changes in Level 3 instruments for the financial year ended:",
+      "anchor_label": "6 Fair Value of Financial Instruments (continued)\n(c) The following table presents the changes in Level 3 instruments for the financial year ended:",
+      "anchor_y": 74.54,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    }
+  ],
+  "all_dropped": false
+}

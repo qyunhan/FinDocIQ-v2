@@ -1,0 +1,437 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Financial Results for the Year Ended 31 December 2025",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "Dividends",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "OVERVIEW",
+      "page": 4,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_004",
+      "title": "Second Half",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_005",
+      "title": "Fourth Quarter",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_006",
+      "title": "Full Year",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_007",
+      "title": "NET INTEREST INCOME",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_008",
+      "title": "NET FEE AND COMMISSION INCOME",
+      "page": 12,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_009",
+      "title": "OTHER NON-INTEREST INCOME",
+      "page": 12,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_010",
+      "title": "EXPENSES1",
+      "page": 13,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_011",
+      "title": "ALLOWANCES FOR CREDIT AND OTHER LOSSES",
+      "page": 13,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_012",
+      "title": "PERFORMANCE BY BUSINESS SEGMENTS",
+      "page": 14,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_013",
+      "title": "Consumer Banking/ Wealth Management",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_014",
+      "title": "Institutional Banking",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_015",
+      "title": "Markets Trading",
+      "page": 17,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_016",
+      "title": "Others",
+      "page": 17,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_017",
+      "title": "PERFORMANCE BY GEOGRAPHY",
+      "page": 18,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_018",
+      "title": "Singapore",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_019",
+      "title": "Hong Kong",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_020",
+      "title": "Rest of Greater China",
+      "page": 20,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_021",
+      "title": "South and Southeast Asia",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_022",
+      "title": "Rest of the World",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_023",
+      "title": "CUSTOMER LOANS",
+      "page": 22,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_024",
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+      "page": 23,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_025",
+      "title": "CUSTOMER DEPOSITS",
+      "page": 26,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_026",
+      "title": "DEBTS ISSUED",
+      "page": 27,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_027",
+      "title": "CAPITAL ADEQUACY",
+      "page": 28,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_028",
+      "title": "PILLAR 3, LIQUIDITY COVERAGE RATIO AND NET STABLE FUNDING RATIO DISCLOSURES",
+      "page": 28,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_029",
+      "title": "UNREALISED PROPERTY VALUATION SURPLUS",
+      "page": 28,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_030",
+      "title": "AUDITED CONSOLIDATED INCOME STATEMENT",
+      "page": 29,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_031",
+      "title": "AUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "page": 30,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_032",
+      "title": "AUDITED BALANCE SHEETS",
+      "page": 31,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_033",
+      "title": "AUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "page": 32,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_034",
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+      "page": 33,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_035",
+      "title": "AUDITED STATEMENT OF CHANGES IN EQUITY",
+      "page": 34,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_036",
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY",
+      "page": 35,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_037",
+      "title": "AUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "page": 36,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_038",
+      "title": "OTHER FINANCIAL INFORMATION",
+      "page": 37,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_039",
+      "title": "1. Fair Value Measurement",
+      "page": 37,
+      "level": 2,
+      "parent_id": "sec_038"
+    },
+    {
+      "id": "sec_040",
+      "title": "Fair Value Hierarchy",
+      "page": 37,
+      "level": 3,
+      "parent_id": "sec_039"
+    },
+    {
+      "id": "sec_041",
+      "title": "2. Off-balance Sheet Items",
+      "page": 37,
+      "level": 2,
+      "parent_id": "sec_038"
+    },
+    {
+      "id": "sec_042",
+      "title": "ADDITIONAL INFORMATION",
+      "page": 38,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_043",
+      "title": "SHARE CAPITAL",
+      "page": 38,
+      "level": 2,
+      "parent_id": "sec_042"
+    },
+    {
+      "id": "sec_044",
+      "title": "INTERESTED PARTY TRANSACTIONS PURSUANT TO LISTING RULE 920(1)",
+      "page": 38,
+      "level": 2,
+      "parent_id": "sec_042"
+    },
+    {
+      "id": "sec_045",
+      "title": "CONFIRMATION OF DIRECTORS AND EXECUTIVE OFFICERS\u2019 UNDERTAKINGS PURSUANT TO LISTING RULE 720(1)",
+      "page": 38,
+      "level": 2,
+      "parent_id": "sec_042"
+    },
+    {
+      "id": "sec_046",
+      "title": "REPORT OF PERSONS OCCUPYING MANAGERIAL POSITIONS WHO ARE RELATED TO A DIRECTOR, CEO OR SUBSTANTIAL SHAREHOLDER",
+      "page": 38,
+      "level": 2,
+      "parent_id": "sec_042"
+    },
+    {
+      "id": "sec_047",
+      "title": "INDEPENDENT AUDITOR\u2019S REPORT TO THE MEMBERS OF DBS GROUP HOLDINGS LTD",
+      "page": 39,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_048",
+      "title": "Report on the Audit of the Financial Statements",
+      "page": 39,
+      "level": 2,
+      "parent_id": "sec_047"
+    },
+    {
+      "id": "sec_049",
+      "title": "Our Opinion",
+      "page": 39,
+      "level": 3,
+      "parent_id": "sec_048"
+    },
+    {
+      "id": "sec_050",
+      "title": "What we have audited",
+      "page": 39,
+      "level": 3,
+      "parent_id": "sec_048"
+    },
+    {
+      "id": "sec_051",
+      "title": "Basis for Opinion",
+      "page": 39,
+      "level": 3,
+      "parent_id": "sec_048"
+    },
+    {
+      "id": "sec_052",
+      "title": "Independence",
+      "page": 39,
+      "level": 3,
+      "parent_id": "sec_048"
+    },
+    {
+      "id": "sec_053",
+      "title": "Our Audit Approach",
+      "page": 40,
+      "level": 2,
+      "parent_id": "sec_047"
+    },
+    {
+      "id": "sec_054",
+      "title": "Overview",
+      "page": 40,
+      "level": 3,
+      "parent_id": "sec_053"
+    },
+    {
+      "id": "sec_055",
+      "title": "Materiality",
+      "page": 41,
+      "level": 3,
+      "parent_id": "sec_053"
+    },
+    {
+      "id": "sec_056",
+      "title": "How we developed the audit scope",
+      "page": 41,
+      "level": 3,
+      "parent_id": "sec_053"
+    },
+    {
+      "id": "sec_057",
+      "title": "Key audit matters",
+      "page": 42,
+      "level": 3,
+      "parent_id": "sec_053"
+    },
+    {
+      "id": "sec_058",
+      "title": "Other Information",
+      "page": 44,
+      "level": 2,
+      "parent_id": "sec_047"
+    },
+    {
+      "id": "sec_059",
+      "title": "Responsibilities of Management and Directors for the Financial Statements",
+      "page": 45,
+      "level": 2,
+      "parent_id": "sec_047"
+    },
+    {
+      "id": "sec_060",
+      "title": "Auditor\u2019s Responsibilities for the Audit of the Financial Statements",
+      "page": 45,
+      "level": 2,
+      "parent_id": "sec_047"
+    },
+    {
+      "id": "sec_061",
+      "title": "Report on Other Legal and Regulatory Requirements",
+      "page": 46,
+      "level": 2,
+      "parent_id": "sec_047"
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 24847,
+    "output_tokens": 3636,
+    "thinking_tokens": null
+  }
+}

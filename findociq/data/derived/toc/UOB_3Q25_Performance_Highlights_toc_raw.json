@@ -1,0 +1,94 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Third Quarter 2025 Performance Highlights",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "3Q25 key financial indicators",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Strong balance sheet growth underpins resilient earnings",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_004",
+      "title": "Financial performance",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_005",
+      "title": "9M25 versus 9M24",
+      "page": 2,
+      "level": 3,
+      "parent_id": "sec_004"
+    },
+    {
+      "id": "sec_006",
+      "title": "3Q25 versus 2Q25",
+      "page": 2,
+      "level": 3,
+      "parent_id": "sec_004"
+    },
+    {
+      "id": "sec_007",
+      "title": "3Q25 versus 3Q24",
+      "page": 2,
+      "level": 3,
+      "parent_id": "sec_004"
+    },
+    {
+      "id": "sec_008",
+      "title": "Asset quality",
+      "page": 3,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_009",
+      "title": "Allowance coverage",
+      "page": 3,
+      "level": 3,
+      "parent_id": "sec_008"
+    },
+    {
+      "id": "sec_010",
+      "title": "Capital, funding and liquidity positions",
+      "page": 3,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_011",
+      "title": "Liquidity and capital ratios",
+      "page": 3,
+      "level": 3,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_012",
+      "title": "Financial Highlights 3Q25",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_001"
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 2503,
+    "output_tokens": 745,
+    "thinking_tokens": null
+  }
+}

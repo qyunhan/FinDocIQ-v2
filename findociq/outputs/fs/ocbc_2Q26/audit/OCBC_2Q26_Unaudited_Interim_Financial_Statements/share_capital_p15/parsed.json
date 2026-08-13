@@ -1,0 +1,559 @@
+{
+  "tables": [
+    {
+      "title": "9. Share capital",
+      "label_header": "Shares (million)",
+      "continued_from_previous": false,
+      "section_id": "9",
+      "columns": [
+        {
+          "group": "GROUP AND BANK",
+          "leaf": "30 Jun 2026"
+        },
+        {
+          "group": "GROUP AND BANK",
+          "leaf": "31 Dec 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Issued ordinary shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "At 1 January",
+          "values": [
+            {
+              "value": "4,501",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,515",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Cancellation of shares",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "(14)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Shares issued to non-executive directors",
+          "values": [
+            {
+              "value": "#",
+              "cell_state": "reported"
+            },
+            {
+              "value": "#",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h1",
+          "label": "At 30 June/ 31 December",
+          "values": [
+            {
+              "value": "4,501",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,501",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Treasury shares",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "At 1 January",
+          "values": [
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(15)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Share buyback",
+          "values": [
+            {
+              "value": "(10)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(27)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Cancellation of shares",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "14",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Share Option Scheme",
+          "values": [
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Share Purchase Plan",
+          "values": [
+            {
+              "value": "2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Treasury shares transferred to DSP Trust",
+          "values": [
+            {
+              "value": "6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 2,
+          "parent": "h2",
+          "label": "At 30 June/ 31 December",
+          "values": [
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total issued ordinary shares excluding treasury shares",
+          "values": [
+            {
+              "value": "4,490",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,490",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Issued share capital (S$ million)",
+          "values": [
+            {
+              "value": "17,844",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,887",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "(1) # represents less than 500,000 shares.",
+          "values": []
+        }
+      ]
+    },
+    {
+      "title": "10. Deposits and balances of non-bank customers and banks",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "10",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "30 Jun 2026"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "31 Dec 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "175,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "166,140",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Savings deposits",
+          "values": [
+            {
+              "value": "109,358",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105,869",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "116,763",
+              "cell_state": "reported"
+            },
+            {
+              "value": "111,441",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Others",
+          "values": [
+            {
+              "value": "57,706",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44,836",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers (Total)",
+          "values": [
+            {
+              "value": "458,922",
+              "cell_state": "reported"
+            },
+            {
+              "value": "428,286",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "28,941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,280",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total deposits",
+          "values": [
+            {
+              "value": "487,863",
+              "cell_state": "reported"
+            },
+            {
+              "value": "443,566",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Issued ordinary shares"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "At 1 January 4,501 4,515"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Cancellation of shares \u2013 (14)"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Shares issued to non-executive directors # #"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "At 30 June/ 31 December 4,501 4,501"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Treasury shares"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "At 1 January (11) (15)"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Share buyback (10) (27)"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Cancellation of shares \u2013 14"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Share Option Scheme 2 4"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Share Purchase Plan 2 7"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Treasury shares transferred to DSP Trust 6 6"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "At 30 June/ 31 December (11) (11)"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Total issued ordinary shares excluding treasury shares 4,490 4,490"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Issued share capital (S$ million) 17,844 17,887"
+          },
+          {
+            "line_id": 27,
+            "indent": 1,
+            "label_clean": "# represents less than 500,000 shares."
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      },
+      {
+        "rows": [
+          {
+            "line_id": 46,
+            "indent": 0,
+            "label_clean": "Deposits of non-bank customers"
+          },
+          {
+            "line_id": 47,
+            "indent": 0,
+            "label_clean": "Fixed deposits 175,095 166,140"
+          },
+          {
+            "line_id": 48,
+            "indent": 0,
+            "label_clean": "Savings deposits 109,358 105,869"
+          },
+          {
+            "line_id": 49,
+            "indent": 0,
+            "label_clean": "Current accounts 116,763 111,441"
+          },
+          {
+            "line_id": 50,
+            "indent": 0,
+            "label_clean": "Others 57,706 44,836"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 52,
+            "indent": 0,
+            "label_clean": "Deposits and balances of banks 28,941 15,280"
+          },
+          {
+            "line_id": 53,
+            "indent": 0,
+            "label_clean": "Total deposits 487,863 443,566"
+          }
+        ],
+        "title_clean": null,
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

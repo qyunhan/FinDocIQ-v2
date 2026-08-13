@@ -1,0 +1,95 @@
+page,y0,x0,text,font_size,bold,alignment,is_dateish
+1,88.55,68.82,ToOurShareholders,10.07,True,left,False
+1,154.63,68.87,FinancialResultsfortheFinancialYear Ended31December 2025,10.07,True,left,False
+1,222.03,68.81,Final andSpecial Dividends,10.07,True,left,False
+1,385.93,69.01,Closureof Books,10.07,True,left,False
+1,468.48,68.77,Scrip DividendScheme,10.07,True,left,False
+11,138.98,69.35,1. General,9.11,True,left,False
+11,260.15,68.75,2. Basisofpreparation,9.11,True,left,False
+11,284.85,86.03,2.1 Statementofcompliance,9.11,True,center,False
+11,371.67,86.23,2.2 Basisofpresentation,9.11,True,center,False
+11,445.62,85.98,2.3 Useofestimatesandjudgements,9.11,True,center,False
+11,619.89,85.31,Impairmentoffinancialassets,9.11,True,center,False
+12,92.46,68.47,2. Basisofpreparation(continued),9.11,True,left,False
+12,116.73,85.86,2.3 Useofestimatesandjudgements(continued),9.11,True,center,False
+12,166.88,85.04,Allowancesfornon-credit-impairedloanstocustomers,9.11,False,center,False
+12,242.99,85.71,SensitivityofECL,9.11,False,center,False
+12,286.97,85.67,Allowancesforcredit-impairedloanstocustomers,9.11,False,center,False
+12,386.73,85.23,Impairmentofgoodwillandotherintangibleassets,9.11,True,center,False
+12,473.14,86.04,2.4 Changesinaccountingpolicies,9.11,True,center,False
+13,94.3,68.64,2. Basisofpreparation(continued),9.11,True,left,False
+13,119.14,85.84,2.4 Changesinaccountingpolicies(continued),9.11,True,center,False
+13,141.86,85.96,SFRS(I) 18Presentationand DisclosureinFinancialStatements,9.11,True,center,False
+13,321.88,68.82,3. Netinterestincome,9.11,True,left,False
+14,91.21,68.64,4. Fees andcommissions(net),9.11,True,left,False
+14,312.81,69.19,5. Otherincome,9.11,True,left,False
+14,479.8,68.72,6. Otheroperatingexpenses,9.11,True,left,False
+14,626.23,68.48,7. Allowancesforloansandother assets,9.11,True,left,False
+15,92.46,68.94,8. Dividends/distributions,9.11,True,left,False
+15,313.59,68.73,9. Sharecapital,9.11,True,left,False
+16,252.48,69.53,11. Debtissued,9.11,True,left,False
+16,464.33,69.62,12. Loanstocustomers,9.11,True,left,False
+17,92.54,69.29,13. Segmentinformation,9.11,True,left,False
+17,152.34,86.21,13.1 Businesssegments,9.11,True,center,False
+18,92.41,69.45,13. Segmentinformation(continued),9.11,True,left,False
+18,116.16,87.83,13.1Businesssegments(continued),9.1,True,center,False
+19,92.46,69.46,13. Segmentinformation(continued),9.11,True,left,False
+19,114.0,87.83,13.1Businesssegments(continued),9.1,True,center,False
+20,92.38,69.25,13. Segmentinformation(continued),9.11,True,left,False
+20,112.92,86.04,13.1 Businesssegments(continued),9.11,True,center,False
+20,173.27,85.94,GlobalConsumer/PrivateBanking,9.11,True,center,False
+20,291.52,86.16,GlobalWholesaleBanking,9.11,True,center,False
+20,408.75,86.36,GlobalMarkets,9.11,True,center,False
+20,513.95,86.38,Insurance,9.11,True,center,False
+20,591.84,86.53,Others,9.11,True,center,False
+21,92.42,69.2,13. Segmentinformation(continued),9.11,True,left,False
+21,116.16,87.83,13.2Geographicalsegments,9.1,True,center,False
+22,92.58,69.2,14. Fairvaluesoffinancialinstruments,9.11,True,left,False
+22,112.9,85.81,14.1 Valuationgovernanceframework,9.11,True,center,False
+22,372.04,85.62,Bid OfferAdjustments,9.11,False,center,False
+22,408.88,85.28,ModelRisk Adjustments,9.11,False,center,False
+22,445.93,85.31,Day 1ProfitorLoss Adjustments,9.11,False,center,False
+22,545.81,85.55,CreditValuationAdjustments,9.11,False,center,False
+22,595.19,85.48,CollateralValuation Adjustments,9.11,False,center,False
+22,657.59,85.63,ParameterUncertainty Adjustments,9.11,False,center,False
+23,94.17,69.14,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+23,115.37,86.18,14.2 Fairvalues,9.11,True,center,False
+23,223.52,85.93,Financialassets,9.11,True,center,False
+23,372.61,85.81,Financialliabilities,9.11,True,center,False
+23,506.93,85.91,14.3 Fairvaluehierarchy,9.11,True,center,False
+24,92.45,69.31,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+24,112.79,85.82,14.3 Fairvaluehierarchy(continued),9.11,True,center,False
+25,92.26,69.44,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+25,112.75,85.87,14.3 Fairvaluehierarchy(continued),9.11,True,center,False
+26,92.38,69.48,14. Fairvaluesoffinancialinstruments (continued),9.11,True,left,False
+26,112.76,85.95,14.3 Fairvaluehierarchy(continued),9.11,True,center,False
+27,92.45,69.47,14. Fair values of financial instruments (continued),9.11,True,left,False
+27,112.78,85.8,14.3 Fair value hierarchy (continued),9.11,True,center,False
+29,91.54,69.98,OTHER INFORMATION,11.03,True,left,False
+29,116.71,69.94,1. Auditorreview,9.11,True,left,False
+29,253.15,69.38,2. Review oftheperformance oftheGroupforthe financialyearended31 December2025,9.11,True,left,False
+29,302.47,70.11,3. Dividendinformation,9.11,True,left,False
+29,352.42,69.93,4. Interested persontransactions,9.11,True,left,False
+29,414.89,69.7,"5. Disclosure of persons occupying managerial positions who are related to a director, CEO or substantialshareholder",9.11,True,left,False
+29,501.49,69.77,6. Undertakingfrom directors and executiveofficers,9.11,True,left,False
+30,105.81,71.76,Report on the Audit ofthe Financial Statements,10.0,True,left,False
+30,130.34,71.27,Our Opinion,10.0,True,left,False
+30,261.95,71.44,What we have audited,10.0,True,left,False
+30,404.0,70.69,Basis for Opinion,10.0,True,left,False
+30,493.88,69.77,Independence,10.0,True,left,False
+30,585.41,69.07,OurAudit Approach,10.0,True,left,False
+31,91.84,69.54,,0.0,False,center,False
+31,138.68,69.51,,0.0,False,center,False
+31,215.97,281.86,,0.0,False,center,False
+31,216.48,75.51,,0.0,False,center,False
+32,152.41,75.2,,0.0,False,center,False
+34,138.96,76.62,,0.0,False,center,False
+34,150.44,76.24,,0.0,False,center,False
+34,240.28,284.77,,0.0,False,center,False
+34,365.97,284.48,,0.0,False,center,False
+36,91.54,69.07,,0.0,False,center,False
+36,138.57,69.3,,0.0,False,center,False
+36,370.71,69.13,,0.0,False,center,False
+36,536.5,68.87,,0.0,False,center,False
+37,90.51,68.08,,0.0,False,center,False
+37,505.71,68.59,,0.0,False,center,False

@@ -1,0 +1,60 @@
+# Curated leaf aliases — HUMAN-AUTHORED. Confirmed by Yunhan 2026-08-05.
+#
+# RULE OF THUMB (Yunhan): if it is the EXACT SAME printed line under a changed
+# name, record an alias here. If it is not the same line, do NOT alias it —
+# leave it flagged so it queues for review per table.
+#
+# Only renames belong here. A label that differs by a footnote marker, an '&'
+# vs 'and', a unit suffix or a section prefix is a NORMALISER concern and is
+# handled in build_masterlist_proposed.py — never aliased by hand.
+#
+# Shape:  <bank>: <canonical_table_id>: {<historical_leaf_id>: <current_leaf_id>}
+#
+# READ BY `resolve_canonical_leaf.load_masterlist()` into `by_alias`, a lookup
+# consulted only AFTER the masterlist's own by_raw/by_norm both miss. Alias keys
+# are deliberately kept OUT of `by_norm`, because `by_norm` is also the
+# MIN_MATCH_FRACTION denominator in `locate_tables()` — counting aliases there
+# would raise the bar for finding a table on the vintages that do not print the
+# alias form. An alias can help a match; it can never make one harder.
+
+DBS:
+  FS_INCOME_SELECTED:
+    # DBS renamed the markets book between 1Q23 and 1Q25. Same line, same
+    # structural position (row 5-6, level 1), same children.
+    treasury_markets_total_income: markets_trading_income
+    treasury_markets_total_income::net_interest_income: markets_trading_income::net_interest_income
+    treasury_markets_total_income::non_interest_income: markets_trading_income::non_interest_income
+
+    # 'Profit before allowances' (2Q22, 1Q23) -> 'Profit before allowances and
+    # amortisation' (1Q25 onward).
+    profit_before_allowances: profit_before_allowances_and_amortisation
+
+    # Commercial-book non-interest line renamed to name the source of the flow.
+    # Scoped under commercial_book_total_income ONLY — 'Other non-interest
+    # income' is a distinct, still-live line for other banks and tables.
+    commercial_book_total_income::other_non_interest_income: commercial_book_total_income::treasury_customer_sales_and_other_income
+
+  FS_BALANCE_BY_GEOGRAPHY:
+    # A PRINTING SLIP, not a rename — DBS's 2Q26 performance summary spells the
+    # line 'intangible assets' in its 30 Jun 2026 and 31 Dec 2025 blocks and
+    # 'intangibleS assets' in the 30 Jun 2025 block of the same exhibit. Same
+    # line, same position under its date banner, same children. Unmatched, the
+    # 1H25 figure (835,499 total) loaded with canonical_leaf_id NULL and was
+    # invisible to the dashboard while its 2Q26 and 4Q25 siblings rendered, so
+    # the concept showed a hole at exactly one period.
+    #
+    # Aliased rather than normalised: a general singular/plural rule would
+    # collapse leaves that are genuinely distinct elsewhere in the corpus, and
+    # this is one printed line under a changed name — the case the file is for.
+    total_assets_before_goodwill_and_intangibles_assets: total_assets_before_goodwill_and_intangible_assets
+
+OCBC:
+  FS_INCOME_CONSOLIDATED:
+    # One line, printed two ways by vintage. The consolidated income statement
+    # closes on 'Profit for the period/year' in a FULL-YEAR filing (4Q25) and on
+    # 'Profit for the period' in an INTERIM one (2Q26) — same row, same position
+    # (last line before 'Profit attributable to:'), same value. Not a footnote,
+    # unit or section-prefix difference, so it is not the normaliser's to fix:
+    # the two names are genuinely different text for the same printed line.
+    # Costs 'Net profit' on the highlights dashboard at every interim date.
+    profit_for_the_period: profit_for_the_period_year

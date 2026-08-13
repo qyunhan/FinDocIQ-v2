@@ -1,0 +1,605 @@
+# table_registry seed — the controlled vocabulary of exhibit types.
+#
+# `table_type_id` is STABLE and registry-assigned. It is never derived from a
+# title, so a title that drifts between quarters does not fragment the key.
+#
+# `aliases` are `normalize_exhibit_title()` outputs, matched most-specific-first
+# by mapping/registry.py: composite (`section__title`) -> title -> section.
+# A `bank:` qualifier restricts an alias to one bank; omit it for all banks.
+#
+# GRANULARITY RULE (2026-08-11). One `table_type_id` per distinct PRINTED
+# exhibit, where distinct means a distinct decomposition axis or column shape.
+# Split on WHAT is decomposed — industry, geography, segment, legal entity,
+# collateral, loan grading, period-overdue bucket. NEVER split on WHICH period
+# is shown: UOB prints its changes-in-equity twice (2024, 2025) and its net
+# interest margin twice (FY columns, half-year columns); those are ONE exhibit
+# type at two periods, and the period lives on the column axis. A period-derived
+# ID would mint new IDs every quarter and stop being stable, which defeats the
+# point of the key being registry-assigned.
+#
+# The rule exists because the masterlist addresses a leaf as
+# `(bank, table_type_id, canonical_leaf_id)`. When several logical tables share
+# one ID their leaves compete for one namespace and most become unaddressable —
+# measured and documented at pipeline/stage1_extract/chunk/transforms.py:1573, where DBS's
+# merged Overview page stranded two thirds of its correctly-stamped leaves.
+#
+# DELIBERATELY UNSEEDED, and the resolver depends on it:
+#   `financial_highlights`  at TITLE level — OCBC's 4Q25 media release has TWELVE
+#       tables under that page header. Ambiguous; they resolve at SECTION level
+#       instead (performance_ratios, earnings_per_share, ...).
+#   `statement_of_changes_in_equity` / `statements_of_changes_in_equity` — the
+#       bare section caption covers BOTH the Group and the Company/Bank exhibits
+#       (DBS p32-34, UOB p30-31). Seeding it would collapse the two legal
+#       entities into one ID. They resolve at TITLE level, where the entity is
+#       named.
+#   `by_currency` / `by_geography` / `by_industry` / `by_maturity` — OCBC's p16
+#       loans note registers ONE 40-row table under five section captions. Left
+#       unseeded so all five fall through to the title `loans_to_customers`.
+#
+# period_nature: duration | instant | mixed.  'mixed' means the exhibit carries
+# both (a ratio block with as-at CET1 beside period ROE); the ROW's period_type
+# from the concept dictionary decides, not the table's.
+#
+# legal_entity_axis: 'column' marks an exhibit where Group/Company live in
+# COLUMNS, not rows. A ROW map cannot resolve those on its own — see
+# docs/specs/MAPPING_LAYER.md. This is the 68,916-vs-17,643 case.
+
+types:
+
+  # ---- the four exhibits the 26-item highlights dashboard reads -------------
+  - id: FS_INCOME_SELECTED
+    display_name: Selected income statement items
+    statement_class: income_statement
+    period_nature: duration
+    aliases:
+      - selected_income_statement_items
+      - overview__selected_income_statement_items
+      - selected_income_statement_items_2      # OCBC's continued block
+      - financial_performance                  # UOB's caption for the same block
+      # UOB p5-6 prints all three highlight blocks under ONE 'Financial
+      # Highlights' caption, but the geometry caption-split makes them three
+      # physical tables (transforms.py:1565). Section beats title, so without
+      # these composites the FS_HIGHLIGHTS_COMBINED section alias would claim
+      # all three and strand the 42 leaves UOB_masterlist.csv declares here.
+      - financial_highlights__selected_income_statement_items
+
+  - id: FS_BALANCE_SELECTED
+    display_name: Selected balance sheet items
+    statement_class: balance_sheet
+    period_nature: instant
+    aliases:
+      - selected_balance_sheet_items
+      - overview__selected_balance_sheet_items
+      - selected_balance_sheet_items_2
+      - financial_highlights__selected_balance_sheet_items      # UOB p5-6, see FS_INCOME_SELECTED
+
+  - id: FS_RATIOS_KEY
+    display_name: Key financial ratios
+    statement_class: ratios
+    period_nature: mixed
+    aliases:
+      - key_financial_ratios
+      - performance_ratios
+      - revenue_mix_efficiency_ratios
+      - performance_highlights
+      - financial_highlights__key_financial_ratios              # UOB p5-6, see FS_INCOME_SELECTED
+
+  - id: FS_PER_SHARE
+    display_name: Per share data
+    statement_class: per_share
+    period_nature: mixed
+    aliases:
+      - per_share_data
+      - earnings_per_share_s
+      - earnings_per_share
+      - net_asset_value_per_share_s
+      - net_asset_value_per_share
+
+  # UOB (and OCBC's quarterly press releases) print ONE combined highlights
+  # exhibit: income items, balance-sheet items and ratios stacked in a single
+  # table. DBS and OCBC's FY media release split the same content into separate
+  # exhibits, which is why this type exists alongside the four above rather than
+  # replacing them.
+  #
+  # Safe to alias `financial_highlights` here ONLY because section is matched
+  # before title (mapping/registry.py): OCBC's FY25 media release, where twelve
+  # tables share that page header, resolves at SECTION level first
+  # (performance_ratios, earnings_per_share, ...) and never reaches this alias.
+  - id: FS_HIGHLIGHTS_COMBINED
+    display_name: Financial highlights (combined income + balance + ratios)
+    statement_class: mixed
+    period_nature: mixed
+    aliases:
+      - financial_highlights
+      # OCBC's media-release capital/liquidity block: loans, deposits, CASA,
+      # leverage, LCR and CET1 stacked in one exhibit — combined by shape, so
+      # it belongs with the other combined-highlights captions.
+      - strong_funding_liquidity_and_capital_position
+      - performance_highlights_
+      - selected_changes_in_equity
+
+  # OCBC's media release opens with a narrative period commentary carrying its
+  # own value table (4Q25/4Q24/YoY/3Q25/QoQ). `performance` is a bare word after
+  # normalize strips the period tokens from 'Full Year 2025 Performance' and
+  # 'Fourth Quarter 2025 Performance', so it is BANK-QUALIFIED — an unqualified
+  # one-word alias this generic would be a landmine for a bank we have not seen.
+  # The composites below it keep the allowance sub-tables printed under the same
+  # heading from being swallowed by the section match.
+  - id: FS_PERIOD_PERFORMANCE_SUMMARY
+    display_name: Period performance summary (narrative commentary table)
+    statement_class: mixed
+    period_nature: duration
+    aliases:
+      - {alias: performance, bank: OCBC}
+      - {alias: quarter_on_quarter_performance, bank: OCBC}
+
+  # ---- statutory statements -------------------------------------------------
+  # Name kept as _CONSOLIDATED, NOT the _STATUTORY the YAML previously used:
+  # the curated masterlists (OCBC, 29 leaves) and the dashboard anchors (12
+  # rows) both address _CONSOLIDATED, and the curated file is authority
+  # (archive/2026-08-06-masterlist-retirement/README.md). The YAML moves to the
+  # authored name rather than the other way round.
+  - id: FS_INCOME_CONSOLIDATED
+    display_name: Income statement (consolidated/statutory)
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [income_statement]
+
+  - id: FS_COMPREHENSIVE_INCOME
+    display_name: Statement of comprehensive income
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [statement_of_comprehensive_income]
+
+  - id: FS_BALANCE_CONSOLIDATED          # see FS_INCOME_CONSOLIDATED on the name
+    display_name: Balance sheets (consolidated/statutory)
+    statement_class: balance_sheet
+    period_nature: instant
+    legal_entity_axis: column      # Group AND Company columns in one table
+    aliases: [balance_sheets, balance_sheet]
+
+  # The three banks name the parent differently — DBS 'the Company', UOB and
+  # OCBC 'the Bank' — and OCBC drops the article entirely. All are the same
+  # legal entity, so all are aliases of one ID rather than three IDs.
+  - id: FS_EQUITY_CHANGES_GROUP
+    display_name: Statement of changes in equity — Group
+    statement_class: equity
+    period_nature: duration
+    legal_entity_default: CONSOLIDATED
+    aliases:
+      - statement_of_changes_in_equity_the_group
+      - statements_of_changes_in_equity_the_group
+      - statement_of_changes_in_equity_group
+      # DBS's unaudited half-year block: '... (The Group) 1 July 2025 to 31
+      # December 2025' — the date range strips to a trailing 'to'.
+      - statement_of_changes_in_equity_the_group_to
+
+  - id: FS_EQUITY_CHANGES_COMPANY
+    display_name: Statement of changes in equity — Company/Bank
+    statement_class: equity
+    period_nature: duration
+    legal_entity_default: PARENT_COMPANY
+    aliases:
+      - statement_of_changes_in_equity_the_company
+      - statements_of_changes_in_equity_the_company
+      - statements_of_changes_in_equity_the_bank
+      - statement_of_changes_in_equity_the_bank
+      - statement_of_changes_in_equity_bank
+
+  - id: FS_CASHFLOW
+    display_name: Cash flow statement
+    statement_class: cash_flow
+    period_nature: duration
+    aliases: [cash_flow_statement]
+
+  # ---- income detail: one ID per income LINE, not one for all of them -------
+  # Split 2026-08-11. These four were a single FS_NII_DETAIL, which put NII,
+  # fee income, other income and the whole non-interest block into one leaf
+  # namespace across three banks.
+  - id: FS_NII_DETAIL
+    display_name: Net interest income
+    statement_class: income_statement
+    period_nature: duration
+    aliases:
+      - net_interest_income
+      # UOB prints the same exhibit (average balance, interest, average rate)
+      # under the margin caption; it is the NII analysis, not a ratio table.
+      - net_interest_margin
+
+  - id: FS_NON_INTEREST_INCOME
+    display_name: Non-interest income
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [non_interest_income]
+
+  - id: FS_FEE_INCOME
+    display_name: Fee and commission income
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [net_fee_and_commission_income, fees_and_commissions_net,
+              fee_and_commission_income, net_fee_income]
+
+  - id: FS_OTHER_INCOME
+    display_name: Other non-interest income
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [other_non_interest_income, other_income]
+
+  # ---- average balance sheet vs volume/rate: different column shapes --------
+  # 'Average balance / Interest / Average rate' is a level exhibit; 'Volume /
+  # Rate / Net change' is an attribution of the CHANGE between two periods.
+  # Printed adjacently and often under each other's section caption, hence the
+  # cross composites.
+  - id: FS_AVG_BALANCE_SHEET
+    display_name: Average balance sheet
+    statement_class: balance_sheet
+    period_nature: mixed
+    aliases:
+      - average_balance_sheet
+      - net_interest_income__average_balance_sheet          # DBS p10-11
+      - volume_and_rate_analysis__average_balance_sheet      # OCBC p13
+
+  - id: FS_VOLUME_RATE
+    display_name: Volume and rate analysis
+    statement_class: income_statement
+    period_nature: duration
+    aliases:
+      - volume_and_rate_analysis
+      # normalize strips the period tokens from 'Volume and rate analysis
+      # (2H25 vs 2H24, 2H25 vs 1H25)', leaving the bare 'vs' joiners.
+      - volume_and_rate_analysis_vs
+      - volume_and_rate_analysis_vs_vs
+      - net_interest_income__volume_and_rate_analysis_vs      # DBS p10-11
+      - net_interest_income__volume_and_rate_analysis_vs_vs   # DBS p10-11
+      - average_balance_sheet__volume_and_rate_analysis       # OCBC p13
+
+  # ---- expenses -------------------------------------------------------------
+  - id: FS_EXPENSES_DETAIL
+    display_name: Operating expenses
+    statement_class: income_statement
+    period_nature: duration
+    aliases:
+      - operating_expenses
+      - expenses
+      # OCBC p15 prints OPERATING EXPENSES under the allowances section caption
+      # (heading drift); the title is the true identity here.
+      - allowances_for_loans_and_other_assets__operating_expenses
+
+  - id: FS_OTHER_OPERATING_EXPENSES
+    display_name: Other operating expenses
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [other_operating_expenses]
+
+  - id: FS_INCOME_TAX
+    display_name: Income tax
+    statement_class: income_statement
+    period_nature: duration
+    aliases: [income_tax, taxation]
+
+  # ---- dimensional decompositions (dim_hint drives the axis) ---------------
+  # INCOME by axis and BALANCE by axis are separate IDs: the segment/geography
+  # income tables and the 'as at <date>' asset/liability tables under the same
+  # heading carry different rows and different period_nature, so sharing one ID
+  # would strand one of the two.
+  - id: FS_PERF_BY_SEGMENT
+    display_name: Performance by business segment
+    statement_class: segment
+    period_nature: duration
+    dim_hint: segment
+    aliases:
+      - performance_by_business_segments
+      - performance_by_business_segment
+      - performance_by_business_segments_selected_income_statement_items
+      - performance_by_business_segment_selected_income_statement_items
+      # OCBC's condensed FS prints the same decomposition as a numbered note
+      # ('13.1 Business segments'); the note NUMBER is stripped by
+      # normalize_exhibit_title, so the key is stable across renumbering.
+      - business_segments
+      - business_segments_half_year_ended
+      - business_segments_year_ended
+      - profit_before_income_tax_by_business_segment
+
+  - id: FS_BALANCE_BY_SEGMENT
+    display_name: Balance sheet items by business segment
+    statement_class: segment
+    period_nature: instant
+    dim_hint: segment
+    aliases:
+      - selected_balance_sheet_and_other_items
+      - performance_by_business_segments__selected_balance_sheet_and_other_items  # DBS p14-17
+      - performance_by_business_segment__performance_by_business_segment_at       # UOB p17-21
+      - business_segments__business_segments_at                                   # OCBC p17-20
+
+  - id: FS_PERF_BY_GEOGRAPHY
+    display_name: Performance by geography
+    statement_class: geography
+    period_nature: duration
+    dim_hint: geo
+    aliases:
+      - performance_by_geography
+      - performance_by_geographical_segment
+      - performance_by_geography_selected_income_statement_items
+      - geographical_segments          # OCBC note '13.2 Geographical segments'
+
+  - id: FS_BALANCE_BY_GEOGRAPHY
+    display_name: Balance sheet items by geography
+    statement_class: geography
+    period_nature: instant
+    dim_hint: geo
+    aliases:
+      - performance_by_geography__selected_balance_sheet_items            # DBS p18-21
+      - geographical_segments__geographical_segments_total_assets         # OCBC p21
+
+  # ---- credit quality: one ID per NPA decomposition ------------------------
+  # Split 2026-08-11. UOB's four p14-15 tables have four different column
+  # signatures (Dec/Jun/Dec $m; NPL ratio + specific allowance; NPL $m + ratio
+  # per period; allowance-coverage percentages) and DBS prints five cuts. All of
+  # them sit under ONE section caption, so every non-headline cut is pinned by a
+  # COMPOSITE — the section alias would otherwise win and re-merge them.
+  - id: FS_NPA_COVERAGE
+    display_name: Non-performing assets — headline and by country
+    statement_class: credit_quality
+    period_nature: instant
+    aliases:
+      - non_performing_assets
+      - non_performing_assets_and_loss_allowance_coverage
+      # DBS splits the same NPA exhibit across sections titled 'By geography' /
+      # 'Loss Allowance Coverage'; the latter is the only identifying caption.
+      - loss_allowance_coverage
+
+  - id: FS_NPA_BY_INDUSTRY
+    display_name: Non-performing loans by industry
+    statement_class: credit_quality
+    period_nature: instant
+    dim_hint: industry
+    aliases:
+      - npl_by_industry
+      - npls_by_industry
+      - non_performing_assets_npls_by_industry
+      - non_performing_assets__npl_by_industry                                    # UOB
+      - non_performing_assets__non_performing_assets_npls_by_industry             # OCBC
+      - non_performing_assets_and_loss_allowance_coverage__non_performing_assets_and_loss_allowance_coverage_by_industry  # DBS
+      # OCBC p18 registers the same three cuts under each other's section
+      # caption (heading drift). The TITLE is the true identity; pin each pair.
+      - npas_by_period_overdue__non_performing_assets_npls_by_industry
+      - npls_by_industry__non_performing_assets
+      - restructured_loans__npls_by_industry
+
+  - id: FS_NPA_BY_GEOGRAPHY
+    display_name: Non-performing loans by geography
+    statement_class: credit_quality
+    period_nature: instant
+    dim_hint: geo
+    aliases:
+      - npl_by_geography
+      - non_performing_assets_npl_by_geography
+      - non_performing_assets__non_performing_assets_npl_by_geography             # UOB
+
+  - id: FS_NPA_BY_PERIOD_OVERDUE
+    display_name: Non-performing assets by period overdue
+    statement_class: credit_quality
+    period_nature: instant
+    aliases:
+      - npas_by_period_overdue
+      - by_period_overdue
+      - non_performing_assets_npas_by_period_overdue
+      - non_performing_assets__non_performing_assets_npas_by_period_overdue       # OCBC
+      - non_performing_assets_and_loss_allowance_coverage__by_period_overdue      # DBS
+      - npls_by_industry__npas_by_period_overdue
+      - restructured_loans__npas_by_period_overdue
+
+  - id: FS_NPA_RESTRUCTURED
+    display_name: Restructured loans
+    statement_class: credit_quality
+    period_nature: instant
+    aliases:
+      - restructured_loans
+      - non_performing_assets_restructured_loans
+      - non_performing_assets__non_performing_assets_restructured_loans           # OCBC
+      - npas_by_period_overdue__restructured_loans
+      - npls_by_industry__restructured_loans
+
+  - id: FS_NPA_BY_COLLATERAL
+    display_name: Non-performing assets by collateral type
+    statement_class: credit_quality
+    period_nature: instant
+    aliases:
+      - non_performing_assets_and_loss_allowance_coverage_by_collateral_type
+      - non_performing_assets_and_loss_allowance_coverage__non_performing_assets_and_loss_allowance_coverage_by_collateral_type  # DBS
+
+  - id: FS_NPA_BY_LOAN_GRADING
+    display_name: Non-performing assets by loan grading
+    statement_class: credit_quality
+    period_nature: instant
+    aliases:
+      - non_performing_assets_and_loss_allowance_coverage_by_loan_grading
+      - non_performing_assets_and_loss_allowance_coverage__non_performing_assets_and_loss_allowance_coverage_by_loan_grading  # DBS
+
+  - id: FS_NPA_TOTAL_ALLOWANCE
+    display_name: Total allowance coverage of NPAs
+    statement_class: credit_quality
+    period_nature: instant
+    aliases:
+      - total_allowance
+      - non_performing_assets__total_allowance                                    # UOB
+
+  - id: FS_ALLOWANCES
+    display_name: Allowances for credit and other losses
+    statement_class: credit_quality
+    period_nature: mixed
+    aliases:
+      - allowances
+      - allowances_for_credit_and_other_losses
+      - allowance_for_credit_and_other_losses     # UOB prints the singular
+      - allowances_for_loans_and_other_assets
+      - asset_quality_and_allowances
+      - credit_costs_bps
+      # OCBC p15 heading drift, mirror of the FS_EXPENSES_DETAIL composite.
+      - operating_expenses__allowances_for_loans_and_other_assets
+      # OCBC's narrative performance sections host these three value tables;
+      # without the composites the FS_PERIOD_PERFORMANCE_SUMMARY section alias
+      # would claim them.
+      - performance__allowances
+      - performance__asset_quality_and_allowances
+      - performance__credit_costs_bps
+      - quarter_on_quarter_performance__allowances
+      - quarter_on_quarter_performance__asset_quality_and_allowances
+      - quarter_on_quarter_performance__credit_costs_bps
+
+  # ---- balance sheet detail -------------------------------------------------
+  - id: FS_CUSTOMER_LOANS
+    display_name: Customer loans
+    statement_class: credit_quality
+    period_nature: instant
+    aliases: [customer_loans, loans_to_customers]
+
+  - id: FS_CUSTOMER_DEPOSITS
+    display_name: Customer deposits
+    statement_class: balance_sheet
+    period_nature: instant
+    # 'deposits' — OCBC prints the exhibit under a bare 'DEPOSITS' caption.
+    aliases: [customer_deposits, deposits_and_balances_of_non_bank_customers_and_banks,
+              deposits]
+
+  - id: FS_DEBTS_ISSUED
+    display_name: Debts issued
+    statement_class: balance_sheet
+    period_nature: instant
+    aliases: [debts_issued, debt_issued]          # OCBC prints the singular
+
+  - id: FS_OFF_BALANCE_SHEET
+    display_name: Off-balance sheet items
+    statement_class: balance_sheet
+    period_nature: instant
+    aliases: [off_balance_sheet_items]
+
+  - id: FS_CAPITAL_ADEQUACY
+    display_name: Capital adequacy
+    statement_class: capital
+    period_nature: instant
+    aliases: [capital_adequacy, capital_adequacy_ratios, capital_adequacy_and_leverage_ratios,
+              capital_adequacy_ratio_car]
+
+  # DBS prints the MAS minimum requirement alongside the reported CAR; it is a
+  # requirement schedule, not the bank's own position, so it gets its own ID.
+  - id: FS_CAPITAL_MINIMUM_REQUIREMENTS
+    display_name: Minimum CAR including buffer requirements
+    statement_class: capital
+    period_nature: instant
+    aliases:
+      - minimum_car_including_buffer_requirements
+      - capital_adequacy__minimum_car_including_buffer_requirements               # DBS p28
+
+  # ---- equity and distributions --------------------------------------------
+  - id: FS_DIVIDENDS
+    display_name: Dividends and distributions
+    statement_class: equity
+    period_nature: duration
+    aliases:
+      - dividends
+      - dividend
+      - dividends_distributions
+      - dividend_cents_per_share
+
+  - id: FS_SHARE_CAPITAL
+    display_name: Share capital and other capital
+    statement_class: equity
+    period_nature: instant
+    aliases:
+      - share_capital
+      - share_capital_and_other_capital
+      # DBS runs the note's opening sentence into the caption.
+      - share_capital_a_the_movement_in_the_number_of_issued_and_fully_paid_up_ordinary_shares_of_the_company_is_as_follows
+
+  # ---- note disclosures that host spine line items -------------------------
+  # Both carry 'Total assets'/'Total liabilities' rows, so they compete in
+  # fact_metric and must be classifiable (an UNCLASSIFIED table cannot be
+  # tiered or excluded). The leading note NUMBER is stripped by
+  # normalize_exhibit_title, so these keys survive quarter-to-quarter
+  # renumbering ('5 Classification…' -> '6 Classification…').
+  - id: FS_FINANCIAL_CLASSIFICATION
+    display_name: Classification of financial assets and liabilities
+    statement_class: balance_sheet
+    period_nature: instant
+    aliases:
+      - classification_of_financial_assets_and_financial_liabilities
+      # UOB appends the as-at date to the caption ('… Dec-25'); the date token
+      # strips to a bare 'dec'.
+      - classification_of_financial_assets_and_financial_liabilities_dec
+
+  - id: FS_FAIR_VALUE_HIERARCHY
+    display_name: Fair value hierarchy
+    statement_class: balance_sheet
+    period_nature: instant
+    aliases: [fair_value_of_financial_instruments, fair_value_hierarchy]
+
+  # The Level 3 roll-forward and the Level 3 valuation-technique table are
+  # printed both as their own sections (OCBC p25-28) and nested under the fair
+  # value note (OCBC p23-28, UOB p37-38). Composites pin the nested copies so
+  # the fair_value_hierarchy section alias does not re-absorb them.
+  - id: FS_L3_MOVEMENTS
+    display_name: Movements in Level 3 instruments
+    statement_class: balance_sheet
+    period_nature: duration
+    aliases:
+      - movements_in_level_3_financial_assets_and_liabilities
+      - movements_in_level_3_non_financial_assets
+      - movements_in_level_3_financial_assets_and_liabilities_financial_assets_measured_at_fair_value
+      - movements_in_level_3_financial_assets_and_liabilities_financial_liabilities_measured_at_fair_value
+      - fair_value_hierarchy__movements_in_level_3_financial_assets_and_liabilities_financial_assets_measured_at_fair_value
+      - fair_value_hierarchy__movements_in_level_3_financial_assets_and_liabilities_financial_liabilities_measured_at_fair_value
+      - fair_value_hierarchy__movements_in_level_3_non_financial_assets
+      # UOB nests the roll-forward as clause (c) of its fair value note.
+      - fair_value_of_financial_instruments__fair_value_of_financial_instruments_c_the_following_table_presents_the_changes_in_level_3_instruments_for_the_financial_year_ended
+
+  - id: FS_L3_VALUATION
+    display_name: Valuation techniques and unobservable inputs for Level 3
+    statement_class: balance_sheet
+    period_nature: instant
+    aliases:
+      - valuation_techniques_and_unobservable_inputs_for_level_3_instruments
+      - valuation_techniques_and_unobservable_inputs_for_level_3
+      - valuation_techniques_and_unobservable_inputs_for_level_3_instruments_group
+      - fair_value_hierarchy__valuation_techniques_and_unobservable_inputs_for_level_3_instruments_group
+
+  # Narrative, not a value exhibit — but it must be CLASSIFIABLE so it can be
+  # deliberately excluded downstream rather than sitting in the review queue
+  # every quarter. All three banks print it under the same section caption.
+  - id: FS_KEY_AUDIT_MATTERS
+    display_name: Key audit matters (auditor's report)
+    statement_class: narrative
+    period_nature: duration
+    aliases: [key_audit_matters]
+
+  # ---- MAS regulatory forms (fixed shape -> template_row path) -------------
+  - id: REG_LCR
+    display_name: Liquidity coverage ratio
+    statement_class: regulatory
+    period_nature: mixed
+    is_regulatory: true
+    aliases: [liquidity_coverage_ratios, liquidity_coverage_ratio, lcr]
+
+  - id: REG_NSFR
+    display_name: Net stable funding ratio
+    statement_class: regulatory
+    period_nature: instant
+    is_regulatory: true
+    aliases: [net_stable_funding_ratio, nsfr]
+
+  - id: REG_LEVERAGE
+    display_name: Leverage ratio
+    statement_class: regulatory
+    period_nature: instant
+    is_regulatory: true
+    aliases:
+      - leverage_ratio
+      - leverage_ratio_common_disclosure_template
+      - leverage_ratio_summary_comparison_table
+
+  - id: REG_KEY_METRICS
+    display_name: Key prudential regulatory metrics
+    statement_class: regulatory
+    period_nature: mixed
+    is_regulatory: true
+    aliases: [overview_of_key_prudential_regulatory_metrics, key_prudential_regulatory_metrics]

@@ -1,0 +1,51 @@
+{
+  "document": "OCBC_2Q26_Unaudited_Interim_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "business_segments_p17-19/chunks/c1",
+  "section_ids": [
+    "business_segments"
+  ],
+  "section_titles": [
+    "13.1 Business segments"
+  ],
+  "pages": [
+    17,
+    18
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 4,
+  "n_rows": 50,
+  "usage": {
+    "ts": "2026-08-07T04:57:33",
+    "script": "extract_to_excel",
+    "label": "business_segments_p17-19/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 4520,
+    "output_tokens": 10338,
+    "thinking_tokens": 0,
+    "total_tokens": 14858,
+    "est_cost_usd": 0.09982,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '13.1' pdf=2x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Elimination' [13.1 Business segments \u2014 At 30]",
+      "  duplicate row label x2: 'Elimination' [13.1 Business segments \u2014 At 31]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Non-interest income' printed bands [1,2,3,4,5,6] -> extracted slots [1,2,3,4,6]",
+      "  col-repair: declined for 'Non-interest income' \u2014 extracted values ['(#)', '1,056', '1,580', '209', '3,512', '667'] != printed tokens ['(51)', '1,156', '197', '2,574', '555', '717']"
+    ]
+  },
+  "crop": null
+}

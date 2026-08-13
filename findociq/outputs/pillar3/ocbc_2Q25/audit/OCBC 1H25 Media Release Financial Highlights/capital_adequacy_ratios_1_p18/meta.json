@@ -1,0 +1,52 @@
+{
+  "document": "OCBC 1H25 Media Release Financial Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "1 August 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "capital_adequacy_ratios_1_p18",
+  "section_ids": [
+    "capital_adequacy_ratios_1"
+  ],
+  "section_titles": [
+    "CAPITAL ADEQUACY RATIOS 1/"
+  ],
+  "pages": [
+    18
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 18,
+  "usage": {
+    "ts": "2026-07-25T08:09:22",
+    "script": "extract_to_excel",
+    "label": "capital_adequacy_ratios_1_p18",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3902,
+    "output_tokens": 2537,
+    "thinking_tokens": 0,
+    "total_tokens": 6439,
+    "est_cost_usd": 0.02869,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '17.0' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '17.8' pdf=3x json=2x (missing from extraction)",
+      "  deficit: '19.6' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '15.3' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.5' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '6.5' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '637' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x3: 'Regulatory adjustments' [CAPITAL ADEQUACY RATIOS 1/]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

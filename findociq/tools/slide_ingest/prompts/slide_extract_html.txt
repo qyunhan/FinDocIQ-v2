@@ -1,0 +1,37 @@
+You are extracting a bank CFO-presentation slide into HTML. Below is a STRUCTURED
+OBSERVATION of this slide's elements (from the observe step) — follow it exactly.
+
+<observation>
+{OBSERVE_OUTPUT}
+</observation>
+
+Output ONLY valid HTML. No prose. Emit ONE
+  <table border="1" data-element="TYPE" data-title="printed element title verbatim">
+per distinct element the observation found (a slide has several). TYPE is the
+observed element_type (text_table | waterfall | stacked_bar | stacked_bar_overlay |
+trend_line | kpi_grid | donut_single | donut_dual_ring | other).
+
+Per-element layout (data goes in the same <thead>/<tbody> grid as any table):
+
+- donut_dual_ring / stacked_bar / trend_line / kpi_grid: rows = series/segments/metrics;
+  COLUMNS = the periods (e.g. FY24, FY25 / 4Q25, 4Q24). One <td> per (row, period).
+  For the donut: assign each period column from the callout line you actually see —
+  do NOT assume inner=earlier or outer=later. One cell per (segment, period).
+
+- waterfall: one <tr> per bar. The opening and closing bars get data-kind="total".
+  Each delta/bridge bar gets data-kind="bridge" and data-sign="+" or "-", where the
+  sign comes from the bar's FILL COLOUR against the slide's legend (never from what the
+  label means financially). The <td> value is the magnitude as printed (positive).
+  If the slide states start + sum(signed deltas) = end, keep that arithmetic consistent.
+
+- kpi_grid with no period columns: rows = metrics, single value column.
+
+Cross-element rules:
+- Values verbatim (commas, %, brackets for negatives, + signs). Join split numbers
+  ("2 64,680" -> "264,680"). Never round or reformat.
+- A printed dash is DATA -> "-" (null), never an empty cell. Printed 0 -> 0.
+- Ignore bullet-point commentary sentences and pure disclaimers (no numeric value).
+- If the image clearly contradicts the observation, trust the image.
+
+The standard table rules below (headers, colspan, shading, row levels, cell states)
+apply to every element's grid:

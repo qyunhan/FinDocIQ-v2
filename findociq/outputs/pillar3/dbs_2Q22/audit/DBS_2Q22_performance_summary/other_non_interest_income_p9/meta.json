@@ -1,0 +1,64 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "other_non_interest_income_p9",
+  "section_ids": [
+    "other_non_interest_income"
+  ],
+  "section_titles": [
+    "OTHER NON-INTEREST INCOME1"
+  ],
+  "pages": [
+    9
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 6,
+  "usage": {
+    "ts": "2026-07-26T09:05:30",
+    "script": "extract_to_excel",
+    "label": "other_non_interest_income_p9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3902,
+    "output_tokens": 1093,
+    "thinking_tokens": 0,
+    "total_tokens": 4995,
+    "est_cost_usd": 0.01569,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '1659' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1821' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1703' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.66' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.24' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '473' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '258' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '390' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '745' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '114' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '104' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '454' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '471' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '230' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '183' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '334' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '381' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '945' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '841' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '280' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '256' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '277' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,60 @@
+{
+  "document": "OCBC 1Q25 Results  Press Release.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "9 May 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "1q25_performance_highlights_p1",
+  "section_ids": [
+    "1q25_performance_highlights"
+  ],
+  "section_titles": [
+    "1Q25 Performance Highlights"
+  ],
+  "pages": [
+    1
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 12,
+  "usage": {
+    "ts": "2026-07-27T06:22:41",
+    "script": "extract_to_excel",
+    "label": "1q25_performance_highlights_p1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3921,
+    "output_tokens": 1697,
+    "thinking_tokens": 0,
+    "total_tokens": 5618,
+    "est_cost_usd": 0.02115,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.88' pdf=3x json=0x (missing from extraction)",
+      "  deficit: '13.0' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.68' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.69' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.98' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '38.7' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.66' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.35' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.31' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.42' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.56' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.9' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '322' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '403' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.2' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1.7' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

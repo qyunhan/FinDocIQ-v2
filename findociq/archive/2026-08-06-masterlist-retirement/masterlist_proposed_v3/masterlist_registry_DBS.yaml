@@ -1,0 +1,4649 @@
+# masterlist_registry_DBS.yaml — PROPOSED v3, pre-curation.
+# Reference-set authority: only the latest document of each seed doc_kind
+# mints canonical ids. Other periods contribute aliases only.
+# Hierarchy: banner-by-scope (Rule 3); a DATE banner scopes but contributes
+# NO id segment — a date is period data, never identity.
+# Alias lists are SORTED; leaf order is by ordinal. Diffs are meaningful.
+
+- bank: DBS
+  canonical_section_id: Overview
+  canonical_table_id: FS_INCOME_SELECTED
+  gate_status: PASS
+  table_display_name: Selected income statement items
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: commercial_book_total_income
+      status: active
+      full_hierarchy:
+        - Commercial book total income
+      label: Commercial book total income
+      leaf_id_aliases:
+        - Commercial Book total income
+        - Commercial book total income
+        - "Commercial book total income > Commercial book total income"
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "commercial_book_total_income::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Commercial book total income
+        - Net interest income
+      label: Net interest income
+      leaf_id_aliases:
+        - "Commercial Book total income > Net interest income"
+        - "Commercial book total income > Commercial book total income > Net interest income"
+        - "Commercial book total income > Net interest income"
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "commercial_book_total_income::net_fee_and_commission_income"
+      status: active
+      full_hierarchy:
+        - Commercial book total income
+        - Net fee and commission income
+      label: Net fee and commission income
+      leaf_id_aliases:
+        - "Commercial Book total income > Net fee and commission income"
+        - "Commercial book total income > Commercial book total income > Net fee and commission income"
+        - "Commercial book total income > Net fee and commission income"
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "commercial_book_total_income::treasury_customer_sales_and_other_income"
+      status: active
+      full_hierarchy:
+        - Commercial book total income
+        - Treasury customer sales and other income
+      label: Treasury customer sales and other income
+      leaf_id_aliases:
+        - "Commercial book total income > Commercial book total income > Treasury customer sales and other income"
+        - "Commercial book total income > Treasury customer sales and other income"
+      periods_seen: [1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: markets_trading_income
+      status: active
+      full_hierarchy:
+        - Markets trading Income
+      label: Markets trading Income
+      leaf_id_aliases:
+        - Markets trading Income
+        - Markets trading income
+        - "Markets trading income > Markets trading income"
+      periods_seen: [1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "markets_trading_income::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Markets trading Income
+        - Net interest income
+      label: Net interest income
+      leaf_id_aliases:
+        - "Markets trading Income > Net interest income"
+        - "Markets trading income > Markets trading income > Net interest income"
+        - "Markets trading income > Net interest income"
+      periods_seen: [1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "markets_trading_income::non_interest_income"
+      status: active
+      full_hierarchy:
+        - Markets trading Income
+        - "Non-interest income"
+      label: "Non-interest income"
+      leaf_id_aliases:
+        - "Markets trading Income > Non-interest income"
+        - "Markets trading income > Markets trading income > Non-interest income"
+        - "Markets trading income > Non-interest income"
+      periods_seen: [1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: total_income
+      status: active
+      full_hierarchy:
+        - Total income
+      label: Total income
+      leaf_id_aliases:
+        - Total income
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "total_income::of_which::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Total income
+        - "Of which: Net interest income"
+      label: "Of which: Net interest income"
+      leaf_id_aliases:
+        - "Total income > Of which: Net interest income"
+      periods_seen: [3Q25, 4Q25]
+    - ordinal: 10
+      canonical_leaf_id: expenses
+      status: active
+      full_hierarchy:
+        - Expenses
+      label: Expenses
+      leaf_id_aliases:
+        - Expenses
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 11
+      canonical_leaf_id: profit_before_allowances_and_amortisation
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+      label: Profit before allowances and amortisation
+      leaf_id_aliases:
+        - Profit before allowances and amortisation
+      periods_seen: [1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 12
+      canonical_leaf_id: amortisation_of_intangible_assets
+      status: active
+      full_hierarchy:
+        - Amortisation of intangible assets
+      label: Amortisation of intangible assets
+      leaf_id_aliases:
+        - Amortisation of intangible assets
+      periods_seen: [1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 13
+      canonical_leaf_id: allowances_for_credit_and_other_losses
+      status: active
+      full_hierarchy:
+        - Allowances for credit and other losses
+      label: Allowances for credit and other losses
+      leaf_id_aliases:
+        - Allowances for credit and other losses
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 14
+      canonical_leaf_id: "allowances_for_credit_and_other_losses::ecl_stage_3_sp"
+      status: active
+      full_hierarchy:
+        - Allowances for credit and other losses
+        - ECL Stage 3 (SP)
+      label: ECL Stage 3 (SP)
+      leaf_id_aliases:
+        - "Allowances for credit and other losses > ECL Stage 3 (SP)"
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 15
+      canonical_leaf_id: "allowances_for_credit_and_other_losses::ecl_stage_1_and_2_gp"
+      status: active
+      full_hierarchy:
+        - Allowances for credit and other losses
+        - ECL Stage 1 and 2 (GP)
+      label: ECL Stage 1 and 2 (GP)
+      leaf_id_aliases:
+        - "Allowances for credit and other losses > ECL Stage 1 and 2 (GP)"
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 16
+      canonical_leaf_id: share_of_profits_losses_of_associates_and_jvs
+      status: active
+      full_hierarchy:
+        - Share of profits/losses of associates and JVs
+      label: Share of profits/losses of associates and JVs
+      leaf_id_aliases:
+        - Share of profits/losses of associates and JVs
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 17
+      canonical_leaf_id: profit_before_tax
+      status: active
+      full_hierarchy:
+        - Profit before tax
+      label: Profit before tax
+      leaf_id_aliases:
+        - Profit before tax
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 18
+      canonical_leaf_id: net_profit
+      status: active
+      full_hierarchy:
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - Net profit
+      periods_seen: [1Q23, 1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 19
+      canonical_leaf_id: citi_integration
+      status: active
+      full_hierarchy:
+        - Citi Integration
+      label: Citi Integration
+      leaf_id_aliases:
+        - Citi Integration
+      periods_seen: [1Q25, 2Q25, 3Q25, 4Q25]
+    - ordinal: 20
+      canonical_leaf_id: provision_for_csr
+      status: active
+      full_hierarchy:
+        - Provision for CSR
+      label: Provision for CSR
+      leaf_id_aliases:
+        - Provision for CSR
+      periods_seen: [1Q25, 2Q25, 4Q25]
+    - ordinal: 21
+      canonical_leaf_id: reported_net_profit
+      status: active
+      full_hierarchy:
+        - Reported net profit
+      label: Reported net profit
+      leaf_id_aliases:
+        - Reported net profit
+      periods_seen: [1Q25, 2Q25, 3Q25, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Overview
+  canonical_table_id: FS_BALANCE_SELECTED
+  sub_table: panel_1
+  gate_status: PASS
+  table_display_name: Selected balance sheet items
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: hong_kong
+      label: Hong Kong
+    - canonical_col_id: rest_of_greater_china
+      label: Rest of Greater China
+    - canonical_col_id: rest_of_the_world
+      label: Rest of the World
+    - canonical_col_id: singapore
+      label: Singapore
+    - canonical_col_id: south_and_south_east_asia
+      label: "South and South-east Asia"
+    - canonical_col_id: total
+      label: Total
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: total_assets_before_goodwill_and_intangible_assets
+      status: active
+      full_hierarchy:
+        - Total assets before goodwill and intangible assets
+      label: Total assets before goodwill and intangible assets
+      leaf_id_aliases:
+        - Total assets before goodwill and intangible assets
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: goodwill_and_intangible_assets
+      status: active
+      full_hierarchy:
+        - Goodwill and intangible assets
+      label: Goodwill and intangible assets
+      leaf_id_aliases:
+        - Goodwill and intangible assets
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: total_assets
+      status: active
+      full_hierarchy:
+        - Total assets
+      label: Total assets
+      leaf_id_aliases:
+        - Total assets
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q22, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: non_current_assets
+      status: active
+      full_hierarchy:
+        - "Non-current assets"
+      label: "Non-current assets"
+      leaf_id_aliases:
+        - "Non-current assets"
+      periods_seen: [4Q22, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: gross_customer_loans
+      status: active
+      full_hierarchy:
+        - Gross customer loans
+      label: Gross customer loans
+      leaf_id_aliases:
+        - Gross customer loans
+      periods_seen: [4Q22, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Overview
+  canonical_table_id: FS_BALANCE_SELECTED
+  sub_table: panel_2
+  gate_status: PASS
+  table_display_name: Selected balance sheet items
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: customer_loans
+      status: active
+      full_hierarchy:
+        - Customer loans
+      label: Customer loans
+      leaf_id_aliases:
+        - Customer loans
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "customer_loans::constant_currency_change"
+      status: active
+      full_hierarchy:
+        - Customer loans
+        - "Constant-currency change"
+      label: "Constant-currency change"
+      leaf_id_aliases:
+        - "Customer loans > Constant-currency change"
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 3
+      canonical_leaf_id: total_assets
+      status: active
+      full_hierarchy:
+        - Total assets
+      label: Total assets
+      leaf_id_aliases:
+        - Total assets
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q22, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "total_assets::of_which::non_performing_assets"
+      status: active
+      full_hierarchy:
+        - Total assets
+        - "of which: Non-performing assets"
+      label: "of which: Non-performing assets"
+      leaf_id_aliases:
+        - "Total assets > of which: Non-performing assets"
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: customer_deposits
+      status: active
+      full_hierarchy:
+        - Customer deposits
+      label: Customer deposits
+      leaf_id_aliases:
+        - Customer deposits
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "customer_deposits::constant_currency_change"
+      status: active
+      full_hierarchy:
+        - Customer deposits
+        - "Constant-currency change"
+      label: "Constant-currency change"
+      leaf_id_aliases:
+        - "Customer deposits > Constant-currency change"
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: total_liabilities
+      status: active
+      full_hierarchy:
+        - Total liabilities
+      label: Total liabilities
+      leaf_id_aliases:
+        - Total liabilities
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: shareholders_funds
+      status: active
+      full_hierarchy:
+        - Shareholders’ funds
+      label: Shareholders’ funds
+      leaf_id_aliases:
+        - "Shareholders' funds"
+        - Shareholders’ funds
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Overview
+  canonical_table_id: FS_RATIOS_KEY
+  gate_status: PASS
+  table_display_name: Key financial ratios
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: net_interest_margin_group
+      status: active
+      full_hierarchy:
+        - Net interest margin – Group
+      label: Net interest margin – Group
+      leaf_id_aliases:
+        - Net interest margin – Group
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 2
+      canonical_leaf_id: net_interest_margin_commercial_book
+      status: active
+      full_hierarchy:
+        - Net interest margin – Commercial Book
+      label: Net interest margin – Commercial Book
+      leaf_id_aliases:
+        - "Net interest margin - Commercial Book"
+        - Net interest margin – Commercial Book
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 3
+      canonical_leaf_id: cost_income_ratio
+      status: active
+      full_hierarchy:
+        - Cost/ income ratio
+      label: Cost/ income ratio
+      leaf_id_aliases:
+        - Cost/ income ratio
+        - Cost/income ratio
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 4
+      canonical_leaf_id: return_on_assets
+      status: active
+      full_hierarchy:
+        - Return on assets
+      label: Return on assets
+      leaf_id_aliases:
+        - Return on assets
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 5
+      canonical_leaf_id: return_on_equity
+      status: active
+      full_hierarchy:
+        - Return on equity
+      label: Return on equity
+      leaf_id_aliases:
+        - Return on equity
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 6
+      canonical_leaf_id: return_on_tangible_equity
+      status: active
+      full_hierarchy:
+        - Return on tangible equity
+      label: Return on tangible equity
+      leaf_id_aliases:
+        - Return on tangible equity
+      periods_seen: [1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 7
+      canonical_leaf_id: npl_ratio
+      status: active
+      full_hierarchy:
+        - NPL ratio
+      label: NPL ratio
+      leaf_id_aliases:
+        - NPL ratio
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 8
+      canonical_leaf_id: total_allowances_npa
+      status: active
+      full_hierarchy:
+        - Total allowances/ NPA
+      label: Total allowances/ NPA
+      leaf_id_aliases:
+        - Total allowances/ NPA
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 9
+      canonical_leaf_id: total_allowances_unsecured_npa
+      status: active
+      full_hierarchy:
+        - Total allowances/ unsecured NPA
+      label: Total allowances/ unsecured NPA
+      leaf_id_aliases:
+        - Total allowances/ unsecured NPA
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 10
+      canonical_leaf_id: sp_for_loans_average_loans
+      status: active
+      full_hierarchy:
+        - SP for loans/ average loans
+      label: SP for loans/ average loans
+      leaf_id_aliases:
+        - SP for loans/ average loans
+      periods_seen: [1Q23, 1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 11
+      canonical_leaf_id: common_equity_tier_1_cet_1_ratio
+      status: active
+      full_hierarchy:
+        - "Common Equity Tier 1 (CET-1) ratio"
+      label: "Common Equity Tier 1 (CET-1) ratio"
+      leaf_id_aliases:
+        - "Common Equity Tier 1 (CET-1) ratio"
+        - "Common Equity Tier-1 (CET-1) ratio"
+      periods_seen: [1Q25, 1Q26, 2Q25, 3Q25, unknown]
+    - ordinal: 12
+      canonical_leaf_id: fully_phased_in_cet_1_ratio
+      status: active
+      full_hierarchy:
+        - "Fully phased-in CET-1 ratio"
+      label: "Fully phased-in CET-1 ratio"
+      leaf_id_aliases:
+        - "Fully phased-in CET-1 ratio"
+      periods_seen: [1Q25, 1Q26, 2Q25, 3Q25, unknown]
+
+- bank: DBS
+  canonical_section_id: Overview
+  canonical_table_id: FS_PER_SHARE
+  gate_status: PASS
+  table_display_name: Per share data
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "earnings::basic"
+      status: active
+      full_hierarchy:
+        - Earnings
+        - Basic
+      label: Basic
+      leaf_id_aliases:
+        - "Earnings > Basic"
+      periods_seen: [1Q26, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "earnings::diluted"
+      status: active
+      full_hierarchy:
+        - Earnings
+        - Diluted
+      label: Diluted
+      leaf_id_aliases:
+        - "Earnings > Diluted"
+      periods_seen: [1Q26, 4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "reported_earnings::basic"
+      status: active
+      full_hierarchy:
+        - Reported earnings
+        - Basic
+      label: Basic
+      leaf_id_aliases:
+        - "Reported earnings > Basic"
+      periods_seen: [1Q26, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "reported_earnings::diluted"
+      status: active
+      full_hierarchy:
+        - Reported earnings
+        - Diluted
+      label: Diluted
+      leaf_id_aliases:
+        - "Reported earnings > Diluted"
+      periods_seen: [1Q26, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "reported_earnings::net_book_value"
+      status: active
+      full_hierarchy:
+        - Reported earnings
+        - Net book value
+      label: Net book value
+      leaf_id_aliases:
+        - "Reported earnings > Net book value"
+      periods_seen: [1Q26, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_NII_DETAIL
+  gate_status: PASS
+  table_display_name: Net interest income
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: net_interest_income_nii
+      status: active
+      full_hierarchy:
+        - Net interest income (NII)
+      label: Net interest income (NII)
+      leaf_id_aliases:
+        - Net interest income (NII)
+      periods_seen: [2Q25, 4Q22, unknown]
+    - ordinal: 2
+      canonical_leaf_id: "net_interest_income_nii::less_markets_trading"
+      status: active
+      full_hierarchy:
+        - Net interest income (NII)
+        - "Less: Markets Trading"
+      label: "Less: Markets Trading"
+      leaf_id_aliases:
+        - "Net interest income (NII) > Less: Markets Trading"
+      periods_seen: [2Q25, unknown]
+    - ordinal: 3
+      canonical_leaf_id: commercial_book_nii
+      status: active
+      full_hierarchy:
+        - Commercial Book NII
+      label: Commercial Book NII
+      leaf_id_aliases:
+        - Commercial Book NII
+      periods_seen: [2Q25, 4Q22, unknown]
+    - ordinal: 4
+      canonical_leaf_id: average_interest_bearing_assets_iba
+      status: active
+      full_hierarchy:
+        - "Average interest-bearing assets (IBA)"
+      label: "Average interest-bearing assets (IBA)"
+      leaf_id_aliases:
+        - "Average interest-bearing assets (IBA)"
+      periods_seen: [2Q25, 4Q22, unknown]
+    - ordinal: 5
+      canonical_leaf_id: "average_interest_bearing_assets_iba::less_markets_trading"
+      status: active
+      full_hierarchy:
+        - "Average interest-bearing assets (IBA)"
+        - "Less: Markets Trading"
+      label: "Less: Markets Trading"
+      leaf_id_aliases:
+        - "Average interest-bearing assets (IBA) > Less: Markets Trading"
+      periods_seen: [2Q25, unknown]
+    - ordinal: 6
+      canonical_leaf_id: commercial_book_average_iba
+      status: active
+      full_hierarchy:
+        - Commercial Book average IBA
+      label: Commercial Book average IBA
+      leaf_id_aliases:
+        - Commercial Book average IBA
+      periods_seen: [2Q25, 4Q22, unknown]
+    - ordinal: 7
+      canonical_leaf_id: net_interest_margin
+      status: active
+      full_hierarchy:
+        - Net interest margin
+      label: Net interest margin
+      leaf_id_aliases:
+        - Net interest margin
+      periods_seen: [2Q25, 4Q22, unknown]
+    - ordinal: 8
+      canonical_leaf_id: commercial_book_nim
+      status: active
+      full_hierarchy:
+        - Commercial Book NIM
+      label: Commercial Book NIM
+      leaf_id_aliases:
+        - Commercial Book NIM
+      periods_seen: [2Q25, 4Q22, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_AVG_BALANCE_SHEET
+  gate_status: PASS
+  table_display_name: Average balance sheet
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: customer_non_trade_loans
+      status: active
+      full_hierarchy:
+        - "Customer non-trade loans"
+      label: "Customer non-trade loans"
+      leaf_id_aliases:
+        - "Customer non-trade loans"
+      periods_seen: [2Q25, unknown]
+    - ordinal: 2
+      canonical_leaf_id: trade_assets
+      status: active
+      full_hierarchy:
+        - Trade assets
+      label: Trade assets
+      leaf_id_aliases:
+        - Trade assets
+      periods_seen: [2Q25, unknown]
+    - ordinal: 3
+      canonical_leaf_id: interbank_assets
+      status: active
+      full_hierarchy:
+        - Interbank assets
+      label: Interbank assets
+      leaf_id_aliases:
+        - Interbank assets
+      periods_seen: [2Q25, unknown]
+    - ordinal: 4
+      canonical_leaf_id: securities_and_others
+      status: active
+      full_hierarchy:
+        - Securities and others
+      label: Securities and others
+      leaf_id_aliases:
+        - Securities and others
+      periods_seen: [2Q25, unknown]
+    - ordinal: 5
+      canonical_leaf_id: interest_bearing_assets
+      status: active
+      full_hierarchy:
+        - "Interest-bearing assets"
+      label: "Interest-bearing assets"
+      leaf_id_aliases:
+        - "Interest-bearing assets"
+      periods_seen: [2Q25, unknown]
+    - ordinal: 6
+      canonical_leaf_id: customer_deposits
+      status: active
+      full_hierarchy:
+        - Customer deposits
+      label: Customer deposits
+      leaf_id_aliases:
+        - Customer deposits
+      periods_seen: [2Q25, unknown]
+    - ordinal: 7
+      canonical_leaf_id: other_borrowings
+      status: active
+      full_hierarchy:
+        - Other borrowings
+      label: Other borrowings
+      leaf_id_aliases:
+        - Other borrowings
+      periods_seen: [2Q25, unknown]
+    - ordinal: 8
+      canonical_leaf_id: interest_bearing_liabilities
+      status: active
+      full_hierarchy:
+        - "Interest-bearing liabilities"
+      label: "Interest-bearing liabilities"
+      leaf_id_aliases:
+        - "Interest-bearing liabilities"
+      periods_seen: [2Q25, unknown]
+    - ordinal: 9
+      canonical_leaf_id: net_interest_income_margin
+      status: active
+      full_hierarchy:
+        - Net interest income/margin
+      label: Net interest income/margin
+      leaf_id_aliases:
+        - Net interest income/margin
+      periods_seen: [2Q25, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_VOLUME_RATE
+  sub_table: panel_1
+  gate_status: PASS
+  table_display_name: Volume and rate analysis
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: rate
+      label: Rate
+    - canonical_col_id: volume
+      label: Volume
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "interest_income::customer_non_trade_loans"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - "Customer non-trade loans"
+      label: "Customer non-trade loans"
+      leaf_id_aliases:
+        - "Interest income > Customer non-trade loans"
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "interest_income::trade_assets"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Trade assets
+      label: Trade assets
+      leaf_id_aliases:
+        - "Interest income > Trade assets"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "interest_income::interbank_assets"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Interbank assets
+      label: Interbank assets
+      leaf_id_aliases:
+        - "Interest income > Interbank assets"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "interest_income::securities_and_others"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Securities and others
+      label: Securities and others
+      leaf_id_aliases:
+        - "Interest income > Securities and others"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "interest_income::total"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "Interest income > Total"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "interest_expense::customer_deposits"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Customer deposits
+      label: Customer deposits
+      leaf_id_aliases:
+        - "Interest expense > Customer deposits"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "interest_expense::other_borrowings"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Other borrowings
+      label: Other borrowings
+      leaf_id_aliases:
+        - "Interest expense > Other borrowings"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "interest_expense::total"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "Interest expense > Total"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "interest_expense::net_impact_on_net_interest_income"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Net impact on net interest income
+      label: Net impact on net interest income
+      leaf_id_aliases:
+        - "Interest expense > Net impact on net interest income"
+      periods_seen: [4Q25]
+    - ordinal: 10
+      canonical_leaf_id: "interest_expense::due_to_change_in_number_of_days"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Due to change in number of days
+      label: Due to change in number of days
+      leaf_id_aliases:
+        - "Interest expense > Due to change in number of days"
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "interest_expense::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Net Interest Income
+      label: Net Interest Income
+      leaf_id_aliases:
+        - "Interest expense > Net Interest Income"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_VOLUME_RATE
+  sub_table: panel_2
+  gate_status: PASS
+  table_display_name: Volume and rate analysis
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: rate
+      label: Rate
+    - canonical_col_id: volume
+      label: Volume
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "interest_income::customer_non_trade_loans"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - "Customer non-trade loans"
+      label: "Customer non-trade loans"
+      leaf_id_aliases:
+        - "Interest income > Customer non-trade loans"
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "interest_income::trade_assets"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Trade assets
+      label: Trade assets
+      leaf_id_aliases:
+        - "Interest income > Trade assets"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "interest_income::interbank_assets"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Interbank assets
+      label: Interbank assets
+      leaf_id_aliases:
+        - "Interest income > Interbank assets"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "interest_income::securities_and_others"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Securities and others
+      label: Securities and others
+      leaf_id_aliases:
+        - "Interest income > Securities and others"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "interest_income::total"
+      status: active
+      full_hierarchy:
+        - Interest income
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "Interest income > Total"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "interest_expense::customer_deposits"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Customer deposits
+      label: Customer deposits
+      leaf_id_aliases:
+        - "Interest expense > Customer deposits"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "interest_expense::other_borrowings"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Other borrowings
+      label: Other borrowings
+      leaf_id_aliases:
+        - "Interest expense > Other borrowings"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "interest_expense::total"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "Interest expense > Total"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "interest_expense::net_impact_on_net_interest_income"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Net impact on net interest income
+      label: Net impact on net interest income
+      leaf_id_aliases:
+        - "Interest expense > Net impact on net interest income"
+      periods_seen: [4Q25]
+    - ordinal: 10
+      canonical_leaf_id: "interest_expense::due_to_change_in_number_of_days"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Due to change in number of days
+      label: Due to change in number of days
+      leaf_id_aliases:
+        - "Interest expense > Due to change in number of days"
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "interest_expense::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Interest expense
+        - Net Interest Income
+      label: Net Interest Income
+      leaf_id_aliases:
+        - "Interest expense > Net Interest Income"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_FEE_DETAIL
+  gate_status: PASS
+  table_display_name: Net fee and commission income
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: investment_banking
+      status: active
+      full_hierarchy:
+        - Investment banking
+      label: Investment banking
+      leaf_id_aliases:
+        - Investment banking
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: transaction_services
+      status: active
+      full_hierarchy:
+        - Transaction services
+      label: Transaction services
+      leaf_id_aliases:
+        - Transaction services
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 3
+      canonical_leaf_id: loan_related
+      status: active
+      full_hierarchy:
+        - "Loan-related"
+      label: "Loan-related"
+      leaf_id_aliases:
+        - "Loan-related"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: cards
+      status: active
+      full_hierarchy:
+        - Cards
+      label: Cards
+      leaf_id_aliases:
+        - Cards
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: wealth_management
+      status: active
+      full_hierarchy:
+        - Wealth management
+      label: Wealth management
+      leaf_id_aliases:
+        - Wealth management
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 6
+      canonical_leaf_id: fee_and_commission_income
+      status: active
+      full_hierarchy:
+        - Fee and commission income
+      label: Fee and commission income
+      leaf_id_aliases:
+        - Fee and commission income
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: less_fee_and_commission_expense
+      status: active
+      full_hierarchy:
+        - "Less: Fee and commission expense"
+      label: "Less: Fee and commission expense"
+      leaf_id_aliases:
+        - "Less: Fee and commission expense"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: total
+      status: active
+      full_hierarchy:
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - Total
+      periods_seen: [2Q22, 2Q25, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_OTHER_NONII_DETAIL
+  gate_status: PASS
+  table_display_name: "Other non-interest income"
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: net_trading_income
+      status: active
+      full_hierarchy:
+        - Net trading income
+      label: Net trading income
+      leaf_id_aliases:
+        - Net trading income
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "net_trading_income::customer_sales"
+      status: active
+      full_hierarchy:
+        - Net trading income
+        - Customer sales
+      label: Customer sales
+      leaf_id_aliases:
+        - "Net trading income > Customer sales"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "net_trading_income::non_customer_sales"
+      status: active
+      full_hierarchy:
+        - Net trading income
+        - "Non-customer sales"
+      label: "Non-customer sales"
+      leaf_id_aliases:
+        - "Net trading income > Non-customer sales"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: net_income_from_investment_securities
+      status: active
+      full_hierarchy:
+        - Net income from investment securities
+      label: Net income from investment securities
+      leaf_id_aliases:
+        - Net income from investment securities
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: others_include_rental_income_and_gain_on_disposal_of_fixed_assets
+      status: active
+      full_hierarchy:
+        - Others (include rental income and gain on disposal of fixed assets)
+      label: Others (include rental income and gain on disposal of fixed assets)
+      leaf_id_aliases:
+        - Others (include rental income and gain on disposal of fixed assets)
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: total
+      status: active
+      full_hierarchy:
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - Total
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: commercial_book
+      status: active
+      full_hierarchy:
+        - Commercial book
+      label: Commercial book
+      leaf_id_aliases:
+        - Commercial book
+      periods_seen: [2Q25, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: markets_trading
+      status: active
+      full_hierarchy:
+        - Markets Trading
+      label: Markets Trading
+      leaf_id_aliases:
+        - Markets Trading
+      periods_seen: [2Q25, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_EXPENSES_DETAIL
+  gate_status: PASS
+  table_display_name: Expenses
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: staff
+      status: active
+      full_hierarchy:
+        - Staff
+      label: Staff
+      leaf_id_aliases:
+        - Staff
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: occupancy
+      status: active
+      full_hierarchy:
+        - Occupancy
+      label: Occupancy
+      leaf_id_aliases:
+        - Occupancy
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 3
+      canonical_leaf_id: computerisation
+      status: active
+      full_hierarchy:
+        - Computerisation
+      label: Computerisation
+      leaf_id_aliases:
+        - Computerisation
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: revenue_related
+      status: active
+      full_hierarchy:
+        - "Revenue-related"
+      label: "Revenue-related"
+      leaf_id_aliases:
+        - "Revenue-related"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: others
+      status: active
+      full_hierarchy:
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - Others
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 6
+      canonical_leaf_id: total
+      status: active
+      full_hierarchy:
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - Total
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: staff_count2_at_period_end
+      status: active
+      full_hierarchy:
+        - "Staff count2 at period-end"
+      label: "Staff count2 at period-end"
+      leaf_id_aliases:
+        - "Staff count2 at period-end"
+      periods_seen: [2Q25, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "included_in_the_above_table_was::depreciation_of_properties_and_other_fixed_assets"
+      status: active
+      full_hierarchy:
+        - Included in the above table was
+        - Depreciation of properties and other fixed assets
+      label: Depreciation of properties and other fixed assets
+      leaf_id_aliases:
+        - "Included in the above table was > Depreciation of properties and other fixed assets"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_ALLOWANCES_DETAIL
+  gate_status: PASS
+  table_display_name: Allowances for credit and other losses
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: ecl_stage_1_and_2_gp
+      status: active
+      full_hierarchy:
+        - ECL Stage 1 and 2 (GP)
+      label: ECL Stage 1 and 2 (GP)
+      leaf_id_aliases:
+        - ECL Stage 1 and 2 (GP)
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: ecl_stage_3_sp_for_loans
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for loans
+      label: ECL Stage 3 (SP) for loans
+      leaf_id_aliases:
+        - ECL Stage 3 (SP) for loans
+      periods_seen: [2Q22, 4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "ecl_stage_3_sp_for_loans::singapore"
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for loans
+        - Singapore
+      label: Singapore
+      leaf_id_aliases:
+        - "ECL Stage 3 (SP) for loans > Singapore"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "ecl_stage_3_sp_for_loans::hong_kong"
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for loans
+        - Hong Kong
+      label: Hong Kong
+      leaf_id_aliases:
+        - "ECL Stage 3 (SP) for loans > Hong Kong"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "ecl_stage_3_sp_for_loans::rest_of_greater_china"
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for loans
+        - Rest of Greater China
+      label: Rest of Greater China
+      leaf_id_aliases:
+        - "ECL Stage 3 (SP) for loans > Rest of Greater China"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "ecl_stage_3_sp_for_loans::south_and_southeast_asia"
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for loans
+        - South and Southeast Asia
+      label: South and Southeast Asia
+      leaf_id_aliases:
+        - "ECL Stage 3 (SP) for loans > South and Southeast Asia"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "ecl_stage_3_sp_for_loans::rest_of_the_world"
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for loans
+        - Rest of the World
+      label: Rest of the World
+      leaf_id_aliases:
+        - "ECL Stage 3 (SP) for loans > Rest of the World"
+      periods_seen: [2Q22, 2Q25, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: ecl_stage_3_sp_for_other_credit_exposures
+      status: active
+      full_hierarchy:
+        - ECL Stage 3 (SP) for other credit exposures
+      label: ECL Stage 3 (SP) for other credit exposures
+      leaf_id_aliases:
+        - ECL Stage 3 (SP) for other credit exposures
+      periods_seen: [2Q22, 4Q25]
+    - ordinal: 9
+      canonical_leaf_id: total_ecl_stage_3_sp
+      status: active
+      full_hierarchy:
+        - Total ECL Stage 3 (SP)
+      label: Total ECL Stage 3 (SP)
+      leaf_id_aliases:
+        - Total ECL Stage 3 (SP)
+      periods_seen: [2Q22, 4Q25]
+    - ordinal: 10
+      canonical_leaf_id: allowances_for_other_assets
+      status: active
+      full_hierarchy:
+        - Allowances for other assets
+      label: Allowances for other assets
+      leaf_id_aliases:
+        - Allowances for other assets
+      periods_seen: [2Q22, 4Q25]
+    - ordinal: 11
+      canonical_leaf_id: total
+      status: active
+      full_hierarchy:
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - Total
+      periods_seen: [2Q22, 4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_PERF_BY_SEGMENT
+  gate_status: PASS
+  table_display_name: Performance by Business Segments
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: consumer_banking_wealth_management
+      label: Consumer Banking/ Wealth Management
+    - canonical_col_id: institutional_banking
+      label: Institutional Banking
+    - canonical_col_id: others
+      label: Others
+    - canonical_col_id: total
+      label: Total
+    - canonical_col_id: trading
+      label: Trading
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "selected_income_statement_items::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Net interest income
+      label: Net interest income
+      leaf_id_aliases:
+        - "Selected income statement items > Net interest income"
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "selected_income_statement_items::net_fee_and_commission_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Net fee and commission income
+      label: Net fee and commission income
+      leaf_id_aliases:
+        - "Selected income statement items > Net fee and commission income"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "selected_income_statement_items::other_non_interest_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - "Other non-interest income"
+      label: "Other non-interest income"
+      leaf_id_aliases:
+        - "Selected income statement items > Other non-interest income"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "selected_income_statement_items::total_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Total income
+      label: Total income
+      leaf_id_aliases:
+        - "Selected income statement items > Total income"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "selected_income_statement_items::expenses"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Expenses
+      label: Expenses
+      leaf_id_aliases:
+        - "Selected income statement items > Expenses"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "selected_income_statement_items::amortisation_of_intangible_assets"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Amortisation of intangible assets
+      label: Amortisation of intangible assets
+      leaf_id_aliases:
+        - "Selected income statement items > Amortisation of intangible assets"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "selected_income_statement_items::allowances_for_credit_and_other_losses"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Allowances for credit and other losses
+      label: Allowances for credit and other losses
+      leaf_id_aliases:
+        - "Selected income statement items > Allowances for credit and other losses"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Share of profits/losses of associates and JVs
+      label: Share of profits/losses of associates and JVs
+      leaf_id_aliases:
+        - "Selected income statement items > Share of profits/losses of associates and JVs"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "selected_income_statement_items::profit_before_tax"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Profit before tax
+      label: Profit before tax
+      leaf_id_aliases:
+        - "Selected income statement items > Profit before tax"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_PERF_BY_GEOGRAPHY
+  gate_status: FAIL
+  gate_detail: "G4 suffix-collapsible ids=11"
+  table_display_name: Performance by Geography
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: hong_kong
+      label: Hong Kong
+    - canonical_col_id: rest_of_greater_china
+      label: Rest of Greater China
+    - canonical_col_id: rest_of_the_world
+      label: Rest of the World
+    - canonical_col_id: singapore
+      label: Singapore
+    - canonical_col_id: south_and_south_east_asia
+      label: "South and South-east Asia"
+    - canonical_col_id: total
+      label: Total
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "selected_income_statement_items::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Net interest income
+      label: Net interest income
+      leaf_id_aliases:
+        - "Selected income statement items > Net interest income"
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "selected_income_statement_items::net_fee_and_commission_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Net fee and commission income
+      label: Net fee and commission income
+      leaf_id_aliases:
+        - "Selected income statement items > Net fee and commission income"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "selected_income_statement_items::other_non_interest_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - "Other non-interest income"
+      label: "Other non-interest income"
+      leaf_id_aliases:
+        - "Selected income statement items > Other non-interest income"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "selected_income_statement_items::total_income"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Total income
+      label: Total income
+      leaf_id_aliases:
+        - "Selected income statement items > Total income"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "selected_income_statement_items::expenses"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Expenses
+      label: Expenses
+      leaf_id_aliases:
+        - "Selected income statement items > Expenses"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "selected_income_statement_items::amortisation_of_intangible_assets"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Amortisation of intangible assets
+      label: Amortisation of intangible assets
+      leaf_id_aliases:
+        - "Selected income statement items > Amortisation of intangible assets"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "selected_income_statement_items::allowances_for_credit_and_other_losses"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Allowances for credit and other losses
+      label: Allowances for credit and other losses
+      leaf_id_aliases:
+        - "Selected income statement items > Allowances for credit and other losses"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "selected_income_statement_items::share_of_profits_losses_of_associates_and_jvs"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Share of profits/losses of associates and JVs
+      label: Share of profits/losses of associates and JVs
+      leaf_id_aliases:
+        - "Selected income statement items > Share of profits/losses of associates and JVs"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "selected_income_statement_items::profit_before_tax"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Profit before tax
+      label: Profit before tax
+      leaf_id_aliases:
+        - "Selected income statement items > Profit before tax"
+      periods_seen: [4Q25]
+    - ordinal: 10
+      canonical_leaf_id: "selected_income_statement_items::income_tax_expense_and_non_controlling_interests"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - "Income tax expense and non-controlling interests"
+      label: "Income tax expense and non-controlling interests"
+      leaf_id_aliases:
+        - "Selected income statement items > Income tax expense and non-controlling interests"
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "selected_income_statement_items::net_profit"
+      status: active
+      full_hierarchy:
+        - Selected income statement items
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - "Selected income statement items > Net profit"
+      periods_seen: [4Q25]
+    - ordinal: 12
+      canonical_leaf_id: net_interest_income
+      status: active
+      full_hierarchy:
+        - Net interest income
+      label: Net interest income
+      leaf_id_aliases:
+        - Net interest income
+      periods_seen: [4Q25]
+    - ordinal: 13
+      canonical_leaf_id: net_fee_and_commission_income
+      status: active
+      full_hierarchy:
+        - Net fee and commission income
+      label: Net fee and commission income
+      leaf_id_aliases:
+        - Net fee and commission income
+      periods_seen: [4Q25]
+    - ordinal: 14
+      canonical_leaf_id: other_non_interest_income
+      status: active
+      full_hierarchy:
+        - "Other non-interest income"
+      label: "Other non-interest income"
+      leaf_id_aliases:
+        - "Other non-interest income"
+      periods_seen: [4Q25]
+    - ordinal: 15
+      canonical_leaf_id: total_income
+      status: active
+      full_hierarchy:
+        - Total income
+      label: Total income
+      leaf_id_aliases:
+        - Total income
+      periods_seen: [4Q25]
+    - ordinal: 16
+      canonical_leaf_id: expenses
+      status: active
+      full_hierarchy:
+        - Expenses
+      label: Expenses
+      leaf_id_aliases:
+        - Expenses
+      periods_seen: [4Q25]
+    - ordinal: 17
+      canonical_leaf_id: amortisation_of_intangible_assets
+      status: active
+      full_hierarchy:
+        - Amortisation of intangible assets
+      label: Amortisation of intangible assets
+      leaf_id_aliases:
+        - Amortisation of intangible assets
+      periods_seen: [4Q25]
+    - ordinal: 18
+      canonical_leaf_id: allowances_for_credit_and_other_losses
+      status: active
+      full_hierarchy:
+        - Allowances for credit and other losses
+      label: Allowances for credit and other losses
+      leaf_id_aliases:
+        - Allowances for credit and other losses
+      periods_seen: [4Q25]
+    - ordinal: 19
+      canonical_leaf_id: share_of_profits_losses_of_associates_and_jvs
+      status: active
+      full_hierarchy:
+        - Share of profits/losses of associates and JVs
+      label: Share of profits/losses of associates and JVs
+      leaf_id_aliases:
+        - Share of profits/losses of associates and JVs
+      periods_seen: [4Q25]
+    - ordinal: 20
+      canonical_leaf_id: profit_before_tax
+      status: active
+      full_hierarchy:
+        - Profit before tax
+      label: Profit before tax
+      leaf_id_aliases:
+        - Profit before tax
+      periods_seen: [4Q25]
+    - ordinal: 21
+      canonical_leaf_id: income_tax_expense_and_non_controlling_interests
+      status: active
+      full_hierarchy:
+        - "Income tax expense and non-controlling interests"
+      label: "Income tax expense and non-controlling interests"
+      leaf_id_aliases:
+        - "Income tax expense and non-controlling interests"
+      periods_seen: [4Q25]
+    - ordinal: 22
+      canonical_leaf_id: net_profit
+      status: active
+      full_hierarchy:
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - Net profit
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_CUSTOMER_LOANS
+  gate_status: PASS
+  table_display_name: Customer Loans
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: gross
+      status: active
+      full_hierarchy:
+        - Gross
+      label: Gross
+      leaf_id_aliases:
+        - Gross
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 2
+      canonical_leaf_id: "less::ecl_stage_3_sp"
+      status: active
+      full_hierarchy:
+        - Less
+        - ECL Stage 3 (SP)
+      label: ECL Stage 3 (SP)
+      leaf_id_aliases:
+        - "Less > ECL Stage 3 (SP)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 3
+      canonical_leaf_id: "less::ecl_stage_1_and_2_gp"
+      status: active
+      full_hierarchy:
+        - Less
+        - "ECL Stage 1 & 2 (GP)"
+      label: "ECL Stage 1 & 2 (GP)"
+      leaf_id_aliases:
+        - "Less > ECL Stage 1 & 2 (GP)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 4
+      canonical_leaf_id: "less::net_total"
+      status: active
+      full_hierarchy:
+        - Less
+        - Net total
+      label: Net total
+      leaf_id_aliases:
+        - "Less > Net total"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 5
+      canonical_leaf_id: "by_business_unit::consumer_banking_wealth_management"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - Consumer Banking/Wealth Management
+      label: Consumer Banking/Wealth Management
+      leaf_id_aliases:
+        - "By business unit > Consumer Banking/Wealth Management"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 6
+      canonical_leaf_id: "by_business_unit::institutional_banking"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - Institutional Banking
+      label: Institutional Banking
+      leaf_id_aliases:
+        - "By business unit > Institutional Banking"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 7
+      canonical_leaf_id: "by_business_unit::others"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By business unit > Others"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 8
+      canonical_leaf_id: "by_business_unit::total_gross"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - Total (Gross)
+      label: Total (Gross)
+      leaf_id_aliases:
+        - "By business unit > Total (Gross)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 9
+      canonical_leaf_id: "by_geography::singapore"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Singapore
+      label: Singapore
+      leaf_id_aliases:
+        - "By geography > Singapore"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 10
+      canonical_leaf_id: "by_geography::hong_kong"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Hong Kong
+      label: Hong Kong
+      leaf_id_aliases:
+        - "By geography > Hong Kong"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 11
+      canonical_leaf_id: "by_geography::rest_of_greater_china"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Rest of Greater China
+      label: Rest of Greater China
+      leaf_id_aliases:
+        - "By geography > Rest of Greater China"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 12
+      canonical_leaf_id: "by_geography::south_and_southeast_asia"
+      status: active
+      full_hierarchy:
+        - By geography
+        - South and Southeast Asia
+      label: South and Southeast Asia
+      leaf_id_aliases:
+        - "By geography > South and Southeast Asia"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 13
+      canonical_leaf_id: "by_geography::rest_of_the_world"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Rest of the World
+      label: Rest of the World
+      leaf_id_aliases:
+        - "By geography > Rest of the World"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 14
+      canonical_leaf_id: "by_geography::total_gross"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Total (Gross)
+      label: Total (Gross)
+      leaf_id_aliases:
+        - "By geography > Total (Gross)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 15
+      canonical_leaf_id: "by_industry::manufacturing"
+      status: active
+      full_hierarchy:
+        - By industry
+        - Manufacturing
+      label: Manufacturing
+      leaf_id_aliases:
+        - "By industry > Manufacturing"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 16
+      canonical_leaf_id: "by_industry::building_and_construction"
+      status: active
+      full_hierarchy:
+        - By industry
+        - Building and construction
+      label: Building and construction
+      leaf_id_aliases:
+        - "By industry > Building and construction"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 17
+      canonical_leaf_id: "by_industry::housing_loans"
+      status: active
+      full_hierarchy:
+        - By industry
+        - Housing loans
+      label: Housing loans
+      leaf_id_aliases:
+        - "By industry > Housing loans"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 18
+      canonical_leaf_id: "by_industry::general_commerce"
+      status: active
+      full_hierarchy:
+        - By industry
+        - General commerce
+      label: General commerce
+      leaf_id_aliases:
+        - "By industry > General commerce"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 19
+      canonical_leaf_id: "by_industry::transportation_storage_and_communications"
+      status: active
+      full_hierarchy:
+        - By industry
+        - "Transportation, storage & communications"
+      label: "Transportation, storage & communications"
+      leaf_id_aliases:
+        - "By industry > Transportation, storage & communications"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 20
+      canonical_leaf_id: "by_industry::financial_institutions_investment_and_holding_companies"
+      status: active
+      full_hierarchy:
+        - By industry
+        - "Financial institutions, investment & holding companies"
+      label: "Financial institutions, investment & holding companies"
+      leaf_id_aliases:
+        - "By industry > Financial institutions, investment & holding companies"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 21
+      canonical_leaf_id: "by_industry::professionals_and_private_individuals_excluding_housing_loans"
+      status: active
+      full_hierarchy:
+        - By industry
+        - "Professionals & private individuals (excluding housing loans)"
+      label: "Professionals & private individuals (excluding housing loans)"
+      leaf_id_aliases:
+        - "By industry > Professionals & private individuals (excluding housing loans)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 22
+      canonical_leaf_id: "by_industry::others"
+      status: active
+      full_hierarchy:
+        - By industry
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By industry > Others"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 23
+      canonical_leaf_id: "by_industry::total_gross"
+      status: active
+      full_hierarchy:
+        - By industry
+        - Total (Gross)
+      label: Total (Gross)
+      leaf_id_aliases:
+        - "By industry > Total (Gross)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 24
+      canonical_leaf_id: "by_currency::singapore_dollar"
+      status: active
+      full_hierarchy:
+        - By currency
+        - Singapore dollar
+      label: Singapore dollar
+      leaf_id_aliases:
+        - "By currency > Singapore dollar"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 25
+      canonical_leaf_id: "by_currency::us_dollar"
+      status: active
+      full_hierarchy:
+        - By currency
+        - US dollar
+      label: US dollar
+      leaf_id_aliases:
+        - "By currency > US dollar"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 26
+      canonical_leaf_id: "by_currency::hong_kong_dollar"
+      status: active
+      full_hierarchy:
+        - By currency
+        - Hong Kong dollar
+      label: Hong Kong dollar
+      leaf_id_aliases:
+        - "By currency > Hong Kong dollar"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 27
+      canonical_leaf_id: "by_currency::taiwan_dollar"
+      status: active
+      full_hierarchy:
+        - By currency
+        - Taiwan dollar
+      label: Taiwan dollar
+      leaf_id_aliases:
+        - "By currency > Taiwan dollar"
+      periods_seen: [2Q25, unknown]
+    - ordinal: 28
+      canonical_leaf_id: "by_currency::chinese_yuan"
+      status: active
+      full_hierarchy:
+        - By currency
+        - Chinese yuan
+      label: Chinese yuan
+      leaf_id_aliases:
+        - "By currency > Chinese yuan"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 29
+      canonical_leaf_id: "by_currency::others"
+      status: active
+      full_hierarchy:
+        - By currency
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency > Others"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 30
+      canonical_leaf_id: "by_currency::total_gross"
+      status: active
+      full_hierarchy:
+        - By currency
+        - Total (Gross)
+      label: Total (Gross)
+      leaf_id_aliases:
+        - "By currency > Total (Gross)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_NPA_COVERAGE
+  sub_table: panel_1
+  gate_status: PASS
+  table_display_name: "Non-Performing Assets and Loss Allowance Coverage"
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "by_business_unit::consumer_banking_wealth_management"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - Consumer Banking/ Wealth Management
+      label: Consumer Banking/ Wealth Management
+      leaf_id_aliases:
+        - "By business unit > Consumer Banking/ Wealth Management"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 2
+      canonical_leaf_id: "by_business_unit::institutional_banking_and_others"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - Institutional Banking and Others
+      label: Institutional Banking and Others
+      leaf_id_aliases:
+        - "By business unit > Institutional Banking and Others"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 3
+      canonical_leaf_id: "by_business_unit::total_non_performing_loans_npl"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - "Total non-performing loans (NPL)"
+      label: "Total non-performing loans (NPL)"
+      leaf_id_aliases:
+        - "By business unit > Total non-performing loans (NPL)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 4
+      canonical_leaf_id: "by_business_unit::debt_securities_contingent_liabilities_and_others"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - "Debt securities, contingent liabilities & others"
+      label: "Debt securities, contingent liabilities & others"
+      leaf_id_aliases:
+        - "By business unit > Debt securities, contingent liabilities & others"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 5
+      canonical_leaf_id: "by_business_unit::total_non_performing_assets_npa"
+      status: active
+      full_hierarchy:
+        - By business unit
+        - "Total non-performing assets (NPA)"
+      label: "Total non-performing assets (NPA)"
+      leaf_id_aliases:
+        - "By business unit > Total non-performing assets (NPA)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 6
+      canonical_leaf_id: "by_geography::singapore"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Singapore
+      label: Singapore
+      leaf_id_aliases:
+        - "By geography > Singapore"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 7
+      canonical_leaf_id: "by_geography::hong_kong"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Hong Kong
+      label: Hong Kong
+      leaf_id_aliases:
+        - "By geography > Hong Kong"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 8
+      canonical_leaf_id: "by_geography::rest_of_greater_china"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Rest of Greater China
+      label: Rest of Greater China
+      leaf_id_aliases:
+        - "By geography > Rest of Greater China"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 9
+      canonical_leaf_id: "by_geography::south_and_southeast_asia"
+      status: active
+      full_hierarchy:
+        - By geography
+        - South and Southeast Asia
+      label: South and Southeast Asia
+      leaf_id_aliases:
+        - "By geography > South and Southeast Asia"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 10
+      canonical_leaf_id: "by_geography::rest_of_the_world"
+      status: active
+      full_hierarchy:
+        - By geography
+        - Rest of the World
+      label: Rest of the World
+      leaf_id_aliases:
+        - "By geography > Rest of the World"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 11
+      canonical_leaf_id: "by_geography::total_non_performing_loans_npl"
+      status: active
+      full_hierarchy:
+        - By geography
+        - "Total non-performing loans (NPL)"
+      label: "Total non-performing loans (NPL)"
+      leaf_id_aliases:
+        - "By geography > Total non-performing loans (NPL)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 12
+      canonical_leaf_id: "by_geography::debt_securities_contingent_liabilities_and_others"
+      status: active
+      full_hierarchy:
+        - By geography
+        - "Debt securities, contingent liabilities & others"
+      label: "Debt securities, contingent liabilities & others"
+      leaf_id_aliases:
+        - "By geography > Debt securities, contingent liabilities & others"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 13
+      canonical_leaf_id: "by_geography::total_non_performing_assets_npa"
+      status: active
+      full_hierarchy:
+        - By geography
+        - "Total non-performing assets (NPA)"
+      label: "Total non-performing assets (NPA)"
+      leaf_id_aliases:
+        - "By geography > Total non-performing assets (NPA)"
+      periods_seen: [2Q22, 2Q25, 4Q22, unknown]
+    - ordinal: 14
+      canonical_leaf_id: "loss_allowance_coverage::ecl_stage_3_sp"
+      status: active
+      full_hierarchy:
+        - Loss Allowance Coverage
+        - ECL Stage 3 (SP)
+      label: ECL Stage 3 (SP)
+      leaf_id_aliases:
+        - "Loss Allowance Coverage > ECL Stage 3 (SP)"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 15
+      canonical_leaf_id: "loss_allowance_coverage::ecl_stage_1_and_2_gp"
+      status: active
+      full_hierarchy:
+        - Loss Allowance Coverage
+        - ECL Stage 1 and 2 (GP)
+      label: ECL Stage 1 and 2 (GP)
+      leaf_id_aliases:
+        - "Loss Allowance Coverage > ECL Stage 1 and 2 (GP)"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 16
+      canonical_leaf_id: "loss_allowance_coverage::total_allowances"
+      status: active
+      full_hierarchy:
+        - Loss Allowance Coverage
+        - Total allowances
+      label: Total allowances
+      leaf_id_aliases:
+        - "Loss Allowance Coverage > Total allowances"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 17
+      canonical_leaf_id: "loss_allowance_coverage::total_allowances_npa"
+      status: active
+      full_hierarchy:
+        - Loss Allowance Coverage
+        - Total allowances/ NPA
+      label: Total allowances/ NPA
+      leaf_id_aliases:
+        - "Loss Allowance Coverage > Total allowances / NPA"
+        - "Loss Allowance Coverage > Total allowances/ NPA"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 18
+      canonical_leaf_id: "loss_allowance_coverage::total_allowances_unsecured_npa"
+      status: active
+      full_hierarchy:
+        - Loss Allowance Coverage
+        - Total allowances/ unsecured NPA
+      label: Total allowances/ unsecured NPA
+      leaf_id_aliases:
+        - "Loss Allowance Coverage > Total allowances / unsecured NPA"
+        - "Loss Allowance Coverage > Total allowances/ unsecured NPA"
+      periods_seen: [2Q22, 4Q22, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_NPA_COVERAGE
+  sub_table: by_industry
+  gate_status: PASS
+  table_display_name: "Non-Performing Assets and Loss Allowance Coverage"
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "by_industry::manufacturing"
+      status: active
+      full_hierarchy:
+        - by industry
+        - Manufacturing
+      label: Manufacturing
+      leaf_id_aliases:
+        - "by industry > Manufacturing"
+      periods_seen: [unknown]
+    - ordinal: 2
+      canonical_leaf_id: "by_industry::building_and_construction"
+      status: active
+      full_hierarchy:
+        - by industry
+        - Building and construction
+      label: Building and construction
+      leaf_id_aliases:
+        - "by industry > Building and construction"
+      periods_seen: [unknown]
+    - ordinal: 3
+      canonical_leaf_id: "by_industry::housing_loans"
+      status: active
+      full_hierarchy:
+        - by industry
+        - Housing loans
+      label: Housing loans
+      leaf_id_aliases:
+        - "by industry > Housing loans"
+      periods_seen: [unknown]
+    - ordinal: 4
+      canonical_leaf_id: "by_industry::general_commerce"
+      status: active
+      full_hierarchy:
+        - by industry
+        - General commerce
+      label: General commerce
+      leaf_id_aliases:
+        - "by industry > General commerce"
+      periods_seen: [unknown]
+    - ordinal: 5
+      canonical_leaf_id: "by_industry::transportation_storage_and_communications"
+      status: active
+      full_hierarchy:
+        - by industry
+        - "Transportation, storage & communications"
+      label: "Transportation, storage & communications"
+      leaf_id_aliases:
+        - "by industry > Transportation, storage & communications"
+      periods_seen: [unknown]
+    - ordinal: 6
+      canonical_leaf_id: "by_industry::financial_institutions_investment_and_holding_companies"
+      status: active
+      full_hierarchy:
+        - by industry
+        - "Financial institutions, investment & holding companies"
+      label: "Financial institutions, investment & holding companies"
+      leaf_id_aliases:
+        - "by industry > Financial institutions, investment & holding companies"
+      periods_seen: [unknown]
+    - ordinal: 7
+      canonical_leaf_id: "by_industry::professionals_and_private_individuals_excluding_housing_loans"
+      status: active
+      full_hierarchy:
+        - by industry
+        - "Professionals & private individuals (excluding housing loans)"
+      label: "Professionals & private individuals (excluding housing loans)"
+      leaf_id_aliases:
+        - "by industry > Professionals & private individuals (excluding housing loans)"
+      periods_seen: [unknown]
+    - ordinal: 8
+      canonical_leaf_id: "by_industry::others"
+      status: active
+      full_hierarchy:
+        - by industry
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "by industry > Others"
+      periods_seen: [unknown]
+    - ordinal: 9
+      canonical_leaf_id: "by_industry::total_non_performing_loans"
+      status: active
+      full_hierarchy:
+        - by industry
+        - "Total non-performing loans"
+      label: "Total non-performing loans"
+      leaf_id_aliases:
+        - "by industry > Total non-performing loans"
+      periods_seen: [unknown]
+    - ordinal: 10
+      canonical_leaf_id: "by_industry::debt_securities_contingent_liabilities_and_others"
+      status: active
+      full_hierarchy:
+        - by industry
+        - "Debt securities, contingent liabilities & others"
+      label: "Debt securities, contingent liabilities & others"
+      leaf_id_aliases:
+        - "by industry > Debt securities, contingent liabilities & others"
+      periods_seen: [unknown]
+    - ordinal: 11
+      canonical_leaf_id: "by_industry::total_non_performing_assets_npa"
+      status: active
+      full_hierarchy:
+        - by industry
+        - "Total non-performing assets (NPA)"
+      label: "Total non-performing assets (NPA)"
+      leaf_id_aliases:
+        - "by industry > Total non-performing assets (NPA)"
+      periods_seen: [unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_NPA_COVERAGE
+  sub_table: by_loan_grading
+  gate_status: PASS
+  table_display_name: "Non-Performing Assets and Loss Allowance Coverage"
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "by_loan_grading::non_performing_assets::substandard"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - "Non-performing assets"
+        - Substandard
+      label: Substandard
+      leaf_id_aliases:
+        - "by loan grading > Non-performing assets > Substandard"
+      periods_seen: [unknown]
+    - ordinal: 2
+      canonical_leaf_id: "by_loan_grading::non_performing_assets::doubtful"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - "Non-performing assets"
+        - Doubtful
+      label: Doubtful
+      leaf_id_aliases:
+        - "by loan grading > Non-performing assets > Doubtful"
+      periods_seen: [unknown]
+    - ordinal: 3
+      canonical_leaf_id: "by_loan_grading::non_performing_assets::loss"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - "Non-performing assets"
+        - Loss
+      label: Loss
+      leaf_id_aliases:
+        - "by loan grading > Non-performing assets > Loss"
+      periods_seen: [unknown]
+    - ordinal: 4
+      canonical_leaf_id: "by_loan_grading::total"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "by loan grading > Total"
+      periods_seen: [unknown]
+    - ordinal: 5
+      canonical_leaf_id: "by_loan_grading::of_which_restructured_assets::substandard"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - "Of which: restructured assets"
+        - Substandard
+      label: Substandard
+      leaf_id_aliases:
+        - "by loan grading > Of which: restructured assets > Substandard"
+      periods_seen: [unknown]
+    - ordinal: 6
+      canonical_leaf_id: "by_loan_grading::of_which_restructured_assets::doubtful"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - "Of which: restructured assets"
+        - Doubtful
+      label: Doubtful
+      leaf_id_aliases:
+        - "by loan grading > Of which: restructured assets > Doubtful"
+      periods_seen: [unknown]
+    - ordinal: 7
+      canonical_leaf_id: "by_loan_grading::of_which_restructured_assets::loss"
+      status: active
+      full_hierarchy:
+        - by loan grading
+        - "Of which: restructured assets"
+        - Loss
+      label: Loss
+      leaf_id_aliases:
+        - "by loan grading > Of which: restructured assets > Loss"
+      periods_seen: [unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_NPA_COVERAGE
+  sub_table: by_collateral_type
+  gate_status: PASS
+  table_display_name: "Non-Performing Assets and Loss Allowance Coverage"
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "by_collateral_type::unsecured_non_performing_assets"
+      status: active
+      full_hierarchy:
+        - by collateral type
+        - "Unsecured non-performing assets"
+      label: "Unsecured non-performing assets"
+      leaf_id_aliases:
+        - "by collateral type > Unsecured non-performing assets"
+      periods_seen: [unknown]
+    - ordinal: 2
+      canonical_leaf_id: "by_collateral_type::secured_non_performing_assets_by_collateral_type::properties"
+      status: active
+      full_hierarchy:
+        - by collateral type
+        - "Secured non-performing assets by collateral type"
+        - Properties
+      label: Properties
+      leaf_id_aliases:
+        - "by collateral type > Secured non-performing assets by collateral type > Properties"
+      periods_seen: [unknown]
+    - ordinal: 3
+      canonical_leaf_id: "by_collateral_type::secured_non_performing_assets_by_collateral_type::shares_and_debentures"
+      status: active
+      full_hierarchy:
+        - by collateral type
+        - "Secured non-performing assets by collateral type"
+        - Shares and debentures
+      label: Shares and debentures
+      leaf_id_aliases:
+        - "by collateral type > Secured non-performing assets by collateral type > Shares and debentures"
+      periods_seen: [unknown]
+    - ordinal: 4
+      canonical_leaf_id: "by_collateral_type::secured_non_performing_assets_by_collateral_type::cash_deposits"
+      status: active
+      full_hierarchy:
+        - by collateral type
+        - "Secured non-performing assets by collateral type"
+        - Cash deposits
+      label: Cash deposits
+      leaf_id_aliases:
+        - "by collateral type > Secured non-performing assets by collateral type > Cash deposits"
+      periods_seen: [unknown]
+    - ordinal: 5
+      canonical_leaf_id: "by_collateral_type::secured_non_performing_assets_by_collateral_type::others"
+      status: active
+      full_hierarchy:
+        - by collateral type
+        - "Secured non-performing assets by collateral type"
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "by collateral type > Secured non-performing assets by collateral type > Others"
+      periods_seen: [unknown]
+    - ordinal: 6
+      canonical_leaf_id: "by_collateral_type::total"
+      status: active
+      full_hierarchy:
+        - by collateral type
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "by collateral type > Total"
+      periods_seen: [unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_CUSTOMER_DEPOSITS
+  gate_status: PASS
+  table_display_name: Customer Deposits
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "by_currency_and_product::singapore_dollar"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Singapore dollar
+      label: Singapore dollar
+      leaf_id_aliases:
+        - "By currency and product > Singapore dollar"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 2
+      canonical_leaf_id: "by_currency_and_product::singapore_dollar::fixed_deposits"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Singapore dollar
+        - Fixed deposits
+      label: Fixed deposits
+      leaf_id_aliases:
+        - "By currency and product > Singapore dollar > Fixed deposits"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 3
+      canonical_leaf_id: "by_currency_and_product::singapore_dollar::savings_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Singapore dollar
+        - Savings accounts
+      label: Savings accounts
+      leaf_id_aliases:
+        - "By currency and product > Singapore dollar > Savings accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 4
+      canonical_leaf_id: "by_currency_and_product::singapore_dollar::current_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Singapore dollar
+        - Current accounts
+      label: Current accounts
+      leaf_id_aliases:
+        - "By currency and product > Singapore dollar > Current accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 5
+      canonical_leaf_id: "by_currency_and_product::singapore_dollar::others"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Singapore dollar
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency and product > Singapore dollar > Others"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 6
+      canonical_leaf_id: "by_currency_and_product::us_dollar"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - US dollar
+      label: US dollar
+      leaf_id_aliases:
+        - "By currency and product > US dollar"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 7
+      canonical_leaf_id: "by_currency_and_product::us_dollar::fixed_deposits"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - US dollar
+        - Fixed deposits
+      label: Fixed deposits
+      leaf_id_aliases:
+        - "By currency and product > US dollar > Fixed deposits"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 8
+      canonical_leaf_id: "by_currency_and_product::us_dollar::savings_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - US dollar
+        - Savings accounts
+      label: Savings accounts
+      leaf_id_aliases:
+        - "By currency and product > US dollar > Savings accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 9
+      canonical_leaf_id: "by_currency_and_product::us_dollar::current_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - US dollar
+        - Current accounts
+      label: Current accounts
+      leaf_id_aliases:
+        - "By currency and product > US dollar > Current accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 10
+      canonical_leaf_id: "by_currency_and_product::us_dollar::others"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - US dollar
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency and product > US dollar > Others"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 11
+      canonical_leaf_id: "by_currency_and_product::hong_kong_dollar"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Hong Kong dollar
+      label: Hong Kong dollar
+      leaf_id_aliases:
+        - "By currency and product > Hong Kong dollar"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 12
+      canonical_leaf_id: "by_currency_and_product::hong_kong_dollar::fixed_deposits"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Hong Kong dollar
+        - Fixed deposits
+      label: Fixed deposits
+      leaf_id_aliases:
+        - "By currency and product > Hong Kong dollar > Fixed deposits"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 13
+      canonical_leaf_id: "by_currency_and_product::hong_kong_dollar::savings_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Hong Kong dollar
+        - Savings accounts
+      label: Savings accounts
+      leaf_id_aliases:
+        - "By currency and product > Hong Kong dollar > Savings accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 14
+      canonical_leaf_id: "by_currency_and_product::hong_kong_dollar::current_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Hong Kong dollar
+        - Current accounts
+      label: Current accounts
+      leaf_id_aliases:
+        - "By currency and product > Hong Kong dollar > Current accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 15
+      canonical_leaf_id: "by_currency_and_product::hong_kong_dollar::others"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Hong Kong dollar
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency and product > Hong Kong dollar > Others"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 16
+      canonical_leaf_id: "by_currency_and_product::taiwan_dollar"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Taiwan dollar
+      label: Taiwan dollar
+      leaf_id_aliases:
+        - "By currency and product > Taiwan dollar"
+      periods_seen: [unknown]
+    - ordinal: 17
+      canonical_leaf_id: "by_currency_and_product::taiwan_dollar::fixed_deposits"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Taiwan dollar
+        - Fixed deposits
+      label: Fixed deposits
+      leaf_id_aliases:
+        - "By currency and product > Taiwan dollar > Fixed deposits"
+      periods_seen: [unknown]
+    - ordinal: 18
+      canonical_leaf_id: "by_currency_and_product::taiwan_dollar::savings_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Taiwan dollar
+        - Savings accounts
+      label: Savings accounts
+      leaf_id_aliases:
+        - "By currency and product > Taiwan dollar > Savings accounts"
+      periods_seen: [unknown]
+    - ordinal: 19
+      canonical_leaf_id: "by_currency_and_product::taiwan_dollar::current_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Taiwan dollar
+        - Current accounts
+      label: Current accounts
+      leaf_id_aliases:
+        - "By currency and product > Taiwan dollar > Current accounts"
+      periods_seen: [unknown]
+    - ordinal: 20
+      canonical_leaf_id: "by_currency_and_product::taiwan_dollar::others"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Taiwan dollar
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency and product > Taiwan dollar > Others"
+      periods_seen: [unknown]
+    - ordinal: 21
+      canonical_leaf_id: "by_currency_and_product::chinese_yuan"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Chinese yuan
+      label: Chinese yuan
+      leaf_id_aliases:
+        - "By currency and product > Chinese yuan"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 22
+      canonical_leaf_id: "by_currency_and_product::chinese_yuan::fixed_deposits"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Chinese yuan
+        - Fixed deposits
+      label: Fixed deposits
+      leaf_id_aliases:
+        - "By currency and product > Chinese yuan > Fixed deposits"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 23
+      canonical_leaf_id: "by_currency_and_product::chinese_yuan::savings_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Chinese yuan
+        - Savings accounts
+      label: Savings accounts
+      leaf_id_aliases:
+        - "By currency and product > Chinese yuan > Savings accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 24
+      canonical_leaf_id: "by_currency_and_product::chinese_yuan::current_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Chinese yuan
+        - Current accounts
+      label: Current accounts
+      leaf_id_aliases:
+        - "By currency and product > Chinese yuan > Current accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 25
+      canonical_leaf_id: "by_currency_and_product::chinese_yuan::others"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Chinese yuan
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency and product > Chinese yuan > Others"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 26
+      canonical_leaf_id: "by_currency_and_product::others"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Others
+      label: Others
+      leaf_id_aliases:
+        - "By currency and product > Others"
+        - "By currency and product > Others > Others"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 27
+      canonical_leaf_id: "by_currency_and_product::others::fixed_deposits"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Others
+        - Fixed deposits
+      label: Fixed deposits
+      leaf_id_aliases:
+        - "By currency and product > Others > Fixed deposits"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 28
+      canonical_leaf_id: "by_currency_and_product::others::savings_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Others
+        - Savings accounts
+      label: Savings accounts
+      leaf_id_aliases:
+        - "By currency and product > Others > Savings accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 29
+      canonical_leaf_id: "by_currency_and_product::others::current_accounts"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Others
+        - Current accounts
+      label: Current accounts
+      leaf_id_aliases:
+        - "By currency and product > Others > Current accounts"
+      periods_seen: [2Q22, 4Q22, unknown]
+    - ordinal: 30
+      canonical_leaf_id: "by_currency_and_product::total"
+      status: active
+      full_hierarchy:
+        - By currency and product
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "By currency and product > Total"
+      periods_seen: [2Q22, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_DEBTS_ISSUED
+  gate_status: PASS
+  table_display_name: Debts Issued
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: subordinated_term_debts
+      status: active
+      full_hierarchy:
+        - Subordinated term debts
+      label: Subordinated term debts
+      leaf_id_aliases:
+        - Subordinated term debts
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 2
+      canonical_leaf_id: negotiable_certificates_of_deposit
+      status: active
+      full_hierarchy:
+        - Negotiable certificates of deposit
+      label: Negotiable certificates of deposit
+      leaf_id_aliases:
+        - Negotiable certificates of deposit
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 3
+      canonical_leaf_id: senior_medium_term_notes
+      status: active
+      full_hierarchy:
+        - Senior medium term notes
+      label: Senior medium term notes
+      leaf_id_aliases:
+        - Senior medium term notes
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 4
+      canonical_leaf_id: commercial_papers
+      status: active
+      full_hierarchy:
+        - Commercial papers
+      label: Commercial papers
+      leaf_id_aliases:
+        - Commercial papers
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 5
+      canonical_leaf_id: covered_bonds_and_other_secured_notes
+      status: active
+      full_hierarchy:
+        - Covered bonds and other secured notes
+      label: Covered bonds and other secured notes
+      leaf_id_aliases:
+        - Covered bonds and other secured notes
+      periods_seen: [2Q25, unknown]
+    - ordinal: 6
+      canonical_leaf_id: other_debt_securities
+      status: active
+      full_hierarchy:
+        - Other debt securities
+      label: Other debt securities
+      leaf_id_aliases:
+        - Other debt securities
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 7
+      canonical_leaf_id: total
+      status: active
+      full_hierarchy:
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - Total
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 8
+      canonical_leaf_id: due_within_1_year
+      status: active
+      full_hierarchy:
+        - Due within 1 year
+      label: Due within 1 year
+      leaf_id_aliases:
+        - Due within 1 year
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 9
+      canonical_leaf_id: due_after_1_year
+      status: active
+      full_hierarchy:
+        - Due after 1 year
+      label: Due after 1 year
+      leaf_id_aliases:
+        - Due after 1 year
+      periods_seen: [2Q22, 2Q25, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Review
+  canonical_table_id: FS_CAPITAL_ADEQUACY
+  gate_status: PASS
+  table_display_name: Capital Adequacy
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: common_equity_tier_1_capital
+      status: active
+      full_hierarchy:
+        - Common Equity Tier 1 capital
+      label: Common Equity Tier 1 capital
+      leaf_id_aliases:
+        - Common Equity Tier 1 capital
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 2
+      canonical_leaf_id: tier_1_capital
+      status: active
+      full_hierarchy:
+        - Tier 1 capital
+      label: Tier 1 capital
+      leaf_id_aliases:
+        - Tier 1 capital
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 3
+      canonical_leaf_id: total_capital
+      status: active
+      full_hierarchy:
+        - Total capital
+      label: Total capital
+      leaf_id_aliases:
+        - Total capital
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 4
+      canonical_leaf_id: "risk_weighted_assets_rwa::credit_rwa"
+      status: active
+      full_hierarchy:
+        - "Risk-Weighted Assets (“RWA”)"
+        - Credit RWA
+      label: Credit RWA
+      leaf_id_aliases:
+        - "Risk-Weighted Assets (“RWA”) > Credit RWA"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 5
+      canonical_leaf_id: "risk_weighted_assets_rwa::market_rwa"
+      status: active
+      full_hierarchy:
+        - "Risk-Weighted Assets (“RWA”)"
+        - Market RWA
+      label: Market RWA
+      leaf_id_aliases:
+        - "Risk-Weighted Assets (“RWA”) > Market RWA"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 6
+      canonical_leaf_id: "risk_weighted_assets_rwa::operational_rwa"
+      status: active
+      full_hierarchy:
+        - "Risk-Weighted Assets (“RWA”)"
+        - Operational RWA
+      label: Operational RWA
+      leaf_id_aliases:
+        - "Risk-Weighted Assets (“RWA”) > Operational RWA"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 7
+      canonical_leaf_id: "risk_weighted_assets_rwa::total_rwa"
+      status: active
+      full_hierarchy:
+        - "Risk-Weighted Assets (“RWA”)"
+        - Total RWA
+      label: Total RWA
+      leaf_id_aliases:
+        - "Risk-Weighted Assets (“RWA”) > Total RWA"
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 8
+      canonical_leaf_id: "capital_adequacy_ratio_car::common_equity_tier_1_cet_1"
+      status: active
+      full_hierarchy:
+        - Capital Adequacy Ratio (“CAR”)
+        - "Common Equity Tier 1 (CET-1)"
+      label: "Common Equity Tier 1 (CET-1)"
+      leaf_id_aliases:
+        - "Capital Adequacy Ratio (“CAR”) > Common Equity Tier 1 (CET-1)"
+      periods_seen: [unknown]
+    - ordinal: 9
+      canonical_leaf_id: "capital_adequacy_ratio_car::tier"
+      status: active
+      full_hierarchy:
+        - Capital Adequacy Ratio (“CAR”)
+        - Tier
+      label: Tier
+      leaf_id_aliases:
+        - "Capital Adequacy Ratio (“CAR”) > Tier"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 10
+      canonical_leaf_id: "capital_adequacy_ratio_car::total"
+      status: active
+      full_hierarchy:
+        - Capital Adequacy Ratio (“CAR”)
+        - Total
+      label: Total
+      leaf_id_aliases:
+        - "Capital Adequacy Ratio (“CAR”) > Total"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 11
+      canonical_leaf_id: "capital_adequacy_ratio_car::fully_phased_in_cet"
+      status: active
+      full_hierarchy:
+        - Capital Adequacy Ratio (“CAR”)
+        - "Fully phased-in CET-"
+      label: "Fully phased-in CET-"
+      leaf_id_aliases:
+        - "Capital Adequacy Ratio (“CAR”) > Fully phased-in CET-"
+      periods_seen: [unknown]
+    - ordinal: 12
+      canonical_leaf_id: "minimum_car_including_buffer_requirements::cet"
+      status: active
+      full_hierarchy:
+        - Minimum CAR including Buffer Requirements
+        - "CET-"
+      label: "CET-"
+      leaf_id_aliases:
+        - "Minimum CAR including Buffer Requirements > CET-"
+      periods_seen: [unknown]
+    - ordinal: 13
+      canonical_leaf_id: "minimum_car_including_buffer_requirements::effective_tier"
+      status: active
+      full_hierarchy:
+        - Minimum CAR including Buffer Requirements
+        - Effective Tier
+      label: Effective Tier
+      leaf_id_aliases:
+        - "Minimum CAR including Buffer Requirements > Effective Tier"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 14
+      canonical_leaf_id: "minimum_car_including_buffer_requirements::effective_total"
+      status: active
+      full_hierarchy:
+        - Minimum CAR including Buffer Requirements
+        - Effective Total
+      label: Effective Total
+      leaf_id_aliases:
+        - "Minimum CAR including Buffer Requirements > Effective Total"
+      periods_seen: [2Q22, unknown]
+    - ordinal: 15
+      canonical_leaf_id: "minimum_car_including_buffer_requirements::of_which_buffer_requirements::capital_conservation_buffer"
+      status: active
+      full_hierarchy:
+        - Minimum CAR including Buffer Requirements
+        - "Of which: Buffer Requirements"
+        - Capital Conservation Buffer
+      label: Capital Conservation Buffer
+      leaf_id_aliases:
+        - "Minimum CAR including Buffer Requirements > Of which: Buffer Requirements > Capital Conservation Buffer"
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 16
+      canonical_leaf_id: "minimum_car_including_buffer_requirements::of_which_buffer_requirements::countercyclical_capital_buffer"
+      status: active
+      full_hierarchy:
+        - Minimum CAR including Buffer Requirements
+        - "Of which: Buffer Requirements"
+        - Countercyclical Capital Buffer
+      label: Countercyclical Capital Buffer
+      leaf_id_aliases:
+        - "Minimum CAR including Buffer Requirements > Of which: Buffer Requirements > Countercyclical Capital Buffer"
+      periods_seen: [2Q22, 2Q25, unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_INCOME_STATUTORY
+  gate_status: PASS
+  table_display_name: Audited Consolidated Income Statement
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "income::interest_and_similar_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - Interest and similar income
+      label: Interest and similar income
+      leaf_id_aliases:
+        - "Income > Interest and similar income"
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "income::interest_expense"
+      status: active
+      full_hierarchy:
+        - Income
+        - Interest expense
+      label: Interest expense
+      leaf_id_aliases:
+        - "Income > Interest expense"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "income::net_interest_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - Net interest income
+      label: Net interest income
+      leaf_id_aliases:
+        - "Income > Net interest income"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "income::net_fee_and_commission_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - Net fee and commission income
+      label: Net fee and commission income
+      leaf_id_aliases:
+        - "Income > Net fee and commission income"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "income::net_trading_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - Net trading income
+      label: Net trading income
+      leaf_id_aliases:
+        - "Income > Net trading income"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "income::net_income_from_investment_securities"
+      status: active
+      full_hierarchy:
+        - Income
+        - Net income from investment securities
+      label: Net income from investment securities
+      leaf_id_aliases:
+        - "Income > Net income from investment securities"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "income::other_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - Other income
+      label: Other income
+      leaf_id_aliases:
+        - "Income > Other income"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "income::non_interest_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - "Non-interest income"
+      label: "Non-interest income"
+      leaf_id_aliases:
+        - "Income > Non-interest income"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "income::total_income"
+      status: active
+      full_hierarchy:
+        - Income
+        - Total income
+      label: Total income
+      leaf_id_aliases:
+        - "Income > Total income"
+      periods_seen: [4Q25]
+    - ordinal: 10
+      canonical_leaf_id: "total_income::employee_benefits"
+      status: active
+      full_hierarchy:
+        - Total income
+        - Employee benefits
+      label: Employee benefits
+      leaf_id_aliases:
+        - "Total income > Employee benefits"
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "total_income::other_expenses"
+      status: active
+      full_hierarchy:
+        - Total income
+        - Other expenses
+      label: Other expenses
+      leaf_id_aliases:
+        - "Total income > Other expenses"
+      periods_seen: [4Q25]
+    - ordinal: 12
+      canonical_leaf_id: "total_income::total_expenses"
+      status: active
+      full_hierarchy:
+        - Total income
+        - Total expenses
+      label: Total expenses
+      leaf_id_aliases:
+        - "Total income > Total expenses"
+      periods_seen: [4Q25]
+    - ordinal: 13
+      canonical_leaf_id: "income::profit_before_allowances_and_amortisation"
+      status: active
+      full_hierarchy:
+        - Income
+        - Profit before allowances and amortisation
+      label: Profit before allowances and amortisation
+      leaf_id_aliases:
+        - "Income > Profit before allowances and amortisation"
+      periods_seen: [4Q25]
+    - ordinal: 14
+      canonical_leaf_id: "profit_before_allowances_and_amortisation::amortisation_of_intangible_assets"
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+        - Amortisation of intangible assets
+      label: Amortisation of intangible assets
+      leaf_id_aliases:
+        - "Profit before allowances and amortisation > Amortisation of intangible assets"
+      periods_seen: [4Q25]
+    - ordinal: 15
+      canonical_leaf_id: "profit_before_allowances_and_amortisation::allowances_for_credit_and_other_losses"
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+        - Allowances for credit and other losses
+      label: Allowances for credit and other losses
+      leaf_id_aliases:
+        - "Profit before allowances and amortisation > Allowances for credit and other losses"
+      periods_seen: [4Q25]
+    - ordinal: 16
+      canonical_leaf_id: "income::profit_after_allowances_and_amortisation"
+      status: active
+      full_hierarchy:
+        - Income
+        - Profit after allowances and amortisation
+      label: Profit after allowances and amortisation
+      leaf_id_aliases:
+        - "Income > Profit after allowances and amortisation"
+      periods_seen: [4Q25]
+    - ordinal: 17
+      canonical_leaf_id: "profit_before_allowances_and_amortisation::share_of_profits_losses_of_associates_and_jvs"
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+        - Share of profits/losses of associates and JVs
+      label: Share of profits/losses of associates and JVs
+      leaf_id_aliases:
+        - "Profit before allowances and amortisation > Share of profits/losses of associates and JVs"
+      periods_seen: [4Q25]
+    - ordinal: 18
+      canonical_leaf_id: "income::profit_before_tax"
+      status: active
+      full_hierarchy:
+        - Income
+        - Profit before tax
+      label: Profit before tax
+      leaf_id_aliases:
+        - "Income > Profit before tax"
+      periods_seen: [4Q25]
+    - ordinal: 19
+      canonical_leaf_id: "profit_before_allowances_and_amortisation::income_tax_expense"
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+        - Income tax expense
+      label: Income tax expense
+      leaf_id_aliases:
+        - "Profit before allowances and amortisation > Income tax expense"
+      periods_seen: [4Q25]
+    - ordinal: 20
+      canonical_leaf_id: "income::net_profit"
+      status: active
+      full_hierarchy:
+        - Income
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - "Income > Net profit"
+      periods_seen: [4Q25]
+    - ordinal: 21
+      canonical_leaf_id: "profit_before_allowances_and_amortisation::attributable_to::shareholders"
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+        - Attributable to
+        - Shareholders
+      label: Shareholders
+      leaf_id_aliases:
+        - "Profit before allowances and amortisation > Attributable to > Shareholders"
+      periods_seen: [4Q25]
+    - ordinal: 22
+      canonical_leaf_id: "profit_before_allowances_and_amortisation::attributable_to::non_controlling_interests"
+      status: active
+      full_hierarchy:
+        - Profit before allowances and amortisation
+        - Attributable to
+        - "Non-controlling interests"
+      label: "Non-controlling interests"
+      leaf_id_aliases:
+        - "Profit before allowances and amortisation > Attributable to > Non-controlling interests"
+      periods_seen: [4Q25]
+    - ordinal: 23
+      canonical_leaf_id: "income::attributable_to::5_213_5_550_6_5_721_9_10_934_11_290_3"
+      status: active
+      full_hierarchy:
+        - Income
+        - Attributable to
+        - "5,213 5,550 (6) 5,721 (9) 10,934 11,290 (3)"
+      label: "5,213 5,550 (6) 5,721 (9) 10,934 11,290 (3)"
+      leaf_id_aliases:
+        - "Income > Attributable to > 5,213 5,550 (6) 5,721 (9) 10,934 11,290 (3)"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_COMPREHENSIVE_INCOME
+  gate_status: PASS
+  table_display_name: Audited Consolidated Statement of Comprehensive Income
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: net_profit
+      status: active
+      full_hierarchy:
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - Net profit
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::translation_differences_for_foreign_operations"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Translation differences for foreign operations
+      label: Translation differences for foreign operations
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Translation differences for foreign operations"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::share_of_other_comprehensive_income_of_associates_and_joint_ventures"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Share of other comprehensive income of associates and joint ventures
+      label: Share of other comprehensive income of associates and joint ventures
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Share of other comprehensive income of associates and joint ventures"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::debt_instruments_at_fair_value_through_other_comprehensive_income::net_valuation_gains_taken_to_equity"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Debt instruments at fair value through other comprehensive income
+        - Net valuation gains taken to equity
+      label: Net valuation gains taken to equity
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Debt instruments at fair value through other comprehensive income > Net valuation gains taken to equity"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::debt_instruments_at_fair_value_through_other_comprehensive_income::losses_gains_transferred_to_income_statement"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Debt instruments at fair value through other comprehensive income
+        - Losses/ (gains) transferred to income statement
+      label: Losses/ (gains) transferred to income statement
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Debt instruments at fair value through other comprehensive income > Losses/ (gains) transferred to income statement"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::taxation_relating_to_components_of_other_comprehensive_income"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Taxation relating to components of other comprehensive income
+      label: Taxation relating to components of other comprehensive income
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Taxation relating to components of other comprehensive income"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedges::net_valuation_gains_taken_to_equity"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Cash flow hedges
+        - Net valuation gains taken to equity
+      label: Net valuation gains taken to equity
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Cash flow hedges > Net valuation gains taken to equity"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "other_comprehensive_income::items_that_may_be_reclassified_subsequently_to_income_statement::cash_flow_hedges::gains_transferred_to_income_statement"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that may be reclassified subsequently to income statement
+        - Cash flow hedges
+        - Gains transferred to income statement
+      label: Gains transferred to income statement
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that may be reclassified subsequently to income statement > Cash flow hedges > Gains transferred to income statement"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "other_comprehensive_income::items_that_will_not_be_reclassified_to_income_statement::gains_on_equity_instruments_at_fair_value_through_other_comprehensive_income_net_of_tax"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that will not be reclassified to income statement
+        - Gains on equity instruments at fair value through other comprehensive income (net of tax)
+      label: Gains on equity instruments at fair value through other comprehensive income (net of tax)
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that will not be reclassified to income statement > Gains on equity instruments at fair value through other comprehensive income (net of tax)"
+      periods_seen: [4Q25]
+    - ordinal: 10
+      canonical_leaf_id: "other_comprehensive_income::items_that_will_not_be_reclassified_to_income_statement::fair_value_change_from_own_credit_risk_on_financial_liabilities_designated_at_fair_value_net_of_tax"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that will not be reclassified to income statement
+        - Fair value change from own credit risk on financial liabilities designated at fair value (net of tax)
+      label: Fair value change from own credit risk on financial liabilities designated at fair value (net of tax)
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that will not be reclassified to income statement > Fair value change from own credit risk on financial liabilities designated at fair value (net of tax)"
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "other_comprehensive_income::items_that_will_not_be_reclassified_to_income_statement::defined_benefit_plans_remeasurements_net_of_tax"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that will not be reclassified to income statement
+        - Defined benefit plans remeasurements (net of tax)
+      label: Defined benefit plans remeasurements (net of tax)
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that will not be reclassified to income statement > Defined benefit plans remeasurements (net of tax)"
+      periods_seen: [4Q25]
+    - ordinal: 12
+      canonical_leaf_id: "other_comprehensive_income::other_comprehensive_income_net_of_tax"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - "Other comprehensive income, net of tax"
+      label: "Other comprehensive income, net of tax"
+      leaf_id_aliases:
+        - "Other comprehensive income > Other comprehensive income, net of tax"
+      periods_seen: [4Q25]
+    - ordinal: 13
+      canonical_leaf_id: "other_comprehensive_income::items_that_will_not_be_reclassified_to_income_statement::total_comprehensive_income"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Items that will not be reclassified to income statement
+        - Total comprehensive income
+      label: Total comprehensive income
+      leaf_id_aliases:
+        - "Other comprehensive income > Items that will not be reclassified to income statement > Total comprehensive income"
+      periods_seen: [4Q25]
+    - ordinal: 14
+      canonical_leaf_id: "total_comprehensive_income::shareholders"
+      status: active
+      full_hierarchy:
+        - Total comprehensive income
+        - Shareholders
+      label: Shareholders
+      leaf_id_aliases:
+        - "Total comprehensive income > Shareholders"
+      periods_seen: [4Q25]
+    - ordinal: 15
+      canonical_leaf_id: "total_comprehensive_income::non_controlling_interests"
+      status: active
+      full_hierarchy:
+        - Total comprehensive income
+        - "Non-controlling interests"
+      label: "Non-controlling interests"
+      leaf_id_aliases:
+        - "Total comprehensive income > Non-controlling interests"
+      periods_seen: [4Q25]
+    - ordinal: 16
+      canonical_leaf_id: "other_comprehensive_income::attributable_to::total_comprehensive_income"
+      status: active
+      full_hierarchy:
+        - Other comprehensive income
+        - Attributable to
+        - Total comprehensive income
+      label: Total comprehensive income
+      leaf_id_aliases:
+        - "Other comprehensive income > Attributable to > Total comprehensive income"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_BALANCE_STATUTORY
+  gate_status: PASS
+  table_display_name: Audited Balance Sheets
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "assets::cash_and_balances_with_central_banks"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Cash and balances with central banks
+      label: Cash and balances with central banks
+      leaf_id_aliases:
+        - "Assets > Cash and balances with central banks"
+      periods_seen: [unknown]
+    - ordinal: 2
+      canonical_leaf_id: "assets::government_securities_and_treasury_bills"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Government securities and treasury bills
+      label: Government securities and treasury bills
+      leaf_id_aliases:
+        - "Assets > Government securities and treasury bills"
+      periods_seen: [unknown]
+    - ordinal: 3
+      canonical_leaf_id: "assets::due_from_banks"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Due from banks
+      label: Due from banks
+      leaf_id_aliases:
+        - "Assets > Due from banks"
+      periods_seen: [unknown]
+    - ordinal: 4
+      canonical_leaf_id: "assets::derivative_assets"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Derivative assets
+      label: Derivative assets
+      leaf_id_aliases:
+        - "Assets > Derivative assets"
+      periods_seen: [unknown]
+    - ordinal: 5
+      canonical_leaf_id: "assets::bank_and_corporate_securities"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Bank and corporate securities
+      label: Bank and corporate securities
+      leaf_id_aliases:
+        - "Assets > Bank and corporate securities"
+      periods_seen: [unknown]
+    - ordinal: 6
+      canonical_leaf_id: "assets::loans_and_advances_to_customers"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Loans and advances to customers
+      label: Loans and advances to customers
+      leaf_id_aliases:
+        - "Assets > Loans and advances to customers"
+      periods_seen: [unknown]
+    - ordinal: 7
+      canonical_leaf_id: "assets::other_assets"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Other assets
+      label: Other assets
+      leaf_id_aliases:
+        - "Assets > Other assets"
+      periods_seen: [unknown]
+    - ordinal: 8
+      canonical_leaf_id: "assets::investment_in_subsidiaries"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Investment in subsidiaries
+      label: Investment in subsidiaries
+      leaf_id_aliases:
+        - "Assets > Investment in subsidiaries"
+      periods_seen: [unknown]
+    - ordinal: 9
+      canonical_leaf_id: "assets::due_from_subsidiaries"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Due from subsidiaries
+      label: Due from subsidiaries
+      leaf_id_aliases:
+        - "Assets > Due from subsidiaries"
+      periods_seen: [unknown]
+    - ordinal: 10
+      canonical_leaf_id: "assets::associates_and_joint_ventures"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Associates and joint ventures
+      label: Associates and joint ventures
+      leaf_id_aliases:
+        - "Assets > Associates and joint ventures"
+      periods_seen: [unknown]
+    - ordinal: 11
+      canonical_leaf_id: "assets::properties_and_other_fixed_assets"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Properties and other fixed assets
+      label: Properties and other fixed assets
+      leaf_id_aliases:
+        - "Assets > Properties and other fixed assets"
+      periods_seen: [unknown]
+    - ordinal: 12
+      canonical_leaf_id: "assets::goodwill_and_intangible_assets"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Goodwill and intangible assets
+      label: Goodwill and intangible assets
+      leaf_id_aliases:
+        - "Assets > Goodwill and intangible assets"
+      periods_seen: [unknown]
+    - ordinal: 13
+      canonical_leaf_id: "assets::total_assets"
+      status: active
+      full_hierarchy:
+        - Assets
+        - Total assets
+      label: Total assets
+      leaf_id_aliases:
+        - "Assets > Total assets"
+      periods_seen: [unknown]
+    - ordinal: 14
+      canonical_leaf_id: "liabilities::due_to_banks"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Due to banks
+      label: Due to banks
+      leaf_id_aliases:
+        - "Liabilities > Due to banks"
+      periods_seen: [unknown]
+    - ordinal: 15
+      canonical_leaf_id: "liabilities::deposits_and_balances_from_customers"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Deposits and balances from customers
+      label: Deposits and balances from customers
+      leaf_id_aliases:
+        - "Liabilities > Deposits and balances from customers"
+      periods_seen: [unknown]
+    - ordinal: 16
+      canonical_leaf_id: "liabilities::derivative_liabilities"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Derivative liabilities
+      label: Derivative liabilities
+      leaf_id_aliases:
+        - "Liabilities > Derivative liabilities"
+      periods_seen: [unknown]
+    - ordinal: 17
+      canonical_leaf_id: "liabilities::other_liabilities"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Other liabilities
+      label: Other liabilities
+      leaf_id_aliases:
+        - "Liabilities > Other liabilities"
+      periods_seen: [unknown]
+    - ordinal: 18
+      canonical_leaf_id: "liabilities::due_to_subsidiaries"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Due to subsidiaries
+      label: Due to subsidiaries
+      leaf_id_aliases:
+        - "Liabilities > Due to subsidiaries"
+      periods_seen: [unknown]
+    - ordinal: 19
+      canonical_leaf_id: "liabilities::other_debt_securities"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Other debt securities
+      label: Other debt securities
+      leaf_id_aliases:
+        - "Liabilities > Other debt securities"
+      periods_seen: [unknown]
+    - ordinal: 20
+      canonical_leaf_id: "liabilities::subordinated_term_debts"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Subordinated term debts
+      label: Subordinated term debts
+      leaf_id_aliases:
+        - "Liabilities > Subordinated term debts"
+      periods_seen: [unknown]
+    - ordinal: 21
+      canonical_leaf_id: "liabilities::total_liabilities"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Total liabilities
+      label: Total liabilities
+      leaf_id_aliases:
+        - "Liabilities > Total liabilities"
+      periods_seen: [unknown]
+    - ordinal: 22
+      canonical_leaf_id: "liabilities::net_assets"
+      status: active
+      full_hierarchy:
+        - Liabilities
+        - Net assets
+      label: Net assets
+      leaf_id_aliases:
+        - "Liabilities > Net assets"
+      periods_seen: [unknown]
+    - ordinal: 23
+      canonical_leaf_id: "equity::share_capital"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Share capital
+      label: Share capital
+      leaf_id_aliases:
+        - "Equity > Share capital"
+      periods_seen: [unknown]
+    - ordinal: 24
+      canonical_leaf_id: "equity::other_equity_instruments"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Other equity instruments
+      label: Other equity instruments
+      leaf_id_aliases:
+        - "Equity > Other equity instruments"
+      periods_seen: [unknown]
+    - ordinal: 25
+      canonical_leaf_id: "equity::other_reserves"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Other reserves
+      label: Other reserves
+      leaf_id_aliases:
+        - "Equity > Other reserves"
+      periods_seen: [unknown]
+    - ordinal: 26
+      canonical_leaf_id: "equity::revenue_reserves"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Revenue reserves
+      label: Revenue reserves
+      leaf_id_aliases:
+        - "Equity > Revenue reserves"
+      periods_seen: [unknown]
+    - ordinal: 27
+      canonical_leaf_id: "equity::shareholders_funds"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Shareholders’ funds
+      label: Shareholders’ funds
+      leaf_id_aliases:
+        - "Equity > Shareholders’ funds"
+      periods_seen: [unknown]
+    - ordinal: 28
+      canonical_leaf_id: "equity::revenue_reserves::non_controlling_interests"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Revenue reserves
+        - "Non-controlling interests"
+      label: "Non-controlling interests"
+      leaf_id_aliases:
+        - "Equity > Revenue reserves > Non-controlling interests"
+      periods_seen: [unknown]
+    - ordinal: 29
+      canonical_leaf_id: "equity::total_equity"
+      status: active
+      full_hierarchy:
+        - Equity
+        - Total equity
+      label: Total equity
+      leaf_id_aliases:
+        - "Equity > Total equity"
+      periods_seen: [unknown]
+    - ordinal: 30
+      canonical_leaf_id: "other_information::net_book_value_per_share"
+      status: active
+      full_hierarchy:
+        - Other Information
+        - Net book value per share ($)
+      label: Net book value per share ($)
+      leaf_id_aliases:
+        - "Other Information > Net book value per share ($)"
+      periods_seen: [unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_EQUITY_CHANGES_GROUP
+  gate_status: PASS
+  table_display_name: Audited Consolidated Statement of Changes in Equity
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: non_controlling_interests
+      label: "Non-controlling interests"
+    - canonical_col_id: other_equity_instruments
+      label: Other equity instruments
+    - canonical_col_id: other_reserves
+      label: Other reserves
+    - canonical_col_id: revenue_reserves
+      label: Revenue reserves
+    - canonical_col_id: share_capital
+      label: Share Capital
+    - canonical_col_id: total_equity
+      label: Total equity
+    - canonical_col_id: total_shareholders_funds
+      label: Total Shareholders’ funds
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: balance_at_1_january
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+      label: Balance at 1 January 2024
+      leaf_id_aliases:
+        - Balance at 1 January 2024
+        - Balance at 1 January 2025
+      periods_seen: [4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "balance_at_1_january::purchase_of_treasury_shares"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Purchase of treasury shares
+      label: Purchase of treasury shares
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Purchase of treasury shares"
+        - "Balance at 1 January 2025 > Purchase of treasury shares"
+      periods_seen: [4Q25]
+    - ordinal: 3
+      canonical_leaf_id: "balance_at_1_january::draw_down_of_share_plan_reserves_upon_vesting_of_performance_shares"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - "Draw-down of share plan reserves upon vesting of performance shares"
+      label: "Draw-down of share plan reserves upon vesting of performance shares"
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Draw-down of share plan reserves upon vesting of performance shares"
+        - "Balance at 1 January 2025 > Draw-down of share plan reserves upon vesting of performance shares"
+      periods_seen: [4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "balance_at_1_january::cost_of_share_based_payments"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - "Cost of share-based payments"
+      label: "Cost of share-based payments"
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Cost of share-based payments"
+        - "Balance at 1 January 2025 > Cost of share-based payments"
+      periods_seen: [4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "balance_at_1_january::dividends_to_shareholders"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Dividends to shareholders
+      label: Dividends to shareholders
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Dividends to shareholders"
+        - "Balance at 1 January 2025 > Dividends to shareholders"
+      periods_seen: [4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "balance_at_1_january::change_in_non_controlling_interests"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - "Change in non-controlling interests"
+      label: "Change in non-controlling interests"
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Change in non-controlling interests"
+      periods_seen: [4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "balance_at_1_january::other_movements"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Other movements
+      label: Other movements
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Other movements"
+        - "Balance at 1 January 2025 > Other movements"
+      periods_seen: [4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "balance_at_1_january::net_profit"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Net profit"
+        - "Balance at 1 January 2025 > Net profit"
+      periods_seen: [4Q25]
+    - ordinal: 9
+      canonical_leaf_id: "balance_at_1_january::other_comprehensive_income"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Other comprehensive income
+      label: Other comprehensive income
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Other comprehensive income"
+        - "Balance at 1 January 2025 > Other comprehensive income"
+      periods_seen: [4Q25]
+    - ordinal: 10
+      canonical_leaf_id: balance_at_31_december
+      status: active
+      full_hierarchy:
+        - Balance at 31 December 2024
+      label: Balance at 31 December 2024
+      leaf_id_aliases:
+        - Balance at 31 December 2024
+        - Balance at 31 December 2025
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "balance_at_1_january::redemption_of_perpetual_capital_securities"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2025
+        - Redemption of perpetual capital securities
+      label: Redemption of perpetual capital securities
+      leaf_id_aliases:
+        - "Balance at 1 January 2025 > Redemption of perpetual capital securities"
+      periods_seen: [4Q25]
+    - ordinal: 12
+      canonical_leaf_id: "balance_at_1_january::shares_repurchased_and_cancelled"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2025
+        - Shares repurchased and cancelled
+      label: Shares repurchased and cancelled
+      leaf_id_aliases:
+        - "Balance at 1 January 2025 > Shares repurchased and cancelled"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_EQUITY_CHANGES_COMPANY
+  gate_status: PASS
+  table_display_name: Audited Statement of Changes in Equity
+  reference_docs: [DBS_4Q25_performance_summary]
+  col_axis_note: "hard-axis only (no period column)"
+  col_members:
+    - canonical_col_id: other_equity_instruments
+      label: Other equity instruments
+    - canonical_col_id: other_reserves
+      label: Other reserves
+    - canonical_col_id: revenue_reserves
+      label: Revenue reserves
+    - canonical_col_id: share_capital
+      label: Share capital
+    - canonical_col_id: total_equity
+      label: Total equity
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: balance_at_1_january
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+      label: Balance at 1 January 2024
+      leaf_id_aliases:
+        - Balance at 1 January 2024
+        - Balance at 1 January 2025
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 2
+      canonical_leaf_id: "balance_at_1_january::purchase_of_treasury_shares"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Purchase of treasury shares
+      label: Purchase of treasury shares
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Purchase of treasury shares"
+      periods_seen: [4Q24]
+    - ordinal: 3
+      canonical_leaf_id: "balance_at_1_january::transfer_of_treasury_shares"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Transfer of treasury shares
+      label: Transfer of treasury shares
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Transfer of treasury shares"
+        - "Balance at 1 January 2025 > Transfer of treasury shares"
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 4
+      canonical_leaf_id: "balance_at_1_january::draw_down_of_share_plan_reserves_upon_vesting_of_performance_shares"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - "Draw-down of share plan reserves upon vesting of performance shares"
+      label: "Draw-down of share plan reserves upon vesting of performance shares"
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Draw-down of share plan reserves upon vesting of performance shares"
+        - "Balance at 1 January 2025 > Draw-down of share plan reserves upon vesting of performance shares"
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 5
+      canonical_leaf_id: "balance_at_1_january::cost_of_share_based_payments"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - "Cost of share-based payments"
+      label: "Cost of share-based payments"
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Cost of share-based payments"
+        - "Balance at 1 January 2025 > Cost of share-based payments"
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 6
+      canonical_leaf_id: "balance_at_1_january::dividends_to_shareholders"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Dividends to shareholders
+      label: Dividends to shareholders
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Dividends to shareholders"
+        - "Balance at 1 January 2025 > Dividends to shareholders"
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 7
+      canonical_leaf_id: "balance_at_1_january::net_profit"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Net profit
+      label: Net profit
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Net profit"
+        - "Balance at 1 January 2025 > Net profit"
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 8
+      canonical_leaf_id: "balance_at_1_january::other_comprehensive_income"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2024
+        - Other comprehensive income
+      label: Other comprehensive income
+      leaf_id_aliases:
+        - "Balance at 1 January 2024 > Other comprehensive income"
+        - "Balance at 1 January 2025 > Other comprehensive income"
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 9
+      canonical_leaf_id: balance_at_31_december
+      status: active
+      full_hierarchy:
+        - Balance at 31 December 2024
+      label: Balance at 31 December 2024
+      leaf_id_aliases:
+        - Balance at 31 December 2024
+        - Balance at 31 December 2025
+      periods_seen: [4Q24, 4Q25]
+    - ordinal: 10
+      canonical_leaf_id: "balance_at_1_january::redemption_of_perpetual_capital_securities"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2025
+        - Redemption of perpetual capital securities
+      label: Redemption of perpetual capital securities
+      leaf_id_aliases:
+        - "Balance at 1 January 2025 > Redemption of perpetual capital securities"
+      periods_seen: [4Q25]
+    - ordinal: 11
+      canonical_leaf_id: "balance_at_1_january::shares_repurchased_and_cancelled"
+      status: active
+      full_hierarchy:
+        - Balance at 1 January 2025
+        - Shares repurchased and cancelled
+      label: Shares repurchased and cancelled
+      leaf_id_aliases:
+        - "Balance at 1 January 2025 > Shares repurchased and cancelled"
+      periods_seen: [4Q25]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_CASHFLOW
+  gate_status: PASS
+  table_display_name: Audited Consolidated Cash Flow Statement
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "cash_flows_from_operating_activities::profit_before_tax"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Profit before tax
+      label: Profit before tax
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Profit before tax"
+      periods_seen: [unknown]
+    - ordinal: 2
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::allowances_for_credit_and_other_losses"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Allowances for credit and other losses
+      label: Allowances for credit and other losses
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Allowances for credit and other losses"
+      periods_seen: [unknown]
+    - ordinal: 3
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::amortisation_of_intangible_assets"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Amortisation of intangible assets
+      label: Amortisation of intangible assets
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Amortisation of intangible assets"
+      periods_seen: [unknown]
+    - ordinal: 4
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::depreciation_of_properties_and_other_fixed_assets"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Depreciation of properties and other fixed assets
+      label: Depreciation of properties and other fixed assets
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Depreciation of properties and other fixed assets"
+      periods_seen: [unknown]
+    - ordinal: 5
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::share_of_profits_or_losses_of_associates_and_joint_ventures"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Share of profits or losses of associates and joint ventures
+      label: Share of profits or losses of associates and joint ventures
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Share of profits or losses of associates and joint ventures"
+      periods_seen: [unknown]
+    - ordinal: 6
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_gain_on_disposal_of_interest_in_associates"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Net gain on disposal of interest in associates
+      label: Net gain on disposal of interest in associates
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Net gain on disposal of interest in associates"
+      periods_seen: [unknown]
+    - ordinal: 7
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_loss_gain_on_disposal_net_of_write_off_of_properties_and_other_fixed_assets"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - "Net loss/ (gain) on disposal, net of write-off of properties and other fixed assets"
+      label: "Net loss/ (gain) on disposal, net of write-off of properties and other fixed assets"
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Net loss/ (gain) on disposal, net of write-off of properties and other fixed assets"
+      periods_seen: [unknown]
+    - ordinal: 8
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::net_income_from_investment_securities"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Net income from investment securities
+      label: Net income from investment securities
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Net income from investment securities"
+      periods_seen: [unknown]
+    - ordinal: 9
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::cost_of_share_based_payments"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - "Cost of share-based payments"
+      label: "Cost of share-based payments"
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Cost of share-based payments"
+      periods_seen: [unknown]
+    - ordinal: 10
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::interest_expense_on_subordinated_term_debts"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Interest expense on subordinated term debts
+      label: Interest expense on subordinated term debts
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Interest expense on subordinated term debts"
+      periods_seen: [unknown]
+    - ordinal: 11
+      canonical_leaf_id: "cash_flows_from_operating_activities::adjustments_for_non_cash_and_other_items::interest_expense_on_lease_liabilities"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - "Adjustments for non-cash and other items"
+        - Interest expense on lease liabilities
+      label: Interest expense on lease liabilities
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Adjustments for non-cash and other items > Interest expense on lease liabilities"
+      periods_seen: [unknown]
+    - ordinal: 12
+      canonical_leaf_id: "cash_flows_from_operating_activities::profit_before_changes_in_operating_assets_and_liabilities"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Profit before changes in operating assets and liabilities
+      label: Profit before changes in operating assets and liabilities
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Profit before changes in operating assets and liabilities"
+      periods_seen: [unknown]
+    - ordinal: 13
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::due_to_banks"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Increase/ (Decrease) in
+        - Due to banks
+      label: Due to banks
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Increase/ (Decrease) in > Due to banks"
+      periods_seen: [unknown]
+    - ordinal: 14
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::deposits_and_balances_from_customers"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Increase/ (Decrease) in
+        - Deposits and balances from customers
+      label: Deposits and balances from customers
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Increase/ (Decrease) in > Deposits and balances from customers"
+      periods_seen: [unknown]
+    - ordinal: 15
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::derivative_and_other_liabilities"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Increase/ (Decrease) in
+        - Derivative and other liabilities
+      label: Derivative and other liabilities
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Increase/ (Decrease) in > Derivative and other liabilities"
+      periods_seen: [unknown]
+    - ordinal: 16
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::other_debt_securities_and_borrowings"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Increase/ (Decrease) in
+        - Other debt securities and borrowings
+      label: Other debt securities and borrowings
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Increase/ (Decrease) in > Other debt securities and borrowings"
+      periods_seen: [unknown]
+    - ordinal: 17
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::restricted_balances_with_central_banks"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Restricted balances with central banks
+      label: Restricted balances with central banks
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Restricted balances with central banks"
+      periods_seen: [unknown]
+    - ordinal: 18
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::government_securities_and_treasury_bills"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Government securities and treasury bills
+      label: Government securities and treasury bills
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Government securities and treasury bills"
+      periods_seen: [unknown]
+    - ordinal: 19
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::due_from_banks"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Due from banks
+      label: Due from banks
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Due from banks"
+      periods_seen: [unknown]
+    - ordinal: 20
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::bank_and_corporate_securities"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Bank and corporate securities
+      label: Bank and corporate securities
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Bank and corporate securities"
+      periods_seen: [unknown]
+    - ordinal: 21
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::loans_and_advances_to_customers"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Loans and advances to customers
+      label: Loans and advances to customers
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Loans and advances to customers"
+      periods_seen: [unknown]
+    - ordinal: 22
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::derivative_and_other_assets"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Derivative and other assets
+      label: Derivative and other assets
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Derivative and other assets"
+      periods_seen: [unknown]
+    - ordinal: 23
+      canonical_leaf_id: "cash_flows_from_operating_activities::income_taxes_paid"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - Income taxes paid
+      label: Income taxes paid
+      leaf_id_aliases:
+        - "Cash flows from operating activities > Income taxes paid"
+      periods_seen: [unknown]
+    - ordinal: 24
+      canonical_leaf_id: "cash_flows_from_operating_activities::increase_decrease_in::net_cash_generated_from_operating_activities_1"
+      status: active
+      full_hierarchy:
+        - Cash flows from operating activities
+        - (Increase) /Decrease in
+        - Net cash generated from operating activities (1)
+      label: Net cash generated from operating activities (1)
+      leaf_id_aliases:
+        - "Cash flows from operating activities > (Increase) /Decrease in > Net cash generated from operating activities (1)"
+      periods_seen: [unknown]
+    - ordinal: 25
+      canonical_leaf_id: "cash_flows_from_investing_activities::dividends_from_associates_and_joint_ventures"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Dividends from associates and joint ventures
+      label: Dividends from associates and joint ventures
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Dividends from associates and joint ventures"
+      periods_seen: [unknown]
+    - ordinal: 26
+      canonical_leaf_id: "cash_flows_from_investing_activities::acquisition_of_interests_in_associates_and_joint_ventures"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Acquisition of interests in associates and joint ventures
+      label: Acquisition of interests in associates and joint ventures
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Acquisition of interests in associates and joint ventures"
+      periods_seen: [unknown]
+    - ordinal: 27
+      canonical_leaf_id: "cash_flows_from_investing_activities::return_of_capital_from_associates_and_joint_ventures"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Return of capital from associates and joint ventures
+      label: Return of capital from associates and joint ventures
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Return of capital from associates and joint ventures"
+      periods_seen: [unknown]
+    - ordinal: 28
+      canonical_leaf_id: "cash_flows_from_investing_activities::proceeds_from_disposal_of_properties_and_other_fixed_assets"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Proceeds from disposal of properties and other fixed assets
+      label: Proceeds from disposal of properties and other fixed assets
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Proceeds from disposal of properties and other fixed assets"
+      periods_seen: [unknown]
+    - ordinal: 29
+      canonical_leaf_id: "cash_flows_from_investing_activities::proceeds_from_disposal_of_associates"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Proceeds from disposal of associates
+      label: Proceeds from disposal of associates
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Proceeds from disposal of associates"
+      periods_seen: [unknown]
+    - ordinal: 30
+      canonical_leaf_id: "cash_flows_from_investing_activities::purchase_of_properties_and_other_fixed_assets"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Purchase of properties and other fixed assets
+      label: Purchase of properties and other fixed assets
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Purchase of properties and other fixed assets"
+      periods_seen: [unknown]
+    - ordinal: 31
+      canonical_leaf_id: "cash_flows_from_investing_activities::purchase_of_additional_stake_in_a_subsidiary_from_non_controlling_interest"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - "Purchase of additional stake in a subsidiary from non-controlling interest"
+      label: "Purchase of additional stake in a subsidiary from non-controlling interest"
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Purchase of additional stake in a subsidiary from non-controlling interest"
+      periods_seen: [unknown]
+    - ordinal: 32
+      canonical_leaf_id: "cash_flows_from_investing_activities::net_cash_used_in_investing_activities_2"
+      status: active
+      full_hierarchy:
+        - Cash flows from investing activities
+        - Net cash used in investing activities (2)
+      label: Net cash used in investing activities (2)
+      leaf_id_aliases:
+        - "Cash flows from investing activities > Net cash used in investing activities (2)"
+      periods_seen: [unknown]
+    - ordinal: 33
+      canonical_leaf_id: "cash_flows_from_financing_activities::interest_paid_on_subordinated_term_debts"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Interest paid on subordinated term debts
+      label: Interest paid on subordinated term debts
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Interest paid on subordinated term debts"
+      periods_seen: [unknown]
+    - ordinal: 34
+      canonical_leaf_id: "cash_flows_from_financing_activities::purchase_of_treasury_shares"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Purchase of treasury shares
+      label: Purchase of treasury shares
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Purchase of treasury shares"
+      periods_seen: [unknown]
+    - ordinal: 35
+      canonical_leaf_id: "cash_flows_from_financing_activities::dividends_paid_to_shareholders_of_the_company"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Dividends paid to shareholders of the Company
+      label: Dividends paid to shareholders of the Company
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Dividends paid to shareholders of the Company"
+      periods_seen: [unknown]
+    - ordinal: 36
+      canonical_leaf_id: "cash_flows_from_financing_activities::repayment_of_lease_liabilities"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Repayment of lease liabilities
+      label: Repayment of lease liabilities
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Repayment of lease liabilities"
+      periods_seen: [unknown]
+    - ordinal: 37
+      canonical_leaf_id: "cash_flows_from_financing_activities::redemption_of_perpetual_capital_securities"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Redemption of perpetual capital securities
+      label: Redemption of perpetual capital securities
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Redemption of perpetual capital securities"
+      periods_seen: [unknown]
+    - ordinal: 38
+      canonical_leaf_id: "cash_flows_from_financing_activities::shares_repurchased_and_cancelled"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Shares repurchased and cancelled
+      label: Shares repurchased and cancelled
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Shares repurchased and cancelled"
+      periods_seen: [unknown]
+    - ordinal: 39
+      canonical_leaf_id: "cash_flows_from_financing_activities::net_cash_used_in_financing_activities_3"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Net cash used in financing activities (3)
+      label: Net cash used in financing activities (3)
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Net cash used in financing activities (3)"
+      periods_seen: [unknown]
+    - ordinal: 40
+      canonical_leaf_id: "cash_flows_from_financing_activities::exchange_translation_adjustments_4"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Exchange translation adjustments (4)
+      label: Exchange translation adjustments (4)
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Exchange translation adjustments (4)"
+      periods_seen: [unknown]
+    - ordinal: 41
+      canonical_leaf_id: "cash_flows_from_financing_activities::net_change_in_cash_and_cash_equivalents_1_2_3_4"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Net change in cash and cash equivalents (1)+(2)+(3)+(4)
+      label: Net change in cash and cash equivalents (1)+(2)+(3)+(4)
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Net change in cash and cash equivalents (1)+(2)+(3)+(4)"
+      periods_seen: [unknown]
+    - ordinal: 42
+      canonical_leaf_id: "net_change_in_cash_and_cash_equivalents_1_2_3_4::cash_and_cash_equivalents_at_beginning_of_year"
+      status: active
+      full_hierarchy:
+        - Net change in cash and cash equivalents (1)+(2)+(3)+(4)
+        - Cash and cash equivalents at beginning of year
+      label: Cash and cash equivalents at beginning of year
+      leaf_id_aliases:
+        - "Net change in cash and cash equivalents (1)+(2)+(3)+(4) > Cash and cash equivalents at beginning of year"
+      periods_seen: [unknown]
+    - ordinal: 43
+      canonical_leaf_id: "cash_flows_from_financing_activities::cash_and_cash_equivalents_at_end_of_year"
+      status: active
+      full_hierarchy:
+        - Cash flows from financing activities
+        - Cash and cash equivalents at end of year
+      label: Cash and cash equivalents at end of year
+      leaf_id_aliases:
+        - "Cash flows from financing activities > Cash and cash equivalents at end of year"
+      periods_seen: [unknown]
+
+- bank: DBS
+  canonical_section_id: Financial Statements
+  canonical_table_id: FS_OFF_BALANCE_SHEET
+  gate_status: PASS
+  table_display_name: "Off-balance Sheet Items"
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: contingent_liabilities
+      status: active
+      full_hierarchy:
+        - Contingent liabilities
+      label: Contingent liabilities
+      leaf_id_aliases:
+        - Contingent liabilities
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 2
+      canonical_leaf_id: commitments
+      status: active
+      full_hierarchy:
+        - Commitments
+      label: Commitments
+      leaf_id_aliases:
+        - Commitments
+      periods_seen: [2Q22, 2Q25, unknown]
+    - ordinal: 3
+      canonical_leaf_id: financial_derivatives
+      status: active
+      full_hierarchy:
+        - Financial derivatives
+      label: Financial derivatives
+      leaf_id_aliases:
+        - Financial Derivatives
+        - Financial derivatives
+      periods_seen: [2Q22, 2Q25, unknown]
+
+- bank: DBS
+  canonical_section_id: Additional Information
+  canonical_table_id: FS_SHARE_CAPITAL
+  gate_status: PASS
+  table_display_name: Share Capital
+  reference_docs: [DBS_4Q25_performance_summary]
+  leaves:
+    - ordinal: 1
+      canonical_leaf_id: "issued_ordinary_shares::balance_at_beginning_of_period"
+      status: active
+      full_hierarchy:
+        - Issued Ordinary shares
+        - Balance at beginning of period
+      label: Balance at beginning of period
+      leaf_id_aliases:
+        - "Issued Ordinary shares > Balance at beginning of period"
+      periods_seen: [unknown]
+    - ordinal: 2
+      canonical_leaf_id: "issued_ordinary_shares::shares_repurchased_and_cancelled"
+      status: active
+      full_hierarchy:
+        - Issued Ordinary shares
+        - Shares repurchased and cancelled
+      label: Shares repurchased and cancelled
+      leaf_id_aliases:
+        - "Issued Ordinary shares > Shares repurchased and cancelled"
+      periods_seen: [unknown]
+    - ordinal: 3
+      canonical_leaf_id: "issued_ordinary_shares::issue_of_bonus_shares"
+      status: active
+      full_hierarchy:
+        - Issued Ordinary shares
+        - Issue of bonus shares
+      label: Issue of bonus shares
+      leaf_id_aliases:
+        - "Issued Ordinary shares > Issue of bonus shares"
+      periods_seen: [unknown]
+    - ordinal: 4
+      canonical_leaf_id: "issued_ordinary_shares::balance_at_end_of_period"
+      status: active
+      full_hierarchy:
+        - Issued Ordinary shares
+        - Balance at end of period
+      label: Balance at end of period
+      leaf_id_aliases:
+        - "Issued Ordinary shares > Balance at end of period"
+      periods_seen: [unknown]
+    - ordinal: 5
+      canonical_leaf_id: "treasury_shares::balance_at_beginning_of_period"
+      status: active
+      full_hierarchy:
+        - Treasury shares
+        - Balance at beginning of period
+      label: Balance at beginning of period
+      leaf_id_aliases:
+        - "Treasury shares > Balance at beginning of period"
+      periods_seen: [unknown]
+    - ordinal: 6
+      canonical_leaf_id: "treasury_shares::purchase_of_treasury_shares"
+      status: active
+      full_hierarchy:
+        - Treasury shares
+        - Purchase of treasury shares
+      label: Purchase of treasury shares
+      leaf_id_aliases:
+        - "Treasury shares > Purchase of treasury shares"
+      periods_seen: [unknown]
+    - ordinal: 7
+      canonical_leaf_id: "treasury_shares::shares_transferred_pursuant_to_dbsh_share_plan"
+      status: active
+      full_hierarchy:
+        - Treasury shares
+        - Shares transferred pursuant to DBSH Share Plan
+      label: Shares transferred pursuant to DBSH Share Plan
+      leaf_id_aliases:
+        - "Treasury shares > Shares transferred pursuant to DBSH Share Plan"
+      periods_seen: [unknown]
+    - ordinal: 8
+      canonical_leaf_id: "treasury_shares::balance_at_end_of_period"
+      status: active
+      full_hierarchy:
+        - Treasury shares
+        - Balance at end of period
+      label: Balance at end of period
+      leaf_id_aliases:
+        - "Treasury shares > Balance at end of period"
+      periods_seen: [unknown]
+    - ordinal: 9
+      canonical_leaf_id: "treasury_shares::issue_of_bonus_shares::issued_ordinary_shares_net_of_treasury_shares"
+      status: active
+      full_hierarchy:
+        - Treasury shares
+        - Issue of bonus shares
+        - Issued Ordinary shares net of Treasury shares
+      label: Issued Ordinary shares net of Treasury shares
+      leaf_id_aliases:
+        - "Treasury shares > Issue of bonus shares > Issued Ordinary shares net of Treasury shares"
+      periods_seen: [unknown]

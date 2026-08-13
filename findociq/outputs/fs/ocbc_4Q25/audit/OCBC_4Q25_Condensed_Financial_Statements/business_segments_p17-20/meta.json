@@ -1,0 +1,100 @@
+{
+  "unit_id": "business_segments_p17-20",
+  "pages": [
+    17,
+    18,
+    19,
+    20
+  ],
+  "type": "spanning",
+  "image_used": true,
+  "usage": {
+    "ts": 0,
+    "script": 0,
+    "label": 0,
+    "model": 0,
+    "image_used": 0,
+    "prompt_tokens": 7080,
+    "output_tokens": 15896,
+    "thinking_tokens": 0,
+    "total_tokens": 22976,
+    "est_cost_usd": 0.041870000000000004
+  },
+  "chunks": 2,
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "section_ids": [
+    "business_segments"
+  ],
+  "section_titles": [
+    "13.1 Business segments"
+  ],
+  "n_tables": 6,
+  "n_rows": 77,
+  "partial": false,
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '13.1' pdf=4x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Elimination' [Business segments \u2014 At 31 Dece]",
+      "  duplicate row label x2: 'Elimination' [Business segments \u2014 At 31 Dece]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "table_drops": [
+    {
+      "title": "13.1 Business segments \u2014 Half year ended 31 December 2025",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "13.1 Business segments \u2014 Half year ended 31 December 2024",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "13.1 Business segments \u2014 Year ended 31 December 2025",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "13.1 Business segments \u2014 Year ended 31 December 2024",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    },
+    {
+      "title": "Business segments \u2014 At 31 December 2025",
+      "anchor_label": "Business segments",
+      "anchor_y": 114.0,
+      "owning_section": "13.1",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "Business segments \u2014 At 31 December 2024",
+      "anchor_label": "Business segments",
+      "anchor_y": 114.0,
+      "owning_section": "13.1",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": false
+}

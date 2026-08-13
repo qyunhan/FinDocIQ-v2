@@ -1,0 +1,278 @@
+{
+  "tables": [
+    {
+      "title": "Asset Quality and Allowances",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Mar 2025"
+        },
+        {
+          "group": null,
+          "leaf": "Mar 2024"
+        },
+        {
+          "group": null,
+          "leaf": "Dec 2024"
+        },
+        {
+          "group": null,
+          "leaf": "YoY"
+        },
+        {
+          "group": null,
+          "leaf": "QoQ"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-performing assets (NPAs)",
+          "values": [
+            {
+              "value": "2,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,040",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,869",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-4%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+2%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Non-performing loan (NPL) ratio",
+          "values": [
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.0%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.1ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total NPA coverage",
+          "values": [
+            {
+              "value": "162%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "146%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "159%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+16ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+3ppt",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allowances",
+      "label_header": "Allowances (S$ million)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1Q25"
+        },
+        {
+          "group": null,
+          "leaf": "1Q24"
+        },
+        {
+          "group": null,
+          "leaf": "4Q24"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Allowances for loans and other assets",
+          "values": [
+            {
+              "value": "212",
+              "cell_state": "reported"
+            },
+            {
+              "value": "169",
+              "cell_state": "reported"
+            },
+            {
+              "value": "208",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "of which: Impaired",
+          "values": [
+            {
+              "value": "94",
+              "cell_state": "reported"
+            },
+            {
+              "value": "180",
+              "cell_state": "reported"
+            },
+            {
+              "value": "155",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-impaired",
+          "values": [
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(11)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "53",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Credit costs",
+      "label_header": "Credit costs (bps) 1/",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1Q25"
+        },
+        {
+          "group": null,
+          "leaf": "1Q24"
+        },
+        {
+          "group": null,
+          "leaf": "4Q24"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total loans",
+          "values": [
+            {
+              "value": "24",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "21",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "of which: Impaired loans",
+          "values": [
+            {
+              "value": "11",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "1/ Credit costs refer to allowances for loans as a percentage of average loans, on annualised basis.",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

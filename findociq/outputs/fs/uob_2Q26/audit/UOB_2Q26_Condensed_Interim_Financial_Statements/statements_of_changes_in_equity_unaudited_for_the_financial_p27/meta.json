@@ -1,0 +1,67 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statements_of_changes_in_equity_unaudited_for_the_financial_p27",
+  "section_ids": [
+    "statements_of_changes_in_equity_unaudited_for_the_financial"
+  ],
+  "section_titles": [
+    "Statements of Changes in Equity (Unaudited) for the financial period ended 30 June 2026"
+  ],
+  "pages": [
+    27
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 28,
+  "usage": {
+    "ts": "2026-08-07T09:25:05",
+    "script": "extract_to_excel",
+    "label": "statements_of_changes_in_equity_unaudited_for_the_financial_p27",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3973,
+    "output_tokens": 5842,
+    "thinking_tokens": 0,
+    "total_tokens": 9815,
+    "est_cost_usd": 0.05854,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '4834' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '9733' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5011' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0346' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '0573' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.62' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '828' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '709' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '190' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '826' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '369' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '375' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '635' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '700' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Profit for the financial period' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Other comprehensive income for the finan' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Total comprehensive income for the finan' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Transfers' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Dividends' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Shares re-purchased - cancelled' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Shares re-purchased - held in treasury' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Share-based compensation' [United Overseas Bank Limited a]",
+      "  duplicate row label x2: 'Shares issued under share-based compensa' [United Overseas Bank Limited a]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

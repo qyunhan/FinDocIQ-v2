@@ -1,0 +1,602 @@
+{
+  "tables": [
+    {
+      "title": "DEPOSITS",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "30 Jun 2026"
+        },
+        {
+          "group": null,
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "30 June 2025"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits of non-bank customers",
+          "values": [
+            {
+              "value": "458,922",
+              "cell_state": "reported"
+            },
+            {
+              "value": "428,286",
+              "cell_state": "reported"
+            },
+            {
+              "value": "406,943",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits and balances of banks",
+          "values": [
+            {
+              "value": "28,941",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,280",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,908",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total deposits",
+          "values": [
+            {
+              "value": "487,863",
+              "cell_state": "reported"
+            },
+            {
+              "value": "443,566",
+              "cell_state": "reported"
+            },
+            {
+              "value": "419,851",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Total Deposits by Maturity",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Within 1 year",
+          "values": [
+            {
+              "value": "483,621",
+              "cell_state": "reported"
+            },
+            {
+              "value": "441,147",
+              "cell_state": "reported"
+            },
+            {
+              "value": "417,158",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "1 to 3 years",
+          "values": [
+            {
+              "value": "2,162",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,747",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,891",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 3 years",
+          "values": [
+            {
+              "value": "2,080",
+              "cell_state": "reported"
+            },
+            {
+              "value": "672",
+              "cell_state": "reported"
+            },
+            {
+              "value": "802",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "487,863",
+              "cell_state": "reported"
+            },
+            {
+              "value": "443,566",
+              "cell_state": "reported"
+            },
+            {
+              "value": "419,851",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Non-Bank Deposits by Product",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "175,095",
+              "cell_state": "reported"
+            },
+            {
+              "value": "166,140",
+              "cell_state": "reported"
+            },
+            {
+              "value": "164,294",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Savings deposits",
+          "values": [
+            {
+              "value": "109,358",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105,869",
+              "cell_state": "reported"
+            },
+            {
+              "value": "100,708",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "116,763",
+              "cell_state": "reported"
+            },
+            {
+              "value": "111,441",
+              "cell_state": "reported"
+            },
+            {
+              "value": "101,918",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "57,706",
+              "cell_state": "reported"
+            },
+            {
+              "value": "44,836",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,023",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "458,922",
+              "cell_state": "reported"
+            },
+            {
+              "value": "428,286",
+              "cell_state": "reported"
+            },
+            {
+              "value": "406,943",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Non-Bank Deposits by Currency",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore Dollar",
+          "values": [
+            {
+              "value": "167,916",
+              "cell_state": "reported"
+            },
+            {
+              "value": "162,472",
+              "cell_state": "reported"
+            },
+            {
+              "value": "155,744",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "United States Dollar",
+          "values": [
+            {
+              "value": "158,733",
+              "cell_state": "reported"
+            },
+            {
+              "value": "146,229",
+              "cell_state": "reported"
+            },
+            {
+              "value": "139,806",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Malaysian Ringgit",
+          "values": [
+            {
+              "value": "22,448",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22,241",
+              "cell_state": "reported"
+            },
+            {
+              "value": "20,708",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Indonesian Rupiah",
+          "values": [
+            {
+              "value": "11,560",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,829",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,437",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Hong Kong Dollar",
+          "values": [
+            {
+              "value": "39,732",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35,094",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,121",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Chinese Renminbi",
+          "values": [
+            {
+              "value": "15,234",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12,390",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8,753",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "43,299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38,031",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32,374",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "",
+          "values": [
+            {
+              "value": "458,922",
+              "cell_state": "reported"
+            },
+            {
+              "value": "428,286",
+              "cell_state": "reported"
+            },
+            {
+              "value": "406,943",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Deposits of non-bank customers"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Deposits and balances of banks"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Total deposits"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Total Deposits by Maturity"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Within 1 year"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "1 to 3 years"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Over 3 years"
+          },
+          {
+            "line_id": 17,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Non-Bank Deposits by Product"
+          },
+          {
+            "line_id": 20,
+            "indent": 1,
+            "label_clean": "Fixed deposits"
+          },
+          {
+            "line_id": 21,
+            "indent": 1,
+            "label_clean": "Savings deposits"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Current accounts"
+          },
+          {
+            "line_id": 23,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 24,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Non-Bank Deposits by Currency"
+          },
+          {
+            "line_id": 27,
+            "indent": 1,
+            "label_clean": "Singapore Dollar"
+          },
+          {
+            "line_id": 28,
+            "indent": 1,
+            "label_clean": "United States Dollar"
+          },
+          {
+            "line_id": 29,
+            "indent": 1,
+            "label_clean": "Malaysian Ringgit"
+          },
+          {
+            "line_id": 30,
+            "indent": 1,
+            "label_clean": "Indonesian Rupiah"
+          },
+          {
+            "line_id": 31,
+            "indent": 1,
+            "label_clean": "Hong Kong Dollar"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Chinese Renminbi"
+          },
+          {
+            "line_id": 33,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 34,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "DEPOSITS",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

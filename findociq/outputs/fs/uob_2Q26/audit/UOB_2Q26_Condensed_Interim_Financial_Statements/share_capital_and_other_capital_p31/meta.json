@@ -1,0 +1,71 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "share_capital_and_other_capital_p31",
+  "section_ids": [
+    "share_capital_and_other_capital"
+  ],
+  "section_titles": [
+    "3 Share Capital and Other Capital"
+  ],
+  "pages": [
+    31
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 17,
+  "usage": {
+    "ts": "2026-08-07T09:25:22",
+    "script": "extract_to_excel",
+    "label": "share_capital_and_other_capital_p31",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3907,
+    "output_tokens": 2932,
+    "thinking_tokens": 0,
+    "total_tokens": 6839,
+    "est_cost_usd": 0.03225,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '667413' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '685923' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '664080' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '650882' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '652170' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.58' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '2.55' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '4.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '5.25' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3.00' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '000' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '292' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '351' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '281' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '382' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '888' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '852' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Balance at beginning of period' [3 Share Capital and Other Capi]",
+      "  duplicate row label x2: 'Balance at end of period' [3 Share Capital and Other Capi]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-shift: 'Balance at beginning of period' printed bands [1,3] -> extracted slots [1,2,3,4]",
+      "  col-shift: 'Balance at end of period' printed bands [1,3] -> extracted slots [1,2,3,4]",
+      "  col-shift: 'Ordinary share capital' printed bands [1,3] -> extracted slots [1,2,3,4]",
+      "  col-repair: declined for 'Balance at beginning of period' \u2014 printed token '1' maps to 2 bands (need exactly 1)",
+      "  col-repair: declined for 'Balance at end of period' \u2014 printed token '1' maps to 2 bands (need exactly 1)",
+      "  col-repair: declined for 'Ordinary share capital' \u2014 printed token '1' maps to 2 bands (need exactly 1)"
+    ]
+  },
+  "crop": null
+}

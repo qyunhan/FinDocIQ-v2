@@ -1,0 +1,230 @@
+{
+  "tables": [
+    {
+      "title": "5.2 Comparison of Modelled and Standardised RWA at Risk Level — 30 Sep 2025",
+      "label_header": "$m",
+      "continued_from_previous": false,
+      "section_id": "5.2",
+      "columns": [
+        {
+          "group": "RWA",
+          "leaf": "RWA for portfolios where the Reporting Bank uses modelled approaches"
+        },
+        {
+          "group": "RWA",
+          "leaf": "RWA for portfolios where the Reporting Bank uses standardised approaches"
+        },
+        {
+          "group": "RWA",
+          "leaf": "Total RWA (a + b)"
+        },
+        {
+          "group": "RWA",
+          "leaf": "Total RWA calculated using only standardised approaches"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": "1",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit risk (excluding counterparty credit risk)",
+          "values": [
+            {
+              "value": "224,354",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40,366",
+              "cell_state": "reported"
+            },
+            {
+              "value": "264,720",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450,142",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "2",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Counterparty credit risk",
+          "values": [
+            {
+              "value": "12,991",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,352",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15,343",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,697",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "3",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit valuation adjustment",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "11,511",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,511",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11,388",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "4",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Securitisation exposures in the banking book",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "1,157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,157",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "5",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Market risk",
+          "values": [
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "28,758",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,758",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,758",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "6",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operational risk",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "37,817",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37,817",
+              "cell_state": "reported"
+            },
+            {
+              "value": "37,817",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "7",
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Residual RWA",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "grey"
+            },
+            {
+              "value": "7,297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,297",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,297",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "8",
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "237,345",
+              "cell_state": "reported"
+            },
+            {
+              "value": "129,258",
+              "cell_state": "reported"
+            },
+            {
+              "value": "366,603",
+              "cell_state": "reported"
+            },
+            {
+              "value": "565,256",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "Third Quarter 2025 Results Press Release",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "OCBC Group Third Quarter 2025 Net Profit Rose 9% above the Previous Quarter to S$1.98 billion",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Nine months 2025 net profit at S$5.68 billion",
+      "page": 1,
+      "level": 3,
+      "parent_id": "sec_002"
+    },
+    {
+      "id": "sec_004",
+      "title": "3Q25 Performance Highlights",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_005",
+      "title": "Third Quarter 2025 Performance",
+      "page": 2,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_006",
+      "title": "3Q25 Quarter-on-Quarter Performance",
+      "page": 2,
+      "level": 3,
+      "parent_id": "sec_005"
+    },
+    {
+      "id": "sec_007",
+      "title": "3Q25 Year-on-Year Performance",
+      "page": 3,
+      "level": 3,
+      "parent_id": "sec_005"
+    },
+    {
+      "id": "sec_008",
+      "title": "Nine Months 2025 Performance",
+      "page": 4,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_009",
+      "title": "9M25 Year-on-Year Performance",
+      "page": 4,
+      "level": 3,
+      "parent_id": "sec_008"
+    },
+    {
+      "id": "sec_010",
+      "title": "Asset Quality and Allowances",
+      "page": 5,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_011",
+      "title": "Non-performing assets (\u201cNPAs\u201d)",
+      "page": 5,
+      "level": 3,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_012",
+      "title": "Allowances",
+      "page": 5,
+      "level": 3,
+      "parent_id": "sec_010"
+    },
+    {
+      "id": "sec_013",
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "page": 6,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_014",
+      "title": "Message from Group CEO, Helen Wong",
+      "page": 7,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_015",
+      "title": "FINANCIAL HIGHLIGHTS (unaudited)",
+      "page": 8,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_016",
+      "title": "Further Information",
+      "page": 9,
+      "level": 2,
+      "parent_id": "sec_001"
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 5162,
+    "output_tokens": 1034,
+    "thinking_tokens": null
+  }
+}

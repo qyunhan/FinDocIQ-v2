@@ -1,0 +1,177 @@
+{
+  "tables": [
+    {
+      "title": "Per share data2,7 ($)",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "3rd Qtr 2025"
+        },
+        {
+          "group": null,
+          "leaf": "3rd Qtr 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "2nd Qtr 2025"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        },
+        {
+          "group": null,
+          "leaf": "9 Mths 2025"
+        },
+        {
+          "group": null,
+          "leaf": "9 Mths 2024"
+        },
+        {
+          "group": null,
+          "leaf": "% chg"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Per basic and diluted share",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "– earnings1",
+          "values": [
+            {
+              "value": "4.12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3.98",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "4.07",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "– reported earnings",
+          "values": [
+            {
+              "value": "4.12",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.21",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3.98",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "4.07",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4.09",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "– net book value4",
+          "values": [
+            {
+              "value": "24.28",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22.81",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "23.82",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "24.28",
+              "cell_state": "reported"
+            },
+            {
+              "value": "22.81",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

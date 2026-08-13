@@ -1,0 +1,892 @@
+{
+  "tables": [
+    {
+      "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "31 Dec 2022",
+          "leaf": "NPA ($m)"
+        },
+        {
+          "group": "31 Dec 2022",
+          "leaf": "NPL (% of loans)"
+        },
+        {
+          "group": "31 Dec 2022",
+          "leaf": "SP³ ($m)"
+        },
+        {
+          "group": "30 Jun 2022",
+          "leaf": "NPA ($m)"
+        },
+        {
+          "group": "30 Jun 2022",
+          "leaf": "NPL (% of loans)"
+        },
+        {
+          "group": "30 Jun 2022",
+          "leaf": "SP³ ($m)"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "NPA ($m)"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "NPL (% of loans)"
+        },
+        {
+          "group": "31 Dec 2021",
+          "leaf": "SP³ ($m)"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By business unit",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Consumer Banking/ Wealth Management",
+          "values": [
+            {
+              "value": "539",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "147",
+              "cell_state": "reported"
+            },
+            {
+              "value": "651",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "144",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Institutional Banking and Others",
+          "values": [
+            {
+              "value": "4,220",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,157",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,895",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,599",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,639",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,401",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total non-performing loans (NPL)",
+          "values": [
+            {
+              "value": "4,759",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,491",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,746",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,290",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,545",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt securities, contingent liabilities & others",
+          "values": [
+            {
+              "value": "366",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "207",
+              "cell_state": "reported"
+            },
+            {
+              "value": "417",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "381",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total non-performing assets (NPA)",
+          "values": [
+            {
+              "value": "5,125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,506",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,908",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,955",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,926",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By geography¹",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore",
+          "values": [
+            {
+              "value": "2,289",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,222",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,774",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,445",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,873",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,434",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Hong Kong",
+          "values": [
+            {
+              "value": "794",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "374",
+              "cell_state": "reported"
+            },
+            {
+              "value": "813",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "430",
+              "cell_state": "reported"
+            },
+            {
+              "value": "686",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "421",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of Greater China",
+          "values": [
+            {
+              "value": "538",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "175",
+              "cell_state": "reported"
+            },
+            {
+              "value": "396",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "135",
+              "cell_state": "reported"
+            },
+            {
+              "value": "343",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "78",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "South and Southeast Asia",
+          "values": [
+            {
+              "value": "716",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "468",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,008",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "528",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,151",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "555",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rest of the World",
+          "values": [
+            {
+              "value": "422",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60",
+              "cell_state": "reported"
+            },
+            {
+              "value": "500",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "208",
+              "cell_state": "reported"
+            },
+            {
+              "value": "237",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "57",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total non-performing loans (NPL)",
+          "values": [
+            {
+              "value": "4,759",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,491",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,746",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,290",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,545",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Debt securities, contingent liabilities & others",
+          "values": [
+            {
+              "value": "366",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "207",
+              "cell_state": "reported"
+            },
+            {
+              "value": "417",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "209",
+              "cell_state": "reported"
+            },
+            {
+              "value": "559",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "381",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total non-performing assets (NPA)",
+          "values": [
+            {
+              "value": "5,125",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,506",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,908",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,955",
+              "cell_state": "reported"
+            },
+            {
+              "value": "5,849",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-",
+              "cell_state": "nil"
+            },
+            {
+              "value": "2,926",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Loss Allowance Coverage",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL² Stage 3 (SP)",
+          "values": [
+            {
+              "value": "2,506",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "2,955",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "2,926",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ECL² Stage 1 and 2 (GP)",
+          "values": [
+            {
+              "value": "3,736",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3,737",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "3,876",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances",
+          "values": [
+            {
+              "value": "6,242",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "6,692",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "6,802",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances / NPA",
+          "values": [
+            {
+              "value": "122%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "113%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "116%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total allowances / unsecured NPA",
+          "values": [
+            {
+              "value": "215%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "199%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "214%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:\n1 NPLs by geography are determined according to the location where the borrower is incorporated.\n2 Refers to expected credit loss.\n3 Refers to Expected Credit Loss Stage 3.",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

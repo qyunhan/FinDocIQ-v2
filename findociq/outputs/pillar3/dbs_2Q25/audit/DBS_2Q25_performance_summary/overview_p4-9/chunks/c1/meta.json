@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "overview_p4-9/chunks/c1",
+  "section_ids": [
+    "overview"
+  ],
+  "section_titles": [
+    "OVERVIEW"
+  ],
+  "pages": [
+    4,
+    5
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 3,
+  "n_rows": 43,
+  "usage": {
+    "ts": "2026-07-13T17:10:05",
+    "script": "extract_to_excel",
+    "label": "overview_p4-9/chunks/c1",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3497,
+    "output_tokens": 7739,
+    "thinking_tokens": 0,
+    "total_tokens": 11236,
+    "est_cost_usd": 0.0204
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '100' pdf=2x json=1x (missing from extraction)",
+      "  deficit: '456' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Net interest income' [Selected income statement item]",
+      "  duplicate row label x2: 'Constant-currency change' [Selected balance sheet items (]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

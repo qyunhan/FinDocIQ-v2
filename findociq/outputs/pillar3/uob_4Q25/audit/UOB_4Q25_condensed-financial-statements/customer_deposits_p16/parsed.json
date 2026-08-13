@@ -1,0 +1,602 @@
+{
+  "tables": [
+    {
+      "title": "Customer Deposits",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "Dec-25",
+          "leaf": "$m"
+        },
+        {
+          "group": "Jun-25",
+          "leaf": "$m"
+        },
+        {
+          "group": "Dec-24",
+          "leaf": "$m"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By product",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fixed deposits",
+          "values": [
+            {
+              "value": "162,752",
+              "cell_state": "reported"
+            },
+            {
+              "value": "159,966",
+              "cell_state": "reported"
+            },
+            {
+              "value": "166,807",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Savings deposits",
+          "values": [
+            {
+              "value": "132,668",
+              "cell_state": "reported"
+            },
+            {
+              "value": "125,299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118,033",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Current accounts",
+          "values": [
+            {
+              "value": "115,952",
+              "cell_state": "reported"
+            },
+            {
+              "value": "103,518",
+              "cell_state": "reported"
+            },
+            {
+              "value": "102,611",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "14,566",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,293",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16,527",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "425,938",
+              "cell_state": "reported"
+            },
+            {
+              "value": "405,076",
+              "cell_state": "reported"
+            },
+            {
+              "value": "403,978",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By maturity",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Within 1 year",
+          "values": [
+            {
+              "value": "423,890",
+              "cell_state": "reported"
+            },
+            {
+              "value": "402,364",
+              "cell_state": "reported"
+            },
+            {
+              "value": "401,039",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 1 year but within 3 years",
+          "values": [
+            {
+              "value": "1,596",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,382",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 3 years but within 5 years",
+          "values": [
+            {
+              "value": "152",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "148",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 5 years",
+          "values": [
+            {
+              "value": "300",
+              "cell_state": "reported"
+            },
+            {
+              "value": "416",
+              "cell_state": "reported"
+            },
+            {
+              "value": "409",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "425,938",
+              "cell_state": "reported"
+            },
+            {
+              "value": "405,076",
+              "cell_state": "reported"
+            },
+            {
+              "value": "403,978",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By currency",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore Dollar",
+          "values": [
+            {
+              "value": "196,194",
+              "cell_state": "reported"
+            },
+            {
+              "value": "184,487",
+              "cell_state": "reported"
+            },
+            {
+              "value": "182,509",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "US Dollar",
+          "values": [
+            {
+              "value": "110,767",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105,074",
+              "cell_state": "reported"
+            },
+            {
+              "value": "104,710",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Malaysian Ringgit",
+          "values": [
+            {
+              "value": "35,371",
+              "cell_state": "reported"
+            },
+            {
+              "value": "33,413",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32,680",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Thai Baht",
+          "values": [
+            {
+              "value": "29,420",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27,082",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28,205",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Indonesian Rupiah",
+          "values": [
+            {
+              "value": "6,732",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,662",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6,765",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "47,454",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48,358",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49,109",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "425,938",
+              "cell_state": "reported"
+            },
+            {
+              "value": "405,076",
+              "cell_state": "reported"
+            },
+            {
+              "value": "403,978",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Group Loan/Deposit ratio (%)",
+          "values": [
+            {
+              "value": "81.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "82.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Singapore Dollar Loan/Deposit ratio (%)",
+          "values": [
+            {
+              "value": "77.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "79.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "US Dollar Loan/Deposit ratio (%)",
+          "values": [
+            {
+              "value": "59.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "55.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "56.7",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "By product"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Fixed deposits"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Savings deposits"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Current accounts"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 13,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 14,
+            "indent": 0,
+            "label_clean": "By maturity"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Within 1 year"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Over 1 year but within 3 years"
+          },
+          {
+            "line_id": 17,
+            "indent": 0,
+            "label_clean": "Over 3 years but within 5 years"
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Over 5 years"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "By currency"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Singapore Dollar"
+          },
+          {
+            "line_id": 22,
+            "indent": 0,
+            "label_clean": "US Dollar"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Malaysian Ringgit"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Thai Baht"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Indonesian Rupiah"
+          },
+          {
+            "line_id": 26,
+            "indent": 0,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 27,
+            "indent": 0,
+            "label_clean": "Total"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Group Loan/Deposit ratio (%)"
+          },
+          {
+            "line_id": 29,
+            "indent": 0,
+            "label_clean": "Singapore Dollar Loan/Deposit ratio (%)"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "US Dollar Loan/Deposit ratio (%)"
+          }
+        ],
+        "title_clean": "Customer Deposits",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

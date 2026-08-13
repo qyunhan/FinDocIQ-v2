@@ -1,0 +1,43 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "average_balance_sheet_p13",
+  "section_ids": [
+    "average_balance_sheet"
+  ],
+  "section_titles": [
+    "Average Balance Sheet"
+  ],
+  "pages": [
+    13
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 26,
+  "usage": {
+    "ts": "2026-07-16T14:03:13",
+    "script": "extract_to_excel",
+    "label": "average_balance_sheet_p13",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2924,
+    "output_tokens": 4343,
+    "thinking_tokens": 0,
+    "total_tokens": 7267,
+    "est_cost_usd": 0.04347,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

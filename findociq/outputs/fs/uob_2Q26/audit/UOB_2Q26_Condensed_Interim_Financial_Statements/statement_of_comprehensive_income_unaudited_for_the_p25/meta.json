@@ -1,0 +1,42 @@
+{
+  "document": "UOB_2Q26_Condensed_Interim_Financial_Statements.pdf",
+  "bank": "United Overseas Bank Limited",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statement_of_comprehensive_income_unaudited_for_the_p25",
+  "section_ids": [
+    "statement_of_comprehensive_income_unaudited_for_the"
+  ],
+  "section_titles": [
+    "Statement of Comprehensive Income (Unaudited) for the financial period ended 30 June 2026"
+  ],
+  "pages": [
+    25
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 21,
+  "usage": {
+    "ts": "2026-08-07T09:24:52",
+    "script": "extract_to_excel",
+    "label": "statement_of_comprehensive_income_unaudited_for_the_p25",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3962,
+    "output_tokens": 2412,
+    "thinking_tokens": 0,
+    "total_tokens": 6374,
+    "est_cost_usd": 0.02765,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

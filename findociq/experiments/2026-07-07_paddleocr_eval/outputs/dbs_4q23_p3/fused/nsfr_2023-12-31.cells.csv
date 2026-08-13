@@ -1,0 +1,38 @@
+page,line_no,label,v1,v2,v3,v4,v5
+75,,,,,,,
+75,1,Capital:,"65,326",-,-,-,"65,326"
+75,2,Regulatorycapital,"65,194",-,-,-,"65,194"
+75,3,Other capital instruments,132,-,-,-,132
+75,4,Retail deposits anddeposits from small business customers:,"182,645","100,377","5,939",201,"264,210"
+75,5,Stabledeposits,"72,506","6,288",94,13,"74,956"
+75,6,Less stabledeposits,"110,139","94,089","5,845",188,"189,254"
+75,7,Wholesalefunding:,"111,005","191,421","12,471","25,866","116,757"
+75,8,Operational deposits,"38,977",-,-,-,"19,489"
+75,9,Other wholesalefunding,"72,028","191,421","12,471","25,866","97,268"
+75,10,Liabilities withmatchinginterdependent assets,-,986,-,-,-
+75,11,Other liabilities:,"15,536",,"4,535",,"1,777"
+75,12,NSFR derivativeliabilities,,"3,763",,,
+75,13,All other liabilities andequitynot included intheabovecategories,"15,536",772,-,-,"1,777"
+75,14,Total ASF,,,,,"448,070"
+75,,,,,,,
+75,15,Total NSFR high-qualityliquidassets (HQLA),,,,,"16,903"
+75,16,for Deposits heldat other financial institutions operational purposes,"1,179",-,-,-,589
+75,17,Performingloans andsecurities:,"16,437","212,896","42,972","287,142","331,130"
+75,18,Performingloans tofinancial institutions securedbyLevel 1HQLA,-,"18,391",787,531,"2,764"
+75,19,Performingloans tofinancial institutions securedbynon-Level 1HQLAand unsecuredperformingloans tofinancial institutions,"8,783","27,408","8,016","11,893","21,345"
+75,20,"Performingloans tonon-financial corporateclients, loans toretail and small business customers, andloans to sovereigns, central banks andPSEs, of which:","7,654","158,146","25,087","163,054","214,989"
+75,21,Witharisk weight of less thanor equal to35% under MASNotice637’s standardisedapproachtocredit risk,-,"64,868","2,074","5,719","42,883"
+75,22,"Performingresidential mortgages, of which:",-,"2,495","1,893","81,900","59,910"
+76,,,No maturity(1),Unweightedvaluebyresidual <6months,maturity 6monthsto< 1yr,≥1yr,WEIGHTED VALUE
+76,23,Witharisk weight of less thanor equal to35% under MASNotice637’s standardisedapproachtocredit risk,-,"2,495","1,867","80,713","58,879"
+76,24,"Securities that arenot indefault and donot qualifyas HQLA, including exchange-tradedequities",-,"6,456","7,189","29,764","32,122"
+76,25,Assets withmatchinginterdependent liabilities,-,986,-,-,-
+76,26,Other assets:,"16,222","27,775",,,"28,087"
+76,27,"Physical tradecommodities, including gold",22,-,-,-,19
+76,28,Assets postedas initial marginfor derivativecontracts andcontributions to default funds of CCPs,-,"2,579",,,"2,192"
+76,29,NSFR derivativeassets,-,"8,754",,,"4,991"
+76,30,NSFR derivativeliabilities before deductionof variationmarginposted,-,"10,985",,,549
+76,31,All other assets not includedintheabove categories,"16,200","1,321",-,"4,136","20,336"
+76,32,Off-balancesheet items,-,"464,083",,,"3,806"
+76,33,Total RSF,,,,,"380,515"
+76,34,Net StableFundingRatio(%),,,,,118

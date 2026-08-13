@@ -1,0 +1,346 @@
+{
+  "doc_id": "OCBC_2Q25_Unaudited_Interim_Financial_Statements",
+  "source_pdf": "findociq/data/sources/financial_statements/OCBC/2025/2Q25/OCBC_2Q25_Unaudited_Interim_Financial_Statements.pdf",
+  "model": "gemini-3.5-flash",
+  "status": "ok",
+  "sections": [
+    {
+      "title": "To Our Shareholders",
+      "page": 1,
+      "level": 1
+    },
+    {
+      "title": "Unaudited Financial Results for the Half Year Ended 30 June 2025",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Ordinary Dividend",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Closure of Books",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "Scrip Dividend Scheme",
+      "page": 1,
+      "level": 2
+    },
+    {
+      "title": "CONTENTS",
+      "page": 3,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED INCOME STATEMENT",
+      "page": 4,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "page": 5,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED BALANCE SHEETS",
+      "page": 6,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP",
+      "page": 7,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - BANK",
+      "page": 9,
+      "level": 1
+    },
+    {
+      "title": "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "page": 10,
+      "level": 1
+    },
+    {
+      "title": "NOTES TO THE UNAUDITED CONDENSED INTERIM FINANCIAL STATEMENTS",
+      "page": 11,
+      "level": 1
+    },
+    {
+      "title": "1. General",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "title": "2. Basis of preparation",
+      "page": 11,
+      "level": 2
+    },
+    {
+      "title": "2.1 Statement of compliance",
+      "page": 11,
+      "level": 3
+    },
+    {
+      "title": "2.2 Basis of presentation",
+      "page": 11,
+      "level": 3
+    },
+    {
+      "title": "2.3 Use of estimates and judgements",
+      "page": 11,
+      "level": 3
+    },
+    {
+      "title": "Impairment of financial assets",
+      "page": 11,
+      "level": 4
+    },
+    {
+      "title": "Allowances for non-credit-impaired loans to customers",
+      "page": 12,
+      "level": 4
+    },
+    {
+      "title": "Sensitivity of ECL",
+      "page": 12,
+      "level": 4
+    },
+    {
+      "title": "Allowances for credit-impaired loans to customers",
+      "page": 12,
+      "level": 4
+    },
+    {
+      "title": "Impairment of goodwill and other intangible assets",
+      "page": 12,
+      "level": 4
+    },
+    {
+      "title": "2.4 Changes in accounting policies",
+      "page": 12,
+      "level": 3
+    },
+    {
+      "title": "SFRS(I) 18 Presentation and Disclosure in Financial Statements",
+      "page": 13,
+      "level": 4
+    },
+    {
+      "title": "3. Net interest income",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "4. Fees and commissions (net)",
+      "page": 13,
+      "level": 2
+    },
+    {
+      "title": "5. Other income",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "6. Other operating expenses",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "7. Allowances for loans and other assets",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "8. Dividends/distributions",
+      "page": 14,
+      "level": 2
+    },
+    {
+      "title": "9. Share capital",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "10. Deposits and balances of non-bank customers and banks",
+      "page": 15,
+      "level": 2
+    },
+    {
+      "title": "11. Debt issued",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "12. Loans to customers",
+      "page": 16,
+      "level": 2
+    },
+    {
+      "title": "13. Segment information",
+      "page": 17,
+      "level": 2
+    },
+    {
+      "title": "13.1 Business segments",
+      "page": 17,
+      "level": 3
+    },
+    {
+      "title": "Global Consumer/Private Banking",
+      "page": 19,
+      "level": 4
+    },
+    {
+      "title": "Global Wholesale Banking",
+      "page": 19,
+      "level": 4
+    },
+    {
+      "title": "Global Markets",
+      "page": 19,
+      "level": 4
+    },
+    {
+      "title": "Insurance",
+      "page": 19,
+      "level": 4
+    },
+    {
+      "title": "Others",
+      "page": 19,
+      "level": 4
+    },
+    {
+      "title": "13.2 Geographical segments",
+      "page": 20,
+      "level": 3
+    },
+    {
+      "title": "14. Fair values of financial instruments",
+      "page": 21,
+      "level": 2
+    },
+    {
+      "title": "14.1 Valuation governance framework",
+      "page": 21,
+      "level": 3
+    },
+    {
+      "title": "Bid Offer Adjustments",
+      "page": 21,
+      "level": 4
+    },
+    {
+      "title": "Model Adjustments",
+      "page": 21,
+      "level": 4
+    },
+    {
+      "title": "Day 1 Profit or Loss Adjustments",
+      "page": 21,
+      "level": 4
+    },
+    {
+      "title": "Credit Valuation Adjustments",
+      "page": 21,
+      "level": 4
+    },
+    {
+      "title": "Collateral Valuation Adjustments",
+      "page": 21,
+      "level": 4
+    },
+    {
+      "title": "Parameter Uncertainty Adjustments",
+      "page": 21,
+      "level": 4
+    },
+    {
+      "title": "14.2 Fair values",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "Financial assets",
+      "page": 22,
+      "level": 4
+    },
+    {
+      "title": "Financial liabilities",
+      "page": 22,
+      "level": 4
+    },
+    {
+      "title": "14.3 Fair value hierarchy",
+      "page": 22,
+      "level": 3
+    },
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments",
+      "page": 24,
+      "level": 4
+    },
+    {
+      "title": "Movements in Level 3 financial assets and liabilities",
+      "page": 25,
+      "level": 4
+    },
+    {
+      "title": "Movements in Level 3 non-financial assets",
+      "page": 26,
+      "level": 4
+    },
+    {
+      "title": "15. Great Eastern Holdings Limited \u2013 Proposed Voluntary Delisting",
+      "page": 26,
+      "level": 2
+    },
+    {
+      "title": "Other Information Required by Listing Rule Appendix 7.2",
+      "page": 27,
+      "level": 1
+    },
+    {
+      "title": "OTHER INFORMATION",
+      "page": 28,
+      "level": 1
+    },
+    {
+      "title": "1. Review",
+      "page": 28,
+      "level": 2
+    },
+    {
+      "title": "2. Review of the performance of the Group for the six-month period ended 30 June 2025",
+      "page": 28,
+      "level": 2
+    },
+    {
+      "title": "3. Dividend information",
+      "page": 28,
+      "level": 2
+    },
+    {
+      "title": "4. Interested person transactions",
+      "page": 28,
+      "level": 2
+    },
+    {
+      "title": "5. Undertaking from directors and executive officers",
+      "page": 28,
+      "level": 2
+    },
+    {
+      "title": "CONFIRMATION BY THE BOARD",
+      "page": 29,
+      "level": 1
+    }
+  ],
+  "contents_page_number": 3,
+  "contents_page_text": "CONTENTS\nUnaudited Condensed Interim Financial Statements\nUnaudited ConsolidatedIncome Statement 2\nUnaudited Consolidated Statement of Comprehensive Income 3\nUnaudited Balance Sheets 4\nUnaudited Statement of Changes in Equity \u2013Group 5\nUnaudited Statement of Changes in Equity \u2013Bank 7\nUnaudited Consolidated Cash Flow Statement 8\nNotes to the Unaudited Condensed Interim Financial Statements 9\nOther Information Required by Listing Rule Appendix 7.2 25\nAttachment: Confirmation by the Board\n1",
+  "n_pages": 29
+}

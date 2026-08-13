@@ -1,0 +1,458 @@
+{
+  "sections": [
+    {
+      "id": "sec_001",
+      "title": "To Our Shareholders",
+      "page": 1,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_002",
+      "title": "Unaudited Financial Results for the Half Year Ended 30 June 2026",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_003",
+      "title": "Ordinary Dividend",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_004",
+      "title": "Closure of Books",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_005",
+      "title": "Scrip Dividend Scheme",
+      "page": 1,
+      "level": 2,
+      "parent_id": "sec_001"
+    },
+    {
+      "id": "sec_006",
+      "title": "UNAUDITED CONSOLIDATED INCOME STATEMENT",
+      "page": 4,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_007",
+      "title": "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "page": 5,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_008",
+      "title": "UNAUDITED BALANCE SHEETS",
+      "page": 6,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_009",
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP",
+      "page": 7,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_010",
+      "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY - BANK",
+      "page": 9,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_011",
+      "title": "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT",
+      "page": 10,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_012",
+      "title": "NOTES TO THE UNAUDITED CONDENSED INTERIM FINANCIAL STATEMENTS",
+      "page": 11,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_013",
+      "title": "1. General",
+      "page": 11,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_014",
+      "title": "2. Basis of preparation",
+      "page": 11,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_015",
+      "title": "2.1 Statement of compliance",
+      "page": 11,
+      "level": 3,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_016",
+      "title": "2.2 Basis of presentation",
+      "page": 11,
+      "level": 3,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_017",
+      "title": "2.3 Use of estimates and judgements",
+      "page": 11,
+      "level": 3,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_018",
+      "title": "Impairment of financial assets",
+      "page": 11,
+      "level": 4,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_019",
+      "title": "Allowances for non-credit-impaired loans to customers",
+      "page": 12,
+      "level": 5,
+      "parent_id": "sec_018"
+    },
+    {
+      "id": "sec_020",
+      "title": "Sensitivity of ECL",
+      "page": 12,
+      "level": 5,
+      "parent_id": "sec_018"
+    },
+    {
+      "id": "sec_021",
+      "title": "Allowances for credit-impaired loans to customers",
+      "page": 12,
+      "level": 5,
+      "parent_id": "sec_018"
+    },
+    {
+      "id": "sec_022",
+      "title": "Impairment of goodwill and other intangible assets",
+      "page": 12,
+      "level": 4,
+      "parent_id": "sec_017"
+    },
+    {
+      "id": "sec_023",
+      "title": "2.4 Changes in accounting policies",
+      "page": 12,
+      "level": 3,
+      "parent_id": "sec_014"
+    },
+    {
+      "id": "sec_024",
+      "title": "SFRS(I) 18 Presentation and Disclosure in Financial Statements",
+      "page": 13,
+      "level": 4,
+      "parent_id": "sec_023"
+    },
+    {
+      "id": "sec_025",
+      "title": "3. Net interest income",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_026",
+      "title": "4. Fees and commissions (net)",
+      "page": 13,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_027",
+      "title": "5. Other income",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_028",
+      "title": "6. Other operating expenses",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_029",
+      "title": "7. Allowances for loans and other assets",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_030",
+      "title": "8. Dividends/distributions",
+      "page": 14,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_031",
+      "title": "9. Share capital",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_032",
+      "title": "10. Deposits and balances of non-bank customers and banks",
+      "page": 15,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_033",
+      "title": "11. Debt issued",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_034",
+      "title": "12. Loans to customers",
+      "page": 16,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_035",
+      "title": "13. Segment information",
+      "page": 17,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_036",
+      "title": "13.1 Business segments",
+      "page": 17,
+      "level": 3,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_037",
+      "title": "Global Consumer/Private Banking",
+      "page": 19,
+      "level": 4,
+      "parent_id": "sec_036"
+    },
+    {
+      "id": "sec_038",
+      "title": "Global Wholesale Banking",
+      "page": 19,
+      "level": 4,
+      "parent_id": "sec_036"
+    },
+    {
+      "id": "sec_039",
+      "title": "Global Markets",
+      "page": 19,
+      "level": 4,
+      "parent_id": "sec_036"
+    },
+    {
+      "id": "sec_040",
+      "title": "Insurance",
+      "page": 19,
+      "level": 4,
+      "parent_id": "sec_036"
+    },
+    {
+      "id": "sec_041",
+      "title": "Others",
+      "page": 19,
+      "level": 4,
+      "parent_id": "sec_036"
+    },
+    {
+      "id": "sec_042",
+      "title": "13.2 Geographical segments",
+      "page": 20,
+      "level": 3,
+      "parent_id": "sec_035"
+    },
+    {
+      "id": "sec_043",
+      "title": "14. Fair values of financial instruments",
+      "page": 21,
+      "level": 2,
+      "parent_id": "sec_012"
+    },
+    {
+      "id": "sec_044",
+      "title": "14.1 Valuation governance framework",
+      "page": 21,
+      "level": 3,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_045",
+      "title": "Bid Offer Adjustments",
+      "page": 21,
+      "level": 4,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_046",
+      "title": "Model Risk Adjustments",
+      "page": 21,
+      "level": 4,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_047",
+      "title": "Day 1 Profit or Loss Adjustments",
+      "page": 21,
+      "level": 4,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_048",
+      "title": "Credit Valuation Adjustments",
+      "page": 21,
+      "level": 4,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_049",
+      "title": "Collateral Valuation Adjustments",
+      "page": 21,
+      "level": 4,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_050",
+      "title": "Parameter Uncertainty Adjustments",
+      "page": 21,
+      "level": 4,
+      "parent_id": "sec_044"
+    },
+    {
+      "id": "sec_051",
+      "title": "14.2 Fair values",
+      "page": 22,
+      "level": 3,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_052",
+      "title": "Financial assets",
+      "page": 22,
+      "level": 4,
+      "parent_id": "sec_051"
+    },
+    {
+      "id": "sec_053",
+      "title": "Financial liabilities",
+      "page": 22,
+      "level": 4,
+      "parent_id": "sec_051"
+    },
+    {
+      "id": "sec_054",
+      "title": "14.3 Fair value hierarchy",
+      "page": 22,
+      "level": 3,
+      "parent_id": "sec_043"
+    },
+    {
+      "id": "sec_055",
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments",
+      "page": 24,
+      "level": 4,
+      "parent_id": "sec_054"
+    },
+    {
+      "id": "sec_056",
+      "title": "Movements in Level 3 financial assets",
+      "page": 25,
+      "level": 4,
+      "parent_id": "sec_054"
+    },
+    {
+      "id": "sec_057",
+      "title": "Movements in Level 3 financial liabilities",
+      "page": 25,
+      "level": 4,
+      "parent_id": "sec_054"
+    },
+    {
+      "id": "sec_058",
+      "title": "Movements in Level 3 non-financial assets",
+      "page": 26,
+      "level": 4,
+      "parent_id": "sec_054"
+    },
+    {
+      "id": "sec_059",
+      "title": "Other Information Required by Listing Rule Appendix 7.2",
+      "page": 27,
+      "level": 1,
+      "parent_id": null
+    },
+    {
+      "id": "sec_060",
+      "title": "1. Review",
+      "page": 28,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_061",
+      "title": "2. Review of the performance of the Group for the six-month period ended 30 June 2026",
+      "page": 28,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_062",
+      "title": "3. Dividend information",
+      "page": 28,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_063",
+      "title": "4. Interested person transactions",
+      "page": 28,
+      "level": 2,
+      "parent_id": "sec_059"
+    },
+    {
+      "id": "sec_064",
+      "title": "5. Undertaking from directors and executive officers",
+      "page": 28,
+      "level": 2,
+      "parent_id": "sec_059"
+    }
+  ],
+  "_usage": {
+    "model": "gemini-3.5-flash",
+    "prompt_tokens": 15802,
+    "output_tokens": 3971,
+    "thinking_tokens": null
+  }
+}

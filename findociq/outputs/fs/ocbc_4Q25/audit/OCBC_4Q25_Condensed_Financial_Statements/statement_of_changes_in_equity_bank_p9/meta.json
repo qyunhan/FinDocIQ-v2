@@ -1,0 +1,61 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "statement_of_changes_in_equity_bank_p9",
+  "section_ids": [
+    "statement_of_changes_in_equity_bank"
+  ],
+  "section_titles": [
+    "STATEMENT OF CHANGES IN EQUITY - BANK"
+  ],
+  "pages": [
+    9
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 28,
+  "usage": {
+    "ts": "2026-07-14T14:56:17",
+    "script": "extract_to_excel",
+    "label": "statement_of_changes_in_equity_bank_p9",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2949,
+    "output_tokens": 5533,
+    "thinking_tokens": 0,
+    "total_tokens": 8482,
+    "est_cost_usd": 0.01472
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '444' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "STATEMENT OF CHANGES IN EQUITY - BANK\nFor the financial year ended 31 December 2025",
+      "anchor_label": "STATEMENT OF CHANGES IN EQUITY - BANK\nFor the financial year ended 31 December 2025",
+      "anchor_y": 58.53,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "y_in_no_region"
+    },
+    {
+      "title": "STATEMENT OF CHANGES IN EQUITY - BANK\nFor the financial year ended 31 December 2024",
+      "anchor_label": null,
+      "anchor_y": null,
+      "owning_section": null,
+      "dropped": false,
+      "reason": "interior_page"
+    }
+  ],
+  "all_dropped": false
+}

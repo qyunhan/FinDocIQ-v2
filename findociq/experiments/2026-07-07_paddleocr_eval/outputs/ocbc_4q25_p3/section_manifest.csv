@@ -1,0 +1,150 @@
+doc_id,page,section_id,section_title,table_idx,bbox,unit_id,unit_n_tables,page_shared,framing,template_type,prompt,source
+ocbc_4q25_p3,7,4,Key Metrics,0,"[55.78,169.0,555.55,679.1]",4@p7,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,8,5.1,Disclosure of G-SIB Indicators,0,"[69.93,228.78,553.89,477.04]",5.1@p8,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,9,5.1,Disclosure of G-SIB Indicators,0,"[69.74,143.3,553.94,390.72]",5.1@p9,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,10,5.2,Geographical Distribution of Credit Exposures Used in the Countercyclical Capital Buffer,0,"[70.0,206.36,537.52,454.77]",5.2@p10,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,10,5.2,Geographical Distribution of Credit Exposures Used in the Countercyclical Capital Buffer,1,"[70.02,490.66,537.72,727.5]",5.2@p10,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,11,6.1,Reconciliation of Regulatory Capital to Balance Sheet,0,"[70.3,131.41,547.39,701.68]",6.1@p11,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,12,6.1,Reconciliation of Regulatory Capital to Balance Sheet,0,"[69.96,104.26,547.41,589.87]",6.1@p12,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,13,6.2,Composition of Regulatory Capital,0,"[70.02,119.91,547.7,755.14]",6.2@p13,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,14,6.2,Composition of Regulatory Capital,0,"[70.65,120.08,547.62,734.27]",6.2@p14,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,15,6.2,Composition of Regulatory Capital,0,"[69.62,115.05,554.47,565.34]",6.2@p15,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,16,6.3,Main Features of Regulatory Capital Instruments,0,"[69.83,170.04,562.0,775.76]",6.3@p16,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,17,6.3,Main Features of Regulatory Capital Instruments,0,"[69.48,129.48,562.47,745.07]",6.3@p17,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,18,6.3,Main Features of Regulatory Capital Instruments,0,"[69.74,105.96,562.43,736.63]",6.3@p18,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,19,6.3,Main Features of Regulatory Capital Instruments,0,"[69.87,107.05,562.43,726.25]",6.3@p19,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,20,7.1,Differences between Accounting and Regulatory Scopes of Consolidation and Mapping of Financial Statement Categories with Regulatory Risk Categories,0,"[69.37,314.86,562.92,698.47]",7.1@p20,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,21,7.1,Differences between Accounting and Regulatory Scopes of Consolidation and Mapping of Financial Statement Categories with Regulatory Risk Categories,0,"[69.56,136.27,554.13,445.25]",7.1@p21,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,22,7.2,Main Sources of Differences between Regulatory Exposure Amounts and Carrying Amounts in Financial Statements,0,"[69.67,253.39,548.4,503.32]",7.2@p22,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,23,7.3,Prudent Valuation Adjustments,0,"[67.86,178.17,554.33,421.19]",7.3@p23,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,23,7.3,Prudent Valuation Adjustments,1,"[67.66,451.43,554.29,685.95]",7.3@p23,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,24,8.1,Leverage Ratio Summary Comparison Table,0,"[70.26,170.71,548.25,534.16]",8.1@p24,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,25,8.2,Leverage Ratio Common Disclosure Table,0,"[70.02,175.84,530.77,635.07]",8.2@p25,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,26,8.2,Leverage Ratio Common Disclosure Table,0,"[69.63,112.19,546.82,715.13]",8.2@p26,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,27,9.1,Credit Quality of Assets,0,"[66.55,254.02,559.0,410.7]",9.1@p27,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,27,9.1,Credit Quality of Assets,1,"[67.5,507.74,558.57,615.88]",9.1@p27,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,28,9.2,Changes in Stock of Defaulted Loans to Customers and Debt Securities,0,"[70.28,225.16,535.83,347.78]",9.2@p28,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,29,9.3,Additional Disclosures related to Credit Quality of Assets,0,"[70.36,174.03,542.61,307.0]",9.3@p29,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,29,9.3,Additional Disclosures related to Credit Quality of Assets,1,"[70.7,344.96,542.7,521.75]",9.3@p29,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,30,9.3,Additional Disclosures related to Credit Quality of Assets,0,"[70.33,133.29,540.92,296.57]",9.3@p30,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,30,9.3,Additional Disclosures related to Credit Quality of Assets,1,"[70.58,357.08,540.94,488.69]",9.3@p30,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,30,9.3,Additional Disclosures related to Credit Quality of Assets,2,"[69.98,551.48,540.86,683.44]",9.3@p30,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,31,9.3,Additional Disclosures related to Credit Quality of Assets,0,"[70.65,146.38,541.06,292.14]",9.3@p31,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,31,9.3,Additional Disclosures related to Credit Quality of Assets,1,"[70.17,371.56,563.26,477.98]",9.3@p31,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,31,9.3,Additional Disclosures related to Credit Quality of Assets,2,"[70.17,525.93,563.65,633.52]",9.3@p31,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,32,9.3,Additional Disclosures related to Credit Quality of Assets,0,"[70.6,134.73,540.84,268.02]",9.3@p32,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,32,9.3,Additional Disclosures related to Credit Quality of Assets,1,"[70.35,311.98,540.85,578.75]",9.3@p32,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,33,9.3,Additional Disclosures related to Credit Quality of Assets,0,"[70.37,133.35,540.69,266.34]",9.3@p33,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,33,9.3,Additional Disclosures related to Credit Quality of Assets,1,"[70.53,314.25,540.84,466.8]",9.3@p33,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,33,9.3,Additional Disclosures related to Credit Quality of Assets,2,"[70.68,492.09,540.95,623.81]",9.3@p33,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,34,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[70.37,360.59,540.98,532.27]",9.4@p34,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,35,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[69.67,186.75,539.66,271.77]",9.4@p35,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,35,9.4,Overview of Past Due Exposure and Impairment Allowances,1,"[69.93,310.87,539.7,394.12]",9.4@p35,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,35,9.4,Overview of Past Due Exposure and Impairment Allowances,2,"[70.35,467.15,545.66,642.78]",9.4@p35,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,36,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[70.1,136.14,542.8,269.28]",9.4@p36,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,36,9.4,Overview of Past Due Exposure and Impairment Allowances,1,"[70.31,322.91,542.46,479.31]",9.4@p36,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,36,9.4,Overview of Past Due Exposure and Impairment Allowances,2,"[70.21,505.76,542.8,621.28]",9.4@p36,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,37,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[70.14,193.97,532.81,322.77]",9.4@p37,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,37,9.4,Overview of Past Due Exposure and Impairment Allowances,1,"[70.3,383.15,532.98,511.63]",9.4@p37,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,38,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[70.72,196.27,541.19,366.04]",9.4@p38,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,38,9.4,Overview of Past Due Exposure and Impairment Allowances,1,"[70.59,432.05,541.06,600.38]",9.4@p38,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,39,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[70.34,183.46,546.91,354.29]",9.4@p39,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,39,9.4,Overview of Past Due Exposure and Impairment Allowances,1,"[70.2,418.36,546.7,590.93]",9.4@p39,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,40,9.4,Overview of Past Due Exposure and Impairment Allowances,0,"[69.83,204.92,546.92,305.91]",9.4@p40,1,1,MULTIPLE,,stage2_core.txt + MULTIPLE,printed_toc
+ocbc_4q25_p3,40,9.5,Restructured Exposures,1,"[70.08,451.31,547.22,667.17]",9.5@p40,1,1,MULTIPLE,,stage2_core.txt + MULTIPLE,printed_toc
+ocbc_4q25_p3,41,10,Asset Encumbrance,0,"[70.36,228.25,534.84,301.14]",10@p41,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,41,10,Asset Encumbrance,1,"[70.25,329.21,534.94,414.03]",10@p41,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,42,11,Key Approaches used for Computation of RWA,0,"[70.24,134.28,543.1,711.36]",11@p42,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,43,12,Overview of RWA,0,"[69.68,189.5,551.69,701.49]",12@p43,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,44,13.1,Comparison of Modelled and Standardised RWA at Risk Level,0,"[69.35,216.0,546.73,453.61]",13.1@p44,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,45,13.2,Comparison of Modelled and Standardised RWA for Credit Risk at Asset Class Level,0,"[69.67,193.33,542.4,511.43]",13.2@p45,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,46,14,IRBA - RWA Flow Statement for Credit Risk Exposures,0,"[69.99,174.4,551.3,364.63]",14@p46,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,47,15.1,SA(CR) – Credit Risk Exposures and CRM Effects,0,"[69.47,221.79,561.58,547.37]",15.1@p47,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,48,15.1,SA(CR) – Credit Risk Exposures and CRM Effects,0,"[69.8,138.12,561.54,466.38]",15.1@p48,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,49,15.2,SA(CR) - Exposures by Asset Classes and Risk Weights,0,"[62.48,161.68,824.27,445.27]",15.2@p49,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,50,15.2,SA(CR) - Exposures by Asset Classes and Risk Weights,0,"[62.93,110.11,824.12,382.4]",15.2@p50,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,51,15.2,SA(CR) - Exposures by Asset Classes and Risk Weights,0,"[61.71,110.92,824.17,439.76]",15.2@p51,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,52,15.2,SA(CR) - Exposures by Asset Classes and Risk Weights,0,"[68.85,158.35,555.1,378.43]",15.2@p52,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,53,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,0,"[60.78,199.78,566.41,379.76]",15.3@p53,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,53,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,1,"[60.95,413.14,566.02,537.59]",15.3@p53,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,53,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,2,"[60.48,567.15,566.42,691.5]",15.3@p53,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,54,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,0,"[61.8,120.82,570.92,302.62]",15.3@p54,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,54,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,1,"[62.13,330.39,570.6,491.52]",15.3@p54,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,55,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,0,"[60.81,122.11,567.0,301.66]",15.3@p55,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,55,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,1,"[61.15,331.02,566.61,460.24]",15.3@p55,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,55,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,2,"[60.99,484.34,566.5,613.45]",15.3@p55,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,56,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,0,"[61.84,120.63,570.64,302.93]",15.3@p56,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,56,15.3,F-IRBA - Credit Exposures by Portfolio and PD Range,1,"[62.06,329.47,570.59,491.69]",15.3@p56,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,57,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,0,"[45.93,202.69,557.84,380.18]",15.4@p57,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,57,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,1,"[46.81,412.36,557.94,536.85]",15.4@p57,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,57,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,2,"[46.41,568.07,558.19,694.6]",15.4@p57,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,58,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,0,"[51.14,120.27,563.67,327.08]",15.4@p58,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,59,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,0,"[45.71,125.19,558.4,311.27]",15.4@p59,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,59,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,1,"[46.59,336.41,558.23,468.48]",15.4@p59,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,59,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,2,"[46.03,493.25,558.14,625.94]",15.4@p59,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,60,15.4,A-IRBA - Credit Exposures by Portfolio and PD Range,0,"[51.2,120.83,563.4,326.94]",15.4@p60,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,61,15.5,Overview of CRM Techniques,0,"[68.69,224.84,554.37,341.45]",15.5@p61,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,61,15.5,Overview of CRM Techniques,1,"[68.78,387.1,554.12,504.31]",15.5@p61,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,62,16.1,F-IRBA – Backtesting of PD per portfolio,0,"[48.16,188.51,569.17,400.82]",16.1@p62,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,62,16.1,F-IRBA – Backtesting of PD per portfolio,1,"[48.17,428.78,569.64,547.83]",16.1@p62,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,62,16.1,F-IRBA – Backtesting of PD per portfolio,2,"[47.68,572.38,569.97,692.31]",16.1@p62,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,63,16.1,F-IRBA – Backtesting of PD per portfolio,0,"[47.31,123.19,565.67,334.26]",16.1@p63,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,63,16.1,F-IRBA – Backtesting of PD per portfolio,1,"[48.3,384.09,568.13,505.0]",16.1@p63,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,64,16.1,F-IRBA – Backtesting of PD per portfolio,0,"[47.7,125.86,569.14,335.13]",16.1@p64,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,64,16.1,F-IRBA – Backtesting of PD per portfolio,1,"[47.61,365.74,569.49,482.88]",16.1@p64,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,64,16.1,F-IRBA – Backtesting of PD per portfolio,2,"[47.77,505.39,569.83,627.26]",16.1@p64,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,65,16.1,F-IRBA – Backtesting of PD per portfolio,0,"[47.67,122.67,569.65,332.34]",16.1@p65,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,65,16.1,F-IRBA – Backtesting of PD per portfolio,1,"[48.49,382.84,568.02,503.61]",16.1@p65,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,66,16.2,A-IRBA - Backtesting of PD per portfolio,0,"[68.8,164.55,527.82,376.75]",16.2@p66,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,66,16.2,A-IRBA - Backtesting of PD per portfolio,1,"[69.64,405.45,528.02,524.22]",16.2@p66,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,66,16.2,A-IRBA - Backtesting of PD per portfolio,2,"[69.05,551.58,528.17,672.91]",16.2@p66,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,67,16.2,A-IRBA - Backtesting of PD per portfolio,0,"[68.89,127.29,528.41,338.37]",16.2@p67,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,68,16.2,A-IRBA - Backtesting of PD per portfolio,0,"[68.86,124.47,527.99,335.49]",16.2@p68,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,68,16.2,A-IRBA - Backtesting of PD per portfolio,1,"[69.38,365.78,528.04,483.26]",16.2@p68,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,68,16.2,A-IRBA - Backtesting of PD per portfolio,2,"[69.18,510.57,528.26,631.89]",16.2@p68,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,69,16.2,A-IRBA - Backtesting of PD per portfolio,0,"[68.67,125.16,528.38,336.15]",16.2@p69,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,70,17,IRBA - Specialised Lending under the Slotting Approach,0,"[62.02,186.47,564.16,346.07]",17@p70,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,70,17,IRBA - Specialised Lending under the Slotting Approach,1,"[61.64,399.72,563.81,554.7]",17@p70,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,71,18.1,Analysis of CCR Exposures by Approach,0,"[68.59,244.37,524.1,404.17]",18.1@p71,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,71,18.1,Analysis of CCR Exposures by Approach,1,"[68.32,437.69,524.13,609.54]",18.1@p71,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,72,18.2,Exposures to Central Counterparties,0,"[69.14,168.42,553.0,522.89]",18.2@p72,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,73,18.2,Exposures to Central Counterparties,0,"[69.05,130.61,552.99,487.4]",18.2@p73,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,74,18.3,SA - CCR Exposures by Portfolio and Risk Weights,0,"[68.97,207.24,550.19,686.81]",18.3@p74,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,75,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,0,"[61.46,168.14,558.75,373.06]",18.4@p75,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,75,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,1,"[61.9,410.37,559.12,541.1]",18.4@p75,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,75,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,2,"[61.63,566.93,559.06,701.86]",18.4@p75,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,76,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,0,"[55.16,128.16,554.35,332.49]",18.4@p76,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,76,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,1,"[55.21,363.03,555.05,525.18]",18.4@p76,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,77,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,0,"[61.56,123.79,558.96,335.5]",18.4@p77,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,77,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,1,"[62.41,365.65,559.08,503.31]",18.4@p77,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,77,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,2,"[61.91,531.83,558.63,664.83]",18.4@p77,3,0,SINGLE,,"stage2_core.txt + SINGLE (x3 tables, this section only)",printed_toc
+ocbc_4q25_p3,78,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,0,"[55.03,129.66,554.9,332.12]",18.4@p78,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,78,18.4,F-IRBA - CCR Exposures by Portfolio and PD Range,1,"[54.83,347.78,554.97,524.54]",18.4@p78,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,79,18.5,A-IRBA - CCR Exposures by Portfolio and PD Range,0,"[54.61,208.18,554.41,400.01]",18.5@p79,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,79,18.5,A-IRBA - CCR Exposures by Portfolio and PD Range,1,"[55.19,429.69,554.95,594.14]",18.5@p79,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,80,18.5,A-IRBA - CCR Exposures by Portfolio and PD Range,0,"[54.75,133.43,554.46,332.38]",18.5@p80,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,80,18.5,A-IRBA - CCR Exposures by Portfolio and PD Range,1,"[54.99,355.72,554.77,525.39]",18.5@p80,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,81,18.6,Composition of Collateral for CCR Exposure,0,"[61.03,219.77,543.17,401.07]",18.6@p81,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,81,18.6,Composition of Collateral for CCR Exposure,1,"[62.69,480.55,543.18,622.93]",18.6@p81,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,82,18.7,Credit Derivative Exposures,0,"[68.85,146.8,547.87,341.98]",18.7@p82,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,83,19.1,Securitisation Exposures in the Banking Book,0,"[69.09,341.74,539.5,505.82]",19.1@p83,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,84,19.2,Securitisation Exposures in the Trading Book,0,"[68.54,212.82,546.81,388.82]",19.2@p84,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,85,19.4,Securitisation Exposures in the Banking Book and associated Regulatory Capital Requirements – A Reporting Bank acting as Investor,0,"[66.36,139.29,752.95,495.33]",19.4@p85,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,86,20.1,Market Risk under Standardised Approach,0,"[68.87,222.2,553.82,427.61]",20.1@p86,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,86,20.1,Market Risk under Standardised Approach,1,"[68.16,510.95,553.85,713.83]",20.1@p86,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,87,20.2,CVA Risk Capital Requirements,0,"[69.06,201.07,573.96,295.36]",20.2@p87,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,88,21.1,Historical Losses,0,"[63.41,297.52,765.63,469.45]",21.1@p88,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,89,21.1,Historical Losses,0,"[62.97,165.5,762.55,338.12]",21.1@p89,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,89,21.1,Historical Losses,1,"[62.58,374.87,764.57,457.85]",21.1@p89,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,90,21.2,Business Indicator and Subcomponents,0,"[70.47,239.09,546.05,549.53]",21.2@p90,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,91,21.3,Minimum Required Operational Risk Capital,0,"[70.25,181.99,536.64,249.96]",21.3@p91,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,92,22,Interest Rate Risk in the Banking Book,0,"[70.5,421.15,540.32,589.87]",22@p92,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,92,22,Interest Rate Risk in the Banking Book,1,"[73.87,613.67,541.15,646.98]",22@p92,2,0,SINGLE,,"stage2_core.txt + SINGLE (x2 tables, this section only)",printed_toc
+ocbc_4q25_p3,94,23.1,Average Group All Currency LCR,0,"[70.46,216.01,552.93,697.49]",23.1@p94,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,95,23.2,Average Group SGD LCR,0,"[70.18,184.2,551.0,678.84]",23.2@p95,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,97,24,Net Stable Funding Ratio,0,"[69.66,115.26,557.57,736.55]",24@p97,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,98,24,Net Stable Funding Ratio,0,"[69.74,114.52,557.5,736.79]",24@p98,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,99,25,Abbreviations,0,"[63.61,135.17,448.01,761.2]",25@p99,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,100,25,Abbreviations,0,"[64.06,117.91,447.98,770.35]",25@p100,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,101,25,Abbreviations,0,"[64.19,118.03,447.73,745.09]",25@p101,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc
+ocbc_4q25_p3,102,25,Abbreviations,0,"[63.79,117.38,447.58,362.71]",25@p102,1,0,SINGLE,,stage2_core.txt + SINGLE,printed_toc

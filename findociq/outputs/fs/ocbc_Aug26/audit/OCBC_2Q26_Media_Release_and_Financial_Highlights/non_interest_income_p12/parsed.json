@@ -1,0 +1,693 @@
+{
+  "tables": [
+    {
+      "title": "NON-INTEREST INCOME",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H26"
+        },
+        {
+          "group": null,
+          "leaf": "1H25 (2)"
+        },
+        {
+          "group": null,
+          "leaf": "+/(-)\n%"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Gross fee and commission income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit card",
+          "values": [
+            {
+              "value": "204",
+              "cell_state": "reported"
+            },
+            {
+              "value": "202",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Investment banking",
+          "values": [
+            {
+              "value": "99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "77",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loan-related",
+          "values": [
+            {
+              "value": "137",
+              "cell_state": "reported"
+            },
+            {
+              "value": "124",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Service charges",
+          "values": [
+            {
+              "value": "61",
+              "cell_state": "reported"
+            },
+            {
+              "value": "62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Trade-related (1)",
+          "values": [
+            {
+              "value": "154",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Wealth management",
+          "values": [
+            {
+              "value": "1,038",
+              "cell_state": "reported"
+            },
+            {
+              "value": "734",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(1)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Gross fee and commission income subtotal",
+          "values": [
+            {
+              "value": "1,709",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,358",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Fee and commission expense",
+          "values": [
+            {
+              "value": "(295)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(232)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "27",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Fees and commissions (net)",
+          "values": [
+            {
+              "value": "1,414",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,126",
+              "cell_state": "reported"
+            },
+            {
+              "value": "26",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net trading income",
+          "values": [
+            {
+              "value": "1,129",
+              "cell_state": "reported"
+            },
+            {
+              "value": "771",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Income from life and general insurance",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Insurance service results from life insurance",
+          "values": [
+            {
+              "value": "734",
+              "cell_state": "reported"
+            },
+            {
+              "value": "540",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net investment income from life insurance",
+          "values": [
+            {
+              "value": "4,058",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,672",
+              "cell_state": "reported"
+            },
+            {
+              "value": "52",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net insurance financial result from life insurance",
+          "values": [
+            {
+              "value": "(4,016)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(2,696)",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(49)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Insurance service results from general insurance",
+          "values": [
+            {
+              "value": "15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(5)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Sub-total",
+          "values": [
+            {
+              "value": "791",
+              "cell_state": "reported"
+            },
+            {
+              "value": "532",
+              "cell_state": "reported"
+            },
+            {
+              "value": "49",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Other income",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal of investment securities",
+          "values": [
+            {
+              "value": "66",
+              "cell_state": "reported"
+            },
+            {
+              "value": "51",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Disposal of property, plant and equipment",
+          "values": [
+            {
+              "value": "36",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "105",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Rental and property-related income",
+          "values": [
+            {
+              "value": "47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Dividends from FVOCI securities",
+          "values": [
+            {
+              "value": "16",
+              "cell_state": "reported"
+            },
+            {
+              "value": "18",
+              "cell_state": "reported"
+            },
+            {
+              "value": "(12)",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Others",
+          "values": [
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Sub-total",
+          "values": [
+            {
+              "value": "178",
+              "cell_state": "reported"
+            },
+            {
+              "value": "145",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total non-interest income",
+          "values": [
+            {
+              "value": "3,512",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,574",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "Notes:\n1. Includes trade, remittance and guarantee-related fees.\n2. Certain comparative figures have been reclassified to conform to current period\u2019s presentation.",
+          "values": []
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Gross fee and commission income"
+          },
+          {
+            "line_id": 10,
+            "indent": 1,
+            "label_clean": "Credit card"
+          },
+          {
+            "line_id": 11,
+            "indent": 1,
+            "label_clean": "Investment banking"
+          },
+          {
+            "line_id": 12,
+            "indent": 1,
+            "label_clean": "Loan-related"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "Service charges"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Trade-related"
+          },
+          {
+            "line_id": 15,
+            "indent": 1,
+            "label_clean": "Wealth management"
+          },
+          {
+            "line_id": 16,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 18,
+            "indent": 0,
+            "label_clean": "Fee and commission expense"
+          },
+          {
+            "line_id": 19,
+            "indent": 0,
+            "label_clean": "Fees and commissions (net)"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Net trading income"
+          },
+          {
+            "line_id": 23,
+            "indent": 0,
+            "label_clean": "Income from life and general insurance"
+          },
+          {
+            "line_id": 24,
+            "indent": 1,
+            "label_clean": "Insurance service results from life insurance"
+          },
+          {
+            "line_id": 25,
+            "indent": 1,
+            "label_clean": "Net investment income from life insurance"
+          },
+          {
+            "line_id": 26,
+            "indent": 1,
+            "label_clean": "Net insurance financial result from life insurance"
+          },
+          {
+            "line_id": 27,
+            "indent": 1,
+            "label_clean": "Insurance service results from general insurance"
+          },
+          {
+            "line_id": 28,
+            "indent": 0,
+            "label_clean": "Sub-total"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Other income"
+          },
+          {
+            "line_id": 31,
+            "indent": 1,
+            "label_clean": "Disposal of investment securities"
+          },
+          {
+            "line_id": 32,
+            "indent": 1,
+            "label_clean": "Disposal of property, plant and equipment"
+          },
+          {
+            "line_id": 33,
+            "indent": 1,
+            "label_clean": "Rental and property-related income"
+          },
+          {
+            "line_id": 34,
+            "indent": 1,
+            "label_clean": "Dividends from FVOCI securities"
+          },
+          {
+            "line_id": 35,
+            "indent": 1,
+            "label_clean": "Others"
+          },
+          {
+            "line_id": 36,
+            "indent": 0,
+            "label_clean": "Sub-total"
+          },
+          {
+            "line_id": 38,
+            "indent": 0,
+            "label_clean": "Total non-interest income"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "NON-INTEREST INCOME",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

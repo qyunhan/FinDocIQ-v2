@@ -1,0 +1,46 @@
+{
+  "document": "OCBC_4Q25_Media_Release_and_Financial_Highlights.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "25 February 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_interest_income_p14",
+  "section_ids": [
+    "non_interest_income"
+  ],
+  "section_titles": [
+    "NON-INTEREST INCOME"
+  ],
+  "pages": [
+    14
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 30,
+  "usage": {
+    "ts": "2026-07-16T14:04:06",
+    "script": "extract_to_excel",
+    "label": "non_interest_income_p14",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2928,
+    "output_tokens": 4040,
+    "thinking_tokens": 0,
+    "total_tokens": 6968,
+    "est_cost_usd": 0.04075,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '193200032' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Others' [NON-INTEREST INCOME]",
+      "  duplicate row label x2: 'Sub-total' [NON-INTEREST INCOME]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

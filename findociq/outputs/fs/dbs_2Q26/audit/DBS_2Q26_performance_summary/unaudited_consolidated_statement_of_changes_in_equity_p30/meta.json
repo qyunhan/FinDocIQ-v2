@@ -1,0 +1,53 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_statement_of_changes_in_equity_p30",
+  "section_ids": [
+    "unaudited_consolidated_statement_of_changes_in_equity"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY"
+  ],
+  "pages": [
+    30
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 24,
+  "usage": {
+    "ts": "2026-08-06T09:22:33",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_statement_of_changes_in_equity_p30",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3938,
+    "output_tokens": 5484,
+    "thinking_tokens": 0,
+    "total_tokens": 9422,
+    "est_cost_usd": 0.05526,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Purchase of treasury shares' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Transfer of treasury shares upon vesting' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Cost of share-based payments' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Dividends to shareholders\u00b9' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Other movements' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Net profit' [UNAUDITED CONSOLIDATED STATEME]",
+      "  duplicate row label x2: 'Other comprehensive income' [UNAUDITED CONSOLIDATED STATEME]"
+    ],
+    "letter_leaf_issues": [],
+    "column_band_issues": [
+      "  col-bands: uncalibrated (0 dense lines) [UNAUDITED CONSOLIDATED STATEMENT OF CHAN]",
+      "  col-repair: declined for table 'UNAUDITED CONSOLIDATED STATEMENT OF CHAN' \u2014 uncalibrated (0 dense lines), shifts in this table cannot be checked"
+    ]
+  },
+  "crop": null
+}

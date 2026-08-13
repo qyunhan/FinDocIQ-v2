@@ -1,0 +1,158 @@
+
+bank,year,quarter,period,family,doc_type,target_filename,folder,availability,have(y/n),file_notes,source_url
+DBS,2021,1,1Q21,fs,performance_highlights,DBS_1Q21_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,1,1Q21,pillar3,pillar3,DBS_1Q21_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,2,2Q21,fs,condensed_interim,DBS_2Q21_condensed_interim.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,2,2Q21,pillar3,pillar3,DBS_2Q21_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,3,3Q21,fs,performance_highlights,DBS_3Q21_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,3,3Q21,pillar3,pillar3,DBS_3Q21_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,4,4Q21,fs,condensed_interim,DBS_4Q21_condensed_interim.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2021,4,4Q21,pillar3,pillar3,DBS_4Q21_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,1,1Q22,fs,performance_highlights,DBS_1Q22_performance_highlights.pdf,financial_statements,available,y,DBS_1Q22_trading_update,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,1,1Q22,pillar3,pillar3,DBS_1Q22_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,2,2Q22,fs,condensed_interim,DBS_2Q22_condensed_interim.pdf,financial_statements,available,y,DBS_2Q22_performance_summary,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,2,2Q22,pillar3,pillar3,DBS_2Q22_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,3,3Q22,fs,performance_highlights,DBS_3Q22_performance_highlights.pdf,financial_statements,available,y,DBS_3Q22_trading_update,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,3,3Q22,pillar3,pillar3,DBS_3Q22_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,4,4Q22,fs,condensed_interim,DBS_4Q22_condensed_interim.pdf,financial_statements,available,y,DBS_4Q22_performance_summary,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2022,4,4Q22,pillar3,pillar3,DBS_4Q22_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,1,1Q23,fs,performance_highlights,DBS_1Q23_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,1,1Q23,pillar3,pillar3,DBS_1Q23_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,2,2Q23,fs,condensed_interim,DBS_2Q23_condensed_interim.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,2,2Q23,pillar3,pillar3,DBS_2Q23_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,3,3Q23,fs,performance_highlights,DBS_3Q23_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,3,3Q23,pillar3,pillar3,DBS_3Q23_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,4,4Q23,fs,condensed_interim,DBS_4Q23_condensed_interim.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2023,4,4Q23,pillar3,pillar3,DBS_4Q23_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,1,1Q24,fs,performance_highlights,DBS_1Q24_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,1,1Q24,pillar3,pillar3,DBS_1Q24_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,2,2Q24,fs,condensed_interim,DBS_2Q24_condensed_interim.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,2,2Q24,pillar3,pillar3,DBS_2Q24_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,3,3Q24,fs,performance_highlights,DBS_3Q24_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,3,3Q24,pillar3,pillar3,DBS_3Q24_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,4,4Q24,fs,condensed_interim,DBS_4Q24_condensed_interim.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2024,4,4Q24,pillar3,pillar3,DBS_4Q24_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,1,1Q25,fs,performance_highlights,DBS_1Q25_performance_highlights.pdf,financial_statements,available,y,DBS_1Q25_trading_update,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,1,1Q25,pillar3,pillar3,DBS_1Q25_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,2,2Q25,fs,condensed_interim,DBS_2Q25_condensed_interim.pdf,financial_statements,available,y,DBS_2Q25_performance_summary,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,2,2Q25,pillar3,pillar3,DBS_2Q25_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,3,3Q25,fs,performance_highlights,DBS_3Q25_performance_highlights.pdf,financial_statements,available,y,3Q25_trading_update,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,3,3Q25,pillar3,pillar3,DBS_3Q25_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,4,4Q25,fs,condensed_interim,DBS_4Q25_condensed_interim.pdf,financial_statements,available,y,DBS_4Q25_performance_summary,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2025,4,4Q25,pillar3,pillar3,DBS_4Q25_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,1,1Q26,fs,performance_highlights,DBS_1Q26_performance_highlights.pdf,financial_statements,available,y,DBS_1Q26_trading_update,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,1,1Q26,pillar3,pillar3,DBS_1Q26_pillar3.pdf,pillar3,available,y,DBS_1Q26_P3_other_regulatory_disclosures,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,2,2Q26,fs,condensed_interim,DBS_2Q26_condensed_interim.pdf,financial_statements,not_yet_released,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,2,2Q26,pillar3,pillar3,DBS_2Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,3,3Q26,fs,performance_highlights,DBS_3Q26_performance_highlights.pdf,financial_statements,not_yet_released,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,3,3Q26,pillar3,pillar3,DBS_3Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,4,4Q26,fs,condensed_interim,DBS_4Q26_condensed_interim.pdf,financial_statements,not_yet_released,,,https://www.dbs.com/investors/financials/quarterly-financials
+DBS,2026,4,4Q26,pillar3,pillar3,DBS_4Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.dbs.com/investors/financials/quarterly-financials
+OCBC,2021,1,1Q21,fs,results_highlights,OCBC_1Q21_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,1,1Q21,fs,press_release,OCBC_1Q21_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,1,1Q21,pillar3,pillar3,OCBC_1Q21_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,2,2Q21,fs,condensed_interim,OCBC_2Q21_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,2,2Q21,pillar3,pillar3,OCBC_2Q21_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,3,3Q21,fs,results_highlights,OCBC_3Q21_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,3,3Q21,fs,press_release,OCBC_3Q21_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,3,3Q21,pillar3,pillar3,OCBC_3Q21_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,4,4Q21,fs,condensed_interim,OCBC_4Q21_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2021,4,4Q21,pillar3,pillar3,OCBC_4Q21_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,1,1Q22,fs,results_highlights,OCBC_1Q22_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,1,1Q22,fs,press_release,OCBC_1Q22_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,1,1Q22,pillar3,pillar3,OCBC_1Q22_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,2,2Q22,fs,condensed_interim,OCBC_2Q22_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,2,2Q22,pillar3,pillar3,OCBC_2Q22_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,3,3Q22,fs,results_highlights,OCBC_3Q22_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,3,3Q22,fs,press_release,OCBC_3Q22_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,3,3Q22,pillar3,pillar3,OCBC_3Q22_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,4,4Q22,fs,condensed_interim,OCBC_4Q22_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2022,4,4Q22,pillar3,pillar3,OCBC_4Q22_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,1,1Q23,fs,results_highlights,OCBC_1Q23_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,1,1Q23,fs,press_release,OCBC_1Q23_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,1,1Q23,pillar3,pillar3,OCBC_1Q23_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,2,2Q23,fs,condensed_interim,OCBC_2Q23_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,2,2Q23,pillar3,pillar3,OCBC_2Q23_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,3,3Q23,fs,results_highlights,OCBC_3Q23_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,3,3Q23,fs,press_release,OCBC_3Q23_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,3,3Q23,pillar3,pillar3,OCBC_3Q23_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,4,4Q23,fs,condensed_interim,OCBC_4Q23_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2023,4,4Q23,pillar3,pillar3,OCBC_4Q23_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,1,1Q24,fs,results_highlights,OCBC_1Q24_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,1,1Q24,fs,press_release,OCBC_1Q24_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,1,1Q24,pillar3,pillar3,OCBC_1Q24_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,2,2Q24,fs,condensed_interim,OCBC_2Q24_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,2,2Q24,pillar3,pillar3,OCBC_2Q24_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,3,3Q24,fs,results_highlights,OCBC_3Q24_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,3,3Q24,fs,press_release,OCBC_3Q24_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,3,3Q24,pillar3,pillar3,OCBC_3Q24_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,4,4Q24,fs,condensed_interim,OCBC_4Q24_condensed_interim.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2024,4,4Q24,pillar3,pillar3,OCBC_4Q24_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,1,1Q25,fs,results_highlights,OCBC_1Q25_results_highlights.pdf,financial_statements,available,y,OCBC_1Q25_Results__Press_Release,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,1,1Q25,fs,press_release,OCBC_1Q25_press_release.pdf,financial_statements,available,y,OCBC_1Q25_Results__Press_Release,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,1,1Q25,pillar3,pillar3,OCBC_1Q25_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,2,2Q25,fs,condensed_interim,OCBC_2Q25_condensed_interim.pdf,financial_statements,available,y,OCBC_1H25_Media_Release_Financial_Highlights,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,2,2Q25,pillar3,pillar3,OCBC_2Q25_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,3,3Q25,fs,results_highlights,OCBC_3Q25_results_highlights.pdf,financial_statements,available,y,OCBC_3Q25_Results_Press_Release,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,3,3Q25,fs,press_release,OCBC_3Q25_press_release.pdf,financial_statements,available,y,OCBC_3Q25_Results_Press_Release,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,3,3Q25,pillar3,pillar3,OCBC_3Q25_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,4,4Q25,fs,condensed_interim,OCBC_4Q25_condensed_interim.pdf,financial_statements,available,y,"OCBC_4Q25_Condensed_Financial_Statements,OCBC_4Q25_Media_Release_and_Financial_Highlights",https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2025,4,4Q25,pillar3,pillar3,OCBC_4Q25_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,1,1Q26,fs,results_highlights,OCBC_1Q26_results_highlights.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,1,1Q26,fs,press_release,OCBC_1Q26_press_release.pdf,financial_statements,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,1,1Q26,pillar3,pillar3,OCBC_1Q26_pillar3.pdf,pillar3,available,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,2,2Q26,fs,condensed_interim,OCBC_2Q26_condensed_interim.pdf,financial_statements,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,2,2Q26,pillar3,pillar3,OCBC_2Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,3,3Q26,fs,results_highlights,OCBC_3Q26_results_highlights.pdf,financial_statements,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,3,3Q26,fs,press_release,OCBC_3Q26_press_release.pdf,financial_statements,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,3,3Q26,pillar3,pillar3,OCBC_3Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,4,4Q26,fs,condensed_interim,OCBC_4Q26_condensed_interim.pdf,financial_statements,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+OCBC,2026,4,4Q26,pillar3,pillar3,OCBC_4Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.ocbc.com/group/investors/financials.page  (+ /regulatory-disclosure.page for Pillar 3)
+UOB,2021,1,1Q21,fs,performance_highlights,UOB_1Q21_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,1,1Q21,pillar3,pillar3,UOB_1Q21_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,2,2Q21,fs,condensed_interim,UOB_2Q21_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,2,2Q21,pillar3,pillar3,UOB_2Q21_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,3,3Q21,fs,performance_highlights,UOB_3Q21_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,3,3Q21,pillar3,pillar3,UOB_3Q21_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,4,4Q21,fs,condensed_interim,UOB_4Q21_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2021,4,4Q21,pillar3,pillar3,UOB_4Q21_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,1,1Q22,fs,performance_highlights,UOB_1Q22_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,1,1Q22,pillar3,pillar3,UOB_1Q22_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,2,2Q22,fs,condensed_interim,UOB_2Q22_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,2,2Q22,pillar3,pillar3,UOB_2Q22_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,3,3Q22,fs,performance_highlights,UOB_3Q22_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,3,3Q22,pillar3,pillar3,UOB_3Q22_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,4,4Q22,fs,condensed_interim,UOB_4Q22_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2022,4,4Q22,pillar3,pillar3,UOB_4Q22_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,1,1Q23,fs,performance_highlights,UOB_1Q23_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,1,1Q23,pillar3,pillar3,UOB_1Q23_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,2,2Q23,fs,condensed_interim,UOB_2Q23_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,2,2Q23,pillar3,pillar3,UOB_2Q23_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,3,3Q23,fs,performance_highlights,UOB_3Q23_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,3,3Q23,pillar3,pillar3,UOB_3Q23_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,4,4Q23,fs,condensed_interim,UOB_4Q23_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2023,4,4Q23,pillar3,pillar3,UOB_4Q23_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,1,1Q24,fs,performance_highlights,UOB_1Q24_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,1,1Q24,pillar3,pillar3,UOB_1Q24_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,2,2Q24,fs,condensed_interim,UOB_2Q24_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,2,2Q24,pillar3,pillar3,UOB_2Q24_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,3,3Q24,fs,performance_highlights,UOB_3Q24_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,3,3Q24,pillar3,pillar3,UOB_3Q24_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,4,4Q24,fs,condensed_interim,UOB_4Q24_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2024,4,4Q24,pillar3,pillar3,UOB_4Q24_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,1,1Q25,fs,performance_highlights,UOB_1Q25_performance_highlights.pdf,financial_statements,available,y,UOB_1Q25_performance-highlights,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,1,1Q25,pillar3,pillar3,UOB_1Q25_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,2,2Q25,fs,condensed_interim,UOB_2Q25_condensed_interim.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,2,2Q25,pillar3,pillar3,UOB_2Q25_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,3,3Q25,fs,performance_highlights,UOB_3Q25_performance_highlights.pdf,financial_statements,available,y,UOB_3Q25_Performance_Highlights,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,3,3Q25,pillar3,pillar3,UOB_3Q25_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,4,4Q25,fs,condensed_interim,UOB_4Q25_condensed_interim.pdf,financial_statements,available,y,UOB_4Q25_condensed-financial-statements,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2025,4,4Q25,pillar3,pillar3,UOB_4Q25_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,1,1Q26,fs,performance_highlights,UOB_1Q26_performance_highlights.pdf,financial_statements,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,1,1Q26,pillar3,pillar3,UOB_1Q26_pillar3.pdf,pillar3,available,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,2,2Q26,fs,condensed_interim,UOB_2Q26_condensed_interim.pdf,financial_statements,not_yet_released,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,2,2Q26,pillar3,pillar3,UOB_2Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,3,3Q26,fs,performance_highlights,UOB_3Q26_performance_highlights.pdf,financial_statements,not_yet_released,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,3,3Q26,pillar3,pillar3,UOB_3Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,4,4Q26,fs,condensed_interim,UOB_4Q26_condensed_interim.pdf,financial_statements,not_yet_released,,,https://www.uobgroup.com/investor-relations/financial/index.html
+UOB,2026,4,4Q26,pillar3,pillar3,UOB_4Q26_pillar3.pdf,pillar3,not_yet_released,,,https://www.uobgroup.com/investor-relations/financial/index.html

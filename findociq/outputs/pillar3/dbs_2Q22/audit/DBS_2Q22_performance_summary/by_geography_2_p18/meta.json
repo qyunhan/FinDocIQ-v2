@@ -1,0 +1,45 @@
+{
+  "document": "DBS_2Q22_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "by_geography_2_p18",
+  "section_ids": [
+    "by_geography_2"
+  ],
+  "section_titles": [
+    "By geography1"
+  ],
+  "pages": [
+    18
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 25,
+  "usage": {
+    "ts": "2026-07-26T09:06:16",
+    "script": "extract_to_excel",
+    "label": "by_geography_2_p18",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3916,
+    "output_tokens": 6052,
+    "thinking_tokens": 0,
+    "total_tokens": 9968,
+    "est_cost_usd": 0.06034,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Total non-performing loans (NPL)' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Debt securities, contingent liabilities ' [NON-PERFORMING ASSETS AND LOSS]",
+      "  duplicate row label x2: 'Total non-performing assets (NPA)' [NON-PERFORMING ASSETS AND LOSS]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

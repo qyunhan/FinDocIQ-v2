@@ -1,0 +1,275 @@
+{
+  "tables": [
+    {
+      "title": "11. Debt issued",
+      "label_header": "S$ million",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "GROUP",
+          "leaf": "31 Dec 2025"
+        },
+        {
+          "group": "GROUP",
+          "leaf": "31 Dec 2024"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Unsecured",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Subordinated debt",
+          "values": [
+            {
+              "value": "3,551",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,492",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Fixed and floating rate notes",
+          "values": [
+            {
+              "value": "4,689",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3,938",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Commercial paper",
+          "values": [
+            {
+              "value": "15,299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17,867",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Structured notes",
+          "values": [
+            {
+              "value": "5,428",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,833",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Secured",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Covered bonds",
+          "values": [
+            {
+              "value": "1,515",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,423",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Debt issued",
+          "values": [
+            {
+              "value": "30,482",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,553",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Debt issued by maturity",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Within one year",
+          "values": [
+            {
+              "value": "19,630",
+              "cell_state": "reported"
+            },
+            {
+              "value": "23,860",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Over one year",
+          "values": [
+            {
+              "value": "10,852",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7,693",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 1,
+          "parent": null,
+          "label": "Total Debt issued by maturity",
+          "values": [
+            {
+              "value": "30,482",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31,553",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "source_pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Unsecured"
+          },
+          {
+            "line_id": 25,
+            "indent": 1,
+            "label_clean": "Subordinated debt"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 27,
+            "indent": 1,
+            "label_clean": "Commercial paper"
+          },
+          {
+            "line_id": 28,
+            "indent": 1,
+            "label_clean": "Structured notes"
+          },
+          {
+            "line_id": 30,
+            "indent": 0,
+            "label_clean": "Secured"
+          },
+          {
+            "line_id": 31,
+            "indent": 1,
+            "label_clean": "Covered bonds"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": 34,
+            "indent": 0,
+            "label_clean": "Debt issued by maturity"
+          },
+          {
+            "line_id": 35,
+            "indent": 1,
+            "label_clean": "Within one year"
+          },
+          {
+            "line_id": 36,
+            "indent": 1,
+            "label_clean": "Over one year"
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "11. Debt issued",
+        "col_labels_clean": [
+          null,
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

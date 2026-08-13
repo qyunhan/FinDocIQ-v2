@@ -1,0 +1,42 @@
+{
+  "document": "DBS_2Q26_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2026",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_consolidated_income_statement_p27",
+  "section_ids": [
+    "unaudited_consolidated_income_statement"
+  ],
+  "section_titles": [
+    "UNAUDITED CONSOLIDATED INCOME STATEMENT"
+  ],
+  "pages": [
+    27
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 26,
+  "usage": {
+    "ts": "2026-08-06T09:22:12",
+    "script": "extract_to_excel",
+    "label": "unaudited_consolidated_income_statement_p27",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3914,
+    "output_tokens": 4765,
+    "thinking_tokens": 0,
+    "total_tokens": 8679,
+    "est_cost_usd": 0.04876,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [],
+    "letter_leaf_issues": [],
+    "column_band_issues": []
+  },
+  "crop": null
+}

@@ -1,0 +1,485 @@
+{
+  "tables": [
+    {
+      "title": "Financial Highlights (cont'd)",
+      "label_header": "",
+      "continued_from_previous": true,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "1H26"
+        },
+        {
+          "group": null,
+          "leaf": "1H25"
+        },
+        {
+          "group": null,
+          "leaf": "2H25"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Key financial ratios (%) (cont'd)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on average ordinary shareholders' equity 1,2",
+          "values": [
+            {
+              "value": "11.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on average total assets 1",
+          "values": [
+            {
+              "value": "1.01",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.05",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.68",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Return on average risk-weighted assets 1",
+          "values": [
+            {
+              "value": "2.10",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.14",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.37",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loan/Deposit ratio 3",
+          "values": [
+            {
+              "value": "81.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "83.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "81.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Liquidity coverage ratios (\"LCR\") 4,8",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "All-currency",
+          "values": [
+            {
+              "value": "152",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "145",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Singapore Dollar",
+          "values": [
+            {
+              "value": "383",
+              "cell_state": "reported"
+            },
+            {
+              "value": "423",
+              "cell_state": "reported"
+            },
+            {
+              "value": "379",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net stable funding ratio (\"NSFR\") 5,8",
+          "values": [
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "118",
+              "cell_state": "reported"
+            },
+            {
+              "value": "116",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Capital adequacy ratios",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Common Equity Tier 1",
+          "values": [
+            {
+              "value": "15.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Tier 1",
+          "values": [
+            {
+              "value": "16.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.1",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Total",
+          "values": [
+            {
+              "value": "17.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Leverage ratio 6",
+          "values": [
+            {
+              "value": "6.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "6.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Earnings per ordinary share ($) 1,2",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Basic",
+          "values": [
+            {
+              "value": "3.46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.33",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.18",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Diluted",
+          "values": [
+            {
+              "value": "3.45",
+              "cell_state": "reported"
+            },
+            {
+              "value": "3.32",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.17",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net asset value (\"NAV\") per ordinary share ($) 7",
+          "values": [
+            {
+              "value": "29.99",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28.62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "29.36",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Revalued NAV per ordinary share ($) 7",
+          "values": [
+            {
+              "value": "33.39",
+              "cell_state": "reported"
+            },
+            {
+              "value": "31.88",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32.81",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": 7,
+            "indent": 0,
+            "label_clean": "Key financial ratios (%) (cont'd)"
+          },
+          {
+            "line_id": 8,
+            "indent": 0,
+            "label_clean": "Return on average ordinary shareholders' equity 11.6 11.7 7.6"
+          },
+          {
+            "line_id": 9,
+            "indent": 0,
+            "label_clean": "Return on average total assets 1.01 1.05 0.68"
+          },
+          {
+            "line_id": 10,
+            "indent": 0,
+            "label_clean": "Return on average risk-weighted assets 2.10 2.14 1.37"
+          },
+          {
+            "line_id": 11,
+            "indent": 0,
+            "label_clean": "Loan/Deposit ratio 8 1.7 8 3.7 8 1.7"
+          },
+          {
+            "line_id": 12,
+            "indent": 0,
+            "label_clean": "Liquidity coverage ratios (\"LCR\")"
+          },
+          {
+            "line_id": 13,
+            "indent": 1,
+            "label_clean": "All-currency 152 142 145"
+          },
+          {
+            "line_id": 14,
+            "indent": 1,
+            "label_clean": "Singapore Dollar 383 423 379"
+          },
+          {
+            "line_id": 15,
+            "indent": 0,
+            "label_clean": "Net stable funding ratio (\"NSFR\") 114 118 116"
+          },
+          {
+            "line_id": 16,
+            "indent": 0,
+            "label_clean": "Capital adequacy ratios"
+          },
+          {
+            "line_id": 17,
+            "indent": 1,
+            "label_clean": "Common Equity Tier 1 15.4 15.3 15.1"
+          },
+          {
+            "line_id": 18,
+            "indent": 1,
+            "label_clean": "Tier 1 16.6 16.3 16.1"
+          },
+          {
+            "line_id": 19,
+            "indent": 1,
+            "label_clean": "Total 17.8 17.9 17.7"
+          },
+          {
+            "line_id": 20,
+            "indent": 0,
+            "label_clean": "Leverage ratio 6.8 7.1 6.7"
+          },
+          {
+            "line_id": 21,
+            "indent": 0,
+            "label_clean": "Earnings per ordinary share ($)"
+          },
+          {
+            "line_id": 22,
+            "indent": 1,
+            "label_clean": "Basic 3.46 3.33 2.18"
+          },
+          {
+            "line_id": 23,
+            "indent": 1,
+            "label_clean": "Diluted 3.45 3.32 2.17"
+          },
+          {
+            "line_id": 24,
+            "indent": 0,
+            "label_clean": "Net asset value (\"NAV\") per ordinary share ($) 29.99 28.62 29.36"
+          },
+          {
+            "line_id": 25,
+            "indent": 0,
+            "label_clean": "Revalued NAV per ordinary share ($) 33.39 31.88 32.81"
+          }
+        ],
+        "title_clean": "Financial Highlights (cont'd)",
+        "col_labels_clean": [
+          null,
+          null,
+          null
+        ],
+        "all_rows_matched": true,
+        "band_calibrated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "document": "OCBC_4Q25_Condensed_Financial_Statements.pdf",
+  "bank": "Oversea-Chinese Banking Corporation Limited",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "valuation_techniques_and_unobservable_inputs_for_level_3_p25",
+  "section_ids": [
+    "valuation_techniques_and_unobservable_inputs_for_level_3"
+  ],
+  "section_titles": [
+    "Valuation techniques and unobservable inputs for Level 3 instruments"
+  ],
+  "pages": [
+    25
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 2,
+  "n_rows": 17,
+  "usage": {
+    "ts": "2026-07-14T15:04:01",
+    "script": "extract_to_excel",
+    "label": "valuation_techniques_and_unobservable_inputs_for_level_3_p25",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2963,
+    "output_tokens": 2759,
+    "thinking_tokens": 0,
+    "total_tokens": 5722,
+    "est_cost_usd": 0.00779
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '14.3' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [
+      "  duplicate row label x2: 'Total' [Valuation techniques and unobs]",
+      "  duplicate row label x2: 'Total' [Valuation techniques and unobs]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null,
+  "table_drops": [
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments - 31 Dec 2025",
+      "anchor_label": "Valuation techniques and unobservable inputs for Level 3 instruments",
+      "anchor_y": 134.63,
+      "owning_section": "14.3",
+      "dropped": true,
+      "reason": "misowned"
+    },
+    {
+      "title": "Valuation techniques and unobservable inputs for Level 3 instruments - 31 Dec 2024",
+      "anchor_label": "Valuation techniques and unobservable inputs for Level 3 instruments",
+      "anchor_y": 134.63,
+      "owning_section": "14.3",
+      "dropped": true,
+      "reason": "misowned"
+    }
+  ],
+  "all_dropped": true
+}

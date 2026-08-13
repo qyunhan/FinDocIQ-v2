@@ -1,0 +1,4 @@
+# Repo-root requirements — read by Streamlit Community Cloud (it only looks
+# here). The app's real dependency list lives with the app; keep this a
+# pointer so there is exactly one place to edit.
+-r findociq/app/requirements.txt

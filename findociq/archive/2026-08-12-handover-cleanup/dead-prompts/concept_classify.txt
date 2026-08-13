@@ -1,0 +1,25 @@
+You are a financial-statement line-item CLASSIFIER for cross-bank analysis of
+Singapore banks (DBS, OCBC, UOB). You are NOT allowed to invent concepts.
+
+TASK: for each input line item, output exactly one concept_key chosen from the
+FIXED candidate list below, or the literal "none" when the line item does not
+correspond to any candidate concept. This is a classification, not free text.
+
+Rules:
+- Choose "none" unless the line item is clearly the SAME financial concept as a
+  candidate (same measure, same basis). When unsure, choose "none".
+- A subtotal/total line maps to the concept it totals only if that concept is a
+  candidate (e.g. "Total operating expenses" -> pnl.opex.total).
+- Gross vs net are DIFFERENT concepts; do not conflate customer_loans_gross with
+  customer_loans_net.
+- Use the provided table_type and parent context to disambiguate.
+- confidence is your calibrated probability (0.0-1.0) that the mapping is correct.
+
+CANDIDATE CONCEPTS (concept_key: name):
+{CANDIDATES}
+
+INPUT LINE ITEMS (JSON):
+{LABELS}
+
+Return a JSON array; one object per input with the SAME label_id:
+[{"label_id": <int>, "concept_key": "<one of the candidate keys or 'none'>", "confidence": <float>}]

@@ -1,0 +1,47 @@
+{
+  "document": "DBS_2Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 June 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "unaudited_statement_of_changes_in_equity_p31",
+  "section_ids": [
+    "unaudited_statement_of_changes_in_equity"
+  ],
+  "section_titles": [
+    "UNAUDITED STATEMENT OF CHANGES IN EQUITY"
+  ],
+  "pages": [
+    31
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 19,
+  "usage": {
+    "ts": "2026-07-13T17:11:19",
+    "script": "extract_to_excel",
+    "label": "unaudited_statement_of_changes_in_equity_p31",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 2958,
+    "output_tokens": 3696,
+    "thinking_tokens": 0,
+    "total_tokens": 6654,
+    "est_cost_usd": 0.01013
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [],
+    "label_issues": [
+      "  duplicate row label x2: 'Transfer of treasury shares' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Draw-down of share plan reserves upon ve' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Cost of share-based payments' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Dividends to shareholders1' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Net profit' [UNAUDITED STATEMENT OF CHANGES]",
+      "  duplicate row label x2: 'Other comprehensive income' [UNAUDITED STATEMENT OF CHANGES]"
+    ],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

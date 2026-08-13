@@ -1,0 +1,47 @@
+{
+  "document": "DBS_4Q25_performance_summary.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "31 December 2025",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "non_performing_assets_and_loss_allowance_coverage_p23-25/chunks/c2",
+  "section_ids": [
+    "non_performing_assets_and_loss_allowance_coverage"
+  ],
+  "section_titles": [
+    "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE"
+  ],
+  "pages": [
+    25
+  ],
+  "type": "spanning",
+  "image_used": false,
+  "n_tables": 1,
+  "n_rows": 6,
+  "usage": {
+    "ts": "2026-07-16T11:28:46",
+    "script": "extract_to_excel",
+    "label": "non_performing_assets_and_loss_allowance_coverage_p23-25/chunks/c2",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3024,
+    "output_tokens": 935,
+    "thinking_tokens": 0,
+    "total_tokens": 3959,
+    "est_cost_usd": 0.01295,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '6.28' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '180' pdf=2x json=0x (missing from extraction)",
+      "  deficit: '1.0' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '130' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '197' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

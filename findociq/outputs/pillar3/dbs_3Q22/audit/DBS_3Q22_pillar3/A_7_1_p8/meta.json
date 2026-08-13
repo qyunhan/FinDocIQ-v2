@@ -1,0 +1,49 @@
+{
+  "document": "DBS_3Q22_pillar3.pdf",
+  "bank": "DBS Group Holdings Ltd",
+  "doc_date": "30 September 2022",
+  "model": "gemini-3.5-flash",
+  "prompt_hash": "2b417262",
+  "unit_id": "A_7_1_p8",
+  "section_ids": [
+    "A.7.1"
+  ],
+  "section_titles": [
+    "RWA Flow Statements under the CCR Internal Models Method"
+  ],
+  "pages": [
+    8
+  ],
+  "type": "single",
+  "image_used": false,
+  "n_tables": 0,
+  "n_rows": 0,
+  "usage": {
+    "ts": "2026-07-26T10:09:24",
+    "script": "extract_to_excel",
+    "label": "A_7_1_p8",
+    "model": "gemini-3.5-flash",
+    "image_used": false,
+    "prompt_tokens": 3902,
+    "output_tokens": 9,
+    "thinking_tokens": 0,
+    "total_tokens": 3911,
+    "est_cost_usd": 0.00593,
+    "batch": false
+  },
+  "validation": {
+    "span_issues": [],
+    "number_issues": [
+      "  deficit: '232650' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '240903' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3496' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '3050' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '1707' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '6.1' pdf=1x json=0x (missing from extraction)",
+      "  deficit: '8.1' pdf=1x json=0x (missing from extraction)"
+    ],
+    "label_issues": [],
+    "letter_leaf_issues": []
+  },
+  "crop": null
+}

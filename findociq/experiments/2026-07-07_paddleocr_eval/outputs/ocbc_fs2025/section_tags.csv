@@ -1,0 +1,140 @@
+page,table_idx,section_id,section_title,source
+1,0,income_statements,Income Statements,gemini
+2,0,statements_of_comprehensive_income,Statements of Comprehensive Income,gemini
+3,0,balance_sheets,Balance Sheets,gemini
+4,0,statement_of_changes_in_equity_group,Statement of Changes in Equity – Group,gemini
+5,0,statement_of_changes_in_equity_group,Statement of Changes in Equity – Group,gemini
+6,0,statement_of_changes_in_equity_bank,Statement of Changes in Equity – Bank,gemini
+7,0,consolidated_cash_flow_statement,Consolidated Cash Flow Statement,gemini
+8,0,2.1,2.1 Basis of Preparation,gemini
+13,0,2.7,DerivativeFinancialInstruments,gemini
+21,0,2.13.6.4,Subsequent Measurement – Contracts Not Measured Under the PAA,gemini
+30,0,2.21.3,Insurance Business,gemini
+32,0,3,Net Interest Income,gemini
+32,1,4,Insurance Service Results and Net Investment and Finance Income/(Expenses) from Life Insurance,gemini
+33,0,4,Insurance Service Results and Net Investment and Finance Income/(Expenses) from Life Insurance,gemini
+33,1,4,Insurance Service Results and Net Investment and Finance Income/(Expenses) from Life Insurance,gemini
+34,0,5,5. Fees and Commissions (Net),gemini
+34,1,6,6. Dividends from Subsidiaries and Associates,gemini
+35,0,7,7. Net Trading Income,gemini
+35,1,8,8. Other Income,gemini
+36,0,9,9. Staff Costs and Other Operating Expenses,gemini
+37,0,10,10. Allowances for Loans and Other Assets,gemini
+37,1,11,11. Income Tax Expense,gemini
+37,2,11,11. Income Tax Expense,gemini
+38,0,12,12. Earnings Per Share,gemini
+39,0,13.1,13.1 Share Capital,gemini
+40,0,13.2,13.2 Share Option Scheme,gemini
+40,1,13.3,13.3 Employee Share Purchase Plan,gemini
+41,0,13.3,13.3 Employee Share Purchase Plan,gemini
+42,0,14,14. Other Equity Instruments,gemini
+44,0,15,15. Capital Reserves,gemini
+44,1,16,16. Revenue Reserves,gemini
+45,0,16.1,16.1 Unappropriated Profit,gemini
+46,0,16.2,16.2 General Reserves,gemini
+46,1,16.4,16.4 Currency Translation Reserves,gemini
+47,0,17,17. Deposits and Balances of Non-Bank Customers and Banks,gemini
+48,0,18,18. Derivative Financial Instruments,gemini
+49,0,18,18. Derivative Financial Instruments,gemini
+50,0,19,19. Other Liabilities,gemini
+50,1,20,20. Deferred Tax,gemini
+51,0,20,20. Deferred Tax,gemini
+52,0,21,21. Debt Issued,gemini
+52,1,21.1,21.1 Subordinated Debt,gemini
+54,0,21.2,21.2 Fixed and Floating Rate Notes,gemini
+55,0,21.3,21.3 Commercial Paper,gemini
+55,1,21.4,Structured Notes,gemini
+56,0,21.5,Covered Bonds,gemini
+56,1,21.6,Reconciliation of Movements of Liabilities to Cash Flows Arising from Financing Activities,gemini
+57,0,22,Assets and Liabilities for Life Insurance Funds,gemini
+58,0,22.1,Reconciliation of the Liability for Remaining Coverage and Liability for Incurred Claims for Life Insurance,gemini
+59,0,22.1,Reconciliation of the Liability for Remaining Coverage and Liability for Incurred Claims for Life Insurance,gemini
+60,0,22.2,Reconciliation of the Measurement Components of Insurance Contract Balances for Life Insurance,gemini
+61,0,22.3,Impact of Life Insurance Contracts Recognised During the Year,gemini
+61,1,22.4,Amounts Determined on Transition to SFRS(I) 17,gemini
+62,0,22.5,Expected Recognition of the Contractual Service Margin for Life Insurance Contracts Issued,gemini
+62,1,23,Cash and Placements with Central Banks,gemini
+63,0,24,Government Treasury Bills and Securities,gemini
+63,1,25,Placements with and Loans to Banks,gemini
+64,0,26,Loans to Customers,gemini
+65,0,27,Non-Performing Assets,gemini
+66,0,27,Non-Performing Assets,gemini
+66,1,27.4,Restructured/Renegotiated Loans,gemini
+67,0,28,Allowances for Impaired Loans to Customers,gemini
+67,1,analysed_by_industry,Analysed by Industry,gemini
+68,0,29,Debt and Equity Securities,gemini
+69,0,30,Allowances for Financial Assets,gemini
+70,0,30,Allowances for Financial Assets,gemini
+71,0,30,Allowances for Financial Assets,gemini
+71,1,30,Allowances for Financial Assets,gemini
+72,0,30,Allowances for Financial Assets,gemini
+72,1,30,Allowances for Financial Assets,gemini
+73,0,31,Other Assets,gemini
+73,1,32,Associates,gemini
+73,2,32.1,Material Associate,gemini
+74,0,32.2,Financial Information of Material Associate,gemini
+75,0,32.3,Financial Information of Other Associates,gemini
+75,1,32.3,Financial Information of Other Associates,gemini
+75,2,33,Subsidiaries,gemini
+76,0,33.1,List of Principal Subsidiaries,gemini
+77,0,33.2,Non-Controlling Interests in Subsidiaries,gemini
+78,0,34,"Property, Plant and Equipment",gemini
+79,0,34,"Property, Plant and Equipment",gemini
+80,0,35,Investment Property,gemini
+81,0,36,Goodwill and Other Intangible Assets,gemini
+82,0,impairment_tests_for_goodwill,Impairment Tests for Goodwill,gemini
+82,1,impairment_tests_for_goodwill,Impairment Tests for Goodwill,gemini
+83,0,37.1,37.1 BusinessSegments,gemini
+84,0,37.1,37.1 BusinessSegments,gemini
+85,0,37.2,37.2 GeographicalSegments,gemini
+86,0,38.1,38.1 Overview,gemini
+87,0,maximum_exposure_to_credit_risk,MaximumExposuretoCreditRisk,gemini
+88,0,collateral,Collateral,gemini
+89,0,total_loans_and_advances_credit_quality,TotalLoansandAdvances–CreditQuality,gemini
+89,1,past_due_loans,PastDueLoans,gemini
+90,0,loans_past_due_but_not_impaired,Loans Past Due But Not Impaired,gemini
+91,0,currency_risk,Currency Risk,gemini
+91,1,structural_foreign_exchange_risk,Structural Foreign Exchange Risk,gemini
+92,0,liquidity_risk,Liquidity Risk,gemini
+93,0,38,38. Risk Management,gemini
+94,0,contractual_maturity_for_financial_liabilities,Contractual Maturity for Financial Liabilities,gemini
+95,0,hedging,Hedging,gemini
+95,1,net_investment_hedges,Net Investment Hedges,gemini
+99,0,38,38. Risk Management,gemini
+99,1,38,38. Risk Management,gemini
+100,0,38,38. Risk Management,gemini
+100,1,38,38. Risk Management,gemini
+102,0,38,38. Risk Management,gemini
+104,0,38,38. Risk Management,gemini
+105,0,38,38. Risk Management,gemini
+105,1,amounts_payable_on_demand,Amounts Payable on Demand,gemini
+106,0,credit_risk,(h) Credit Risk,gemini
+107,0,credit_risk,(h) Credit Risk,gemini
+108,0,credit_risk,(h) Credit Risk,gemini
+108,1,credit_risk,(h) Credit Risk,gemini
+109,0,market_risk_sensitivity_analysis,Market Risk Sensitivity Analysis,gemini
+110,0,38,38. Risk Management,gemini
+111,0,39,39. Financial Assets and Financial Liabilities Classification,gemini
+112,0,39,39. Financial Assets and Financial Liabilities Classification,gemini
+113,0,39,39. Financial Assets and Financial Liabilities Classification,gemini
+114,0,39,39. Financial Assets and Financial Liabilities Classification,gemini
+117,0,40.3,Fair Value Hierarchy,gemini
+118,0,40.3,Fair Value Hierarchy,gemini
+119,0,40.3,Fair Value Hierarchy,gemini
+119,1,40.3,Fair Value Hierarchy,gemini
+120,0,40.3,Fair Value Hierarchy,gemini
+120,1,40.3,Fair Value Hierarchy,gemini
+121,0,40.3,Fair Value Hierarchy,gemini
+121,1,40.3,Fair Value Hierarchy,gemini
+122,0,40.3,Fair Value Hierarchy,gemini
+122,1,40.3,Fair Value Hierarchy,gemini
+122,2,40.3,Fair Value Hierarchy,gemini
+123,0,41,Offsetting Financial Assets and Financial Liabilities,gemini
+124,0,41,Offsetting Financial Assets and Financial Liabilities,gemini
+125,0,42,Contingent Liabilities,gemini
+126,0,43,Commitments,gemini
+127,0,44,Unconsolidated Structured Entities,gemini
+128,0,45.1,Assets Pledged,gemini
+129,0,46.1,Material Related Party Transactions,gemini
+130,0,46.2,46.2 Key Management Personnel Compensation,gemini
+131,0,48,48. New Accounting Standards and Interpretations,gemini

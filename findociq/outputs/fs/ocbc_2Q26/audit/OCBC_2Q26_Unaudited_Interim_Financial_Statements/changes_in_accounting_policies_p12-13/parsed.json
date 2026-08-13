@@ -1,0 +1,87 @@
+{
+  "tables": [
+    {
+      "title": "2.4 Changes in accounting policies",
+      "label_header": "SFRS(I)",
+      "continued_from_previous": false,
+      "section_id": "2.4",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Title"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "SFRS(I) 9 (Amendments), SFRS(I) 7 (Amendments)",
+          "values": [
+            {
+              "value": "Classification and Measurement of Financial Instruments \u2013 Amendments to SFRS(I) 9 and SFRS(I) 7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "SFRS(I) 9 (Amendments), SFRS(I) 7 (Amendments)",
+          "values": [
+            {
+              "value": "Contracts Referencing Nature-dependent Electricity",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Various",
+          "values": [
+            {
+              "value": "Annual Improvements to SFRS(I)s \u2013 Volume 11",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "source": "pages.pdf",
+    "tables": [
+      {
+        "rows": [
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          },
+          {
+            "line_id": null,
+            "indent": null,
+            "label_clean": null
+          }
+        ],
+        "title_clean": "2.4 Changes in accounting policies",
+        "col_labels_clean": [
+          null
+        ],
+        "all_rows_matched": false,
+        "band_calibrated": true
+      }
+    ]
+  }
+}
