@@ -1,0 +1,791 @@
+{
+  "tables": [
+    {
+      "title": "FINANCIAL HIGHLIGHTS (continued)",
+      "label_header": "",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "2025"
+        },
+        {
+          "group": null,
+          "leaf": "2024"
+        },
+        {
+          "group": null,
+          "leaf": "4Q25"
+        },
+        {
+          "group": null,
+          "leaf": "4Q24"
+        },
+        {
+          "group": null,
+          "leaf": "3Q25"
+        },
+        {
+          "group": null,
+          "leaf": "2H25"
+        },
+        {
+          "group": null,
+          "leaf": "2H24"
+        },
+        {
+          "group": null,
+          "leaf": "1H25"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "Key Financial Ratios (%)",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Performance ratios",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Return on equity 1/ 2/",
+          "values": [
+            {
+              "value": "12.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "11.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Return on assets 3/",
+          "values": [
+            {
+              "value": "1.37",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.53",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.25",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.46",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.35",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.44",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.40",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Revenue mix/efficiency ratios",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Net interest margin",
+          "values": [
+            {
+              "value": "1.91",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.20",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.86",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.15",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.84",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.85",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2.17",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.98",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Non-interest income to total income",
+          "values": [
+            {
+              "value": "37.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "36.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "28.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "32.3",
+              "cell_state": "reported"
+            },
+            {
+              "value": "35.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Cost-to-income",
+          "values": [
+            {
+              "value": "40.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "39.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "43.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "45.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "40.0",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41.5",
+              "cell_state": "reported"
+            },
+            {
+              "value": "41.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "38.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "Loans-to-deposits",
+          "values": [
+            {
+              "value": "78.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "78.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "78.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "78.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "80.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "78.7",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h2",
+          "label": "NPL ratio",
+          "values": [
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "0.9",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Capital adequacy ratios 8/ 9/",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Common Equity Tier 1",
+          "values": [
+            {
+              "value": "16.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.9",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.0",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Tier 1",
+          "values": [
+            {
+              "value": "17.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.6",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.8",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.8",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h3",
+          "label": "Total",
+          "values": [
+            {
+              "value": "19.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.7",
+              "cell_state": "reported"
+            },
+            {
+              "value": "19.6",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Leverage ratio 5/ 8/ 9/",
+          "values": [
+            {
+              "value": "7.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.2",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.1",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.4",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.3",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Liquidity coverage ratios 6/ 8/",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "Singapore dollar",
+          "values": [
+            {
+              "value": "294",
+              "cell_state": "reported"
+            },
+            {
+              "value": "299",
+              "cell_state": "reported"
+            },
+            {
+              "value": "323",
+              "cell_state": "reported"
+            },
+            {
+              "value": "251",
+              "cell_state": "reported"
+            },
+            {
+              "value": "307",
+              "cell_state": "reported"
+            },
+            {
+              "value": "315",
+              "cell_state": "reported"
+            },
+            {
+              "value": "294",
+              "cell_state": "reported"
+            },
+            {
+              "value": "273",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h4",
+          "label": "All-currency",
+          "values": [
+            {
+              "value": "138",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "142",
+              "cell_state": "reported"
+            },
+            {
+              "value": "140",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141",
+              "cell_state": "reported"
+            },
+            {
+              "value": "134",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net stable funding ratio 7/ 8/",
+          "values": [
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113",
+              "cell_state": "reported"
+            },
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113",
+              "cell_state": "reported"
+            },
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "114",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113",
+              "cell_state": "reported"
+            },
+            {
+              "value": "113",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "Earnings per share (S$) 2/",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Basic earnings",
+          "values": [
+            {
+              "value": "1.63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.52",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.48",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.72",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.60",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.64",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h5",
+          "label": "Diluted earnings",
+          "values": [
+            {
+              "value": "1.63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.67",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.52",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.47",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.72",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.62",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.60",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1.63",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net asset value per share (S$)",
+          "values": [
+            {
+              "value": "13.38",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.38",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.97",
+              "cell_state": "reported"
+            },
+            {
+              "value": "13.38",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.80",
+              "cell_state": "reported"
+            },
+            {
+              "value": "12.92",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

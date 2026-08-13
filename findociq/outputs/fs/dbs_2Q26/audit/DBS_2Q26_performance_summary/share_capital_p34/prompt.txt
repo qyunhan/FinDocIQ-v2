@@ -1,0 +1,141 @@
+You are given PDF page 34 — section additional_information 'SHARE CAPITAL' of a bank's regulatory disclosure.
+
+TABLE SPLITTING RULES:
+- Every distinct table is a SEPARATE entry. Never merge two tables into one.
+- A new bold heading followed by its OWN NEW column headers = NEW table, even if the column names are identical to the previous table.
+- A bold category label that shares the same columns as the rows above and below it (no new column headers appear after it) is a section_header ROW inside the existing table — NOT a new table. Do NOT split on category labels.
+- Different date periods = different tables. If two blocks of rows are separated by a visual break and each ends with a dated total (e.g. 'At 31 December 2025' then 'At 31 December 2024'), they are TWO tables. Name each table's `title` with the date it belongs to (e.g. 'Credit Quality of Restructured Exposures — 31 December 2025' and 'Credit Quality of Restructured Exposures — 31 December 2024').
+
+BOUNDARY RULE (mandatory):
+1. Scan top-to-bottom until you find the heading 'additional_information' or 'SHARE CAPITAL'.
+2. START extracting tables only AFTER that heading — ignore everything before it.
+3. STOP immediately when you see any heading for a DIFFERENT section number (e.g. any section that is not additional_information) — tables after that point do not belong here.
+4. If the heading is not found, return {"tables": []}.
+5. If only narrative text exists under the heading (no grid), return {"tables": []}.
+
+
+═══════════════════════════════════════════════════
+TABLE STRUCTURE
+═══════════════════════════════════════════════════
+For each table return:
+
+title
+  The printed table title verbatim. Include the reporting date if shown (e.g. "31 Dec 2025").
+  If no explicit table title is printed, use the section heading as the title (e.g. "Key Metrics").
+
+label_header
+  The header of the row-label column (e.g. "$m", "ASF Item"). "" if none is printed.
+
+continued_from_previous
+  true ONLY when ALL of these hold:
+  1. The columns are identical to the previous table (same count, same leaf labels).
+  2. NO new bold heading, date-period label, or section header appears at the top of this chunk.
+  3. The first substantive row is a data or total row — NOT a section_header or sub_header.
+  If a new bold title, date header, or section_header exists before the first data row,
+  set continued_from_previous=false and give this table its own title.
+
+  DIFFERENT DATE PERIODS = DIFFERENT TABLES — always. Two blocks belong to different tables if:
+  - A date/period label appears as a header between them, OR
+  - Each block ends with a dated total row (e.g. "At 31 December 2025" then "At 31 December 2024")
+    followed by a visual break before the next block with the same structure, OR
+  - The same column structure repeats for a different reporting date.
+  Never merge two date-period blocks into one table. Hard rule, not a judgment call.
+
+columns  (left to right — DATA columns only)
+  EXCLUDE the row-label column and the row-number column.
+  Two-level headers: set group (spanning label) and leaf (sub-column label).
+  Single-level headers: group=null, put the text in leaf.
+  Scope/currency lines above headers (e.g. "Group – All Currencies") are NOT columns.
+  SUB-LABEL ROW: if a row of descriptive labels sits between the column headers and the
+  first data row, those ARE the column leaf values — NOT data rows or sub_header rows.
+  EXAMPLE: if the PDF shows:
+      Group header:  "Gross carrying amount of¹/"  spanning columns (a) and (b)
+      Letter row:    (a)          (b)          (c)      ...
+      Label row:     Defaulted    Non-defaulted Allowances ...
+      First data row: 3,229       337,891      (3,615)  ...
+  Then the correct columns are:
+      {"group": "Gross carrying amount of¹/", "leaf": "Defaulted exposures"}
+      {"group": "Gross carrying amount of¹/", "leaf": "Non-defaulted exposures"}
+      {"group": null, "leaf": "Allowances and impairments"}
+  The label row ("Defaulted exposures", "Non-defaulted exposures"...) becomes the leaf.
+  The letter row ("(a)", "(b)"...) is discarded — it is just a reference label, not a header.
+  NEVER emit the label row as sub_header or data rows.
+
+  LETTER-ROW RULE (hard): If a row of single letters or bracketed letters — "(a)", "(b)",
+  "(c)" etc. — appears anywhere in the header band, that entire row is a reference index.
+  Discard it unconditionally. The descriptive text row immediately below it provides the
+  leaf labels. This applies even when the letter row is the only row between the group
+  header and the first data row. NEVER emit "(a)", "(b)" etc. as a leaf value.
+
+rows  (EVERY row, top to bottom)
+  row_id    Printed line number exactly as shown ("1", "4a"). null for rows with no number.
+  row_type  "section_header" — category title, date/period header, shaded block header
+                               (e.g. "31 Dec 2025", "CASH OUTFLOWS", "Loans"). No values.
+            "data"           — normal line item.
+            "total"          — bold total, grand total, or subtotal.
+            "sub_header"     — bold divider introducing a sub-group, no values.
+            "note"           — footnote or disclaimer line.
+            Use "section_header" for date/period headers — NOT "sub_header".
+  level     0 = section_header or grand total
+            1 = primary line item
+            2 = sub-item (indented, "of which", named breakdown)
+            3 = sub-sub-item (rare)
+  parent    null for level 0 and 1. For level 2+: row_id of nearest ancestor one level up.
+            If that ancestor has no printed number, assign it a synthetic id ("h1","h2",…)
+            and use the SAME id in both rows.
+  label     Row label verbatim, including footnote markers. Do not re-indent or trim.
+  values    One GCell per column (see CELL STATE below).
+            section_header / sub_header / note rows use an empty list [].
+
+═══════════════════════════════════════════════════
+CATEGORY LABELS — NEVER DROP THEM
+═══════════════════════════════════════════════════
+Every category / portfolio / asset-class block MUST be captured as a row with
+row_type="section_header" (level 0). These labels often appear on the same line as the
+column headers — in that case the leading words are the CATEGORY LABEL, not column names.
+Emit them as a section_header row. NEVER fold a category label into a column name.
+
+═══════════════════════════════════════════════════
+VALUE FIDELITY
+═══════════════════════════════════════════════════
+- Copy each value EXACTLY as printed, including thousands separators and signs:
+  "62,195"  "(1,505)"  "17.0%"  "NM"  ">100"  "unchanged"
+- If a number is split by a stray render space ("2 64,680"), join it ("264,680").
+- Never invent, merge, split, reorder, or omit any row, column, or value.
+
+═══════════════════════════════════════════════════
+CELL STATE  (every GCell must carry one of these 5 states)
+═══════════════════════════════════════════════════
+  "reported" — any printed value: number, %, text, #, <0.5, NM, etc.
+  "nil"      — a dash printed: -, –, —  (zero or negligible).  value = "-"
+  "zero"     — printed "0" (explicitly zero).                  value = "0"
+  "empty"    — cell is truly blank with no visual mark.         value = ""
+  "grey"     — cell is visually shaded / greyed out.            value = ""
+
+Rules — apply in this order:
+  1. Any dash (-, –, —)        → cell_state="nil",   value="-"
+  2. Printed "0"               → cell_state="zero",  value="0"
+  3. Visually grey/shaded blank → cell_state="grey",  value=""
+  4. Truly blank, no mark      → cell_state="empty", value=""
+  5. Anything else printed     → cell_state="reported", value=verbatim
+
+CRITICAL — DASH PRESERVATION (most common error):
+  A printed dash "-" must ALWAYS be captured. NEVER replace a printed dash with "".
+  When in doubt between "empty" and "nil": if ANYTHING is visually printed in the cell
+  (even a faint or small dash), it is "nil" not "empty".
+  Use "empty" ONLY for cells with NO mark whatsoever — completely blank white space.
+  WRONG: {"value": "",  "cell_state": "empty"}   ← for a printed dash
+  RIGHT: {"value": "-", "cell_state": "nil"}     ← for a printed dash
+
+═══════════════════════════════════════════════════
+COLUMN ALIGNMENT  (critical — never shift values)
+═══════════════════════════════════════════════════
+values must contain EXACTLY one GCell per column, in left-to-right order.
+Even if a row is sparse, emit a GCell for every column slot — never skip or shift.
+
+Example — 3 columns [A, B, C], only B has a value:
+  [{"value":"","cell_state":"empty"},
+   {"value":"42","cell_state":"reported"},
+   {"value":"","cell_state":"empty"}]
+
+Trailing empty columns must still be emitted — never truncate the list early.

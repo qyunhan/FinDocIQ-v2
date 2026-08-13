@@ -1,0 +1,191 @@
+[
+  {
+    "section_id": "overview",
+    "title": "OVERVIEW",
+    "sheet": "overview Table 3",
+    "pages": "4-8",
+    "first_page": 4,
+    "table_n": 3,
+    "n_tables": 3
+  },
+  {
+    "section_id": "net_interest_income",
+    "title": "NET INTEREST INCOME",
+    "sheet": "net_interest_income Table 3",
+    "pages": "10-11",
+    "first_page": 10,
+    "table_n": 3,
+    "n_tables": 3
+  },
+  {
+    "section_id": "other_non_interest_income",
+    "title": "OTHER NON-INTEREST INCOME",
+    "sheet": "other_non_interest_income",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "expenses",
+    "title": "EXPENSES1",
+    "sheet": "expenses",
+    "pages": "13",
+    "first_page": 13,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "allowances_for_credit_and_other_losses",
+    "title": "ALLOWANCES FOR CREDIT AND OTHER LOSSES",
+    "sheet": "allowances_for_credit_and_other",
+    "pages": "13",
+    "first_page": 13,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "performance_by_business_segments",
+    "title": "PERFORMANCE BY BUSINESS SEGMENTS",
+    "sheet": "performance_by_business Table 4",
+    "pages": "14-16",
+    "first_page": 14,
+    "table_n": 4,
+    "n_tables": 4
+  },
+  {
+    "section_id": "performance_by_geography",
+    "title": "PERFORMANCE BY GEOGRAPHY",
+    "sheet": "performance_by_geograph Table 4",
+    "pages": "17-19",
+    "first_page": 17,
+    "table_n": 4,
+    "n_tables": 4
+  },
+  {
+    "section_id": "customer_loans",
+    "title": "CUSTOMER LOANS",
+    "sheet": "customer_loans",
+    "pages": "20",
+    "first_page": 20,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "non_performing_assets_and_loss_allowance_coverage",
+    "title": "NON-PERFORMING ASSETS AND LOSS ALLOWANCE COVERAGE",
+    "sheet": "non_performing_assets_a Table 4",
+    "pages": "21-23",
+    "first_page": 21,
+    "table_n": 4,
+    "n_tables": 4
+  },
+  {
+    "section_id": "customer_deposits",
+    "title": "CUSTOMER DEPOSITS",
+    "sheet": "customer_deposits",
+    "pages": "24",
+    "first_page": 24,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "debts_issued",
+    "title": "DEBTS ISSUED",
+    "sheet": "debts_issued",
+    "pages": "25",
+    "first_page": 25,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "capital_adequacy",
+    "title": "CAPITAL ADEQUACY",
+    "sheet": "capital_adequacy",
+    "pages": "26",
+    "first_page": 26,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "unaudited_consolidated_income_statement",
+    "title": "UNAUDITED CONSOLIDATED INCOME STATEMENT",
+    "sheet": "unaudited_consolidated_income_s",
+    "pages": "27",
+    "first_page": 27,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "unaudited_consolidated_statement_of_comprehensive_income",
+    "title": "UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+    "sheet": "unaudited_consolidated_statemen",
+    "pages": "28",
+    "first_page": 28,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "unaudited_balance_sheets",
+    "title": "UNAUDITED BALANCE SHEETS",
+    "sheet": "unaudited_balance_sheets",
+    "pages": "29",
+    "first_page": 29,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "unaudited_consolidated_statement_of_changes_in_equity",
+    "title": "UNAUDITED CONSOLIDATED STATEMENT OF CHANGES IN EQUITY",
+    "sheet": "unaudited_consolidated_statemen",
+    "pages": "30",
+    "first_page": 30,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "unaudited_statement_of_changes_in_equity",
+    "title": "UNAUDITED STATEMENT OF CHANGES IN EQUITY",
+    "sheet": "unaudited_statement_of_ Table 2",
+    "pages": "31",
+    "first_page": 31,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "unaudited_consolidated_cash_flow_statement",
+    "title": "UNAUDITED CONSOLIDATED CASH FLOW STATEMENT",
+    "sheet": "unaudited_consolidated_cash_flo",
+    "pages": "32",
+    "first_page": 32,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "fair_value_hierarchy",
+    "title": "Fair Value Hierarchy",
+    "sheet": "fair_value_hierarchy Table 2",
+    "pages": "33",
+    "first_page": 33,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "off_balance_sheet_items",
+    "title": "2. Off-balance Sheet Items",
+    "sheet": "off_balance_sheet_items",
+    "pages": "33",
+    "first_page": 33,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "share_capital",
+    "title": "SHARE CAPITAL",
+    "sheet": "share_capital",
+    "pages": "34",
+    "first_page": 34,
+    "table_n": 1,
+    "n_tables": 1
+  }
+]

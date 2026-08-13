@@ -1,0 +1,317 @@
+[
+  {
+    "section_id": "full_year_2025_performance",
+    "title": "Full Year 2025 Performance",
+    "sheet": "full_year_2025_performance",
+    "pages": "2-3",
+    "first_page": 2,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "fourth_quarter_2025_performance",
+    "title": "Fourth Quarter 2025 Performance",
+    "sheet": "fourth_quarter_2025_per Tab (5)",
+    "pages": "4-6",
+    "first_page": 4,
+    "table_n": 4,
+    "n_tables": 4
+  },
+  {
+    "section_id": "4q25_quarter_on_quarter_performance",
+    "title": "4Q25 Quarter-on-Quarter Performance",
+    "sheet": "4q25_quarter_on_quarter Tab (4)",
+    "pages": "5-6",
+    "first_page": 5,
+    "table_n": 3,
+    "n_tables": 3
+  },
+  {
+    "section_id": "strong_funding_liquidity_and_capital_position",
+    "title": "Strong Funding, Liquidity and Capital Position",
+    "sheet": "strong_funding_liquidity_and_ca",
+    "pages": "7",
+    "first_page": 7,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "dividend",
+    "title": "Dividend",
+    "sheet": "dividend",
+    "pages": "8",
+    "first_page": 8,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "selected_income_statement_items",
+    "title": "Selected Income Statement Items",
+    "sheet": "selected_income_statement_items",
+    "pages": "10",
+    "first_page": 10,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "selected_balance_sheet_items",
+    "title": "Selected Balance Sheet Items",
+    "sheet": "selected_balance_sheet_items",
+    "pages": "10",
+    "first_page": 10,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "selected_income_statement_items_2",
+    "title": "Selected Income Statement Items",
+    "sheet": "selected_income_statement_items",
+    "pages": "11",
+    "first_page": 11,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "selected_balance_sheet_items_2",
+    "title": "Selected Balance Sheet Items",
+    "sheet": "selected_balance_sheet_items_2",
+    "pages": "11",
+    "first_page": 11,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "performance_ratios",
+    "title": "Performance ratios",
+    "sheet": "performance_ratios",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "revenue_mix_efficiency_ratios",
+    "title": "Revenue mix/efficiency ratios",
+    "sheet": "revenue_mix_efficiency_ratios",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "capital_adequacy_ratios_8_9",
+    "title": "Capital adequacy ratios 8/ 9/",
+    "sheet": "capital_adequacy_ratios_8_9",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "leverage_ratio_5_8_9",
+    "title": "Leverage ratio 5/ 8/ 9/",
+    "sheet": "leverage_ratio_5_8_9",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "liquidity_coverage_ratios_6_8",
+    "title": "Liquidity coverage ratios 6/ 8/",
+    "sheet": "liquidity_coverage_ratios_6_8",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "net_stable_funding_ratio_7_8",
+    "title": "Net stable funding ratio 7/ 8/",
+    "sheet": "net_stable_funding_ratio_7_8",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "earnings_per_share_s_2",
+    "title": "Earnings per share (S$) 2/",
+    "sheet": "earnings_per_share_s_2",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "net_asset_value_per_share_s",
+    "title": "Net asset value per share (S$)",
+    "sheet": "net_asset_value_per_share_s",
+    "pages": "12",
+    "first_page": 12,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "average_balance_sheet",
+    "title": "Average Balance Sheet",
+    "sheet": "average_balance_sheet Table 2",
+    "pages": "13",
+    "first_page": 13,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "volume_and_rate_analysis",
+    "title": "Volume and Rate Analysis",
+    "sheet": "volume_and_rate_analysi Tab (3)",
+    "pages": "13",
+    "first_page": 13,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "non_interest_income",
+    "title": "NON-INTEREST INCOME",
+    "sheet": "non_interest_income",
+    "pages": "14",
+    "first_page": 14,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "operating_expenses",
+    "title": "OPERATING EXPENSES",
+    "sheet": "operating_expenses Table 2",
+    "pages": "15",
+    "first_page": 15,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "allowances_for_loans_and_other_assets",
+    "title": "ALLOWANCES FOR LOANS AND OTHER ASSETS",
+    "sheet": "allowances_for_loans_an Tab (3)",
+    "pages": "15",
+    "first_page": 15,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "loans_to_customers",
+    "title": "LOANS TO CUSTOMERS",
+    "sheet": "loans_to_customers",
+    "pages": "16",
+    "first_page": 16,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "by_maturity",
+    "title": "By Maturity",
+    "sheet": "by_maturity",
+    "pages": "16",
+    "first_page": 16,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "by_industry",
+    "title": "By Industry",
+    "sheet": "by_industry",
+    "pages": "16",
+    "first_page": 16,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "by_currency",
+    "title": "By Currency",
+    "sheet": "by_currency",
+    "pages": "16",
+    "first_page": 16,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "by_geography_1",
+    "title": "By Geography 1/",
+    "sheet": "by_geography_1",
+    "pages": "16",
+    "first_page": 16,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "non_performing_assets",
+    "title": "NON-PERFORMING ASSETS",
+    "sheet": "non_performing_assets Table 4",
+    "pages": "17-18",
+    "first_page": 17,
+    "table_n": 4,
+    "n_tables": 4
+  },
+  {
+    "section_id": "npls_by_industry",
+    "title": "NPLs by Industry",
+    "sheet": "npls_by_industry Table 2",
+    "pages": "18",
+    "first_page": 18,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "npas_by_period_overdue",
+    "title": "NPAs by Period Overdue",
+    "sheet": "npas_by_period_overdue Table 2",
+    "pages": "18",
+    "first_page": 18,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "restructured_loans",
+    "title": "Restructured Loans",
+    "sheet": "restructured_loans Table 2",
+    "pages": "18",
+    "first_page": 18,
+    "table_n": 2,
+    "n_tables": 2
+  },
+  {
+    "section_id": "non_bank_deposits_by_currency",
+    "title": "Non-Bank Deposits by Currency",
+    "sheet": "non_bank_deposits_by_currency",
+    "pages": "19",
+    "first_page": 19,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "capital_adequacy_ratios_1",
+    "title": "CAPITAL ADEQUACY RATIOS 1/",
+    "sheet": "capital_adequacy_ratios_1",
+    "pages": "20",
+    "first_page": 20,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "profit_before_income_tax_by_business_segment",
+    "title": "Profit Before Income Tax by Business Segment",
+    "sheet": "profit_before_income_tax_by_bus",
+    "pages": "21",
+    "first_page": 21,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "fy25_performance_highlights",
+    "title": "FY25 Performance Highlights",
+    "sheet": "fy25_performance_highlights",
+    "pages": "1",
+    "first_page": 1,
+    "table_n": 1,
+    "n_tables": 1
+  }
+]

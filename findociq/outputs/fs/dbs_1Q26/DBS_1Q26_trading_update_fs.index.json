@@ -1,0 +1,38 @@
+[
+  {
+    "section_id": "selected_income_statement_items_m",
+    "title": "Selected income statement items ($m)",
+    "sheet": "selected_income_statement_items",
+    "pages": "6",
+    "first_page": 6,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "selected_balance_sheet_items_m",
+    "title": "Selected balance sheet items ($m)",
+    "sheet": "selected_balance_sheet_items_m",
+    "pages": "6",
+    "first_page": 6,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "key_financial_ratios_2_3",
+    "title": "Key financial ratios (%)2, 3",
+    "sheet": "key_financial_ratios_2_3",
+    "pages": "6",
+    "first_page": 6,
+    "table_n": 1,
+    "n_tables": 1
+  },
+  {
+    "section_id": "per_share_data_3",
+    "title": "Per share data ($)3",
+    "sheet": "per_share_data_3",
+    "pages": "7",
+    "first_page": 7,
+    "table_n": 1,
+    "n_tables": 1
+  }
+]

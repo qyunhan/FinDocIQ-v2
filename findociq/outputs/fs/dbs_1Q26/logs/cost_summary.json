@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-07-30T02:40:52",
+  "output_file": "DBS_1Q26_trading_update_fs.xlsx",
+  "model": "gemini-3.5-flash",
+  "pricing": {
+    "input_per_million": 1.5,
+    "output_per_million": 9.0
+  },
+  "totals": {
+    "calls": 4,
+    "input_tokens": 15627,
+    "output_tokens": 9026,
+    "thinking_tokens": 0,
+    "est_cost_usd": 0.10468,
+    "total_tokens": 24653
+  },
+  "by_document": {
+    "DBS_1Q26_trading_update.pdf": {
+      "calls": 4,
+      "input_tokens": 15627,
+      "output_tokens": 9026,
+      "thinking_tokens": 0,
+      "est_cost_usd": 0.10468,
+      "total_tokens": 24653
+    }
+  },
+  "calls": [
+    {
+      "ts": "2026-07-30T02:40:40",
+      "script": "extract_to_excel",
+      "label": "per_share_data_3_p7",
+      "model": "gemini-3.5-flash",
+      "image_used": false,
+      "prompt_tokens": 3900,
+      "output_tokens": 1242,
+      "thinking_tokens": 0,
+      "total_tokens": 5142,
+      "est_cost_usd": 0.01703,
+      "batch": false,
+      "document": "DBS_1Q26_trading_update.pdf"
+    },
+    {
+      "ts": "2026-07-30T02:40:42",
+      "script": "extract_to_excel",
+      "label": "selected_balance_sheet_items_m_p6",
+      "model": "gemini-3.5-flash",
+      "image_used": false,
+      "prompt_tokens": 3907,
+      "output_tokens": 1764,
+      "thinking_tokens": 0,
+      "total_tokens": 5671,
+      "est_cost_usd": 0.02174,
+      "batch": false,
+      "document": "DBS_1Q26_trading_update.pdf"
+    },
+    {
+      "ts": "2026-07-30T02:40:42",
+      "script": "extract_to_excel",
+      "label": "key_financial_ratios_2_3_p6",
+      "model": "gemini-3.5-flash",
+      "image_used": false,
+      "prompt_tokens": 3913,
+      "output_tokens": 1895,
+      "thinking_tokens": 0,
+      "total_tokens": 5808,
+      "est_cost_usd": 0.02292,
+      "batch": false,
+      "document": "DBS_1Q26_trading_update.pdf"
+    },
+    {
+      "ts": "2026-07-30T02:40:50",
+      "script": "extract_to_excel",
+      "label": "selected_income_statement_items_m_p6",
+      "model": "gemini-3.5-flash",
+      "image_used": false,
+      "prompt_tokens": 3907,
+      "output_tokens": 4125,
+      "thinking_tokens": 0,
+      "total_tokens": 8032,
+      "est_cost_usd": 0.04299,
+      "batch": false,
+      "document": "DBS_1Q26_trading_update.pdf"
+    }
+  ]
+}

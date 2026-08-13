@@ -1,0 +1,293 @@
+UNSTAMPED ROWS — OCBC_2Q26_Media_Release_and_Financial_Highlights
+total 166 rows across 30 tables, 15 table type(s)
+
+==============================================================================
+(no table_type_id — table never identified)   48 rows, 6 table(s)
+==============================================================================
+
+  [1h26_performance_highlights_1h26_performance_highlights_2026-06-30]  p1  "1H26 Performance Highlights"
+     r1   L1  Total Income
+     r2   L2  Net Interest Income
+     r3   L2  Non-Interest Income
+     r4   L1  Operating Expenses
+     r5   L1  Net Interest Margin
+     r6   L1  Credit Costs
+     r7   L1  Customer Loans
+     r8   L2  (% change based on constant currency terms)
+     r9   L1  Customer Deposits
+     r10  L1  NPL Ratio
+     r11  L1  CET1 CAR
+     r12  L2  Transitional final Basel III reforms
+     r13  L2  Fully phased-in final Basel III reforms
+     r14  L1  Group Net Profit
+     r15  L1  ROE (annualised)
+     r16  L1  Dividend
+     r17  L1  EPS (annualised)
+
+  [2q26_year_on_year_performance_allowances_s_million_2026-06-30]  p4-5  "Allowances (S$ million)"
+     r1   L0  Allowances for loans and other assets
+     r2   L1  of which: Impaired
+     r3   L2  Non-impaired
+
+  [2q26_year_on_year_performance_asset_quality_and_allowances_2026-06-30]  p4-5  "Asset Quality and Allowances"
+     r1   L0  Non-performing assets (NPAs)
+     r2   L0  Non-performing loan (NPL) ratio
+     r3   L0  Total NPA coverage
+
+  [2q26_year_on_year_performance_credit_costs_bps_1_2026-06-30]  p4-5  "Credit costs (bps) 1/"
+     r1   L1  Total loans
+     r2   L2  of which: Impaired loans
+     r3   L0  1/ Credit costs refer to allowances for loans as a percentage of average loans, on annualised basis.
+
+  [profit_before_income_tax_by_business_segment_profit_before_income_tax_by_business_segment_2026-06-30]  p19  "Profit Before Income Tax by Business Segment"
+     r1   L0  Global Consumer/Private Banking
+     r2   L0  Global Wholesale Banking
+     r3   L0  Global Markets
+     r4   L0  Insurance
+     r5   L0  Others
+     r6   L0  Profit before income tax
+
+  [second_quarter_2026_performance_second_quarter_2026_performance_2026-06-30]  p3  "Second Quarter 2026 Performance"
+     r1   L1  Net interest income
+     r2   L1  Non-interest income
+     r3   L2  of which: Fees and commissions
+     r4   L3  Trading income
+     r5   L3  Income from life and general insurance
+     r6   L0  Total income
+     r7   L1  Operating expenses
+     r8   L0  Operating profit before allowances
+     r9   L1  Allowances
+     r10  L1  Amortisation of intangible assets
+     r11  L1  Associates
+     r12  L0  Profit before income tax
+     r13  L0  Tax and NCI
+     r14  L0  Group net profit
+     r15  L0  Group EPS (S$) – annualised
+     r16  L0  Group ROE – annualised
+
+==============================================================================
+FS_CUSTOMER_LOANS   33 rows, 5 table(s)
+==============================================================================
+
+  [by_currency_loans_to_customers_2026-06-30]  p14  "LOANS TO CUSTOMERS"
+     r2   L1  Allowances
+     r6   L0  By Maturity
+     r11  L0  By Industry
+     r22  L0  By Currency
+     r31  L0  By Geography 1/
+     r39  L0  Note:
+     r40  L1  Loans by geography are determined based on where the credit risk resides, which may be different from the borrower’s country of residence or the booking location of the loans.
+
+  [by_geography_1_loans_to_customers_2026-06-30]  p14  "LOANS TO CUSTOMERS"
+     r2   L1  Allowances
+     r6   L0  By Maturity
+     r11  L0  By Industry
+     r22  L0  By Currency
+     r31  L0  By Geography 1/
+     r39  L0  Note:
+1. Loans by geography are determined based on where the credit risk resides, which may be different from the borrower’s country of residence or the booking location of the loans.
+
+  [by_industry_loans_to_customers_2026-06-30]  p14  "LOANS TO CUSTOMERS"
+     r2   L1  Allowances
+     r6   L0  By Maturity
+     r11  L0  By Industry
+     r22  L0  By Currency
+     r31  L0  By Geography 1/
+     r39  L0  Note:
+1. Loans by geography are determined based on where the credit risk resides, which may be different from the borrower’s country of residence or the booking location of the loans.
+
+  [by_maturity_loans_to_customers_2026-06-30]  p14  "LOANS TO CUSTOMERS"
+     r2   L1  Allowances
+     r6   L0  By Maturity
+     r11  L0  By Industry
+     r22  L0  By Currency
+     r31  L0  By Geography 1/
+     r39  L0  Note:
+     r40  L0  1. Loans by geography are determined based on where the credit risk resides, which may be different from the borrower's country of residence or the booking location of the loans.
+
+  [loans_to_customers_loans_to_customers_2026-06-30]  p14  "LOANS TO CUSTOMERS"
+     r2   L1  Allowances
+     r6   L0  By Maturity
+     r11  L0  By Industry
+     r22  L0  By Currency
+     r31  L0  By Geography 1/
+     r39  L0  Note:
+     r40  L1  Loans by geography are determined based on where the credit risk resides, which may be different from the borrower’s country of residence or the booking location of the loans.
+
+==============================================================================
+FS_BALANCE_SELECTED   17 rows, 2 table(s)
+==============================================================================
+
+  [selected_balance_sheet_items_financial_highlights_2026-06-30]  p9  "FINANCIAL HIGHLIGHTS"
+     r1   L0  Selected Income Statement Items
+     r9   L1  Allowances for non-impaired assets
+     r14  L0  Selected Balance Sheet Items
+
+  [selected_income_statement_items_financial_highlights_2026-06-30]  p9  "FINANCIAL HIGHLIGHTS"
+     r1   L0  Selected Income Statement Items
+     r2   L1  Net interest income
+     r3   L1  Non-interest income
+     r4   L1  Total income
+     r5   L1  Operating expenses
+     r6   L1  Operating profit before allowances and amortisation
+     r7   L1  Amortisation of intangible assets
+     r8   L1  Allowances for impaired assets
+     r9   L1  Allowances for non-impaired assets
+     r10  L1  Operating profit after allowances and amortisation
+     r11  L1  Share of results of associates, net of tax
+     r12  L1  Profit before income tax
+     r13  L1  Net profit attributable to equity holders
+     r14  L0  Selected Balance Sheet Items
+
+==============================================================================
+FS_NPA_COVERAGE   11 rows, 1 table(s)
+==============================================================================
+
+  [non_performing_assets_non_performing_assets_2026-06-30]  p15  "NON-PERFORMING ASSETS"
+     r1   L0  Singapore
+     r5   L0  Malaysia
+     r9   L0  Indonesia
+     r13  L0  Greater China
+     r17  L0  Other Asia Pacific
+     r21  L0  Rest of the World
+     r25  L0  Group
+     r29  L0  Notes:
+     r30  L1  1. Refer to Non-performing assets. Comprise loans to customers, debt securities and contingent liabilities.
+     r31  L1  2. Refer to Non-performing loans. Exclude debt securities and contingent liabilities.
+     r32  L1  3. Amounts less than S$0.5 million are shown as "#".
+
+==============================================================================
+FS_AVG_BALANCE_SHEET   10 rows, 2 table(s)
+==============================================================================
+
+  [average_balance_sheet_average_balance_sheet_2026-06-30]  p11  "Average Balance Sheet"
+     r1   L0  Interest-earning assets
+     r6   L0  Interest-bearing liabilities
+     r12  L0  Notes:
+     r13  L0  1. Net interest margin is net interest income as a percentage of interest-earning assets.
+     r14  L0  2. Average rates are computed on an annualised basis.
+
+  [volume_and_rate_analysis_average_balance_sheet_2026-06-30]  p11  "Average Balance Sheet"
+     r1   L0  Interest-earning assets
+     r6   L0  Interest-bearing liabilities
+     r12  L0  Notes:
+     r13  L0  1. Net interest margin is net interest income as a percentage of interest-earning assets.
+     r14  L0  2. Average rates are computed on an annualised basis.
+
+==============================================================================
+FS_CAPITAL_ADEQUACY   6 rows, 1 table(s)
+==============================================================================
+
+  [capital_adequacy_ratios_1_capital_adequacy_ratios_1_2026-06-30]  p18  "CAPITAL ADEQUACY RATIOS 1/"
+     r6   L1  Regulatory adjustments
+     r9   L1  Regulatory adjustments
+     r12  L0  Capital Adequacy Ratios
+     r13  L1  Common Equity Tier 1
+     r14  L1  Tier 1
+     r15  L1  Total
+
+==============================================================================
+FS_CUSTOMER_DEPOSITS   6 rows, 1 table(s)
+==============================================================================
+
+  [non_bank_deposits_by_currency_deposits_2026-06-30]  p17  "DEPOSITS"
+     r4   L0  Total Deposits by Maturity
+     r8   L0  
+     r9   L0  Non-Bank Deposits by Product
+     r14  L0  
+     r15  L0  Non-Bank Deposits by Currency
+     r23  L0  
+
+==============================================================================
+FS_NON_INTEREST_INCOME   6 rows, 1 table(s)
+==============================================================================
+
+  [non_interest_income_non_interest_income_2026-06-30]  p12  "NON-INTEREST INCOME"
+     r1   L0  Gross fee and commission income
+     r6   L1  Trade-related (1)
+     r9   L1  Gross fee and commission income subtotal
+     r13  L0  Income from life and general insurance
+     r19  L0  Other income
+     r27  L0  Notes:
+1. Includes trade, remittance and guarantee-related fees.
+2. Certain comparative figures have been reclassified to conform to current period’s presentation.
+
+==============================================================================
+FS_VOLUME_RATE   6 rows, 2 table(s)
+==============================================================================
+
+  [average_balance_sheet_volume_and_rate_analysis_2026-06-30]  p11  "Volume and Rate Analysis"
+     r1   L0  Interest income
+     r6   L0  Interest expense
+     r12  L1  Due to change in number of days
+
+  [volume_and_rate_analysis_volume_and_rate_analysis_1h26_vs_1h25_2026-06-30]  p11  "Volume and Rate Analysis — 1H26 vs 1H25"
+     r1   L0  Interest income
+     r6   L0  Interest expense
+     r12  L1  Due to change in number of days
+
+==============================================================================
+FS_HIGHLIGHTS_COMBINED   5 rows, 1 table(s)
+==============================================================================
+
+  [strong_funding_liquidity_and_capital_position_strong_funding_liquidity_and_capital_position_2026-06-30]  p6  "Strong Funding, Liquidity and Capital Position"
+     r8   L1  CET1 CAR
+     r9   L2  Transitional final Basel III reforms 1/
+     r10  L2  Fully phased-in final Basel III reforms 2/
+     r11  L0  1/ Computed based on MAS’ final Basel III reform rules with effect from 1 July 2024.
+     r12  L0  2/ Assumed the position at period end was subject to the full application of final Basel III reforms, which will take effect on 1 January 2029.
+
+==============================================================================
+FS_RATIOS_KEY   5 rows, 1 table(s)
+==============================================================================
+
+  [key_financial_ratios_key_financial_ratios_2026-06-30]  p10  "Key Financial Ratios (%)"
+     r1   L0  Performance ratios
+     r4   L0  Revenue mix/efficiency ratios
+     r10  L0  Capital adequacy ratios 8/
+     r15  L0  Liquidity coverage ratios 6/ 8/
+     r19  L0  Earnings per share (S$) 2/ 4/
+
+==============================================================================
+FS_ALLOWANCES   4 rows, 2 table(s)
+==============================================================================
+
+  [allowances_for_loans_and_other_assets_allowances_for_loans_and_other_assets_2026-06-30]  p13  "ALLOWANCES FOR LOANS AND OTHER ASSETS"
+     r1   L1  Allowances/(write-back):
+     r2   L2  Impaired loans
+
+  [operating_expenses_allowances_for_loans_and_other_assets_2026-06-30]  p13  "ALLOWANCES FOR LOANS AND OTHER ASSETS"
+     r1   L1  Allowances/(write-back):
+     r2   L2  Impaired loans
+
+==============================================================================
+FS_EXPENSES_DETAIL   4 rows, 2 table(s)
+==============================================================================
+
+  [allowances_for_loans_and_other_assets_operating_expenses_2026-06-30]  p13  "OPERATING EXPENSES"
+     r2   L1  Property, plant and equipment
+     r9   L1  Group staff strength
+
+  [operating_expenses_operating_expenses_2026-06-30]  p13  "OPERATING EXPENSES"
+     r2   L1  Property, plant and equipment
+     r9   L1  Group staff strength
+
+==============================================================================
+FS_NPA_BY_INDUSTRY   4 rows, 2 table(s)
+==============================================================================
+
+  [npls_by_industry_npls_by_industry_2026-06-30]  p16  "NPLs by Industry"
+     r1   L0  Loans and advances
+     r12  L0  Classified debt securities
+
+  [restructured_loans_npls_by_industry_2026-06-30]  p16  "NPLs by Industry"
+     r1   L0  Loans and advances
+     r12  L0  Classified debt securities
+
+==============================================================================
+FS_NPA_BY_PERIOD_OVERDUE   1 rows, 1 table(s)
+==============================================================================
+
+  [npas_by_period_overdue_npas_by_period_overdue_2026-06-30]  p16  "NPAs by Period Overdue"
+     r1   L0  NPAs by Period Overdue
+

@@ -1,0 +1,319 @@
+{
+  "tables": [
+    {
+      "title": "Strong Funding, Liquidity and Capital Position",
+      "label_header": "S$ billion",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Dec 2025"
+        },
+        {
+          "group": null,
+          "leaf": "Dec 2024"
+        },
+        {
+          "group": null,
+          "leaf": "Sep 2025"
+        },
+        {
+          "group": null,
+          "leaf": "YoY"
+        },
+        {
+          "group": null,
+          "leaf": "QoQ"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Loans",
+          "values": [
+            {
+              "value": "341",
+              "cell_state": "reported"
+            },
+            {
+              "value": "319",
+              "cell_state": "reported"
+            },
+            {
+              "value": "327",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+7%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+4%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "% ∆ in constant currency terms",
+          "values": [
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            },
+            {
+              "value": "+9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+4%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Deposits",
+          "values": [
+            {
+              "value": "428",
+              "cell_state": "reported"
+            },
+            {
+              "value": "391",
+              "cell_state": "reported"
+            },
+            {
+              "value": "411",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+10%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+4%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "of which: CASA deposits",
+          "values": [
+            {
+              "value": "217",
+              "cell_state": "reported"
+            },
+            {
+              "value": "191",
+              "cell_state": "reported"
+            },
+            {
+              "value": "206",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+14%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+5%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "CASA ratio",
+          "values": [
+            {
+              "value": "50.7%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "48.8%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "50.3%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+1.9ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+0.4ppt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Leverage ratio 1/",
+          "values": [
+            {
+              "value": "7.1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.4%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "7.2%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.3ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.1ppt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "All-ccy LCR (for quarter ended)",
+          "values": [
+            {
+              "value": "142%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "140%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "141%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+2ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+1ppt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": "h1",
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "CET1 CAR",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Transitional final Basel III reforms 1/",
+          "values": [
+            {
+              "value": "16.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "17.1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "16.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.2ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "–",
+              "cell_state": "nil"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": "h1",
+          "label": "Fully phased-in final Basel III reforms 2/",
+          "values": [
+            {
+              "value": "15.1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.3%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "15.0%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-0.2ppt",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+0.1ppt",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "1/ Computed based on MAS’ final Basel III reform rules with effect from 1 July 2024.",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "note",
+          "level": 0,
+          "parent": null,
+          "label": "2/ Assumed the position at period end was subject to the full application of final Basel III reforms, which will take effect on 1 January 2029.",
+          "values": []
+        }
+      ]
+    }
+  ]
+}

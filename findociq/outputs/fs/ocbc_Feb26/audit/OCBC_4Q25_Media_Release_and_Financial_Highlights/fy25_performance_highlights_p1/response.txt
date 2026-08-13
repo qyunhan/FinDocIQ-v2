@@ -1,0 +1,302 @@
+{
+  "tables": [
+    {
+      "title": "FY25 Performance Highlights",
+      "label_header": "Metric",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": null,
+          "leaf": "Value"
+        },
+        {
+          "group": null,
+          "leaf": "YoY Change"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Profit before Tax",
+          "values": [
+            {
+              "value": "S$9.12b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+2% YoY",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Group Net Profit",
+          "values": [
+            {
+              "value": "S$7.42b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-2% YoY",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total Dividend",
+          "values": [
+            {
+              "value": "99 cents",
+              "cell_state": "reported"
+            },
+            {
+              "value": "60% payout ratio",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "ROE",
+          "values": [
+            {
+              "value": "12.6%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-1.1ppt YoY",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "EPS",
+          "values": [
+            {
+              "value": "S$1.63",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-3% YoY",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Total Income",
+          "values": [
+            {
+              "value": "S$14.6b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+1%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Net Interest Income",
+          "values": [
+            {
+              "value": "S$9.15b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-6%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Non-Interest Income",
+          "values": [
+            {
+              "value": "S$5.46b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+16%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Operating Expenses",
+          "values": [
+            {
+              "value": "S$5.88b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+2%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Net Interest Margin",
+          "values": [
+            {
+              "value": "1.91%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-29bps",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Credit Costs",
+          "values": [
+            {
+              "value": "17bps",
+              "cell_state": "reported"
+            },
+            {
+              "value": "-2bps",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer Loans (% change based on constant currency terms)",
+          "values": [
+            {
+              "value": "S$341b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+9%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Customer Deposits",
+          "values": [
+            {
+              "value": "S$428b",
+              "cell_state": "reported"
+            },
+            {
+              "value": "+10%",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "NPL Ratio",
+          "values": [
+            {
+              "value": "0.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "unchanged",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "sub_header",
+          "level": 1,
+          "parent": null,
+          "label": "CET1 CAR",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Transitional final Basel III reforms",
+          "values": [
+            {
+              "value": "16.9%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 2,
+          "parent": null,
+          "label": "Fully phased-in final Basel III reforms",
+          "values": [
+            {
+              "value": "15.1%",
+              "cell_state": "reported"
+            },
+            {
+              "value": "",
+              "cell_state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

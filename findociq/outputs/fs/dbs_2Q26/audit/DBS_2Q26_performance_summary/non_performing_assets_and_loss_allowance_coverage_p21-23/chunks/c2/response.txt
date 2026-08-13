@@ -1,0 +1,139 @@
+{
+  "tables": [
+    {
+      "title": "By period overdue",
+      "label_header": "($m)",
+      "continued_from_previous": false,
+      "section_id": "",
+      "columns": [
+        {
+          "group": "30 Jun 2026",
+          "leaf": "NPA"
+        },
+        {
+          "group": "31 Dec 2025",
+          "leaf": "NPA"
+        },
+        {
+          "group": "30 Jun 2025",
+          "leaf": "NPA"
+        }
+      ],
+      "rows": [
+        {
+          "row_id": null,
+          "row_type": "section_header",
+          "level": 0,
+          "parent": null,
+          "label": "By period overdue",
+          "values": []
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Not overdue",
+          "values": [
+            {
+              "value": "1,463",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,673",
+              "cell_state": "reported"
+            },
+            {
+              "value": "1,137",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Within 90 days",
+          "values": [
+            {
+              "value": "476",
+              "cell_state": "reported"
+            },
+            {
+              "value": "450",
+              "cell_state": "reported"
+            },
+            {
+              "value": "505",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 90 to180 days",
+          "values": [
+            {
+              "value": "401",
+              "cell_state": "reported"
+            },
+            {
+              "value": "285",
+              "cell_state": "reported"
+            },
+            {
+              "value": "741",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "data",
+          "level": 1,
+          "parent": null,
+          "label": "Over 180 days",
+          "values": [
+            {
+              "value": "2,424",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,435",
+              "cell_state": "reported"
+            },
+            {
+              "value": "2,303",
+              "cell_state": "reported"
+            }
+          ]
+        },
+        {
+          "row_id": null,
+          "row_type": "total",
+          "level": 0,
+          "parent": null,
+          "label": "Total",
+          "values": [
+            {
+              "value": "4,764",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,843",
+              "cell_state": "reported"
+            },
+            {
+              "value": "4,686",
+              "cell_state": "reported"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
