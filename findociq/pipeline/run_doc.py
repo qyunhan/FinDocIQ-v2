@@ -1193,11 +1193,14 @@ def run_rebuild(args) -> int:
 
     log("REBUILD verify (all docs)")
     any_fail = False
+    n_verified = n_skipped = 0
     for doc_id, _, _ in docs:
         pdf = doc_pdfs.get(doc_id)
         if pdf is None or not pdf.exists():
             print(f"   ⚠ {doc_id}: no source pdf resolvable — skipping verify")
+            n_skipped += 1
             continue
+        n_verified += 1
         report = verify_doc_report(db, doc_id, pdf)
         failing = failing_table_ids(report)
         if failing:
@@ -1217,7 +1220,18 @@ def run_rebuild(args) -> int:
     print(f"#   tables   : {c['tables']}")
     print(f"#   rows     : {c['rows']}")
     print(f"#   cells    : {c['cells']}")
-    print(f"#   verify   : {'FAIL' if any_fail else 'PASS (0 fail)'}")
+    # NEVER report a bare "PASS" for a run that verified nothing. Without the
+    # source PDFs every doc is skipped above, and this line used to print
+    # "PASS (0 fail)" over 25 skipped documents — a green light that had
+    # checked precisely nothing. Say what was actually covered.
+    if n_verified == 0:
+        verdict = f"NOT RUN — all {n_skipped} doc(s) skipped, no source PDF"
+    elif any_fail:
+        verdict = f"FAIL ({n_verified} verified, {n_skipped} skipped)"
+    else:
+        verdict = f"PASS (0 fail, {n_verified} verified" + (
+            f", {n_skipped} SKIPPED — no source PDF)" if n_skipped else ")")
+    print(f"#   verify   : {verdict}")
     print(f"#   elapsed  : {time.time() - t0:.1f}s")
     print("#" * 60)
     return 1 if any_fail else 0

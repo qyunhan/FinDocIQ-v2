@@ -1,5 +1,10 @@
-# PDFs — source documents, never commit
+# PDFs — large binaries stay out by default...
 *.pdf
+# ...EXCEPT the source corpus. These 13 filings (8 MB) are the pipeline's only
+# real input: without them verify_cells has nothing to check against and no
+# document can be re-extracted. They used to live only in GCS, which made the
+# repo unusable on its own. They are published investor-relations documents.
+!findociq/data/sources/**/*.pdf
 
 # Outputs — Excel and large binaries excluded, audit trail tracked
 DELIVERABLE/outputs/*.xlsx
