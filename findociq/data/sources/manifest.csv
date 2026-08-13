@@ -1,4 +1,3 @@
-
 bank,year,quarter,period,family,doc_type,target_filename,folder,availability,have(y/n),file_notes,source_url
 DBS,2021,1,1Q21,fs,performance_highlights,DBS_1Q21_performance_highlights.pdf,financial_statements,available,,,https://www.dbs.com/investors/financials/quarterly-financials
 DBS,2021,1,1Q21,pillar3,pillar3,DBS_1Q21_pillar3.pdf,pillar3,available,,,https://www.dbs.com/investors/financials/quarterly-financials
