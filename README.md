@@ -17,13 +17,19 @@ below still works.
 git clone https://github.com/qyunhan/FinDocIQ-v2.git
 cd FinDocIQ-v2
 
-# Rebuild the whole database from the committed artifacts. No API calls, $0.
+# Rebuild the database from the committed artifacts. No API calls, $0.
 # run_doc.py builds its own .venv on first use — no setup step.
-python3 findociq/pipeline/run_doc.py --rebuild-db
+python3 findociq/pipeline/run_doc.py --rebuild-db --only 4Q25,1Q26,2Q26
 ```
 
-Expected: **25 docs · 865 sections · 528 tables · 9,038 rows · 33,671 cells,
-verify PASS, ~20s** (plus a one-off venv build the first time).
+Expected: **10 docs · 488 sections · 342 tables · 5,771 rows · 21,581 cells,
+verify PASS (10 verified)**, ~60s plus a one-off venv build.
+
+**Use `--only 4Q25,1Q26,2Q26`.** That is the *maintained corpus* — the documents
+the masterlist covers and the dashboard serves, and it reproduces the shipped
+`compiled_v2.db` exactly. A bare `--rebuild-db` instead loads **every** cached
+document (25 docs / 33,671 cells), pulling in 1Q22–3Q25 filings that have no
+masterlist coverage; useful for archaeology, wrong as a serving DB.
 
 That single command reconstructs `findociq/db/compiled_fs.db` from
 `findociq/outputs/**/parsed.json` (507 extraction artifacts) and
