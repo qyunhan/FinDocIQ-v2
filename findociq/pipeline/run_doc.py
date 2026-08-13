@@ -340,6 +340,33 @@ def failing_table_ids(report: dict) -> list[str]:
 # ===========================================================================
 # Audit / artifact discovery
 # ===========================================================================
+def _find_source_pdf(basename: str | None, doc_id: str) -> Path | None:
+    """Locate a document's source PDF under data/sources by NAME, ignoring the
+    directory it was first ingested from.
+
+    A cached TOC records `document.source_pdf` as a repo-relative path, frozen at
+    ingest time. The corpus was later flattened from
+    `financial_statements/<BANK>/<year>/<qtr>/x.pdf` to `financial_statements/x.pdf`,
+    so 12 of 25 cached TOCs point at directories that no longer exist. The stored
+    path is a HINT, not an address: what identifies the file is its name.
+
+    Without this, `--rebuild-db` on a fresh clone silently skipped verification for
+    those 12 documents — and verify is the only check that the numbers in the DB
+    match the filings. Matching is tolerant of the spaces/underscores split
+    (`OCBC 3Q25 Results Press Release.pdf` vs doc_id `OCBC_3Q25_Results_Press_Release`),
+    the same normalisation `find_audit_root` already applies.
+    """
+    root = FINDOCIQ / "data" / "sources"
+    if not root.exists():
+        return None
+    wanted = {w.replace(" ", "_").lower()
+              for w in filter(None, (basename, f"{doc_id}.pdf"))}
+    for p in root.rglob("*.pdf"):
+        if p.name.replace(" ", "_").lower() in wanted:
+            return p.resolve()
+    return None
+
+
 def find_audit_root(doc_id: str) -> Path | None:
     """PASS2 derives its own bank_period run dir AND names the audit subdir from
     the raw PDF stem (which may contain spaces), while our doc_id has spaces
@@ -1183,6 +1210,10 @@ def run_rebuild(args) -> int:
         payload = json.loads(toc_json.read_text())
         src = payload["document"].get("source_pdf")
         pdf = (REPO / src).resolve() if src else None
+        if pdf is not None and not pdf.exists():
+            pdf = _find_source_pdf(Path(src).name, doc_id)
+        if pdf is None and src is None:
+            pdf = _find_source_pdf(None, doc_id)
         if pdf is not None:
             doc_pdfs[doc_id] = pdf
         log(f"REBUILD {doc_id}  period={period}")
