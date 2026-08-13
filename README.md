@@ -1,4 +1,7 @@
-# START HERE — continuing this project from a clone alone
+# FinDocIQ — bank financial-statement extraction pipeline
+
+> **Continuing this project from a clone alone?** Everything you need is here —
+> no Cloud Workstation, no GCS bucket, no GCP project required. Start below.
 
 This repo is **self-contained**. No Cloud Workstation, no GCS bucket, no access
 to GCP project `igc2026-team08-6311` is required to rebuild the database, verify

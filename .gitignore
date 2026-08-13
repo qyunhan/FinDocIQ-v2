@@ -70,6 +70,11 @@ findociq/outputs/**
 !findociq/outputs/pillar3/**/audit/**/meta.json
 !findociq/outputs/fs/**/audit/**/parsed.json
 !findociq/outputs/fs/**/audit/**/meta.json
+# pages.pdf — the per-unit page slice geometry.process_unit reads as PDF-layer
+# ground truth. 66 files, 11 MB. Tracked on the same terms as parsed/meta: a
+# bare clone failed 2 of 21 geometry tests for want of one.
+!findociq/outputs/pillar3/**/audit/**/pages.pdf
+!findociq/outputs/fs/**/audit/**/pages.pdf
 
 # Local heavy venvs
 .venv/
