@@ -1,10 +1,15 @@
 # FinancialParser — FS pipeline
 
 End-to-end: PDF → PaddleOCR scan → section map (TOC) → extraction → schema_v7 DB → verify.
-Two Python environments: **`.venv-paddle` (run UNSANDBOXED)** for the PaddleOCR steps;
-**base `python3`** for everything else. The FS database is `findociq/db/compiled_fs.db`.
+Two Python environments, **both built automatically by `run_doc.py`** — there is no
+setup step: `.venv` for everything, and `.venv-paddle` for the PaddleOCR steps, built
+ON DEMAND the first time a document actually needs a scan (see STEP 0). The FS
+database is `findociq/db/compiled_fs.db`.
 
-Inputs live under `findociq/data/sources/financial_statements/<BANK>/<year>/<qtr>/`.
+Inputs live FLAT under `findociq/data/sources/{financial_statements,pillar3}/<name>.pdf`.
+(They were once nested as `<BANK>/<year>/<qtr>/`; that layout is gone. Cached TOCs still
+record the old path in `document.source_pdf`, which is why `run_doc._find_source_pdf`
+resolves a document's PDF by NAME rather than by the stored path.)
 Derived artifacts under `findociq/data/derived/` (`paddle_scans/`, `toc/`). Checks under
 `findociq/outputs/checks/`.
 
@@ -45,11 +50,21 @@ Pure-helper tests: `python3 findociq/pipeline/test_run_doc.py`.
 The rest of this file is the **manual / debug path** — the individual stages
 `run_doc.py` orchestrates, for when you need to run or inspect one step in isolation.
 
-## STEP 0 — PaddleOCR scan (`.venv-paddle`, UNSANDBOXED)
+## STEP 0 — PaddleOCR scan (`.venv-paddle`, built on demand)
 Emits `candidates.csv` / `regions.csv` / `stitch_verdicts.csv` per doc. Once per corpus
-(skips docs whose `regions.csv` exists).
+(skips docs whose `regions.csv` exists — 226 such artifacts are committed, so the whole
+current corpus reloads with paddle never installed).
+
+`run_doc.py` calls `stage1_extract/toc/candidates.py` under `.venv-paddle`, building
+that environment first if absent (`ensure_paddle_venv` → `tools/setup_paddle_venv.sh`,
+~1 GB, a few minutes, once). The script also writes the mkldnn-disabling
+`sitecustomize.py` into `/tmp/paddle-scratch`; `paddle_env()` points `PYTHONPATH` there
+and `HOME` at `/tmp/paddle-scratch/paddlehome`. Nothing goes in the operator's `$HOME`.
 ```
-.venv-paddle/bin/python3 -u findociq/pipeline/discover/section/batch_scan.py
+# normally just: python3 findociq/pipeline/run_doc.py --pdf <file.pdf>
+bash tools/setup_paddle_venv.sh          # build the env eagerly
+FINDOCIQ_NO_PADDLE_BOOTSTRAP=1 …         # forbid the build; STEP 0 then fails loudly
+.venv-paddle/bin/python3 findociq/pipeline/stage1_extract/toc/batch_scan.py   # whole corpus
 # → findociq/data/derived/paddle_scans/<tag>/
 ```
 

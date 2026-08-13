@@ -7,7 +7,7 @@ Reads **`findociq/db/compiled_v2.db`** plus
 `findociq/data/derived/dashboards/<BANK>_highlights_dashboard_{anchors,formulaanchors}.csv`.
 
 ## Local
-    PYTHONPATH="$HOME/paddle-fix" .venv/bin/python -m streamlit run \
+    .venv/bin/python -m streamlit run \
       findociq/app/findociq_app.py --server.port 8501 --server.address 0.0.0.0 \
       --server.headless true
 

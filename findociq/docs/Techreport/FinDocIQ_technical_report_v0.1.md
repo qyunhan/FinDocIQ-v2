@@ -179,8 +179,8 @@ Each stage below: reads → writes → what it does → what to check → common
 `run_doc.py` is the orchestrator. One document, end to end:
 
 ```bash
-PYTHONPATH="$HOME/paddle-fix" .venv/bin/python findociq/pipeline/run_doc.py \
-    --pdf financial_statements/DBS_2Q26_performance_summary.pdf
+python3 findociq/pipeline/run_doc.py \
+    --pdf findociq/data/sources/financial_statements/DBS_2Q26_performance_summary.pdf
 ```
 
 It runs STEP 0 → 7 and stops at `compiled_fs.db`. **It does not build
@@ -341,13 +341,40 @@ downstream is wrong. Diagnose by checking page 1 vocabulary against
   - `data/derived/paddle_scans/<doc_id>/regions.csv`
   - `data/derived/paddle_scans/<doc_id>/candidates.csv`
 
-PaddleOCR's `PP-DocLayout-L` detects text and table regions. Runs in
-`.venv-paddle` (now symlinked to `.venv`).
+PaddleOCR's `PP-DocLayout-L` detects text and table regions.
+
+**The environment builds itself — there is no setup step.** STEP 0 is the only
+stage that needs the ~1 GB PaddleOCR stack, and most runs never touch it: a
+document whose `regions.csv` already exists is skipped outright, and 226 scan
+artifacts are committed, so the entire current corpus reloads without paddle
+ever being installed. `ensure_paddle_venv()` (`run_doc.py:450`) therefore builds
+`.venv-paddle` **on demand** — never at import, never for a cached document — by
+shelling out to `tools/setup_paddle_venv.sh`.
+
+Two environment details are load-bearing, and both are handled by that script
+plus `paddle_env()` (`run_doc.py:466`) rather than by the operator:
+
+- **mkldnn must be disabled.** paddlepaddle 3.3.1 segfaults on CPU through the
+  oneDNN/PIR path. The fix is `is_mkldnn_available = lambda: False`, and it only
+  sticks when injected through a `sitecustomize.py` on `PYTHONPATH` — patching
+  site-packages does *not* survive. The setup script writes that file into
+  `/tmp/paddle-scratch`, and `paddle_env()` points `PYTHONPATH` at it.
+- **The IPv4 shim is deliberately NOT applied to this child.** Python loads only
+  the FIRST `sitecustomize.py` on `PYTHONPATH` and paddle's must win, so STEP 0
+  is the one subprocess that runs without the shim.
+
+`HOME` is redirected to `/tmp/paddle-scratch/paddlehome` as well, so the
+downloaded `PP-DocLayout-L` weights land off the ~5 GB `/home` quota. Nothing
+lives in the operator's home directory: an earlier setup told you to create
+`$HOME/paddle-fix` by hand, which meant the fix died with the machine.
 
 **Check.** Region count roughly "one per body paragraph + one per table."
 
-**Failure.** `ModuleNotFoundError: paddleocr` → symlink broken; fix per
-`docs/workstation-setup.md` step 4.
+**Failure.** `ModuleNotFoundError: paddleocr` → the on-demand build did not run,
+or failed. Run it directly: `bash tools/setup_paddle_venv.sh`. Set
+`FINDOCIQ_NO_PADDLE_BOOTSTRAP=1` to forbid the build entirely, so STEP 0 fails
+loudly instead of installing 1 GB unasked. The first real scan needs internet
+for the model download — but no GCP.
 
 ### 2.3 STEP 1 — Reading the contents page (`stage1_extract/toc/toc_stage.py` → `stage1_extract/toc/toc_to_db.py`)
 
@@ -1271,9 +1298,9 @@ Measured 2026-08-12. Full evidence in `docs/TO_FIX.md`.
 
 Fresh run:
 ```bash
-PYTHONPATH="$HOME/paddle-fix" .venv/bin/python findociq/pipeline/run_doc.py \
+python3 findociq/pipeline/run_doc.py \
     --pdf findociq/data/sources/financial_statements/DBS_2Q26_performance_summary.pdf \
-    --db findociq/db/compiled_2q26.db --no-ipv4-shim --no-sync-bq
+    --db findociq/db/compiled_2q26.db --no-sync-bq
 ```
 
 Re-stamp only (no re-load, no API):

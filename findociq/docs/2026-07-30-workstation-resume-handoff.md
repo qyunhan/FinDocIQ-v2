@@ -18,9 +18,15 @@ Then read this, then the linked docs.
 - **`findociq/pipeline/source_store.py`** — GCS is source of truth for raw PDFs; `run_doc --pdf <gcs-key>` materializes on demand. (Migration Tasks 1–3 done; Task 4 rekey migration written, review-pending — see the SDD plan.)
 - **pass2 FS extraction fixes** — family-aware output paths, `--out-root` fix, conditional sheet suffix, column-band validate+repair (already wired in `extract.py`), section-region validators.
 
+> **STALE (2026-08-13).** This document describes the Cloud Workstation + GCS
+> setup. The repo is now self-contained and needs none of it — see `README.md`.
+> Kept for history. In particular the env setup below is obsolete: `run_doc.py`
+> bootstraps `.venv` and (on demand) `.venv-paddle` itself, and there is no
+> `$HOME/paddle-fix` any more.
+
 ## Immediate next step
-1. Finish env setup: `findociq/docs/workstation-setup.md` steps 3–4 (venv + both requirements; paddle mkldnn fix + `.venv-paddle` symlink). ADC works natively here (default compute SA = editor) — no keys.
-2. **Run ONE FS doc end-to-end through the app's Ingest view** (step 6b) and watch the live progress. Or CLI: `PYTHONPATH="$HOME/paddle-fix" python3 findociq/pipeline/run_doc.py --pdf financial_statements/DBS_4Q25_performance_summary.pdf --no-ipv4-shim`.
+1. ~~Finish env setup: `findociq/docs/workstation-setup.md` steps 3–4 (venv + both requirements; paddle mkldnn fix + `.venv-paddle` symlink).~~ **No longer needed** — `run_doc.py` builds both environments itself. ADC works natively here (default compute SA = editor) — no keys; a `GEMINI_API_KEY` also works and needs no GCP.
+2. **Run ONE FS doc end-to-end through the app's Ingest view** (step 6b) and watch the live progress. Or CLI: `python3 findociq/pipeline/run_doc.py --pdf findociq/data/sources/financial_statements/DBS_4Q25_performance_summary.pdf` (no `PYTHONPATH=$HOME/paddle-fix` — `paddle_env()` sets that up per-child now).
 
 ## Roadmap after that
 - **Extraction quality** ("all fields" guarantee): full-year `period_span` (Year 2025 → FY; currently NULL), the `parent→row→col→table→section` key-resolution precedence, header-row noise filter, re-extract the 3 `nt=0` FS docs. Add a "defer whole-DB steps to end" flag to `run_doc` before batching all 18 FS docs.

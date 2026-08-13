@@ -1,5 +1,13 @@
 # Cloud Workstation setup — run FinDocIQ (extraction + the app)
 
+> **STALE (2026-08-13) — read `README.md` instead.** This describes the old
+> Cloud Workstation + GCS setup and is kept only for history. Specifically:
+> §1 clones the **wrong (retired) repo**; §3's manual venv build is unnecessary
+> (`run_doc.py` bootstraps it); §4 is obsolete (paddle builds itself); §5 pulls
+> the DB from GCS, which is no longer needed — both databases are committed, and
+> `--rebuild-db --only 4Q25,1Q26,2Q26` regenerates them. The repo now needs no
+> GCP at all.
+
 Run these in the **workstation's own terminal** (`w-yunhan-ms4efqkw`). ADC works
 natively inside the workstation (default compute SA = editor), so Gemini/Vertex,
 BigQuery, and GCS need **no key**. Recipe mirrors
@@ -40,7 +48,30 @@ pip install -r findociq/requirements.txt -r findociq/requirements-paddle.txt \
 (`findociq/app/requirements.txt` is needed too — the app + its tests import
 streamlit/altair/matplotlib, which the pipeline requirements don't cover.)
 
-## 4. PaddleOCR mkldnn CPU-crash workaround (STEP 0)
+## 4. PaddleOCR (STEP 0) — NOTHING TO DO, it builds itself
+
+> **This step is obsolete. Do not follow the old instructions below.**
+> `run_doc.py` builds the PaddleOCR environment on demand and applies the
+> mkldnn fix itself. Skip to step 5.
+
+`ensure_paddle_venv()` (`pipeline/run_doc.py:450`) builds `.venv-paddle` the
+first time a document actually needs a scan — never at import, never for a
+document whose `regions.csv` is already cached (226 such artifacts are
+committed, so the whole current corpus reloads with paddle never installed). It
+shells out to `tools/setup_paddle_venv.sh`, which also writes the
+mkldnn-disabling `sitecustomize.py` into `/tmp/paddle-scratch`; `paddle_env()`
+points `PYTHONPATH` there and `HOME` at `/tmp/paddle-scratch/paddlehome` so the
+model weights stay off the ~5 GB `/home` quota.
+
+To build it eagerly: `bash tools/setup_paddle_venv.sh`.
+To forbid the build: `FINDOCIQ_NO_PADDLE_BOOTSTRAP=1` (STEP 0 then fails loudly
+instead of installing ~1 GB unasked).
+
+First real scan downloads the `PP-DocLayout-L` model — needs internet, no GCP.
+
+<details>
+<summary>Superseded manual workaround (kept for history — do not run)</summary>
+
 paddlepaddle crashes on CPU via oneDNN/PIR unless `is_mkldnn_available()` is
 forced False, picked up via PYTHONPATH (patching site-packages does NOT stick).
 ```bash
@@ -52,8 +83,9 @@ printf '%s\n' \
 # run_doc STEP 0 shells out to REPO/.venv-paddle/bin/python3 — point it at this venv:
 mkdir -p .venv-paddle/bin && ln -sf "$(command -v python3)" .venv-paddle/bin/python3
 ```
-First real run downloads the `PP-DocLayout-L` model (needs internet + a little
-disk); the workstation's persistent disk caches it for later runs.
+Why it was replaced: it put the fix in `$HOME`, outside the repo, so it died
+with the machine and no clone could reproduce it.
+</details>
 
 ## 5. Get the DB (if not already in the clone) + verify ADC
 ```bash
@@ -71,7 +103,7 @@ gcloud auth application-default print-access-token >/dev/null && echo "ADC OK"
 the bucket automatically. Use `--no-ipv4-shim` (workstation IPv4 is fine, and
 the shim's sitecustomize would otherwise shadow the paddle fix).
 ```bash
-PYTHONPATH="$HOME/paddle-fix" python3 findociq/pipeline/run_doc.py \
+python3 findociq/pipeline/run_doc.py \
     --pdf financial_statements/DBS_1Q26_trading_update.pdf --no-ipv4-shim
 # list available source keys first if unsure:
 python3 -c "import sys; sys.path.insert(0,'findociq/pipeline'); import source_store as s; print('\n'.join(s.list_sources()))"
@@ -86,7 +118,7 @@ Notes:
 
 ## 6b. Or launch the app and watch it live
 ```bash
-PYTHONPATH="$HOME/paddle-fix" FINDOCIQ_DB_SOURCE=sqlite \
+FINDOCIQ_DB_SOURCE=sqlite \
   python3 -m streamlit run findociq/app/findociq_app.py \
   --server.port 8080 --server.address 0.0.0.0 --server.headless true \
   --server.enableCORS false --server.enableXsrfProtection false

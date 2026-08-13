@@ -1,4 +1,11 @@
-# Workstation persistence & fresh-boot bootstrap — READ AND FOLLOW
+# Workstation persistence & fresh-boot bootstrap — HISTORICAL
+
+> **STALE (2026-08-13) — do NOT follow. Read `README.md` instead.**
+> Written when the durable stores were git + the GCS bucket and the working copy
+> was a Cloud Workstation. Both premises are gone: the repo is self-contained
+> (source PDFs, both databases and the scan artifacts are committed), needs no
+> GCP, and lives at **github.com/qyunhan/FinDocIQ-v2** — the repo named below is
+> retired. Kept because it records WHY the GCS-checkpoint discipline existed.
 
 Addressed to the Claude Code session running in the Cloud Workstation.
 
@@ -55,7 +62,7 @@ Addressed to the Claude Code session running in the Cloud Workstation.
    (raw PDFs are pulled on demand by `source_store.materialize`, no bulk sync needed).
 4. **Verify:** `gcloud auth application-default print-access-token >/dev/null && echo ADC OK`;
    `python3 -c "import paddleocr"`; launch the app
-   `PYTHONPATH="$HOME/paddle-fix" streamlit run findociq/app/findociq_app.py --server.port 8080 --server.address 0.0.0.0 --server.headless true`.
+   `streamlit run findociq/app/findociq_app.py --server.port 8080 --server.address 0.0.0.0 --server.headless true`.
 5. **Orient:** read `findociq/docs/2026-07-30-workstation-resume-handoff.md`.
 
 Note: apt system libs (step 2) don't persist across a restart either — re-run step 2,
