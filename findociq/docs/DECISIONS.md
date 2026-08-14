@@ -17,6 +17,58 @@ Format:
 
 ---
 
+## 2026-08-14 — a footnote column was a servable figure; `reference_skip` and the col-id regression
+
+**Decision:** new `col_role` value **`reference_skip`** for columns that carry a
+cross-reference rather than a measurement, and the col_role vocabulary moves to
+`stage3_stamp/resolve/col_roles.py` so the loader and `apply/restamp_columns.py`
+share ONE definition. `resolve_canonical_col`'s gate becomes "any non-NULL role"
+instead of `== 'derived_skip'`. Separately, `canonical_col_id` was re-stamped
+into `compiled_fs.db` and `compiled_v2.db` rebuilt from it.
+
+**Why:** OCBC's consolidated income statement prints `Note | 1H 2026 | 1H 2025`.
+The Note column has no period of its own, so the period cascade fell through to
+`table_title` and stamped its cells `2026-06-30 / 1H` — the SAME
+(leaf, period, span) address as the real figure. With `canonical_col_id`
+unpopulated that address is the finest grain the dashboard can match on, so the
+dedupe tie-break picked the footnote index. Measured on the shipped DB: net
+interest income rendered **3** against a filed 4,486, fee income **4** against
+1,414, allowances **7** against −665. Ten anchored addresses, two documents.
+After the fix: 0.
+
+**Why `canonical_col_id` was 0 of 1915 at all:** a regression, not missing work.
+TO_FIX §5 records that `restamp_columns` had written it (56 -> 197) directly
+into the BUILT artifact, and warned "they will drift the moment either changes."
+Commit 051c32b rebuilt the DB and the patch was lost, because the stamping lived
+in the artifact and not the lineage. Fixed at the source this time:
+`compiled_fs.db` restamped, `compiled_v2.db` rebuilt from it (which CARRIES
+`canonical_col_id`/`col_role`), so the next rebuild keeps it. 186 columns.
+
+**Discarded:** *`col_period IS NULL` as the predicate.* This was the obvious
+rule and it is wrong. A hard-axis table's VALUE columns legitimately have no
+period of their own — UOB's 'Performance by Geographical Segment' prints
+`Singapore | Malaysia | ...` as banners and takes its period from the title,
+which is why the cascade exists at all. Periodlessness cannot separate a
+reference column from a geography column; only what the column IS can, which is
+what `col_role` encodes.
+
+**Discarded:** *matching `\bnote\b` anywhere in the label.* It would claim
+'Notes receivable' and 'Notes and coins', both real line items banks report.
+The regex is anchored to the whole label plus an optional short index
+('Note (a)', 'Note no.'). Swept the live corpus: it claims exactly the 2 real
+Note columns of 1,915 and nothing else.
+
+**Discarded:** *patching `_ANCHOR_SQL` to exclude a label named Note.* That is
+the per-source hack the project forbids — the serving query already allowlists
+`col_role IS NULL`, so the correct fix is to give the column its role upstream
+and let the existing gate do the work. No app change was needed at all.
+
+**Verified:** the rebuild is content-identical to the shipped artifact except
+the two intended fields — same row counts on all 9 tables, 0 cells and 0 row
+identities differing either way.
+
+---
+
 ## 2026-08-14 — the app reads canonical_leaf_id and nothing else; three of four views were dead in public
 
 **Decision:** the Streamlit app's ONLY identity join is `canonical_leaf_id`,

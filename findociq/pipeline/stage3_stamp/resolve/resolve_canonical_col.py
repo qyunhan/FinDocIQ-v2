@@ -138,10 +138,16 @@ def resolve_columns(cur, doc_id, table_id, bank, table_type_id, entry):
                                 dim=None, dim_key=None, printed_path=None,
                                 outcome="skipped_period"))
             continue
-        if c["col_role"] == "derived_skip":
+        if c["col_role"]:
+            # ANY role, not `== 'derived_skip'`. A role means "this column is
+            # not a measurement", so every present and future member of the
+            # vocabulary must be gated here — an exact-match test silently
+            # started OFFERING 'reference_skip' columns to the matcher the
+            # moment that role was added (2026-08-14). Same allowlist reasoning
+            # as the app's anchor query, which admits `col_role IS NULL` only.
             results.append(dict(col_id=c["col_id"], canonical_col_id=None,
                                 dim=None, dim_key=None, printed_path=None,
-                                outcome="skipped_derived"))
+                                outcome=f"skipped_{c['col_role']}"))
             continue
         path = printed_col_chain(c["col_id"], by_id)
         hit = entry["by_norm"].get(RCL.norm_path(path))

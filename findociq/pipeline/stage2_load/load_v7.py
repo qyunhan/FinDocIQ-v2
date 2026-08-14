@@ -2086,6 +2086,25 @@ def _apply_document_default_unit(cur: sqlite3.Cursor, doc_id: str,
 # A column that RESTATES other columns rather than reporting a fact. Marked
 # 'derived_skip' so it is never ingested as a period fact. Kept beside the
 # loader (not in the masterlist package) because it is masterlist-independent.
+def _col_role_for(col_leaf_label):
+    """`col_dim.col_role` for one printed header, or None for a value column.
+
+    Delegates to stage3_stamp.resolve.col_roles — the single definition shared
+    with apply/restamp_columns.py. Imported lazily and guarded so a bare-schema
+    load with no stage3 package on the path behaves exactly as it did when the
+    derived-column regex lived here: the fallback IS that regex."""
+    lab = "" if col_leaf_label is None else str(col_leaf_label)
+    if not lab.strip():
+        return None
+    try:
+        from stage3_stamp.resolve.col_roles import role_for
+    except ImportError:
+        return "derived_skip" if _DERIVED_COL_RX.search(lab) else None
+    return role_for(lab)
+
+
+# Retained as the no-stage3 fallback for _col_role_for above; the live
+# definition is stage3_stamp.resolve.col_roles.DERIVED_COL_RX.
 _DERIVED_COL_RX = re.compile(
     r"(\+\s*/\s*\(?-\)?|%\s*chg|\bchg\b|\bchange\b|\bvariance\b|\bvs\b)", re.I)
 
@@ -2245,14 +2264,20 @@ def _stamp_identity(con, cur, doc_id: str, warnings: list[str]) -> dict:
     out = dict(cols_derived=0, tables_typed=0, leaves_stamped=0,
                cols_stamped=0, cols_unresolved=0)
 
-    # --- 1. derived columns ------------------------------------------------
+    # --- 1. non-measurement columns ----------------------------------------
+    # The role vocabulary lives in stage3_stamp.resolve.col_roles so this and
+    # apply/restamp_columns.py cannot drift — an already-built DB must be able
+    # to earn exactly the roles a fresh load would give it. 'reference_skip'
+    # joined 'derived_skip' on 2026-08-14; see that module for why a footnote
+    # 'Note' column was being served as a figure.
     for cid_doc, tid, col_id, lab in cur.execute(
             "SELECT doc_id, table_id, col_id, col_leaf_label FROM col_dim "
             "WHERE doc_id = ?", (doc_id,)).fetchall():
-        if lab and _DERIVED_COL_RX.search(str(lab)):
-            cur.execute("UPDATE col_dim SET col_role = 'derived_skip' WHERE "
+        role = _col_role_for(lab)
+        if role:
+            cur.execute("UPDATE col_dim SET col_role = ? WHERE "
                         "doc_id = ? AND table_id = ? AND col_id = ?",
-                        (cid_doc, tid, col_id))
+                        (role, cid_doc, tid, col_id))
             out["cols_derived"] += 1
 
     # --- 2. masterlist identity -------------------------------------------

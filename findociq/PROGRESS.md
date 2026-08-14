@@ -117,6 +117,28 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    tests, all four views, the 2 PDF page images and a 0-`nan` sweep all pass
    on that exact resolution.
 
+🐞→✅ **A footnote column was being served as a figure.** OCBC's income
+   statement prints a `Note` column; it has no period of its own, so the period
+   cascade stamped its cells with the table's period and they collided with the
+   real figures at the (leaf, period, span) grain. The dashboard printed net
+   interest income **3** (filed: 4,486), fee income **4** (1,414), allowances
+   **7** (−665). New `col_role='reference_skip'`, vocabulary centralised in
+   `stage3_stamp/resolve/col_roles.py` and shared by the loader and
+   `apply/restamp_columns.py`; `resolve_canonical_col` now gates on ANY role,
+   not `== 'derived_skip'`. Corpus sweep: the predicate claims exactly the 2
+   real Note columns of 1,915. Anchored footnote cells: 10 -> **0**.
+
+✅ **`canonical_col_id` repopulated: 0 -> 186.** This was a REGRESSION, not
+   missing work — TO_FIX §5 records it was patched into the built artifact and
+   warned it would drift; 051c32b rebuilt and lost it. Fixed in the lineage
+   this time: `compiled_fs.db` restamped, `compiled_v2.db` rebuilt from it (it
+   CARRIES the field), so a rebuild now keeps it. The rebuild is
+   content-identical to the shipped artifact otherwise — same counts on all 9
+   tables, 0 cells and 0 row identities differing. `compiled_fs.db` pushed to
+   GCS. 39 new pipeline tests + 152 app tests passing.
+
+⚠️ **`canonical_leaf_id` is UNCHANGED at 3,843/5,771** — see next.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

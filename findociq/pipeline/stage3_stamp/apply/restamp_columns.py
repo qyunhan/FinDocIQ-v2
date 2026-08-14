@@ -39,6 +39,7 @@ REPO = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(REPO / "findociq/pipeline"))
 sys.path.insert(0, str(REPO / "findociq/app"))
 
+from stage3_stamp.resolve import col_roles  # noqa: E402
 from stage3_stamp.resolve import resolve_canonical_col as RCC  # noqa: E402
 
 MASTERLIST_DIR = REPO / "findociq/data/derived/masterlist"
@@ -74,6 +75,34 @@ def main(argv=None) -> int:
     con = sqlite3.connect(args.db)
     con.row_factory = sqlite3.Row
     cur = con.cursor()
+
+    # --- col_role FIRST, and over EVERY column -----------------------------
+    # Masterlist-independent (load_v7 stage 1), so unlike canonical_col_id it
+    # is not scoped to tables that have a column block — and it has to run
+    # BEFORE the id pass, because resolve_columns gates on col_role: a column
+    # that earns a role here must not then be offered to the matcher.
+    #
+    # This is what makes an already-built DB reachable. A role added to the
+    # vocabulary after a DB was loaded is otherwise invisible to it forever,
+    # which is exactly how a 'Note' column stayed a servable figure.
+    role_counts: collections.Counter = collections.Counter()
+    for c in cur.execute(
+            "SELECT doc_id, table_id, col_id, col_leaf_label, col_role "
+            "FROM col_dim").fetchall():
+        want = col_roles.role_for(c["col_leaf_label"])
+        if want and want != c["col_role"]:
+            role_counts[(want, str(c["col_leaf_label"]))] += 1
+            if args.write:
+                cur.execute(
+                    "UPDATE col_dim SET col_role = ? "
+                    "WHERE doc_id = ? AND table_id = ? AND col_id = ?",
+                    (want, c["doc_id"], c["table_id"], c["col_id"]))
+    if role_counts:
+        print("\ncol_role newly applied:")
+        for (role, lab), n in role_counts.most_common():
+            print(f"  {n:4}x  {role:15} {lab!r}")
+    else:
+        print("\ncol_role: nothing to change")
 
     tables = cur.execute(
         """SELECT t.doc_id, t.table_id, t.table_type_id, d.institution
