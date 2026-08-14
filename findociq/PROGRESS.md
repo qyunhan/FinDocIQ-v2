@@ -188,6 +188,25 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    (`FS_CUSTOMER_LOANS/gross_loans`, stamped x10). A row labelled "Gross" is
    showing net. DBS uses `customer_loans`, UOB `gross_customer_loans`.
 
+✅ **docs cleanup — 1.7 MB -> 796 KB, and `Techreport/` is at the repo root.**
+   39 files in `findociq/docs/` were BYTE-IDENTICAL copies of documents already
+   sitting in `archive/2026-08-12-docs-cleanup/` (27 markdown + 12 diagram
+   assets) — that cleanup moved them, and the later branch-rescue commit
+   restored them beside their own archive copies. Verified with `cmp` one by
+   one, then deleted; nothing was lost and nothing needed re-archiving.
+   `reg-fold-collision-report.md` (86 KB, zero inbound references) was archived
+   on its own merits to `archive/2026-08-14-docs-cleanup/`.
+
+   New `findociq/docs/README.md` indexes what remains and carries ONE redirect
+   for every stale `docs/<name>.md` reference. `DECISIONS.md` and `PROGRESS.md`
+   still cite the old paths deliberately — they are logs, and rewriting old
+   entries to chase a file move destroys the record they exist to keep.
+
+   `findociq/docs/Techreport/` -> `Techreport/` at the repo root, beside
+   `README.md`; it is the deliverable and should not be three directories down.
+   README's "Read next" now leads with it. `TO_FIX.md` §5 marked RESOLVED — its
+   predicted drift is the `canonical_col_id` regression that actually happened.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

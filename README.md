@@ -95,12 +95,15 @@ artifacts are cached, so `--stage2` alone replays them.
 
 ## Read next
 
-1. `findociq/PROGRESS.md` — newest-first running log; start at the top.
-2. `findociq/docs/DECISIONS.md` — why things are the way they are, and what was
+1. `Techreport/FinDocIQ_technical_report_v0.1.md` — the full architecture
+   writeup, now at the repo root. **Appendix C** is what is covered today;
+   **Appendix D** is the prioritised worklist of what to build next.
+2. `findociq/PROGRESS.md` — newest-first running log; start at the top.
+3. `findociq/docs/DECISIONS.md` — why things are the way they are, and what was
    tried and rejected **with the evidence**.
-3. `findociq/docs/Techreport/FinDocIQ_technical_report_v0.1.md` — the full
-   architecture writeup.
-4. `CLAUDE.md` — working agreements if you use Claude Code on this repo.
+4. `findociq/docs/README.md` — index of the remaining docs, plus the redirect
+   for historical reports that now live under `findociq/archive/`.
+5. `CLAUDE.md` — working agreements if you use Claude Code on this repo.
 
 `findociq/docs/workstation-persistence.md` and the `*-handoff.md` files describe
 the OLD Cloud Workstation + GCS setup. They are kept for history and no longer

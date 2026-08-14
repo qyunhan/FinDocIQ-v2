@@ -164,6 +164,18 @@ UOB's equivalents resolve and reconcile exactly:
 
 ## 5. `compiled_v2.db` was patched, not rebuilt
 
+**Status:** RESOLVED 2026-08-14 — and the warning below came true first.
+
+The predicted drift happened: commit 051c32b rebuilt the DB and the
+artifact-level patch was lost, leaving `canonical_col_id` at **0 of 1915**. It
+is now fixed in the LINEAGE instead — `compiled_fs.db` was re-stamped with
+`stage3_stamp/apply/restamp_columns.py` and `compiled_v2.db` rebuilt from it
+(`build_compiled_v2` carries the field), so a rebuild keeps it. 210 columns
+stamped. The tool's path in the note below is also stale: it lives at
+`findociq/pipeline/stage3_stamp/apply/restamp_columns.py`, not `tools/`.
+
+Original entry, kept for the record:
+
 **Status:** accepted shortcut, documented so it is not mistaken for lineage.
 
 `tools/restamp_columns.py` wrote `col_dim.canonical_col_id` (56 → 197) directly
