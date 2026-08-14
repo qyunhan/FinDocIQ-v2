@@ -137,7 +137,16 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    tables, 0 cells and 0 row identities differing. `compiled_fs.db` pushed to
    GCS. 39 new pipeline tests + 152 app tests passing.
 
-⚠️ **`canonical_leaf_id` is UNCHANGED at 3,843/5,771** — see next.
+⚠️ **`canonical_leaf_id` is UNCHANGED at 3,843/5,771.** Not a code gap — the
+   resolver works; what is missing is masterlist DATA. Prioritised worklist
+   written up as **Appendix D of the technical report**, generated from the DB
+   rather than hand-maintained, with Appendix C cross-linked to it. Four tiers,
+   ranked by what each unblocks that a reader of the app can see:
+   T1 3 blank dashboard cells · T2 216 figure-carrying rows in already-classified
+   tables · T3 14 (bank, table_type_id) pairs with stampable columns and no
+   column block · T4 63 unclassified FS tables (Pillar 3's 8 held out).
+   Half of what is unstamped SHOULD stay unstamped: 1,022 of 1,928 unstamped
+   rows are label-only headers with no figure and no identity to earn.
 
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has

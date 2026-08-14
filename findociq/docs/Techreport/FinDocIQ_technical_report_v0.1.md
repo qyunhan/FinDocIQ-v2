@@ -1382,6 +1382,9 @@ Don't "normalise away" the parent — that violates the never-invent rule.
 
 ## Appendix C — Coverage tracker
 
+What IS authored today. For **what to author next and in what order**, see
+Appendix D — the two are meant to be read together.
+
 ### At a glance
 
 ```
@@ -1487,6 +1490,186 @@ checking `load_dashboard_anchors` (`findociq_app.py:747`).
 - Retired sections: keep the row, flip to `Retired: <reason>`. History matters.
 - Naming: `<BANK>_masterlist.csv` for all three banks. Per-doc split files may
   exist as review artefacts — they are not what the resolver reads.
+
+---
+
+## Appendix D — Masterlist authoring worklist (prioritised)
+
+Appendix C says what IS authored. This says **what to author next, in what
+order, and what each item buys** — the two are meant to be read together.
+
+Generated from `db/compiled_v2.db` + `data/derived/dashboards/` on 2026-08-14.
+Regenerate it rather than hand-editing: every number below is a query, and a
+stale worklist is worse than none. The ranking rule is **what does this unblock
+that a reader of the app can see**, not how many rows it touches.
+
+### Where identity stands
+
+| | stamped | total | note |
+|---|---|---|---|
+| `row_dim.canonical_leaf_id` | 3,843 | 5,771 | 67%; excluding Pillar 3 (197 rows, out of scope) it is 69% |
+| `col_dim.canonical_col_id` | 186 | 1,915 | repopulated 2026-08-14 (was 0 — see DECISIONS) |
+| declared dashboard anchors captured | 156 | 159 | 3 blank cells, all Tier 1 below |
+
+**Half of what is unstamped should stay unstamped.** Of 1,928 unstamped rows,
+1,022 are label-only — section headers and spacers that carry no figure and
+have no line-item identity to earn. Chasing the raw percentage upward is the
+wrong target; the tiers below are the right one.
+
+---
+
+### Tier 1 — blank cells on the live dashboard (3 items)
+
+A declared anchor the corpus has never captured. Every one is a visibly empty
+cell in the Highlights grid right now, which makes these the only items with a
+user-facing payoff measured in single rows. Do these first regardless of size.
+
+| Bank | Section | Concept | Address to author |
+|---|---|---|---|
+| OCBC | By Allowance | Net loans | `FS_CUSTOMER_LOANS` / `net_loans` |
+| OCBC | By Business Unit | Group Retail | `FS_BALANCE_BY_SEGMENT` / `other_information::gross_non_bank_loans` |
+| OCBC | Per share data ($) | Net book value (NAV per ordinary share) | `FS_BALANCE_CONSOLIDATED` / `net_asset_value_per_ordinary_share` |
+
+Note the shape of the OCBC `net_loans` case before authoring it: the corpus
+already stamps `allowances::net_loans` under the same `FS_CUSTOMER_LOANS` type
+10 times. That is an address MISMATCH between anchor and masterlist, not a
+missing figure — fixing it is an edit to one of the two, not new extraction.
+
+---
+
+### Tier 2 — rows carrying figures in tables we already classify (216 rows)
+
+The table has a `table_type_id`, the row prints a label AND a number, and the
+row still has no leaf id. These are the cheapest row-side wins: the table type
+is already understood, so the work is adding leaves to an existing masterlist
+block rather than deciding what a table is.
+
+| Rows | Bank | table_type_id |
+|---|---|---|
+| 28 | OCBC | `FS_EQUITY_CHANGES_BANK` |
+| 18 | OCBC | `FS_PERF_BY_GEOGRAPHY_CONSOL` |
+| 13 | OCBC | `FS_BALANCE_SELECTED` |
+| 10 | UOB | `FS_PERF_BY_GEOGRAPHY` |
+| 10 | UOB | `FS_EQUITY_CHANGES_COMPANY` |
+| 10 | UOB | `FS_EQUITY_CHANGES_GROUP` |
+| 9 | UOB | `FS_CASHFLOW` |
+| 8 | DBS | `FS_EQUITY_CHANGES_COMPANY` |
+| 8 | OCBC | `FS_BALANCE_CONSOLIDATED` |
+| 8 | OCBC | `FS_BS_BY_SEGMENT` |
+| 8 | OCBC | `FS_CASHFLOW` |
+| 7 | OCBC | `FS_DIVIDENDS` |
+
+Most frequent individual labels:
+
+| Count | Bank | table_type_id | Printed label |
+|---|---|---|---|
+| 8× | OCBC | `FS_BS_BY_SEGMENT` | Elimination |
+| 5× | UOB | `FS_PERF_BY_GEOGRAPHY` | Operating income |
+| 5× | UOB | `FS_PERF_BY_GEOGRAPHY` | Operating expenses |
+| 3× | UOB | `FS_PERF_BY_SEGMENT` | Total income |
+| 3× | UOB | `FS_PERF_BY_SEGMENT` | Total expenses |
+| 3× | OCBC | `FS_PERF_BY_GEOGRAPHY_CONSOL` | Singapore |
+| 3× | OCBC | `FS_PERF_BY_GEOGRAPHY_CONSOL` | Malaysia |
+| 3× | OCBC | `FS_PERF_BY_GEOGRAPHY_CONSOL` | Indonesia |
+
+Two of these are worth reading as diagnoses, not backlog:
+
+- **`FS_PERF_BY_GEOGRAPHY_CONSOL` prints `Singapore` / `Malaysia` / `Indonesia`
+  as ROW labels.** Geography is on the row axis in that exhibit and on the
+  column axis elsewhere. Spec 2026-08-09 §3.2 already rules on this shape —
+  resolve it there before authoring leaves, or the same dimension gets encoded
+  on both axes.
+- **`Elimination` (OCBC `FS_BS_BY_SEGMENT`, 8×)** is an inter-segment contra,
+  not a reported line. Decide whether it earns an id at all.
+
+---
+
+### Tier 3 — column blocks with stampable columns and no block authored (14 pairs)
+
+`(bank, table_type_id)` pairs that have real value columns — not period, not
+derived, not reference — with no `*_masterlist_cols.csv` block, so
+`canonical_col_id` stays NULL on all of them.
+
+**None of these is addressed by a dashboard anchor today**, so the payoff is
+not a filled cell — it is unblocking the segment/geo sections Appendix C marks
+`✱ col_dim canonicalisation blocks authoring`, and removing the ambiguity that
+let a footnote column win a headline figure (DECISIONS 2026-08-14).
+
+| Cells | Unstamped cols | Bank | table_type_id |
+|---|---|---|---|
+| 420 | 20 | UOB | `FS_FINANCIAL_CLASSIFICATION` |
+| 362 | 18 | OCBC | `FS_EQUITY_CHANGES_BANK` |
+| 330 | 30 | OCBC | `FS_PERF_BY_SEGMENT_CONSOL` |
+| 240 | 24 | OCBC | `FS_BS_BY_SEGMENT` |
+| 210 | 12 | OCBC | `FS_NPA_COVERAGE` |
+| 110 | 10 | DBS | `FS_VOLUME_RATE` |
+| 88 | 8 | OCBC | `FS_VOLUME_RATE` |
+| 80 | 8 | UOB | `FS_L3_MOVEMENTS` |
+| 75 | 5 | UOB | `FS_NON_INTEREST_INCOME` |
+| 66 | 6 | OCBC | `FS_PERF_BY_GEOGRAPHY_CONSOL` |
+| 36 | 4 | OCBC | `FS_HIGHLIGHTS_COMBINED` |
+| 30 | 3 | UOB | `FS_ALLOWANCES` |
+
+---
+
+### Tier 4 — tables that never classified (63 tables, 58 distinct captions)
+
+No `table_type_id`, so nothing downstream can stamp: 697 rows across the
+financial-statement corpus. Largest volume, lowest immediate payoff — no
+dashboard anchor references any of them, and most are disclosure notes rather
+than primary statements. Pillar 3's 8 unclassified tables are held out here
+for the reason given below.
+
+| Rows | Tables | Bank | Printed caption |
+|---|---|---|---|
+| 40 | 1 | OCBC | STATEMENT OF CHANGES IN EQUITY - GROUP For the financial year  |
+| 40 | 1 | OCBC | STATEMENT OF CHANGES IN EQUITY - GROUP For the financial year  |
+| 38 | 1 | OCBC | UNAUDITED STATEMENT OF CHANGES IN EQUITY - GROUP For the half  |
+| 37 | 1 | DBS | CUSTOMER DEPOSITS |
+| 30 | 1 | DBS | PERFORMANCE BY BUSINESS SEGMENTS — Selected income statement i |
+| 26 | 1 | OCBC | UNAUDITED CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME For t |
+| 25 | 1 | OCBC | 13.2 Geographical segments |
+| 22 | 2 | OCBC | Movements in Level 3 financial liabilities |
+| 21 | 1 | UOB | 6 Fair Value of Financial Instruments (b) The Group classifies |
+| 20 | 2 | OCBC | Movements in Level 3 non-financial assets |
+| 17 | 1 | OCBC | 1H26 Performance Highlights |
+| 17 | 1 | OCBC | FY25 Performance Highlights |
+| 16 | 1 | OCBC | Fourth Quarter 2025 Performance |
+| 16 | 1 | OCBC | Full Year 2025 Performance |
+
+The top of this list is not miscellany — **Statement of Changes in Equity**
+appears three times across OCBC alone (118 rows). Appendix C already marks that
+section `Deferred — col_dim blocked`, and Tier 3 lists its column block
+(`FS_EQUITY_CHANGES_BANK`, 362 cells) as unauthored. Those are the same gap seen
+from the row side and the column side; author the column block first or the row
+work has nowhere to land.
+
+Before authoring the rest, decide whether the masterlist should cover
+disclosure notes at all. Level 3 valuation movements and Key Audit Matters are
+narrative-adjacent; a registry that grows to include them is a different
+product than one scoped to the primary statements.
+
+---
+### Explicitly out of scope
+
+**Pillar 3** — `DBS_1Q26_P3_other_regulatory_disclosures`, 197 rows,
+0 stamped, no masterlist and no dashboard addressing it. It is the single
+largest unstamped document and should stay that way until Pillar 3 is a product
+decision. It drags the headline percentage down by ~2 points; quote the
+ex-Pillar-3 figure when reporting coverage.
+
+### Regenerating this appendix
+
+Every number is a query against `db/compiled_v2.db` plus
+`data/derived/dashboards/*_anchors.csv`; the queries are recorded in DECISIONS
+2026-08-14. The four tiers are the four states a row can be in:
+
+1. anchor declared, never captured → Tier 1
+2. table classified, row unresolved → Tier 2
+3. table classified, column unresolved → Tier 3
+4. table unclassified → Tier 4
+
+Re-run after any masterlist edit, and update Appendix C in the same commit.
 
 ---
 
