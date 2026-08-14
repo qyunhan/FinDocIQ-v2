@@ -37,15 +37,21 @@ the masterlist covers and the dashboard serves. A bare `--rebuild-db` loads
 **every** cached document (25 docs / 33,671 cells), pulling in 1Q22–3Q25 filings
 that have no masterlist coverage: useful for archaeology, wrong as a serving DB.
 
-> ⚠️ **A rebuild is NOT byte-equivalent to the committed database, and it
-> overwrites it.** Measured 2026-08-14: the replay reproduces every count
-> exactly (10 / 488 / 342 / 5,771 / 21,581, verify PASS) but loses **39
-> `canonical_leaf_id` stamps (3,843 → 3,804) and all 210 `canonical_col_id`
-> stamps**. The committed `compiled_fs.db` and `compiled_v2.db` are the
-> authoritative artifacts. Run `--rebuild-db` to verify the extraction
-> artifacts still load, on a **copy**; do not commit its output without
-> re-running `stage3_stamp/apply/restamp_columns.py --write` and checking the
-> stamp counts.
+> ⚠️ **A rebuild OVERWRITES `findociq/db/compiled_fs.db`.** Use
+> `--db <tmp-path>` to send it somewhere else while you are experimenting.
+>
+> The rebuild is deterministic and, as of 2026-08-14, produces the *correct*
+> database — it is what exposed and fixed a double count that had six cells of
+> the live dashboard serving exactly twice the filed figure (Appendix E of the
+> technical report). It does **not** reproduce the historical artifact
+> byte-for-byte, and that is the point: compare on IDENTITY
+> (`(doc, table, row) -> canonical_leaf_id`), never on row counts, which match
+> even when the numbers are wrong.
+>
+> `canonical_col_id` is NOT written at load time. After any rebuild, run
+> `python3 findociq/pipeline/stage3_stamp/apply/restamp_columns.py --db <db>
+> --write` before `--stage3`, or the serving DB ships with 0 of 210 column
+> stamps.
 
 It reconstructs `compiled_fs.db` from `findociq/outputs/**/parsed.json` (507
 extraction artifacts) and `findociq/data/derived/toc/*.json` (52 cached

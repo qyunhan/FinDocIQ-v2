@@ -236,6 +236,33 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    command now carries the warning — it previously read as though a replay
    reproduced the shipped artifact.
 
+🐞→✅ **The committed database was DOUBLE-COUNTING, and the rebuild was the
+   fix — the opposite of what TO_FIX §5 predicted.** Six cells of the live loans
+   dashboard served exactly twice the filed figure (OCBC Singapore 298,172 vs
+   149,086; geography summing to 682,240 vs a filed gross of 341,120). Cause:
+   39 `canonical_leaf_id` stamps present only in the committed artifact, all on
+   DUPLICATE extractions of one page in OCBC's 4Q25 media release. The anchor
+   composition sums members, so a leaf stamped on two copies of a page is added
+   twice. Rebuilt figures reconcile to 341,120 on every breakdown — geography,
+   industry, maturity, business unit.
+
+   The rebuild is **deterministic** (two runs byte-identical, 0 differences), so
+   this was artifact-vs-current-code, not randomness. The replay was promoted to
+   be the committed DB: `canonical_leaf_id` 3,843 -> **3,804** (the 39 removed),
+   `canonical_col_id` 210, counts unchanged, 166/166 anchors, 977 populated
+   dashboard cells before and after — only the 6 wrong ones changed.
+
+   Nothing in the pipeline could have caught it: counts identical, verify_cells
+   10/10 PASS (per-cell verification cannot see a composition-level double
+   count), coverage 166/166 either way. The guard that WOULD catch it — a
+   breakdown must sum to its own declared total — is written up but not yet
+   implemented.
+
+📄 **Technical report: Appendix E** added (the full write-up + the rules it
+   produces), **Appendix D regenerated** against the corrected DB (Tier 1 now
+   empty; Tier 2 is 255 rows). TO_FIX §5 and the README warning box both
+   rewritten — both had been written on the inverted premise.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

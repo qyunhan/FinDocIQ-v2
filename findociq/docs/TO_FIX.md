@@ -186,14 +186,18 @@ default glob yields an IDENTICAL
 `(doc_id, table_id, col_id, canonical_col_id)` set — so the artifact and the
 lineage agree **today**. They will drift the moment either changes.
 
-**Re-measured 2026-08-14** on the current corpus, and it is still true — a
-replay of `--rebuild-db --only 4Q25,1Q26,2Q26` matches every COUNT exactly
-(10 docs / 488 sections / 342 tables / 5,771 rows / 21,581 cells, verify PASS)
-yet loses **39 `canonical_leaf_id` stamps (3,843 -> 3,804) and all 210
-`canonical_col_id` stamps**. `col_role` survives, because that rule runs at load
-time. So: counts are not evidence of equivalence, and the committed DBs are
-authoritative. The README now carries this warning at the rebuild command,
-which previously read as though a replay reproduced the shipped artifact.
+**RESOLVED 2026-08-14, and the conclusion INVERTED.** The 39 `canonical_leaf_id`
+stamps the replay "lost" were a DOUBLE COUNT, not an asset: they sat on
+duplicate extractions of one OCBC page, and the anchor composition summed each
+figure twice. Six cells of the live loans dashboard were serving exactly double
+(Singapore 298,172 against a filed 149,086). The rebuilt figures reconcile to
+the filed gross loans, 341,120, on every breakdown. The replay was promoted to
+be the committed artifact.
+
+The rebuild is also **deterministic** — two independent runs are byte-identical
+— so this was never run-to-run randomness. Full write-up: **Appendix E** of the
+technical report. Rebuild to a scratch path (`--rebuild-db --db <tmp>`, always
+supported) and diff on IDENTITY, never on counts.
 
 **Also note:** `findociq/db/compiled_fs.db` and a replay of it are NOT
 interchangeable. Measured: `table_t` 342 vs 343, `row_dim` 5,772 vs 5,770 but

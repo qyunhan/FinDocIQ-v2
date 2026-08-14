@@ -17,6 +17,52 @@ Format:
 
 ---
 
+## 2026-08-14 — the committed DB was double-counting; the rebuild was the fix
+
+**Decision:** promote a fresh `--rebuild-db` replay to be the committed
+`compiled_fs.db` / `compiled_v2.db`, reversing the standing assumption that the
+committed artifact was the better one.
+
+**Why:** six cells of the live loans dashboard were serving **exactly double**.
+OCBC Singapore read 298,172 against a filed 149,086; the geography block summed
+to 682,240 against a filed gross of 341,120. The cause was 39 `canonical_leaf_id`
+stamps that existed only in the committed artifact, all on DUPLICATE extractions
+of one page in `OCBC_4Q25_Media_Release_and_Financial_Highlights`. The anchor
+composition sums its members, so a leaf stamped on two copies of one page is
+added twice. After the rebuild every breakdown — geography, industry, maturity,
+business unit — reconciles to 341,120 exactly.
+
+**Discarded:** *"the replay loses 39 leaves, so the committed DB is better".*
+This was TO_FIX §5's framing and it was wrong in the most expensive way: it
+treated the artifact's extra stamps as value and would have had us re-apply
+them. The stamps were the defect. What settled it was arithmetic no count could
+give — the parts of a breakdown must sum to its own declared total.
+
+**Discarded:** *chasing non-determinism in the classifier.* Measured first: two
+independent rebuilds are byte-identical on row identity AND table
+classification, 0 differences. The arbiter's tie-break is already deterministic
+(`-fraction, -matched, table_type_id`). The divergence was artifact-vs-current-
+code, not run-to-run, so there was no randomness to fix.
+
+**Evidence the pipeline could not catch it:** counts identical (the duplicate
+rows exist in both), `verify_cells` 10/10 PASS (each value IS on its page —
+verification is per-cell, double counting is a property of composition), anchor
+coverage 166/166 both ways, and 298,172 is not obviously absurd until you add
+the column up.
+
+**Method note, recorded because it cost real time:** the first attempt at this
+diagnosis ran `--rebuild-db` with no `--db`, which overwrote the shipped DB. Only
+a copy taken beforehand saved it. `--db <tmp>` has always been supported — I had
+grepped for it, seen only the internal subprocess call sites, and wrongly
+reported that no such flag existed. Read the argparse block, not the call sites.
+
+**Still open:** the duplicate tables are still extracted and still carry NULL
+`dedup_status`. They are now merely classified consistently enough not to double
+count. The durable guard is a sum-to-total invariant per breakdown, which is not
+implemented. Full write-up: Appendix E of the technical report.
+
+---
+
 ## 2026-08-14 — the Highlights row order, and the formula file nobody was reading
 
 **Decision:** the headline dashboard's formula file is renamed
