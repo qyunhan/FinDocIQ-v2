@@ -263,6 +263,26 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    empty; Tier 2 is 255 rows). TO_FIX §5 and the README warning box both
    rewritten — both had been written on the inverted premise.
 
+📋 **Open items written down for handover.** `TO_FIX.md` gains §7–§11 and
+   closes §6 (0 uncaptured anchors of 166 — all three were anchor-side address
+   errors). New entries: **§7** OCBC "Gross Customer Loans" renders the NET
+   figure 336,692 against a true gross of 341,120 — **gross is confirmed as the
+   intended figure**, one-line anchor edit, unapplied only because it changes a
+   published number; **§8** duplicate page extraction with NULL `dedup_status`,
+   the root cause of the double count and currently a truce rather than a fix;
+   **§9** no breakdown sums to its own total, which is the guard that would
+   have caught §8; **§10** the public dashboard is still set to private;
+   **§11** masterlist Tiers 2–4, pointing at Appendix D.
+
+   Technical report gains **Appendix F — Open items at handover**, ordered by
+   cost-of-leaving-undone rather than effort, naming TO_FIX as the live list and
+   itself as a snapshot. It also records what is explicitly NOT open, so the
+   closed work is not re-litigated.
+
+⏭️ **Recommended order for whoever picks this up:** §9 before §8 — the
+   sum-to-total invariant converts a silent corruption into a loud one before
+   anyone touches the extractor.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

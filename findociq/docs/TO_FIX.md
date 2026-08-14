@@ -208,6 +208,13 @@ interchangeable. Measured: `table_t` 342 vs 343, `row_dim` 5,772 vs 5,770 but
 
 ## 6. Five loan leaf addresses are unstamped
 
+**Status:** RESOLVED 2026-08-14 — 0 uncaptured anchors of 166. Every one was an
+anchor-side ADDRESS error, not missing extraction: OCBC `net_loans` ->
+`allowances::net_loans`; OCBC's segment balance sheet re-keyed from
+`FS_BALANCE_BY_SEGMENT` (a type OCBC produces zero tables of) to
+`FS_BS_BY_SEGMENT` in both the anchors and the column masterlist; the UOB
+allowance leaves resolve under `less_general_allowance::*`. Original entry below.
+
 **Status:** anchors are probably right; the leaves are not stamped.
 
 From `breakdown_of_gross_nb_loans_*.csv`, unresolved against `compiled_v2.db`:
@@ -220,3 +227,88 @@ From `breakdown_of_gross_nb_loans_*.csv`, unresolved against `compiled_v2.db`:
 
 The last two sit in the segment table types that §2/§3 also implicate, so they
 may resolve once stamping is corrected rather than needing anchor edits.
+
+---
+
+## 7. OCBC "Gross Customer Loans" shows the NET figure
+
+**Status:** open. **The intended figure is GROSS — confirmed 2026-08-14.**
+
+The Highlights anchor addresses
+`OCBC / FS_BALANCE_CONSOLIDATED / loans_to_customers`, which is the balance
+sheet's line and is reported NET of allowances. It renders **336,692**, exactly
+equal to the loans breakdown's `Net loans`. True gross is **341,120**
+(`FS_CUSTOMER_LOANS / gross_loans`, stamped 10x, and the figure every breakdown
+block sums to).
+
+A row labelled "Gross" is showing net, on the live dashboard, today.
+
+**The fix** is one line in `data/derived/dashboards/highlights_dashboard_anchors.csv`
+— repoint OCBC at `FS_CUSTOMER_LOANS / gross_loans`. The periods line up
+(341,120 at 31-Dec-25, 364,493 at 30-Jun-26). Peers already do the right thing:
+DBS uses `customer_loans`, UOB `gross_customer_loans`.
+
+Not applied yet only because it changes a published figure. Verify against the
+filing before shipping, then re-run the coverage check (must stay 166/166).
+
+---
+
+## 8. Duplicate page extraction — the root cause of the double count
+
+**Status:** open, and the highest-value remaining defect.
+
+One physical page is extracted as several `table_t` rows with identical row
+content, and `dedup_status` is **NULL on all of them**, so
+`quarantine_duplicate_page_tables.py` never marks the cluster. Confirmed on two
+documents: OCBC 2Q26 p.9 FINANCIAL HIGHLIGHTS (two copies, stamping split
+across them) and OCBC 4Q25 media release (three copies).
+
+This is what produced the **double count** fixed on 2026-08-14: the anchor
+composition SUMS its members, so a leaf stamped on two copies of a page is added
+twice, and six cells of the live loans dashboard served exactly 2x the filed
+figure. See Appendix E of the technical report.
+
+The current state is a truce, not a fix: the duplicates are still extracted, and
+are merely classified consistently enough that no leaf lands on two copies. A
+new filing with the same page structure can reintroduce it silently.
+
+---
+
+## 9. No breakdown sums to its own total
+
+**Status:** open. This is the guard that would have caught §8.
+
+Nothing in the pipeline compares the parts of a breakdown against the total
+printed in the same exhibit. Geography, industry, maturity and business unit
+each declare one, and each must reconcile — OCBC 4Q25 gross loans is 341,120 on
+all four. The double count in §8 survived identical row counts, `verify_cells`
+10/10 PASS and 166/166 anchor coverage, because verification is **per cell**
+while a double count is a property of **composition**.
+
+Cheap, general, needs no masterlist knowledge. Implement it at the anchor-
+composition layer where the sum already happens.
+
+---
+
+## 10. The public dashboard is set to private
+
+**Status:** open, and it blocks external sharing.
+
+An anonymous request to the Streamlit Community Cloud URL returns HTTP 303 to
+`share.streamlit.io/-/auth/app` — the login wall. The owner must set the app to
+"anyone with the link" in **Settings -> Sharing**; it cannot be changed from the
+repository. Re-test in a private window before sending the link to anyone.
+
+---
+
+## 11. Masterlist coverage — Tiers 2 to 4
+
+**Status:** open, prioritised, and not a code problem.
+
+`canonical_leaf_id` covers 3,804 of 5,771 rows (69% excluding Pillar 3). Roughly
+half of what is unstamped is label-only headers that should stay unstamped. The
+ranked worklist is **Appendix D** of the technical report — Tier 1 is clear,
+Tier 2 is 255 figure-carrying rows in tables already classified, Tier 3 is 13
+column blocks, Tier 4 is 63 unclassified tables. Regenerate Appendix D after any
+masterlist edit; its numbers are queries, not prose.
+

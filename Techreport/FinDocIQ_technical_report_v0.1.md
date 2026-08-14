@@ -1670,6 +1670,43 @@ to double count. A future ingest of a document with the same page structure can
 reintroduce the problem. The sum-to-total invariant in rule 4 above is the
 cheapest guard and is not yet implemented.
 
+Both are tracked as `TO_FIX` §8 and §9, with the rest of the open list in
+Appendix F.
+
+---
+
+## Appendix F — Open items at handover
+
+`findociq/docs/TO_FIX.md` is the **live list** — it is maintained, this appendix
+is a snapshot taken 2026-08-14 for the handover. Where they disagree, TO_FIX
+wins.
+
+Ordered by what it costs to leave undone, not by effort.
+
+| # | Item | Why it matters | Where |
+|---|---|---|---|
+| 1 | **Duplicate page extraction** — one page becomes several `table_t` rows, `dedup_status` NULL on all | Root cause of the double count in Appendix E. Currently a truce, not a fix: a new filing with the same page structure reintroduces it silently | `TO_FIX` §8 |
+| 2 | **No breakdown sums to its own total** | The guard that would have caught #1. A double count survives identical counts, `verify_cells` 10/10 and 166/166 coverage, because verification is per-cell and double counting is compositional | `TO_FIX` §9 |
+| 3 | **OCBC "Gross Customer Loans" shows the NET figure** — 336,692 against a true gross of 341,120. **Gross is the intended figure (confirmed)** | A row labelled "Gross" is showing net on the live dashboard. One-line anchor edit; not applied only because it changes a published number | `TO_FIX` §7 |
+| 4 | **The public dashboard is set to private** — anonymous requests hit the Streamlit login | Blocks sharing the link with anyone outside the account. Owner-only setting; cannot be changed from the repo | `TO_FIX` §10 |
+| 5 | **Masterlist coverage, Tiers 2–4** | 3,804 of 5,771 rows stamped (69% ex-Pillar 3). Not a code problem — authoring | Appendix D, `TO_FIX` §11 |
+
+Items 1 and 2 are one piece of work: #2 is how you would know #1 had returned.
+Doing #2 first is defensible — it converts a silent corruption into a loud one
+before touching the extractor.
+
+Longer-standing entries (`TO_FIX` §0–§4) predate this handover and are unchanged.
+§5 and §6 were closed on 2026-08-14.
+
+### What is NOT open
+
+Worth stating so nobody re-litigates it: the four ways the app used to die
+(Appendix E of `findociq/app/DEPLOY.md`), the retired mapping-layer reads, the
+`nan` titles, the Highlights row order, the missing formula file, the footnote
+column served as a figure, the `canonical_col_id` regression, and all three
+Tier 1 anchor gaps are fixed, verified and shipped. GCP is retired and out of
+the working path.
+
 ---
 
 *End of v0.4 draft.*
