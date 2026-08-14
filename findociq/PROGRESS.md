@@ -166,6 +166,28 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    "the app globs on suffix only, so both load — don't fix one to match the
    other" was wrong and is corrected in place. 162 app tests.
 
+✅ **Tier 1 cleared — 0 uncaptured anchors (was 3).** All three were anchor-side
+   ADDRESS errors, not missing extraction:
+   - OCBC `Net loans` addressed `net_loans`; the corpus stamps
+     `allowances::net_loans` (printed "Net loans", x10).
+   - OCBC's segment balance sheet is **`FS_BS_BY_SEGMENT`**, but 5 anchor rows
+     AND 6 column-masterlist rows called it `FS_BALANCE_BY_SEGMENT` — a type
+     OCBC produces **zero** tables of. One consistent error in two files;
+     re-keying both stamped +24 columns (186 -> 210) and lit up the whole
+     By Business Unit block.
+   - OCBC's NAV per share is `FS_RATIOS_KEY/net_asset_value_per_share` in the
+     media release, not `FS_BALANCE_CONSOLIDATED/net_asset_value_per_ordinary_share`
+     (that address is UOB's). Now renders 13.38 / 13.73.
+   Registry: **166 declared, 166 captured** (declared rose from 159 because the
+   renamed formula file is finally being read).
+
+   ⚠️ **Caught while verifying, NOT fixed — needs a call.** OCBC's
+   `Gross Customer Loans` anchor points at `FS_BALANCE_CONSOLIDATED/loans_to_customers`,
+   which is the balance sheet's NET line: it renders 336,692, exactly equal to
+   the breakdown's `Net loans`, while true gross is 341,120
+   (`FS_CUSTOMER_LOANS/gross_loans`, stamped x10). A row labelled "Gross" is
+   showing net. DBS uses `customer_loans`, UOB `gross_customer_loans`.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

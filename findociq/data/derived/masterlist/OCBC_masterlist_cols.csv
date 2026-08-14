@@ -6,12 +6,12 @@ OCBC,FS_BALANCE_BY_GEOGRAPHY,4,greater_china,Greater China,Greater China,Financi
 OCBC,FS_BALANCE_BY_GEOGRAPHY,5,other_asia_pacific,Other Asia Pacific,Other Asia Pacific,Financial_statements,
 OCBC,FS_BALANCE_BY_GEOGRAPHY,6,rest_of_the_world,Rest of the World,Rest of the World,Financial_statements,
 OCBC,FS_BALANCE_BY_GEOGRAPHY,7,group,Group,Group,Financial_statements,unlabeled total row — mapped to GLOBAL
-OCBC,FS_BALANCE_BY_SEGMENT,1,global_consumer_private_banking,Global Consumer/ Private Banking,Global Consumer/ Private Banking,Financial_statements,
-OCBC,FS_BALANCE_BY_SEGMENT,2,global_wholesale_banking,Global Wholesale Banking,Global Wholesale Banking,Financial_statements,
-OCBC,FS_BALANCE_BY_SEGMENT,3,global_markets,Global Markets,Global Markets,Financial_statements,
-OCBC,FS_BALANCE_BY_SEGMENT,4,insurance,Insurance,Insurance,Financial_statements,
-OCBC,FS_BALANCE_BY_SEGMENT,5,others,Others,Others,Financial_statements,
-OCBC,FS_BALANCE_BY_SEGMENT,6,group,Group,Group,Financial_statements,
+OCBC,FS_BS_BY_SEGMENT,1,global_consumer_private_banking,Global Consumer/ Private Banking,Global Consumer/ Private Banking,Financial_statements,
+OCBC,FS_BS_BY_SEGMENT,2,global_wholesale_banking,Global Wholesale Banking,Global Wholesale Banking,Financial_statements,
+OCBC,FS_BS_BY_SEGMENT,3,global_markets,Global Markets,Global Markets,Financial_statements,
+OCBC,FS_BS_BY_SEGMENT,4,insurance,Insurance,Insurance,Financial_statements,
+OCBC,FS_BS_BY_SEGMENT,5,others,Others,Others,Financial_statements,
+OCBC,FS_BS_BY_SEGMENT,6,group,Group,Group,Financial_statements,
 OCBC,FS_BALANCE_CONSOLIDATED,1,group,Group,Group,Financial_statements,
 OCBC,FS_BALANCE_CONSOLIDATED,2,bank,Bank,Bank,Financial_statements,parent-company view; OCBC uses 'Bank' label (DBS uses 'Company')
 OCBC,FS_EQUITY_CHANGES_COMPANY,1,share_capital_and_other_equity,Share capital and other equity,Share capital and other equity,Financial_statements,
