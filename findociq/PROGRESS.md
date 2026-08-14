@@ -5,6 +5,63 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
 
 ---
 
+## 2026-08-14 — the public app: 3 of 4 views were dead, and the mapping layer is out
+
+🐞 **Only the Dashboard worked on the public Streamlit Community Cloud deploy.**
+   Four independent causes, all reproduced against the shipped `compiled_v2.db`
+   and all fixed. Verified with `streamlit.testing.v1.AppTest` driving the real
+   app: all four views + every interactive branch now render with no exception.
+
+- 🐞→✅ **Database raised on every table.** `_raw_frame` selected
+  `row_dim.row_leaf_label_clean`, which `compiled_v2.db` does not have, through
+  `run()` — so picking any table killed the view. Same for `row_dim.concept_key`
+  and `cell_fact.concept_key/geo_key/segment_key`. New pure `select_clause()` +
+  `_sel()` probe `PRAGMA table_info` and serve absent columns as
+  `NULL AS <name>`, keeping frame shapes fixed. Not a compiled_v2 special case:
+  a restored column starts serving with no edit.
+- 🐞→✅ **The LANDING view crashed the page.** Ingest is the first radio option
+  and did a bare `import source_store` — wrong path (it is
+  `pipeline/common/source_store.py`) and unguarded. Every fresh session rendered
+  the sidebar then a traceback. Corrected to `from common import source_store`
+  AND wrapped: no pipeline module on a credential-less deploy is a normal state,
+  so the view falls back to the ingested-document list and disables the Ingest
+  button instead of taking three working views down.
+- 🐞→✅ **The original-PDF panel resolved nothing for 3 of 10 documents.**
+  `document.source_file` carries two key conventions (flat and foldered) and the
+  foldered ones are not stored that way in the repo. New pure
+  `resolve_source_pdf()` falls back to the basename anywhere under
+  `data/sources/` — **all 10 documents now resolve**, including the Pillar 3 PDF
+  which lives under `sources/pillar3/`. All 10 are git-tracked, so this works on
+  Community Cloud with no GCS.
+- ✅ **Per-cell canonical identity, as asked.** Database gains a "Per-cell
+  identity" expander: `canonical_leaf_id` x `canonical_col_id` per cell with
+  `col_role`, `legal_entity`, period + `period_source`, and a CSV download.
+  `canonical_leaf_id` also added to both row-identity grids.
+  ⚠️ `canonical_col_id` is **0 of 1915** in BOTH `compiled_v2.db` and
+  `compiled_fs.db` — the column-axis stamp (spec 2026-08-09) has never run. The
+  view says so rather than hiding the column.
+
+🔁 **PIPELINE PIVOT — the retired mapping layer is out of the app.** No read of
+   `table_catalog`, `bank_line_map`, `row_lineage`, `v_fact_metric_serving` or
+   `v_cell_flat` remains. **Table Registry rebuilt on `canonical_leaf_id`
+   alone**: the anchor CSVs declare the expected addresses, `row_dim` supplies
+   what was captured, matched on the leaf address with no label comparison. New
+   pure helpers `anchor_declarations()`, `anchor_coverage_frame()`,
+   `unanchored_leaves_frame()`. First run: **159 declared, 156 captured, 3
+   uncaptured (all OCBC), 1,189 stamped-but-undeclared**. Ingest's result grid
+   moved off `v_cell_flat` (absent → it had been silently empty on every fresh
+   ingest) onto the base tables. 277 lines of dead `bank_line_map` machinery
+   deleted with their tests.
+
+✅ **Tests: 129 passing** (126 before; −17 legacy, +20 new for `select_clause`,
+   `resolve_source_pdf` and the three registry helpers).
+
+⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
+   the one half of the per-cell address the app can display but the pipeline has
+   never written.
+
+---
+
 ## 2026-08-13 (cont'd) — sibling period banners: 771 cells were carrying the wrong date
 
 🐞 **Prior-period comparatives were addressable as current-period, and `verify_cells`

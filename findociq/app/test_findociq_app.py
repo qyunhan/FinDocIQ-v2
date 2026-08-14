@@ -20,329 +20,15 @@ from findociq_app import (PERIOD_BASES, STAGES, available_bases,
                           highlights_compare_grid_frame,
                           highlights_grid_frame,
                           is_base_slice, period_column_headers,
-                          line_item_benchmark_frame,
-                          line_item_display_order,
-                          line_item_masterlist_frame,
                           pages_from_range, period_axis_order, period_label,
                           fiscal_period_axis, target_period_labels,
                           FILTER_BY_PERIOD_END_DATE,
                           raw_table_frame, resolve_title,
-                          source_key_of, stage_states, table_masterlist_frame,
-                          table_view_labels)
+                          source_key_of, stage_states, table_view_labels,
+                          anchor_declarations, anchor_coverage_frame,
+                          unanchored_leaves_frame, select_clause,
+                          resolve_source_pdf)
 
-
-# ------------------------------------------------------- table_masterlist_frame
-_CATALOG_ROWS = [
-    {"bank": "DBS", "doc_kind": "performance_summary", "page": "3",
-     "section_canonical": "Overview", "table_type_id": "FS_INCOME_SELECTED",
-     "caption_canonical": "Selected income statement items", "cadence": "every_quarter",
-     "expected": True},
-    {"bank": "DBS", "doc_kind": "performance_summary", "page": "8",
-     "section_canonical": "Financial Review", "table_type_id": "FS_NII_DETAIL",
-     "caption_canonical": "Net interest income", "cadence": "half_year", "expected": True},
-    {"bank": "OCBC", "doc_kind": "media_release_financial_highlights", "page": "10",
-     "section_canonical": "FINANCIAL HIGHLIGHTS", "table_type_id": "FS_INCOME_SELECTED",
-     "caption_canonical": "Selected Income Statement Items", "cadence": "every_quarter",
-     "expected": True},
-    # OCBC's SECOND, genuinely different document form, reporting the SAME
-    # table_type_id as a DIFFERENT exhibit -- this is the exact case doc_kind
-    # exists to keep apart (verified against table_registry_seed.csv: 8
-    # table_type_ids, including this one, appear under BOTH OCBC doc_kinds).
-    {"bank": "OCBC", "doc_kind": "condensed_financial_statements", "page": "2",
-     "section_canonical": "Condensed Financial Statements", "table_type_id": "FS_INCOME_STATUTORY",
-     "caption_canonical": "Consolidated Income Statement", "cadence": "half_year",
-     "expected": True},
-    {"bank": "OCBC", "doc_kind": "media_release_financial_highlights", "page": "4",
-     "section_canonical": "Media Release", "table_type_id": "FS_INCOME_STATUTORY",
-     "caption_canonical": "Fourth Quarter 2025 Performance", "cadence": "half_year",
-     "expected": True},
-]
-
-
-def test_table_masterlist_frame_preserves_caller_row_order():
-    # Row order is the CALLER's responsibility (the live query sorts by
-    # bank, CAST(page AS INTEGER) -- TOC/reading order, not alphabetical by
-    # section or table_type_id). Feed rows in a DELIBERATELY non-alphabetical
-    # order and confirm the function doesn't silently re-sort them.
-    reordered = [_CATALOG_ROWS[1], _CATALOG_ROWS[0], _CATALOG_ROWS[2]]   # NII, Income, OCBC Income
-    grid = table_masterlist_frame(reordered, [])
-    assert list(grid["table_type_id"]) == ["FS_NII_DETAIL", "FS_INCOME_SELECTED", "FS_INCOME_SELECTED"]
-    assert list(grid["page"]) == ["8", "3", "10"]
-
-
-def test_table_masterlist_frame_counts_live_occurrences_per_bank_and_type():
-    live = [
-        {"bank": "DBS", "doc_kind": "performance_summary", "table_type_id": "FS_INCOME_SELECTED",
-         "doc_id": "DBS_4Q25_performance_summary", "table_id": "overview_x_2025-12-31"},
-        {"bank": "DBS", "doc_kind": "performance_summary", "table_type_id": "FS_INCOME_SELECTED",
-         "doc_id": "DBS_1Q25_trading_update", "table_id": "overview_x_2025-03-31"},
-        {"bank": "OCBC", "doc_kind": "media_release_financial_highlights", "table_type_id": "FS_INCOME_SELECTED",
-         "doc_id": "OCBC_4Q25_Media_Release", "table_id": "highlights_x_2025-12-31"},
-    ]
-    grid = table_masterlist_frame(_CATALOG_ROWS, live)
-    dbs_income = grid[(grid["bank"] == "DBS") & (grid["table_type_id"] == "FS_INCOME_SELECTED")].iloc[0]
-    assert dbs_income["times_captured"] == 2
-    assert dbs_income["docs_captured"] == 2
-
-    ocbc_income = grid[(grid["bank"] == "OCBC") & (grid["doc_kind"] == "media_release_financial_highlights")
-                       & (grid["table_type_id"] == "FS_INCOME_SELECTED")].iloc[0]
-    assert ocbc_income["times_captured"] == 1
-
-
-def test_table_masterlist_frame_zero_occurrences_is_a_visible_fact_not_hidden():
-    grid = table_masterlist_frame(_CATALOG_ROWS, [])
-    assert (grid["times_captured"] == 0).all()
-    assert len(grid) == len(_CATALOG_ROWS)   # every catalog row still present
-
-
-def test_table_masterlist_frame_does_not_cross_contaminate_banks():
-    # a DBS occurrence must never count toward OCBC's row for the SAME
-    # table_type_id -- bank is part of the join key, not just a display column.
-    live = [{"bank": "DBS", "doc_kind": "performance_summary", "table_type_id": "FS_INCOME_SELECTED",
-             "doc_id": "d1", "table_id": "t1"}]
-    grid = table_masterlist_frame(_CATALOG_ROWS, live)
-    ocbc_income = grid[(grid["bank"] == "OCBC") & (grid["doc_kind"] == "media_release_financial_highlights")
-                       & (grid["table_type_id"] == "FS_INCOME_SELECTED")].iloc[0]
-    assert ocbc_income["times_captured"] == 0
-
-
-def test_table_masterlist_frame_does_not_merge_ocbcs_two_document_forms():
-    # OCBC's two doc_kinds both carry FS_INCOME_STATUTORY (Consolidated
-    # Income Statement in the condensed statements vs the Media Release's
-    # own income-shaped summary panel) -- an occurrence in ONE must never
-    # count toward the OTHER's row, even though bank AND table_type_id match.
-    live = [
-        {"bank": "OCBC", "doc_kind": "condensed_financial_statements",
-         "table_type_id": "FS_INCOME_STATUTORY",
-         "doc_id": "OCBC_4Q25_Condensed_Financial_Statements", "table_id": "t1"},
-        {"bank": "OCBC", "doc_kind": "condensed_financial_statements",
-         "table_type_id": "FS_INCOME_STATUTORY",
-         "doc_id": "OCBC_1Q25_Condensed_Financial_Statements", "table_id": "t2"},
-    ]
-    grid = table_masterlist_frame(_CATALOG_ROWS, live)
-    condensed_row = grid[(grid["doc_kind"] == "condensed_financial_statements")
-                         & (grid["table_type_id"] == "FS_INCOME_STATUTORY")].iloc[0]
-    media_row = grid[(grid["doc_kind"] == "media_release_financial_highlights")
-                     & (grid["table_type_id"] == "FS_INCOME_STATUTORY")].iloc[0]
-    assert condensed_row["times_captured"] == 2
-    assert media_row["times_captured"] == 0   # NOT 2 -- a merge bug would leak the count here
-    # both rows for the SAME table_type_id must survive as distinct rows,
-    # not collapse into one
-    assert len(grid[grid["table_type_id"] == "FS_INCOME_STATUTORY"]) == 2
-
-
-# --------------------------------------------------- line_item_masterlist_frame
-def test_line_item_masterlist_frame_shape_and_sort():
-    rows = [
-        {"row_label_norm": "total_income", "parent_label_norm": "", "concept_key": "pnl.income.total",
-         "map_status": "human_confirmed", "note": None},
-        {"row_label_norm": "net_interest_income", "parent_label_norm": "commercial_book_total_income",
-         "concept_key": "pnl.nii.net", "map_status": "human_confirmed", "note": "SEG_COMMERCIAL"},
-        {"row_label_norm": "net_interest_income", "parent_label_norm": "markets_trading_income",
-         "concept_key": "pnl.nii.net", "map_status": "human_confirmed", "note": "SEG_MARKETS"},
-    ]
-    df = line_item_masterlist_frame(rows)
-    assert list(df.columns) == ["parent", "line_item", "concept_key", "status", "note"]
-    assert len(df) == 3
-    # sorted by (parent, line_item) -- "" (no parent) sorts before any named parent
-    assert df.iloc[0]["parent"] == ""
-    assert df.iloc[0]["line_item"] == "total_income"
-    # the two same-label, different-parent rows are BOTH present, not collapsed
-    # -- this is the exact case (DBS NII markets vs commercial) the stable
-    # (bank, table_type_id, row_label_norm, parent_label_norm) key exists for
-    assert set(df["parent"]) == {"", "commercial_book_total_income", "markets_trading_income"}
-
-
-def test_line_item_masterlist_frame_empty():
-    df = line_item_masterlist_frame([])
-    assert df.empty
-    assert list(df.columns) == ["parent", "line_item", "concept_key", "status", "note"]
-
-
-def test_line_item_masterlist_frame_orders_by_section_when_order_given():
-    rows = [
-        {"row_label_norm": "total_income", "parent_label_norm": "", "concept_key": "pnl.income.total",
-         "map_status": "human_confirmed", "note": None},
-        {"row_label_norm": "net_interest_income", "parent_label_norm": "commercial_book_total_income",
-         "concept_key": "pnl.nii.net", "map_status": "human_confirmed", "note": "SEG_COMMERCIAL"},
-        {"row_label_norm": "net_interest_income", "parent_label_norm": "markets_trading_income",
-         "concept_key": "pnl.nii.net", "map_status": "human_confirmed", "note": "SEG_MARKETS"},
-        {"row_label_norm": "other_operating_income", "parent_label_norm": "",
-         "concept_key": None, "map_status": "ai_proposed", "note": None},
-    ]
-    order = {
-        ("net_interest_income", "commercial_book_total_income"): 0,
-        ("net_interest_income", "markets_trading_income"): 1,
-        ("total_income", ""): 2,
-        # "other_operating_income" deliberately absent -- never seen in the
-        # reference document (e.g. an ai_proposed row not yet confirmed)
-    }
-    df = line_item_masterlist_frame(rows, order=order)
-    # ranked addresses come first, in rank order -- not alphabetical
-    assert list(zip(df["line_item"], df["parent"]))[:3] == [
-        ("net_interest_income", "commercial_book_total_income"),
-        ("net_interest_income", "markets_trading_income"),
-        ("total_income", ""),
-    ]
-    # the unranked row sorts to the bottom, not silently dropped or interleaved
-    assert df.iloc[3]["line_item"] == "other_operating_income"
-
-
-# ------------------------------------------------------- line_item_display_order
-def test_line_item_display_order_ranks_by_row_id_and_computes_addresses():
-    rows = [
-        {"doc_id": "d1", "table_id": "t1", "row_id": 1, "row_leaf_label": "Commercial book total income",
-         "lvl1": "Commercial book total income", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-        {"doc_id": "d1", "table_id": "t1", "row_id": 2, "row_leaf_label": "Net interest income",
-         "lvl1": "Commercial book total income", "lvl2": "Net interest income", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-        {"doc_id": "d1", "table_id": "t1", "row_id": 3, "row_leaf_label": "Markets trading income",
-         "lvl1": "Markets trading income", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-        {"doc_id": "d1", "table_id": "t1", "row_id": 4, "row_leaf_label": "Net interest income",
-         "lvl1": "Markets trading income", "lvl2": "Net interest income", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-        {"doc_id": "d1", "table_id": "t1", "row_id": 5, "row_leaf_label": "Total income",
-         "lvl1": "Total income", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-    ]
-    order = line_item_display_order(rows)
-    # two rows with the SAME leaf label ("Net interest income") but different
-    # parents get two DISTINCT addresses, each with its own rank -- this is
-    # the exact commercial-vs-markets NII case line_item_masterlist_frame's
-    # own tests exist for
-    assert order == {
-        ("commercial_book_total_income", ""): 0,
-        ("net_interest_income", "commercial_book_total_income"): 1,
-        ("markets_trading_income", ""): 2,
-        ("net_interest_income", "markets_trading_income"): 3,
-        ("total_income", ""): 4,
-    }
-
-
-def test_line_item_display_order_collapses_constant_parent_to_no_parent():
-    # every depth-2 row shares the same lvl1 -- that's a table-title
-    # constant, not a real grouping, so it collapses to no parent (matches
-    # stamp_human_anchors' rule and bank_line_map's own convention)
-    rows = [
-        {"doc_id": "d1", "table_id": "t1", "row_id": 1, "row_leaf_label": "Net interest income",
-         "lvl1": "Income statement", "lvl2": "Net interest income", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-        {"doc_id": "d1", "table_id": "t1", "row_id": 2, "row_leaf_label": "Total income",
-         "lvl1": "Income statement", "lvl2": "Total income", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-    ]
-    order = line_item_display_order(rows)
-    assert order == {
-        ("net_interest_income", ""): 0,
-        ("total_income", ""): 1,
-    }
-
-
-def test_line_item_display_order_empty():
-    assert line_item_display_order([]) == {}
-
-
-# ----------------------------------------------------- line_item_benchmark_frame
-# Models DBS's real 4Q25 "Per share data" table: Earnings/{Basic,Diluted} and
-# Reported earnings/{Basic,Diluted,Net book value} -- 7 real printed rows,
-# confirmed live against row_dim (2026-08-04).
-_BENCHMARK_ROWS = [
-    {"doc_id": "d1", "table_id": "t1", "row_id": 1, "row_leaf_label": "Earnings",
-     "lvl1": "Earnings", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-    {"doc_id": "d1", "table_id": "t1", "row_id": 2, "row_leaf_label": "Basic",
-     "lvl1": "Earnings", "lvl2": "Basic", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-    {"doc_id": "d1", "table_id": "t1", "row_id": 3, "row_leaf_label": "Diluted",
-     "lvl1": "Earnings", "lvl2": "Diluted", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-    {"doc_id": "d1", "table_id": "t1", "row_id": 4, "row_leaf_label": "Reported earnings",
-     "lvl1": "Reported earnings", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-    {"doc_id": "d1", "table_id": "t1", "row_id": 5, "row_leaf_label": "Basic",
-     "lvl1": "Reported earnings", "lvl2": "Basic", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-    {"doc_id": "d1", "table_id": "t1", "row_id": 6, "row_leaf_label": "Diluted",
-     "lvl1": "Reported earnings", "lvl2": "Diluted", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-    {"doc_id": "d1", "table_id": "t1", "row_id": 7, "row_leaf_label": "Net book value",
-     "lvl1": "Reported earnings", "lvl2": "Net book value", "lvl3": None, "lvl4": None, "lvl5": None, "depth": 2},
-]
-
-
-def test_line_item_benchmark_frame_shows_exactly_the_printed_rows_in_order():
-    # bank_line_map has accumulated MORE than 7 addresses historically (e.g.
-    # a footnote-variant duplicate) -- the benchmark frame must show only
-    # what THIS instance actually prints, not the historical union
-    blm = [
-        {"row_label_norm": "basic", "parent_label_norm": "earnings",
-         "concept_key": "pnl.eps.basic", "map_status": "human_confirmed", "note": None},
-        {"row_label_norm": "diluted", "parent_label_norm": "earnings",
-         "concept_key": "pnl.eps.diluted", "map_status": "human_confirmed", "note": None},
-        {"row_label_norm": "basic", "parent_label_norm": "reported_earnings",
-         "concept_key": "pnl.eps.basic", "map_status": "human_confirmed", "note": None},
-        {"row_label_norm": "diluted", "parent_label_norm": "reported_earnings",
-         "concept_key": "pnl.eps.diluted", "map_status": "human_confirmed", "note": None},
-        # historical debris: a footnote-variant address never printed in THIS
-        # instance -- must NOT appear in the benchmark frame
-        {"row_label_norm": "diluted_9", "parent_label_norm": "earnings",
-         "concept_key": "pnl.eps.diluted", "map_status": "ai_proposed", "note": None},
-    ]
-    df = line_item_benchmark_frame(_BENCHMARK_ROWS, blm)
-    assert len(df) == 7  # exactly the printed rows, not 5 blm rows or a union
-    assert list(zip(df["line_item"], df["parent"])) == [
-        ("earnings", ""), ("basic", "earnings"), ("diluted", "earnings"),
-        ("reported_earnings", ""), ("basic", "reported_earnings"),
-        ("diluted", "reported_earnings"), ("net_book_value", "reported_earnings"),
-    ]
-    matched = df[(df["line_item"] == "basic") & (df["parent"] == "earnings")].iloc[0]
-    assert matched["concept_key"] == "pnl.eps.basic"
-    assert matched["status"] == "human_confirmed"
-
-
-def test_line_item_benchmark_frame_shows_unmatched_row_instead_of_dropping_it():
-    # neither existing bank_line_map anchor for "net book value" matches its
-    # ACTUAL printed address in this instance (reported_earnings) -- one is a
-    # bare top-level entry, the other a mis-parented one from an older
-    # period's defect. The row must still show (as not_yet_anchored), never
-    # silently vanish just because no address happens to match.
-    blm = [
-        {"row_label_norm": "net_book_value", "parent_label_norm": "",
-         "concept_key": "bs.nav_per_share", "map_status": "human_confirmed", "note": None},
-        {"row_label_norm": "net_book_value", "parent_label_norm": "per_basic_and_diluted_share",
-         "concept_key": "bs.nav_per_share", "map_status": "ai_proposed", "note": None},
-    ]
-    df = line_item_benchmark_frame(_BENCHMARK_ROWS, blm)
-    nbv = df[(df["line_item"] == "net_book_value") & (df["parent"] == "reported_earnings")]
-    assert len(nbv) == 1
-    row = nbv.iloc[0]
-    assert row["status"] == "not_yet_anchored"
-    assert row["concept_key"] is None
-
-
-def test_line_item_benchmark_frame_empty():
-    df = line_item_benchmark_frame([], [])
-    assert df.empty
-    assert list(df.columns) == ["parent", "line_item", "concept_key", "status", "note"]
-
-
-def test_line_item_benchmark_frame_does_not_interleave_two_tables_of_the_same_type():
-    # real case: OCBC's 4Q25 media release has two genuinely different
-    # physical tables (page 12 and page 20) both classified
-    # FS_CAPITAL_ADEQUACY. row_id restarts at 1 within EACH table_id, so
-    # sorting by row_id alone would interleave "row 1 of table A" with
-    # "row 1 of table B" -- rows must stay grouped by table_id, in each
-    # table's own printed order, not globally row_id-sorted.
-    rows = [
-        {"doc_id": "d1", "table_id": "table_b_page20", "row_id": 1, "row_leaf_label": "Ordinary shares",
-         "lvl1": "Ordinary shares", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-        {"doc_id": "d1", "table_id": "table_b_page20", "row_id": 2, "row_leaf_label": "Risk weighted assets",
-         "lvl1": "Risk weighted assets", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-        {"doc_id": "d1", "table_id": "table_a_page12", "row_id": 1, "row_leaf_label": "Common Equity Tier 1",
-         "lvl1": "Common Equity Tier 1", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-        {"doc_id": "d1", "table_id": "table_a_page12", "row_id": 2, "row_leaf_label": "Tier 1",
-         "lvl1": "Tier 1", "lvl2": None, "lvl3": None, "lvl4": None, "lvl5": None, "depth": 1},
-    ]
-    df = line_item_benchmark_frame(rows, [])
-    # each table's rows stay contiguous and in their own row_id order --
-    # NOT interleaved as (table_a row1, table_b row1, table_a row2, table_b row2)
-    line_items = list(df["line_item"])
-    a_positions = [i for i, li in enumerate(line_items)
-                   if li in ("common_equity_tier_1", "tier_1")]
-    b_positions = [i for i, li in enumerate(line_items)
-                   if li in ("ordinary_shares", "risk_weighted_assets")]
-    assert a_positions == sorted(a_positions)
-    assert b_positions == sorted(b_positions)
-    assert max(a_positions) < min(b_positions) or max(b_positions) < min(a_positions)
 
 
 # ---------------------------------------------------------- raw_table_frame
@@ -1384,3 +1070,187 @@ def test_stock_only_axis_places_every_fact():
     axis = fiscal_period_axis([{"period": "2026-06-30", "period_span": "as_at"}])
     assert target_period_labels("2026-06-30", "as_at",
                                 FILTER_BY_PERIOD_END_DATE, axis) == ["30-Jun-26"]
+
+
+# ------------------------------------------------------------- select_clause
+# The Database view died on `no such column: row_leaf_label_clean` because
+# compiled_v2.db's row_dim does not carry it. These pin the degradation rule.
+def test_select_clause_passes_through_columns_the_schema_has():
+    assert select_clause(["a", "b"], {"a", "b", "c"}) == "a, b"
+
+
+def test_select_clause_serves_a_missing_column_as_null_keeping_the_name():
+    # The NAME must survive so downstream frames keep their shape — a caller
+    # doing df["concept_key"] finds an empty column, not a KeyError.
+    assert (select_clause(["a", "gone"], {"a"})
+            == "a, NULL AS gone")
+
+
+def test_select_clause_prefixes_real_columns_but_never_a_null_alias():
+    # 'f.NULL AS x' is a syntax error; the alias is bare by construction.
+    assert (select_clause(["a", "gone"], {"a"}, "f.")
+            == "f.a, NULL AS gone")
+
+
+def test_select_clause_on_an_empty_schema_blanks_everything():
+    assert select_clause(["a", "b"], set()) == "NULL AS a, NULL AS b"
+
+
+def test_select_clause_preserves_caller_order():
+    assert (select_clause(["z", "a"], {"a", "z"}) == "z, a")
+
+
+# -------------------------------------------------------- resolve_source_pdf
+def _corpus(tmp_path, *rel):
+    for r in rel:
+        p = tmp_path / "findociq" / "data" / "sources" / r
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_bytes(b"%PDF-1.4\n")
+    return tmp_path
+
+
+def test_resolve_source_pdf_takes_the_recorded_path_when_it_exists(tmp_path):
+    _corpus(tmp_path, "financial_statements/X.pdf")
+    got = resolve_source_pdf("findociq/data/sources/financial_statements/X.pdf",
+                             tmp_path)
+    assert got.endswith("findociq/data/sources/financial_statements/X.pdf")
+
+
+def test_resolve_source_pdf_falls_back_to_the_basename_across_conventions(tmp_path):
+    # The real defect: document.source_file records the FOLDERED key while the
+    # repo stores the file flat. 3 of 10 documents in compiled_v2.db do this.
+    _corpus(tmp_path, "financial_statements/X.pdf")
+    got = resolve_source_pdf(
+        "findociq/data/sources/financial_statements/DBS/2025/4Q25/X.pdf",
+        tmp_path)
+    assert got.endswith("financial_statements/X.pdf")
+
+
+def test_resolve_source_pdf_finds_a_sibling_folder(tmp_path):
+    # DBS_1Q26_P3's PDF is under sources/pillar3/, not financial_statements/.
+    _corpus(tmp_path, "pillar3/P3.pdf")
+    got = resolve_source_pdf(
+        "findociq/data/sources/financial_statements/P3.pdf", tmp_path)
+    assert got.endswith("pillar3/P3.pdf")
+
+
+def test_resolve_source_pdf_is_none_when_nothing_matches(tmp_path):
+    _corpus(tmp_path, "financial_statements/X.pdf")
+    assert resolve_source_pdf(
+        "findociq/data/sources/financial_statements/NOPE.pdf", tmp_path) is None
+
+
+def test_resolve_source_pdf_cannot_escape_the_sources_tree(tmp_path):
+    # Only the basename is searched, and only under data/sources/.
+    _corpus(tmp_path, "financial_statements/X.pdf")
+    (tmp_path / "SECRET.md").write_text("x")
+    assert resolve_source_pdf(
+        "findociq/data/sources/../../SECRET.md", tmp_path) is None
+
+
+def test_resolve_source_pdf_handles_empty_input(tmp_path):
+    assert resolve_source_pdf(None, tmp_path) is None
+    assert resolve_source_pdf("", tmp_path) is None
+
+
+# --------------------------------------------- anchor-keyed Table Registry
+def _write_anchor_set(d, stem, rows, header=None):
+    header = header or ["concept", "row_order", "section", "bank",
+                        "table_type_id", "canonical_leaf_id"]
+    d.mkdir(parents=True, exist_ok=True)
+    with (d / f"{stem}_anchors.csv").open("w", newline="",
+                                          encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(header)
+        w.writerows(rows)
+
+
+def test_anchor_declarations_reads_every_set_and_dedupes_the_address(tmp_path):
+    _write_anchor_set(tmp_path, "highlights_dashboard",
+                      [["Total assets", 1, "BS", "DBS", "FS_BAL", "total_assets"]])
+    _write_anchor_set(tmp_path, "other_set",
+                      [["Total assets", 1, "BS", "DBS", "FS_BAL", "total_assets"],
+                       ["Net loans", 2, "BS", "DBS", "FS_BAL", "net_loans"]])
+    decls = anchor_declarations(tmp_path)
+    addrs = [(d["bank"], d["table_type_id"], d["canonical_leaf_id"])
+             for d in decls]
+    assert addrs.count(("DBS", "FS_BAL", "total_assets")) == 1
+    assert ("DBS", "FS_BAL", "net_loans") in addrs
+    # headline set is read first, so it owns the surviving declaration
+    keep = next(d for d in decls if d["canonical_leaf_id"] == "total_assets")
+    assert keep["dashboard"] == "highlights_dashboard"
+
+
+def test_anchor_declarations_skips_rows_with_no_leaf_address(tmp_path):
+    _write_anchor_set(tmp_path, "highlights_dashboard",
+                      [["Declared", 1, "BS", "DBS", "FS_BAL", "total_assets"],
+                       ["No leaf", 2, "BS", "DBS", "FS_BAL", ""],
+                       ["No type", 3, "BS", "DBS", "", "x"]])
+    assert len(anchor_declarations(tmp_path)) == 1
+
+
+def test_anchor_coverage_frame_matches_on_the_leaf_address_alone():
+    decls = [{"dashboard": "d", "bank": "DBS", "table_type_id": "FS_BAL",
+              "canonical_leaf_id": "total_assets", "concept": "Total assets",
+              "section": "BS", "row_order": 1}]
+    captured = [
+        {"bank": "DBS", "table_type_id": "FS_BAL",
+         "canonical_leaf_id": "total_assets", "doc_id": "d1",
+         "doc_period": "2025-12-31", "row_leaf_label": "Total assets"},
+        {"bank": "DBS", "table_type_id": "FS_BAL",
+         "canonical_leaf_id": "total_assets", "doc_id": "d2",
+         "doc_period": "2026-06-30", "row_leaf_label": "Total assets1"},
+    ]
+    df = anchor_coverage_frame(decls, captured)
+    assert len(df) == 1
+    r = df.iloc[0]
+    assert r["times_captured"] == 2 and r["docs_captured"] == 2
+    # latest_period is the MAX, not the last row yielded
+    assert r["latest_period"] == "2026-06-30"
+
+
+def test_anchor_coverage_frame_keeps_an_uncaptured_anchor_visible():
+    decls = [{"dashboard": "d", "bank": "UOB", "table_type_id": "FS_BAL",
+              "canonical_leaf_id": "never_stamped", "concept": "Ghost",
+              "section": "BS", "row_order": 1}]
+    df = anchor_coverage_frame(decls, [])
+    assert len(df) == 1
+    assert df.iloc[0]["times_captured"] == 0
+
+
+def test_anchor_coverage_frame_does_not_credit_one_bank_for_anothers_capture():
+    decls = [{"dashboard": "d", "bank": "UOB", "table_type_id": "FS_BAL",
+              "canonical_leaf_id": "total_assets", "concept": "Total assets",
+              "section": "BS", "row_order": 1}]
+    captured = [{"bank": "DBS", "table_type_id": "FS_BAL",
+                 "canonical_leaf_id": "total_assets", "doc_id": "d1",
+                 "doc_period": "2025-12-31", "row_leaf_label": "Total assets"}]
+    assert anchor_coverage_frame(decls, captured).iloc[0]["times_captured"] == 0
+
+
+def test_unanchored_leaves_frame_lists_captured_addresses_no_anchor_declares():
+    decls = [{"dashboard": "d", "bank": "DBS", "table_type_id": "FS_BAL",
+              "canonical_leaf_id": "total_assets", "concept": "Total assets",
+              "section": "BS", "row_order": 1}]
+    captured = [
+        {"bank": "DBS", "table_type_id": "FS_BAL",
+         "canonical_leaf_id": "total_assets", "doc_id": "d1",
+         "doc_period": "2025-12-31", "row_leaf_label": "Total assets"},
+        {"bank": "DBS", "table_type_id": "FS_BAL",
+         "canonical_leaf_id": "goodwill", "doc_id": "d1",
+         "doc_period": "2025-12-31", "row_leaf_label": "Goodwill"},
+    ]
+    df = unanchored_leaves_frame(decls, captured)
+    assert list(df["canonical_leaf_id"]) == ["goodwill"]
+    assert df.iloc[0]["printed_label"] == "Goodwill"
+
+
+def test_unanchored_leaves_frame_orders_most_captured_first():
+    captured = (
+        [{"bank": "DBS", "table_type_id": "T", "canonical_leaf_id": "rare",
+          "doc_id": "d1", "doc_period": "2025-12-31", "row_leaf_label": "R"}]
+        + [{"bank": "DBS", "table_type_id": "T", "canonical_leaf_id": "common",
+            "doc_id": f"d{i}", "doc_period": "2025-12-31",
+            "row_leaf_label": "C"} for i in range(3)])
+    df = unanchored_leaves_frame([], captured)
+    assert list(df["canonical_leaf_id"]) == ["common", "rare"]

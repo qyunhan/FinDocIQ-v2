@@ -17,6 +17,59 @@ Format:
 
 ---
 
+## 2026-08-14 — the app reads canonical_leaf_id and nothing else; three of four views were dead in public
+
+**Decision:** the Streamlit app's ONLY identity join is `canonical_leaf_id`,
+declared by the dashboard anchor CSVs. `table_catalog`, `bank_line_map`,
+`row_lineage`, `v_fact_metric_serving` and `v_cell_flat` are removed from the
+read path entirely, and the Table Registry is rebuilt on
+anchors x `row_dim.canonical_leaf_id`. Four crash/blank causes fixed alongside.
+
+**Why:** `compiled_v2.db` carries nine tables and zero views by design. Every
+read of the retired mapping layer therefore returned nothing (`run_opt`) or
+raised (`run`). Measured on the shipped DB before this change: only the
+Dashboard rendered. Database raised `no such column: row_leaf_label_clean` the
+moment any table was picked; Table Registry showed only "run
+migrate_add_table_catalog.py"; Ingest raised `ModuleNotFoundError: source_store`
+**on page load**, because it is the first radio option and its pipeline import
+was unguarded — so a fresh session was a sidebar plus a traceback.
+
+**Why the registry is anchor-keyed:** the Dashboard already resolves figures by
+(bank, table_type_id, canonical_leaf_id) against the anchor CSVs. Building the
+registry on the same declaration and the same stamped column means the two views
+cannot disagree about what an address means, and dropping a new anchor pair into
+`data/derived/dashboards/` extends BOTH with no code change. First run: 159
+declared anchors, 156 captured, 3 uncaptured (all OCBC), plus 1,189 stamped
+addresses no dashboard declares yet. It immediately surfaced a real
+near-miss — OCBC `FS_CUSTOMER_LOANS / net_loans` is declared-but-never-captured
+while `FS_CUSTOMER_LOANS / allowances::net_loans` is captured 10x.
+
+**Discarded:** *hardcoding the compiled_v2 column list* in the queries that
+raised. Rejected — it is the per-source special case CLAUDE.md forbids, and it
+inverts on the next schema change. `select_clause` probes `PRAGMA table_info`
+and serves absent columns as `NULL AS <name>`, keeping frame shapes fixed, so a
+restored column starts serving again with no edit.
+
+**Discarded:** *`run_opt` on the failing queries.* Rejected on evidence — the
+failure is `no such column`, which is raised by a query against a table that
+very much exists, so a table-level fallback would have blanked working views
+(the whole `_raw_frame` reconstruction) to paper over three columns.
+
+**Discarded:** *hiding `canonical_col_id` until it is populated.* It is
+`0 of 1915` in BOTH `compiled_v2.db` and `compiled_fs.db` — the column-axis
+stamp (spec 2026-08-09) has never run. Rejected because the user asked to see
+the per-cell address and an absent half is a fact about the pipeline worth
+showing; the view states the coverage instead, and lights up when the stamp
+lands.
+
+**Discarded:** *a per-document map for the unresolvable PDFs.* `source_file`
+holds two key conventions and 3 of 10 documents use the foldered one. A basename
+fallback under `data/sources/` is one general rule that resolves all 10,
+including the Pillar 3 PDF that lives in a different subfolder
+(`sources/pillar3/`) than its recorded path claims.
+
+---
+
 ## 2026-08-13 — period banners: the discriminator is valueless-ness, not span
 
 **Decision:** a cell with no period on either axis inherits from the nearest

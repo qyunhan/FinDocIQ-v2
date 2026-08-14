@@ -50,8 +50,6 @@ PROJECT = os.environ.get("FINDOCIQ_BQ_PROJECT", "igc2026-team08-6311")
 # "what does this table actually look like right now", not an accumulation
 # across every period ever ingested. document.doc_period for 4Q25 across all
 # 3 banks (confirmed: DBS/UOB/OCBC-both-doc_kinds all use this exact string).
-BENCHMARK_PERIOD = "2025-12-31"
-BENCHMARK_LABEL = "4Q25"
 DATASET = os.environ.get("FINDOCIQ_BQ_DATASET", "findociq")
 
 # Canonical ingest stage order (mirrors pipeline/ingest_status.py STAGES /
@@ -253,253 +251,9 @@ def _plain_xlsx_export(conn, doc_id: str) -> Path:
     return tmp_path
 
 
-def table_masterlist_frame(catalog_rows, live_rows) -> pd.DataFrame:
-    """The canonical FS table masterlist (bank x doc_kind x section x
-    table_type_id, one row per expected exhibit -- from `table_catalog`, the
-    corpus-wide hand-audited seed loaded verbatim by
-    `migrate_add_table_catalog.py`) -- cross-referenced against what's
-    actually been captured in the live corpus, so the tab answers "does this
-    exist" not just "what should exist".
-
-    `doc_kind` is PART OF THE KEY, not just a display column -- OCBC reports
-    TWO genuinely different document forms (`condensed_financial_statements`
-    and `media_release_financial_highlights`), and 8 table_type_ids appear in
-    BOTH (e.g. FS_INCOME_STATUTORY, FS_CUSTOMER_LOANS). Keying on
-    (bank, table_type_id) alone would silently MERGE two distinct exhibits'
-    coverage counts into one row -- exactly the "split OCBC's two documents
-    up" defect caught before this shipped. DBS and UOB each report exactly
-    one doc_kind (confirmed against the seed), so this changes nothing for
-    them; it only matters where a bank genuinely has more than one.
-
-    `catalog_rows`: table_catalog rows already filtered to `is_narrative=0`
-    (real tables only -- narrative sections aren't extractable identity, they
-    document coverage boundaries, not tables to expect data from).
-    `live_rows`: dicts with `bank` (short code, already resolved via
-    `_bank_of`), `doc_kind` (resolved via `_doc_kind_of` -- NOT joined
-    against `doc_cadence` alone, which is a hand-authored 10-row table that
-    doesn't even cover all 5 of OCBC's own documents), `table_type_id`,
-    `doc_id`, `table_id`, from a live table_t x document join already scoped
-    to `doc_family='financial_stmt'` by the caller (the masterlist is
-    FS-only, matching the seed's own scope -- no Pillar 3 rows exist in
-    table_catalog at all).
-
-    A masterlist row with ZERO live occurrences is not an error -- it may be
-    `cadence='half_year'` and the corpus currently only holds `quarter_only`
-    periods for that bank, or genuinely not yet ingested. The count is the
-    fact; interpreting a zero is a judgement call for whoever reads the tab,
-    not something this function should hide or excuse.
-
-    Row order is NOT re-derived here -- `catalog_rows` is emitted in the
-    SAME order it arrives in, so the caller controls it (the live query
-    sorts by `bank, CAST(page AS INTEGER)`, i.e. TOC/reading order, not
-    alphabetically by section or table_type_id).
-
-    Pure/testable without Streamlit or a live DB."""
-    from collections import defaultdict
-    occurrences: dict[tuple[str, str, str], set[tuple[str, str]]] = defaultdict(set)
-    for r in live_rows:
-        occurrences[(r["bank"], r["doc_kind"], r["table_type_id"])].add(
-            (r["doc_id"], r["table_id"]))
-
-    out = []
-    for r in catalog_rows:
-        key = (r["bank"], r["doc_kind"], r["table_type_id"])
-        occ = occurrences.get(key, set())
-        out.append({
-            "bank": r["bank"],
-            "doc_kind": r["doc_kind"],
-            "page": r.get("page"),
-            "section": r["section_canonical"],
-            "table_type_id": r["table_type_id"],
-            "caption": r["caption_canonical"],
-            "cadence": r["cadence"],
-            "expected": bool(r.get("expected")),
-            "times_captured": len(occ),
-            "docs_captured": len({doc_id for doc_id, _ in occ}),
-        })
-    return pd.DataFrame(out, columns=[
-        "bank", "doc_kind", "page", "section", "table_type_id", "caption",
-        "cadence", "expected", "times_captured", "docs_captured"])
 
 
-def line_item_masterlist_frame(bank_line_map_rows, order: dict | None = None) -> pd.DataFrame:
-    """The stable, period-agnostic line-item registry for ONE (bank,
-    table_type_id): every distinct (parent, line item) address `bank_line_map`
-    holds, regardless of which document/period it was first seen in -- this
-    is the address space itself, not an instance of it.
 
-    `bank_line_map_rows` are dicts already filtered by the caller to one
-    (bank, table_type_id) pair (`row_label_norm`, `parent_label_norm`,
-    `concept_key`, `map_status`, `note`). The table's own UNIQUE(bank,
-    table_type_id, row_label_norm, parent_label_norm) constraint already
-    guarantees one row per address -- no further dedup needed here.
-
-    `order`: optional `{(line_item, parent): rank}` from
-    `line_item_display_order`, giving section/reading order as seen in one
-    real document instance. Addresses without a rank (e.g. an
-    `ai_proposed` line never seen in the reference document, or one that's
-    since been dropped from the printed table) sort AFTER every ranked
-    address, alphabetically among themselves -- visible at the bottom
-    rather than silently reshuffled into a plausible-looking but wrong
-    position. With no `order` given, falls back to the old alphabetical
-    (parent, line_item) sort.
-
-    Pure/testable without Streamlit or a live DB."""
-    out = [{
-        "parent": r.get("parent_label_norm") or "",
-        "line_item": r["row_label_norm"],
-        "concept_key": r.get("concept_key"),
-        "status": r.get("map_status"),
-        "note": r.get("note") or "",
-    } for r in bank_line_map_rows]
-    df = pd.DataFrame(out, columns=["parent", "line_item", "concept_key", "status", "note"])
-    if df.empty:
-        return df
-    if order:
-        rank = df.apply(
-            lambda row: order.get((row["line_item"], row["parent"]), len(order)), axis=1)
-        df = df.assign(_rank=rank).sort_values(
-            ["_rank", "parent", "line_item"]).drop(columns="_rank")
-    else:
-        df = df.sort_values(["parent", "line_item"])
-    return df.reset_index(drop=True)
-
-
-def _ordered_row_addresses(row_dim_rows) -> list[tuple[tuple[str, str], dict]]:
-    """`[(  (row_label_norm, parent_label_norm), row  ), ...]` in
-    `(table_id, row_id)` order -- the address-computation core shared by
-    `line_item_display_order` (ranks addresses) and `line_item_benchmark_frame`
-    (lists the actual rows). See `line_item_display_order`'s docstring for why
-    the title-like-parent collapse rule has to match `stamp_human_anchors`
-    exactly.
-
-    Sorted by `(table_id, row_id)`, NOT `row_id` alone -- `row_id` restarts at
-    1 within EACH table_id, so a caller passing rows from more than one
-    table_id (a real case: OCBC's 4Q25 media release has two genuinely
-    different physical tables, page 12 and page 20, both classified
-    `FS_CAPITAL_ADEQUACY`) would otherwise get its rows INTERLEAVED by
-    coincidental row_id collision instead of grouped by table -- confirmed
-    live, caught before shipping. `table_id` ordering is a proxy for page
-    order (not guaranteed exact across tables), but it at least keeps each
-    table's own rows contiguous and in their own correct sequence, which
-    row_id-only sorting does not."""
-    sys.path.insert(0, str(FINDOCIQ_DIR / "pipeline"))
-    from stage3_stamp.resolve.normalize import normalize_row_label  # noqa: E402
-
-    rows = list(row_dim_rows)
-    parent_at_depth: dict[tuple[str, str, int], set] = {}
-    for r in rows:
-        depth = r["depth"]
-        if depth >= 2:
-            lvls = [None, r.get("lvl1"), r.get("lvl2"), r.get("lvl3"), r.get("lvl4"), r.get("lvl5")]
-            key = (r["doc_id"], r["table_id"], depth)
-            parent_at_depth.setdefault(key, set()).add(lvls[depth - 1])
-    title_like = {k: len(v) <= 1 for k, v in parent_at_depth.items()}
-
-    out = []
-    for r in sorted(rows, key=lambda r: (r["table_id"], r["row_id"])):
-        depth = r["depth"]
-        lvls = [None, r.get("lvl1"), r.get("lvl2"), r.get("lvl3"), r.get("lvl4"), r.get("lvl5")]
-        leaf = r.get("row_leaf_label") or (lvls[depth] if depth <= 5 else None)
-        raw_parent = lvls[depth - 1] if depth >= 2 else None
-        key = (r["doc_id"], r["table_id"], depth)
-        parent = None if title_like.get(key, depth == 1) else raw_parent
-        row_label_norm = normalize_row_label(leaf)
-        parent_label_norm = normalize_row_label(parent) if parent else ""
-        out.append(((row_label_norm, parent_label_norm), r))
-    return out
-
-
-def line_item_benchmark_frame(row_dim_rows, bank_line_map_rows) -> pd.DataFrame:
-    """The ACTUAL line items of ONE benchmark document/table instance (e.g. the
-    bank's 4Q25 filing), in real printed order -- not `bank_line_map`'s
-    historical accumulation across every period ever ingested.
-
-    Why this exists: `bank_line_map` is period-agnostic and additive -- every
-    address ever seen for a (bank, table_type_id), across every quarter since
-    2022, stays in it forever (footnote-number variants, mis-parented rows
-    from a parsing defect in one period, addresses from a document form that's
-    since changed). Listing ALL of it (`line_item_masterlist_frame`'s job) is
-    right for "what identities has this bank ever used" but wrong for "what
-    does THIS table actually look like" -- confirmed live: DBS's FS_PER_SHARE
-    has 12 bank_line_map rows for a table that only ever prints 7 (3
-    structural-header duplicates from mis-captured group titles, plus a
-    documented mis-parenting defect on `net_book_value` splitting it into two
-    different, mutually exclusive addresses -- see bank_line_map map_id 757's
-    own note).
-
-    `bank_line_map` is used only to ENRICH a matching printed row with its
-    concept_key/status/note -- never to filter or supply rows. A printed row
-    with no matching `bank_line_map` address still shows, with
-    status='not_yet_anchored': the point of a BENCHMARK view is to be honest
-    about the current state of anchoring for THIS specific document, not to
-    silently drop a row just because the address bookkeeping hasn't caught up
-    with a parsing defect yet (this is exactly what happens to
-    DBS's `net_book_value` under 4Q25's real geometry -- its printed address,
-    (net_book_value, reported_earnings), matches NEITHER of the two existing
-    bank_line_map anchors for it, so it would vanish under a naive
-    filter-to-matched-only approach).
-
-    `row_dim_rows`: same shape as `line_item_display_order` -- dicts with
-    `doc_id`, `table_id`, `row_id`, `row_leaf_label`, `lvl1`..`lvl5`, `depth`,
-    already scoped by the caller to ONE (doc_id, table_id) benchmark instance.
-    `bank_line_map_rows`: dicts with `row_label_norm`, `parent_label_norm`,
-    `concept_key`, `map_status`, `note`, already scoped by the caller to one
-    (bank, table_type_id) -- same shape `line_item_masterlist_frame` takes.
-
-    Pure/testable without Streamlit or a live DB."""
-    blm_by_addr = {
-        (r["row_label_norm"], r.get("parent_label_norm") or ""): r
-        for r in bank_line_map_rows
-    }
-    out = []
-    for (row_label_norm, parent_label_norm), _row in _ordered_row_addresses(row_dim_rows):
-        match = blm_by_addr.get((row_label_norm, parent_label_norm))
-        out.append({
-            "parent": parent_label_norm,
-            "line_item": row_label_norm,
-            "concept_key": match.get("concept_key") if match else None,
-            "status": match.get("map_status") if match else "not_yet_anchored",
-            "note": (match.get("note") or "") if match else "",
-        })
-    return pd.DataFrame(out, columns=["parent", "line_item", "concept_key", "status", "note"])
-
-
-def line_item_display_order(row_dim_rows) -> dict[tuple[str, str], int]:
-    """`{(row_label_norm, parent_label_norm): rank}` for ONE reference
-    document/table instance, giving `line_item_masterlist_frame` a real
-    reading-order signal instead of an alphabetical one.
-
-    `bank_line_map` has no row-order column by design -- it's period-agnostic,
-    and a printed row's position isn't stable across periods (notes get
-    added/removed, rows get reordered). So "section order" for the
-    masterlist can only ever be a PROXY: the order the addresses appear in
-    ONE representative instance (the caller should pick the most recent
-    document/table_id for this bank + table_type_id + doc_kind). That's a
-    display convenience, not a claim that this order held in every period.
-
-    `row_dim_rows`: dicts with `doc_id`, `table_id`, `row_id`, `row_leaf_label`,
-    `lvl1`..`lvl5`, `depth` -- the same shape `stamp_human_anchors` (in
-    `pipeline/mapping/migrate_serving_views.py`) joins row_dim x row_lineage
-    into. This function computes each row's (row_label_norm, parent_label_norm)
-    address using the EXACT SAME rule stamp_human_anchors uses (including the
-    title-like-parent collapse: if every row at a given depth within a table
-    shares the same lvl{depth-1} value, that's a table-title constant, not a
-    real grouping, so it collapses to no parent) -- otherwise this function's
-    addresses wouldn't line up with bank_line_map's, and every row would fall
-    through to the unranked tail.
-
-    Ranked by `(table_id, row_id)` ascending, i.e. the row's printed position
-    within its own table (see `_ordered_row_addresses` for why table_id has
-    to be part of the sort key). If the same address appears more than once
-    (shouldn't happen within one table, but row_dim rows aren't deduplicated
-    by this function), the first one encountered wins.
-
-    Pure/testable without Streamlit or a live DB."""
-    order: dict[tuple[str, str], int] = {}
-    for address, _row in _ordered_row_addresses(row_dim_rows):
-        order.setdefault(address, len(order))
-    return order
 
 
 def _bank_of(name: str) -> str:
@@ -522,37 +276,6 @@ def _bank_of(name: str) -> str:
         return "DBS"
     return "Other"
 
-
-def _doc_kind_of(bank: str, doc_id: str) -> str | None:
-    """`doc_id` -> `table_catalog.doc_kind`, for banks/documents `doc_cadence`
-    doesn't (yet) cover -- `doc_cadence` is a hand-authored 10-row table that
-    doesn't even reach every one of OCBC's own 5 documents (confirmed:
-    'OCBC_1H25_Media_Release_Financial_Highlights' is absent from it), so a
-    JOIN against it alone would silently undercount live occurrences for
-    whichever doc_kind the missing documents belong to.
-
-    OCBC is the ONLY bank with more than one doc_kind in the seed
-    (condensed_financial_statements vs media_release_financial_highlights --
-    two genuinely different document forms, not just a cadence difference).
-    DBS and UOB each report exactly one doc_kind regardless of doc_id
-    ('*_trading_update' vs '*_performance_summary' are both DBS's single
-    doc_kind, `performance_summary`, at different CADENCE -- same for UOB's
-    '*_performance-highlights' vs '*_condensed-financial-statements', both
-    `condensed_financial_statements`). Confirmed against doc_cadence's own
-    recorded values, then generalised via the same doc_id substring pattern
-    doc_cadence itself was hand-authored by reading.
-
-    Returns None for a bank this masterlist doesn't cover ('Other')."""
-    if bank == "DBS":
-        return "performance_summary"
-    if bank == "UOB":
-        return "condensed_financial_statements"
-    if bank == "OCBC":
-        low = doc_id.lower()
-        if "media_release" in low or "results" in low or "press_release" in low:
-            return "media_release_financial_highlights"
-        return "condensed_financial_statements"
-    return None
 
 
 def period_label(period, period_span) -> str:
@@ -972,6 +695,144 @@ def available_dashboards(dashboards_dir=None) -> list:
     stems.sort(key=lambda s: (s != _HEADLINE_DASHBOARD, s))
     return [(s, "Key Financial Highlights" if s == _HEADLINE_DASHBOARD
              else s.replace("_", " ").capitalize()) for s in stems]
+
+
+_REGISTRY_COLS = ["dashboard", "bank", "section", "concept", "table_type_id",
+                  "canonical_leaf_id", "times_captured", "docs_captured",
+                  "latest_period"]
+
+
+def anchor_declarations(dashboards_dir=None) -> list:
+    """Every anchor address declared in the directory, across every set.
+
+    THE REGISTRY'S SOURCE OF TRUTH. `table_catalog` / `bank_line_map` /
+    `row_lineage` are the retired mapping layer — compiled_v2.db drops all three
+    by design, and the app must not read them. What a bank is EXPECTED to report
+    is therefore whatever the dashboard anchor CSVs declare, and the only join
+    key is `canonical_leaf_id`.
+
+    Both files of a pair are read: a formula member is as much a declared
+    address as a plain anchor, and omitting the members would report a composed
+    line as uncovered whenever its parts are the only thing captured.
+
+    Deduplicated on (bank, table_type_id, canonical_leaf_id) so the same address
+    declared by two dashboards counts once, keeping the FIRST declaration —
+    which, given `available_dashboards()` sorts the headline set first, is the
+    headline set's own naming.
+
+    Returns [{dashboard, bank, table_type_id, canonical_leaf_id, concept,
+    section, row_order}]. Pure — no `st`, no DB."""
+    d = Path(dashboards_dir or DASHBOARDS_DIR)
+    out, seen = [], set()
+    for stem, _name in available_dashboards(d):
+        for suffix in ("_anchors.csv", "_formulaanchors.csv"):
+            path = d / f"{stem}{suffix}"
+            if not path.exists():
+                continue
+            with path.open(newline="", encoding="utf-8-sig") as f:
+                for r in csv.DictReader(f):
+                    leaf = (r.get("canonical_leaf_id") or "").strip()
+                    ttid = (r.get("table_type_id") or "").strip()
+                    bank = (r.get("bank") or "").strip()
+                    if not (leaf and ttid and bank):
+                        continue
+                    key = (bank, ttid, leaf)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    out.append({
+                        "dashboard": stem,
+                        "bank": bank,
+                        "table_type_id": ttid,
+                        "canonical_leaf_id": leaf,
+                        "concept": (r.get("concept") or "").strip(),
+                        "section": (r.get("section") or "").strip() or None,
+                        "row_order": int(r.get("row_order") or 0),
+                    })
+    return out
+
+
+def anchor_coverage_frame(declarations, captured_rows) -> pd.DataFrame:
+    """One row per DECLARED anchor address, with how often the corpus captured it.
+
+    `captured_rows` are dicts with bank, table_type_id, canonical_leaf_id,
+    doc_id, doc_period — i.e. `row_dim` stamped rows joined to `document`. The
+    match is the leaf address ALONE; no label comparison, no lineage table.
+
+    A declared address the corpus never captured is kept with
+    `times_captured = 0` rather than dropped: an uncovered anchor is the single
+    most useful thing this view can show, and hiding it would make a coverage
+    hole look like a shorter list.
+
+    Order is the declaration order (dashboard, then the CSV's own `row_order`),
+    so the registry reads the way the dashboard does rather than alphabetically.
+    Pure — no `st`, no DB."""
+    hits = {}
+    for r in captured_rows:
+        key = (r.get("bank"), r.get("table_type_id"),
+               r.get("canonical_leaf_id"))
+        if key[1] is None or key[2] is None:
+            continue
+        agg = hits.setdefault(key, {"n": 0, "docs": set(), "period": None})
+        agg["n"] += 1
+        agg["docs"].add(r.get("doc_id"))
+        p = r.get("doc_period")
+        if p and (agg["period"] is None or str(p) > str(agg["period"])):
+            agg["period"] = p
+
+    rows = []
+    for d in sorted(declarations,
+                    key=lambda x: (x["dashboard"], x["row_order"],
+                                   x["bank"])):
+        agg = hits.get((d["bank"], d["table_type_id"],
+                        d["canonical_leaf_id"]))
+        rows.append({
+            "dashboard": d["dashboard"],
+            "bank": d["bank"],
+            "section": d["section"] or "",
+            "concept": d["concept"],
+            "table_type_id": d["table_type_id"],
+            "canonical_leaf_id": d["canonical_leaf_id"],
+            "times_captured": agg["n"] if agg else 0,
+            "docs_captured": len(agg["docs"]) if agg else 0,
+            "latest_period": (agg["period"] or "") if agg else "",
+        })
+    return pd.DataFrame(rows, columns=_REGISTRY_COLS)
+
+
+def unanchored_leaves_frame(declarations, captured_rows) -> pd.DataFrame:
+    """Captured leaf addresses that NO anchor declares — the inverse coverage.
+
+    The registry above answers "is every declared line being captured". This
+    answers the question that actually grows the dashboards: "what identity has
+    the pipeline already stamped that no dashboard is using yet". Both halves
+    are needed — a registry that only lists declarations can never reveal a leaf
+    worth declaring.
+
+    Ordered by frequency, so the most-captured unused address is first.
+    Pure — no `st`, no DB."""
+    declared = {(d["bank"], d["table_type_id"], d["canonical_leaf_id"])
+                for d in declarations}
+    hits = {}
+    for r in captured_rows:
+        key = (r.get("bank"), r.get("table_type_id"),
+               r.get("canonical_leaf_id"))
+        if key[1] is None or key[2] is None or key in declared:
+            continue
+        agg = hits.setdefault(key, {"n": 0, "docs": set(), "label": None})
+        agg["n"] += 1
+        agg["docs"].add(r.get("doc_id"))
+        if agg["label"] is None and r.get("row_leaf_label"):
+            agg["label"] = r["row_leaf_label"]
+    rows = [{"bank": b, "table_type_id": t, "canonical_leaf_id": leaf,
+             "printed_label": agg["label"] or "",
+             "times_captured": agg["n"], "docs_captured": len(agg["docs"])}
+            for (b, t, leaf), agg in hits.items()]
+    rows.sort(key=lambda r: (-r["times_captured"], r["bank"],
+                             r["table_type_id"], r["canonical_leaf_id"]))
+    return pd.DataFrame(rows, columns=["bank", "table_type_id",
+                                       "canonical_leaf_id", "printed_label",
+                                       "times_captured", "docs_captured"])
 
 
 def load_dashboard_anchors(bank: str, dashboards_dir=None, dashboard: str | None = None):
@@ -1713,6 +1574,37 @@ def table_view_labels(table_records):
     return options, by_label
 
 
+def select_clause(wanted, available, prefix="") -> str:
+    """A SELECT list that survives a schema which lacks some of the columns.
+
+    THE SERVING SCHEMA IS A MOVING TARGET, and the app must degrade per COLUMN
+    the way it already degrades per table (`run_opt`). Measured on the shipped
+    `compiled_v2.db`: `row_dim` has no `row_leaf_label_clean` and no
+    `concept_key`, and `cell_fact` has no `concept_key`/`geo_key`/`segment_key`
+    — all of them still selected by the Database view. Because those queries go
+    through `run()`, picking ANY table raised `no such column:
+    row_leaf_label_clean` and the whole view died on an exception. That is a
+    missing COLUMN, so `run_opt`'s table-level fallback could not have saved it,
+    and blanking the view would have hidden a schema drift worth seeing.
+
+    Emitting the absent ones as `NULL AS <name>` keeps the result's SHAPE fixed,
+    so every downstream consumer (`raw_table_frame`, the identity grids) sees
+    the column it expects and simply finds it empty. This is a general rule
+    about schema drift, not a compiled_v2 special case: restore the column and
+    it starts serving again with no code change, and a NEW column may be
+    selected before every DB carries it.
+
+    `prefix` is the table alias including its dot ('r.'); it is applied to real
+    columns only, never to a NULL literal's alias.
+
+    Pure/testable without Streamlit."""
+    parts = []
+    for name in wanted:
+        parts.append(f"{prefix}{name}" if name in set(available)
+                     else f"NULL AS {name}")
+    return ", ".join(parts)
+
+
 def source_key_of(source_file) -> str | None:
     """document.source_file (repo-relative local path, e.g.
     'findociq/data/sources/financial_statements/X.pdf') -> the canonical
@@ -1724,6 +1616,45 @@ def source_key_of(source_file) -> str | None:
     if len(parts) != 2 or not parts[1]:
         return None
     return parts[1]
+
+
+def resolve_source_pdf(source_file, repo) -> str | None:
+    """document.source_file -> an existing local PDF path, or None.
+
+    TWO CONVENTIONS, ONE CORPUS. `source_file` is written verbatim by whichever
+    ingest run produced the document, and the corpus demonstrably holds both a
+    FLAT key ('data/sources/financial_statements/X.pdf') and a FOLDERED one
+    ('data/sources/financial_statements/DBS/2025/4Q25/X.pdf') -- measured: 3 of
+    10 documents in compiled_v2.db record the foldered form, and 2 of those 3
+    have the identical PDF sitting flat in the repo. Resolving only the literal
+    recorded path left those documents showing 'Original PDF unavailable' with
+    the file present on disk.
+
+    So: try the recorded path, then fall back to the BASENAME anywhere under
+    data/sources/. The basename is the stable half of both conventions -- it is
+    what `source_store.key_for()` derives doc_id from -- and the search is over
+    the source tree only, so it can never reach outside the corpus. This is a
+    general rule about the two key conventions, not a per-document mapping: a
+    document filed under a folder layout we have never seen resolves by the same
+    path. Returns the FIRST match in sorted order so the result is deterministic
+    across filesystems (os.walk order is not).
+
+    Pure/testable without Streamlit -- the GCS fallback stays in the caller,
+    since it needs credentials this function must not require."""
+    if not source_file:
+        return None
+    repo = Path(repo)
+    p = repo / str(source_file)
+    if p.exists():
+        return str(p)
+    name = Path(str(source_file)).name
+    if not name:
+        return None
+    sources = repo / "findociq" / "data" / "sources"
+    if not sources.is_dir():
+        return None
+    hits = sorted(q for q in sources.rglob(name) if q.is_file())
+    return str(hits[0]) if hits else None
 
 
 # ============================================================================
@@ -1782,6 +1713,27 @@ if __name__ == "__main__":
     def _esc(v: str) -> str:
         return str(v).replace("'", "''")
 
+    @st.cache_data(ttl=600, show_spinner=False)
+    def _cols_of(table: str) -> set:
+        """The columns this serving DB actually has for `table`.
+
+        Cheap (one PRAGMA, cached with the same TTL as `run`) and the input to
+        every `select_clause` call. On BigQuery it returns the empty set, which
+        would blank every column, so the callers below only consult it on the
+        sqlite path — the bq serving dataset is generated from the full schema
+        and does not drift the way the shipped sqlite snapshots do."""
+        if SOURCE == "bq":
+            return set()
+        return {r[1] for r in
+                _backend().execute(f"PRAGMA table_info({table})")}
+
+    def _sel(table: str, wanted, prefix: str = "") -> str:
+        """`select_clause` against the live schema. On bq, pass everything
+        through unchanged (see `_cols_of`)."""
+        if SOURCE == "bq":
+            return ", ".join(f"{prefix}{c}" for c in wanted)
+        return select_clause(wanted, _cols_of(table), prefix)
+
     def _raw_frame(doc_id: str, table_id: str):
         """Original-shape reconstruction of one table (see
         raw_table_frame): PDF row/column order, indented row labels,
@@ -1792,8 +1744,10 @@ if __name__ == "__main__":
         cols_r = run(f"SELECT col_id, col_leaf_label "
                      f"FROM {TBL('col_dim')} {where}").to_dict("records")
         df = raw_table_frame(
-            run(f"SELECT row_id, row_hierarchy, row_leaf_label, "
-                f"row_leaf_label_clean "
+            # `row_leaf_label_clean` is ABSENT from compiled_v2.db's row_dim.
+            # Selected literally, this query raised and took the entire
+            # Database view down with it (see `select_clause`).
+            run(f"SELECT {_sel('row_dim', ['row_id', 'row_hierarchy', 'row_leaf_label', 'row_leaf_label_clean'])} "
                 f"FROM {TBL('row_dim')} {where}").to_dict("records"),
             cols_r,
             run(f"SELECT row_id, col_id, value_raw, value_num "
@@ -1805,13 +1759,19 @@ if __name__ == "__main__":
     # ----------------------------------------------- original-PDF rendering
     @st.cache_data(show_spinner=False)
     def _pdf_local_path(source_file: str) -> str | None:
-        """Resolve document.source_file to a local PDF path — the repo-relative
-        path if it exists, else materialize the canonical key from the GCS
-        source bucket. None when neither is available (e.g. pre-migration
-        docs whose PDF never reached the bucket)."""
-        p = REPO / str(source_file)
-        if p.exists():
-            return str(p)
+        """Resolve document.source_file to a local PDF path — the repo copy if
+        one exists under either key convention (see `resolve_source_pdf`), else
+        materialize the canonical key from the GCS source bucket. None when
+        neither is available (e.g. pre-migration docs whose PDF never reached
+        the bucket).
+
+        The local pass comes FIRST and now covers both conventions, which is
+        what makes this work on a credential-less deploy: the public Streamlit
+        app has no GCS access at all, so anything that falls through to
+        `source_store.materialize` there is simply unavailable."""
+        local = resolve_source_pdf(source_file, REPO)
+        if local is not None:
+            return local
         key = source_key_of(source_file)
         if key is None:
             return None
@@ -2388,14 +2348,81 @@ if __name__ == "__main__":
                         "geometry stage; it is empty on tables whose row hierarchy "
                         "came from model levels.")
                     rows_df = run(
-                        f"SELECT row_id, row_hierarchy, row_leaf_label, "
-                        f"row_leaf_label_clean, concept_key, unit, geo_key, "
-                        f"segment_key, sums_to "
+                        f"SELECT {_sel('row_dim', ['row_id', 'canonical_leaf_id', 'table_type_id', 'row_hierarchy', 'row_leaf_label', 'row_leaf_label_clean', 'concept_key', 'unit', 'geo_key', 'segment_key', 'sums_to'])} "
                         f"FROM {TBL('row_dim')} "
                         f"WHERE doc_id = '{_esc(doc_sel)}' "
                         f"AND table_id = '{_esc(table_sel)}' ORDER BY row_id")
                     st.dataframe(rows_df, use_container_width=True,
                                  hide_index=True)
+
+                # ------------------------------------- per-cell identity
+                # THE ADDRESS OF EVERY SINGLE CELL, spelled out. The row
+                # identity grid above answers "what is this ROW", and the
+                # numeric pivot below answers "what are the VALUES" — neither
+                # showed the pair that actually addresses a cell in the
+                # stamped model, (canonical_leaf_id, canonical_col_id). That
+                # pair is the ONLY join key the dashboard anchors use, so a
+                # reader checking why a headline figure resolved (or did not)
+                # had to leave the app and query sqlite by hand.
+                #
+                # Not gated on the ids being present: an UNSTAMPED cell is
+                # exactly what someone auditing coverage is looking for, and
+                # blanking or filtering those rows would hide the gap. The
+                # caption states the corpus-level coverage so a column of
+                # blanks reads as a known pipeline state, not a broken view.
+                with st.expander(
+                        "Per-cell identity (canonical leaf id x canonical "
+                        "col id — the stamped address of every cell)"):
+                    cell_ids_df = run(
+                        f"SELECT f.row_id, f.col_id, "
+                        f"r.canonical_leaf_id, c.canonical_col_id, "
+                        f"r.table_type_id, "
+                        f"r.row_leaf_label, c.col_leaf_label, "
+                        f"c.col_role, c.legal_entity, "
+                        f"f.value_raw, f.value_num, f.unit, "
+                        f"f.period, f.period_span, f.period_source "
+                        f"FROM {TBL('cell_fact')} f "
+                        f"JOIN {TBL('row_dim')} r ON r.doc_id = f.doc_id "
+                        f"AND r.table_id = f.table_id AND r.row_id = f.row_id "
+                        f"LEFT JOIN {TBL('col_dim')} c ON c.doc_id = f.doc_id "
+                        f"AND c.table_id = f.table_id AND c.col_id = f.col_id "
+                        f"WHERE f.doc_id = '{_esc(doc_sel)}' "
+                        f"AND f.table_id = '{_esc(table_sel)}' "
+                        f"ORDER BY f.row_id, f.col_id")
+                    if cell_ids_df.empty:
+                        st.info("No cells for this table.")
+                    else:
+                        n_leaf = int(cell_ids_df["canonical_leaf_id"]
+                                     .notna().sum())
+                        n_col = int(cell_ids_df["canonical_col_id"]
+                                    .notna().sum())
+                        n = len(cell_ids_df)
+                        st.caption(
+                            f"{n} cell(s) — {n_leaf} carry a "
+                            f"canonical_leaf_id, {n_col} a canonical_col_id.")
+                        if n_col == 0:
+                            # STATE, not failure. canonical_col_id is declared
+                            # (schema_v7.sql:384) and populated for 0 of 1915
+                            # columns in BOTH compiled_v2.db and compiled_fs.db
+                            # — the column-axis stamp of
+                            # docs/specs/2026-08-09-column-axis-identity.md has
+                            # not been run on this corpus. Saying so here beats
+                            # an empty column the reader has to explain.
+                            st.caption(
+                                "canonical_col_id is empty for this whole "
+                                "corpus (0 of 1915 columns): the column-axis "
+                                "stamp (spec 2026-08-09) has not run yet. "
+                                "`col_role` and the period columns are the "
+                                "column-side identity available today.")
+                        st.dataframe(cell_ids_df, use_container_width=True,
+                                     hide_index=True)
+                        st.download_button(
+                            "Download per-cell identity (CSV)",
+                            cell_ids_df.to_csv(index=False)
+                            .encode("utf-8-sig"),
+                            file_name=f"{table_sel}_cell_identity.csv",
+                            mime="text/csv",
+                            key=f"cellid_{table_sel}")
 
                 with st.expander("Numeric pivot (columns deduplicated)"):
                     cells_df = run(
@@ -2485,189 +2512,96 @@ if __name__ == "__main__":
     # ------------------------------------------------------- Table Registry
     elif view == "Table Registry":
         st.caption(
-            "The canonical FS masterlist — the fixed set of sections and "
-            "tables each bank reports, and the stable line-item identities "
-            "within each table, independent of which document or period "
-            "they came from. Scoped to Financial Statements only (this "
-            "app's only supported family); Pillar 3 is out of scope.")
+            "The canonical line-item registry, keyed on `canonical_leaf_id` "
+            "ALONE. What each bank is expected to report is declared by the "
+            "dashboard anchor CSVs in `data/derived/dashboards/`; what the "
+            "corpus actually captured is `row_dim.canonical_leaf_id`. The two "
+            "are matched on the leaf address and nothing else — no "
+            "`table_catalog`, no `bank_line_map`, no `row_lineage`, no label "
+            "comparison.")
 
-        conn = _backend() if SOURCE != "bq" else None
-        if conn is None:
-            st.info("Table Registry requires the sqlite backend "
-                     "(FINDOCIQ_DB_SOURCE=sqlite).")
+        # PIPELINE PIVOT (see docs/specs, DECISIONS.md): this view used to be
+        # built on table_catalog + bank_line_map + row_lineage — the retired
+        # mapping layer that compiled_v2.db drops by design, which is why it
+        # rendered nothing but a "run migrate_add_table_catalog.py" warning on
+        # the public deploy. It is now built on the same declaration the
+        # Dashboard uses (the anchor CSVs) against the same stamped column the
+        # Dashboard joins on (canonical_leaf_id), so the two views can never
+        # disagree about what an address means, and dropping a new anchor pair
+        # into the dashboards directory extends BOTH with no code change.
+        declarations = anchor_declarations()
+        captured_df = run(
+            f"SELECT d.institution, d.doc_period, r.doc_id, r.table_id, "
+            f"r.table_type_id, r.canonical_leaf_id, r.row_leaf_label "
+            f"FROM {TBL('row_dim')} r "
+            f"JOIN {TBL('document')} d ON d.doc_id = r.doc_id "
+            f"WHERE r.canonical_leaf_id IS NOT NULL "
+            f"AND r.table_type_id IS NOT NULL")
+        captured_rows = [
+            {"bank": _bank_of(r.institution or ""),
+             "doc_id": r.doc_id, "doc_period": r.doc_period,
+             "table_type_id": r.table_type_id,
+             "canonical_leaf_id": r.canonical_leaf_id,
+             "row_leaf_label": r.row_leaf_label}
+            for r in captured_df.itertuples()
+        ]
+
+        if not declarations:
+            st.info(
+                f"No anchor CSVs in {DASHBOARDS_DIR} — the registry has "
+                f"nothing declared to check coverage against.")
         else:
-            # CAST(page AS INTEGER), not an alphabetical sort on
-            # section_canonical/table_type_id -- the masterlist should read
-            # in the same order the document itself does (TOC/reading
-            # order), not alphabetically. table_registry_seed.csv's `page`
-            # column is a clean integer for every row (verified: no ranges,
-            # no blanks) so this is a safe, exact sort key.
-            # run_opt, not run: table_catalog is part of the legacy mapping
-            # layer that compiled_v2.db drops by design. An empty frame lands in
-            # the `if catalog_df.empty` warning below — a stack trace does not.
-            catalog_df = run_opt(
-                f"SELECT bank, doc_kind, section_canonical, table_type_id, "
-                f"caption_canonical, cadence, expected, page "
-                f"FROM {TBL('table_catalog')} WHERE is_narrative = 0 "
-                f"ORDER BY bank, CAST(page AS INTEGER)")
-            if catalog_df.empty:
-                st.warning(
-                    "table_catalog is empty or not present in this source "
-                    "— the masterlist has nothing to show. Run "
-                    "mapping/migrate_add_table_catalog.py.")
+            reg_df = anchor_coverage_frame(declarations, captured_rows)
+            bank_options = ["All"] + sorted({d["bank"] for d in declarations})
+            bank_sel = st.selectbox("Bank", bank_options, key="tr_bank")
+            if bank_sel != "All":
+                reg_df = reg_df[reg_df["bank"] == bank_sel]
+
+            n_missing = int((reg_df["times_captured"] == 0).sum())
+            m1, m2, m3 = st.columns(3)
+            m1.metric("Declared anchors", len(reg_df))
+            m2.metric("Captured at least once", len(reg_df) - n_missing)
+            m3.metric("Never captured", n_missing)
+
+            only_gaps = st.toggle(
+                "Show only uncaptured anchors", key="tr_gaps",
+                help="The declared addresses the corpus has never stamped — "
+                     "every one of these is a blank cell on the dashboard.")
+            shown = reg_df[reg_df["times_captured"] == 0] if only_gaps else reg_df
+            if shown.empty:
+                st.success("Every declared anchor for this bank is captured.")
             else:
-                bank_options = ["All"] + sorted(catalog_df["bank"].unique())
-                bank_sel = st.selectbox("Bank", bank_options, key="tr_bank")
+                st.dataframe(shown, use_container_width=True, hide_index=True)
+            st.download_button(
+                "Download registry (CSV)",
+                reg_df.to_csv(index=False).encode("utf-8-sig"),
+                file_name="canonical_leaf_registry.csv", mime="text/csv",
+                key="tr_csv")
 
-                # dedup_status IS NULL/'' excludes tables tagged by
-                # quarantine_duplicate_page_tables.py -- a table-detection
-                # defect (isolated to OCBC's media_release_financial_highlights
-                # doc_kind) extracts one physical page as N separate table_t
-                # rows sharing byte-identical values; without this filter
-                # every duplicate inflates times_captured/docs_captured for
-                # whatever it happens to classify as. See docs/DECISIONS.md
-                # 2026-08-04.
-                live_df = run(
-                    f"SELECT d.institution, t.table_type_id, t.doc_id, t.table_id "
-                    f"FROM {TBL('table_t')} t "
-                    f"JOIN {TBL('document')} d ON d.doc_id = t.doc_id "
-                    f"WHERE d.doc_family = 'financial_stmt' "
-                    f"AND t.table_type_id IS NOT NULL "
-                    f"AND (t.dedup_status IS NULL OR t.dedup_status = '')")
-                # doc_kind via _doc_kind_of, NOT a JOIN against doc_cadence --
-                # doc_cadence is a hand-authored 10-row table that doesn't
-                # even cover all 5 of OCBC's own documents, so a JOIN would
-                # silently undercount whichever doc_kind the missing
-                # documents belong to (see _doc_kind_of's docstring).
-                live_rows = [
-                    {"bank": _bank_of(r.institution),
-                     "doc_kind": _doc_kind_of(_bank_of(r.institution), r.doc_id),
-                     "table_type_id": r.table_type_id,
-                     "doc_id": r.doc_id, "table_id": r.table_id}
-                    for r in live_df.itertuples()
-                ]
-                catalog_rows = catalog_df.to_dict("records")
+            # The inverse. Kept behind an expander because it is the longer
+            # list by far and it answers a different question — what to
+            # declare NEXT, rather than what is missing now.
+            with st.expander(
+                    "Stamped but undeclared — leaf ids the pipeline captures "
+                    "that no dashboard anchor uses yet"):
+                un_df = unanchored_leaves_frame(declarations, captured_rows)
                 if bank_sel != "All":
-                    catalog_rows = [r for r in catalog_rows if r["bank"] == bank_sel]
-
-                master_df = table_masterlist_frame(catalog_rows, live_rows)
-                n_zero = int((master_df["times_captured"] == 0).sum())
-                m1, m2, m3 = st.columns(3)
-                m1.metric("Expected tables", len(master_df))
-                m2.metric("Captured at least once", len(master_df) - n_zero)
-                m3.metric("Not yet captured", n_zero)
-                st.dataframe(master_df, use_container_width=True, hide_index=True)
-
-                st.markdown("**Line-item masterlist for one table**")
-                st.caption(
-                    f"The ACTUAL line items of this bank's {BENCHMARK_LABEL} "
-                    f"filing, in real printed order — not `bank_line_map`'s "
-                    f"full historical accumulation across every period ever "
-                    f"ingested since 2022. `bank_line_map` is period-agnostic "
-                    f"and additive, so it keeps footnote-number variants, "
-                    f"documented mis-parenting defects, and addresses from "
-                    f"document forms that have since changed — confirmed "
-                    f"live: DBS's FS_PER_SHARE has 12 accumulated addresses "
-                    f"for a table that only ever prints 7. `bank_line_map` "
-                    f"is used here only to ENRICH a matching {BENCHMARK_LABEL} "
-                    f"row with its `concept_key`/`status`/`note` — a printed "
-                    f"row with no match yet still shows, as "
-                    f"`not_yet_anchored`, rather than silently disappearing. "
-                    f"`status` otherwise reflects the anchor's provenance "
-                    f"(human_confirmed = verified; ai_proposed = not yet "
-                    f"reviewed).")
-                # (bank, doc_kind, table_type_id) must be shown TOGETHER in
-                # the selector -- a bare table_type_id list would be
-                # ambiguous the moment two banks (or, for OCBC, two doc_kinds
-                # of the SAME bank) report the same id under a different
-                # caption, silently picking whichever happened to sort first.
-                # No .sort_values() here -- master_df already arrives in
-                # (bank, page) TOC order from table_masterlist_frame, and
-                # drop_duplicates() (keep='first', the default) preserves
-                # that row order. Re-sorting by table_type_id would put the
-                # dropdown back into alphabetical order, same defect as the
-                # masterlist table itself had before the TOC-order fix.
-                type_rows = (master_df[["bank", "doc_kind", "table_type_id", "caption"]]
-                            .drop_duplicates())
-                if not type_rows.empty:
-                    type_labels = [
-                        f"{r.bank} · {r.doc_kind} · {r.table_type_id} — {r.caption}"
-                        for r in type_rows.itertuples()
-                    ]
-                    label_sel = st.selectbox("Table", type_labels, key="tr_type")
-                    sel = type_rows.iloc[type_labels.index(label_sel)]
-                    # run_opt: bank_line_map is the legacy label-pair binding
-                    # store, dropped from compiled_v2.db. The leaf-id addressing
-                    # that replaces it lives in row_dim.canonical_leaf_id.
-                    blm_df = run_opt(
-                        f"SELECT row_label_norm, parent_label_norm, concept_key, "
-                        f"map_status, note FROM {TBL('bank_line_map')} "
-                        f"WHERE bank = '{_esc(sel.bank)}' "
-                        f"AND table_type_id = '{_esc(sel.table_type_id)}' "
-                        f"AND map_status != 'deprecated'")
-                    # The benchmark instance: this exact (bank, doc_kind,
-                    # table_type_id)'s BENCHMARK_PERIOD (4Q25) document, if one
-                    # was captured -- falls back to the most recent available
-                    # period otherwise (flagged to the user, never silent).
-                    # bank+doc_kind can't be pushed into the SQL WHERE (both are
-                    # derived in Python via _bank_of/_doc_kind_of, same as the
-                    # live-occurrences query above), so filter after the fetch.
-                    benchmark_rows_df = run(
-                        f"SELECT d.institution, d.doc_period, t.doc_id, t.table_id, "
-                        f"rd.row_id, rd.row_leaf_label, rl.lvl1, rl.lvl2, rl.lvl3, "
-                        f"rl.lvl4, rl.lvl5, rl.depth "
-                        f"FROM {TBL('table_t')} t "
-                        f"JOIN {TBL('document')} d ON d.doc_id = t.doc_id "
-                        f"JOIN {TBL('row_dim')} rd ON rd.doc_id = t.doc_id "
-                        f"AND rd.table_id = t.table_id "
-                        f"JOIN {TBL('row_lineage')} rl ON rl.row_lineage_id = rd.row_lineage_id "
-                        f"WHERE t.table_type_id = '{_esc(sel.table_type_id)}' "
-                        f"AND d.doc_family = 'financial_stmt' "
-                        f"AND (t.dedup_status IS NULL OR t.dedup_status = '')")
-                    candidate_rows = [
-                        r for r in benchmark_rows_df.itertuples()
-                        if _bank_of(r.institution) == sel.bank
-                        and _doc_kind_of(sel.bank, r.doc_id) == sel.doc_kind
-                    ]
-                    benchmark_doc_id = benchmark_period = None
-                    if candidate_rows:
-                        on_benchmark = [r for r in candidate_rows
-                                        if r.doc_period == BENCHMARK_PERIOD]
-                        pick = on_benchmark or [max(candidate_rows, key=lambda r: r.doc_period)]
-                        benchmark_doc_id = pick[0].doc_id
-                        benchmark_period = pick[0].doc_period
-
-                    line_df = pd.DataFrame(
-                        columns=["parent", "line_item", "concept_key", "status", "note"])
-                    if benchmark_doc_id:
-                        row_dim_rows = [
-                            {"doc_id": r.doc_id, "table_id": r.table_id,
-                             "row_id": r.row_id, "row_leaf_label": r.row_leaf_label,
-                             "lvl1": r.lvl1, "lvl2": r.lvl2, "lvl3": r.lvl3,
-                             "lvl4": r.lvl4, "lvl5": r.lvl5, "depth": r.depth}
-                            for r in candidate_rows if r.doc_id == benchmark_doc_id
-                        ]
-                        line_df = line_item_benchmark_frame(
-                            row_dim_rows, blm_df.to_dict("records"))
-
-                    if benchmark_period and benchmark_period != BENCHMARK_PERIOD:
-                        st.warning(
-                            f"No {BENCHMARK_LABEL} instance captured for "
-                            f"{sel.bank} / {sel.table_type_id} — showing "
-                            f"{benchmark_period} instead (most recent "
-                            f"available).")
-                    if line_df.empty:
-                        st.info(f"No {BENCHMARK_LABEL} (or any) instance of "
-                                 f"this table has been captured yet for "
-                                 f"{sel.bank} / {sel.table_type_id}.")
-                    else:
-                        st.dataframe(line_df, use_container_width=True, hide_index=True)
+                    un_df = un_df[un_df["bank"] == bank_sel]
+                if un_df.empty:
+                    st.caption("Every captured leaf address is declared.")
+                else:
+                    st.caption(
+                        f"{len(un_df)} address(es), most-captured first. "
+                        f"Adding one to an anchors CSV puts it on the "
+                        f"dashboard with no code change.")
+                    st.dataframe(un_df, use_container_width=True,
+                                 hide_index=True)
 
         st.divider()
         st.markdown("**Browse a captured instance**")
         st.caption(
-            "Spot-check one real extracted table against the masterlist "
-            "above — not the masterlist itself.")
+            "Spot-check one real extracted table against the registry "
+            "above — not the registry itself.")
 
         f1, f2 = st.columns(2)
         with f1:
@@ -2718,19 +2652,22 @@ if __name__ == "__main__":
 
             st.markdown("**Per-row identity**")
             row_identity_df = run(
-                f"SELECT row_id, row_leaf_label, row_leaf_label_clean, "
-                f"concept_key, sums_to, unit, "
-                f"geo_key, segment_key FROM {TBL('row_dim')} "
+                f"SELECT {_sel('row_dim', ['row_id', 'canonical_leaf_id', 'table_type_id', 'row_leaf_label', 'row_leaf_label_clean', 'concept_key', 'sums_to', 'unit', 'geo_key', 'segment_key'])} "
+                f"FROM {TBL('row_dim')} "
                 f"WHERE doc_id = '{_esc(s_doc_id)}' "
                 f"AND table_id = '{_esc(s_table_id)}' ORDER BY row_id")
             st.dataframe(row_identity_df, use_container_width=True, hide_index=True)
 
             with st.expander("Per-cell identity (each cell's tags)"):
+                # cell_fact in compiled_v2.db carries no concept_key/geo_key/
+                # segment_key — those moved to row_dim. Selected literally this
+                # raised too; `_sel` serves them as NULL where absent.
                 cell_identity_df = run(
-                    f"SELECT f.row_id, r.row_leaf_label, f.col_id, "
-                    f"c.col_leaf_label, f.value_raw, f.value_num, "
-                    f"f.concept_key, f.geo_key, f.segment_key, f.unit, "
-                    f"f.period, f.period_span "
+                    f"SELECT f.row_id, r.canonical_leaf_id, r.row_leaf_label, "
+                    f"f.col_id, c.canonical_col_id, c.col_leaf_label, "
+                    f"f.value_raw, f.value_num, "
+                    f"{_sel('cell_fact', ['concept_key', 'geo_key', 'segment_key'], 'f.')}, "
+                    f"f.unit, f.period, f.period_span "
                     f"FROM {TBL('cell_fact')} f "
                     f"JOIN {TBL('row_dim')} r ON r.doc_id = f.doc_id "
                     f"AND r.table_id = f.table_id AND r.row_id = f.row_id "
@@ -2752,8 +2689,31 @@ if __name__ == "__main__":
 
     # ------------------------------------------------------------- Ingest
     else:
+        # WRONG MODULE PATH, AND UNGUARDED — the two together took the whole
+        # app down. `source_store` lives at pipeline/common/source_store.py, so
+        # with pipeline/ on sys.path the import is `from common import
+        # source_store`; a bare `import source_store` raises ModuleNotFoundError.
+        # And because Ingest is the FIRST radio option it is what every fresh
+        # session lands on, so that raise happened on page load: the sidebar
+        # rendered (it is emitted before this branch) and the body was a
+        # traceback. Navigating to another view was the only way to see the app
+        # at all, which is exactly the "Database doesn't work" symptom.
+        #
+        # Guarded as well as corrected. This view is the one part of the app
+        # that reaches into the pipeline, and the public deploy ships no GCS
+        # credentials and cannot run PaddleOCR — so an unavailable
+        # `source_store` is a NORMAL state there, not an error, and it must
+        # degrade to the local fallback below rather than kill three working
+        # views. `_bank_of` still needs no pipeline import.
         sys.path.insert(0, str(FINDOCIQ_DIR / "pipeline"))
-        import source_store  # noqa: E402
+        try:
+            from common import source_store  # noqa: E402
+        except Exception as exc:
+            source_store = None
+            st.caption(
+                f"Pipeline module unavailable ({type(exc).__name__}) — the "
+                f"document list falls back to what is already ingested, and "
+                f"launching an ingest is disabled.")
 
         st.markdown(
             '<div class="card"><div class="card-title">1. Pick a document</div>',
@@ -2795,14 +2755,26 @@ if __name__ == "__main__":
             key_by_label = dict(doc_options)
             sel_label = st.selectbox("Document", labels)
             selected_key = key_by_label[sel_label]
-            doc_id = source_store.doc_id_for(selected_key)
+            # Same rule as source_store.doc_id_for (stem, spaces -> '_'),
+            # inlined for the no-pipeline case so the whole view does not hinge
+            # on a module the public deploy will never have.
+            doc_id = (source_store.doc_id_for(selected_key)
+                      if source_store is not None
+                      else Path(selected_key).stem.replace(" ", "_"))
             st.markdown("</div>", unsafe_allow_html=True)
 
             st.markdown(
                 '<div class="card"><div class="card-title">2. Ingest</div>',
                 unsafe_allow_html=True,
             )
-            if st.button("Ingest document"):
+            # Disabled without the pipeline module: the button would spawn
+            # run_doc.py in a process that cannot import what it needs, and the
+            # stepper would sit on a run that never wrote a stage row. Saying
+            # so on the control beats an ingest that silently never starts.
+            if st.button("Ingest document", disabled=source_store is None,
+                         help=None if source_store is not None else
+                         "Requires the pipeline module, which this deployment "
+                         "does not ship."):
                 # Launches the real pipeline (run_doc.py, STEP 0-7). On the
                 # workstation this actually extracts the document; run
                 # locally (no PaddleOCR / GCS creds) it's EXPECTED to fail at
@@ -2878,11 +2850,26 @@ if __name__ == "__main__":
                     st.caption(f"{len(tbls)} table(s) in {doc_id}")
                     st.dataframe(tbls, use_container_width=True, hide_index=True)
                     tid = st.selectbox("Inspect table", tbls["table_id"], key="ingest_tid")
+                    # BASE TABLES, not v_cell_flat. That view belongs to the
+                    # retired serving layer and is absent from compiled_v2.db,
+                    # so this grid came back silently EMPTY on every freshly
+                    # ingested document — the one moment the user most needs to
+                    # see what was extracted. The same three tables the rest of
+                    # the app reads give the same answer, plus the canonical
+                    # address of each cell.
                     cells = run_opt(
-                        f"SELECT row_lvl1, row_lvl2, col_lvl1, col_lvl2, value_raw, "
-                        f"value_num, unit, concept_key FROM {TBL('v_cell_flat')} "
-                        f"WHERE doc_id = '{_esc(doc_id)}' AND table_id = '{_esc(tid)}' "
-                        f"ORDER BY line_no")
+                        f"SELECT f.row_id, f.col_id, "
+                        f"r.canonical_leaf_id, c.canonical_col_id, "
+                        f"r.row_leaf_label, c.col_leaf_label, "
+                        f"f.value_raw, f.value_num, f.unit, f.period "
+                        f"FROM {TBL('cell_fact')} f "
+                        f"JOIN {TBL('row_dim')} r ON r.doc_id = f.doc_id "
+                        f"AND r.table_id = f.table_id AND r.row_id = f.row_id "
+                        f"LEFT JOIN {TBL('col_dim')} c ON c.doc_id = f.doc_id "
+                        f"AND c.table_id = f.table_id AND c.col_id = f.col_id "
+                        f"WHERE f.doc_id = '{_esc(doc_id)}' "
+                        f"AND f.table_id = '{_esc(tid)}' "
+                        f"ORDER BY f.row_id, f.col_id")
                     st.dataframe(cells, use_container_width=True, hide_index=True)
 
                     conn = _backend() if SOURCE != "bq" else None
