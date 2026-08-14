@@ -6,8 +6,14 @@ streamlit==1.60.0
 # None/NaN/pd.NA either way). A public deploy should not resolve a different
 # dtype system than the one the tests ran against. 3.0.5 is that version.
 pandas==3.0.5
-altair>=5.0.0
+# Pinned for the same reason as pandas: every package the RENDER path depends
+# on is pinned exactly, so a deploy cannot resolve something the tests never
+# saw. altair went 5 -> 6 while the floor said >=5.0.0, and it draws every
+# chart on the Dashboard; pypdfium2 rasterises the PDF pages in the Database
+# view. These are the versions the suite and the AppTest sweep run against.
+altair==6.2.2
+pypdfium2==5.13.0
+# Not pinned: used by pipeline-side helpers, not the render path.
 matplotlib>=3.8
-pypdfium2>=5.8.0
 openpyxl>=3.1
 pyyaml>=6

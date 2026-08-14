@@ -107,7 +107,15 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    Verified by a clean install from the pinned file: streamlit 1.60.0 /
    pandas 3.0.5 / altair 6.2.2, 152 tests passing and all four views
    exception-free on that exact resolution.
-   `altair>=5.0.0` and `pypdfium2>=5.8.0` are still floating.
+
+✅ **`altair==6.2.2` and `pypdfium2==5.13.0` pinned too** — the whole RENDER
+   path is now exact (streamlit / pandas / altair / pypdfium2), in both
+   requirements files. altair had already gone 5 -> 6 under a `>=5.0.0` floor
+   and it draws every Dashboard chart; pypdfium2 rasterises the PDF pages.
+   matplotlib / openpyxl / pyyaml stay floating — pipeline-side, not render
+   path. Clean install from the pinned file resolves with no conflict; 152
+   tests, all four views, the 2 PDF page images and a 0-`nan` sweep all pass
+   on that exact resolution.
 
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
