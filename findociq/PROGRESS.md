@@ -82,6 +82,26 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    flattened mirror. Now a module constant like `DASHBOARDS_DIR`, so it
    resolves in both layouts with no sync patch. 130 tests passing.
 
+🐞→✅ **162 table titles rendered as the literal text "nan".** `resolve_title`
+   guarded only `is not None`, but **pandas >= 3 reads a text column as the
+   `str` dtype whose missing value is `pd.NA`** — truthy, and it stringifies.
+   `requirements.txt` pins only `pandas>=2.0.0`, so the deploy picked up
+   pandas 3 and the display changed with no code change on our side. Affected
+   7 of 10 documents; every title in a document whose clean-title column is
+   entirely NULL. New module-level `is_missing()` covers None / NaN / pd.NA,
+   and `raw_table_frame`'s local `_missing` (which only knew None + float NaN)
+   now delegates to it.
+
+   Same truthiness trap in two more places, both fixed: the meta caption's
+   `str(x) for x in (...) if x` printed `nan · p.12 · …` for the 105 tables
+   with no `unit` (now `_meta_line`), and `table_view_labels` would render
+   `(p.nan)`. Swept the whole corpus: 0 titles, 0 captions, 0 dropdown labels
+   emit a `nan` token, confirmed again in the running app via AppTest.
+   152 tests passing.
+
+⚠️ **`pandas>=2.0.0` is unpinned** and this is the second behaviour change it
+   has delivered silently. Worth pinning to a known-good minor.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

@@ -1265,3 +1265,68 @@ def test_resolve_source_pdf_honours_an_explicit_sources_dir(tmp_path):
     got = resolve_source_pdf("findociq/data/sources/financial_statements/X.pdf",
                              tmp_path, tmp_path / "data" / "sources")
     assert got.endswith("data/sources/financial_statements/X.pdf")
+
+
+# ------------------------------------------------------------- is_missing
+# 162 of 342 table titles rendered as the literal text "nan": pandas >= 3 reads
+# a text column as the `str` dtype whose missing value is pd.NA, which is
+# truthy and stringifies. requirements.txt pins only pandas>=2.0.0, so the
+# deploy picked this up with no code change on our side.
+import pandas as _pd
+
+
+@pytest.mark.parametrize("v", [None, float("nan"), _pd.NA])
+def test_is_missing_covers_every_shape_of_sql_null(v):
+    from findociq_app import is_missing
+    assert is_missing(v) is True
+
+
+@pytest.mark.parametrize("v", ["", " ", "x", 0, False, []])
+def test_is_missing_is_false_for_real_values_including_falsy_ones(v):
+    from findociq_app import is_missing
+    assert is_missing(v) is False
+
+
+@pytest.mark.parametrize("na", [None, float("nan"), _pd.NA])
+def test_resolve_title_falls_back_when_clean_is_missing_in_any_shape(na):
+    assert resolve_title("BALANCE SHEETS", na) == "BALANCE SHEETS"
+
+
+@pytest.mark.parametrize("na", [None, float("nan"), _pd.NA])
+def test_resolve_title_returns_none_not_nan_when_both_are_missing(na):
+    # Callers write `resolve_title(...) or table_id`; NaN would WIN that `or`
+    # and print as 'nan'. None is the only return value that lets it fall
+    # through to the table_id.
+    assert resolve_title(na, na) is None
+
+
+@pytest.mark.parametrize("na", [None, float("nan"), _pd.NA])
+def test_display_name_never_emits_the_text_nan(na):
+    assert display_name(na) == ""
+
+
+def test_display_name_of_a_missing_title_or_id_falls_through_to_the_id():
+    # display_name only sentence-cases SHOUTING-CAPS; a lowercase id is left
+    # as-is beyond the underscore->space rewrite.
+    assert display_name(resolve_title(float("nan"), _pd.NA) or "tbl_7") == "tbl 7"
+
+
+# ------------------------------------------------------------- _meta_line
+def test_meta_line_drops_a_missing_unit_instead_of_printing_nan():
+    from findociq_app import _meta_line
+    # 105 of 342 tables have no unit; the old `if x` guard kept NaN.
+    assert _meta_line(float("nan"), "p.12") == "p.12"
+    assert _meta_line(_pd.NA, "p.12") == "p.12"
+    assert _meta_line(None, "p.12") == "p.12"
+
+
+def test_meta_line_keeps_real_parts_and_drops_blanks():
+    from findociq_app import _meta_line
+    assert _meta_line("S$m", "p.12", "", "  ") == "S$m · p.12"
+
+
+def test_table_view_labels_does_not_render_page_nan():
+    rows = [{"table_id": "t1", "table_title": "Income", "page_range": float("nan")}]
+    options, _ = table_view_labels(rows)
+    assert "p.nan" not in " ".join(options)
+    assert "Income" in options[1]
