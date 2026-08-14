@@ -1,5 +1,11 @@
 streamlit==1.60.0
-pandas>=2.0.0
+# PINNED, not >=2.0.0. The floor let the deploy install pandas 3, which reads a
+# text column as the `str` dtype whose missing value is pd.NA — truthy, and it
+# stringifies — so 162 of 342 table titles rendered as the literal text "nan"
+# with no code change on our side (fixed in 33bd2df; `is_missing` now covers
+# None/NaN/pd.NA either way). A public deploy should not resolve a different
+# dtype system than the one the tests ran against. 3.0.5 is that version.
+pandas==3.0.5
 altair>=5.0.0
 matplotlib>=3.8
 pypdfium2>=5.8.0

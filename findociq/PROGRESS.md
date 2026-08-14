@@ -99,8 +99,15 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    emit a `nan` token, confirmed again in the running app via AppTest.
    152 tests passing.
 
-⚠️ **`pandas>=2.0.0` is unpinned** and this is the second behaviour change it
-   has delivered silently. Worth pinning to a known-good minor.
+✅ **`pandas` pinned to `==3.0.5`** in BOTH requirements files — upstream
+   `findociq/app/requirements.txt` and the mirror's own root file, which
+   `sync.sh` deliberately does not copy (so a pin added upstream must be added
+   there by hand or the deploy resolves something else). `>=2.0.0` is what let
+   the deploy install a different dtype system than the tests ran against.
+   Verified by a clean install from the pinned file: streamlit 1.60.0 /
+   pandas 3.0.5 / altair 6.2.2, 152 tests passing and all four views
+   exception-free on that exact resolution.
+   `altair>=5.0.0` and `pypdfium2>=5.8.0` are still floating.
 
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
