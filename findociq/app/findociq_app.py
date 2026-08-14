@@ -2011,7 +2011,7 @@ if __name__ == "__main__":
                     event = st.dataframe(
                         display_df.style.apply(
                             _section_row_styles(header_flags), axis=None),
-                        use_container_width=True,
+                        width="stretch",
                         on_select="rerun", selection_mode="single-row",
                         key="hl_compare_table")
 
@@ -2065,7 +2065,7 @@ if __name__ == "__main__":
                         st.dataframe(
                             display_df.style.apply(
                                 _section_row_styles(header_flags), axis=None),
-                            use_container_width=True)
+                            width="stretch")
 
                         derived_notes = [
                             {"Item": r["label"], "Period": r["period_label"],
@@ -2076,7 +2076,7 @@ if __name__ == "__main__":
                             if derived_notes:
                                 st.dataframe(
                                     pd.DataFrame(derived_notes),
-                                    use_container_width=True, hide_index=True)
+                                    width="stretch", hide_index=True)
                             else:
                                 st.caption(
                                     "No derived (formula-resolved) cells in "
@@ -2116,7 +2116,7 @@ if __name__ == "__main__":
                         .properties(height=400)
                         .interactive()
                     )
-                    st.altair_chart(chart, use_container_width=True)
+                    st.altair_chart(chart, width="stretch")
 
                 st.download_button(
                     "Download highlights (CSV)",
@@ -2202,7 +2202,7 @@ if __name__ == "__main__":
                     .properties(height=400)
                     .interactive()
                 )
-                st.altair_chart(chart, use_container_width=True)
+                st.altair_chart(chart, width="stretch")
 
                 st.markdown("**Compare table**")
                 wide = tidy.pivot_table(index="period_label", columns="bank",
@@ -2210,7 +2210,7 @@ if __name__ == "__main__":
                 wide = wide.reindex(period_order)
                 wide = wide[[b for b in _BANK_COLOR if b in wide.columns]
                             + [b for b in wide.columns if b not in _BANK_COLOR]]
-                st.dataframe(wide, use_container_width=True)
+                st.dataframe(wide, width="stretch")
 
                 present_banks = sorted({
                     _bank_of(inst) for inst in
@@ -2283,7 +2283,7 @@ if __name__ == "__main__":
                 table_sel = by_label[choice]
 
                 with st.expander("Table metadata"):
-                    st.dataframe(tbls_df, use_container_width=True,
+                    st.dataframe(tbls_df, width="stretch",
                                  hide_index=True)
 
                 if table_sel is None:
@@ -2303,7 +2303,7 @@ if __name__ == "__main__":
                                      f"definition(s) hidden (loader artifact)")
                         if meta:
                             st.caption(meta)
-                        st.dataframe(full_df, use_container_width=True,
+                        st.dataframe(full_df, width="stretch",
                                      hide_index=True)
 
             if not tbls_df.empty and table_sel is not None:
@@ -2329,7 +2329,7 @@ if __name__ == "__main__":
                 if raw_df.empty:
                     st.info("No cells for this table.")
                 else:
-                    st.dataframe(raw_df, use_container_width=True,
+                    st.dataframe(raw_df, width="stretch",
                                  hide_index=True)
                     st.download_button(
                         "Download table (CSV, original shape)",
@@ -2352,7 +2352,7 @@ if __name__ == "__main__":
                         f"FROM {TBL('row_dim')} "
                         f"WHERE doc_id = '{_esc(doc_sel)}' "
                         f"AND table_id = '{_esc(table_sel)}' ORDER BY row_id")
-                    st.dataframe(rows_df, use_container_width=True,
+                    st.dataframe(rows_df, width="stretch",
                                  hide_index=True)
 
                 # ------------------------------------- per-cell identity
@@ -2414,7 +2414,7 @@ if __name__ == "__main__":
                                 "stamp (spec 2026-08-09) has not run yet. "
                                 "`col_role` and the period columns are the "
                                 "column-side identity available today.")
-                        st.dataframe(cell_ids_df, use_container_width=True,
+                        st.dataframe(cell_ids_df, width="stretch",
                                      hide_index=True)
                         st.download_button(
                             "Download per-cell identity (CSV)",
@@ -2452,7 +2452,7 @@ if __name__ == "__main__":
                         pivot = cells_df.pivot_table(
                             index="row_leaf_label", columns="col_label",
                             values="value_num", aggfunc="first")
-                        st.dataframe(pivot, use_container_width=True)
+                        st.dataframe(pivot, width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
         # ------------------------------------------- original PDF panel
@@ -2496,7 +2496,7 @@ if __name__ == "__main__":
                     st.image(
                         _render_pdf_page(pdf_path, p),
                         caption=f"{Path(source_file).name} — page {p}",
-                        use_container_width=True)
+                        width="stretch")
             st.markdown("</div>", unsafe_allow_html=True)
 
         with st.expander("Raw tables"):
@@ -2507,7 +2507,7 @@ if __name__ == "__main__":
                 f"(SELECT COUNT(*) FROM {TBL('row_dim')}) AS row_dim, "
                 f"(SELECT COUNT(*) FROM {TBL('cell_fact')}) AS cell_fact"
             )
-            st.dataframe(health, use_container_width=True, hide_index=True)
+            st.dataframe(health, width="stretch", hide_index=True)
 
     # ------------------------------------------------------- Table Registry
     elif view == "Table Registry":
@@ -2571,7 +2571,7 @@ if __name__ == "__main__":
             if shown.empty:
                 st.success("Every declared anchor for this bank is captured.")
             else:
-                st.dataframe(shown, use_container_width=True, hide_index=True)
+                st.dataframe(shown, width="stretch", hide_index=True)
             st.download_button(
                 "Download registry (CSV)",
                 reg_df.to_csv(index=False).encode("utf-8-sig"),
@@ -2594,7 +2594,7 @@ if __name__ == "__main__":
                         f"{len(un_df)} address(es), most-captured first. "
                         f"Adding one to an anchors CSV puts it on the "
                         f"dashboard with no code change.")
-                    st.dataframe(un_df, use_container_width=True,
+                    st.dataframe(un_df, width="stretch",
                                  hide_index=True)
 
         st.divider()
@@ -2648,7 +2648,7 @@ if __name__ == "__main__":
             if sample_n_hidden:
                 st.caption(f"{sample_n_hidden} unused column definition(s) "
                            f"hidden (loader artifact)")
-            st.dataframe(sample_df, hide_index=True, use_container_width=True)
+            st.dataframe(sample_df, hide_index=True, width="stretch")
 
             st.markdown("**Per-row identity**")
             row_identity_df = run(
@@ -2656,7 +2656,7 @@ if __name__ == "__main__":
                 f"FROM {TBL('row_dim')} "
                 f"WHERE doc_id = '{_esc(s_doc_id)}' "
                 f"AND table_id = '{_esc(s_table_id)}' ORDER BY row_id")
-            st.dataframe(row_identity_df, use_container_width=True, hide_index=True)
+            st.dataframe(row_identity_df, width="stretch", hide_index=True)
 
             with st.expander("Per-cell identity (each cell's tags)"):
                 # cell_fact in compiled_v2.db carries no concept_key/geo_key/
@@ -2676,7 +2676,7 @@ if __name__ == "__main__":
                     f"WHERE f.doc_id = '{_esc(s_doc_id)}' "
                     f"AND f.table_id = '{_esc(s_table_id)}' "
                     f"ORDER BY f.row_id, f.col_id")
-                st.dataframe(cell_identity_df, use_container_width=True,
+                st.dataframe(cell_identity_df, width="stretch",
                              hide_index=True)
 
                 if search:
@@ -2685,7 +2685,7 @@ if __name__ == "__main__":
                         .str.contains(search, case=False, regex=False)]
                     st.caption(f"{len(matched)} row(s) in this table match {search!r}")
                     if not matched.empty:
-                        st.dataframe(matched, use_container_width=True, hide_index=True)
+                        st.dataframe(matched, width="stretch", hide_index=True)
 
     # ------------------------------------------------------------- Ingest
     else:
@@ -2848,7 +2848,7 @@ if __name__ == "__main__":
                     st.info(f"No tables loaded yet for {doc_id}.")
                 else:
                     st.caption(f"{len(tbls)} table(s) in {doc_id}")
-                    st.dataframe(tbls, use_container_width=True, hide_index=True)
+                    st.dataframe(tbls, width="stretch", hide_index=True)
                     tid = st.selectbox("Inspect table", tbls["table_id"], key="ingest_tid")
                     # BASE TABLES, not v_cell_flat. That view belongs to the
                     # retired serving layer and is absent from compiled_v2.db,
@@ -2870,7 +2870,7 @@ if __name__ == "__main__":
                         f"WHERE f.doc_id = '{_esc(doc_id)}' "
                         f"AND f.table_id = '{_esc(tid)}' "
                         f"ORDER BY f.row_id, f.col_id")
-                    st.dataframe(cells, use_container_width=True, hide_index=True)
+                    st.dataframe(cells, width="stretch", hide_index=True)
 
                     conn = _backend() if SOURCE != "bq" else None
                     if conn is not None:

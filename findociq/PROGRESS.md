@@ -56,6 +56,14 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
 ✅ **Tests: 129 passing** (126 before; −17 legacy, +20 new for `select_clause`,
    `resolve_source_pdf` and the three registry helpers).
 
+✅ **`use_container_width` → `width="stretch"`** across all 22 call sites (19
+   `st.dataframe`, 2 `st.altair_chart`, 1 `st.image`). Streamlit 1.61 deprecates
+   the old kwarg; **1.60.0 — the pinned version — already accepts `width=`**
+   (signatures verified), so this is safe today and removes the blocker on a
+   future bump. Re-verified against 1.60.0 specifically: identical element tree
+   (6 dataframes, 2 PDF page images), all four views and every interactive
+   branch exception-free, 129 tests passing.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.
