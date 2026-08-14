@@ -1,5 +1,9 @@
 # Workstation persistence & fresh-boot bootstrap — HISTORICAL
 
+> **HISTORICAL — do not follow this document.** Describes the retired
+> Cloud Workstation + GCS persistence. **GCP was decommissioned in August 2026**: there is no
+> workstation, bucket or project to bootstrap against. See `README.md`.
+
 > **STALE (2026-08-13) — do NOT follow. Read `README.md` instead.**
 > Written when the durable stores were git + the GCS bucket and the working copy
 > was a Cloud Workstation. Both premises are gone: the repo is self-contained

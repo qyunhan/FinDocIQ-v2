@@ -207,6 +207,35 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    README's "Read next" now leads with it. `TO_FIX.md` §5 marked RESOLVED — its
    predicted drift is the `canonical_col_id` regression that actually happened.
 
+✅ **GCP delinked — docs, docstrings and the dead BigQuery backend removed.**
+   - `README.md` rewritten as the GitHub landing page: live dashboard link up
+     top, the two-repo publish flow (pushing to source does NOT update the
+     site), the pinned render path, and what is committed. It had a factual
+     error — it claimed `compiled_fs.db` is NOT in the repo; it is, 31 MB.
+   - **The app's BigQuery backend is gone.** `SOURCE`/`PROJECT`/`DATASET`, the
+     `google.cloud.bigquery` branch, and the bq guards inside `_cols_of`/`_sel`
+     that could never fire. `TBL()` stays as an identity shim so the 45 query
+     sites are untouched and one seam remains if a remote backend returns.
+   - `STEP 7 sync_bq` is **OFF by default** (`--sync-bq` opts back in). It could
+     only fail, and it was writing a 'failed' ingest_status row every run.
+   - GCP deps commented out of `findociq/requirements.txt` with the reason;
+     `GCP_TASKS.md` and `tools/vm_{up,down}.sh` archived to
+     `archive/2026-08-14-gcp-retirement/`; Cloud Run section of DEPLOY.md marked
+     RETIRED; HISTORICAL banners on `HANDOFF.md` and both workstation docs.
+   - `CLAUDE.md`'s persistence section rewritten: git is the only durable store,
+     committing the DBs replaces the old `gsutil cp`, and publishing is a second
+     repo.
+
+🐞 **Measured while verifying, and it cost me the DB briefly: `--rebuild-db` is
+   NOT equivalent to the committed artifact.** The replay matches every count
+   exactly (10/488/342/5,771/21,581, verify PASS) but loses **39
+   `canonical_leaf_id` stamps (3,843 -> 3,804) and all 210 `canonical_col_id`
+   stamps**. `col_role` survives, since that rule runs at load. Restored from a
+   pre-run copy; both DBs verified back at 210/3,843 and byte-identical to HEAD.
+   TO_FIX §5's warning re-measured with these numbers, and the README's rebuild
+   command now carries the warning — it previously read as though a replay
+   reproduced the shipped artifact.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

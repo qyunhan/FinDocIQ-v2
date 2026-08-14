@@ -186,6 +186,15 @@ default glob yields an IDENTICAL
 `(doc_id, table_id, col_id, canonical_col_id)` set — so the artifact and the
 lineage agree **today**. They will drift the moment either changes.
 
+**Re-measured 2026-08-14** on the current corpus, and it is still true — a
+replay of `--rebuild-db --only 4Q25,1Q26,2Q26` matches every COUNT exactly
+(10 docs / 488 sections / 342 tables / 5,771 rows / 21,581 cells, verify PASS)
+yet loses **39 `canonical_leaf_id` stamps (3,843 -> 3,804) and all 210
+`canonical_col_id` stamps**. `col_role` survives, because that rule runs at load
+time. So: counts are not evidence of equivalence, and the committed DBs are
+authoritative. The README now carries this warning at the rebuild command,
+which previously read as though a replay reproduced the shipped artifact.
+
 **Also note:** `findociq/db/compiled_fs.db` and a replay of it are NOT
 interchangeable. Measured: `table_t` 342 vs 343, `row_dim` 5,772 vs 5,770 but
 ~240 keys differ on each side, `col_dim` 1,915 vs 1,884, `cell_fact` 21,581 vs

@@ -33,44 +33,15 @@ the file, leaving the cached connection pointed at the old, unlinked inode.
 Editing the source reruns the script but keeps that connection. "Clear cache"
 from the app menu also works.
 
-## Cloud Run — the older, private deployment
+## Cloud Run — RETIRED
 
-    https://findociq-dashboard-663571970232.asia-southeast1.run.app
+The `findociq-dashboard` Cloud Run service and the GCP project behind it were
+retired in August 2026. The deployment steps that used to be here (staged
+bundle, `gcloud run deploy`, the `allUsers` IAM binding that was never granted)
+are gone with them — see git history if you need them.
 
-**GIT PUSHES DO NOT UPDATE IT.** The image is built from a staged bundle and the
-DB is baked INTO it. This is the trap that left revision 00002 serving a months-old
-`dashboard.py` + `compiled_fs.db` snapshot while `main` moved on. Any new document,
-re-stamp or masterlist edit needs a fresh deploy:
-
-    STAGE=$(mktemp -d)
-    mkdir -p "$STAGE/findociq/app" "$STAGE/findociq/db" \
-             "$STAGE/findociq/data/derived/dashboards"
-    cp findociq/app/findociq_app.py  "$STAGE/findociq/app/"
-    cp findociq/app/Dockerfile       "$STAGE/Dockerfile"
-    cp findociq/app/requirements.txt "$STAGE/requirements.txt"
-    cp findociq/db/compiled_v2.db    "$STAGE/findociq/db/"
-    cp findociq/data/derived/dashboards/*.csv \
-       "$STAGE/findociq/data/derived/dashboards/"
-    ( cd "$STAGE" && gcloud run deploy findociq-dashboard --source . \
-        --project igc2026-team08-6311 --region asia-southeast1 \
-        --memory 1Gi --min-instances 0 )
-
-The staged tree must keep the `findociq/app/` depth: `findociq_app.py` computes
-`REPO = Path(__file__).resolve().parents[2]`, and the Dockerfile's `WORKDIR /app`
-+ `COPY findociq/ findociq/` puts it at `/app/findociq/app/`, so `REPO` resolves
-to `/app`.
-
-### Access
-The service is **not** public — no IAM bindings, so every unauthenticated request
-returns 403. To open it:
-
-    gcloud run services add-iam-policy-binding findociq-dashboard \
-      --region asia-southeast1 --project igc2026-team08-6311 \
-      --member=allUsers --role=roles/run.invoker
-
-This needs `run.services.setIamPolicy`, and on an org with
-`constraints/iam.allowedPolicyMemberDomains` a binding to `allUsers` may be
-refused outright. Not yet attempted.
+Streamlit Community Cloud is the only deployment. It needs no cloud account:
+the database, the anchor CSVs and the source PDFs are all committed.
 
 ## What compiled_v2.db must carry
 
@@ -83,11 +54,12 @@ layer is gone from the read path entirely; the only identity join anywhere in
 the app is `canonical_leaf_id`, declared by the dashboard anchor CSVs. There is
 nothing left for `build_compiled_v2.py --carry-from` to carry for the app's sake.
 
-`col_dim.canonical_col_id` is declared but **0 of 1915 populated** in both
-`compiled_v2.db` and `compiled_fs.db` — the column-axis stamp
-(`docs/specs/2026-08-09-column-axis-identity.md`) has never been run. The app
-displays the column and says so rather than hiding it; when the stamp lands it
-populates with no code change.
+`col_dim.canonical_col_id` is **210 of 1915 populated** (2026-08-14). It had
+regressed to 0 — the stamping was once patched into the built artifact and a
+rebuild dropped it — and is now applied to `compiled_fs.db` and carried through
+by `build_compiled_v2`, so a rebuild keeps it. The remaining columns are period
+columns (never stamped, by design) and table types with no column block
+authored yet; the app shows the coverage rather than hiding the column.
 
 ## The four ways this app has died
 

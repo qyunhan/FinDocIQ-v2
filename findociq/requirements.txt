@@ -1,3 +1,4 @@
+# Pipeline dependencies.
 pydantic>=2.13.4
 pypdfium2>=5.8.0
 openpyxl>=3.1.5
@@ -5,6 +6,13 @@ google-genai>=2.2.0
 pdfplumber>=0.11.9
 pandas>=2.0.0
 pyyaml>=6.0.0
-db-dtypes>=1.1.1
-google-cloud-bigquery>=3.0.0
-google-cloud-storage>=2.10.0
+
+# RETIRED — GCP was decommissioned in August 2026. These are needed only by
+# `common/sync_bq.py` (STEP 7, now OFF by default) and `common/source_store.py`
+# (the GCS source bucket). Both are kept so old code still imports, but nothing
+# in the working path uses them, and a fresh venv should not have to pull three
+# cloud SDKs to rebuild a local database. Uninstalled by default; re-add if you
+# ever restore a dataset or bucket.
+#   db-dtypes>=1.1.1
+#   google-cloud-bigquery>=3.0.0
+#   google-cloud-storage>=2.10.0

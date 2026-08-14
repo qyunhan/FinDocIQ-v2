@@ -30,11 +30,11 @@ The end state of this project is a pipeline that runs with **no human in the loo
 - **Every prompt change is a PIPELINE change.** Prompts live in `findociq/pipeline/prompts/` and are selected by the router. Never hand-tune a prompt for one run or paste one-off instructions into an extraction call. If a case needs different prompting, that is a routing branch: add the branch AND the prompt file, and the router must pick it deterministically for every future document that matches.
 - **Decision-tree pivots must be visible.** Any change to the routing decision tree — a prompt split, a new page class, a new branch/command — must be (1) recorded in the routing spec under `findociq/docs/specs/`, (2) observable in the route manifest / `route_map.html` output so a human can SEE which branch fired for which page without reading code, and (3) called out explicitly to the user when it happens ("pipeline pivot: …"), not buried in a diff.
 
-## Cloud Workstation — persistence (READ if running in the workstation)
+## Persistence — git is the only durable store
 
-A Cloud Workstation loses **everything outside `/home`** on restart, and loses
-`/home` too if it is deleted/recreated. **git (pushed to origin) and the GCS
-bucket are the only durable stores.** Therefore, in a workstation session:
+**GCP was retired in August 2026.** There is no GCS bucket and no BigQuery
+dataset to fall back on: whatever is not pushed to GitHub does not exist. The
+machine this runs on may be rebuilt without warning.
 
 - **Commit + push after every major change** (feature, fix, spec/doc) with an
   explicit pathspec — never end a session with meaningful work unpushed, and
@@ -46,8 +46,12 @@ bucket are the only durable stores.** Therefore, in a workstation session:
   **tried-and-discarded with the evidence** for rejecting it (a command output, a
   `file:line`, a measured fact). This is toward a full project writeup — capture
   rationale and dead ends, not just outcomes.
-- **After an ingest run, persist the DB to GCS:**
-  `gsutil cp findociq/db/compiled_fs.db gs://findociq-sources-igc2026-team08-6311/db/compiled_fs.db`.
-- **On a fresh/rebuilt workstation, bootstrap by following**
-  `findociq/docs/workstation-persistence.md` (env + venv + PaddleOCR fix + pull DB),
-  then read `findociq/docs/2026-07-30-workstation-resume-handoff.md`.
+- **Both databases are committed** (`compiled_fs.db` 31 MB, `compiled_v2.db`
+  10 MB). After a rebuild or re-stamp, commit them — that IS the persistence
+  step now, in place of the old `gsutil cp`.
+- **Publishing the dashboard is a SECOND repo.** `qyunhan/Findociq-Dashboard` is
+  what Streamlit Community Cloud builds; pushing here changes nothing on the
+  live site. Run its `sync.sh` and push that repo too. See `README.md`.
+- **Do not add new GCP dependencies.** `sync_bq.py`, `source_store.py` (GCS) and
+  the app's BigQuery backend are retired paths kept only so old code still
+  imports; nothing in the working path may rely on them.

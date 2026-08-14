@@ -1437,8 +1437,18 @@ def main(argv: list[str] | None = None) -> int:
                     help="re-extract units even when an audit parsed.json exists")
     ap.add_argument("--seed-registry", action="store_true",
                     help="run STEP 3b (seed table_registry + classify corpus). OFF by default; needed only by the masterlist authoring flow.")
-    ap.add_argument("--no-sync-bq", action="store_true",
-                    help="skip the BigQuery sync step")
+    # STEP 7 IS OFF BY DEFAULT since GCP was retired (2026-08-14). There is no
+    # project or dataset for it to reach, so leaving it on meant every run
+    # attempted a sync that could only fail — noise in the log and a 'failed'
+    # row in ingest_status for a step nobody wants. The flag keeps its dest so
+    # the six `args.no_sync_bq` call sites are unchanged; --sync-bq opts back in
+    # for anyone who restores a dataset.
+    ap.add_argument("--sync-bq", dest="no_sync_bq", action="store_false",
+                    default=True,
+                    help="run the BigQuery sync (STEP 7). OFF by default — GCP "
+                         "is retired and the step cannot succeed without it.")
+    ap.add_argument("--no-sync-bq", dest="no_sync_bq", action="store_true",
+                    help="(default) skip the BigQuery sync step")
     ap.add_argument("--ipv4-shim", dest="ipv4_shim", action="store_true", default=True,
                     help="prepend an AF_INET getaddrinfo shim (default ON)")
     ap.add_argument("--no-ipv4-shim", dest="ipv4_shim", action="store_false",

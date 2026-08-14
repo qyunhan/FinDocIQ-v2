@@ -1,15 +1,22 @@
 # FinDocIQ — bank financial-statement extraction pipeline
 
-> **Continuing this project from a clone alone?** Everything you need is here —
-> no Cloud Workstation, no GCS bucket, no GCP project required. Start below.
+Turns DBS / OCBC / UOB disclosure PDFs into a verified, queryable database, and
+serves it as a dashboard where **every figure traces back to the page it came
+from**.
 
-This repo is **self-contained**. No Cloud Workstation, no GCS bucket, no access
-to GCP project `igc2026-team08-6311` is required to rebuild the database, verify
-every number against the source filings, or run the dashboard.
+**Live dashboard:** https://findociq-dashboard-bmffbmpoyhah9a3uhmyepk.streamlit.app/
 
-That was not true of the previous repo, where the source PDFs and the database
-lived only in GCS. If you are reading this after losing GCP access, everything
-below still works.
+Covers 3 banks · 10 filings (FY2025 → 1H2026) · 342 tables · 21,581 figures.
+
+## No cloud account required
+
+This repo is self-contained. **GCP was retired in August 2026** — there is no
+Cloud Workstation, no GCS bucket, no BigQuery dataset and no Cloud Run service in
+the working path. Everything below runs from a clone, offline, at no cost.
+
+The one exception is extracting a **brand-new** PDF, which calls Gemini and needs
+an API key (see below). Rebuilding, verifying and serving the existing corpus
+need nothing.
 
 ## 60-second start
 
@@ -26,15 +33,23 @@ Expected: **10 docs · 488 sections · 342 tables · 5,771 rows · 21,581 cells,
 verify PASS (10 verified)**, ~60s plus a one-off venv build.
 
 **Use `--only 4Q25,1Q26,2Q26`.** That is the *maintained corpus* — the documents
-the masterlist covers and the dashboard serves, and it reproduces the shipped
-`compiled_v2.db` exactly. A bare `--rebuild-db` instead loads **every** cached
-document (25 docs / 33,671 cells), pulling in 1Q22–3Q25 filings that have no
-masterlist coverage; useful for archaeology, wrong as a serving DB.
+the masterlist covers and the dashboard serves. A bare `--rebuild-db` loads
+**every** cached document (25 docs / 33,671 cells), pulling in 1Q22–3Q25 filings
+that have no masterlist coverage: useful for archaeology, wrong as a serving DB.
 
-That single command reconstructs `findociq/db/compiled_fs.db` from
-`findociq/outputs/**/parsed.json` (507 extraction artifacts) and
-`findociq/data/derived/toc/*.json` (52 cached tables-of-contents). Both are
-committed. Then:
+> ⚠️ **A rebuild is NOT byte-equivalent to the committed database, and it
+> overwrites it.** Measured 2026-08-14: the replay reproduces every count
+> exactly (10 / 488 / 342 / 5,771 / 21,581, verify PASS) but loses **39
+> `canonical_leaf_id` stamps (3,843 → 3,804) and all 210 `canonical_col_id`
+> stamps**. The committed `compiled_fs.db` and `compiled_v2.db` are the
+> authoritative artifacts. Run `--rebuild-db` to verify the extraction
+> artifacts still load, on a **copy**; do not commit its output without
+> re-running `stage3_stamp/apply/restamp_columns.py --write` and checking the
+> stamp counts.
+
+It reconstructs `compiled_fs.db` from `findociq/outputs/**/parsed.json` (507
+extraction artifacts) and `findociq/data/derived/toc/*.json` (52 cached
+tables-of-contents), all committed. Then:
 
 ```bash
 # Serving DB the Streamlit app reads
@@ -43,68 +58,83 @@ python3 findociq/pipeline/run_doc.py --stage3
 streamlit run findociq/app/findociq_app.py
 ```
 
-## What works with no GCP at all
-
-| capability | needs | works from a clone |
-|---|---|---|
-| rebuild `compiled_fs.db` from artifacts | nothing | **yes** |
-| verify every cell against the PDF | the committed PDFs | **yes** |
-| build `compiled_v2.db` (`--stage3`) | nothing | **yes** |
-| Streamlit dashboard | `compiled_v2.db` | **yes** |
-| the 33 pipeline tests | nothing | **yes** |
-| **extract a NEW document** | a Gemini key (below) | **yes, with a key** |
-| BigQuery sync (`STEP 7`) | GCP | no — pass `--no-sync-bq` |
-
-`STEP 7` is the only step that needs GCP, it is not on the critical path, and a
-failure there prints a warning and continues.
-
-## Extracting a NEW document without GCP
-
-Gemini auth defaults to **Vertex AI**, which binds every call to one GCP
-project. Set an AI Studio key instead and no GCP is involved:
-
-```bash
-export GEMINI_API_KEY=...        # https://aistudio.google.com/apikey
-python3 findociq/pipeline/run_doc.py --pdf <file.pdf> --no-sync-bq
-```
-
-`gemini_client.build_client()` prefers the key when present and falls back to
-Vertex otherwise, so existing GCP setups are unaffected. `FINDOCIQ_GCP_PROJECT`
-and `FINDOCIQ_GCP_LOCATION` override the Vertex target if you keep that path.
-
 ## The three stages
 
 `run_doc.py` runs stages 1+2 by default; each can run alone.
 
 ```
---stage1  EXTRACT  PDF        -> outputs/fs/<bank>_<period>/   (Gemini)
---stage2  LOAD     artifacts  -> compiled_fs.db                ($0, no API)
---stage3  SERVE    compiled_fs.db -> compiled_v2.db            ($0, no API)
+--stage1  EXTRACT  PDF            -> outputs/fs/<bank>_<period>/   (Gemini)
+--stage2  LOAD     artifacts      -> compiled_fs.db                ($0, no API)
+--stage3  SERVE    compiled_fs.db -> compiled_v2.db                ($0, no API)
 ```
 
 Reloading after a loader change costs ~12s and no API spend — extraction
 artifacts are cached, so `--stage2` alone replays them.
 
-## What is deliberately NOT in this repo
+## Extracting a NEW document
 
-- **`.venv/`** — rebuilt automatically on first run.
-- **`findociq/db/compiled_fs.db`** — regenerate with `--rebuild-db` in ~20s.
-  Keeping it out is what stopped the old repo growing to 234 MB (72% of that
-  history was this one file committed once per ingest).
-- **`findociq/db/compiled_v2.db`** is committed (10 MB) because the app reads it.
+Only stage 1 needs credentials. Use an AI Studio key:
+
+```bash
+export GEMINI_API_KEY=...        # https://aistudio.google.com/apikey
+python3 findociq/pipeline/run_doc.py --pdf <file.pdf>
+```
+
+The key path involves no GCP project. `gemini_client.build_client()` still has a
+Vertex AI fallback for anyone who wants it, but it is not used or maintained.
+
+## How the dashboard is published
+
+**Two repositories, and only one of them publishes.**
+
+| repo | role |
+|---|---|
+| `qyunhan/FinDocIQ-v2` (this one) | source of truth |
+| `qyunhan/Findociq-Dashboard` | what Streamlit Community Cloud actually builds |
+
+Pushing here does **not** update the live site. The deploy repo is *generated* —
+its `sync.sh` flattens the layout, trims the app to the two views that work
+without credentials (Dashboard, Database), and copies in the database, the
+dashboard anchor CSVs and the source PDFs:
+
+```bash
+git push origin main                                  # source of truth
+cd <findociq-dashboard clone> && ./sync.sh && git push # publishes
+```
+
+`sync.sh` prints the source branch and revision before copying, and refuses to
+run against a dirty tree or a branch that is not on `origin/main` — it publishes,
+so it will not guess.
+
+## What is and is not committed
+
+- **`findociq/db/compiled_v2.db`** (10 MB) — committed; the app reads it.
+- **`findociq/db/compiled_fs.db`** (31 MB) — committed, so the serving DB can be
+  rebuilt without re-running extraction.
+- **Source PDFs** under `findociq/data/sources/` — committed, which is what lets
+  the Database view show the original page beside each table with no cloud
+  storage behind it.
+- **`.venv/`** — not committed; rebuilt automatically on first run.
+
+Dependencies are **pinned exactly** for the render path
+(`streamlit==1.60.0`, `pandas==3.0.5`, `altair==6.2.2`, `pypdfium2==5.13.0`).
+Floating versions have twice silently changed what the deployed page renders.
 
 ## Read next
 
 1. `Techreport/FinDocIQ_technical_report_v0.1.md` — the full architecture
-   writeup, now at the repo root. **Appendix C** is what is covered today;
-   **Appendix D** is the prioritised worklist of what to build next.
+   writeup. **Appendix C** is what is covered today; **Appendix D** is the
+   prioritised worklist of what to build next.
 2. `findociq/PROGRESS.md` — newest-first running log; start at the top.
 3. `findociq/docs/DECISIONS.md` — why things are the way they are, and what was
    tried and rejected **with the evidence**.
-4. `findociq/docs/README.md` — index of the remaining docs, plus the redirect
-   for historical reports that now live under `findociq/archive/`.
+4. `findociq/docs/README.md` — index of the remaining docs, plus the redirect for
+   historical reports now under `findociq/archive/`.
 5. `CLAUDE.md` — working agreements if you use Claude Code on this repo.
 
-`findociq/docs/workstation-persistence.md` and the `*-handoff.md` files describe
-the OLD Cloud Workstation + GCS setup. They are kept for history and no longer
-describe how to work on this project.
+## Historical documents
+
+`HANDOFF.md`, `findociq/docs/workstation-persistence.md`,
+`findociq/docs/workstation-setup.md` and the `*-handoff.md` files describe the
+retired Cloud Workstation + GCS + BigQuery setup. They are kept as a record and
+**do not describe how to work on this project today**.

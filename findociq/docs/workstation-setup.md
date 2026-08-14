@@ -1,5 +1,9 @@
 # Cloud Workstation setup — run FinDocIQ (extraction + the app)
 
+> **HISTORICAL — do not follow this document.** Describes the retired
+> Cloud Workstation setup. **GCP was decommissioned in August 2026**: there is no
+> workstation, bucket or project to bootstrap against. See `README.md`.
+
 > **STALE (2026-08-13) — read `README.md` instead.** This describes the old
 > Cloud Workstation + GCS setup and is kept only for history. Specifically:
 > §1 clones the **wrong (retired) repo**; §3's manual venv build is unnecessary

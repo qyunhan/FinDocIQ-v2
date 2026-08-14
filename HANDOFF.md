@@ -1,7 +1,13 @@
 # FinDocIQ — Handoff / Current State
 
-**Read this first.** Bridges the build context into the repo so any developer or
-AI agent (Antigravity, Gemini CLI, Claude Code) can continue. Last updated 2026-07-16.
+> **HISTORICAL — do not follow this document.** Written 2026-07-16, when the
+> project ran on GCP (Cloud Workstation, GCS source bucket, BigQuery, Cloud
+> Run). **GCP was retired in August 2026.** The architecture description below
+> is still broadly accurate, but every cloud instruction in it is dead. Read
+> `README.md` for how the project actually works today.
+
+Bridges the original build context into the repo. Last updated 2026-07-16 and
+not maintained since.
 
 ## What this is
 
