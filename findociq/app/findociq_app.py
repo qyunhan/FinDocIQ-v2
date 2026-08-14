@@ -43,6 +43,12 @@ DB = FINDOCIQ_DIR / "db" / "compiled_v2.db"
 #   *_anchors.csv        concept,row_order,bank,table_type_id,canonical_leaf_id,sign
 #   *_formulaanchors.csv  ... + member_ordinal   (concept = SUM of members x sign)
 DASHBOARDS_DIR = FINDOCIQ_DIR / "data" / "derived" / "dashboards"
+# The source-PDF tree the Database view's "Original document" panel reads.
+# A CONSTANT, not a path rebuilt inside the resolver, for the same reason
+# DASHBOARDS_DIR is one: the deploy mirror flattens the repo, and a hardcoded
+# 'findociq/data/sources' inside the function silently resolves to nothing
+# there — the panel would report every PDF unavailable with the files present.
+SOURCES_DIR = FINDOCIQ_DIR / "data" / "sources"
 SOURCE = os.environ.get("FINDOCIQ_DB_SOURCE", "sqlite").lower()
 PROJECT = os.environ.get("FINDOCIQ_BQ_PROJECT", "igc2026-team08-6311")
 
@@ -1618,7 +1624,7 @@ def source_key_of(source_file) -> str | None:
     return parts[1]
 
 
-def resolve_source_pdf(source_file, repo) -> str | None:
+def resolve_source_pdf(source_file, repo, sources_dir=None) -> str | None:
     """document.source_file -> an existing local PDF path, or None.
 
     TWO CONVENTIONS, ONE CORPUS. `source_file` is written verbatim by whichever
@@ -1639,6 +1645,9 @@ def resolve_source_pdf(source_file, repo) -> str | None:
     path. Returns the FIRST match in sorted order so the result is deterministic
     across filesystems (os.walk order is not).
 
+    `sources_dir` defaults to the upstream layout; the deploy mirror flattens
+    the tree, so it is passed in (SOURCES_DIR) rather than rebuilt here.
+
     Pure/testable without Streamlit -- the GCS fallback stays in the caller,
     since it needs credentials this function must not require."""
     if not source_file:
@@ -1650,7 +1659,8 @@ def resolve_source_pdf(source_file, repo) -> str | None:
     name = Path(str(source_file)).name
     if not name:
         return None
-    sources = repo / "findociq" / "data" / "sources"
+    sources = (Path(sources_dir) if sources_dir is not None
+               else repo / "findociq" / "data" / "sources")
     if not sources.is_dir():
         return None
     hits = sorted(q for q in sources.rglob(name) if q.is_file())
@@ -1769,7 +1779,7 @@ if __name__ == "__main__":
         what makes this work on a credential-less deploy: the public Streamlit
         app has no GCS access at all, so anything that falls through to
         `source_store.materialize` there is simply unavailable."""
-        local = resolve_source_pdf(source_file, REPO)
+        local = resolve_source_pdf(source_file, REPO, SOURCES_DIR)
         if local is not None:
             return local
         key = source_key_of(source_file)

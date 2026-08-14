@@ -1254,3 +1254,14 @@ def test_unanchored_leaves_frame_orders_most_captured_first():
             "row_leaf_label": "C"} for i in range(3)])
     df = unanchored_leaves_frame([], captured)
     assert list(df["canonical_leaf_id"]) == ["common", "rare"]
+
+def test_resolve_source_pdf_honours_an_explicit_sources_dir(tmp_path):
+    # The deploy mirror flattens the repo: there is no findociq/ directory, so
+    # the default 'repo/findociq/data/sources' resolves to nothing there and the
+    # panel would report every PDF unavailable with the files present.
+    flat = tmp_path / "data" / "sources" / "financial_statements"
+    flat.mkdir(parents=True)
+    (flat / "X.pdf").write_bytes(b"%PDF-1.4\n")
+    got = resolve_source_pdf("findociq/data/sources/financial_statements/X.pdf",
+                             tmp_path, tmp_path / "data" / "sources")
+    assert got.endswith("data/sources/financial_statements/X.pdf")
