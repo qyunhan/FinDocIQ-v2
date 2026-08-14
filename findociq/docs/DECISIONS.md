@@ -17,6 +17,57 @@ Format:
 
 ---
 
+## 2026-08-14 — the Highlights row order, and the formula file nobody was reading
+
+**Decision:** the headline dashboard's formula file is renamed
+`highlights_formulaanchors.csv` -> `highlights_dashboard_formulaanchors.csv`;
+`available_dashboards` gains `orphan_formula_files()` and the view WARNS on any
+stem mismatch; and the per-bank item lists are merged by declared `row_order`
+(`merge_dashboard_items`) instead of being appended in bank order.
+
+**Why:** the reported symptom was that the Income statement block did not start
+`Net interest income, Net fee and commission income, Other non-interest income`.
+Two independent causes, one masking the other.
+
+1. **A dashboard is a PAIR sharing one stem, and this pair did not.**
+   `load_dashboard_anchors` builds `<stem>_formulaanchors.csv`. With the
+   headline stem `highlights_dashboard` it looked for
+   `highlights_dashboard_formulaanchors.csv` and found nothing, so every
+   composed line was dropped without a message. DBS lost `Net interest income`
+   and `Other non-interest income` entirely (both rollups) — measured:
+   `load_dashboard_anchors('DBS', dashboard='highlights_dashboard')` returned
+   24 items against 26 after the rename. It stayed invisible because the
+   no-argument path globs `*_formulaanchors.csv` and loads the file, so tests
+   and any single-pair install behaved perfectly. It only bites once a SECOND
+   pair exists and the picker starts passing a stem — which shipped with
+   `breakdown_of_gross_nb_loans`.
+
+2. **The union appended.** The grid shows one row list for every bank, built by
+   adding each bank's unseen labels to the end. Banks are read alphabetically,
+   so DBS set the order and anything only OCBC or UOB declared landed after
+   every DBS row — three sections below where it belonged. And because
+   `highlights_grid_frame` emits each section header at most once, such a row
+   printed with no header at all. With DBS's list truncated by (1), that is
+   exactly where `Net interest income` and `Other non-interest income` went.
+
+**Discarded:** *teaching the loader to accept the mismatched name* (fall back to
+`highlights_formulaanchors.csv`). Rejected — it entrenches an ambiguity the
+whole set-based design exists to remove, and the next pair would inherit it. The
+contract is one stem per pair; the fix is to honour it and to make a violation
+visible rather than silent.
+
+**Discarded:** *fixing only the rename.* It would have restored the observed
+order, because DBS then declares every line and DBS is read first — and left
+the append bug latent for the first line a future bank declares alone.
+
+**Verified:** OCBC's grid now reads Net interest income / Net fee and commission
+income / Other non-interest income (ᵈ) / Total income, and two formula lines
+absent from the page for the whole life of the two-pair install —
+`Other non-interest income` and `Shareholders' equity` — are back. 162 app
+tests; the live dashboards directory is asserted orphan-free.
+
+---
+
 ## 2026-08-14 — a footnote column was a servable figure; `reference_skip` and the col-id regression
 
 **Decision:** new `col_role` value **`reference_skip`** for columns that carry a

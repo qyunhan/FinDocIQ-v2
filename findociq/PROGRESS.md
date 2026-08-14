@@ -148,6 +148,24 @@ Status keys: ✅ done · 🔄 in progress · 🐞 bug · ⏭️ next.
    Half of what is unstamped SHOULD stay unstamped: 1,022 of 1,928 unstamped
    rows are label-only headers with no figure and no identity to earn.
 
+🐞→✅ **The Highlights row order was wrong, and a whole formula file was being
+   ignored.** Reported as "shouldn't Net interest income / Non-interest income
+   be right under Income statement ($m)". Two causes:
+   (1) the headline pair did not share a stem —
+   `highlights_dashboard_anchors.csv` + `highlights_formulaanchors.csv` — so
+   once the picker started passing a stem (which began when the second pair
+   shipped), `<stem>_formulaanchors.csv` matched no file and EVERY composed
+   line was dropped silently. DBS went from 26 declared items to 24, losing
+   `Net interest income` and `Other non-interest income`, both rollups.
+   (2) the per-bank item lists were UNIONED BY APPENDING, so a line only a
+   later bank declared landed below every earlier bank's rows — and with no
+   section header, since each header is emitted once.
+   Fixed: file renamed to share its stem; new `merge_dashboard_items()` merges
+   by declared `row_order`; new `orphan_formula_files()` + an on-page warning
+   so a stem mismatch can never be silent again. The tech report's note saying
+   "the app globs on suffix only, so both load — don't fix one to match the
+   other" was wrong and is corrected in place. 162 app tests.
+
 ⏭️ **Next:** run the column-axis stamp so `canonical_col_id` populates — it is
    the one half of the per-cell address the app can display but the pipeline has
    never written.

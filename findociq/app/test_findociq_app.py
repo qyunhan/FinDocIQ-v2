@@ -25,6 +25,7 @@ from findociq_app import (PERIOD_BASES, STAGES, available_bases,
                           FILTER_BY_PERIOD_END_DATE,
                           raw_table_frame, resolve_title,
                           source_key_of, stage_states, table_view_labels,
+                          merge_dashboard_items, orphan_formula_files,
                           anchor_declarations, anchor_coverage_frame,
                           unanchored_leaves_frame, select_clause,
                           resolve_source_pdf)
@@ -1330,3 +1331,82 @@ def test_table_view_labels_does_not_render_page_nan():
     options, _ = table_view_labels(rows)
     assert "p.nan" not in " ".join(options)
     assert "Income" in options[1]
+
+
+# -------------------------------------------------- dashboard row ordering
+# The grid shows one row list for every bank. It used to be built by APPENDING
+# each bank's unseen labels, so a line only a later bank declared landed below
+# every earlier bank's rows — three sections from where it belonged, and with
+# no section header, because highlights_grid_frame emits each header once.
+def _it(label, order, section=None):
+    return {"label": label, "concept": label, "unit_hint": None,
+            "section": section, "row_order": order}
+
+
+def test_merge_dashboard_items_orders_by_declared_row_order_not_bank_order():
+    dbs = [_it("Net fee and commission income", 2), _it("Total income", 4)]
+    uob = [_it("Net interest income", 1), _it("Net fee and commission income", 2),
+           _it("Other non-interest income", 3), _it("Total income", 4)]
+    got = [i["label"] for i in merge_dashboard_items([dbs, uob])]
+    assert got == ["Net interest income", "Net fee and commission income",
+                   "Other non-interest income", "Total income"]
+
+
+def test_merge_dashboard_items_does_not_append_a_late_banks_line_to_the_end():
+    # The exact production shape: DBS read first and short, UOB declares row 1.
+    dbs = [_it(f"row{i}", i) for i in range(2, 27)]
+    uob = [_it("Net interest income", 1)]
+    got = [i["label"] for i in merge_dashboard_items([dbs, uob])]
+    assert got[0] == "Net interest income", "row 1 must not land last"
+
+
+def test_merge_dashboard_items_dedupes_on_label():
+    a = [_it("Total income", 4)]
+    b = [_it("Total income", 4)]
+    assert len(merge_dashboard_items([a, b])) == 1
+
+
+def test_merge_dashboard_items_keeps_the_lowest_declared_order_on_a_tie():
+    a = [_it("X", 9)]
+    b = [_it("X", 3)]
+    merged = merge_dashboard_items([a, b])
+    assert [i["label"] for i in merged] == ["X"]
+    assert merged[0]["row_order"] == 3
+
+
+def test_merge_dashboard_items_keeps_a_section_a_later_declaration_omits():
+    a = [_it("X", 9, "Income statement ($m)")]
+    b = [_it("X", 3, None)]
+    assert merge_dashboard_items([a, b])[0]["section"] == "Income statement ($m)"
+
+
+def test_merge_dashboard_items_empty():
+    assert merge_dashboard_items([]) == []
+    assert merge_dashboard_items([[], []]) == []
+
+
+# ---------------------------------------------------- orphan formula files
+def test_orphan_formula_files_flags_a_stem_mismatch(tmp_path):
+    # The production bug: the pair was highlights_dashboard_anchors.csv +
+    # highlights_formulaanchors.csv. Different stems, so once a set was
+    # SELECTED the formula file was looked up under the wrong name and every
+    # composed line vanished without a message.
+    (tmp_path / "highlights_dashboard_anchors.csv").write_text("concept\n")
+    (tmp_path / "highlights_formulaanchors.csv").write_text("concept\n")
+    assert orphan_formula_files(tmp_path) == ["highlights_formulaanchors.csv"]
+
+
+def test_orphan_formula_files_silent_when_stems_match(tmp_path):
+    (tmp_path / "hl_anchors.csv").write_text("concept\n")
+    (tmp_path / "hl_formulaanchors.csv").write_text("concept\n")
+    assert orphan_formula_files(tmp_path) == []
+
+
+def test_orphan_formula_files_allows_a_set_with_no_formula_file(tmp_path):
+    (tmp_path / "hl_anchors.csv").write_text("concept\n")
+    assert orphan_formula_files(tmp_path) == []
+
+
+def test_the_live_dashboards_directory_has_no_orphans():
+    # Regression guard on the real files, not a fixture.
+    assert orphan_formula_files() == []

@@ -1478,11 +1478,19 @@ No masterlist. `DBS_1Q26_P3_other_regulatory_disclosures` is loaded (8 tables,
 | File | Rows | Coverage |
 |---|---|---|
 | `highlights_dashboard_anchors.csv` | 74 | 24 DBS + 26 UOB + 24 OCBC |
-| `highlights_formulaanchors.csv` | 9 | 4 DBS + 0 UOB + 5 OCBC rollup members |
+| `highlights_dashboard_formulaanchors.csv` | 9 | 4 DBS + 0 UOB + 5 OCBC rollup members |
 
-The two prefixes differ (`highlights_dashboard_` against `highlights_`). The app globs
-on suffix only, so both load — but don't "fix" one to match the other without
-checking `load_dashboard_anchors` (`findociq_app.py:747`).
+**Corrected 2026-08-14.** This section used to note that the two prefixes
+differed (`highlights_dashboard_` against `highlights_`) and to say the app
+"globs on suffix only, so both load — but don't fix one to match the other."
+That was true only of the no-argument path. Once a dashboard is SELECTED —
+which happens automatically the moment a second pair exists and the picker
+appears — `load_dashboard_anchors` builds `<stem>_formulaanchors.csv`, looked
+for `highlights_dashboard_formulaanchors.csv`, found nothing, and dropped every
+composed line in silence. DBS lost `Net interest income` and `Other
+non-interest income` outright; both are rollups. The file is renamed to match
+its stem, and `orphan_formula_files()` now warns on the page for any future
+mismatch. A dashboard IS a pair sharing one stem — that is the contract.
 
 ### Update workflow
 - Populate new section → update this appendix in the same commit.
